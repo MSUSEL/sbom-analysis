@@ -47,13 +47,14 @@ impl NvdApi {
             .map(|v| Self(v))
     }
 
-    pub async fn get_cve(&self, cve_id: CveId) -> Result<CveId, Issue> {
-        serde_json::from_str(&self.0
-            .get(&format!("https://nvd.nist.gov/vuln/detail/{}", cve_id))
-            .send()
-            .await
-            .map_err(|e| Issue::Web(e))?
-            .text())
-            .map_err(|e| Issue::Json(e))
+    async fn get_cve(&self, cve_id: CveId) -> Result<CveId, Issue> {
+        // serde_json::from_str(&self.0
+        //     .get(&format!("https://nvd.nist.gov/vuln/detail/{}", cve_id))
+        //     .send()
+        //     .await
+        //     .map_err(|e| Issue::Web(e))?
+        //     // .text().await.map_err(|e| Issue::Web(e))?)
+        //     .map_err(|e| Issue::Json(e))
+        todo!()
     }
 }
