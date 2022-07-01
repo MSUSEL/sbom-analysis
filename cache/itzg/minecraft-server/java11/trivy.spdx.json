@@ -1,11 +1,11 @@
 SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
-DocumentName: itzg/minecraft-server:java11
-DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/itzg/minecraft-server:java11-55e4f413-a232-41b4-ad73-a8fcacc480db
+DocumentName: itzg/minecraft-server: java11
+DocumentNamespace: http: //aquasecurity.github.io/trivy/container_image/itzg/minecraft-server:java11-55e4f413-a232-41b4-ad73-a8fcacc480db
 Creator: Organization: aquasecurity
 Creator: Tool: trivy
-Created: 2022-07-01T17:03:43.8164289Z
+Created: 2022-07-01T17:03: 43.8164289Z
 
 ##### Package: netbase
 
@@ -25,9 +25,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.ow2.asm:asm
+##### Package: org.ow2.asm: asm
 
-PackageName: org.ow2.asm:asm
+PackageName: org.ow2.asm: asm
 SPDXID: SPDXRef-11eecfdd9b81278d
 PackageVersion: 9.1
 FilesAnalyzed: false
@@ -45,7 +45,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: net.minidev:json-smart
 
-PackageName: net.minidev:json-smart
+PackageName: net.minidev: json-smart
 SPDXID: SPDXRef-1384c26721d28429
 PackageVersion: 2.4.7
 FilesAnalyzed: false
@@ -54,7 +54,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
 
-PackageName: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+PackageName: com.fasterxml.jackson.dataformat: jackson-dataformat-yaml
 SPDXID: SPDXRef-16d7eef2303b17b5
 PackageVersion: 2.13.3
 FilesAnalyzed: false
@@ -70,9 +70,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.projectreactor.netty:reactor-netty-http
+##### Package: io.projectreactor.netty: reactor-netty-http
 
-PackageName: io.projectreactor.netty:reactor-netty-http
+PackageName: io.projectreactor.netty: reactor-netty-http
 SPDXID: SPDXRef-17ebbdbec83861f3
 PackageVersion: 1.0.19
 FilesAnalyzed: false
@@ -124,9 +124,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: commons-codec:commons-codec
+##### Package: commons-codec: commons-codec
 
-PackageName: commons-codec:commons-codec
+PackageName: commons-codec: commons-codec
 SPDXID: SPDXRef-1bff6dc748ad5ad0
 PackageVersion: 1.15
 FilesAnalyzed: false
@@ -137,14 +137,14 @@ PackageLicenseDeclared: NONE
 
 PackageName: libaudit-common
 SPDXID: SPDXRef-1c458c174ec551b4
-PackageVersion: 1:2.8.5-2ubuntu6
+PackageVersion: 1: 2.8.5-2ubuntu6
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.codehaus.plexus:plexus-utils
+##### Package: org.codehaus.plexus: plexus-utils
 
-PackageName: org.codehaus.plexus:plexus-utils
+PackageName: org.codehaus.plexus: plexus-utils
 SPDXID: SPDXRef-1de5d69754446fa1
 PackageVersion: 3.3.0
 FilesAnalyzed: false
@@ -178,9 +178,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-resolver-dns
+##### Package: io.netty: netty-resolver-dns
 
-PackageName: io.netty:netty-resolver-dns
+PackageName: io.netty: netty-resolver-dns
 SPDXID: SPDXRef-21806d368b14778f
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -198,7 +198,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: io.netty:netty-handler
 
-PackageName: io.netty:netty-handler
+PackageName: io.netty: netty-handler
 SPDXID: SPDXRef-25cc68139f384e1e
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -214,9 +214,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-transport-classes-epoll
+##### Package: io.netty: netty-transport-classes-epoll
 
-PackageName: io.netty:netty-transport-classes-epoll
+PackageName: io.netty: netty-transport-classes-epoll
 SPDXID: SPDXRef-26b1834a3b86caca
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -241,18 +241,18 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: ch.qos.logback:logback-core
+##### Package: ch.qos.logback: logback-core
 
-PackageName: ch.qos.logback:logback-core
+PackageName: ch.qos.logback: logback-core
 SPDXID: SPDXRef-2807b6cd31f2eb86
 PackageVersion: 1.2.11
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-transport
+##### Package: io.netty: netty-transport
 
-PackageName: io.netty:netty-transport
+PackageName: io.netty: netty-transport
 SPDXID: SPDXRef-289e463609cae74a
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -272,7 +272,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libcap2
 SPDXID: SPDXRef-29155d8369c2b58c
-PackageVersion: 1:2.32-1
+PackageVersion: 1: 2.32-1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -308,7 +308,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: xauth
 SPDXID: SPDXRef-2d3d3c8126de35a6
-PackageVersion: 1:1.1-0ubuntu1
+PackageVersion: 1: 1.1-0ubuntu1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -335,7 +335,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: login
 SPDXID: SPDXRef-306863163cf9f577
-PackageVersion: 1:4.8.1-1ubuntu5.20.04.1
+PackageVersion: 1: 4.8.1-1ubuntu5.20.04.1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -394,9 +394,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.projectreactor:reactor-core
+##### Package: io.projectreactor: reactor-core
 
-PackageName: io.projectreactor:reactor-core
+PackageName: io.projectreactor: reactor-core
 SPDXID: SPDXRef-36660ed772f0767
 PackageVersion: 3.4.18
 FilesAnalyzed: false
@@ -443,7 +443,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: imagemagick
 SPDXID: SPDXRef-3ac41177719f5b35
-PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+PackageVersion: 8: 6.9.10.23+dfsg-2.1ubuntu11.4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -497,7 +497,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: fonts-droid-fallback
 SPDXID: SPDXRef-3eb5de7e4efcd0d5
-PackageVersion: 1:6.0.1r16-1.1
+PackageVersion: 1: 6.0.1r16-1.1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -538,18 +538,18 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.slf4j:slf4j-api
+##### Package: org.slf4j: slf4j-api
 
-PackageName: org.slf4j:slf4j-api
+PackageName: org.slf4j: slf4j-api
 SPDXID: SPDXRef-41a11b9f993a283c
 PackageVersion: 1.7.33
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-transport-native-epoll
+##### Package: io.netty: netty-transport-native-epoll
 
-PackageName: io.netty:netty-transport-native-epoll
+PackageName: io.netty: netty-transport-native-epoll
 SPDXID: SPDXRef-41d384e0f2fbf9a4
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -619,9 +619,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-resolver
+##### Package: io.netty: netty-resolver
 
-PackageName: io.netty:netty-resolver
+PackageName: io.netty: netty-resolver
 SPDXID: SPDXRef-4813f6901576b77b
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -641,7 +641,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libprocps8
 SPDXID: SPDXRef-4865b327785397de
-PackageVersion: 2:3.3.16-1ubuntu2.3
+PackageVersion: 2: 3.3.16-1ubuntu2.3
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -673,9 +673,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: ch.qos.logback:logback-classic
+##### Package: ch.qos.logback: logback-classic
 
-PackageName: ch.qos.logback:logback-classic
+PackageName: ch.qos.logback: logback-classic
 SPDXID: SPDXRef-4b66a4f8b42b23b9
 PackageVersion: 1.2.11
 FilesAnalyzed: false
@@ -700,18 +700,18 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-resolver-dns-classes-macos
+##### Package: io.netty: netty-resolver-dns-classes-macos
 
-PackageName: io.netty:netty-resolver-dns-classes-macos
+PackageName: io.netty: netty-resolver-dns-classes-macos
 SPDXID: SPDXRef-4dea3ae86fdb44e9
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-handler-proxy
+##### Package: io.netty: netty-handler-proxy
 
-PackageName: io.netty:netty-handler-proxy
+PackageName: io.netty: netty-handler-proxy
 SPDXID: SPDXRef-4e325d51aae40b74
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -812,7 +812,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: openssh-client
 SPDXID: SPDXRef-54ef2447ecb0be04
-PackageVersion: 1:8.2p1-4ubuntu0.5
+PackageVersion: 1: 8.2p1-4ubuntu0.5
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -835,18 +835,18 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-resolver-dns-native-macos
+##### Package: io.netty: netty-resolver-dns-native-macos
 
-PackageName: io.netty:netty-resolver-dns-native-macos
+PackageName: io.netty: netty-resolver-dns-native-macos
 SPDXID: SPDXRef-58d693909931f9db
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-common
+##### Package: io.netty: netty-common
 
-PackageName: io.netty:netty-common
+PackageName: io.netty: netty-common
 SPDXID: SPDXRef-59172c222549486c
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -873,7 +873,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: org.apache.httpcomponents.client5:httpclient5
 
-PackageName: org.apache.httpcomponents.client5:httpclient5
+PackageName: org.apache.httpcomponents.client5: httpclient5
 SPDXID: SPDXRef-5aff3db10d4f405
 PackageVersion: 5.1.3
 FilesAnalyzed: false
@@ -902,7 +902,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libpam-cap
 SPDXID: SPDXRef-5c13fcbb23b282cf
-PackageVersion: 1:2.32-1
+PackageVersion: 1: 2.32-1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -952,9 +952,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: com.jayway.jsonpath:json-path
+##### Package: com.jayway.jsonpath: json-path
 
-PackageName: com.jayway.jsonpath:json-path
+PackageName: com.jayway.jsonpath: json-path
 SPDXID: SPDXRef-5dde937c7c0bb0af
 PackageVersion: 2.7.0
 FilesAnalyzed: false
@@ -979,9 +979,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-transport-native-unix-common
+##### Package: io.netty: netty-transport-native-unix-common
 
-PackageName: io.netty:netty-transport-native-unix-common
+PackageName: io.netty: netty-transport-native-unix-common
 SPDXID: SPDXRef-602abbcea49c1236
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -1037,7 +1037,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libmagickwand-6.q16-6
 SPDXID: SPDXRef-63f698936c40ae04
-PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+PackageVersion: 8: 6.9.10.23+dfsg-2.1ubuntu11.4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1060,18 +1060,18 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: com.fasterxml.jackson.core:jackson-annotations
+##### Package: com.fasterxml.jackson.core: jackson-annotations
 
-PackageName: com.fasterxml.jackson.core:jackson-annotations
+PackageName: com.fasterxml.jackson.core: jackson-annotations
 SPDXID: SPDXRef-65383c5efa325666
 PackageVersion: 2.13.3
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: net.minidev:accessors-smart
+##### Package: net.minidev: accessors-smart
 
-PackageName: net.minidev:accessors-smart
+PackageName: net.minidev: accessors-smart
 SPDXID: SPDXRef-665c3844e335e49f
 PackageVersion: 2.4.7
 FilesAnalyzed: false
@@ -1082,7 +1082,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: diffutils
 SPDXID: SPDXRef-6762df705d96364b
-PackageVersion: 1:3.7-3
+PackageVersion: 1: 3.7-3
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1118,7 +1118,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: bsdutils
 SPDXID: SPDXRef-6a525f68ba29efaf
-PackageVersion: 1:2.34-0.1ubuntu9.1
+PackageVersion: 1: 2.34-0.1ubuntu9.1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1132,9 +1132,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.apache.httpcomponents.core5:httpcore5-h2
+##### Package: org.apache.httpcomponents.core5: httpcore5-h2
 
-PackageName: org.apache.httpcomponents.core5:httpcore5-h2
+PackageName: org.apache.httpcomponents.core5: httpcore5-h2
 SPDXID: SPDXRef-6b24a83bcdc71310
 PackageVersion: 5.1.3
 FilesAnalyzed: false
@@ -1186,9 +1186,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: info.picocli:picocli
+##### Package: info.picocli: picocli
 
-PackageName: info.picocli:picocli
+PackageName: info.picocli: picocli
 SPDXID: SPDXRef-6dd4b6e41632334
 PackageVersion: 4.6.3
 FilesAnalyzed: false
@@ -1208,7 +1208,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: imagemagick-6.q16
 SPDXID: SPDXRef-6fc214f75aefa496
-PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+PackageVersion: 8: 6.9.10.23+dfsg-2.1ubuntu11.4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1240,9 +1240,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: com.fasterxml.jackson.core:jackson-core
+##### Package: com.fasterxml.jackson.core: jackson-core
 
-PackageName: com.fasterxml.jackson.core:jackson-core
+PackageName: com.fasterxml.jackson.core: jackson-core
 SPDXID: SPDXRef-73924450e5d98b2
 PackageVersion: 2.13.3
 FilesAnalyzed: false
@@ -1361,7 +1361,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libcrypt1
 SPDXID: SPDXRef-7c1f89bcfdf386f5
-PackageVersion: 1:4.4.10-10ubuntu4
+PackageVersion: 1: 4.4.10-10ubuntu4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1375,9 +1375,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-codec-dns
+##### Package: io.netty: netty-codec-dns
 
-PackageName: io.netty:netty-codec-dns
+PackageName: io.netty: netty-codec-dns
 SPDXID: SPDXRef-7dae578e59c0e68c
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -1406,7 +1406,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libgmp10
 SPDXID: SPDXRef-825398a4f60b6832
-PackageVersion: 2:6.2.0+dfsg-4
+PackageVersion: 2: 6.2.0+dfsg-4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1442,7 +1442,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libmagic-mgc
 SPDXID: SPDXRef-8613b1194bf737a3
-PackageVersion: 1:5.38-4
+PackageVersion: 1: 5.38-4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1465,9 +1465,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-codec
+##### Package: io.netty: netty-codec
 
-PackageName: io.netty:netty-codec
+PackageName: io.netty: netty-codec
 SPDXID: SPDXRef-87056b9d328fd650
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -1496,7 +1496,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: passwd
 SPDXID: SPDXRef-87f8123e51a638b5
-PackageVersion: 1:4.8.1-1ubuntu5.20.04.1
+PackageVersion: 1: 4.8.1-1ubuntu5.20.04.1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1505,7 +1505,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libxau6
 SPDXID: SPDXRef-8806c02df279e3df
-PackageVersion: 1:1.0.9-0ubuntu1
+PackageVersion: 1: 1.0.9-0ubuntu1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1523,7 +1523,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libattr1
 SPDXID: SPDXRef-88bb9e4fb78b870c
-PackageVersion: 1:2.4.48-5
+PackageVersion: 1: 2.4.48-5
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1546,9 +1546,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.jctools:jctools-core
+##### Package: org.jctools: jctools-core
 
-PackageName: org.jctools:jctools-core
+PackageName: org.jctools: jctools-core
 SPDXID: SPDXRef-8b118b004b4d517
 PackageVersion: 3.1.0
 FilesAnalyzed: false
@@ -1649,7 +1649,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: zlib1g
 SPDXID: SPDXRef-9094e3b0686bf8ab
-PackageVersion: 1:1.2.11.dfsg-2ubuntu1.2
+PackageVersion: 1: 1.2.11.dfsg-2ubuntu1.2
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1658,7 +1658,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libpcre3
 SPDXID: SPDXRef-90ed2c3a615f9147
-PackageVersion: 2:8.39-12build1
+PackageVersion: 2: 8.39-12build1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1712,7 +1712,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libx11-data
 SPDXID: SPDXRef-956577b58315c6e1
-PackageVersion: 2:1.6.9-2ubuntu1.2
+PackageVersion: 2: 1.6.9-2ubuntu1.2
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1730,7 +1730,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libmagickcore-6.q16-6-extra
 SPDXID: SPDXRef-96acca9e53694b6f
-PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+PackageVersion: 8: 6.9.10.23+dfsg-2.1ubuntu11.4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1748,7 +1748,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libmagic1
 SPDXID: SPDXRef-979c3ef8fac75737
-PackageVersion: 1:5.38-4
+PackageVersion: 1: 5.38-4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1766,7 +1766,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: file
 SPDXID: SPDXRef-97c86bae72ef0b23
-PackageVersion: 1:5.38-4
+PackageVersion: 1: 5.38-4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1789,9 +1789,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.apache.commons:commons-lang3
+##### Package: org.apache.commons: commons-lang3
 
-PackageName: org.apache.commons:commons-lang3
+PackageName: org.apache.commons: commons-lang3
 SPDXID: SPDXRef-98b2ea2d8284132b
 PackageVersion: 3.8.1
 FilesAnalyzed: false
@@ -1802,7 +1802,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: netpbm
 SPDXID: SPDXRef-99d521a7f000b153
-PackageVersion: 2:10.0-15.3build1
+PackageVersion: 2: 10.0-15.3build1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1816,9 +1816,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.projectreactor.netty:reactor-netty-core
+##### Package: io.projectreactor.netty: reactor-netty-core
 
-PackageName: io.projectreactor.netty:reactor-netty-core
+PackageName: io.projectreactor.netty: reactor-netty-core
 SPDXID: SPDXRef-9ad86fcb443a8b33
 PackageVersion: 1.0.19
 FilesAnalyzed: false
@@ -1834,9 +1834,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+##### Package: com.fasterxml.jackson.datatype: jackson-datatype-jsr310
 
-PackageName: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+PackageName: com.fasterxml.jackson.datatype: jackson-datatype-jsr310
 SPDXID: SPDXRef-9c0eb8b50eca423f
 PackageVersion: 2.13.3
 FilesAnalyzed: false
@@ -1883,7 +1883,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: imagemagick-6-common
 SPDXID: SPDXRef-9d6802733d73a4fa
-PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+PackageVersion: 8: 6.9.10.23+dfsg-2.1ubuntu11.4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -1901,7 +1901,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libxmuu1
 SPDXID: SPDXRef-a096fa0f956f3088
-PackageVersion: 2:1.1.3-0ubuntu1
+PackageVersion: 2: 1.1.3-0ubuntu1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2018,7 +2018,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: procps
 SPDXID: SPDXRef-acadd73c012028
-PackageVersion: 2:3.3.16-1ubuntu2.3
+PackageVersion: 2: 3.3.16-1ubuntu2.3
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2059,9 +2059,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-codec-http2
+##### Package: io.netty: netty-codec-http2
 
-PackageName: io.netty:netty-codec-http2
+PackageName: io.netty: netty-codec-http2
 SPDXID: SPDXRef-aebbd34f84761bd4
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -2162,7 +2162,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: git-man
 SPDXID: SPDXRef-b6779dc03bdb0f21
-PackageVersion: 1:2.25.1-1ubuntu3.4
+PackageVersion: 1: 2.25.1-1ubuntu3.4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2306,7 +2306,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libx11-6
 SPDXID: SPDXRef-c22b180de57cce79
-PackageVersion: 2:1.6.9-2ubuntu1.2
+PackageVersion: 2: 1.6.9-2ubuntu1.2
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2360,7 +2360,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libaudit1
 SPDXID: SPDXRef-c47ddbd2eb4ca2db
-PackageVersion: 1:2.8.5-2ubuntu6
+PackageVersion: 1: 2.8.5-2ubuntu6
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2378,7 +2378,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: iputils-ping
 SPDXID: SPDXRef-c57a70bfa075b76a
-PackageVersion: 3:20190709-3
+PackageVersion: 3: 20190709-3
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2394,7 +2394,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: org.apache.httpcomponents.core5:httpcore5
 
-PackageName: org.apache.httpcomponents.core5:httpcore5
+PackageName: org.apache.httpcomponents.core5: httpcore5
 SPDXID: SPDXRef-c5a6e1c5960af886
 PackageVersion: 5.1.3
 FilesAnalyzed: false
@@ -2432,7 +2432,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libnetpbm10
 SPDXID: SPDXRef-c7bc166d7cfe972f
-PackageVersion: 2:10.0-15.3build1
+PackageVersion: 2: 10.0-15.3build1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2446,9 +2446,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.apache.maven:maven-artifact
+##### Package: org.apache.maven: maven-artifact
 
-PackageName: org.apache.maven:maven-artifact
+PackageName: org.apache.maven: maven-artifact
 SPDXID: SPDXRef-c9db7f45adf463e4
 PackageVersion: 3.8.5
 FilesAnalyzed: false
@@ -2473,9 +2473,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.reactivestreams:reactive-streams
+##### Package: org.reactivestreams: reactive-streams
 
-PackageName: org.reactivestreams:reactive-streams
+PackageName: org.reactivestreams: reactive-streams
 SPDXID: SPDXRef-cc652e08cf555ccb
 PackageVersion: 1.0.3
 FilesAnalyzed: false
@@ -2504,7 +2504,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libxext6
 SPDXID: SPDXRef-cd7dc2ce9f301437
-PackageVersion: 2:1.3.4-0ubuntu1
+PackageVersion: 2: 1.3.4-0ubuntu1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2554,9 +2554,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: com.fasterxml.jackson.core:jackson-databind
+##### Package: com.fasterxml.jackson.core: jackson-databind
 
-PackageName: com.fasterxml.jackson.core:jackson-databind
+PackageName: com.fasterxml.jackson.core: jackson-databind
 SPDXID: SPDXRef-d1522cc5d6860293
 PackageVersion: 2.13.3
 FilesAnalyzed: false
@@ -2635,9 +2635,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-buffer
+##### Package: io.netty: netty-buffer
 
-PackageName: io.netty:netty-buffer
+PackageName: io.netty: netty-buffer
 SPDXID: SPDXRef-d98f34ef29a7bec9
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -2711,7 +2711,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libxdmcp6
 SPDXID: SPDXRef-df313b554b231b5a
-PackageVersion: 1:1.1.3-0ubuntu1
+PackageVersion: 1: 1.1.3-0ubuntu1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2720,7 +2720,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: gsfonts
 SPDXID: SPDXRef-df9ef89720d415e
-PackageVersion: 1:8.11+urwcyr1.0.7~pre44-4.4
+PackageVersion: 1: 8.11+urwcyr1.0.7~pre44-4.4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2745,7 +2745,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: io.netty:netty-codec-http
 
-PackageName: io.netty:netty-codec-http
+PackageName: io.netty: netty-codec-http
 SPDXID: SPDXRef-e415802735c67123
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -2846,14 +2846,14 @@ PackageLicenseDeclared: NONE
 
 PackageName: libmagickcore-6.q16-6
 SPDXID: SPDXRef-ee487d93f0fd1c0e
-PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+PackageVersion: 8: 6.9.10.23+dfsg-2.1ubuntu11.4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-codec-socks
+##### Package: io.netty: netty-codec-socks
 
-PackageName: io.netty:netty-codec-socks
+PackageName: io.netty: netty-codec-socks
 SPDXID: SPDXRef-eec390b3a32fde08
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -2936,14 +2936,14 @@ PackageLicenseDeclared: NONE
 
 PackageName: git
 SPDXID: SPDXRef-f6060d4977926a3d
-PackageVersion: 1:2.25.1-1ubuntu3.4
+PackageVersion: 1: 2.25.1-1ubuntu3.4
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.yaml:snakeyaml
+##### Package: org.yaml: snakeyaml
 
-PackageName: org.yaml:snakeyaml
+PackageName: org.yaml: snakeyaml
 SPDXID: SPDXRef-f610c1cdde03ace0
 PackageVersion: 1.30
 FilesAnalyzed: false
@@ -2972,7 +2972,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libcap2-bin
 SPDXID: SPDXRef-f8e02b730bf45417
-PackageVersion: 1:2.32-1
+PackageVersion: 1: 2.32-1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
@@ -2990,7 +2990,7 @@ PackageLicenseDeclared: NONE
 
 PackageName: libxrender1
 SPDXID: SPDXRef-fa01ba4abb669dab
-PackageVersion: 1:0.9.10-1
+PackageVersion: 1: 0.9.10-1
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE

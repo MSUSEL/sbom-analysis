@@ -1,11 +1,11 @@
 SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
-DocumentName: itzg/minecraft-server:java8
-DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/itzg/minecraft-server:java8-f79432dd-32c2-44ed-b04c-7413bded7efb
+DocumentName: itzg/minecraft-server: java8
+DocumentNamespace: http: //aquasecurity.github.io/trivy/container_image/itzg/minecraft-server:java8-f79432dd-32c2-44ed-b04c-7413bded7efb
 Creator: Organization: aquasecurity
 Creator: Tool: trivy
-Created: 2022-07-01T17:05:15.2420958Z
+Created: 2022-07-01T17:05: 15.2420958Z
 
 ##### Package: libxrender
 
@@ -16,9 +16,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: custom
 PackageLicenseDeclared: custom
 
-##### Package: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+##### Package: com.fasterxml.jackson.dataformat: jackson-dataformat-yaml
 
-PackageName: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+PackageName: com.fasterxml.jackson.dataformat: jackson-dataformat-yaml
 SPDXID: SPDXRef-10e35d45a60e2c8e
 PackageVersion: 2.13.3
 FilesAnalyzed: false
@@ -61,18 +61,18 @@ FilesAnalyzed: false
 PackageLicenseConcluded: MIT
 PackageLicenseDeclared: MIT
 
-##### Package: io.netty:netty-buffer
+##### Package: io.netty: netty-buffer
 
-PackageName: io.netty:netty-buffer
+PackageName: io.netty: netty-buffer
 SPDXID: SPDXRef-164e502f3fb9ba65
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-handler-proxy
+##### Package: io.netty: netty-handler-proxy
 
-PackageName: io.netty:netty-handler-proxy
+PackageName: io.netty: netty-handler-proxy
 SPDXID: SPDXRef-16a06dc92795539
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -160,9 +160,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: LGPL-2.1-or-later
 PackageLicenseDeclared: LGPL-2.1-or-later
 
-##### Package: io.netty:netty-transport-native-unix-common
+##### Package: io.netty: netty-transport-native-unix-common
 
-PackageName: io.netty:netty-transport-native-unix-common
+PackageName: io.netty: netty-transport-native-unix-common
 SPDXID: SPDXRef-1e6ad979b05eacce
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -198,7 +198,7 @@ PackageLicenseDeclared: BSD-2-Clause
 
 ##### Package: org.apache.httpcomponents.client5:httpclient5
 
-PackageName: org.apache.httpcomponents.client5:httpclient5
+PackageName: org.apache.httpcomponents.client5: httpclient5
 SPDXID: SPDXRef-1f2a9290243f27ca
 PackageVersion: 5.1.3
 FilesAnalyzed: false
@@ -207,7 +207,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: com.fasterxml.jackson.core:jackson-core
 
-PackageName: com.fasterxml.jackson.core:jackson-core
+PackageName: com.fasterxml.jackson.core: jackson-core
 SPDXID: SPDXRef-200348dff9124062
 PackageVersion: 2.13.3
 FilesAnalyzed: false
@@ -216,7 +216,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: io.netty:netty-common
 
-PackageName: io.netty:netty-common
+PackageName: io.netty: netty-common
 SPDXID: SPDXRef-20d38310f701a24
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -250,9 +250,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.yaml:snakeyaml
+##### Package: org.yaml: snakeyaml
 
-PackageName: org.yaml:snakeyaml
+PackageName: org.yaml: snakeyaml
 SPDXID: SPDXRef-228ec56695900d1e
 PackageVersion: 1.30
 FilesAnalyzed: false
@@ -286,9 +286,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: custom ISC
 PackageLicenseDeclared: custom ISC
 
-##### Package: org.slf4j:slf4j-api
+##### Package: org.slf4j: slf4j-api
 
-PackageName: org.slf4j:slf4j-api
+PackageName: org.slf4j: slf4j-api
 SPDXID: SPDXRef-26dff74083aad344
 PackageVersion: 1.7.33
 FilesAnalyzed: false
@@ -358,9 +358,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: MIT
 PackageLicenseDeclared: MIT
 
-##### Package: org.reactivestreams:reactive-streams
+##### Package: org.reactivestreams: reactive-streams
 
-PackageName: org.reactivestreams:reactive-streams
+PackageName: org.reactivestreams: reactive-streams
 SPDXID: SPDXRef-2d6e62d902708eb2
 PackageVersion: 1.0.3
 FilesAnalyzed: false
@@ -448,9 +448,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-transport
+##### Package: io.netty: netty-transport
 
-PackageName: io.netty:netty-transport
+PackageName: io.netty: netty-transport
 SPDXID: SPDXRef-389a164a3486f807
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -502,18 +502,18 @@ FilesAnalyzed: false
 PackageLicenseConcluded: GPL-3.0-or-later
 PackageLicenseDeclared: GPL-3.0-or-later
 
-##### Package: info.picocli:picocli
+##### Package: info.picocli: picocli
 
-PackageName: info.picocli:picocli
+PackageName: info.picocli: picocli
 SPDXID: SPDXRef-3db63851f997ccac
 PackageVersion: 4.6.3
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-codec-socks
+##### Package: io.netty: netty-codec-socks
 
-PackageName: io.netty:netty-codec-socks
+PackageName: io.netty: netty-codec-socks
 SPDXID: SPDXRef-3e0565a55b226741
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -592,9 +592,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-resolver-dns
+##### Package: io.netty: netty-resolver-dns
 
-PackageName: io.netty:netty-resolver-dns
+PackageName: io.netty: netty-resolver-dns
 SPDXID: SPDXRef-47106689faea8554
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -639,7 +639,7 @@ PackageLicenseDeclared: GPL-2.0-or-later
 
 ##### Package: org.apache.httpcomponents.core5:httpcore5
 
-PackageName: org.apache.httpcomponents.core5:httpcore5
+PackageName: org.apache.httpcomponents.core5: httpcore5
 SPDXID: SPDXRef-4c42604fe7a68178
 PackageVersion: 5.1.3
 FilesAnalyzed: false
@@ -655,9 +655,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: OpenSSL
 PackageLicenseDeclared: OpenSSL
 
-##### Package: io.netty:netty-transport-native-epoll
+##### Package: io.netty: netty-transport-native-epoll
 
-PackageName: io.netty:netty-transport-native-epoll
+PackageName: io.netty: netty-transport-native-epoll
 SPDXID: SPDXRef-4e6f21271e84ee06
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -837,7 +837,7 @@ PackageLicenseDeclared: LGPL-2.1-only
 
 ##### Package: net.minidev:accessors-smart
 
-PackageName: net.minidev:accessors-smart
+PackageName: net.minidev: accessors-smart
 SPDXID: SPDXRef-62bc86e42b45e9a4
 PackageVersion: 2.4.7
 FilesAnalyzed: false
@@ -853,9 +853,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: GPL-2.0
 PackageLicenseDeclared: GPL-2.0
 
-##### Package: ch.qos.logback:logback-classic
+##### Package: ch.qos.logback: logback-classic
 
-PackageName: ch.qos.logback:logback-classic
+PackageName: ch.qos.logback: logback-classic
 SPDXID: SPDXRef-649790e9d4c9d9ae
 PackageVersion: 1.2.11
 FilesAnalyzed: false
@@ -952,9 +952,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-codec-http2
+##### Package: io.netty: netty-codec-http2
 
-PackageName: io.netty:netty-codec-http2
+PackageName: io.netty: netty-codec-http2
 SPDXID: SPDXRef-72b47a56fd85de26
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -979,9 +979,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: GPL-2.0-or-later LGPL-2.0 BSD-3-Clause MIT
 PackageLicenseDeclared: GPL-2.0-or-later LGPL-2.0 BSD-3-Clause MIT
 
-##### Package: io.netty:netty-resolver-dns-native-macos
+##### Package: io.netty: netty-resolver-dns-native-macos
 
-PackageName: io.netty:netty-resolver-dns-native-macos
+PackageName: io.netty: netty-resolver-dns-native-macos
 SPDXID: SPDXRef-77c805b732e598f7
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -1015,9 +1015,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: LGPL-2.1+
 PackageLicenseDeclared: LGPL-2.1+
 
-##### Package: io.netty:netty-codec-http
+##### Package: io.netty: netty-codec-http
 
-PackageName: io.netty:netty-codec-http
+PackageName: io.netty: netty-codec-http
 SPDXID: SPDXRef-8041c60daf8eb83d
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -1039,8 +1039,8 @@ PackageName: libx11
 SPDXID: SPDXRef-8106047d6f6c6dca
 PackageVersion: 1.6.7-r0
 FilesAnalyzed: false
-PackageLicenseConcluded: custom:XFREE86
-PackageLicenseDeclared: custom:XFREE86
+PackageLicenseConcluded: custom: XFREE86
+PackageLicenseDeclared: custom: XFREE86
 
 ##### Package: linux-pam
 
@@ -1087,27 +1087,27 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.jctools:jctools-core
+##### Package: org.jctools: jctools-core
 
-PackageName: org.jctools:jctools-core
+PackageName: org.jctools: jctools-core
 SPDXID: SPDXRef-8743e67a2b21eed
 PackageVersion: 3.1.0
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-codec-dns
+##### Package: io.netty: netty-codec-dns
 
-PackageName: io.netty:netty-codec-dns
+PackageName: io.netty: netty-codec-dns
 SPDXID: SPDXRef-877d23de879f7b07
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-codec
+##### Package: io.netty: netty-codec
 
-PackageName: io.netty:netty-codec
+PackageName: io.netty: netty-codec
 SPDXID: SPDXRef-883cac689e9b695a
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -1123,9 +1123,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: com.fasterxml.jackson.core:jackson-databind
+##### Package: com.fasterxml.jackson.core: jackson-databind
 
-PackageName: com.fasterxml.jackson.core:jackson-databind
+PackageName: com.fasterxml.jackson.core: jackson-databind
 SPDXID: SPDXRef-8c743c1debd80d32
 PackageVersion: 2.13.3
 FilesAnalyzed: false
@@ -1159,27 +1159,27 @@ FilesAnalyzed: false
 PackageLicenseConcluded: GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 PackageLicenseDeclared: GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 
-##### Package: org.apache.maven:maven-artifact
+##### Package: org.apache.maven: maven-artifact
 
-PackageName: org.apache.maven:maven-artifact
+PackageName: org.apache.maven: maven-artifact
 SPDXID: SPDXRef-960ed01c21197022
 PackageVersion: 3.8.5
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-resolver
+##### Package: io.netty: netty-resolver
 
-PackageName: io.netty:netty-resolver
+PackageName: io.netty: netty-resolver
 SPDXID: SPDXRef-97d4ba4429716fa9
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.ow2.asm:asm
+##### Package: org.ow2.asm: asm
 
-PackageName: org.ow2.asm:asm
+PackageName: org.ow2.asm: asm
 SPDXID: SPDXRef-9855d24c06643074
 PackageVersion: 9.1
 FilesAnalyzed: false
@@ -1303,9 +1303,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.codehaus.plexus:plexus-utils
+##### Package: org.codehaus.plexus: plexus-utils
 
-PackageName: org.codehaus.plexus:plexus-utils
+PackageName: org.codehaus.plexus: plexus-utils
 SPDXID: SPDXRef-a644503de876fb40
 PackageVersion: 3.3.0
 FilesAnalyzed: false
@@ -1386,7 +1386,7 @@ PackageLicenseDeclared: LGPL-2.0-or-later MPL-1.1
 
 ##### Package: com.fasterxml.jackson.core:jackson-annotations
 
-PackageName: com.fasterxml.jackson.core:jackson-annotations
+PackageName: com.fasterxml.jackson.core: jackson-annotations
 SPDXID: SPDXRef-ad209a6a587117fb
 PackageVersion: 2.13.3
 FilesAnalyzed: false
@@ -1440,7 +1440,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: io.projectreactor:reactor-core
 
-PackageName: io.projectreactor:reactor-core
+PackageName: io.projectreactor: reactor-core
 SPDXID: SPDXRef-b9ab3860eb85547c
 PackageVersion: 3.4.18
 FilesAnalyzed: false
@@ -1528,18 +1528,18 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+##### Package: com.fasterxml.jackson.datatype: jackson-datatype-jsr310
 
-PackageName: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+PackageName: com.fasterxml.jackson.datatype: jackson-datatype-jsr310
 SPDXID: SPDXRef-c6f35e99b10ac30c
 PackageVersion: 2.13.3
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: io.netty:netty-handler
+##### Package: io.netty: netty-handler
 
-PackageName: io.netty:netty-handler
+PackageName: io.netty: netty-handler
 SPDXID: SPDXRef-c7d54a9c75e7e10f
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -1555,9 +1555,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.apache.commons:commons-lang3
+##### Package: org.apache.commons: commons-lang3
 
-PackageName: org.apache.commons:commons-lang3
+PackageName: org.apache.commons: commons-lang3
 SPDXID: SPDXRef-c894f6c54d1e1003
 PackageVersion: 3.8.1
 FilesAnalyzed: false
@@ -1573,9 +1573,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: custom
 PackageLicenseDeclared: custom
 
-##### Package: commons-codec:commons-codec
+##### Package: commons-codec: commons-codec
 
-PackageName: commons-codec:commons-codec
+PackageName: commons-codec: commons-codec
 SPDXID: SPDXRef-cb3305af4419d80c
 PackageVersion: 1.15
 FilesAnalyzed: false
@@ -1665,7 +1665,7 @@ PackageLicenseDeclared: GPL-2.0
 
 ##### Package: io.netty:netty-resolver-dns-classes-macos
 
-PackageName: io.netty:netty-resolver-dns-classes-macos
+PackageName: io.netty: netty-resolver-dns-classes-macos
 SPDXID: SPDXRef-d4f3479c8f97a800
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false
@@ -1681,18 +1681,18 @@ FilesAnalyzed: false
 PackageLicenseConcluded: MPL-2.0 GPL-2.0-or-later
 PackageLicenseDeclared: MPL-2.0 GPL-2.0-or-later
 
-##### Package: ch.qos.logback:logback-core
+##### Package: ch.qos.logback: logback-core
 
-PackageName: ch.qos.logback:logback-core
+PackageName: ch.qos.logback: logback-core
 SPDXID: SPDXRef-d708a9f7854f9e7b
 PackageVersion: 1.2.11
 FilesAnalyzed: false
 PackageLicenseConcluded: NONE
 PackageLicenseDeclared: NONE
 
-##### Package: org.apache.httpcomponents.core5:httpcore5-h2
+##### Package: org.apache.httpcomponents.core5: httpcore5-h2
 
-PackageName: org.apache.httpcomponents.core5:httpcore5-h2
+PackageName: org.apache.httpcomponents.core5: httpcore5-h2
 SPDXID: SPDXRef-d80077e45aa3938a
 PackageVersion: 5.1.3
 FilesAnalyzed: false
@@ -1708,9 +1708,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: GPL
 PackageLicenseDeclared: GPL
 
-##### Package: io.projectreactor.netty:reactor-netty-core
+##### Package: io.projectreactor.netty: reactor-netty-core
 
-PackageName: io.projectreactor.netty:reactor-netty-core
+PackageName: io.projectreactor.netty: reactor-netty-core
 SPDXID: SPDXRef-dac531d48707e6d
 PackageVersion: 1.0.19
 FilesAnalyzed: false
@@ -1816,9 +1816,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: custom
 PackageLicenseDeclared: custom
 
-##### Package: io.projectreactor.netty:reactor-netty-http
+##### Package: io.projectreactor.netty: reactor-netty-http
 
-PackageName: io.projectreactor.netty:reactor-netty-http
+PackageName: io.projectreactor.netty: reactor-netty-http
 SPDXID: SPDXRef-e791b6d3bbbe4fb6
 PackageVersion: 1.0.19
 FilesAnalyzed: false
@@ -1906,9 +1906,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: MIT
 PackageLicenseDeclared: MIT
 
-##### Package: com.jayway.jsonpath:json-path
+##### Package: com.jayway.jsonpath: json-path
 
-PackageName: com.jayway.jsonpath:json-path
+PackageName: com.jayway.jsonpath: json-path
 SPDXID: SPDXRef-f65f003368f1d00e
 PackageVersion: 2.7.0
 FilesAnalyzed: false
@@ -1933,9 +1933,9 @@ FilesAnalyzed: false
 PackageLicenseConcluded: LGPL-2.0+
 PackageLicenseDeclared: LGPL-2.0+
 
-##### Package: net.minidev:json-smart
+##### Package: net.minidev: json-smart
 
-PackageName: net.minidev:json-smart
+PackageName: net.minidev: json-smart
 SPDXID: SPDXRef-f82505cb435d16bb
 PackageVersion: 2.4.7
 FilesAnalyzed: false
@@ -1962,7 +1962,7 @@ PackageLicenseDeclared: NONE
 
 ##### Package: io.netty:netty-transport-classes-epoll
 
-PackageName: io.netty:netty-transport-classes-epoll
+PackageName: io.netty: netty-transport-classes-epoll
 SPDXID: SPDXRef-f9c8222643fd3b24
 PackageVersion: 4.1.77.Final
 FilesAnalyzed: false

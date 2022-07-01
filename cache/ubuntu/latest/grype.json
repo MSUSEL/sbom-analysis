@@ -1,2518 +1,2518 @@
 {
- "matches": [
-  {
-   "vulnerability": {
-    "id": "CVE-2013-4235",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235",
-    "namespace": "ubuntu:22.04",
-    "severity": "Low",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
+  "matches": [
+    {
+      "vulnerability": {
+        "id": "CVE-2013-4235",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235",
+        "namespace": "ubuntu:22.04",
+        "severity": "Low",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2013-4235",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2013-4235",
+          "namespace": "nvd",
+          "severity": "Medium",
+          "urls": [
+            "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+            "https://access.redhat.com/security/cve/cve-2013-4235",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+          ],
+          "description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
+              "metrics": {
+                "baseScore": 3.3,
+                "exploitabilityScore": 3.4,
+                "impactScore": 4.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "metrics": {
+                "baseScore": 4.7,
+                "exploitabilityScore": 1,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "shadow",
+              "version": "1:4.8.1-2ubuntu2"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "login",
+        "version": "1:4.8.1-2ubuntu2",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/login/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/login.conffiles",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/login.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GPL-2"
+        ],
+        "cpes": [
+          "cpe:2.3:a:login:login:1:4.8.1-2ubuntu2:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/login@1:4.8.1-2ubuntu2?arch=amd64&upstream=shadow&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "shadow"
+          }
+        ]
+      }
     },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
     {
-     "id": "CVE-2013-4235",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2013-4235",
-     "namespace": "nvd",
-     "severity": "Medium",
-     "urls": [
-      "https://security-tracker.debian.org/tracker/CVE-2013-4235",
-      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
-      "https://access.redhat.com/security/cve/cve-2013-4235",
-      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
-     ],
-     "description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
-       "metrics": {
-        "baseScore": 3.3,
-        "exploitabilityScore": 3.4,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
+      "vulnerability": {
+        "id": "CVE-2013-4235",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235",
+        "namespace": "ubuntu:22.04",
+        "severity": "Low",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
       },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
-       "metrics": {
-        "baseScore": 4.7,
-        "exploitabilityScore": 1,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2013-4235",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2013-4235",
+          "namespace": "nvd",
+          "severity": "Medium",
+          "urls": [
+            "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+            "https://access.redhat.com/security/cve/cve-2013-4235",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+          ],
+          "description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
+              "metrics": {
+                "baseScore": 3.3,
+                "exploitabilityScore": 3.4,
+                "impactScore": 4.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "metrics": {
+                "baseScore": 4.7,
+                "exploitabilityScore": 1,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "shadow",
+              "version": "1:4.8.1-2ubuntu2"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "passwd",
+        "version": "1:4.8.1-2ubuntu2",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/passwd/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/passwd.conffiles",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/passwd.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GPL-2"
+        ],
+        "cpes": [
+          "cpe:2.3:a:passwd:passwd:1:4.8.1-2ubuntu2:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/passwd@1:4.8.1-2ubuntu2?arch=amd64&upstream=shadow&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "shadow"
+          }
+        ]
       }
-     ]
-    }
-   ],
-   "matchDetails": [
+    },
     {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
+      "vulnerability": {
+        "id": "CVE-2016-20013",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
+        "namespace": "ubuntu:22.04",
+        "severity": "Negligible",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
       },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "shadow",
-       "version": "1:4.8.1-2ubuntu2"
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2016-20013",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://twitter.com/solardiz/status/795601240151457793",
+            "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+            "https://akkadia.org/drepper/SHA-crypt.txt"
+          ],
+          "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "metrics": {
+                "baseScore": 5,
+                "exploitabilityScore": 10,
+                "impactScore": 2.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "glibc",
+              "version": "2.35-0ubuntu3"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libc-bin",
+        "version": "2.35-0ubuntu3",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libc-bin/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libc-bin.conffiles",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libc-bin.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GFDL-1.3",
+          "GPL-2",
+          "LGPL-2.1"
+        ],
+        "cpes": [
+          "cpe:2.3:a:libc-bin:libc-bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libc-bin:libc_bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libc_bin:libc-bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libc_bin:libc_bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libc:libc-bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libc:libc_bin:2.35-0ubuntu3:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "glibc"
+          }
+        ]
       }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2016-20013",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
+        "namespace": "ubuntu:22.04",
+        "severity": "Negligible",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2016-20013",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://twitter.com/solardiz/status/795601240151457793",
+            "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+            "https://akkadia.org/drepper/SHA-crypt.txt"
+          ],
+          "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "metrics": {
+                "baseScore": 5,
+                "exploitabilityScore": 10,
+                "impactScore": 2.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "glibc",
+              "version": "2.35-0ubuntu3"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libc6",
+        "version": "2.35-0ubuntu3",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libc6/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libc6:amd64.conffiles",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libc6:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GFDL-1.3",
+          "GPL-2",
+          "LGPL-2.1"
+        ],
+        "cpes": [
+          "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "glibc"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2016-2781",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781",
+        "namespace": "ubuntu:22.04",
+        "severity": "Low",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2016-2781",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+          "namespace": "nvd",
+          "severity": "Medium",
+          "urls": [
+            "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+          ],
+          "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "metrics": {
+                "baseScore": 2.1,
+                "exploitabilityScore": 3.9,
+                "impactScore": 2.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.0",
+              "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+              "metrics": {
+                "baseScore": 6.5,
+                "exploitabilityScore": 2,
+                "impactScore": 4
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "coreutils",
+              "version": "8.32-4.1ubuntu1"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "coreutils",
+        "version": "8.32-4.1ubuntu1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/coreutils/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/coreutils.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GPL-3"
+        ],
+        "cpes": [
+          "cpe:2.3:a:coreutils:coreutils:8.32-4.1ubuntu1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1?arch=amd64&distro=ubuntu-22.04",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2017-11164",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164",
+        "namespace": "ubuntu:22.04",
+        "severity": "Negligible",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2017-11164",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "http://openwall.com/lists/oss-security/2017/07/11/3",
+            "http://www.securityfocus.com/bid/99575",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+          ],
+          "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 10,
+                "impactScore": 6.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.0",
+              "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "pcre3",
+              "version": "2:8.39-13ubuntu0.22.04.1"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libpcre3",
+        "version": "2:8.39-13ubuntu0.22.04.1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libpcre3/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libpcre3:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [],
+        "cpes": [
+          "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13ubuntu0.22.04.1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1?arch=amd64&upstream=pcre3&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "pcre3"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2019-9923",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-9923",
+        "namespace": "ubuntu:22.04",
+        "severity": "Low",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-9923"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2019-9923",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-9923",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://bugs.launchpad.net/ubuntu/+source/tar/+bug/1810241",
+            "http://savannah.gnu.org/bugs/?55369",
+            "http://git.savannah.gnu.org/cgit/tar.git/commit/?id=cb07844454d8cc9fb21f53ace75975f91185a120",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00077.html",
+            "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E"
+          ],
+          "description": "pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "metrics": {
+                "baseScore": 5,
+                "exploitabilityScore": 10,
+                "impactScore": 2.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.0",
+              "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "tar",
+              "version": "1.34+dfsg-1build3"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "tar",
+        "version": "1.34+dfsg-1build3",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/tar/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/tar.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GPL-2",
+          "GPL-3"
+        ],
+        "cpes": [
+          "cpe:2.3:a:tar:tar:1.34+dfsg-1build3:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/tar@1.34+dfsg-1build3?arch=amd64&distro=ubuntu-22.04",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2020-16156",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-16156",
+        "namespace": "ubuntu:22.04",
+        "severity": "Medium",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-16156"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2020-16156",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-16156",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://metacpan.org/pod/distribution/CPAN/scripts/cpan",
+            "https://blog.hackeriet.no/cpan-signature-verification-vulnerabilities/",
+            "http://blogs.perl.org/users/neilb/2021/11/addressing-cpan-vulnerabilities-related-to-checksums.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SZ32AJIV4RHJMLWLU5QULGKMMIHYOMDC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SD6RYOJII7HRJ6WVORFNVTYNOFY5JDXN/"
+          ],
+          "description": "CPAN 2.28 allows Signature Verification Bypass.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "metrics": {
+                "baseScore": 6.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 6.4
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "perl",
+              "version": "5.34.0-3ubuntu1"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "perl-base",
+        "version": "5.34.0-3ubuntu1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/perl-base/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/perl-base.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "Artistic",
+          "Artistic-2",
+          "Artistic-dist",
+          "BSD-3-clause",
+          "BSD-3-clause-GENERIC",
+          "BSD-3-clause-with-weird-numbering",
+          "BSD-4-clause-POWERDOG",
+          "BZIP",
+          "DONT-CHANGE-THE-GPL",
+          "Expat",
+          "GPL-1",
+          "GPL-1+",
+          "GPL-2",
+          "GPL-2+",
+          "GPL-3+-WITH-BISON-EXCEPTION",
+          "HSIEH-BSD",
+          "HSIEH-DERIVATIVE",
+          "LGPL-2.1",
+          "REGCOMP",
+          "REGCOMP,",
+          "RRA-KEEP-THIS-NOTICE",
+          "SDBM-PUBLIC-DOMAIN",
+          "TEXT-TABS",
+          "Unicode",
+          "ZLIB"
+        ],
+        "cpes": [
+          "cpe:2.3:a:perl-base:perl-base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:perl-base:perl_base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:perl_base:perl-base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:perl_base:perl_base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:perl:perl-base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:perl:perl_base:5.34.0-3ubuntu1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1?arch=amd64&upstream=perl&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "perl"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2021-43618",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-43618",
+        "namespace": "ubuntu:22.04",
+        "severity": "Low",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-43618"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2021-43618",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-43618",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://gmplib.org/list-archives/gmp-bugs/2021-September/005077.html",
+            "https://bugs.debian.org/994405",
+            "https://gmplib.org/repo/gmp-6.2/rev/561a9c25298e",
+            "https://lists.debian.org/debian-lts-announce/2021/12/msg00001.html"
+          ],
+          "description": "GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "metrics": {
+                "baseScore": 5,
+                "exploitabilityScore": 10,
+                "impactScore": 2.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "gmp",
+              "version": "2:6.2.1+dfsg-3ubuntu1"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libgmp10",
+        "version": "2:6.2.1+dfsg-3ubuntu1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libgmp10/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libgmp10:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GPL",
+          "GPL-2",
+          "GPL-3",
+          "LGPL-3"
+        ],
+        "cpes": [
+          "cpe:2.3:a:libgmp10:libgmp10:2:6.2.1+dfsg-3ubuntu1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libgmp10@2:6.2.1+dfsg-3ubuntu1?arch=amd64&upstream=gmp&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "gmp"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-1304",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
+        "namespace": "ubuntu:22.04",
+        "severity": "Medium",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [
+            "1.46.5-2ubuntu1.1"
+          ],
+          "state": "fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-1304",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
+          ],
+          "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "metrics": {
+                "baseScore": 6.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 6.4
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "e2fsprogs",
+              "version": "1.46.5-2ubuntu1"
+            }
+          },
+          "found": {
+            "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "e2fsprogs",
+        "version": "1.46.5-2ubuntu1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/e2fsprogs/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/e2fsprogs.conffiles",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/e2fsprogs.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GPL-2",
+          "LGPL-2"
+        ],
+        "cpes": [
+          "cpe:2.3:a:e2fsprogs:e2fsprogs:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1?arch=amd64&distro=ubuntu-22.04",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-1304",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
+        "namespace": "ubuntu:22.04",
+        "severity": "Medium",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [
+            "1.46.5-2ubuntu1.1"
+          ],
+          "state": "fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-1304",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
+          ],
+          "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "metrics": {
+                "baseScore": 6.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 6.4
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "e2fsprogs",
+              "version": "1.46.5-2ubuntu1"
+            }
+          },
+          "found": {
+            "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libcom-err2",
+        "version": "1.46.5-2ubuntu1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libcom-err2/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libcom-err2:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [],
+        "cpes": [
+          "cpe:2.3:a:libcom-err2:libcom-err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libcom-err2:libcom_err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libcom_err2:libcom-err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libcom_err2:libcom_err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libcom:libcom-err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libcom:libcom_err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libcom-err2@1.46.5-2ubuntu1?arch=amd64&upstream=e2fsprogs&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "e2fsprogs"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-1304",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
+        "namespace": "ubuntu:22.04",
+        "severity": "Medium",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [
+            "1.46.5-2ubuntu1.1"
+          ],
+          "state": "fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-1304",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
+          ],
+          "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "metrics": {
+                "baseScore": 6.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 6.4
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "e2fsprogs",
+              "version": "1.46.5-2ubuntu1"
+            }
+          },
+          "found": {
+            "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libext2fs2",
+        "version": "1.46.5-2ubuntu1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libext2fs2/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libext2fs2:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GPL-2",
+          "LGPL-2"
+        ],
+        "cpes": [
+          "cpe:2.3:a:libext2fs2:libext2fs2:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1?arch=amd64&upstream=e2fsprogs&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "e2fsprogs"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-1304",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
+        "namespace": "ubuntu:22.04",
+        "severity": "Medium",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [
+            "1.46.5-2ubuntu1.1"
+          ],
+          "state": "fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-1304",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
+          ],
+          "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "metrics": {
+                "baseScore": 6.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 6.4
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "e2fsprogs",
+              "version": "1.46.5-2ubuntu1"
+            }
+          },
+          "found": {
+            "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libss2",
+        "version": "1.46.5-2ubuntu1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libss2/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libss2:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [],
+        "cpes": [
+          "cpe:2.3:a:libss2:libss2:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1?arch=amd64&upstream=e2fsprogs&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "e2fsprogs"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-1304",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
+        "namespace": "ubuntu:22.04",
+        "severity": "Medium",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [
+            "1.46.5-2ubuntu1.1"
+          ],
+          "state": "fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-1304",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
+          ],
+          "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "metrics": {
+                "baseScore": 6.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 6.4
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "e2fsprogs",
+              "version": "1.46.5-2ubuntu1"
+            }
+          },
+          "found": {
+            "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "logsave",
+        "version": "1.46.5-2ubuntu1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/logsave/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/logsave.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "GPL-2",
+          "LGPL-2"
+        ],
+        "cpes": [
+          "cpe:2.3:a:logsave:logsave:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/logsave@1.46.5-2ubuntu1?arch=amd64&upstream=e2fsprogs&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "e2fsprogs"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-1586",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1586",
+        "namespace": "ubuntu:22.04",
+        "severity": "Low",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1586"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-1586",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1586",
+          "namespace": "nvd",
+          "severity": "Critical",
+          "urls": [
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M2GLQQUEY5VFM57CFYXVIFOXN2HUZPDM/",
+            "https://github.com/PCRE2Project/pcre2/commit/50a51cb7e67268e6ad417eb07c9de9bfea5cc55a,",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2077976,",
+            "https://github.com/PCRE2Project/pcre2/commit/d4fa336fbcc388f89095b184ba6d99422cfc676c",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAX7767BCUFC7JMDGP7GOQ5GIZCAUGBB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DWNG2NS3GINO6LQYUVC4BZLUQPJ3DYHA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXINO3KKI5DICQ45E2FKD6MKVMGJLEKJ/"
+          ],
+          "description": "An out-of-bounds read vulnerability was discovered in the PCRE2 library in the compile_xclass_matchingpath() function of the pcre2_jit_compile.c file. This involves a unicode property matching issue in JIT-compiled regular expressions. The issue occurs because the character was not fully read in case-less matching within JIT.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "metrics": {
+                "baseScore": 6.4,
+                "exploitabilityScore": 10,
+                "impactScore": 4.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "metrics": {
+                "baseScore": 9.1,
+                "exploitabilityScore": 3.9,
+                "impactScore": 5.2
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "pcre2",
+              "version": "10.39-3build1"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libpcre2-8-0",
+        "version": "10.39-3build1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libpcre2-8-0/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [],
+        "cpes": [
+          "cpe:2.3:a:libpcre2-8-0:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2-8-0:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2_8_0:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2_8_0:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2-8:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2-8:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2_8:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2_8:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3build1?arch=amd64&upstream=pcre2&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "pcre2"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-1587",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1587",
+        "namespace": "ubuntu:22.04",
+        "severity": "Low",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1587"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-1587",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1587",
+          "namespace": "nvd",
+          "severity": "Critical",
+          "urls": [
+            "https://github.com/PCRE2Project/pcre2/commit/03654e751e7f0700693526b67dfcadda6b42c9d0",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M2GLQQUEY5VFM57CFYXVIFOXN2HUZPDM/",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2077983,",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAX7767BCUFC7JMDGP7GOQ5GIZCAUGBB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DWNG2NS3GINO6LQYUVC4BZLUQPJ3DYHA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXINO3KKI5DICQ45E2FKD6MKVMGJLEKJ/"
+          ],
+          "description": "An out-of-bounds read vulnerability was discovered in the PCRE2 library in the get_recurse_data_length() function of the pcre2_jit_compile.c file. This issue affects recursions in JIT-compiled regular expressions caused by duplicate data transfers.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "metrics": {
+                "baseScore": 6.4,
+                "exploitabilityScore": 10,
+                "impactScore": 4.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "metrics": {
+                "baseScore": 9.1,
+                "exploitabilityScore": 3.9,
+                "impactScore": 5.2
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "pcre2",
+              "version": "10.39-3build1"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libpcre2-8-0",
+        "version": "10.39-3build1",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libpcre2-8-0/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [],
+        "cpes": [
+          "cpe:2.3:a:libpcre2-8-0:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2-8-0:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2_8_0:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2_8_0:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2-8:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2-8:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2_8:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2_8:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:libpcre2:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3build1?arch=amd64&upstream=pcre2&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "pcre2"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-2068",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-2068",
+        "namespace": "ubuntu:22.04",
+        "severity": "Medium",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-2068"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [
+            "3.0.2-0ubuntu1.5"
+          ],
+          "state": "fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-2068",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-2068",
+          "namespace": "nvd",
+          "severity": "Critical",
+          "urls": [
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9639817dac8bbbaa64d09efad7464ccc405527c7",
+            "https://www.openssl.org/news/secadv/20220621.txt",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=7a9c027159fe9e1bbc2cd38a8a2914bff0d5abd9",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c9c35870601b4a44d86ddbf512b38df38285cfa",
+            "https://www.debian.org/security/2022/dsa-5169"
+          ],
+          "description": "In addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze).",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "metrics": {
+                "baseScore": 10,
+                "exploitabilityScore": 10,
+                "impactScore": 10
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 9.8,
+                "exploitabilityScore": 3.9,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "openssl",
+              "version": "3.0.2-0ubuntu1.2"
+            }
+          },
+          "found": {
+            "versionConstraint": "< 3.0.2-0ubuntu1.5 (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libssl3",
+        "version": "3.0.2-0ubuntu1.2",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libssl3/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "Apache-2.0",
+          "Artistic",
+          "GPL-1",
+          "GPL-1+"
+        ],
+        "cpes": [
+          "cpe:2.3:a:libssl3:libssl3:3.0.2-0ubuntu1.2:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.2?arch=amd64&upstream=openssl&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "openssl"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-29458",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+        "namespace": "ubuntu:22.04",
+        "severity": "Negligible",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-29458",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
+          ],
+          "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "metrics": {
+                "baseScore": 5.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 4.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.1,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.2
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "ncurses",
+              "version": "6.3-2"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libncurses6",
+        "version": "6.3-2",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libtinfo6/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libncurses6:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "BSD-3-clause",
+          "MIT/X11",
+          "X11"
+        ],
+        "cpes": [
+          "cpe:2.3:a:libncurses6:libncurses6:6.3-2:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libncurses6@6.3-2?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "ncurses"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-29458",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+        "namespace": "ubuntu:22.04",
+        "severity": "Negligible",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-29458",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
+          ],
+          "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "metrics": {
+                "baseScore": 5.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 4.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.1,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.2
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "ncurses",
+              "version": "6.3-2"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libncursesw6",
+        "version": "6.3-2",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libtinfo6/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libncursesw6:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "BSD-3-clause",
+          "MIT/X11",
+          "X11"
+        ],
+        "cpes": [
+          "cpe:2.3:a:libncursesw6:libncursesw6:6.3-2:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libncursesw6@6.3-2?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "ncurses"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-29458",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+        "namespace": "ubuntu:22.04",
+        "severity": "Negligible",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-29458",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
+          ],
+          "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "metrics": {
+                "baseScore": 5.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 4.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.1,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.2
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "ncurses",
+              "version": "6.3-2"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "libtinfo6",
+        "version": "6.3-2",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/libtinfo6/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/libtinfo6:amd64.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "BSD-3-clause",
+          "MIT/X11",
+          "X11"
+        ],
+        "cpes": [
+          "cpe:2.3:a:libtinfo6:libtinfo6:6.3-2:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/libtinfo6@6.3-2?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "ncurses"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-29458",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+        "namespace": "ubuntu:22.04",
+        "severity": "Negligible",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-29458",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
+          ],
+          "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "metrics": {
+                "baseScore": 5.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 4.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.1,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.2
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "ncurses",
+              "version": "6.3-2"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "ncurses-base",
+        "version": "6.3-2",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/ncurses-base/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/ncurses-base.conffiles",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/ncurses-base.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "BSD-3-clause",
+          "MIT/X11",
+          "X11"
+        ],
+        "cpes": [
+          "cpe:2.3:a:ncurses-base:ncurses-base:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses-base:ncurses_base:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses_base:ncurses-base:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses_base:ncurses_base:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses:ncurses-base:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses:ncurses_base:6.3-2:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/ncurses-base@6.3-2?arch=all&upstream=ncurses&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "ncurses"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2022-29458",
+        "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+        "namespace": "ubuntu:22.04",
+        "severity": "Negligible",
+        "urls": [
+          "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
+        ],
+        "cvss": [],
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        },
+        "advisories": []
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-29458",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+          "namespace": "nvd",
+          "severity": "High",
+          "urls": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
+          ],
+          "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "cvss": [
+            {
+              "version": "2.0",
+              "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "metrics": {
+                "baseScore": 5.8,
+                "exploitabilityScore": 8.6,
+                "impactScore": 4.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.1,
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.2
+              },
+              "vendorMetadata": {}
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-indirect-match",
+          "matcher": "dpkg-matcher",
+          "searchedBy": {
+            "distro": {
+              "type": "ubuntu",
+              "version": "22.04"
+            },
+            "namespace": "ubuntu:22.04",
+            "package": {
+              "name": "ncurses",
+              "version": "6.3-2"
+            }
+          },
+          "found": {
+            "versionConstraint": "none (deb)"
+          }
+        }
+      ],
+      "artifact": {
+        "name": "ncurses-bin",
+        "version": "6.3-2",
+        "type": "deb",
+        "locations": [
+          {
+            "path": "/usr/share/doc/ncurses-bin/copyright",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/info/ncurses-bin.md5sums",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          },
+          {
+            "path": "/var/lib/dpkg/status",
+            "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "BSD-3-clause",
+          "MIT/X11",
+          "X11"
+        ],
+        "cpes": [
+          "cpe:2.3:a:ncurses-bin:ncurses-bin:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses-bin:ncurses_bin:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses_bin:ncurses-bin:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses_bin:ncurses_bin:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses:ncurses-bin:6.3-2:*:*:*:*:*:*:*",
+          "cpe:2.3:a:ncurses:ncurses_bin:6.3-2:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:deb/ubuntu/ncurses-bin@6.3-2?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+        "upstreams": [
+          {
+            "name": "ncurses"
+          }
+        ]
+      }
     }
-   ],
-   "artifact": {
-    "name": "login",
-    "version": "1:4.8.1-2ubuntu2",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/login/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/login.conffiles",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/login.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GPL-2"
-    ],
-    "cpes": [
-     "cpe:2.3:a:login:login:1:4.8.1-2ubuntu2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/login@1:4.8.1-2ubuntu2?arch=amd64&upstream=shadow&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "shadow"
-     }
+  ],
+  "source": {
+    "type": "image",
+    "target": {
+      "userInput": "ubuntu:latest",
+      "imageID": "sha256:27941809078cc9b2802deb2b0bb6feed6c236cde01e487f200e24653533701ee",
+      "manifestDigest": "sha256:88ae13771dd35f00f29c1a424f70e854fb8b53839888b3889bbeb145cd26445c",
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "tags": [
+        "ubuntu:latest"
+      ],
+      "imageSize": 77815548,
+      "layers": [
+        {
+          "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+          "digest": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3",
+          "size": 77815548
+        }
+      ],
+      "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxNDYzLCJkaWdlc3QiOiJzaGEyNTY6Mjc5NDE4MDkwNzhjYzliMjgwMmRlYjJiMGJiNmZlZWQ2YzIzNmNkZTAxZTQ4N2YyMDBlMjQ2NTM1MzM3MDFlZSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo4MDM0MDk5MiwiZGlnZXN0Ijoic2hhMjU2OmE3OTBmOTM3YTZhZWEyNjAwOTgyZGU1NGE1ZmI5OTVjNjgxZGQ3NGYyNjk2OGQ2Yjc0Mjg2ZTA2ODM5ZTRmYjMifV19",
+      "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbImJhc2giXSwiSW1hZ2UiOiJzaGEyNTY6NzdiZTE3MGQ0Zjg5OWFjZTBlZTE1M2ZhY2JkMTk1MTExZmVhYmI0ODlkZDExY2JjZGNlMWY5NjUyZmQ1YmVmYSIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpudWxsLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOm51bGx9LCJjb250YWluZXIiOiI5ZDEwZDcxZmM4Y2M4MTgwNmQyZmQ3OTQ0M2IwY2IzZDNmYWMwN2FlZTRmZDRlMjE2NGQ4OTU5ZmQ2MjBiYTdlIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjlkMTBkNzFmYzhjYyIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJDTUQgW1wiYmFzaFwiXSJdLCJJbWFnZSI6InNoYTI1Njo3N2JlMTcwZDRmODk5YWNlMGVlMTUzZmFjYmQxOTUxMTFmZWFiYjQ4OWRkMTFjYmNkY2UxZjk2NTJmZDViZWZhIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOm51bGwsIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6e319LCJjcmVhdGVkIjoiMjAyMi0wNi0wNlQyMjoyMToyNi4zMDkyNzU5NzlaIiwiZG9ja2VyX3ZlcnNpb24iOiIyMC4xMC4xMiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIyLTA2LTA2VDIyOjIxOjI1Ljk2MTgyODM4NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6MTExNTdiMDdkZGUxMDEwN2YzZjZmMmI4OTJjODY5ZWE4Mzg2ODQ3NWQ1ODI1MTY3YjVmNDY2YTdlNDEwZWIwNSBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjItMDYtMDZUMjI6MjE6MjYuMzA5Mjc1OTc5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcImJhc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6YTc5MGY5MzdhNmFlYTI2MDA5ODJkZTU0YTVmYjk5NWM2ODFkZDc0ZjI2OTY4ZDZiNzQyODZlMDY4MzllNGZiMyJdfX0=",
+      "repoDigests": [
+        "ubuntu@sha256:b6b83d3c331794420340093eb706a6f152d9c1fa51b262d9bf34594887c2c7ac"
+      ],
+      "architecture": "amd64",
+      "os": "linux"
+    }
+  },
+  "distro": {
+    "name": "ubuntu",
+    "version": "22.04",
+    "idLike": [
+      "debian"
     ]
-   }
   },
-  {
-   "vulnerability": {
-    "id": "CVE-2013-4235",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235",
-    "namespace": "ubuntu:22.04",
-    "severity": "Low",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
+  "descriptor": {
+    "name": "grype",
+    "version": "0.38.0",
+    "configuration": {
+      "configPath": "",
+      "output": "json",
+      "file": "",
+      "distro": "",
+      "add-cpes-if-none": false,
+      "output-template-file": "",
+      "quiet": false,
+      "check-for-app-update": true,
+      "only-fixed": false,
+      "platform": "",
+      "search": {
+        "scope": "Squashed",
+        "unindexed-archives": false,
+        "indexed-archives": true
+      },
+      "ignore": null,
+      "exclude": [],
+      "db": {
+        "cache-dir": "/home/molkars/.cache/grype/db",
+        "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+        "ca-cert": "",
+        "auto-update": true,
+        "validate-by-hash-on-start": false
+      },
+      "externalSources": {
+        "enable": false,
+        "maven": {
+          "searchUpstreamBySha1": true,
+          "baseUrl": "https://search.maven.org/solrsearch/select"
+        }
+      },
+      "dev": {
+        "profile-cpu": false,
+        "profile-mem": false
+      },
+      "fail-on-severity": "",
+      "registry": {
+        "insecure-skip-tls-verify": false,
+        "insecure-use-http": false,
+        "auth": []
+      },
+      "log": {
+        "structured": false,
+        "level": "",
+        "file": ""
+      },
+      "attestation": {
+        "public-key": "",
+        "skip-verification": false
+      }
     },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2013-4235",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2013-4235",
-     "namespace": "nvd",
-     "severity": "Medium",
-     "urls": [
-      "https://security-tracker.debian.org/tracker/CVE-2013-4235",
-      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
-      "https://access.redhat.com/security/cve/cve-2013-4235",
-      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
-     ],
-     "description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
-       "metrics": {
-        "baseScore": 3.3,
-        "exploitabilityScore": 3.4,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
-       "metrics": {
-        "baseScore": 4.7,
-        "exploitabilityScore": 1,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
+    "db": {
+      "built": "2022-07-01T08:16:25Z",
+      "schemaVersion": 3,
+      "location": "/home/molkars/.cache/grype/db/3",
+      "checksum": "sha256:aee7832de2711eafdaca2af1e215fac7f5a507daa0319e5a0f5483f60de78d08",
+      "error": null
     }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "shadow",
-       "version": "1:4.8.1-2ubuntu2"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "passwd",
-    "version": "1:4.8.1-2ubuntu2",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/passwd/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/passwd.conffiles",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/passwd.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GPL-2"
-    ],
-    "cpes": [
-     "cpe:2.3:a:passwd:passwd:1:4.8.1-2ubuntu2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/passwd@1:4.8.1-2ubuntu2?arch=amd64&upstream=shadow&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "shadow"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2016-20013",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
-    "namespace": "ubuntu:22.04",
-    "severity": "Negligible",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2016-20013",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://twitter.com/solardiz/status/795601240151457793",
-      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
-      "https://akkadia.org/drepper/SHA-crypt.txt"
-     ],
-     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-       "metrics": {
-        "baseScore": 5,
-        "exploitabilityScore": 10,
-        "impactScore": 2.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "glibc",
-       "version": "2.35-0ubuntu3"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libc-bin",
-    "version": "2.35-0ubuntu3",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libc-bin/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libc-bin.conffiles",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libc-bin.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GFDL-1.3",
-     "GPL-2",
-     "LGPL-2.1"
-    ],
-    "cpes": [
-     "cpe:2.3:a:libc-bin:libc-bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libc-bin:libc_bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libc_bin:libc-bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libc_bin:libc_bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libc:libc-bin:2.35-0ubuntu3:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libc:libc_bin:2.35-0ubuntu3:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "glibc"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2016-20013",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
-    "namespace": "ubuntu:22.04",
-    "severity": "Negligible",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2016-20013",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://twitter.com/solardiz/status/795601240151457793",
-      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
-      "https://akkadia.org/drepper/SHA-crypt.txt"
-     ],
-     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-       "metrics": {
-        "baseScore": 5,
-        "exploitabilityScore": 10,
-        "impactScore": 2.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "glibc",
-       "version": "2.35-0ubuntu3"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libc6",
-    "version": "2.35-0ubuntu3",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libc6/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libc6:amd64.conffiles",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libc6:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GFDL-1.3",
-     "GPL-2",
-     "LGPL-2.1"
-    ],
-    "cpes": [
-     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "glibc"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2016-2781",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781",
-    "namespace": "ubuntu:22.04",
-    "severity": "Low",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2016-2781",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
-     "namespace": "nvd",
-     "severity": "Medium",
-     "urls": [
-      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
-      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
-      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
-     ],
-     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
-       "metrics": {
-        "baseScore": 2.1,
-        "exploitabilityScore": 3.9,
-        "impactScore": 2.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.0",
-       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
-       "metrics": {
-        "baseScore": 6.5,
-        "exploitabilityScore": 2,
-        "impactScore": 4
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "coreutils",
-       "version": "8.32-4.1ubuntu1"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "coreutils",
-    "version": "8.32-4.1ubuntu1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/coreutils/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/coreutils.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GPL-3"
-    ],
-    "cpes": [
-     "cpe:2.3:a:coreutils:coreutils:8.32-4.1ubuntu1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1?arch=amd64&distro=ubuntu-22.04",
-    "upstreams": []
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2017-11164",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164",
-    "namespace": "ubuntu:22.04",
-    "severity": "Negligible",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2017-11164",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "http://openwall.com/lists/oss-security/2017/07/11/3",
-      "http://www.securityfocus.com/bid/99575",
-      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
-     ],
-     "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-       "metrics": {
-        "baseScore": 7.8,
-        "exploitabilityScore": 10,
-        "impactScore": 6.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.0",
-       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "pcre3",
-       "version": "2:8.39-13ubuntu0.22.04.1"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libpcre3",
-    "version": "2:8.39-13ubuntu0.22.04.1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libpcre3/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libpcre3:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13ubuntu0.22.04.1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1?arch=amd64&upstream=pcre3&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "pcre3"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2019-9923",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-9923",
-    "namespace": "ubuntu:22.04",
-    "severity": "Low",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-9923"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2019-9923",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-9923",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://bugs.launchpad.net/ubuntu/+source/tar/+bug/1810241",
-      "http://savannah.gnu.org/bugs/?55369",
-      "http://git.savannah.gnu.org/cgit/tar.git/commit/?id=cb07844454d8cc9fb21f53ace75975f91185a120",
-      "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00077.html",
-      "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E"
-     ],
-     "description": "pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-       "metrics": {
-        "baseScore": 5,
-        "exploitabilityScore": 10,
-        "impactScore": 2.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.0",
-       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "tar",
-       "version": "1.34+dfsg-1build3"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "tar",
-    "version": "1.34+dfsg-1build3",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/tar/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/tar.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GPL-2",
-     "GPL-3"
-    ],
-    "cpes": [
-     "cpe:2.3:a:tar:tar:1.34+dfsg-1build3:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/tar@1.34+dfsg-1build3?arch=amd64&distro=ubuntu-22.04",
-    "upstreams": []
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2020-16156",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-16156",
-    "namespace": "ubuntu:22.04",
-    "severity": "Medium",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-16156"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2020-16156",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-16156",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://metacpan.org/pod/distribution/CPAN/scripts/cpan",
-      "https://blog.hackeriet.no/cpan-signature-verification-vulnerabilities/",
-      "http://blogs.perl.org/users/neilb/2021/11/addressing-cpan-vulnerabilities-related-to-checksums.html",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SZ32AJIV4RHJMLWLU5QULGKMMIHYOMDC/",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SD6RYOJII7HRJ6WVORFNVTYNOFY5JDXN/"
-     ],
-     "description": "CPAN 2.28 allows Signature Verification Bypass.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-       "metrics": {
-        "baseScore": 6.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 6.4
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-       "metrics": {
-        "baseScore": 7.8,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.9
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "perl",
-       "version": "5.34.0-3ubuntu1"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "perl-base",
-    "version": "5.34.0-3ubuntu1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/perl-base/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/perl-base.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "Artistic",
-     "Artistic-2",
-     "Artistic-dist",
-     "BSD-3-clause",
-     "BSD-3-clause-GENERIC",
-     "BSD-3-clause-with-weird-numbering",
-     "BSD-4-clause-POWERDOG",
-     "BZIP",
-     "DONT-CHANGE-THE-GPL",
-     "Expat",
-     "GPL-1",
-     "GPL-1+",
-     "GPL-2",
-     "GPL-2+",
-     "GPL-3+-WITH-BISON-EXCEPTION",
-     "HSIEH-BSD",
-     "HSIEH-DERIVATIVE",
-     "LGPL-2.1",
-     "REGCOMP",
-     "REGCOMP,",
-     "RRA-KEEP-THIS-NOTICE",
-     "SDBM-PUBLIC-DOMAIN",
-     "TEXT-TABS",
-     "Unicode",
-     "ZLIB"
-    ],
-    "cpes": [
-     "cpe:2.3:a:perl-base:perl-base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:perl-base:perl_base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:perl_base:perl-base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:perl_base:perl_base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:perl:perl-base:5.34.0-3ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:perl:perl_base:5.34.0-3ubuntu1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1?arch=amd64&upstream=perl&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "perl"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2021-43618",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-43618",
-    "namespace": "ubuntu:22.04",
-    "severity": "Low",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-43618"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2021-43618",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-43618",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://gmplib.org/list-archives/gmp-bugs/2021-September/005077.html",
-      "https://bugs.debian.org/994405",
-      "https://gmplib.org/repo/gmp-6.2/rev/561a9c25298e",
-      "https://lists.debian.org/debian-lts-announce/2021/12/msg00001.html"
-     ],
-     "description": "GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-       "metrics": {
-        "baseScore": 5,
-        "exploitabilityScore": 10,
-        "impactScore": 2.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "gmp",
-       "version": "2:6.2.1+dfsg-3ubuntu1"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libgmp10",
-    "version": "2:6.2.1+dfsg-3ubuntu1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libgmp10/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libgmp10:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GPL",
-     "GPL-2",
-     "GPL-3",
-     "LGPL-3"
-    ],
-    "cpes": [
-     "cpe:2.3:a:libgmp10:libgmp10:2:6.2.1+dfsg-3ubuntu1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libgmp10@2:6.2.1+dfsg-3ubuntu1?arch=amd64&upstream=gmp&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "gmp"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-1304",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
-    "namespace": "ubuntu:22.04",
-    "severity": "Medium",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [
-      "1.46.5-2ubuntu1.1"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-1304",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
-     ],
-     "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-       "metrics": {
-        "baseScore": 6.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 6.4
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-       "metrics": {
-        "baseScore": 7.8,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.9
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "e2fsprogs",
-       "version": "1.46.5-2ubuntu1"
-      }
-     },
-     "found": {
-      "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "e2fsprogs",
-    "version": "1.46.5-2ubuntu1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/e2fsprogs/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/e2fsprogs.conffiles",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/e2fsprogs.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GPL-2",
-     "LGPL-2"
-    ],
-    "cpes": [
-     "cpe:2.3:a:e2fsprogs:e2fsprogs:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1?arch=amd64&distro=ubuntu-22.04",
-    "upstreams": []
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-1304",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
-    "namespace": "ubuntu:22.04",
-    "severity": "Medium",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [
-      "1.46.5-2ubuntu1.1"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-1304",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
-     ],
-     "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-       "metrics": {
-        "baseScore": 6.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 6.4
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-       "metrics": {
-        "baseScore": 7.8,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.9
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "e2fsprogs",
-       "version": "1.46.5-2ubuntu1"
-      }
-     },
-     "found": {
-      "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libcom-err2",
-    "version": "1.46.5-2ubuntu1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libcom-err2/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libcom-err2:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:libcom-err2:libcom-err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libcom-err2:libcom_err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libcom_err2:libcom-err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libcom_err2:libcom_err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libcom:libcom-err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libcom:libcom_err2:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libcom-err2@1.46.5-2ubuntu1?arch=amd64&upstream=e2fsprogs&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "e2fsprogs"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-1304",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
-    "namespace": "ubuntu:22.04",
-    "severity": "Medium",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [
-      "1.46.5-2ubuntu1.1"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-1304",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
-     ],
-     "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-       "metrics": {
-        "baseScore": 6.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 6.4
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-       "metrics": {
-        "baseScore": 7.8,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.9
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "e2fsprogs",
-       "version": "1.46.5-2ubuntu1"
-      }
-     },
-     "found": {
-      "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libext2fs2",
-    "version": "1.46.5-2ubuntu1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libext2fs2/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libext2fs2:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GPL-2",
-     "LGPL-2"
-    ],
-    "cpes": [
-     "cpe:2.3:a:libext2fs2:libext2fs2:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1?arch=amd64&upstream=e2fsprogs&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "e2fsprogs"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-1304",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
-    "namespace": "ubuntu:22.04",
-    "severity": "Medium",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [
-      "1.46.5-2ubuntu1.1"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-1304",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
-     ],
-     "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-       "metrics": {
-        "baseScore": 6.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 6.4
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-       "metrics": {
-        "baseScore": 7.8,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.9
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "e2fsprogs",
-       "version": "1.46.5-2ubuntu1"
-      }
-     },
-     "found": {
-      "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libss2",
-    "version": "1.46.5-2ubuntu1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libss2/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libss2:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:libss2:libss2:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1?arch=amd64&upstream=e2fsprogs&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "e2fsprogs"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-1304",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304",
-    "namespace": "ubuntu:22.04",
-    "severity": "Medium",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [
-      "1.46.5-2ubuntu1.1"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-1304",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
-     ],
-     "description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-       "metrics": {
-        "baseScore": 6.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 6.4
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-       "metrics": {
-        "baseScore": 7.8,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.9
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "e2fsprogs",
-       "version": "1.46.5-2ubuntu1"
-      }
-     },
-     "found": {
-      "versionConstraint": "< 1.46.5-2ubuntu1.1 (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "logsave",
-    "version": "1.46.5-2ubuntu1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/logsave/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/logsave.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "GPL-2",
-     "LGPL-2"
-    ],
-    "cpes": [
-     "cpe:2.3:a:logsave:logsave:1.46.5-2ubuntu1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/logsave@1.46.5-2ubuntu1?arch=amd64&upstream=e2fsprogs&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "e2fsprogs"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-1586",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1586",
-    "namespace": "ubuntu:22.04",
-    "severity": "Low",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1586"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-1586",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1586",
-     "namespace": "nvd",
-     "severity": "Critical",
-     "urls": [
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M2GLQQUEY5VFM57CFYXVIFOXN2HUZPDM/",
-      "https://github.com/PCRE2Project/pcre2/commit/50a51cb7e67268e6ad417eb07c9de9bfea5cc55a,",
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2077976,",
-      "https://github.com/PCRE2Project/pcre2/commit/d4fa336fbcc388f89095b184ba6d99422cfc676c",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAX7767BCUFC7JMDGP7GOQ5GIZCAUGBB/",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DWNG2NS3GINO6LQYUVC4BZLUQPJ3DYHA/",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXINO3KKI5DICQ45E2FKD6MKVMGJLEKJ/"
-     ],
-     "description": "An out-of-bounds read vulnerability was discovered in the PCRE2 library in the compile_xclass_matchingpath() function of the pcre2_jit_compile.c file. This involves a unicode property matching issue in JIT-compiled regular expressions. The issue occurs because the character was not fully read in case-less matching within JIT.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
-       "metrics": {
-        "baseScore": 6.4,
-        "exploitabilityScore": 10,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
-       "metrics": {
-        "baseScore": 9.1,
-        "exploitabilityScore": 3.9,
-        "impactScore": 5.2
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "pcre2",
-       "version": "10.39-3build1"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libpcre2-8-0",
-    "version": "10.39-3build1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libpcre2-8-0/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:libpcre2-8-0:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2-8-0:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2_8_0:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2_8_0:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2-8:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2-8:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2_8:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2_8:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3build1?arch=amd64&upstream=pcre2&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "pcre2"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-1587",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1587",
-    "namespace": "ubuntu:22.04",
-    "severity": "Low",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1587"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-1587",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1587",
-     "namespace": "nvd",
-     "severity": "Critical",
-     "urls": [
-      "https://github.com/PCRE2Project/pcre2/commit/03654e751e7f0700693526b67dfcadda6b42c9d0",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M2GLQQUEY5VFM57CFYXVIFOXN2HUZPDM/",
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2077983,",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAX7767BCUFC7JMDGP7GOQ5GIZCAUGBB/",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DWNG2NS3GINO6LQYUVC4BZLUQPJ3DYHA/",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXINO3KKI5DICQ45E2FKD6MKVMGJLEKJ/"
-     ],
-     "description": "An out-of-bounds read vulnerability was discovered in the PCRE2 library in the get_recurse_data_length() function of the pcre2_jit_compile.c file. This issue affects recursions in JIT-compiled regular expressions caused by duplicate data transfers.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
-       "metrics": {
-        "baseScore": 6.4,
-        "exploitabilityScore": 10,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
-       "metrics": {
-        "baseScore": 9.1,
-        "exploitabilityScore": 3.9,
-        "impactScore": 5.2
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "pcre2",
-       "version": "10.39-3build1"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libpcre2-8-0",
-    "version": "10.39-3build1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libpcre2-8-0/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:libpcre2-8-0:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2-8-0:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2_8_0:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2_8_0:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2-8:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2-8:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2_8:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2_8:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2:libpcre2-8-0:10.39-3build1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:libpcre2:libpcre2_8_0:10.39-3build1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3build1?arch=amd64&upstream=pcre2&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "pcre2"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-2068",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-2068",
-    "namespace": "ubuntu:22.04",
-    "severity": "Medium",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-2068"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [
-      "3.0.2-0ubuntu1.5"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-2068",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-2068",
-     "namespace": "nvd",
-     "severity": "Critical",
-     "urls": [
-      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9639817dac8bbbaa64d09efad7464ccc405527c7",
-      "https://www.openssl.org/news/secadv/20220621.txt",
-      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=7a9c027159fe9e1bbc2cd38a8a2914bff0d5abd9",
-      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c9c35870601b4a44d86ddbf512b38df38285cfa",
-      "https://www.debian.org/security/2022/dsa-5169"
-     ],
-     "description": "In addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze).",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-       "metrics": {
-        "baseScore": 10,
-        "exploitabilityScore": 10,
-        "impactScore": 10
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-       "metrics": {
-        "baseScore": 9.8,
-        "exploitabilityScore": 3.9,
-        "impactScore": 5.9
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "openssl",
-       "version": "3.0.2-0ubuntu1.2"
-      }
-     },
-     "found": {
-      "versionConstraint": "< 3.0.2-0ubuntu1.5 (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libssl3",
-    "version": "3.0.2-0ubuntu1.2",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libssl3/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "Apache-2.0",
-     "Artistic",
-     "GPL-1",
-     "GPL-1+"
-    ],
-    "cpes": [
-     "cpe:2.3:a:libssl3:libssl3:3.0.2-0ubuntu1.2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.2?arch=amd64&upstream=openssl&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "openssl"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-29458",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
-    "namespace": "ubuntu:22.04",
-    "severity": "Negligible",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-29458",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
-     ],
-     "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
-       "metrics": {
-        "baseScore": 5.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.1,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.2
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "ncurses",
-       "version": "6.3-2"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libncurses6",
-    "version": "6.3-2",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libtinfo6/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libncurses6:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "BSD-3-clause",
-     "MIT/X11",
-     "X11"
-    ],
-    "cpes": [
-     "cpe:2.3:a:libncurses6:libncurses6:6.3-2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libncurses6@6.3-2?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "ncurses"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-29458",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
-    "namespace": "ubuntu:22.04",
-    "severity": "Negligible",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-29458",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
-     ],
-     "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
-       "metrics": {
-        "baseScore": 5.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.1,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.2
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "ncurses",
-       "version": "6.3-2"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libncursesw6",
-    "version": "6.3-2",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libtinfo6/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libncursesw6:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "BSD-3-clause",
-     "MIT/X11",
-     "X11"
-    ],
-    "cpes": [
-     "cpe:2.3:a:libncursesw6:libncursesw6:6.3-2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libncursesw6@6.3-2?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "ncurses"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-29458",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
-    "namespace": "ubuntu:22.04",
-    "severity": "Negligible",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-29458",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
-     ],
-     "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
-       "metrics": {
-        "baseScore": 5.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.1,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.2
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "ncurses",
-       "version": "6.3-2"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "libtinfo6",
-    "version": "6.3-2",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/libtinfo6/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/libtinfo6:amd64.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "BSD-3-clause",
-     "MIT/X11",
-     "X11"
-    ],
-    "cpes": [
-     "cpe:2.3:a:libtinfo6:libtinfo6:6.3-2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/libtinfo6@6.3-2?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "ncurses"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-29458",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
-    "namespace": "ubuntu:22.04",
-    "severity": "Negligible",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-29458",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
-     ],
-     "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
-       "metrics": {
-        "baseScore": 5.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.1,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.2
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "ncurses",
-       "version": "6.3-2"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "ncurses-base",
-    "version": "6.3-2",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/ncurses-base/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/ncurses-base.conffiles",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/ncurses-base.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "BSD-3-clause",
-     "MIT/X11",
-     "X11"
-    ],
-    "cpes": [
-     "cpe:2.3:a:ncurses-base:ncurses-base:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses-base:ncurses_base:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses_base:ncurses-base:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses_base:ncurses_base:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses:ncurses-base:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses:ncurses_base:6.3-2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/ncurses-base@6.3-2?arch=all&upstream=ncurses&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "ncurses"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-29458",
-    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
-    "namespace": "ubuntu:22.04",
-    "severity": "Negligible",
-    "urls": [
-     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458"
-    ],
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2022-29458",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
-     "namespace": "nvd",
-     "severity": "High",
-     "urls": [
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
-      "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html"
-     ],
-     "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
-     "cvss": [
-      {
-       "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
-       "metrics": {
-        "baseScore": 5.8,
-        "exploitabilityScore": 8.6,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.1,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.2
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "ubuntu",
-       "version": "22.04"
-      },
-      "namespace": "ubuntu:22.04",
-      "package": {
-       "name": "ncurses",
-       "version": "6.3-2"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)"
-     }
-    }
-   ],
-   "artifact": {
-    "name": "ncurses-bin",
-    "version": "6.3-2",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/ncurses-bin/copyright",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/info/ncurses-bin.md5sums",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "BSD-3-clause",
-     "MIT/X11",
-     "X11"
-    ],
-    "cpes": [
-     "cpe:2.3:a:ncurses-bin:ncurses-bin:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses-bin:ncurses_bin:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses_bin:ncurses-bin:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses_bin:ncurses_bin:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses:ncurses-bin:6.3-2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ncurses:ncurses_bin:6.3-2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/ubuntu/ncurses-bin@6.3-2?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
-    "upstreams": [
-     {
-      "name": "ncurses"
-     }
-    ]
-   }
   }
- ],
- "source": {
-  "type": "image",
-  "target": {
-   "userInput": "ubuntu:latest",
-   "imageID": "sha256:27941809078cc9b2802deb2b0bb6feed6c236cde01e487f200e24653533701ee",
-   "manifestDigest": "sha256:88ae13771dd35f00f29c1a424f70e854fb8b53839888b3889bbeb145cd26445c",
-   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-   "tags": [
-    "ubuntu:latest"
-   ],
-   "imageSize": 77815548,
-   "layers": [
-    {
-     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-     "digest": "sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3",
-     "size": 77815548
-    }
-   ],
-   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxNDYzLCJkaWdlc3QiOiJzaGEyNTY6Mjc5NDE4MDkwNzhjYzliMjgwMmRlYjJiMGJiNmZlZWQ2YzIzNmNkZTAxZTQ4N2YyMDBlMjQ2NTM1MzM3MDFlZSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo4MDM0MDk5MiwiZGlnZXN0Ijoic2hhMjU2OmE3OTBmOTM3YTZhZWEyNjAwOTgyZGU1NGE1ZmI5OTVjNjgxZGQ3NGYyNjk2OGQ2Yjc0Mjg2ZTA2ODM5ZTRmYjMifV19",
-   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbImJhc2giXSwiSW1hZ2UiOiJzaGEyNTY6NzdiZTE3MGQ0Zjg5OWFjZTBlZTE1M2ZhY2JkMTk1MTExZmVhYmI0ODlkZDExY2JjZGNlMWY5NjUyZmQ1YmVmYSIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpudWxsLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOm51bGx9LCJjb250YWluZXIiOiI5ZDEwZDcxZmM4Y2M4MTgwNmQyZmQ3OTQ0M2IwY2IzZDNmYWMwN2FlZTRmZDRlMjE2NGQ4OTU5ZmQ2MjBiYTdlIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjlkMTBkNzFmYzhjYyIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJDTUQgW1wiYmFzaFwiXSJdLCJJbWFnZSI6InNoYTI1Njo3N2JlMTcwZDRmODk5YWNlMGVlMTUzZmFjYmQxOTUxMTFmZWFiYjQ4OWRkMTFjYmNkY2UxZjk2NTJmZDViZWZhIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOm51bGwsIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6e319LCJjcmVhdGVkIjoiMjAyMi0wNi0wNlQyMjoyMToyNi4zMDkyNzU5NzlaIiwiZG9ja2VyX3ZlcnNpb24iOiIyMC4xMC4xMiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIyLTA2LTA2VDIyOjIxOjI1Ljk2MTgyODM4NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6MTExNTdiMDdkZGUxMDEwN2YzZjZmMmI4OTJjODY5ZWE4Mzg2ODQ3NWQ1ODI1MTY3YjVmNDY2YTdlNDEwZWIwNSBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjItMDYtMDZUMjI6MjE6MjYuMzA5Mjc1OTc5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcImJhc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6YTc5MGY5MzdhNmFlYTI2MDA5ODJkZTU0YTVmYjk5NWM2ODFkZDc0ZjI2OTY4ZDZiNzQyODZlMDY4MzllNGZiMyJdfX0=",
-   "repoDigests": [
-    "ubuntu@sha256:b6b83d3c331794420340093eb706a6f152d9c1fa51b262d9bf34594887c2c7ac"
-   ],
-   "architecture": "amd64",
-   "os": "linux"
-  }
- },
- "distro": {
-  "name": "ubuntu",
-  "version": "22.04",
-  "idLike": [
-   "debian"
-  ]
- },
- "descriptor": {
-  "name": "grype",
-  "version": "0.38.0",
-  "configuration": {
-   "configPath": "",
-   "output": "json",
-   "file": "",
-   "distro": "",
-   "add-cpes-if-none": false,
-   "output-template-file": "",
-   "quiet": false,
-   "check-for-app-update": true,
-   "only-fixed": false,
-   "platform": "",
-   "search": {
-    "scope": "Squashed",
-    "unindexed-archives": false,
-    "indexed-archives": true
-   },
-   "ignore": null,
-   "exclude": [],
-   "db": {
-    "cache-dir": "/home/molkars/.cache/grype/db",
-    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
-    "ca-cert": "",
-    "auto-update": true,
-    "validate-by-hash-on-start": false
-   },
-   "externalSources": {
-    "enable": false,
-    "maven": {
-     "searchUpstreamBySha1": true,
-     "baseUrl": "https://search.maven.org/solrsearch/select"
-    }
-   },
-   "dev": {
-    "profile-cpu": false,
-    "profile-mem": false
-   },
-   "fail-on-severity": "",
-   "registry": {
-    "insecure-skip-tls-verify": false,
-    "insecure-use-http": false,
-    "auth": []
-   },
-   "log": {
-    "structured": false,
-    "level": "",
-    "file": ""
-   },
-   "attestation": {
-    "public-key": "",
-    "skip-verification": false
-   }
-  },
-  "db": {
-   "built": "2022-07-01T08:16:25Z",
-   "schemaVersion": 3,
-   "location": "/home/molkars/.cache/grype/db/3",
-   "checksum": "sha256:aee7832de2711eafdaca2af1e215fac7f5a507daa0319e5a0f5483f60de78d08",
-   "error": null
-  }
- }
 }
