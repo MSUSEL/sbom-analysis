@@ -2,6 +2,7 @@ mod longest_zip;
 mod format;
 mod cvss;
 mod api;
+mod context;
 
 #[macro_use]
 extern crate serde;

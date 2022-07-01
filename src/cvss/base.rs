@@ -1,5 +1,6 @@
 use crate::cvss::roundup;
 
+#[derive(Debug, Clone)]
 pub struct BaseMetric {
     pub attack_vector: AttackVector,
     pub attack_complexity: AttackComplexity,
@@ -11,6 +12,7 @@ pub struct BaseMetric {
     pub availability_impact: ImpactValue,
 }
 
+#[derive(Debug, Clone)]
 pub enum AttackVector {
     Network,
     Adjacent,
@@ -18,27 +20,32 @@ pub enum AttackVector {
     Physical,
 }
 
+#[derive(Debug, Clone)]
 pub enum AttackComplexity {
     Low,
     High,
 }
 
+#[derive(Debug, Clone)]
 pub enum PrivilegesRequired {
     None,
     Low,
     High,
 }
 
+#[derive(Debug, Clone)]
 pub enum UserInteraction {
     None,
     Required,
 }
 
+#[derive(Debug, Clone)]
 pub enum Scope {
     Unchanged,
     Changed,
 }
 
+#[derive(Debug, Clone)]
 pub enum ImpactValue {
     None,
     Low,
@@ -47,16 +54,7 @@ pub enum ImpactValue {
 
 impl BaseMetric {
     pub fn score(&self) -> f32 {
-        let impact = self.impact();
-        if impact <= 0f32 {
-            0f32
-        } else {
-            let sum = impact + self.exploitability();
-            roundup(match self.scope {
-                Scope::Unchanged => sum,
-                Scope::Changed => 1.08 * sum,
-            }.min(10f32))
-        }
+        roundup(self.raw_score()).min(10f32)
     }
 
     pub fn scores(&self) -> (f32, f32, f32) {
@@ -75,15 +73,28 @@ impl BaseMetric {
         }
     }
 
+    pub fn raw_score(&self) -> f32 {
+        let impact = self.impact();
+        if impact <= 0f32 {
+            0f32
+        } else {
+            let sum = impact + self.exploitability();
+            match self.scope {
+                Scope::Unchanged => sum,
+                Scope::Changed => 1.08 * sum,
+            }
+        }
+    }
+
     pub fn impact(&self) -> f32 {
-        let iss = self.iss();
+        let iss = self.impact_sub_score();
         match self.scope {
             Scope::Unchanged => 6.42 * iss,
             Scope::Changed => 7.52 * (iss - 0.029) - 3.25 * (iss - 0.02).powi(15),
         }
     }
 
-    pub fn iss(&self) -> f32 {
+    pub fn impact_sub_score(&self) -> f32 {
         1.0 - (
             (1.0 - self.confidentiality_impact.value())
                 * (1.0 - self.integrity_impact.value())
