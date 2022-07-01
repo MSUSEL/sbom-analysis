@@ -1,0 +1,1209 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Grype",
+          "version": "0.38.0",
+          "informationUri": "https://github.com/anchore/grype",
+          "rules": [
+            {
+              "id": "CVE-2013-4235-login",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2013-4235 low vulnerability for login package"
+              },
+              "fullDescription": {
+                "text": "Version 1:4.8.1-2ubuntu2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2013-4235\nSeverity: low\nPackage: login\nVersion: 1:4.8.1-2ubuntu2\nFix Version: \nType: deb\nLocation: /usr/share/doc/login/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2013-4235](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235)",
+                "markdown": "**Vulnerability CVE-2013-4235**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | login  | 1:4.8.1-2ubuntu2  |   | deb  | /usr/share/doc/login/copyright  | ubuntu:22.04  | [CVE-2013-4235](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235)  |\n"
+              },
+              "properties": {
+                "security-severity": "4.7"
+              }
+            },
+            {
+              "id": "CVE-2013-4235-passwd",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2013-4235 low vulnerability for passwd package"
+              },
+              "fullDescription": {
+                "text": "Version 1:4.8.1-2ubuntu2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2013-4235\nSeverity: low\nPackage: passwd\nVersion: 1:4.8.1-2ubuntu2\nFix Version: \nType: deb\nLocation: /usr/share/doc/passwd/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2013-4235](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235)",
+                "markdown": "**Vulnerability CVE-2013-4235**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | passwd  | 1:4.8.1-2ubuntu2  |   | deb  | /usr/share/doc/passwd/copyright  | ubuntu:22.04  | [CVE-2013-4235](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235)  |\n"
+              },
+              "properties": {
+                "security-severity": "4.7"
+              }
+            },
+            {
+              "id": "CVE-2016-20013-libc-bin",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2016-20013 low vulnerability for libc-bin package"
+              },
+              "fullDescription": {
+                "text": "Version 2.35-0ubuntu3 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2016-20013\nSeverity: low\nPackage: libc-bin\nVersion: 2.35-0ubuntu3\nFix Version: \nType: deb\nLocation: /usr/share/doc/libc-bin/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2016-20013](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013)",
+                "markdown": "**Vulnerability CVE-2016-20013**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libc-bin  | 2.35-0ubuntu3  |   | deb  | /usr/share/doc/libc-bin/copyright  | ubuntu:22.04  | [CVE-2016-20013](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2016-20013-libc6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2016-20013 low vulnerability for libc6 package"
+              },
+              "fullDescription": {
+                "text": "Version 2.35-0ubuntu3 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2016-20013\nSeverity: low\nPackage: libc6\nVersion: 2.35-0ubuntu3\nFix Version: \nType: deb\nLocation: /usr/share/doc/libc6/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2016-20013](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013)",
+                "markdown": "**Vulnerability CVE-2016-20013**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libc6  | 2.35-0ubuntu3  |   | deb  | /usr/share/doc/libc6/copyright  | ubuntu:22.04  | [CVE-2016-20013](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2016-2781-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2016-2781 low vulnerability for coreutils package"
+              },
+              "fullDescription": {
+                "text": "Version 8.32-4.1ubuntu1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2016-2781\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1\nFix Version: \nType: deb\nLocation: /usr/share/doc/coreutils/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2016-2781](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781)",
+                "markdown": "**Vulnerability CVE-2016-2781**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1  |   | deb  | /usr/share/doc/coreutils/copyright  | ubuntu:22.04  | [CVE-2016-2781](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781)  |\n"
+              },
+              "properties": {
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "CVE-2017-11164-libpcre3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2017-11164 low vulnerability for libpcre3 package"
+              },
+              "fullDescription": {
+                "text": "Version 2:8.39-13ubuntu0.22.04.1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2017-11164\nSeverity: low\nPackage: libpcre3\nVersion: 2:8.39-13ubuntu0.22.04.1\nFix Version: \nType: deb\nLocation: /usr/share/doc/libpcre3/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2017-11164](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164)",
+                "markdown": "**Vulnerability CVE-2017-11164**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libpcre3  | 2:8.39-13ubuntu0.22.04.1  |   | deb  | /usr/share/doc/libpcre3/copyright  | ubuntu:22.04  | [CVE-2017-11164](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2019-9923-tar",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2019-9923 low vulnerability for tar package"
+              },
+              "fullDescription": {
+                "text": "Version 1.34+dfsg-1build3 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2019-9923\nSeverity: low\nPackage: tar\nVersion: 1.34+dfsg-1build3\nFix Version: \nType: deb\nLocation: /usr/share/doc/tar/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2019-9923](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-9923)",
+                "markdown": "**Vulnerability CVE-2019-9923**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | tar  | 1.34+dfsg-1build3  |   | deb  | /usr/share/doc/tar/copyright  | ubuntu:22.04  | [CVE-2019-9923](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-9923)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2020-16156-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2020-16156 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Version 5.34.0-3ubuntu1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2020-16156\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1\nFix Version: \nType: deb\nLocation: /usr/share/doc/perl-base/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2020-16156](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-16156)",
+                "markdown": "**Vulnerability CVE-2020-16156**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1  |   | deb  | /usr/share/doc/perl-base/copyright  | ubuntu:22.04  | [CVE-2020-16156](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-16156)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2021-43618-libgmp10",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2021-43618 low vulnerability for libgmp10 package"
+              },
+              "fullDescription": {
+                "text": "Version 2:6.2.1+dfsg-3ubuntu1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2021-43618\nSeverity: low\nPackage: libgmp10\nVersion: 2:6.2.1+dfsg-3ubuntu1\nFix Version: \nType: deb\nLocation: /usr/share/doc/libgmp10/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2021-43618](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-43618)",
+                "markdown": "**Vulnerability CVE-2021-43618**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libgmp10  | 2:6.2.1+dfsg-3ubuntu1  |   | deb  | /usr/share/doc/libgmp10/copyright  | ubuntu:22.04  | [CVE-2021-43618](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-43618)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2022-1304-e2fsprogs",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-1304 medium vulnerability for e2fsprogs package"
+              },
+              "fullDescription": {
+                "text": "Version 1.46.5-2ubuntu1 is affected with an available fix in versions 1.46.5-2ubuntu1.1"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-1304\nSeverity: medium\nPackage: e2fsprogs\nVersion: 1.46.5-2ubuntu1\nFix Version: 1.46.5-2ubuntu1.1\nType: deb\nLocation: /usr/share/doc/e2fsprogs/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)",
+                "markdown": "**Vulnerability CVE-2022-1304**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | e2fsprogs  | 1.46.5-2ubuntu1  | 1.46.5-2ubuntu1.1  | deb  | /usr/share/doc/e2fsprogs/copyright  | ubuntu:22.04  | [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2022-1304-libcom-err2",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-1304 medium vulnerability for libcom-err2 package"
+              },
+              "fullDescription": {
+                "text": "Version 1.46.5-2ubuntu1 is affected with an available fix in versions 1.46.5-2ubuntu1.1"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-1304\nSeverity: medium\nPackage: libcom-err2\nVersion: 1.46.5-2ubuntu1\nFix Version: 1.46.5-2ubuntu1.1\nType: deb\nLocation: /usr/share/doc/libcom-err2/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)",
+                "markdown": "**Vulnerability CVE-2022-1304**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcom-err2  | 1.46.5-2ubuntu1  | 1.46.5-2ubuntu1.1  | deb  | /usr/share/doc/libcom-err2/copyright  | ubuntu:22.04  | [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2022-1304-libext2fs2",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-1304 medium vulnerability for libext2fs2 package"
+              },
+              "fullDescription": {
+                "text": "Version 1.46.5-2ubuntu1 is affected with an available fix in versions 1.46.5-2ubuntu1.1"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-1304\nSeverity: medium\nPackage: libext2fs2\nVersion: 1.46.5-2ubuntu1\nFix Version: 1.46.5-2ubuntu1.1\nType: deb\nLocation: /usr/share/doc/libext2fs2/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)",
+                "markdown": "**Vulnerability CVE-2022-1304**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libext2fs2  | 1.46.5-2ubuntu1  | 1.46.5-2ubuntu1.1  | deb  | /usr/share/doc/libext2fs2/copyright  | ubuntu:22.04  | [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2022-1304-libss2",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-1304 medium vulnerability for libss2 package"
+              },
+              "fullDescription": {
+                "text": "Version 1.46.5-2ubuntu1 is affected with an available fix in versions 1.46.5-2ubuntu1.1"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-1304\nSeverity: medium\nPackage: libss2\nVersion: 1.46.5-2ubuntu1\nFix Version: 1.46.5-2ubuntu1.1\nType: deb\nLocation: /usr/share/doc/libss2/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)",
+                "markdown": "**Vulnerability CVE-2022-1304**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libss2  | 1.46.5-2ubuntu1  | 1.46.5-2ubuntu1.1  | deb  | /usr/share/doc/libss2/copyright  | ubuntu:22.04  | [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2022-1304-logsave",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-1304 medium vulnerability for logsave package"
+              },
+              "fullDescription": {
+                "text": "Version 1.46.5-2ubuntu1 is affected with an available fix in versions 1.46.5-2ubuntu1.1"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-1304\nSeverity: medium\nPackage: logsave\nVersion: 1.46.5-2ubuntu1\nFix Version: 1.46.5-2ubuntu1.1\nType: deb\nLocation: /usr/share/doc/logsave/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)",
+                "markdown": "**Vulnerability CVE-2022-1304**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | logsave  | 1.46.5-2ubuntu1  | 1.46.5-2ubuntu1.1  | deb  | /usr/share/doc/logsave/copyright  | ubuntu:22.04  | [CVE-2022-1304](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1304)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2022-1586-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-1586 low vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "Version 10.39-3build1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-1586\nSeverity: low\nPackage: libpcre2-8-0\nVersion: 10.39-3build1\nFix Version: \nType: deb\nLocation: /usr/share/doc/libpcre2-8-0/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-1586](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1586)",
+                "markdown": "**Vulnerability CVE-2022-1586**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libpcre2-8-0  | 10.39-3build1  |   | deb  | /usr/share/doc/libpcre2-8-0/copyright  | ubuntu:22.04  | [CVE-2022-1586](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1586)  |\n"
+              },
+              "properties": {
+                "security-severity": "9.1"
+              }
+            },
+            {
+              "id": "CVE-2022-1587-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-1587 low vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "Version 10.39-3build1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-1587\nSeverity: low\nPackage: libpcre2-8-0\nVersion: 10.39-3build1\nFix Version: \nType: deb\nLocation: /usr/share/doc/libpcre2-8-0/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-1587](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1587)",
+                "markdown": "**Vulnerability CVE-2022-1587**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libpcre2-8-0  | 10.39-3build1  |   | deb  | /usr/share/doc/libpcre2-8-0/copyright  | ubuntu:22.04  | [CVE-2022-1587](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-1587)  |\n"
+              },
+              "properties": {
+                "security-severity": "9.1"
+              }
+            },
+            {
+              "id": "CVE-2022-2068-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-2068 medium vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.0.2-0ubuntu1.2 is affected with an available fix in versions 3.0.2-0ubuntu1.5"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-2068\nSeverity: medium\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.2\nFix Version: 3.0.2-0ubuntu1.5\nType: deb\nLocation: /usr/share/doc/libssl3/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-2068](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-2068)",
+                "markdown": "**Vulnerability CVE-2022-2068**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3  | 3.0.2-0ubuntu1.2  | 3.0.2-0ubuntu1.5  | deb  | /usr/share/doc/libssl3/copyright  | ubuntu:22.04  | [CVE-2022-2068](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-2068)  |\n"
+              },
+              "properties": {
+                "security-severity": "10.0"
+              }
+            },
+            {
+              "id": "CVE-2022-29458-libncurses6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-29458 low vulnerability for libncurses6 package"
+              },
+              "fullDescription": {
+                "text": "Version 6.3-2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-29458\nSeverity: low\nPackage: libncurses6\nVersion: 6.3-2\nFix Version: \nType: deb\nLocation: /usr/share/doc/libncurses6/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)",
+                "markdown": "**Vulnerability CVE-2022-29458**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libncurses6  | 6.3-2  |   | deb  | /usr/share/doc/libncurses6/copyright  | ubuntu:22.04  | [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.1"
+              }
+            },
+            {
+              "id": "CVE-2022-29458-libncursesw6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-29458 low vulnerability for libncursesw6 package"
+              },
+              "fullDescription": {
+                "text": "Version 6.3-2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-29458\nSeverity: low\nPackage: libncursesw6\nVersion: 6.3-2\nFix Version: \nType: deb\nLocation: /usr/share/doc/libncursesw6/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)",
+                "markdown": "**Vulnerability CVE-2022-29458**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libncursesw6  | 6.3-2  |   | deb  | /usr/share/doc/libncursesw6/copyright  | ubuntu:22.04  | [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.1"
+              }
+            },
+            {
+              "id": "CVE-2022-29458-libtinfo6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-29458 low vulnerability for libtinfo6 package"
+              },
+              "fullDescription": {
+                "text": "Version 6.3-2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-29458\nSeverity: low\nPackage: libtinfo6\nVersion: 6.3-2\nFix Version: \nType: deb\nLocation: /usr/share/doc/libtinfo6/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)",
+                "markdown": "**Vulnerability CVE-2022-29458**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libtinfo6  | 6.3-2  |   | deb  | /usr/share/doc/libtinfo6/copyright  | ubuntu:22.04  | [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.1"
+              }
+            },
+            {
+              "id": "CVE-2022-29458-ncurses-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-29458 low vulnerability for ncurses-base package"
+              },
+              "fullDescription": {
+                "text": "Version 6.3-2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-29458\nSeverity: low\nPackage: ncurses-base\nVersion: 6.3-2\nFix Version: \nType: deb\nLocation: /usr/share/doc/ncurses-base/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)",
+                "markdown": "**Vulnerability CVE-2022-29458**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | ncurses-base  | 6.3-2  |   | deb  | /usr/share/doc/ncurses-base/copyright  | ubuntu:22.04  | [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.1"
+              }
+            },
+            {
+              "id": "CVE-2022-29458-ncurses-bin",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-29458 low vulnerability for ncurses-bin package"
+              },
+              "fullDescription": {
+                "text": "Version 6.3-2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-29458\nSeverity: low\nPackage: ncurses-bin\nVersion: 6.3-2\nFix Version: \nType: deb\nLocation: /usr/share/doc/ncurses-bin/copyright\nData Namespace: ubuntu:22.04\nLink: [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)",
+                "markdown": "**Vulnerability CVE-2022-29458**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | ncurses-bin  | 6.3-2  |   | deb  | /usr/share/doc/ncurses-bin/copyright  | ubuntu:22.04  | [CVE-2022-29458](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.1"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2013-4235-login",
+          "message": {
+            "text": "The path /usr/share/doc/login/copyright reports login at version 1:4.8.1-2ubuntu2  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/login/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/login/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/login/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/login.conffiles",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/login.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/login.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/login.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2013-4235-passwd",
+          "message": {
+            "text": "The path /usr/share/doc/passwd/copyright reports passwd at version 1:4.8.1-2ubuntu2  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/passwd/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/passwd/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/passwd/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/passwd.conffiles",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/passwd.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/passwd.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/passwd.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2016-20013-libc-bin",
+          "message": {
+            "text": "The path /usr/share/doc/libc-bin/copyright reports libc-bin at version 2.35-0ubuntu3  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libc-bin/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libc-bin/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libc-bin/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libc-bin.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libc-bin.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2016-20013-libc6",
+          "message": {
+            "text": "The path /usr/share/doc/libc6/copyright reports libc6 at version 2.35-0ubuntu3  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libc6/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libc6/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libc6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libc6:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2016-2781-coreutils",
+          "message": {
+            "text": "The path /usr/share/doc/coreutils/copyright reports coreutils at version 8.32-4.1ubuntu1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/coreutils/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/coreutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2017-11164-libpcre3",
+          "message": {
+            "text": "The path /usr/share/doc/libpcre3/copyright reports libpcre3 at version 2:8.39-13ubuntu0.22.04.1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libpcre3/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libpcre3/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libpcre3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre3:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libpcre3:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9923-tar",
+          "message": {
+            "text": "The path /usr/share/doc/tar/copyright reports tar at version 1.34+dfsg-1build3  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/tar/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/tar/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/tar/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/tar.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-16156-perl-base",
+          "message": {
+            "text": "The path /usr/share/doc/perl-base/copyright reports perl-base at version 5.34.0-3ubuntu1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/perl-base/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-43618-libgmp10",
+          "message": {
+            "text": "The path /usr/share/doc/libgmp10/copyright reports libgmp10 at version 2:6.2.1+dfsg-3ubuntu1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libgmp10/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libgmp10/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libgmp10/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgmp10:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libgmp10:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-1304-e2fsprogs",
+          "message": {
+            "text": "The path /usr/share/doc/e2fsprogs/copyright reports e2fsprogs at version 1.46.5-2ubuntu1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/e2fsprogs/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/e2fsprogs/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/e2fsprogs/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/e2fsprogs.conffiles",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/e2fsprogs.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/e2fsprogs.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/e2fsprogs.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-1304-libcom-err2",
+          "message": {
+            "text": "The path /usr/share/doc/libcom-err2/copyright reports libcom-err2 at version 1.46.5-2ubuntu1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libcom-err2/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libcom-err2/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libcom-err2/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcom-err2:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libcom-err2:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-1304-libext2fs2",
+          "message": {
+            "text": "The path /usr/share/doc/libext2fs2/copyright reports libext2fs2 at version 1.46.5-2ubuntu1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libext2fs2/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libext2fs2/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libext2fs2/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libext2fs2:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libext2fs2:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-1304-libss2",
+          "message": {
+            "text": "The path /usr/share/doc/libss2/copyright reports libss2 at version 1.46.5-2ubuntu1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libss2/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libss2/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libss2/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libss2:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libss2:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-1304-logsave",
+          "message": {
+            "text": "The path /usr/share/doc/logsave/copyright reports logsave at version 1.46.5-2ubuntu1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/logsave/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/logsave/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/logsave/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/logsave.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/logsave.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-1586-libpcre2-8-0",
+          "message": {
+            "text": "The path /usr/share/doc/libpcre2-8-0/copyright reports libpcre2-8-0 at version 10.39-3build1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libpcre2-8-0/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-1587-libpcre2-8-0",
+          "message": {
+            "text": "The path /usr/share/doc/libpcre2-8-0/copyright reports libpcre2-8-0 at version 10.39-3build1  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libpcre2-8-0/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-2068-libssl3",
+          "message": {
+            "text": "The path /usr/share/doc/libssl3/copyright reports libssl3 at version 3.0.2-0ubuntu1.2  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libssl3/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29458-libncurses6",
+          "message": {
+            "text": "The path /usr/share/doc/libncurses6/copyright reports libncurses6 at version 6.3-2  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libncurses6/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libtinfo6/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libncurses6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libncurses6:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libncurses6:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29458-libncursesw6",
+          "message": {
+            "text": "The path /usr/share/doc/libncursesw6/copyright reports libncursesw6 at version 6.3-2  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libncursesw6/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libtinfo6/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libncursesw6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libncursesw6:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libncursesw6:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29458-libtinfo6",
+          "message": {
+            "text": "The path /usr/share/doc/libtinfo6/copyright reports libtinfo6 at version 6.3-2  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/libtinfo6/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/libtinfo6/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/libtinfo6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libtinfo6:amd64.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/libtinfo6:amd64.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29458-ncurses-base",
+          "message": {
+            "text": "The path /usr/share/doc/ncurses-base/copyright reports ncurses-base at version 6.3-2  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/ncurses-base/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/ncurses-base/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/ncurses-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/ncurses-base.conffiles",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/ncurses-base.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/ncurses-base.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/ncurses-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29458-ncurses-bin",
+          "message": {
+            "text": "The path /usr/share/doc/ncurses-bin/copyright reports ncurses-bin at version 6.3-2  which is a vulnerable (deb) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/share/doc/ncurses-bin/copyright"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/share/doc/ncurses-bin/copyright",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/usr/share/doc/ncurses-bin/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/ncurses-bin.md5sums",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/info/ncurses-bin.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ubuntu:latest@sha256:a790f937a6aea2600982de54a5fb995c681dd74f26968d6b74286e06839e4fb3:/var/lib/dpkg/status"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

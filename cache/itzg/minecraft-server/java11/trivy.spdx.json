@@ -1,0 +1,3060 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: itzg/minecraft-server:java11
+DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/itzg/minecraft-server:java11-55e4f413-a232-41b4-ad73-a8fcacc480db
+Creator: Organization: aquasecurity
+Creator: Tool: trivy
+Created: 2022-07-01T17:03:43.8164289Z
+
+##### Package: netbase
+
+PackageName: netbase
+SPDXID: SPDXRef-119e0a33c72fcfa6
+PackageVersion: 6.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/matttproud/golang_protobuf_extensions
+
+PackageName: github.com/matttproud/golang_protobuf_extensions
+SPDXID: SPDXRef-11acfd30e2d050e1
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.ow2.asm:asm
+
+PackageName: org.ow2.asm:asm
+SPDXID: SPDXRef-11eecfdd9b81278d
+PackageVersion: 9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: base-files
+
+PackageName: base-files
+SPDXID: SPDXRef-12dfe90ee665ae76
+PackageVersion: 11ubuntu5.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: net.minidev:json-smart
+
+PackageName: net.minidev:json-smart
+SPDXID: SPDXRef-1384c26721d28429
+PackageVersion: 2.4.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+
+PackageName: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+SPDXID: SPDXRef-16d7eef2303b17b5
+PackageVersion: 2.13.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liberror-perl
+
+PackageName: liberror-perl
+SPDXID: SPDXRef-175c958e7a2bff31
+PackageVersion: 0.17029-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.projectreactor.netty:reactor-netty-http
+
+PackageName: io.projectreactor.netty:reactor-netty-http
+SPDXID: SPDXRef-17ebbdbec83861f3
+PackageVersion: 1.0.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: lbzip2
+
+PackageName: lbzip2
+SPDXID: SPDXRef-17eef3d5b89c8933
+PackageVersion: 2.5-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/spf13/afero
+
+PackageName: github.com/spf13/afero
+SPDXID: SPDXRef-19aaa51917daf67b
+PackageVersion: v1.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpaper-utils
+
+PackageName: libpaper-utils
+SPDXID: SPDXRef-1a36bcd98dd31e2d
+PackageVersion: 1.1.28
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/itzg/line-protocol-sender
+
+PackageName: github.com/itzg/line-protocol-sender
+SPDXID: SPDXRef-1b61507bc4a4511a
+PackageVersion: v0.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdbm6
+
+PackageName: libgdbm6
+SPDXID: SPDXRef-1b8e0c3b047fd362
+PackageVersion: 1.18.1-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-codec:commons-codec
+
+PackageName: commons-codec:commons-codec
+SPDXID: SPDXRef-1bff6dc748ad5ad0
+PackageVersion: 1.15
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaudit-common
+
+PackageName: libaudit-common
+SPDXID: SPDXRef-1c458c174ec551b4
+PackageVersion: 1:2.8.5-2ubuntu6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.codehaus.plexus:plexus-utils
+
+PackageName: org.codehaus.plexus:plexus-utils
+SPDXID: SPDXRef-1de5d69754446fa1
+PackageVersion: 3.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjq1
+
+PackageName: libjq1
+SPDXID: SPDXRef-1f6059212c795ab8
+PackageVersion: 1.6-1ubuntu0.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/magiconair/properties
+
+PackageName: github.com/magiconair/properties
+SPDXID: SPDXRef-2053fdc6bc9720b6
+PackageVersion: v1.8.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mysql-common
+
+PackageName: mysql-common
+SPDXID: SPDXRef-2168549027f2f54e
+PackageVersion: 5.8+1.0.5ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-resolver-dns
+
+PackageName: io.netty:netty-resolver-dns
+SPDXID: SPDXRef-21806d368b14778f
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssh-4
+
+PackageName: libssh-4
+SPDXID: SPDXRef-2469b67061cdfcd3
+PackageVersion: 0.9.3-2ubuntu2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-handler
+
+PackageName: io.netty:netty-handler
+SPDXID: SPDXRef-25cc68139f384e1e
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdebconfclient0
+
+PackageName: libdebconfclient0
+SPDXID: SPDXRef-2604c02b935faaaa
+PackageVersion: 0.251ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-transport-classes-epoll
+
+PackageName: io.netty:netty-transport-classes-epoll
+SPDXID: SPDXRef-26b1834a3b86caca
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: e2fsprogs
+
+PackageName: e2fsprogs
+SPDXID: SPDXRef-271534bdf30c9b40
+PackageVersion: 1.45.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl-base
+
+PackageName: perl-base
+SPDXID: SPDXRef-272834845660bf5f
+PackageVersion: 5.30.0-9ubuntu0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ch.qos.logback:logback-core
+
+PackageName: ch.qos.logback:logback-core
+SPDXID: SPDXRef-2807b6cd31f2eb86
+PackageVersion: 1.2.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-transport
+
+PackageName: io.netty:netty-transport
+SPDXID: SPDXRef-289e463609cae74a
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: logsave
+
+PackageName: logsave
+SPDXID: SPDXRef-28be09af6ef61ea7
+PackageVersion: 1.45.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcap2
+
+PackageName: libcap2
+SPDXID: SPDXRef-29155d8369c2b58c
+PackageVersion: 1:2.32-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dos2unix
+
+PackageName: dos2unix
+SPDXID: SPDXRef-29412a99936155fc
+PackageVersion: 7.4.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/google/subcommands
+
+PackageName: github.com/google/subcommands
+SPDXID: SPDXRef-2a4123e864888e1b
+PackageVersion: v1.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpgv
+
+PackageName: gpgv
+SPDXID: SPDXRef-2cbca9b6acb72850
+PackageVersion: 2.2.19-3ubuntu2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: xauth
+
+PackageName: xauth
+SPDXID: SPDXRef-2d3d3c8126de35a6
+PackageVersion: 1:1.1-0ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libzstd1
+
+PackageName: libzstd1
+SPDXID: SPDXRef-2e632539f6c17475
+PackageVersion: 1.4.4+dfsg-3ubuntu0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libwmf0.2-7
+
+PackageName: libwmf0.2-7
+SPDXID: SPDXRef-2f3bf8c58f5590df
+PackageVersion: 0.2.8.4-17ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: login
+
+PackageName: login
+SPDXID: SPDXRef-306863163cf9f577
+PackageVersion: 1:4.8.1-1ubuntu5.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblz4-1
+
+PackageName: liblz4-1
+SPDXID: SPDXRef-3333e843acd109a8
+PackageVersion: 1.9.2-2ubuntu0.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: zstd
+
+PackageName: zstd
+SPDXID: SPDXRef-3350ce7b4250714a
+PackageVersion: 1.4.4+dfsg-3ubuntu0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: nano
+
+PackageName: nano
+SPDXID: SPDXRef-33f5afb34717e567
+PackageVersion: 4.8-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fonts-noto-mono
+
+PackageName: fonts-noto-mono
+SPDXID: SPDXRef-3405978ef407cc4e
+PackageVersion: 20200323-1build1~ubuntu20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ubuntu-keyring
+
+PackageName: ubuntu-keyring
+SPDXID: SPDXRef-3639ae196320c239
+PackageVersion: 2020.02.11.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgnutls30
+
+PackageName: libgnutls30
+SPDXID: SPDXRef-363e49a01c2a8441
+PackageVersion: 3.6.13-2ubuntu1.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.projectreactor:reactor-core
+
+PackageName: io.projectreactor:reactor-core
+SPDXID: SPDXRef-36660ed772f0767
+PackageVersion: 3.4.18
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libthai-data
+
+PackageName: libthai-data
+SPDXID: SPDXRef-36d109c51d2f3281
+PackageVersion: 0.1.28-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fontconfig
+
+PackageName: fontconfig
+SPDXID: SPDXRef-377d28087f3f7ec4
+PackageVersion: 2.13.1-2ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debconf
+
+PackageName: debconf
+SPDXID: SPDXRef-38425481c754a242
+PackageVersion: 1.5.73
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/iancoleman/strcase
+
+PackageName: github.com/iancoleman/strcase
+SPDXID: SPDXRef-3abe0b7935cfe098
+PackageVersion: v0.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: imagemagick
+
+PackageName: imagemagick
+SPDXID: SPDXRef-3ac41177719f5b35
+PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libapt-pkg6.0
+
+PackageName: libapt-pkg6.0
+SPDXID: SPDXRef-3c132a56b32771b1
+PackageVersion: 2.0.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: net-tools
+
+PackageName: net-tools
+SPDXID: SPDXRef-3c2a9cb13fb97f9e
+PackageVersion: 1.60+git20180626.aebd88e-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libuuid1
+
+PackageName: libuuid1
+SPDXID: SPDXRef-3c9df7c6cfc78881
+PackageVersion: 2.34-0.1ubuntu9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: apt
+
+PackageName: apt
+SPDXID: SPDXRef-3de7ff5677b55b1d
+PackageVersion: 2.0.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc-bin
+
+PackageName: libc-bin
+SPDXID: SPDXRef-3ea0370383aef0b1
+PackageVersion: 2.31-0ubuntu9.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fonts-droid-fallback
+
+PackageName: fonts-droid-fallback
+SPDXID: SPDXRef-3eb5de7e4efcd0d5
+PackageVersion: 1:6.0.1r16-1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtiff5
+
+PackageName: libtiff5
+SPDXID: SPDXRef-3fb9416e96647253
+PackageVersion: 4.1.0+git191117-2ubuntu0.20.04.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/itzg/zapconfigs
+
+PackageName: github.com/itzg/zapconfigs
+SPDXID: SPDXRef-3fb95117c9f62299
+PackageVersion: v0.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfontconfig1
+
+PackageName: libfontconfig1
+SPDXID: SPDXRef-408dfff866dc86c2
+PackageVersion: 2.13.1-2ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpangocairo-1.0-0
+
+PackageName: libpangocairo-1.0-0
+SPDXID: SPDXRef-413cdbade1f00744
+PackageVersion: 1.44.7-2ubuntu4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.slf4j:slf4j-api
+
+PackageName: org.slf4j:slf4j-api
+SPDXID: SPDXRef-41a11b9f993a283c
+PackageVersion: 1.7.33
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-transport-native-epoll
+
+PackageName: io.netty:netty-transport-native-epoll
+SPDXID: SPDXRef-41d384e0f2fbf9a4
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxml2
+
+PackageName: libxml2
+SPDXID: SPDXRef-4299b0ffc7ea92a0
+PackageVersion: 2.9.10+dfsg-5ubuntu0.20.04.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5-3
+
+PackageName: libkrb5-3
+SPDXID: SPDXRef-444ce24983451060
+PackageVersion: 1.17-6ubuntu4.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage-common
+
+PackageName: libsemanage-common
+SPDXID: SPDXRef-44afcad9ae14a430
+PackageVersion: 3.0-1build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ncurses-base
+
+PackageName: ncurses-base
+SPDXID: SPDXRef-456fc22762883a9a
+PackageVersion: 6.2-0ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debianutils
+
+PackageName: debianutils
+SPDXID: SPDXRef-45c71f8822e928a1
+PackageVersion: 4.9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnghttp2-14
+
+PackageName: libnghttp2-14
+SPDXID: SPDXRef-4746c57a622e95da
+PackageVersion: 1.40.0-1build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libunistring2
+
+PackageName: libunistring2
+SPDXID: SPDXRef-47b79d9fe2d36692
+PackageVersion: 0.9.10-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-resolver
+
+PackageName: io.netty:netty-resolver
+SPDXID: SPDXRef-4813f6901576b77b
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libudev1
+
+PackageName: libudev1
+SPDXID: SPDXRef-4814898b6785a66f
+PackageVersion: 245.4-4ubuntu3.13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libprocps8
+
+PackageName: libprocps8
+SPDXID: SPDXRef-4865b327785397de
+PackageVersion: 2:3.3.16-1ubuntu2.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libavahi-client3
+
+PackageName: libavahi-client3
+SPDXID: SPDXRef-49e08fc233c335cd
+PackageVersion: 0.7-4ubuntu7.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libedit2
+
+PackageName: libedit2
+SPDXID: SPDXRef-4ab7fbb4fbc00c9a
+PackageVersion: 3.1-20191231-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre2-8-0
+
+PackageName: libpcre2-8-0
+SPDXID: SPDXRef-4b085f814f192b39
+PackageVersion: 10.34-7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ch.qos.logback:logback-classic
+
+PackageName: ch.qos.logback:logback-classic
+SPDXID: SPDXRef-4b66a4f8b42b23b9
+PackageVersion: 1.2.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sensible-utils
+
+PackageName: sensible-utils
+SPDXID: SPDXRef-4cb74d857706b0d9
+PackageVersion: 0.0.12+nmu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: google.golang.org/protobuf
+
+PackageName: google.golang.org/protobuf
+SPDXID: SPDXRef-4d95d69429011824
+PackageVersion: v1.26.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-resolver-dns-classes-macos
+
+PackageName: io.netty:netty-resolver-dns-classes-macos
+SPDXID: SPDXRef-4dea3ae86fdb44e9
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-handler-proxy
+
+PackageName: io.netty:netty-handler-proxy
+SPDXID: SPDXRef-4e325d51aae40b74
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmount1
+
+PackageName: libmount1
+SPDXID: SPDXRef-4f4f551041fbb60
+PackageVersion: 2.34-0.1ubuntu9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcups2
+
+PackageName: libcups2
+SPDXID: SPDXRef-4f792fd68d9f5d70
+PackageVersion: 2.3.1-9ubuntu1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mitchellh/mapstructure
+
+PackageName: github.com/mitchellh/mapstructure
+SPDXID: SPDXRef-4fd6ba8706167185
+PackageVersion: v1.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bzip2
+
+PackageName: bzip2
+SPDXID: SPDXRef-5084204a4f6882a1
+PackageVersion: 1.0.8-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libidn11
+
+PackageName: libidn11
+SPDXID: SPDXRef-50df16f534ef2591
+PackageVersion: 1.33-2.2ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: unzip
+
+PackageName: unzip
+SPDXID: SPDXRef-510e12850c66576d
+PackageVersion: 6.0-25ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: init-system-helpers
+
+PackageName: init-system-helpers
+SPDXID: SPDXRef-5240b60e5ed26d8d
+PackageVersion: 1.57
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/pelletier/go-toml
+
+PackageName: github.com/pelletier/go-toml
+SPDXID: SPDXRef-5400628d713aa5c
+PackageVersion: v1.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgs9-common
+
+PackageName: libgs9-common
+SPDXID: SPDXRef-5458375f29132992
+PackageVersion: 9.50~dfsg-5ubuntu4.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgomp1
+
+PackageName: libgomp1
+SPDXID: SPDXRef-545aa819b8d76e5c
+PackageVersion: 10.3.0-1ubuntu1~20.04
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: openssh-client
+
+PackageName: openssh-client
+SPDXID: SPDXRef-54ef2447ecb0be04
+PackageVersion: 1:8.2p1-4ubuntu0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libapparmor1
+
+PackageName: libapparmor1
+SPDXID: SPDXRef-57081f9a98573ff8
+PackageVersion: 2.13.3-7ubuntu5.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mysql-client-8.0
+
+PackageName: mysql-client-8.0
+SPDXID: SPDXRef-57f60144ad3a50ba
+PackageVersion: 8.0.29-0ubuntu0.20.04.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-resolver-dns-native-macos
+
+PackageName: io.netty:netty-resolver-dns-native-macos
+SPDXID: SPDXRef-58d693909931f9db
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-common
+
+PackageName: io.netty:netty-common
+SPDXID: SPDXRef-59172c222549486c
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/iancoleman/strcase
+
+PackageName: github.com/iancoleman/strcase
+SPDXID: SPDXRef-5a16c62f299287ec
+PackageVersion: v0.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsmartcols1
+
+PackageName: libsmartcols1
+SPDXID: SPDXRef-5a7f748504466459
+PackageVersion: 2.34-0.1ubuntu9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.httpcomponents.client5:httpclient5
+
+PackageName: org.apache.httpcomponents.client5:httpclient5
+SPDXID: SPDXRef-5aff3db10d4f405
+PackageVersion: 5.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tzdata
+
+PackageName: tzdata
+SPDXID: SPDXRef-5b2c2c1302524bdf
+PackageVersion: 2022a-0ubuntu0.20.04
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncursesw6
+
+PackageName: libncursesw6
+SPDXID: SPDXRef-5bd2d022e417cc29
+PackageVersion: 6.2-0ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-cap
+
+PackageName: libpam-cap
+SPDXID: SPDXRef-5c13fcbb23b282cf
+PackageVersion: 1:2.32-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libblkid1
+
+PackageName: libblkid1
+SPDXID: SPDXRef-5c5e4b03044e6c4b
+PackageVersion: 2.34-0.1ubuntu9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbz2-1.0
+
+PackageName: libbz2-1.0
+SPDXID: SPDXRef-5cabf491535b14f5
+PackageVersion: 1.0.8-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libroken18-heimdal
+
+PackageName: libroken18-heimdal
+SPDXID: SPDXRef-5d4ac2dc8ec19f4b
+PackageVersion: 7.7.0+dfsg-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtasn1-6
+
+PackageName: libtasn1-6
+SPDXID: SPDXRef-5d5385baba3935f8
+PackageVersion: 4.16.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl-modules-5.30
+
+PackageName: perl-modules-5.30
+SPDXID: SPDXRef-5d82c69437e63f9f
+PackageVersion: 5.30.0-9ubuntu0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.jayway.jsonpath:json-path
+
+PackageName: com.jayway.jsonpath:json-path
+SPDXID: SPDXRef-5dde937c7c0bb0af
+PackageVersion: 2.7.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjbig2dec0
+
+PackageName: libjbig2dec0
+SPDXID: SPDXRef-5ec22cd26007b615
+PackageVersion: 0.18-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/itzg/go-flagsfiller
+
+PackageName: github.com/itzg/go-flagsfiller
+SPDXID: SPDXRef-5f6280b683531d1
+PackageVersion: v1.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-transport-native-unix-common
+
+PackageName: io.netty:netty-transport-native-unix-common
+SPDXID: SPDXRef-602abbcea49c1236
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcap0.8
+
+PackageName: libpcap0.8
+SPDXID: SPDXRef-610bf6d8da3494d0
+PackageVersion: 1.9.1-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libopenjp2-7
+
+PackageName: libopenjp2-7
+SPDXID: SPDXRef-61899c5bb4afe5ed
+PackageVersion: 2.3.1-1ubuntu4.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fdisk
+
+PackageName: fdisk
+SPDXID: SPDXRef-62355d10955a3872
+PackageVersion: 2.34-0.1ubuntu9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblcms2-2
+
+PackageName: liblcms2-2
+SPDXID: SPDXRef-62ff8e63d8508e8e
+PackageVersion: 2.9-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpaper1
+
+PackageName: libpaper1
+SPDXID: SPDXRef-6372fe9ecc548d36
+PackageVersion: 1.1.28
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickwand-6.q16-6
+
+PackageName: libmagickwand-6.q16-6
+SPDXID: SPDXRef-63f698936c40ae04
+PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/atomic
+
+PackageName: go.uber.org/atomic
+SPDXID: SPDXRef-64f3766a24bb2765
+PackageVersion: v1.7.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcurl4
+
+PackageName: libcurl4
+SPDXID: SPDXRef-650e7a603664291f
+PackageVersion: 7.68.0-1ubuntu2.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.fasterxml.jackson.core:jackson-annotations
+
+PackageName: com.fasterxml.jackson.core:jackson-annotations
+SPDXID: SPDXRef-65383c5efa325666
+PackageVersion: 2.13.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: net.minidev:accessors-smart
+
+PackageName: net.minidev:accessors-smart
+SPDXID: SPDXRef-665c3844e335e49f
+PackageVersion: 2.4.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: diffutils
+
+PackageName: diffutils
+SPDXID: SPDXRef-6762df705d96364b
+PackageVersion: 1:3.7-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/multierr
+
+PackageName: go.uber.org/multierr
+SPDXID: SPDXRef-67f46929b2a1b07e
+PackageVersion: v1.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-runtime
+
+PackageName: libpam-runtime
+SPDXID: SPDXRef-68962ecfc12cf6b8
+PackageVersion: 1.3.1-5ubuntu4.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdjvulibre21
+
+PackageName: libdjvulibre21
+SPDXID: SPDXRef-69b21db01768ff44
+PackageVersion: 3.5.27.1-14ubuntu0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bsdutils
+
+PackageName: bsdutils
+SPDXID: SPDXRef-6a525f68ba29efaf
+PackageVersion: 1:2.34-0.1ubuntu9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/atomic
+
+PackageName: go.uber.org/atomic
+SPDXID: SPDXRef-6b1a763e92f2c717
+PackageVersion: v1.7.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.httpcomponents.core5:httpcore5-h2
+
+PackageName: org.apache.httpcomponents.core5:httpcore5-h2
+SPDXID: SPDXRef-6b24a83bcdc71310
+PackageVersion: 5.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/sandertv/go-raknet
+
+PackageName: github.com/sandertv/go-raknet
+SPDXID: SPDXRef-6c349d3fb314beb7
+PackageVersion: v1.10.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libhx509-5-heimdal
+
+PackageName: libhx509-5-heimdal
+SPDXID: SPDXRef-6d19771790831925
+PackageVersion: 7.7.0+dfsg-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/hcl
+
+PackageName: github.com/hashicorp/hcl
+SPDXID: SPDXRef-6d1ad2b9493d359
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ghostscript
+
+PackageName: ghostscript
+SPDXID: SPDXRef-6d7a0da253cfb10f
+PackageVersion: 9.50~dfsg-5ubuntu4.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libavahi-common-data
+
+PackageName: libavahi-common-data
+SPDXID: SPDXRef-6dc63f1e229d76b4
+PackageVersion: 0.7-4ubuntu7.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: info.picocli:picocli
+
+PackageName: info.picocli:picocli
+SPDXID: SPDXRef-6dd4b6e41632334
+PackageVersion: 4.6.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fonts-dejavu-core
+
+PackageName: fonts-dejavu-core
+SPDXID: SPDXRef-6f2ef78acac042a1
+PackageVersion: 2.37-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: imagemagick-6.q16
+
+PackageName: imagemagick-6.q16
+SPDXID: SPDXRef-6fc214f75aefa496
+PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libicu66
+
+PackageName: libicu66
+SPDXID: SPDXRef-72244d0e20884160
+PackageVersion: 66.1-2ubuntu2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libhogweed5
+
+PackageName: libhogweed5
+SPDXID: SPDXRef-7330e3fd37410ad5
+PackageVersion: 3.5.1+really3.5.1-2ubuntu0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxcb-render0
+
+PackageName: libxcb-render0
+SPDXID: SPDXRef-734e0b8a870e83d6
+PackageVersion: 1.14-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.fasterxml.jackson.core:jackson-core
+
+PackageName: com.fasterxml.jackson.core:jackson-core
+SPDXID: SPDXRef-73924450e5d98b2
+PackageVersion: 2.13.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bash
+
+PackageName: bash
+SPDXID: SPDXRef-73be1974b08dae99
+PackageVersion: 5.0-6ubuntu1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcrypt20
+
+PackageName: libgcrypt20
+SPDXID: SPDXRef-74079387f632c01b
+PackageVersion: 1.8.5-5ubuntu1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gzip
+
+PackageName: gzip
+SPDXID: SPDXRef-74208e5dc6f4870c
+PackageVersion: 1.10-0ubuntu4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fonts-urw-base35
+
+PackageName: fonts-urw-base35
+SPDXID: SPDXRef-75559a9f446eb127
+PackageVersion: 20170801.1-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gosu
+
+PackageName: gosu
+SPDXID: SPDXRef-761a26e8b0a4cba4
+PackageVersion: 1.10-1ubuntu0.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbsd0
+
+PackageName: libbsd0
+SPDXID: SPDXRef-7839a7a32edd9c61
+PackageVersion: 0.10.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdbus-1-3
+
+PackageName: libdbus-1-3
+SPDXID: SPDXRef-78ceb9899baaad35
+PackageVersion: 1.12.16-2ubuntu2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: locales
+
+PackageName: locales
+SPDXID: SPDXRef-78dd4226e448e23c
+PackageVersion: 2.31-0ubuntu9.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfftw3-double3
+
+PackageName: libfftw3-double3
+SPDXID: SPDXRef-79baf1f1729992e0
+PackageVersion: 3.3.8-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsasl2-modules-db
+
+PackageName: libsasl2-modules-db
+SPDXID: SPDXRef-7a23d6f23bc9d1cb
+PackageVersion: 2.1.27+dfsg-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncurses6
+
+PackageName: libncurses6
+SPDXID: SPDXRef-7aa57e7392beb708
+PackageVersion: 6.2-0ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: xdg-user-dirs
+
+PackageName: xdg-user-dirs
+SPDXID: SPDXRef-7b1157c994717ffb
+PackageVersion: 0.17-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcrypt1
+
+PackageName: libcrypt1
+SPDXID: SPDXRef-7c1f89bcfdf386f5
+PackageVersion: 1:4.4.10-10ubuntu4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ncurses-bin
+
+PackageName: ncurses-bin
+SPDXID: SPDXRef-7d1ac42036560c8c
+PackageVersion: 6.2-0ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-codec-dns
+
+PackageName: io.netty:netty-codec-dns
+SPDXID: SPDXRef-7dae578e59c0e68c
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: findutils
+
+PackageName: findutils
+SPDXID: SPDXRef-8223b74c7b14763f
+PackageVersion: 4.7.0-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgs9
+
+PackageName: libgs9
+SPDXID: SPDXRef-82439f78cb24d19e
+PackageVersion: 9.50~dfsg-5ubuntu4.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgmp10
+
+PackageName: libgmp10
+SPDXID: SPDXRef-825398a4f60b6832
+PackageVersion: 2:6.2.0+dfsg-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: base-passwd
+
+PackageName: base-passwd
+SPDXID: SPDXRef-83023ad89402fec9
+PackageVersion: 3.5.47
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Raqbit/mc-pinger
+
+PackageName: github.com/Raqbit/mc-pinger
+SPDXID: SPDXRef-835bf2a85a5abce
+PackageVersion: v0.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/avast/retry-go
+
+PackageName: github.com/avast/retry-go
+SPDXID: SPDXRef-837f08622dbe3848
+PackageVersion: v3.0.0+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagic-mgc
+
+PackageName: libmagic-mgc
+SPDXID: SPDXRef-8613b1194bf737a3
+PackageVersion: 1:5.38-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-modules-bin
+
+PackageName: libpam-modules-bin
+SPDXID: SPDXRef-866a31e6ba7827d6
+PackageVersion: 1.3.1-5ubuntu4.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libselinux1
+
+PackageName: libselinux1
+SPDXID: SPDXRef-866b148e8f15a900
+PackageVersion: 3.0-1build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-codec
+
+PackageName: io.netty:netty-codec
+SPDXID: SPDXRef-87056b9d328fd650
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libglib2.0-0
+
+PackageName: libglib2.0-0
+SPDXID: SPDXRef-87662b31f88a24d1
+PackageVersion: 2.64.6-1~ubuntu20.04.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/spf13/viper
+
+PackageName: github.com/spf13/viper
+SPDXID: SPDXRef-879ac2b41e497970
+PackageVersion: v1.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: passwd
+
+PackageName: passwd
+SPDXID: SPDXRef-87f8123e51a638b5
+PackageVersion: 1:4.8.1-1ubuntu5.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxau6
+
+PackageName: libxau6
+SPDXID: SPDXRef-8806c02df279e3df
+PackageVersion: 1:1.0.9-0ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: hostname
+
+PackageName: hostname
+SPDXID: SPDXRef-88b35d92e43f7175
+PackageVersion: 3.23
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libattr1
+
+PackageName: libattr1
+SPDXID: SPDXRef-88bb9e4fb78b870c
+PackageVersion: 1:2.4.48-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dbus
+
+PackageName: dbus
+SPDXID: SPDXRef-88c949a68c39e7d9
+PackageVersion: 1.12.16-2ubuntu2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: lsb-base
+
+PackageName: lsb-base
+SPDXID: SPDXRef-89ac0539db1d4689
+PackageVersion: 11.1.0ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jctools:jctools-core
+
+PackageName: org.jctools:jctools-core
+SPDXID: SPDXRef-8b118b004b4d517
+PackageVersion: 3.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libss2
+
+PackageName: libss2
+SPDXID: SPDXRef-8b1e1f3431f97dc1
+PackageVersion: 1.45.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsystemd0
+
+PackageName: libsystemd0
+SPDXID: SPDXRef-8b5718c4304f7616
+PackageVersion: 245.4-4ubuntu3.13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbrotli1
+
+PackageName: libbrotli1
+SPDXID: SPDXRef-8b9e4f55d2479b94
+PackageVersion: 1.0.7-6ubuntu0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjpeg8
+
+PackageName: libjpeg8
+SPDXID: SPDXRef-8e8f5aff69f36dd7
+PackageVersion: 8c-2ubuntu8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblqr-1-0
+
+PackageName: liblqr-1-0
+SPDXID: SPDXRef-8e980d7e37373c38
+PackageVersion: 0.4.2-2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: patch
+
+PackageName: patch
+SPDXID: SPDXRef-8ec40a7e6704f97
+PackageVersion: 2.7.6-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libidn2-0
+
+PackageName: libidn2-0
+SPDXID: SPDXRef-8ef3b6d5694791c9
+PackageVersion: 2.2.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: adduser
+
+PackageName: adduser
+SPDXID: SPDXRef-8f55d1edb6835c12
+PackageVersion: 3.118ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5support0
+
+PackageName: libkrb5support0
+SPDXID: SPDXRef-8fd80143f96e91fe
+PackageVersion: 1.17-6ubuntu4.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: poppler-data
+
+PackageName: poppler-data
+SPDXID: SPDXRef-900eaf9d56b6a47a
+PackageVersion: 0.4.9-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: zlib1g
+
+PackageName: zlib1g
+SPDXID: SPDXRef-9094e3b0686bf8ab
+PackageVersion: 1:1.2.11.dfsg-2ubuntu1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre3
+
+PackageName: libpcre3
+SPDXID: SPDXRef-90ed2c3a615f9147
+PackageVersion: 2:8.39-12build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/spf13/pflag
+
+PackageName: github.com/spf13/pflag
+SPDXID: SPDXRef-91144cf5aaacf757
+PackageVersion: v1.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libacl1
+
+PackageName: libacl1
+SPDXID: SPDXRef-91ea473b95592656
+PackageVersion: 2.2.53-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dpkg
+
+PackageName: dpkg
+SPDXID: SPDXRef-91fe051f9fc6f169
+PackageVersion: 1.19.7ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: less
+
+PackageName: less
+SPDXID: SPDXRef-950a9d8689b0c385
+PackageVersion: 551-1ubuntu0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpng16-16
+
+PackageName: libpng16-16
+SPDXID: SPDXRef-9562d0883ebd067
+PackageVersion: 1.6.37-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libx11-data
+
+PackageName: libx11-data
+SPDXID: SPDXRef-956577b58315c6e1
+PackageVersion: 2:1.6.9-2ubuntu1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5-26-heimdal
+
+PackageName: libkrb5-26-heimdal
+SPDXID: SPDXRef-965f3c1ad2915c8f
+PackageVersion: 7.7.0+dfsg-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickcore-6.q16-6-extra
+
+PackageName: libmagickcore-6.q16-6-extra
+SPDXID: SPDXRef-96acca9e53694b6f
+PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libasn1-8-heimdal
+
+PackageName: libasn1-8-heimdal
+SPDXID: SPDXRef-9704bc9c20577b28
+PackageVersion: 7.7.0+dfsg-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagic1
+
+PackageName: libmagic1
+SPDXID: SPDXRef-979c3ef8fac75737
+PackageVersion: 1:5.38-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam0g
+
+PackageName: libpam0g
+SPDXID: SPDXRef-97bf2765eef9a198
+PackageVersion: 1.3.1-5ubuntu4.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: file
+
+PackageName: file
+SPDXID: SPDXRef-97c86bae72ef0b23
+PackageVersion: 1:5.38-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcap-ng0
+
+PackageName: libcap-ng0
+SPDXID: SPDXRef-9840ca5d0ee56139
+PackageVersion: 0.7.9-2.1build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/spf13/cobra
+
+PackageName: github.com/spf13/cobra
+SPDXID: SPDXRef-98a5df4557c6b84c
+PackageVersion: v0.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.commons:commons-lang3
+
+PackageName: org.apache.commons:commons-lang3
+SPDXID: SPDXRef-98b2ea2d8284132b
+PackageVersion: 3.8.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: netpbm
+
+PackageName: netpbm
+SPDXID: SPDXRef-99d521a7f000b153
+PackageVersion: 2:10.0-15.3build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxcb1
+
+PackageName: libxcb1
+SPDXID: SPDXRef-9a3d0d8ec3098df
+PackageVersion: 1.14-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.projectreactor.netty:reactor-netty-core
+
+PackageName: io.projectreactor.netty:reactor-netty-core
+SPDXID: SPDXRef-9ad86fcb443a8b33
+PackageVersion: 1.0.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libffi7
+
+PackageName: libffi7
+SPDXID: SPDXRef-9b96432f76cbd79e
+PackageVersion: 3.3-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+
+PackageName: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+SPDXID: SPDXRef-9c0eb8b50eca423f
+PackageVersion: 2.13.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libhcrypto4-heimdal
+
+PackageName: libhcrypto4-heimdal
+SPDXID: SPDXRef-9c102f9a10400008
+PackageVersion: 7.7.0+dfsg-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfido2-1
+
+PackageName: libfido2-1
+SPDXID: SPDXRef-9cd4adb9b0cca7e5
+PackageVersion: 1.3.1-1ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ca-certificates
+
+PackageName: ca-certificates
+SPDXID: SPDXRef-9d25490c551016e
+PackageVersion: 20210119~20.04.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libavahi-common3
+
+PackageName: libavahi-common3
+SPDXID: SPDXRef-9d466f60ee4331ed
+PackageVersion: 0.7-4ubuntu7.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: imagemagick-6-common
+
+PackageName: imagemagick-6-common
+SPDXID: SPDXRef-9d6802733d73a4fa
+PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mysql-client
+
+PackageName: mysql-client
+SPDXID: SPDXRef-9db189e132e54ddc
+PackageVersion: 8.0.29-0ubuntu0.20.04.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxmuu1
+
+PackageName: libxmuu1
+SPDXID: SPDXRef-a096fa0f956f3088
+PackageVersion: 2:1.1.3-0ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgssapi-krb5-2
+
+PackageName: libgssapi-krb5-2
+SPDXID: SPDXRef-a11bf5bc67def292
+PackageVersion: 1.17-6ubuntu4.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsepol1
+
+PackageName: libsepol1
+SPDXID: SPDXRef-a16331b682753207
+PackageVersion: 3.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: knockd
+
+PackageName: knockd
+SPDXID: SPDXRef-a2ce4814670a197e
+PackageVersion: 0.7-1ubuntu3.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxcb-shm0
+
+PackageName: libxcb-shm0
+SPDXID: SPDXRef-a35606740c3871bc
+PackageVersion: 1.14-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/beorn7/perks
+
+PackageName: github.com/beorn7/perks
+SPDXID: SPDXRef-a56099d1c53b7f15
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libp11-kit0
+
+PackageName: libp11-kit0
+SPDXID: SPDXRef-a6406d8c1beda0df
+PackageVersion: 0.23.20-1ubuntu0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libheimntlm0-heimdal
+
+PackageName: libheimntlm0-heimdal
+SPDXID: SPDXRef-a8e28fe8459732a7
+PackageVersion: 7.7.0+dfsg-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libwebp6
+
+PackageName: libwebp6
+SPDXID: SPDXRef-a931f2463cebebb6
+PackageVersion: 0.6.1-2ubuntu0.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: rsync
+
+PackageName: rsync
+SPDXID: SPDXRef-a993eaf00770481f
+PackageVersion: 3.1.3-8ubuntu0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpixman-1-0
+
+PackageName: libpixman-1-0
+SPDXID: SPDXRef-aa01d6775ed7f6fc
+PackageVersion: 0.38.4-0ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage1
+
+PackageName: libsemanage1
+SPDXID: SPDXRef-aa0aa38b5e601324
+PackageVersion: 3.0-1build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libheimbase1-heimdal
+
+PackageName: libheimbase1-heimdal
+SPDXID: SPDXRef-ab6970cbc2e23526
+PackageVersion: 7.7.0+dfsg-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: procps
+
+PackageName: procps
+SPDXID: SPDXRef-acadd73c012028
+PackageVersion: 2:3.3.16-1ubuntu2.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: librtmp1
+
+PackageName: librtmp1
+SPDXID: SPDXRef-ad26277130b7cd0f
+PackageVersion: 2.4+20151223.gitfa8646d.1-2build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsqlite3-0
+
+PackageName: libsqlite3-0
+SPDXID: SPDXRef-ad380cfcc48193d9
+PackageVersion: 3.31.1-4ubuntu0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgpg-error0
+
+PackageName: libgpg-error0
+SPDXID: SPDXRef-adc66fcb336ef5f6
+PackageVersion: 1.37-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ucf
+
+PackageName: ucf
+SPDXID: SPDXRef-ae8de91a41767fbe
+PackageVersion: 3.0038+nmu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-codec-http2
+
+PackageName: io.netty:netty-codec-http2
+SPDXID: SPDXRef-aebbd34f84761bd4
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/itzg/zapconfigs
+
+PackageName: github.com/itzg/zapconfigs
+SPDXID: SPDXRef-af1cbb57c04f52eb
+PackageVersion: v0.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgssapi3-heimdal
+
+PackageName: libgssapi3-heimdal
+SPDXID: SPDXRef-b0b3dd985d207ac6
+PackageVersion: 7.7.0+dfsg-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fontconfig-config
+
+PackageName: fontconfig-config
+SPDXID: SPDXRef-b19a99121e81b01b
+PackageVersion: 2.13.1-2ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libthai0
+
+PackageName: libthai0
+SPDXID: SPDXRef-b2b207a5753084e9
+PackageVersion: 0.1.28-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dash
+
+PackageName: dash
+SPDXID: SPDXRef-b329eb2297e6444d
+PackageVersion: 0.5.10.2-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcurl3-gnutls
+
+PackageName: libcurl3-gnutls
+SPDXID: SPDXRef-b3645018d988d7ba
+PackageVersion: 7.68.0-1ubuntu2.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libonig5
+
+PackageName: libonig5
+SPDXID: SPDXRef-b3d49bc914ebba68
+PackageVersion: 6.9.4-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sysvinit-utils
+
+PackageName: sysvinit-utils
+SPDXID: SPDXRef-b43be881ad45f3b4
+PackageVersion: 2.96-2.1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/james4k/rcon
+
+PackageName: github.com/james4k/rcon
+SPDXID: SPDXRef-b60c5d90bae18b66
+PackageVersion: v0.0.0-20120923215419-8fbb8268b60a
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libopenexr24
+
+PackageName: libopenexr24
+SPDXID: SPDXRef-b6569d4f6c0070d6
+PackageVersion: 2.3.0-6ubuntu0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: git-man
+
+PackageName: git-man
+SPDXID: SPDXRef-b6779dc03bdb0f21
+PackageVersion: 1:2.25.1-1ubuntu3.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gcc-10-base
+
+PackageName: gcc-10-base
+SPDXID: SPDXRef-b7087981508531fd
+PackageVersion: 10.3.0-1ubuntu1~20.04
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: cron
+
+PackageName: cron
+SPDXID: SPDXRef-b7b3d54006a6fe05
+PackageVersion: 3.0pl1-136ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc6
+
+PackageName: libc6
+SPDXID: SPDXRef-b97552d44d0c6f31
+PackageVersion: 2.31-0ubuntu9.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libseccomp2
+
+PackageName: libseccomp2
+SPDXID: SPDXRef-ba8bd4bfe44053fe
+PackageVersion: 2.5.1-1ubuntu1~20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/text
+
+PackageName: golang.org/x/text
+SPDXID: SPDXRef-bac564fc8aceeaf6
+PackageVersion: v0.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: jq
+
+PackageName: jq
+SPDXID: SPDXRef-bb7427ab3522f838
+PackageVersion: 1.6-1ubuntu0.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/yaml.v2
+
+PackageName: gopkg.in/yaml.v2
+SPDXID: SPDXRef-bbbae8a3c9afa1c7
+PackageVersion: v2.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/itzg/go-flagsfiller
+
+PackageName: github.com/itzg/go-flagsfiller
+SPDXID: SPDXRef-bbec1d153ed4abe8
+PackageVersion: v1.9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblzma5
+
+PackageName: liblzma5
+SPDXID: SPDXRef-bc0ecd211c6674c0
+PackageVersion: 5.2.4-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libstdc++6
+
+PackageName: libstdc++6
+SPDXID: SPDXRef-bdaf6d666e70c274
+PackageVersion: 10.3.0-1ubuntu1~20.04
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/pires/go-proxyproto
+
+PackageName: github.com/pires/go-proxyproto
+SPDXID: SPDXRef-beebf3cd7d938ade
+PackageVersion: v0.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcom-err2
+
+PackageName: libcom-err2
+SPDXID: SPDXRef-c032c09d083f3c78
+PackageVersion: 1.45.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/prometheus/client_model
+
+PackageName: github.com/prometheus/client_model
+SPDXID: SPDXRef-c09080f89fce7d90
+PackageVersion: v0.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdatrie1
+
+PackageName: libdatrie1
+SPDXID: SPDXRef-c1c64796391b4d80
+PackageVersion: 0.2.12-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpsl5
+
+PackageName: libpsl5
+SPDXID: SPDXRef-c1e13f1efe402626
+PackageVersion: 0.21.0-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libx11-6
+
+PackageName: libx11-6
+SPDXID: SPDXRef-c22b180de57cce79
+PackageVersion: 2:1.6.9-2ubuntu1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libext2fs2
+
+PackageName: libext2fs2
+SPDXID: SPDXRef-c23e1658a34a9f86
+PackageVersion: 1.45.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libk5crypto3
+
+PackageName: libk5crypto3
+SPDXID: SPDXRef-c282ac1d0c23283b
+PackageVersion: 1.17-6ubuntu4.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libldap-common
+
+PackageName: libldap-common
+SPDXID: SPDXRef-c2dbe0b546aaa83c
+PackageVersion: 2.4.49+dfsg-2ubuntu1.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libijs-0.35
+
+PackageName: libijs-0.35
+SPDXID: SPDXRef-c3230533d78e1908
+PackageVersion: 0.35-15
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/cespare/xxhash/v2
+
+PackageName: github.com/cespare/xxhash/v2
+SPDXID: SPDXRef-c36f377dffb97eff
+PackageVersion: v2.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaudit1
+
+PackageName: libaudit1
+SPDXID: SPDXRef-c47ddbd2eb4ca2db
+PackageVersion: 1:2.8.5-2ubuntu6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libilmbase24
+
+PackageName: libilmbase24
+SPDXID: SPDXRef-c4b34830d4027d2d
+PackageVersion: 2.3.0-6build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: iputils-ping
+
+PackageName: iputils-ping
+SPDXID: SPDXRef-c57a70bfa075b76a
+PackageVersion: 3:20190709-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libldap-2.4-2
+
+PackageName: libldap-2.4-2
+SPDXID: SPDXRef-c59b9ec591a528df
+PackageVersion: 2.4.49+dfsg-2ubuntu1.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.httpcomponents.core5:httpcore5
+
+PackageName: org.apache.httpcomponents.core5:httpcore5
+SPDXID: SPDXRef-c5a6e1c5960af886
+PackageVersion: 5.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdb5.3
+
+PackageName: libdb5.3
+SPDXID: SPDXRef-c5f6c0faae111aea
+PackageVersion: 5.3.28+dfsg1-0.6ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdjvulibre-text
+
+PackageName: libdjvulibre-text
+SPDXID: SPDXRef-c60f5e82a3c65796
+PackageVersion: 3.5.27.1-14ubuntu0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/prometheus/procfs
+
+PackageName: github.com/prometheus/procfs
+SPDXID: SPDXRef-c6b0566af73cd5e9
+PackageVersion: v0.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnetpbm10
+
+PackageName: libnetpbm10
+SPDXID: SPDXRef-c7bc166d7cfe972f
+PackageVersion: 2:10.0-15.3build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: coreutils
+
+PackageName: coreutils
+SPDXID: SPDXRef-c8bdce11d9cf838b
+PackageVersion: 8.30-3ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.maven:maven-artifact
+
+PackageName: org.apache.maven:maven-artifact
+SPDXID: SPDXRef-c9db7f45adf463e4
+PackageVersion: 3.8.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/prometheus/client_golang
+
+PackageName: github.com/prometheus/client_golang
+SPDXID: SPDXRef-ca887ab7b0bd3e9d
+PackageVersion: v1.11.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdbm-compat4
+
+PackageName: libgdbm-compat4
+SPDXID: SPDXRef-cc5d8dc0604914dc
+PackageVersion: 1.18.1-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.reactivestreams:reactive-streams
+
+PackageName: org.reactivestreams:reactive-streams
+SPDXID: SPDXRef-cc652e08cf555ccb
+PackageVersion: 1.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-modules
+
+PackageName: libpam-modules
+SPDXID: SPDXRef-ccccfd95386350c3
+PackageVersion: 1.3.1-5ubuntu4.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libperl5.30
+
+PackageName: libperl5.30
+SPDXID: SPDXRef-ccdefd3057e07da9
+PackageVersion: 5.30.0-9ubuntu0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxext6
+
+PackageName: libxext6
+SPDXID: SPDXRef-cd7dc2ce9f301437
+PackageVersion: 2:1.3.4-0ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: logrotate
+
+PackageName: logrotate
+SPDXID: SPDXRef-cde047bc70a87208
+PackageVersion: 3.14.0-4ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libharfbuzz0b
+
+PackageName: libharfbuzz0b
+SPDXID: SPDXRef-cec5591ffa0e64be
+PackageVersion: 2.6.4-1ubuntu4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkeyutils1
+
+PackageName: libkeyutils1
+SPDXID: SPDXRef-cf3d762038ebfe98
+PackageVersion: 1.6-6ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/golang/protobuf
+
+PackageName: github.com/golang/protobuf
+SPDXID: SPDXRef-d0c65f15d9485c55
+PackageVersion: v1.5.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnettle7
+
+PackageName: libnettle7
+SPDXID: SPDXRef-d0ea63fd2b830182
+PackageVersion: 3.5.1+really3.5.1-2ubuntu0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.fasterxml.jackson.core:jackson-databind
+
+PackageName: com.fasterxml.jackson.core:jackson-databind
+SPDXID: SPDXRef-d1522cc5d6860293
+PackageVersion: 2.13.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: util-linux
+
+PackageName: util-linux
+SPDXID: SPDXRef-d276f79d3387115
+PackageVersion: 2.34-0.1ubuntu9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpango-1.0-0
+
+PackageName: libpango-1.0-0
+SPDXID: SPDXRef-d31fcfba1fc39830
+PackageVersion: 1.44.7-2ubuntu4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libwebpmux3
+
+PackageName: libwebpmux3
+SPDXID: SPDXRef-d459d8958827a5f7
+PackageVersion: 0.6.1-2ubuntu0.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/itzg/go-flagsfiller
+
+PackageName: github.com/itzg/go-flagsfiller
+SPDXID: SPDXRef-d53abe4bb337e53a
+PackageVersion: v1.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sed
+
+PackageName: sed
+SPDXID: SPDXRef-d5b6cfc92d312e38
+PackageVersion: 4.7-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjbig0
+
+PackageName: libjbig0
+SPDXID: SPDXRef-d60d3c169f144d06
+PackageVersion: 2.1-3.1build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tar
+
+PackageName: tar
+SPDXID: SPDXRef-d743936df87ff3ed
+PackageVersion: 1.30+dfsg-7ubuntu0.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mawk
+
+PackageName: mawk
+SPDXID: SPDXRef-d882da3b5b83f9fb
+PackageVersion: 1.3.4.20200120-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-buffer
+
+PackageName: io.netty:netty-buffer
+SPDXID: SPDXRef-d98f34ef29a7bec9
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/zap
+
+PackageName: go.uber.org/zap
+SPDXID: SPDXRef-da7a49d553a48cc6
+PackageVersion: v1.21.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/spf13/jwalterweatherman
+
+PackageName: github.com/spf13/jwalterweatherman
+SPDXID: SPDXRef-da8c095a9531253e
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssl1.1
+
+PackageName: libssl1.1
+SPDXID: SPDXRef-da9709f346bc8638
+PackageVersion: 1.1.1f-1ubuntu2.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/prometheus/common
+
+PackageName: github.com/prometheus/common
+SPDXID: SPDXRef-dabf64faa624ecf7
+PackageVersion: v0.26.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcc-s1
+
+PackageName: libgcc-s1
+SPDXID: SPDXRef-db0da26392a8e52f
+PackageVersion: 10.3.0-1ubuntu1~20.04
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjpeg-turbo8
+
+PackageName: libjpeg-turbo8
+SPDXID: SPDXRef-dd799775eaa00f86
+PackageVersion: 2.0.3-0ubuntu1.20.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libglib2.0-data
+
+PackageName: libglib2.0-data
+SPDXID: SPDXRef-df0b9bc6fb2cb664
+PackageVersion: 2.64.6-1~ubuntu20.04.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxdmcp6
+
+PackageName: libxdmcp6
+SPDXID: SPDXRef-df313b554b231b5a
+PackageVersion: 1:1.1.3-0ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gsfonts
+
+PackageName: gsfonts
+SPDXID: SPDXRef-df9ef89720d415e
+PackageVersion: 1:8.11+urwcyr1.0.7~pre44-4.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libltdl7
+
+PackageName: libltdl7
+SPDXID: SPDXRef-e0c90eeb14dd4cb
+PackageVersion: 2.4.6-14
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/zap
+
+PackageName: go.uber.org/zap
+SPDXID: SPDXRef-e35ba50f4f152c60
+PackageVersion: v1.19.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-codec-http
+
+PackageName: io.netty:netty-codec-http
+SPDXID: SPDXRef-e415802735c67123
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libexpat1
+
+PackageName: libexpat1
+SPDXID: SPDXRef-e4d184908cba50e7
+PackageVersion: 2.2.9-1build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mysql-client-core-8.0
+
+PackageName: mysql-client-core-8.0
+SPDXID: SPDXRef-e5b148a4dce23da4
+PackageVersion: 8.0.29-0ubuntu0.20.04.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: openssl
+
+PackageName: openssl
+SPDXID: SPDXRef-e671a11ebb5f0c3
+PackageVersion: 1.1.1f-1ubuntu2.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/multierr
+
+PackageName: go.uber.org/multierr
+SPDXID: SPDXRef-e9993df84a04fb07
+PackageVersion: v1.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/sys
+
+PackageName: golang.org/x/sys
+SPDXID: SPDXRef-ea3a80e40f7e9f1a
+PackageVersion: v0.0.0-20181205085412-a5c9d58dba9a
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libwind0-heimdal
+
+PackageName: libwind0-heimdal
+SPDXID: SPDXRef-eaa9f09c629a5f69
+PackageVersion: 7.7.0+dfsg-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcbor0.6
+
+PackageName: libcbor0.6
+SPDXID: SPDXRef-eb025e12df2789ed
+PackageVersion: 0.6.0-0ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfreetype6
+
+PackageName: libfreetype6
+SPDXID: SPDXRef-eb053d467219e24f
+PackageVersion: 2.10.1-2ubuntu0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: shared-mime-info
+
+PackageName: shared-mime-info
+SPDXID: SPDXRef-eb2158a77f6dcbee
+PackageVersion: 1.15-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtinfo6
+
+PackageName: libtinfo6
+SPDXID: SPDXRef-ee0aaf3024b2494
+PackageVersion: 6.2-0ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickcore-6.q16-6
+
+PackageName: libmagickcore-6.q16-6
+SPDXID: SPDXRef-ee487d93f0fd1c0e
+PackageVersion: 8:6.9.10.23+dfsg-2.1ubuntu11.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.netty:netty-codec-socks
+
+PackageName: io.netty:netty-codec-socks
+SPDXID: SPDXRef-eec390b3a32fde08
+PackageVersion: 4.1.77.Final
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfribidi0
+
+PackageName: libfribidi0
+SPDXID: SPDXRef-eef9bcdc4d5f5494
+PackageVersion: 1.0.8-2ubuntu0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl
+
+PackageName: perl
+SPDXID: SPDXRef-efe77a63524acb67
+PackageVersion: 5.30.0-9ubuntu0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sudo
+
+PackageName: sudo
+SPDXID: SPDXRef-f016ca08c1f6dd9e
+PackageVersion: 1.8.31-1ubuntu1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/iancoleman/strcase
+
+PackageName: github.com/iancoleman/strcase
+SPDXID: SPDXRef-f13a8b8cc2812d96
+PackageVersion: v0.0.0-20191112232945-16388991a334
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpangoft2-1.0-0
+
+PackageName: libpangoft2-1.0-0
+SPDXID: SPDXRef-f14315b0dcf9db67
+PackageVersion: 1.44.7-2ubuntu4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcairo2
+
+PackageName: libcairo2
+SPDXID: SPDXRef-f2c529ad66b5e534
+PackageVersion: 1.16.0-4ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: grep
+
+PackageName: grep
+SPDXID: SPDXRef-f348e4b50a0cbf80
+PackageVersion: 3.4-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/influxdata/line-protocol
+
+PackageName: github.com/influxdata/line-protocol
+SPDXID: SPDXRef-f3a572b13b4443f3
+PackageVersion: v0.0.0-20210311194329-9aa0e372d097
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: git
+
+PackageName: git
+SPDXID: SPDXRef-f6060d4977926a3d
+PackageVersion: 1:2.25.1-1ubuntu3.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.yaml:snakeyaml
+
+PackageName: org.yaml:snakeyaml
+SPDXID: SPDXRef-f610c1cdde03ace0
+PackageVersion: 1.30
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgraphite2-3
+
+PackageName: libgraphite2-3
+SPDXID: SPDXRef-f70ff452d6fe19c5
+PackageVersion: 1.3.13-11build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsasl2-2
+
+PackageName: libsasl2-2
+SPDXID: SPDXRef-f874950cb86e9fc
+PackageVersion: 2.1.27+dfsg-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcap2-bin
+
+PackageName: libcap2-bin
+SPDXID: SPDXRef-f8e02b730bf45417
+PackageVersion: 1:2.32-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfdisk1
+
+PackageName: libfdisk1
+SPDXID: SPDXRef-f91323fd9370a387
+PackageVersion: 2.34-0.1ubuntu9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxrender1
+
+PackageName: libxrender1
+SPDXID: SPDXRef-fa01ba4abb669dab
+PackageVersion: 1:0.9.10-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: curl
+
+PackageName: curl
+SPDXID: SPDXRef-fa5f0e9b162d3107
+PackageVersion: 7.68.0-1ubuntu2.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: hicolor-icon-theme
+
+PackageName: hicolor-icon-theme
+SPDXID: SPDXRef-fb03e0c29e39ed5d
+PackageVersion: 0.17-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/sys
+
+PackageName: golang.org/x/sys
+SPDXID: SPDXRef-fbfe83f3fa8d7cd8
+PackageVersion: v0.0.0-20210603081109-ebe580a85c40
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/fsnotify/fsnotify
+
+PackageName: github.com/fsnotify/fsnotify
+SPDXID: SPDXRef-fcd1fe88c99bb856
+PackageVersion: v1.4.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mount
+
+PackageName: mount
+SPDXID: SPDXRef-fd420b1b36ce444d
+PackageVersion: 2.34-0.1ubuntu9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/spf13/cast
+
+PackageName: github.com/spf13/cast
+SPDXID: SPDXRef-fddba8c7413e88bb
+PackageVersion: v1.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpopt0
+
+PackageName: libpopt0
+SPDXID: SPDXRef-feb110e0f058c572
+PackageVersion: 1.16-14
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
