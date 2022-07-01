@@ -2,10 +2,10 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: ubuntu:latest
-DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/ubuntu:latest-3fee1759-97b1-42cc-b715-de374a23bd26
+DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/ubuntu:latest-5e0c4c26-5dda-4fd4-bf4b-52bdc9e873d2
 Creator: Organization: aquasecurity
 Creator: Tool: trivy
-Created: 2022-07-01T17:08:53.9221156Z
+Created: 2022-07-01T17:11:26.6806434Z
 
 ##### Package: e2fsprogs
 
