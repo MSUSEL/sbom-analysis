@@ -1,8 +1,9 @@
+#![allow(dead_code)]
+
 use std::fmt::{Display, Formatter};
 use std::str::FromStr;
-use reqwest::{Client, Error, Response};
+use reqwest::{Client, Error};
 use reqwest::header::{HeaderMap, HeaderValue};
-use crate::format::nvd_cve::NvdCve;
 
 pub struct NvdApi(Client);
 
@@ -18,8 +19,8 @@ impl TryFrom<String> for CveId {
     fn try_from(value: String) -> Result<Self, Self::Error> {
         let mut parts = value.split('-');
         let _ = parts.next();
-        let year = u16::from_str(parts.next().ok_or(())?).map_err(|e| ())?;
-        let id = u32::from_str(parts.next().ok_or(())?).map_err(|e| ())?;
+        let year = u16::from_str(parts.next().ok_or(())?).map_err(|_| ())?;
+        let id = u32::from_str(parts.next().ok_or(())?).map_err(|_| ())?;
         Ok(Self { year, id })
     }
 }
@@ -47,7 +48,7 @@ impl NvdApi {
             .map(|v| Self(v))
     }
 
-    async fn get_cve(&self, cve_id: CveId) -> Result<CveId, Issue> {
+    async fn get_cve(&self, _cve_id: CveId) -> Result<CveId, Issue> {
         // serde_json::from_str(&self.0
         //     .get(&format!("https://nvd.nist.gov/vuln/detail/{}", cve_id))
         //     .send()

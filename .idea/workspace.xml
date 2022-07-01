@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af5de3d-895c-436c-85fa-f62b8e4082e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cache/molkars/pbd/1.0/trivy.cyclonedx.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/format/trivy.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grype.sarif.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pbd.syft.sbom.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/nvd.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/nvd.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/vt.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/vt.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cvss/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/cvss/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/format/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/format/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/syft.sarif.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trivy.sarif.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,7 @@
     "dart.analysis.tool.window.visible": "false",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "language.rust.cargo.check",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
@@ -83,6 +78,7 @@
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
+    <option name="runExternalLinterOnTheFly" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
     <option name="version" value="2" />
   </component>
@@ -96,7 +92,7 @@
       <updated>1656003829041</updated>
       <workItem from="1656632868956" duration="934000" />
       <workItem from="1656651497906" duration="428000" />
-      <workItem from="1656652481887" duration="964000" />
+      <workItem from="1656652481887" duration="1543000" />
     </task>
     <servers />
   </component>
@@ -116,5 +112,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

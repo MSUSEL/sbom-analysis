@@ -5,6 +5,7 @@ pub struct LongestZip<L, R, IL: Iterator<Item=L>, IR: Iterator<Item=R>> {
     right: IR,
 }
 
+#[allow(dead_code)]
 pub fn zip_longest<L, R, IL: Iterator<Item=L>, IR: Iterator<Item=R>>(left: IL, right: IR) -> LongestZip<L, R, IL, IR> {
     LongestZip {
         left,
