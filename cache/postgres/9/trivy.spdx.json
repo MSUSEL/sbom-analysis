@@ -1,0 +1,1197 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: postgres:9
+DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/postgres:9-874b80e8-ddea-487f-9511-3ae2f9f38608
+Creator: Organization: aquasecurity
+Creator: Tool: trivy
+Created: 2022-07-01T19:30:09.940281Z
+
+##### Package: libsasl2-2
+
+PackageName: libsasl2-2
+SPDXID: SPDXRef-1196a7ea4af86c27
+PackageVersion: 2.1.27~101-g0780600+dfsg-3+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: base-files
+
+PackageName: base-files
+SPDXID: SPDXRef-12e7813212224b51
+PackageVersion: 9.9+deb9u13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debianutils
+
+PackageName: debianutils
+SPDXID: SPDXRef-13757cf17624600d
+PackageVersion: 4.8.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpq5
+
+PackageName: libpq5
+SPDXID: SPDXRef-1410064031b777e0
+PackageVersion: 14.2-1.pgdg90+1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dirmngr
+
+PackageName: dirmngr
+SPDXID: SPDXRef-161a324a33a80bc0
+PackageVersion: 2.1.18-8~deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gnupg
+
+PackageName: gnupg
+SPDXID: SPDXRef-18ef58840026bea
+PackageVersion: 2.1.18-8~deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgmp10
+
+PackageName: libgmp10
+SPDXID: SPDXRef-1945df0ca8c97ac6
+PackageVersion: 2:6.1.2+dfsg-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl-base
+
+PackageName: perl-base
+SPDXID: SPDXRef-1ae7aef246f9305e
+PackageVersion: 5.24.1-3+deb9u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcap-ng0
+
+PackageName: libcap-ng0
+SPDXID: SPDXRef-1d2fdd35cc685fc8
+PackageVersion: 0.7.7-3+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: postgresql-contrib-9.6
+
+PackageName: postgresql-contrib-9.6
+SPDXID: SPDXRef-1df9ea0983f5429c
+PackageVersion: 9.6.24-1.pgdg90+1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-modules-bin
+
+PackageName: libpam-modules-bin
+SPDXID: SPDXRef-1e6ca359a848c491
+PackageVersion: 1.1.8-3.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: hostname
+
+PackageName: hostname
+SPDXID: SPDXRef-1e86ffaa40ec7042
+PackageVersion: 3.18+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnpth0
+
+PackageName: libnpth0
+SPDXID: SPDXRef-1f43654559591f1
+PackageVersion: 1.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/opencontainers/runc
+
+PackageName: github.com/opencontainers/runc
+SPDXID: SPDXRef-2149f5d04d637b
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libselinux1
+
+PackageName: libselinux1
+SPDXID: SPDXRef-2159d423080c3360
+PackageVersion: 2.6-3+b3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libattr1
+
+PackageName: libattr1
+SPDXID: SPDXRef-262ca78b06eae31b
+PackageVersion: 1:2.4.47-2+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnettle6
+
+PackageName: libnettle6
+SPDXID: SPDXRef-277873e5d5828042
+PackageVersion: 3.3-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/sys
+
+PackageName: golang.org/x/sys
+SPDXID: SPDXRef-28805ea552b40aff
+PackageVersion: v0.0.0-20210817142637-7d9622a276b7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: postgresql-client-common
+
+PackageName: postgresql-client-common
+SPDXID: SPDXRef-28820e69a6fe4247
+PackageVersion: 238.pgdg90+1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sed
+
+PackageName: sed
+SPDXID: SPDXRef-29577c1b2c41affc
+PackageVersion: 4.4-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: apt
+
+PackageName: apt
+SPDXID: SPDXRef-2a600d774c849c94
+PackageVersion: 1.4.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: findutils
+
+PackageName: findutils
+SPDXID: SPDXRef-2c57683d450e5332
+PackageVersion: 4.6.0+git+20161106-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-modules
+
+PackageName: libpam-modules
+SPDXID: SPDXRef-2de9e4e6f5f1891c
+PackageVersion: 1.1.8-3.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libstdc++6
+
+PackageName: libstdc++6
+SPDXID: SPDXRef-2e3a87a79a0a8254
+PackageVersion: 6.3.0-18+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libffi6
+
+PackageName: libffi6
+SPDXID: SPDXRef-2fad4348e6677e3d
+PackageVersion: 3.2.1-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libedit2
+
+PackageName: libedit2
+SPDXID: SPDXRef-303d2d2e64ced2e3
+PackageVersion: 3.1-20160903-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libassuan0
+
+PackageName: libassuan0
+SPDXID: SPDXRef-30627183feea1b5f
+PackageVersion: 2.4.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssl1.1
+
+PackageName: libssl1.1
+SPDXID: SPDXRef-35d06530f7bb9dbc
+PackageVersion: 1.1.0l-1~deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcc1
+
+PackageName: libgcc1
+SPDXID: SPDXRef-3655e6e273ab5fbe
+PackageVersion: 1:6.3.0-18+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libreadline7
+
+PackageName: libreadline7
+SPDXID: SPDXRef-3888254cc8ad3210
+PackageVersion: 7.0-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libblkid1
+
+PackageName: libblkid1
+SPDXID: SPDXRef-39369492c20970e7
+PackageVersion: 2.29.2-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsmartcols1
+
+PackageName: libsmartcols1
+SPDXID: SPDXRef-39588e0ef5c6f381
+PackageVersion: 2.29.2-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: util-linux
+
+PackageName: util-linux
+SPDXID: SPDXRef-3a1744dc724a9b28
+PackageVersion: 2.29.2-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtinfo5
+
+PackageName: libtinfo5
+SPDXID: SPDXRef-3de5a80274a71526
+PackageVersion: 6.0+20161126-1+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mount
+
+PackageName: mount
+SPDXID: SPDXRef-3e9bfea869983202
+PackageVersion: 2.29.2-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ncurses-base
+
+PackageName: ncurses-base
+SPDXID: SPDXRef-42c8e29730d4b797
+PackageVersion: 6.0+20161126-1+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libuuid1
+
+PackageName: libuuid1
+SPDXID: SPDXRef-45405c6b949779d8
+PackageVersion: 2.29.2-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libustr-1.0-1
+
+PackageName: libustr-1.0-1
+SPDXID: SPDXRef-4b247d8374215a6e
+PackageVersion: 1.0.4-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: postgresql-common
+
+PackageName: postgresql-common
+SPDXID: SPDXRef-4d574ab5f11fb62
+PackageVersion: 238.pgdg90+1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl
+
+PackageName: perl
+SPDXID: SPDXRef-4edbfb45382d0ac9
+PackageVersion: 5.24.1-3+deb9u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam0g
+
+PackageName: libpam0g
+SPDXID: SPDXRef-5028619f1b4c5760
+PackageVersion: 1.1.8-3.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tar
+
+PackageName: tar
+SPDXID: SPDXRef-509bcfcd1b00211f
+PackageVersion: 1.29b-1.1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnss-wrapper
+
+PackageName: libnss-wrapper
+SPDXID: SPDXRef-526fcd13f49e3188
+PackageVersion: 1.1.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bash
+
+PackageName: bash
+SPDXID: SPDXRef-528d77734edd4d5d
+PackageVersion: 4.4-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdbm3
+
+PackageName: libgdbm3
+SPDXID: SPDXRef-54c64b71499f0cda
+PackageVersion: 1.8.3-14
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: pinentry-curses
+
+PackageName: pinentry-curses
+SPDXID: SPDXRef-5937c0ceb8e58788
+PackageVersion: 1.0.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: locales
+
+PackageName: locales
+SPDXID: SPDXRef-5b31f4bed455a661
+PackageVersion: 2.24-11+deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: coreutils
+
+PackageName: coreutils
+SPDXID: SPDXRef-5cd39efb68c588c
+PackageVersion: 8.26-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdebconfclient0
+
+PackageName: libdebconfclient0
+SPDXID: SPDXRef-621ba9346205e580
+PackageVersion: 0.227
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: init-system-helpers
+
+PackageName: init-system-helpers
+SPDXID: SPDXRef-68ff00cc2b9a3137
+PackageVersion: 1.48
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: e2fslibs
+
+PackageName: e2fslibs
+SPDXID: SPDXRef-6a16121e6629ad02
+PackageVersion: 1.43.4-2+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libksba8
+
+PackageName: libksba8
+SPDXID: SPDXRef-6b97b980b62d8bf5
+PackageVersion: 1.3.5-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: xz-utils
+
+PackageName: xz-utils
+SPDXID: SPDXRef-70a82792d0d6c36a
+PackageVersion: 5.2.2-1.2+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sensible-utils
+
+PackageName: sensible-utils
+SPDXID: SPDXRef-70c22819507b62bf
+PackageVersion: 0.0.9+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: passwd
+
+PackageName: passwd
+SPDXID: SPDXRef-714eb8a32b95dd90
+PackageVersion: 1:4.4-4.1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmount1
+
+PackageName: libmount1
+SPDXID: SPDXRef-717cbc0a29155124
+PackageVersion: 2.29.2-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaudit1
+
+PackageName: libaudit1
+SPDXID: SPDXRef-720748f2569800f9
+PackageVersion: 1:2.6.7-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbz2-1.0
+
+PackageName: libbz2-1.0
+SPDXID: SPDXRef-7a44e7217087a042
+PackageVersion: 1.0.6-8.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfdisk1
+
+PackageName: libfdisk1
+SPDXID: SPDXRef-82fc818d6159eb2f
+PackageVersion: 2.29.2-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ssl-cert
+
+PackageName: ssl-cert
+SPDXID: SPDXRef-85d66cf8b4555a7b
+PackageVersion: 1.0.39
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtasn1-6
+
+PackageName: libtasn1-6
+SPDXID: SPDXRef-85e85c264d5721f3
+PackageVersion: 4.10-1.1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-runtime
+
+PackageName: libpam-runtime
+SPDXID: SPDXRef-865ce200b38b23bd
+PackageVersion: 1.1.8-3.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsepol1
+
+PackageName: libsepol1
+SPDXID: SPDXRef-8783e8eb9cf781fc
+PackageVersion: 2.6-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: base-passwd
+
+PackageName: base-passwd
+SPDXID: SPDXRef-89b62a053ae0240d
+PackageVersion: 3.5.43
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblz4-1
+
+PackageName: liblz4-1
+SPDXID: SPDXRef-8a0161b79d542aa0
+PackageVersion: 0.0~r131-2+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libk5crypto3
+
+PackageName: libk5crypto3
+SPDXID: SPDXRef-8a4a81b6aabb2e86
+PackageVersion: 1.15-1+deb9u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mawk
+
+PackageName: mawk
+SPDXID: SPDXRef-8a91e8884e16bd9a
+PackageVersion: 1.3.3-17+b3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc-l10n
+
+PackageName: libc-l10n
+SPDXID: SPDXRef-8b0cef221ad20417
+PackageVersion: 2.24-11+deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgpg-error0
+
+PackageName: libgpg-error0
+SPDXID: SPDXRef-8c3de4e216af75d9
+PackageVersion: 1.26-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: adduser
+
+PackageName: adduser
+SPDXID: SPDXRef-8e4f0142536da74d
+PackageVersion: 3.115
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5support0
+
+PackageName: libkrb5support0
+SPDXID: SPDXRef-8f7464e62f9f7ceb
+PackageVersion: 1.15-1+deb9u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage1
+
+PackageName: libsemanage1
+SPDXID: SPDXRef-9140de77d84ec2c9
+PackageVersion: 2.6-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: pgdg-keyring
+
+PackageName: pgdg-keyring
+SPDXID: SPDXRef-923e115a8dd2b73d
+PackageVersion: 2018.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libldap-2.4-2
+
+PackageName: libldap-2.4-2
+SPDXID: SPDXRef-95672996684adbdd
+PackageVersion: 2.4.44+dfsg-5+deb9u8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsasl2-modules-db
+
+PackageName: libsasl2-modules-db
+SPDXID: SPDXRef-968fe7a5c88b4563
+PackageVersion: 2.1.27~101-g0780600+dfsg-3+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgnutls30
+
+PackageName: libgnutls30
+SPDXID: SPDXRef-978f71d1f688cbdb
+PackageVersion: 3.5.8-5+deb9u6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libldap-common
+
+PackageName: libldap-common
+SPDXID: SPDXRef-9bd6f8f87cf413f2
+PackageVersion: 2.4.44+dfsg-5+deb9u8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxml2
+
+PackageName: libxml2
+SPDXID: SPDXRef-9e24f0adcd7854b2
+PackageVersion: 2.9.4+dfsg1-2.2+deb9u5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: e2fsprogs
+
+PackageName: e2fsprogs
+SPDXID: SPDXRef-9e44cc137660003a
+PackageVersion: 1.43.4-2+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcomerr2
+
+PackageName: libcomerr2
+SPDXID: SPDXRef-a1cc4023cd50a93
+PackageVersion: 1.43.4-2+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libudev1
+
+PackageName: libudev1
+SPDXID: SPDXRef-a295ab71bd3ce38c
+PackageVersion: 232-25+deb9u13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libidn11
+
+PackageName: libidn11
+SPDXID: SPDXRef-a432ba9336a43cd6
+PackageVersion: 1.33-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debconf
+
+PackageName: debconf
+SPDXID: SPDXRef-a84b293c8083ba6c
+PackageVersion: 1.5.61
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tzdata
+
+PackageName: tzdata
+SPDXID: SPDXRef-ab00df850d029484
+PackageVersion: 2021a-0+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libp11-kit0
+
+PackageName: libp11-kit0
+SPDXID: SPDXRef-ac290bbdb4d12aba
+PackageVersion: 0.23.3-2+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bsdutils
+
+PackageName: bsdutils
+SPDXID: SPDXRef-ad65bce6512b698f
+PackageVersion: 1:2.29.2-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sysvinit-utils
+
+PackageName: sysvinit-utils
+SPDXID: SPDXRef-aebc7a8d75c2749a
+PackageVersion: 2.88dsf-59.9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl-modules-5.24
+
+PackageName: perl-modules-5.24
+SPDXID: SPDXRef-afeae9f6c4cc6601
+PackageVersion: 5.24.1-3+deb9u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libss2
+
+PackageName: libss2
+SPDXID: SPDXRef-b1a2d31578916ee3
+PackageVersion: 1.43.4-2+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gcc-6-base
+
+PackageName: gcc-6-base
+SPDXID: SPDXRef-b1da235d64a913b6
+PackageVersion: 6.3.0-18+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: postgresql-client-9.6
+
+PackageName: postgresql-client-9.6
+SPDXID: SPDXRef-b43e7a7af8971e2d
+PackageVersion: 9.6.24-1.pgdg90+1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gnupg-agent
+
+PackageName: gnupg-agent
+SPDXID: SPDXRef-b9e804c2c21f9b31
+PackageVersion: 2.1.18-8~deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxslt1.1
+
+PackageName: libxslt1.1
+SPDXID: SPDXRef-b9f285a4704d6d86
+PackageVersion: 1.1.29-2.1+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libhogweed4
+
+PackageName: libhogweed4
+SPDXID: SPDXRef-bab1a4b15c3f0c89
+PackageVersion: 3.3-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dash
+
+PackageName: dash
+SPDXID: SPDXRef-bd071488b5a88692
+PackageVersion: 0.5.8-2.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: zlib1g
+
+PackageName: zlib1g
+SPDXID: SPDXRef-c26a9f20ec55b4ee
+PackageVersion: 1:1.2.8.dfsg-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: readline-common
+
+PackageName: readline-common
+SPDXID: SPDXRef-c83d0edf9098b6eb
+PackageVersion: 7.0-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libapt-pkg5.0
+
+PackageName: libapt-pkg5.0
+SPDXID: SPDXRef-c9fe6e1200ebfd24
+PackageVersion: 1.4.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libperl5.24
+
+PackageName: libperl5.24
+SPDXID: SPDXRef-cb25a2818dc893b1
+PackageVersion: 5.24.1-3+deb9u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncursesw5
+
+PackageName: libncursesw5
+SPDXID: SPDXRef-cb50902fc2f5c890
+PackageVersion: 6.0+20161126-1+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpgv
+
+PackageName: gpgv
+SPDXID: SPDXRef-cd18a8ccc18e150d
+PackageVersion: 2.1.18-8~deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkeyutils1
+
+PackageName: libkeyutils1
+SPDXID: SPDXRef-cefb888c3eaaa187
+PackageVersion: 1.5.9-9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: netbase
+
+PackageName: netbase
+SPDXID: SPDXRef-d08568cf982646b8
+PackageVersion: 5.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre3
+
+PackageName: libpcre3
+SPDXID: SPDXRef-d1866a901c7dc697
+PackageVersion: 2:8.39-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5-3
+
+PackageName: libkrb5-3
+SPDXID: SPDXRef-d23b40c32c0d5a48
+PackageVersion: 1.15-1+deb9u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: postgresql-9.6
+
+PackageName: postgresql-9.6
+SPDXID: SPDXRef-d39742860d3158dd
+PackageVersion: 9.6.24-1.pgdg90+1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsqlite3-0
+
+PackageName: libsqlite3-0
+SPDXID: SPDXRef-d4ae086200516d5
+PackageVersion: 3.16.2-5+deb9u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libacl1
+
+PackageName: libacl1
+SPDXID: SPDXRef-d844d5e3a82226f8
+PackageVersion: 2.2.52-3+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdb5.3
+
+PackageName: libdb5.3
+SPDXID: SPDXRef-dacec7460b99fa82
+PackageVersion: 5.3.28-12+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsystemd0
+
+PackageName: libsystemd0
+SPDXID: SPDXRef-dd12c1b30f2f34ba
+PackageVersion: 232-25+deb9u13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: multiarch-support
+
+PackageName: multiarch-support
+SPDXID: SPDXRef-df8ac96a5f5c9a63
+PackageVersion: 2.24-11+deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debian-archive-keyring
+
+PackageName: debian-archive-keyring
+SPDXID: SPDXRef-dfaa5efc33f449c3
+PackageVersion: 2017.5+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dpkg
+
+PackageName: dpkg
+SPDXID: SPDXRef-e0d2b2c7e909af36
+PackageVersion: 1.18.25
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ucf
+
+PackageName: ucf
+SPDXID: SPDXRef-e7b576c59da40a86
+PackageVersion: 3.0036
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gzip
+
+PackageName: gzip
+SPDXID: SPDXRef-ea5fe7991687487a
+PackageVersion: 1.6-5+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ncurses-bin
+
+PackageName: ncurses-bin
+SPDXID: SPDXRef-ec594eb3224269e1
+PackageVersion: 6.0+20161126-1+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc-bin
+
+PackageName: libc-bin
+SPDXID: SPDXRef-ed6b540836fff5ae
+PackageVersion: 2.24-11+deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgssapi-krb5-2
+
+PackageName: libgssapi-krb5-2
+SPDXID: SPDXRef-ef69193786b7f7cc
+PackageVersion: 1.15-1+deb9u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: login
+
+PackageName: login
+SPDXID: SPDXRef-f014b942cc4fc1be
+PackageVersion: 1:4.4-4.1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libicu57
+
+PackageName: libicu57
+SPDXID: SPDXRef-f046c8c366f33067
+PackageVersion: 57.1-6+deb9u5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblzma5
+
+PackageName: liblzma5
+SPDXID: SPDXRef-f26bead6a9d2dc5
+PackageVersion: 5.2.2-1.2+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjson-perl
+
+PackageName: libjson-perl
+SPDXID: SPDXRef-f2ce74ca2609111f
+PackageVersion: 2.90-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: lsb-base
+
+PackageName: lsb-base
+SPDXID: SPDXRef-f303fdc6bbf48f8b
+PackageVersion: 9.20161125
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbsd0
+
+PackageName: libbsd0
+SPDXID: SPDXRef-f34de63b4efc4dfb
+PackageVersion: 0.8.3-1+deb9u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcrypt20
+
+PackageName: libgcrypt20
+SPDXID: SPDXRef-f64125d1245327c9
+PackageVersion: 1.7.6-2+deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: diffutils
+
+PackageName: diffutils
+SPDXID: SPDXRef-f7b8b694f71168f9
+PackageVersion: 1:3.5-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: openssl
+
+PackageName: openssl
+SPDXID: SPDXRef-f811cbde969dac7a
+PackageVersion: 1.1.0l-1~deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaudit-common
+
+PackageName: libaudit-common
+SPDXID: SPDXRef-f9a2c7ef23cfb070
+PackageVersion: 1:2.6.7-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: grep
+
+PackageName: grep
+SPDXID: SPDXRef-fa5562b2dbea62be
+PackageVersion: 2.27-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncurses5
+
+PackageName: libncurses5
+SPDXID: SPDXRef-fc276bd24cd21504
+PackageVersion: 6.0+20161126-1+deb9u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc6
+
+PackageName: libc6
+SPDXID: SPDXRef-fcfc95a5b1b76929
+PackageVersion: 2.24-11+deb9u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage-common
+
+PackageName: libsemanage-common
+SPDXID: SPDXRef-fec0ccc37e253af2
+PackageVersion: 2.6-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+

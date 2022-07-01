@@ -1,0 +1,434 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Trivy Vulnerability Scanner",
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "name": "Trivy",
+          "rules": [
+            {
+              "id": "CVE-2021-20231",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-20231"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-20231",
+              "help": {
+                "text": "Vulnerability CVE-2021-20231\nSeverity: MEDIUM\nPackage: gnutls\nFixed Version: 10:3.6.16-4.0.1.el8_fips\nLink: [CVE-2021-20231](https://avd.aquasec.com/nvd/cve-2021-20231)\nA flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences.",
+                "markdown": "**Vulnerability CVE-2021-20231**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|gnutls|10:3.6.16-4.0.1.el8_fips|[CVE-2021-20231](https://avd.aquasec.com/nvd/cve-2021-20231)|\n\nA flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-20232",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-20232"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-20232",
+              "help": {
+                "text": "Vulnerability CVE-2021-20232\nSeverity: MEDIUM\nPackage: gnutls\nFixed Version: 10:3.6.16-4.0.1.el8_fips\nLink: [CVE-2021-20232](https://avd.aquasec.com/nvd/cve-2021-20232)\nA flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences.",
+                "markdown": "**Vulnerability CVE-2021-20232**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|gnutls|10:3.6.16-4.0.1.el8_fips|[CVE-2021-20232](https://avd.aquasec.com/nvd/cve-2021-20232)|\n\nA flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-3580",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-3580"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the way nettle\u0026#39;s RSA decryption functions handled specially crafted ciphertext. An attacker could use this flaw to provide a manipulated ciphertext leading to application crash and denial of service."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-3580",
+              "help": {
+                "text": "Vulnerability CVE-2021-3580\nSeverity: MEDIUM\nPackage: gnutls\nFixed Version: 10:3.6.16-4.0.1.el8_fips\nLink: [CVE-2021-3580](https://avd.aquasec.com/nvd/cve-2021-3580)\nA flaw was found in the way nettle's RSA decryption functions handled specially crafted ciphertext. An attacker could use this flaw to provide a manipulated ciphertext leading to application crash and denial of service.",
+                "markdown": "**Vulnerability CVE-2021-3580**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|gnutls|10:3.6.16-4.0.1.el8_fips|[CVE-2021-3580](https://avd.aquasec.com/nvd/cve-2021-3580)|\n\nA flaw was found in the way nettle's RSA decryption functions handled specially crafted ciphertext. An attacker could use this flaw to provide a manipulated ciphertext leading to application crash and denial of service."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-33560",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-33560"
+              },
+              "fullDescription": {
+                "text": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-33560",
+              "help": {
+                "text": "Vulnerability CVE-2021-33560\nSeverity: MEDIUM\nPackage: libgcrypt\nFixed Version: 10:1.8.5-6.el8_fips\nLink: [CVE-2021-33560](https://avd.aquasec.com/nvd/cve-2021-33560)\nLibgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP.",
+                "markdown": "**Vulnerability CVE-2021-33560**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libgcrypt|10:1.8.5-6.el8_fips|[CVE-2021-33560](https://avd.aquasec.com/nvd/cve-2021-33560)|\n\nLibgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-24302",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-24302"
+              },
+              "fullDescription": {
+                "text": "In Paramiko before 2.10.1, a race condition (between creation and chmod) in the write_private_key_file function could allow unauthorized information disclosure."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-24302",
+              "help": {
+                "text": "Vulnerability CVE-2022-24302\nSeverity: MEDIUM\nPackage: paramiko\nFixed Version: 2.10.1\nLink: [CVE-2022-24302](https://avd.aquasec.com/nvd/cve-2022-24302)\nIn Paramiko before 2.10.1, a race condition (between creation and chmod) in the write_private_key_file function could allow unauthorized information disclosure.",
+                "markdown": "**Vulnerability CVE-2022-24302**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|paramiko|2.10.1|[CVE-2022-24302](https://avd.aquasec.com/nvd/cve-2022-24302)|\n\nIn Paramiko before 2.10.1, a race condition (between creation and chmod) in the write_private_key_file function could allow unauthorized information disclosure."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.9",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-29162",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-29162"
+              },
+              "fullDescription": {
+                "text": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. A bug was found in runc prior to version 1.1.2 where `runc exec --cap` created processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2). This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container\u0026#39;s bounding set. This bug has been fixed in runc 1.1.2. This fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities. In addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-29162",
+              "help": {
+                "text": "Vulnerability CVE-2022-29162\nSeverity: HIGH\nPackage: github.com/opencontainers/runc\nFixed Version: v1.1.2\nLink: [CVE-2022-29162](https://avd.aquasec.com/nvd/cve-2022-29162)\nrunc is a CLI tool for spawning and running containers on Linux according to the OCI specification. A bug was found in runc prior to version 1.1.2 where `runc exec --cap` created processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2). This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in runc 1.1.2. This fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities. In addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file.",
+                "markdown": "**Vulnerability CVE-2022-29162**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|github.com/opencontainers/runc|v1.1.2|[CVE-2022-29162](https://avd.aquasec.com/nvd/cve-2022-29162)|\n\nrunc is a CLI tool for spawning and running containers on Linux according to the OCI specification. A bug was found in runc prior to version 1.1.2 where `runc exec --cap` created processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2). This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in runc 1.1.2. This fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities. In addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-43784",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-43784"
+              },
+              "fullDescription": {
+                "text": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc, netlink is used internally as a serialization system for specifying the relevant container configuration to the `C` portion of the code (responsible for the based namespace setup of containers). In all versions of runc prior to 1.0.3, the encoder did not handle the possibility of an integer overflow in the 16-bit length field for the byte array attribute type, meaning that a large enough malicious byte array attribute could result in the length overflowing and the attribute contents being parsed as netlink messages for container configuration. This vulnerability requires the attacker to have some control over the configuration of the container and would allow the attacker to bypass the namespace restrictions of the container by simply adding their own netlink payload which disables all namespaces. The main users impacted are those who allow untrusted images with untrusted configurations to run on their machines (such as with shared cloud infrastructure). runc version 1.0.3 contains a fix for this bug. As a workaround, one may try disallowing untrusted namespace paths from your container. It should be noted that untrusted namespace paths would allow the attacker to disable namespace protections entirely even in the absence of this bug."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-43784",
+              "help": {
+                "text": "Vulnerability CVE-2021-43784\nSeverity: MEDIUM\nPackage: github.com/opencontainers/runc\nFixed Version: v1.0.3\nLink: [CVE-2021-43784](https://avd.aquasec.com/nvd/cve-2021-43784)\nrunc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc, netlink is used internally as a serialization system for specifying the relevant container configuration to the `C` portion of the code (responsible for the based namespace setup of containers). In all versions of runc prior to 1.0.3, the encoder did not handle the possibility of an integer overflow in the 16-bit length field for the byte array attribute type, meaning that a large enough malicious byte array attribute could result in the length overflowing and the attribute contents being parsed as netlink messages for container configuration. This vulnerability requires the attacker to have some control over the configuration of the container and would allow the attacker to bypass the namespace restrictions of the container by simply adding their own netlink payload which disables all namespaces. The main users impacted are those who allow untrusted images with untrusted configurations to run on their machines (such as with shared cloud infrastructure). runc version 1.0.3 contains a fix for this bug. As a workaround, one may try disallowing untrusted namespace paths from your container. It should be noted that untrusted namespace paths would allow the attacker to disable namespace protections entirely even in the absence of this bug.",
+                "markdown": "**Vulnerability CVE-2021-43784**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|github.com/opencontainers/runc|v1.0.3|[CVE-2021-43784](https://avd.aquasec.com/nvd/cve-2021-43784)|\n\nrunc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc, netlink is used internally as a serialization system for specifying the relevant container configuration to the `C` portion of the code (responsible for the based namespace setup of containers). In all versions of runc prior to 1.0.3, the encoder did not handle the possibility of an integer overflow in the 16-bit length field for the byte array attribute type, meaning that a large enough malicious byte array attribute could result in the length overflowing and the attribute contents being parsed as netlink messages for container configuration. This vulnerability requires the attacker to have some control over the configuration of the container and would allow the attacker to bypass the namespace restrictions of the container by simply adding their own netlink payload which disables all namespaces. The main users impacted are those who allow untrusted images with untrusted configurations to run on their machines (such as with shared cloud infrastructure). runc version 1.0.3 contains a fix for this bug. As a workaround, one may try disallowing untrusted namespace paths from your container. It should be noted that untrusted namespace paths would allow the attacker to disable namespace protections entirely even in the absence of this bug."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-24769",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-24769"
+              },
+              "fullDescription": {
+                "text": "Moby is an open-source project created by Docker to enable and accelerate software containerization. A bug was found in Moby (Docker Engine) prior to version 20.10.14 where containers were incorrectly started with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during `execve(2)`. Normally, when executable programs have specified permitted file capabilities, otherwise unprivileged users and processes can execute those programs and gain the specified file capabilities up to the bounding set. Due to this bug, containers which included executable programs with inheritable file capabilities allowed otherwise unprivileged users and processes to additionally gain these inheritable file capabilities up to the container\u0026#39;s bounding set. Containers which use Linux users and groups to perform privilege separation inside the container are most directly impacted. This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container\u0026#39;s bounding set. This bug has been fixed in Moby (Docker Engine) 20.10.14. Running containers should be stopped, deleted, and recreated for the inheritable capabilities to be reset. This fix changes Moby (Docker Engine) behavior such that containers are started with a more typical Linux environment. As a workaround, the entry point of a container can be modified to use a utility like `capsh(1)` to drop inheritable capabilities prior to the primary process starting."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-24769",
+              "help": {
+                "text": "Vulnerability CVE-2022-24769\nSeverity: MEDIUM\nPackage: github.com/opencontainers/runc\nFixed Version: v1.1.2\nLink: [CVE-2022-24769](https://avd.aquasec.com/nvd/cve-2022-24769)\nMoby is an open-source project created by Docker to enable and accelerate software containerization. A bug was found in Moby (Docker Engine) prior to version 20.10.14 where containers were incorrectly started with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during `execve(2)`. Normally, when executable programs have specified permitted file capabilities, otherwise unprivileged users and processes can execute those programs and gain the specified file capabilities up to the bounding set. Due to this bug, containers which included executable programs with inheritable file capabilities allowed otherwise unprivileged users and processes to additionally gain these inheritable file capabilities up to the container's bounding set. Containers which use Linux users and groups to perform privilege separation inside the container are most directly impacted. This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in Moby (Docker Engine) 20.10.14. Running containers should be stopped, deleted, and recreated for the inheritable capabilities to be reset. This fix changes Moby (Docker Engine) behavior such that containers are started with a more typical Linux environment. As a workaround, the entry point of a container can be modified to use a utility like `capsh(1)` to drop inheritable capabilities prior to the primary process starting.",
+                "markdown": "**Vulnerability CVE-2022-24769**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|github.com/opencontainers/runc|v1.1.2|[CVE-2022-24769](https://avd.aquasec.com/nvd/cve-2022-24769)|\n\nMoby is an open-source project created by Docker to enable and accelerate software containerization. A bug was found in Moby (Docker Engine) prior to version 20.10.14 where containers were incorrectly started with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during `execve(2)`. Normally, when executable programs have specified permitted file capabilities, otherwise unprivileged users and processes can execute those programs and gain the specified file capabilities up to the bounding set. Due to this bug, containers which included executable programs with inheritable file capabilities allowed otherwise unprivileged users and processes to additionally gain these inheritable file capabilities up to the container's bounding set. Containers which use Linux users and groups to perform privilege separation inside the container are most directly impacted. This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in Moby (Docker Engine) 20.10.14. Running containers should be stopped, deleted, and recreated for the inheritable capabilities to be reset. This fix changes Moby (Docker Engine) behavior such that containers are started with a more typical Linux environment. As a workaround, the entry point of a container can be modified to use a utility like `capsh(1)` to drop inheritable capabilities prior to the primary process starting."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.9",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            }
+          ],
+          "version": "0.29.1"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2021-20231",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "Package: gnutls\nInstalled Version: 3.6.16-4.el8\nVulnerability CVE-2021-20231\nSeverity: MEDIUM\nFixed Version: 10:3.6.16-4.0.1.el8_fips\nLink: [CVE-2021-20231](https://avd.aquasec.com/nvd/cve-2021-20231)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/mysql",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-20232",
+          "ruleIndex": 1,
+          "level": "warning",
+          "message": {
+            "text": "Package: gnutls\nInstalled Version: 3.6.16-4.el8\nVulnerability CVE-2021-20232\nSeverity: MEDIUM\nFixed Version: 10:3.6.16-4.0.1.el8_fips\nLink: [CVE-2021-20232](https://avd.aquasec.com/nvd/cve-2021-20232)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/mysql",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-3580",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "Package: gnutls\nInstalled Version: 3.6.16-4.el8\nVulnerability CVE-2021-3580\nSeverity: MEDIUM\nFixed Version: 10:3.6.16-4.0.1.el8_fips\nLink: [CVE-2021-3580](https://avd.aquasec.com/nvd/cve-2021-3580)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/mysql",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-33560",
+          "ruleIndex": 3,
+          "level": "warning",
+          "message": {
+            "text": "Package: libgcrypt\nInstalled Version: 1.8.5-6.el8\nVulnerability CVE-2021-33560\nSeverity: MEDIUM\nFixed Version: 10:1.8.5-6.el8_fips\nLink: [CVE-2021-33560](https://avd.aquasec.com/nvd/cve-2021-33560)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/mysql",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-24302",
+          "ruleIndex": 4,
+          "level": "warning",
+          "message": {
+            "text": "Package: paramiko\nInstalled Version: 2.9.2\nVulnerability CVE-2022-24302\nSeverity: MEDIUM\nFixed Version: 2.10.1\nLink: [CVE-2022-24302](https://avd.aquasec.com/nvd/cve-2022-24302)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29162",
+          "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Package: github.com/opencontainers/runc\nInstalled Version: v1.0.1\nVulnerability CVE-2022-29162\nSeverity: HIGH\nFixed Version: v1.1.2\nLink: [CVE-2022-29162](https://avd.aquasec.com/nvd/cve-2022-29162)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "usr/local/bin/gosu",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-43784",
+          "ruleIndex": 6,
+          "level": "warning",
+          "message": {
+            "text": "Package: github.com/opencontainers/runc\nInstalled Version: v1.0.1\nVulnerability CVE-2021-43784\nSeverity: MEDIUM\nFixed Version: v1.0.3\nLink: [CVE-2021-43784](https://avd.aquasec.com/nvd/cve-2021-43784)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "usr/local/bin/gosu",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-24769",
+          "ruleIndex": 7,
+          "level": "warning",
+          "message": {
+            "text": "Package: github.com/opencontainers/runc\nInstalled Version: v1.0.1\nVulnerability CVE-2022-24769\nSeverity: MEDIUM\nFixed Version: v1.1.2\nLink: [CVE-2022-24769](https://avd.aquasec.com/nvd/cve-2022-24769)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "usr/local/bin/gosu",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "traefik:2.7",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.15.4"
+    },
+    "ImageID": "sha256:5c54a6d9bbe9f1b9f0841647e72e9b4d11d7addd0daa4fb96de0ddb7a2b0e4f0",
+    "DiffIDs": [
+      "sha256:4fc242d58285699eca05db3cc7c7122a2b8e014d9481f323bd9277baacfa0628",
+      "sha256:779916cb0926376852a400e13fa4e0fdb993cd16567ec6485f63144145326ce7",
+      "sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be",
+      "sha256:01cff8ceaf307049dfd931254d68814b8d1ef545b6a3be7b451139b0ed24d6ee"
+    ],
+    "RepoTags": [
+      "traefik:2.7"
+    ],
+    "RepoDigests": [
+      "traefik@sha256:41bfa070b43184314a1fd86d5b68d367d3f744e972ca3fe44a8875f69935c2d7"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "6ec1574e31524cadbd78ba43ab23a5f6dbfca267003e114ae952df050642b784",
+      "created": "2022-06-29T20:05:11.571737161Z",
+      "docker_version": "20.10.12",
+      "history": [
+        {
+          "created": "2022-04-05T00:19:59Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:5d673d25da3a14ce1f6cf66e4c7fd4f4b85a3759a9d93efb3fd9ff852b5b56e4 in / "
+        },
+        {
+          "created": "2022-04-05T00:19:59Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-05-24T20:09:12Z",
+          "created_by": "/bin/sh -c apk --no-cache add ca-certificates tzdata"
+        },
+        {
+          "created": "2022-06-29T20:05:10Z",
+          "created_by": "/bin/sh -c set -ex; \tapkArch=\"$(apk --print-arch)\"; \tcase \"$apkArch\" in \t\tarmhf) arch='armv6' ;; \t\taarch64) arch='arm64' ;; \t\tx86_64) arch='amd64' ;; \t\ts390x) arch='s390x' ;; \t\t*) echo \u003e\u00262 \"error: unsupported architecture: $apkArch\"; exit 1 ;; \tesac; \twget --quiet -O /tmp/traefik.tar.gz \"https://github.com/traefik/traefik/releases/download/v2.7.3/traefik_v2.7.3_linux_$arch.tar.gz\"; \ttar xzvf /tmp/traefik.tar.gz -C /usr/local/bin traefik; \trm -f /tmp/traefik.tar.gz; \tchmod +x /usr/local/bin/traefik"
+        },
+        {
+          "created": "2022-06-29T20:05:11Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:59a219a1fb7a9dc894a7a9a4718fa97fd24adb0a4a6455240ec2ab0183da796e in / "
+        },
+        {
+          "created": "2022-06-29T20:05:11Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 80",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-06-29T20:05:11Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-06-29T20:05:11Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"traefik\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-06-29T20:05:11Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.7.3 org.opencontainers.image.documentation=https://docs.traefik.io",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:4fc242d58285699eca05db3cc7c7122a2b8e014d9481f323bd9277baacfa0628",
+          "sha256:779916cb0926376852a400e13fa4e0fdb993cd16567ec6485f63144145326ce7",
+          "sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be",
+          "sha256:01cff8ceaf307049dfd931254d68814b8d1ef545b6a3be7b451139b0ed24d6ee"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "traefik"
+        ],
+        "Entrypoint": [
+          "/entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Image": "sha256:c8e30582e8c26d8853246590ff4cf69199f29f4c6ce3176595f468bd1101c865",
+        "Labels": {
+          "org.opencontainers.image.description": "A modern reverse-proxy",
+          "org.opencontainers.image.documentation": "https://docs.traefik.io",
+          "org.opencontainers.image.title": "Traefik",
+          "org.opencontainers.image.url": "https://traefik.io",
+          "org.opencontainers.image.vendor": "Traefik Labs",
+          "org.opencontainers.image.version": "v2.7.3"
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "traefik:2.7 (alpine 3.15.4)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "usr/local/bin/traefik",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-23648",
+          "PkgName": "github.com/containerd/containerd",
+          "InstalledVersion": "v1.5.9",
+          "FixedVersion": "1.4.13, 1.5.10, 1.6.1",
+          "Layer": {
+            "DiffID": "sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23648",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "containerd: insecure handling of image volumes",
+          "Description": "containerd is a container runtime available as a daemon for Linux and Windows. A bug was found in containerd prior to versions 1.6.1, 1.5.10, and 1.14.12 where containers launched through containerd’s CRI implementation on Linux with a specially-crafted image configuration could gain access to read-only copies of arbitrary files and directories on the host. This may bypass any policy-based enforcement on container setup (including a Kubernetes Pod Security Policy) and expose potentially sensitive information. Kubernetes and crictl can both be configured to use containerd’s CRI implementation. This bug has been fixed in containerd 1.6.1, 1.5.10, and 1.4.12. Users should update to these versions to resolve the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/166421/containerd-Image-Volume-Insecure-Handling.html",
+            "https://access.redhat.com/security/cve/CVE-2022-23648",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23648",
+            "https://github.com/advisories/GHSA-crp2-qrr5-8pq7",
+            "https://github.com/containerd/containerd/commit/10f428dac7cec44c864e1b830a4623af27a9fc70",
+            "https://github.com/containerd/containerd/releases/tag/v1.4.13",
+            "https://github.com/containerd/containerd/releases/tag/v1.5.10",
+            "https://github.com/containerd/containerd/releases/tag/v1.6.1",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-crp2-qrr5-8pq7",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-crp2-qrr5-8pq7.",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AUDQUQBZJGBWJPMRVB6QCCCRF7O3O4PA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HFTS2EF3S7HNYSNZSEJZIJHPRU7OPUV3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OCCARJ6FU4MWBTXHZNMS7NELPDBIX2VO/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23648",
+            "https://ubuntu.com/security/notices/USN-5311-1",
+            "https://ubuntu.com/security/notices/USN-5311-2",
+            "https://www.debian.org/security/2022/dsa-5091"
+          ],
+          "PublishedDate": "2022-03-03T14:15:00Z",
+          "LastModifiedDate": "2022-04-25T19:21:00Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-qq97-vm5h-rrhg",
+          "PkgName": "github.com/docker/distribution",
+          "InstalledVersion": "v2.7.1+incompatible",
+          "FixedVersion": "v2.8.0",
+          "Layer": {
+            "DiffID": "sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-qq97-vm5h-rrhg",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "OCI Manifest Type Confusion Issue",
+          "Description": "### Impact\n\nSystems that rely on digest equivalence for image attestations may be vulnerable to type confusion.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://github.com/advisories/GHSA-qq97-vm5h-rrhg",
+            "https://github.com/distribution/distribution/commit/b59a6f827947f9e0e67df0cfb571046de4733586",
+            "https://github.com/distribution/distribution/security/advisories/GHSA-qq97-vm5h-rrhg",
+            "https://github.com/opencontainers/image-spec/pull/411"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2022-29153",
+          "PkgName": "github.com/hashicorp/consul",
+          "InstalledVersion": "v1.10.4",
+          "FixedVersion": "1.9.17, 1.10.10, 1.11.5",
+          "Layer": {
+            "DiffID": "sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29153",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "HashiCorp Consul and Consul Enterprise through 2022-04-12 allow SSRF. ...",
+          "Description": "HashiCorp Consul and Consul Enterprise through 2022-04-12 allow SSRF.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://discuss.hashicorp.com",
+            "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/38393",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-29153",
+            "https://security.netapp.com/advisory/ntap-20220602-0005/"
+          ],
+          "PublishedDate": "2022-04-19T16:17:00Z",
+          "LastModifiedDate": "2022-06-02T20:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-24687",
+          "PkgName": "github.com/hashicorp/consul",
+          "InstalledVersion": "v1.10.4",
+          "FixedVersion": "1.9.15, 1.10.8, 1.11.3",
+          "Layer": {
+            "DiffID": "sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-24687",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "HashiCorp Consul and Consul Enterprise 1.8.0 through 1.9.14, 1.10.7, a ...",
+          "Description": "HashiCorp Consul and Consul Enterprise 1.8.0 through 1.9.14, 1.10.7, and 1.11.2 has Uncontrolled Resource Consumption.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 3.5,
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://discuss.hashicorp.com",
+            "https://discuss.hashicorp.com/t/hcsec-2022-05-consul-ingress-gateway-panic-can-shutdown-servers/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-24687",
+            "https://security.netapp.com/advisory/ntap-20220331-0006/"
+          ],
+          "PublishedDate": "2022-02-24T16:15:00Z",
+          "LastModifiedDate": "2022-04-26T20:52:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+ "artifacts": [],
+ "artifactRelationships": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "busybox:1.35-glibc",
+   "imageID": "sha256:10b6bc04cf1a451762574e35f1b821139e1c6601f86e69df88b3bbe0102bd647",
+   "manifestDigest": "sha256:27fdb64bdd97159956883523c71797a213037bc7b9ddd6af813529af7620ad19",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "busybox:1.35-glibc"
+   ],
+   "imageSize": 4789074,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:45ae36aa10ce7096fd55081e3b788b7caf30fb1bda031cef1dc927cdfa3bbd57",
+     "size": 4789074
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxNDU3LCJkaWdlc3QiOiJzaGEyNTY6MTBiNmJjMDRjZjFhNDUxNzYyNTc0ZTM1ZjFiODIxMTM5ZTFjNjYwMWY4NmU2OWRmODhiM2JiZTAxMDJiZDY0NyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo1MDE2MDY0LCJkaWdlc3QiOiJzaGEyNTY6NDVhZTM2YWExMGNlNzA5NmZkNTUwODFlM2I3ODhiN2NhZjMwZmIxYmRhMDMxY2VmMWRjOTI3Y2RmYTNiYmQ1NyJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbInNoIl0sIkltYWdlIjoic2hhMjU2OmY1ZmRlNzUyNTM0NGVkYzFiZjJlZTA1NWQyM2Q0NjgwYTlhOGRmNDg1MmYzYWZjODM4ODVkZDYxMjE2YTE0ZmUiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6bnVsbCwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjpudWxsfSwiY29udGFpbmVyIjoiZjIyMTZmNzVjYzdjNzljZDEyYWZmNzIxODY5ZDUzNThmMDRjZGU1YTkxODdjMmI1MzUzOWZjODA0M2ZkNzVlNCIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiJmMjIxNmY3NWNjN2MiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiQ01EIFtcInNoXCJdIl0sIkltYWdlIjoic2hhMjU2OmY1ZmRlNzUyNTM0NGVkYzFiZjJlZTA1NWQyM2Q0NjgwYTlhOGRmNDg1MmYzYWZjODM4ODVkZDYxMjE2YTE0ZmUiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6bnVsbCwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7fX0sImNyZWF0ZWQiOiIyMDIyLTA2LTA4VDAxOjE5OjQ0LjgxMjgyODExNFoiLCJkb2NrZXJfdmVyc2lvbiI6IjIwLjEwLjEyIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjItMDYtMDhUMDE6MTk6NDQuNzA1NjI5MDY5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTpjNzhkY2JiZjk5MmI1NGFiNjc5ZGEyN2Y0YTI5MjE0OTg0ZDA0OGQ0MDRjNDcyZWYyYWIzNGFmMjNiZjMzMGJiIGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMi0wNi0wOFQwMToxOTo0NC44MTI4MjgxMTRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wic2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NDVhZTM2YWExMGNlNzA5NmZkNTUwODFlM2I3ODhiN2NhZjMwZmIxYmRhMDMxY2VmMWRjOTI3Y2RmYTNiYmQ1NyJdfX0=",
+   "repoDigests": [
+    "busybox@sha256:549f58705d707eb6f8b8bb591cda61b8a2e231ee8f79a31513a028a936f838bf"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "prettyName": "BusyBox v1.35.0",
+  "name": "busybox",
+  "id": "busybox",
+  "idLike": [
+   "busybox"
+  ],
+  "version": "1.35.0",
+  "versionID": "1.35.0"
+ },
+ "descriptor": {
+  "name": "syft",
+  "version": "0.46.3",
+  "configuration": {
+   "configPath": "",
+   "verbosity": 0,
+   "quiet": false,
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "check-for-app-update": true,
+   "anchore": {
+    "host": "",
+    "path": "",
+    "dockerfile": "",
+    "overwrite-existing-image": false,
+    "import-timeout": 30
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "log": {
+    "structured": false,
+    "level": "warning",
+    "file-location": ""
+   },
+   "package": {
+    "cataloger": {
+     "enabled": true,
+     "scope": "Squashed"
+    },
+    "search-unindexed-archives": false,
+    "search-indexed-archives": true
+   },
+   "file-metadata": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "digests": [
+     "sha256"
+    ]
+   },
+   "file-classification": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    }
+   },
+   "file-contents": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "skip-files-above-size": 1048576,
+    "globs": []
+   },
+   "secrets": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "AllLayers"
+    },
+    "additional-patterns": {},
+    "exclude-pattern-names": [],
+    "reveal-values": false,
+    "skip-files-above-size": 1048576
+   },
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "exclude": [],
+   "attest": {
+    "key": "",
+    "cert": "",
+    "noUpload": false,
+    "force": false,
+    "recursive": false,
+    "replace": false,
+    "fulcioUrl": "https://fulcio.sigstore.dev",
+    "fulcio_identity_token": "",
+    "insecure_skip_verify": false,
+    "rekorUrl": "https://rekor.sigstore.dev",
+    "oidcIssuer": "https://oauth2.sigstore.dev/auth",
+    "oidcClientId": "sigstore",
+    "OIDCRedirectURL": ""
+   },
+   "platform": ""
+  }
+ },
+ "schema": {
+  "version": "3.2.3",
+  "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-3.2.3.json"
+ }
+}

@@ -1,0 +1,1054 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Grype",
+          "version": "0.38.0",
+          "informationUri": "https://github.com/anchore/grype",
+          "rules": [
+            {
+              "id": "CVE-2015-5237-google.golang.org/protobuf",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2015-5237 high vulnerability for google.golang.org/protobuf package"
+              },
+              "fullDescription": {
+                "text": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2015-5237\nSeverity: high\nPackage: google.golang.org/protobuf\nVersion: v1.27.1\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2015-5237](https://nvd.nist.gov/vuln/detail/CVE-2015-5237)",
+                "markdown": "**Vulnerability CVE-2015-5237**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | google.golang.org/protobuf  | v1.27.1  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2015-5237](https://nvd.nist.gov/vuln/detail/CVE-2015-5237)  |\n"
+              },
+              "properties": {
+                "security-severity": "8.8"
+              }
+            },
+            {
+              "id": "CVE-2018-19653-github.com/hashicorp/consul/sdk",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2018-19653 medium vulnerability for github.com/hashicorp/consul/sdk package"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul 0.5.1 through 1.4.0 can use cleartext agent-to-agent RPC communication because the verify_outgoing setting is improperly documented. NOTE: the vendor has provided reconfiguration steps that do not require a software upgrade."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2018-19653\nSeverity: medium\nPackage: github.com/hashicorp/consul/sdk\nVersion: v0.8.0\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2018-19653](https://nvd.nist.gov/vuln/detail/CVE-2018-19653)",
+                "markdown": "**Vulnerability CVE-2018-19653**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/hashicorp/consul/sdk  | v0.8.0  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2018-19653](https://nvd.nist.gov/vuln/detail/CVE-2018-19653)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2020-15129-github.com/traefik/traefik/v2",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2020-15129 medium vulnerability for github.com/traefik/traefik/v2 package"
+              },
+              "fullDescription": {
+                "text": "In Traefik before versions 1.7.26, 2.2.8, and 2.3.0-rc3, there exists a potential open redirect vulnerability in Traefik's handling of the \"X-Forwarded-Prefix\" header. The Traefik API dashboard component doesn't validate that the value of the header \"X-Forwarded-Prefix\" is a site relative path and will redirect to any header provided URI. Successful exploitation of an open redirect can be used to entice victims to disclose sensitive information. Active Exploitation of this issue is unlikely as it would require active header injection, however the Traefik team addressed this issue nonetheless to prevent abuse in e.g. cache poisoning scenarios."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2020-15129\nSeverity: medium\nPackage: github.com/traefik/traefik/v2\nVersion: (devel)\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2020-15129](https://nvd.nist.gov/vuln/detail/CVE-2020-15129)",
+                "markdown": "**Vulnerability CVE-2020-15129**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/traefik/traefik/v2  | (devel)  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2020-15129](https://nvd.nist.gov/vuln/detail/CVE-2020-15129)  |\n"
+              },
+              "properties": {
+                "security-severity": "4.7"
+              }
+            },
+            {
+              "id": "CVE-2020-25864-github.com/hashicorp/consul/sdk",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2020-25864 medium vulnerability for github.com/hashicorp/consul/sdk package"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul and Consul Enterprise up to version 1.9.4 key-value (KV) raw mode was vulnerable to cross-site scripting. Fixed in 1.9.5, 1.8.10 and 1.7.14."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2020-25864\nSeverity: medium\nPackage: github.com/hashicorp/consul/sdk\nVersion: v0.8.0\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2020-25864](https://nvd.nist.gov/vuln/detail/CVE-2020-25864)",
+                "markdown": "**Vulnerability CVE-2020-25864**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/hashicorp/consul/sdk  | v0.8.0  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2020-25864](https://nvd.nist.gov/vuln/detail/CVE-2020-25864)  |\n"
+              },
+              "properties": {
+                "security-severity": "6.1"
+              }
+            },
+            {
+              "id": "CVE-2020-7219-github.com/hashicorp/consul/sdk",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2020-7219 high vulnerability for github.com/hashicorp/consul/sdk package"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul and Consul Enterprise up to 1.6.2 HTTP/RPC services allowed unbounded resource usage, and were susceptible to unauthenticated denial of service. Fixed in 1.6.3."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2020-7219\nSeverity: high\nPackage: github.com/hashicorp/consul/sdk\nVersion: v0.8.0\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2020-7219](https://nvd.nist.gov/vuln/detail/CVE-2020-7219)",
+                "markdown": "**Vulnerability CVE-2020-7219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/hashicorp/consul/sdk  | v0.8.0  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2020-7219](https://nvd.nist.gov/vuln/detail/CVE-2020-7219)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2021-22570-google.golang.org/protobuf",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2021-22570 high vulnerability for google.golang.org/protobuf package"
+              },
+              "fullDescription": {
+                "text": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2021-22570\nSeverity: high\nPackage: google.golang.org/protobuf\nVersion: v1.27.1\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2021-22570](https://nvd.nist.gov/vuln/detail/CVE-2021-22570)",
+                "markdown": "**Vulnerability CVE-2021-22570**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | google.golang.org/protobuf  | v1.27.1  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2021-22570](https://nvd.nist.gov/vuln/detail/CVE-2021-22570)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2021-3121-github.com/hashicorp/consul/sdk",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2021-3121 high vulnerability for github.com/hashicorp/consul/sdk package"
+              },
+              "fullDescription": {
+                "text": "An issue was discovered in GoGo Protobuf before 1.3.2. plugin/unmarshal/unmarshal.go lacks certain index validation, aka the \"skippy peanut butter\" issue."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2021-3121\nSeverity: high\nPackage: github.com/hashicorp/consul/sdk\nVersion: v0.8.0\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2021-3121](https://nvd.nist.gov/vuln/detail/CVE-2021-3121)",
+                "markdown": "**Vulnerability CVE-2021-3121**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/hashicorp/consul/sdk  | v0.8.0  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2021-3121](https://nvd.nist.gov/vuln/detail/CVE-2021-3121)  |\n"
+              },
+              "properties": {
+                "security-severity": "8.6"
+              }
+            },
+            {
+              "id": "CVE-2021-32813-github.com/traefik/traefik/v2",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2021-32813 high vulnerability for github.com/traefik/traefik/v2 package"
+              },
+              "fullDescription": {
+                "text": "Traefik is an HTTP reverse proxy and load balancer. Prior to version 2.4.13, there exists a potential header vulnerability in Traefik's handling of the Connection header. Active exploitation of this issue is unlikely, as it requires that a removed header would lead to a privilege escalation, however, the Traefik team has addressed this issue to prevent any potential abuse. If one has a chain of Traefik middlewares, and one of them sets a request header, then sending a request with a certain Connection header will cause it to be removed before the request is sent. In this case, the backend does not see the request header. A patch is available in version 2.4.13. There are no known workarounds aside from upgrading."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2021-32813\nSeverity: high\nPackage: github.com/traefik/traefik/v2\nVersion: (devel)\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2021-32813](https://nvd.nist.gov/vuln/detail/CVE-2021-32813)",
+                "markdown": "**Vulnerability CVE-2021-32813**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/traefik/traefik/v2  | (devel)  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2021-32813](https://nvd.nist.gov/vuln/detail/CVE-2021-32813)  |\n"
+              },
+              "properties": {
+                "security-severity": "8.1"
+              }
+            },
+            {
+              "id": "CVE-2021-37219-github.com/hashicorp/consul/sdk",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2021-37219 high vulnerability for github.com/hashicorp/consul/sdk package"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul and Consul Enterprise 1.10.1 Raft RPC layer allows non-server agents with a valid certificate signed by the same CA to access server-only functionality, enabling privilege escalation. Fixed in 1.8.15, 1.9.9 and 1.10.2."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2021-37219\nSeverity: high\nPackage: github.com/hashicorp/consul/sdk\nVersion: v0.8.0\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2021-37219](https://nvd.nist.gov/vuln/detail/CVE-2021-37219)",
+                "markdown": "**Vulnerability CVE-2021-37219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/hashicorp/consul/sdk  | v0.8.0  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2021-37219](https://nvd.nist.gov/vuln/detail/CVE-2021-37219)  |\n"
+              },
+              "properties": {
+                "security-severity": "8.8"
+              }
+            },
+            {
+              "id": "CVE-2021-38698-github.com/hashicorp/consul/sdk",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2021-38698 medium vulnerability for github.com/hashicorp/consul/sdk package"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul and Consul Enterprise 1.10.1 Txn.Apply endpoint allowed services to register proxies for other services, enabling access to service traffic. Fixed in 1.8.15, 1.9.9 and 1.10.2."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2021-38698\nSeverity: medium\nPackage: github.com/hashicorp/consul/sdk\nVersion: v0.8.0\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2021-38698](https://nvd.nist.gov/vuln/detail/CVE-2021-38698)",
+                "markdown": "**Vulnerability CVE-2021-38698**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/hashicorp/consul/sdk  | v0.8.0  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2021-38698](https://nvd.nist.gov/vuln/detail/CVE-2021-38698)  |\n"
+              },
+              "properties": {
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "CVE-2022-21698-github.com/prometheus/client_golang",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2022-21698 high vulnerability for github.com/prometheus/client_golang package"
+              },
+              "fullDescription": {
+                "text": "client_golang is the instrumentation library for Go applications in Prometheus, and the promhttp package in client_golang provides tooling around HTTP servers and clients. In client_golang prior to version 1.11.1, HTTP server is susceptible to a Denial of Service through unbounded cardinality, and potential memory exhaustion, when handling requests with non-standard HTTP methods. In order to be affected, an instrumented software must use any of `promhttp.InstrumentHandler*` middleware except `RequestsInFlight`; not filter any specific methods (e.g GET) before middleware; pass metric with `method` label name to our middleware; and not have any firewall/LB/proxy that filters away requests with unknown `method`. client_golang version 1.11.1 contains a patch for this issue. Several workarounds are available, including removing the `method` label name from counter/gauge used in the InstrumentHandler; turning off affected promhttp handlers; adding custom middleware before promhttp handler that will sanitize the request method given by Go http.Request; and using a reverse proxy or web application firewall, configured to only allow a limited set of methods."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-21698\nSeverity: high\nPackage: github.com/prometheus/client_golang\nVersion: v1.11.0\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2022-21698](https://nvd.nist.gov/vuln/detail/CVE-2022-21698)",
+                "markdown": "**Vulnerability CVE-2022-21698**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/prometheus/client_golang  | v1.11.0  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2022-21698](https://nvd.nist.gov/vuln/detail/CVE-2022-21698)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2022-23632-github.com/traefik/traefik/v2",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2022-23632 critical vulnerability for github.com/traefik/traefik/v2 package"
+              },
+              "fullDescription": {
+                "text": "Traefik is an HTTP reverse proxy and load balancer. Prior to version 2.6.1, Traefik skips the router transport layer security (TLS) configuration when the host header is a fully qualified domain name (FQDN). For a request, the TLS configuration choice can be different than the router choice, which implies the use of a wrong TLS configuration. When sending a request using FQDN handled by a router configured with a dedicated TLS configuration, the TLS configuration falls back to the default configuration that might not correspond to the configured one. If the CNAME flattening is enabled, the selected TLS configuration is the SNI one and the routing uses the CNAME value, so this can skip the expected TLS configuration. Version 2.6.1 contains a patch for this issue. As a workaround, one may add the FDQN to the host rule. However, there is no workaround if the CNAME flattening is enabled."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-23632\nSeverity: critical\nPackage: github.com/traefik/traefik/v2\nVersion: (devel)\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2022-23632](https://nvd.nist.gov/vuln/detail/CVE-2022-23632)",
+                "markdown": "**Vulnerability CVE-2022-23632**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | github.com/traefik/traefik/v2  | (devel)  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2022-23632](https://nvd.nist.gov/vuln/detail/CVE-2022-23632)  |\n"
+              },
+              "properties": {
+                "security-severity": "9.8"
+              }
+            },
+            {
+              "id": "CVE-2022-24687-github.com/hashicorp/consul",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2022-24687 medium vulnerability for github.com/hashicorp/consul package"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul and Consul Enterprise 1.8.0 through 1.9.14, 1.10.7, and 1.11.2 has Uncontrolled Resource Consumption."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-24687\nSeverity: medium\nPackage: github.com/hashicorp/consul\nVersion: v1.10.4\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2022-24687](https://nvd.nist.gov/vuln/detail/CVE-2022-24687)",
+                "markdown": "**Vulnerability CVE-2022-24687**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/hashicorp/consul  | v1.10.4  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2022-24687](https://nvd.nist.gov/vuln/detail/CVE-2022-24687)  |\n"
+              },
+              "properties": {
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "CVE-2022-29153-github.com/hashicorp/consul",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2022-29153 high vulnerability for github.com/hashicorp/consul package"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul and Consul Enterprise through 2022-04-12 allow SSRF."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-29153\nSeverity: high\nPackage: github.com/hashicorp/consul\nVersion: v1.10.4\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2022-29153](https://nvd.nist.gov/vuln/detail/CVE-2022-29153)",
+                "markdown": "**Vulnerability CVE-2022-29153**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/hashicorp/consul  | v1.10.4  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2022-29153](https://nvd.nist.gov/vuln/detail/CVE-2022-29153)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2022-29153-github.com/hashicorp/consul/sdk",
+              "name": "StockMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2022-29153 high vulnerability for github.com/hashicorp/consul/sdk package"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul and Consul Enterprise through 2022-04-12 allow SSRF."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-29153\nSeverity: high\nPackage: github.com/hashicorp/consul/sdk\nVersion: v0.8.0\nFix Version: \nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: nvd\nLink: [CVE-2022-29153](https://nvd.nist.gov/vuln/detail/CVE-2022-29153)",
+                "markdown": "**Vulnerability CVE-2022-29153**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/hashicorp/consul/sdk  | v0.8.0  |   | go-module  | /usr/local/bin/traefik  | nvd  | [CVE-2022-29153](https://nvd.nist.gov/vuln/detail/CVE-2022-29153)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-5ffw-gxpp-mxpf-github.com/containerd/containerd",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-5ffw-gxpp-mxpf medium vulnerability for github.com/containerd/containerd package"
+              },
+              "fullDescription": {
+                "text": "containerd CRI plugin: Host memory exhaustion through ExecSync"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-5ffw-gxpp-mxpf\nSeverity: medium\nPackage: github.com/containerd/containerd\nVersion: v1.5.9\nFix Version: 1.5.13\nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: github:go\nLink: [GHSA-5ffw-gxpp-mxpf](https://github.com/advisories/GHSA-5ffw-gxpp-mxpf)",
+                "markdown": "**Vulnerability GHSA-5ffw-gxpp-mxpf**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/containerd/containerd  | v1.5.9  | 1.5.13  | go-module  | /usr/local/bin/traefik  | github:go  | [GHSA-5ffw-gxpp-mxpf](https://github.com/advisories/GHSA-5ffw-gxpp-mxpf)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.5"
+              }
+            },
+            {
+              "id": "GHSA-6qq8-5wq3-86rp-github.com/traefik/traefik/v2",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-6qq8-5wq3-86rp medium vulnerability for github.com/traefik/traefik/v2 package"
+              },
+              "fullDescription": {
+                "text": "Open redirect in Traefik"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-6qq8-5wq3-86rp\nSeverity: medium\nPackage: github.com/traefik/traefik/v2\nVersion: (devel)\nFix Version: 2.3.0\nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: github:go\nLink: [GHSA-6qq8-5wq3-86rp](https://github.com/advisories/GHSA-6qq8-5wq3-86rp)",
+                "markdown": "**Vulnerability GHSA-6qq8-5wq3-86rp**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/traefik/traefik/v2  | (devel)  | 2.3.0  | go-module  | /usr/local/bin/traefik  | github:go  | [GHSA-6qq8-5wq3-86rp](https://github.com/advisories/GHSA-6qq8-5wq3-86rp)  |\n"
+              },
+              "properties": {
+                "security-severity": "4.7"
+              }
+            },
+            {
+              "id": "GHSA-crp2-qrr5-8pq7-github.com/containerd/containerd",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-crp2-qrr5-8pq7 high vulnerability for github.com/containerd/containerd package"
+              },
+              "fullDescription": {
+                "text": "containerd CRI plugin: Insecure handling of image volumes"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-crp2-qrr5-8pq7\nSeverity: high\nPackage: github.com/containerd/containerd\nVersion: v1.5.9\nFix Version: 1.5.10\nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: github:go\nLink: [GHSA-crp2-qrr5-8pq7](https://github.com/advisories/GHSA-crp2-qrr5-8pq7)",
+                "markdown": "**Vulnerability GHSA-crp2-qrr5-8pq7**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/containerd/containerd  | v1.5.9  | 1.5.10  | go-module  | /usr/local/bin/traefik  | github:go  | [GHSA-crp2-qrr5-8pq7](https://github.com/advisories/GHSA-crp2-qrr5-8pq7)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-hrhx-6h34-j5hc-github.com/traefik/traefik/v2",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-hrhx-6h34-j5hc high vulnerability for github.com/traefik/traefik/v2 package"
+              },
+              "fullDescription": {
+                "text": "Skip the router TLS configuration when the host header is an FQDN"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-hrhx-6h34-j5hc\nSeverity: high\nPackage: github.com/traefik/traefik/v2\nVersion: (devel)\nFix Version: 2.6.1\nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: github:go\nLink: [GHSA-hrhx-6h34-j5hc](https://github.com/advisories/GHSA-hrhx-6h34-j5hc)",
+                "markdown": "**Vulnerability GHSA-hrhx-6h34-j5hc**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/traefik/traefik/v2  | (devel)  | 2.6.1  | go-module  | /usr/local/bin/traefik  | github:go  | [GHSA-hrhx-6h34-j5hc](https://github.com/advisories/GHSA-hrhx-6h34-j5hc)  |\n"
+              },
+              "properties": {
+                "security-severity": "9.8"
+              }
+            },
+            {
+              "id": "GHSA-m697-4v8f-55qg-github.com/traefik/traefik/v2",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-m697-4v8f-55qg medium vulnerability for github.com/traefik/traefik/v2 package"
+              },
+              "fullDescription": {
+                "text": "Header dropping in traefik"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-m697-4v8f-55qg\nSeverity: medium\nPackage: github.com/traefik/traefik/v2\nVersion: (devel)\nFix Version: 2.4.13\nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: github:go\nLink: [GHSA-m697-4v8f-55qg](https://github.com/advisories/GHSA-m697-4v8f-55qg)",
+                "markdown": "**Vulnerability GHSA-m697-4v8f-55qg**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/traefik/traefik/v2  | (devel)  | 2.4.13  | go-module  | /usr/local/bin/traefik  | github:go  | [GHSA-m697-4v8f-55qg](https://github.com/advisories/GHSA-m697-4v8f-55qg)  |\n"
+              },
+              "properties": {
+                "security-severity": "8.1"
+              }
+            },
+            {
+              "id": "GHSA-q6h7-4qgw-2j9p-github.com/hashicorp/consul",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-q6h7-4qgw-2j9p high vulnerability for github.com/hashicorp/consul package"
+              },
+              "fullDescription": {
+                "text": "Server side request forgery in Hashicorp Consul"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-q6h7-4qgw-2j9p\nSeverity: high\nPackage: github.com/hashicorp/consul\nVersion: v1.10.4\nFix Version: 1.10.10\nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: github:go\nLink: [GHSA-q6h7-4qgw-2j9p](https://github.com/advisories/GHSA-q6h7-4qgw-2j9p)",
+                "markdown": "**Vulnerability GHSA-q6h7-4qgw-2j9p**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/hashicorp/consul  | v1.10.4  | 1.10.10  | go-module  | /usr/local/bin/traefik  | github:go  | [GHSA-q6h7-4qgw-2j9p](https://github.com/advisories/GHSA-q6h7-4qgw-2j9p)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-q9mp-79cp-9g8j-github.com/traefik/traefik/v2",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-q9mp-79cp-9g8j high vulnerability for github.com/traefik/traefik/v2 package"
+              },
+              "fullDescription": {
+                "text": "Improper Authentication"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-q9mp-79cp-9g8j\nSeverity: high\nPackage: github.com/traefik/traefik/v2\nVersion: (devel)\nFix Version: 2.2.2\nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: github:go\nLink: [GHSA-q9mp-79cp-9g8j](https://github.com/advisories/GHSA-q9mp-79cp-9g8j)",
+                "markdown": "**Vulnerability GHSA-q9mp-79cp-9g8j**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | github.com/traefik/traefik/v2  | (devel)  | 2.2.2  | go-module  | /usr/local/bin/traefik  | github:go  | [GHSA-q9mp-79cp-9g8j](https://github.com/advisories/GHSA-q9mp-79cp-9g8j)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-qq97-vm5h-rrhg-github.com/docker/distribution",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-qq97-vm5h-rrhg low vulnerability for github.com/docker/distribution package"
+              },
+              "fullDescription": {
+                "text": "OCI Manifest Type Confusion Issue"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-qq97-vm5h-rrhg\nSeverity: low\nPackage: github.com/docker/distribution\nVersion: v2.7.1+incompatible\nFix Version: 2.8.0\nType: go-module\nLocation: /usr/local/bin/traefik\nData Namespace: github:go\nLink: [GHSA-qq97-vm5h-rrhg](https://github.com/advisories/GHSA-qq97-vm5h-rrhg)",
+                "markdown": "**Vulnerability GHSA-qq97-vm5h-rrhg**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | github.com/docker/distribution  | v2.7.1+incompatible  | 2.8.0  | go-module  | /usr/local/bin/traefik  | github:go  | [GHSA-qq97-vm5h-rrhg](https://github.com/advisories/GHSA-qq97-vm5h-rrhg)  |\n"
+              },
+              "properties": {
+                "security-severity": "1.0"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2015-5237-google.golang.org/protobuf",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports google.golang.org/protobuf at version v1.27.1  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2018-19653-github.com/hashicorp/consul/sdk",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul/sdk at version v0.8.0  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-15129-github.com/traefik/traefik/v2",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/traefik/traefik/v2 at version (devel)  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-25864-github.com/hashicorp/consul/sdk",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul/sdk at version v0.8.0  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7219-github.com/hashicorp/consul/sdk",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul/sdk at version v0.8.0  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-22570-google.golang.org/protobuf",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports google.golang.org/protobuf at version v1.27.1  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-3121-github.com/hashicorp/consul/sdk",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul/sdk at version v0.8.0  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-32813-github.com/traefik/traefik/v2",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/traefik/traefik/v2 at version (devel)  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-37219-github.com/hashicorp/consul/sdk",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul/sdk at version v0.8.0  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-38698-github.com/hashicorp/consul/sdk",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul/sdk at version v0.8.0  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-21698-github.com/prometheus/client_golang",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/prometheus/client_golang at version v1.11.0  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-23632-github.com/traefik/traefik/v2",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/traefik/traefik/v2 at version (devel)  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-24687-github.com/hashicorp/consul",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul at version v1.10.4  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29153-github.com/hashicorp/consul",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul at version v1.10.4  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29153-github.com/hashicorp/consul/sdk",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul/sdk at version v0.8.0  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-5ffw-gxpp-mxpf-github.com/containerd/containerd",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/containerd/containerd at version v1.5.9  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-6qq8-5wq3-86rp-github.com/traefik/traefik/v2",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/traefik/traefik/v2 at version (devel)  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-crp2-qrr5-8pq7-github.com/containerd/containerd",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/containerd/containerd at version v1.5.9  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-hrhx-6h34-j5hc-github.com/traefik/traefik/v2",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/traefik/traefik/v2 at version (devel)  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-m697-4v8f-55qg-github.com/traefik/traefik/v2",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/traefik/traefik/v2 at version (devel)  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-q6h7-4qgw-2j9p-github.com/hashicorp/consul",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/hashicorp/consul at version v1.10.4  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-q9mp-79cp-9g8j-github.com/traefik/traefik/v2",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/traefik/traefik/v2 at version (devel)  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-qq97-vm5h-rrhg-github.com/docker/distribution",
+          "message": {
+            "text": "The path /usr/local/bin/traefik reports github.com/docker/distribution at version v2.7.1+incompatible  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/traefik"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/traefik",
+                  "fullyQualifiedName": "traefik:2.7@sha256:6b90671a6267082a946b64950707e91901ff0ae64ecf65163d132bec1fb531be:/usr/local/bin/traefik"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

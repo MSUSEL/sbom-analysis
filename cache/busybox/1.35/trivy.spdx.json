@@ -1,0 +1,9 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: busybox:1.35
+DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/busybox:1.35-03cfc8c6-2b89-41d0-9c1d-0984c12afa98
+Creator: Organization: aquasecurity
+Creator: Tool: trivy
+Created: 2022-07-01T19:32:18.3725083Z
+

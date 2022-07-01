@@ -1,0 +1,5562 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: node:lts
+DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/node:lts-181d64a9-7d16-4ce0-9089-c311b4131a1b
+Creator: Organization: aquasecurity
+Creator: Tool: trivy
+Created: 2022-07-01T19:39:32.2635083Z
+
+##### Package: libgdk-pixbuf2.0-0
+
+PackageName: libgdk-pixbuf2.0-0
+SPDXID: SPDXRef-102e31d1bd48be9d
+PackageVersion: 2.38.1+dfsg-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: json-parse-even-better-errors
+
+PackageName: json-parse-even-better-errors
+SPDXID: SPDXRef-1082cf1350270942
+PackageVersion: 2.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libxml2
+
+PackageName: libxml2
+SPDXID: SPDXRef-10b7ce559e1c8d0e
+PackageVersion: 2.9.4+dfsg1-7+deb10u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: env-paths
+
+PackageName: env-paths
+SPDXID: SPDXRef-11fcfb61af485207
+PackageVersion: 2.2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: promise-inflight
+
+PackageName: promise-inflight
+SPDXID: SPDXRef-121e5d6ec141e30c
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: python3.7
+
+PackageName: python3.7
+SPDXID: SPDXRef-12a42ef2ee5c2121
+PackageVersion: 3.7.3-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libunistring2
+
+PackageName: libunistring2
+SPDXID: SPDXRef-12c6d0da90208668
+PackageVersion: 0.9.10-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libglib2.0-data
+
+PackageName: libglib2.0-data
+SPDXID: SPDXRef-12e1a47f85ff57c8
+PackageVersion: 2.58.3-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sensible-utils
+
+PackageName: sensible-utils
+SPDXID: SPDXRef-12e32330d8115c19
+PackageVersion: 0.0.12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gcc-8
+
+PackageName: gcc-8
+SPDXID: SPDXRef-130cc65acf1a2061
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagic1
+
+PackageName: libmagic1
+SPDXID: SPDXRef-1402b034b64e2476
+PackageVersion: 1:5.35-4+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/ci-detect
+
+PackageName: @npmcli/ci-detect
+SPDXID: SPDXRef-1416a96a62993ad2
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libaudit1
+
+PackageName: libaudit1
+SPDXID: SPDXRef-1480474ba7708fe8
+PackageVersion: 1:2.8.4-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python2.7
+
+PackageName: python2.7
+SPDXID: SPDXRef-14a23e9f32429ca4
+PackageVersion: 2.7.16-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: minipass-fetch
+
+PackageName: minipass-fetch
+SPDXID: SPDXRef-150c5e02f550be97
+PackageVersion: 2.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libjpeg62-turbo-dev
+
+PackageName: libjpeg62-turbo-dev
+SPDXID: SPDXRef-151e4bae78b9a84a
+PackageVersion: 1:1.5.2-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtinfo6
+
+PackageName: libtinfo6
+SPDXID: SPDXRef-152f1f1c21cf5dbe
+PackageVersion: 6.1+20181013-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gnupg-l10n
+
+PackageName: gnupg-l10n
+SPDXID: SPDXRef-1559238d301f6af2
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python3-distutils
+
+PackageName: python3-distutils
+SPDXID: SPDXRef-1606796cedc40535
+PackageVersion: 3.7.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmount-dev
+
+PackageName: libmount-dev
+SPDXID: SPDXRef-160af56dcb5b6b55
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python3
+
+PackageName: python3
+SPDXID: SPDXRef-171359142ff22635
+PackageVersion: 3.7.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libserf-1-1
+
+PackageName: libserf-1-1
+SPDXID: SPDXRef-17876514e008bd
+PackageVersion: 1.3.9-7+b10
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: adduser
+
+PackageName: adduser
+SPDXID: SPDXRef-17f9a9132ca89dff
+PackageVersion: 3.118
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpython2.7-stdlib
+
+PackageName: libpython2.7-stdlib
+SPDXID: SPDXRef-18dd0d7225759101
+PackageVersion: 2.7.16-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgmpxx4ldbl
+
+PackageName: libgmpxx4ldbl
+SPDXID: SPDXRef-18e40cabe444112c
+PackageVersion: 2:6.1.2+dfsg-4+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcurl4-openssl-dev
+
+PackageName: libcurl4-openssl-dev
+SPDXID: SPDXRef-19598b15e4933290
+PackageVersion: 7.64.0-4+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: promise-call-limit
+
+PackageName: promise-call-limit
+SPDXID: SPDXRef-198db108ed34e0c6
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: defaults
+
+PackageName: defaults
+SPDXID: SPDXRef-19d4126996e38ff2
+PackageVersion: 1.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libmagic-mgc
+
+PackageName: libmagic-mgc
+SPDXID: SPDXRef-19ded67dbb67b2ff
+PackageVersion: 1:5.35-4+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gzip
+
+PackageName: gzip
+SPDXID: SPDXRef-19f3bfc192d4290b
+PackageVersion: 1.9-3+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxtables12
+
+PackageName: libxtables12
+SPDXID: SPDXRef-1ab2db507a40f41
+PackageVersion: 1.8.2-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpsl5
+
+PackageName: libpsl5
+SPDXID: SPDXRef-1af4e5eb74ba918d
+PackageVersion: 0.20.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: clone
+
+PackageName: clone
+SPDXID: SPDXRef-1b04f4536b4a29bd
+PackageVersion: 1.0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: gpgsm
+
+PackageName: gpgsm
+SPDXID: SPDXRef-1bd0721b5cefbe9
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: binutils
+
+PackageName: binutils
+SPDXID: SPDXRef-1cfab741ad864db
+PackageVersion: 2.31.1-16
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: minizlib
+
+PackageName: minizlib
+SPDXID: SPDXRef-1d3dffb221d3c00b
+PackageVersion: 2.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: delegates
+
+PackageName: delegates
+SPDXID: SPDXRef-1d61d2760fef3408
+PackageVersion: 1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: krb5-multidev
+
+PackageName: krb5-multidev
+SPDXID: SPDXRef-1dbccb5ee16b633f
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdk-pixbuf2.0-bin
+
+PackageName: libgdk-pixbuf2.0-bin
+SPDXID: SPDXRef-1e5d2f14738984ae
+PackageVersion: 2.38.1+dfsg-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-runtime
+
+PackageName: libpam-runtime
+SPDXID: SPDXRef-1e88719ecf1d474a
+PackageVersion: 1.3.1-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npmlog
+
+PackageName: npmlog
+SPDXID: SPDXRef-1ecb9b09b9084bf4
+PackageVersion: 6.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: uuid-dev
+
+PackageName: uuid-dev
+SPDXID: SPDXRef-1f61e2b1215c8a10
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: graceful-fs
+
+PackageName: graceful-fs
+SPDXID: SPDXRef-1f9dea408389cab8
+PackageVersion: 4.2.10
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libc-dev-bin
+
+PackageName: libc-dev-bin
+SPDXID: SPDXRef-1fc4128df5c70039
+PackageVersion: 2.28-10+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libx11-6
+
+PackageName: libx11-6
+SPDXID: SPDXRef-1febfa58089fcd78
+PackageVersion: 2:1.6.7-1+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmount1
+
+PackageName: libmount1
+SPDXID: SPDXRef-203539f6a3d7ca7e
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/map-workspaces
+
+PackageName: @npmcli/map-workspaces
+SPDXID: SPDXRef-2098dc04f5e490f2
+PackageVersion: 2.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: inflight
+
+PackageName: inflight
+SPDXID: SPDXRef-20d486d80fd7a0ae
+PackageVersion: 1.0.6
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: debconf
+
+PackageName: debconf
+SPDXID: SPDXRef-2113de93338f104d
+PackageVersion: 1.5.71+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mount
+
+PackageName: mount
+SPDXID: SPDXRef-21161547901a1b87
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gir1.2-freedesktop
+
+PackageName: gir1.2-freedesktop
+SPDXID: SPDXRef-219144f85fae483a
+PackageVersion: 1.58.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npm-audit-report
+
+PackageName: npm-audit-report
+SPDXID: SPDXRef-21a7e9ac312df0b7
+PackageVersion: 3.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libnpmpublish
+
+PackageName: libnpmpublish
+SPDXID: SPDXRef-21cc2d3c66023fe
+PackageVersion: 6.0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: x11proto-core-dev
+
+PackageName: x11proto-core-dev
+SPDXID: SPDXRef-2297a2264bc9fda6
+PackageVersion: 2018.4-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libevent-openssl-2.1-6
+
+PackageName: libevent-openssl-2.1-6
+SPDXID: SPDXRef-22ab976f6322b3c1
+PackageVersion: 2.1.8-stable-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmaxminddb-dev
+
+PackageName: libmaxminddb-dev
+SPDXID: SPDXRef-22fb45432128568c
+PackageVersion: 1.3.2-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: glob
+
+PackageName: glob
+SPDXID: SPDXRef-2392e3dfbb7d7bf4
+PackageVersion: 8.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: dash
+
+PackageName: dash
+SPDXID: SPDXRef-23d8782b1515fb6d
+PackageVersion: 0.5.10.2-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: agentkeepalive
+
+PackageName: agentkeepalive
+SPDXID: SPDXRef-242def7110836314
+PackageVersion: 4.2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: @npmcli/git
+
+PackageName: @npmcli/git
+SPDXID: SPDXRef-244915ba66c93037
+PackageVersion: 3.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: is-lambda
+
+PackageName: is-lambda
+SPDXID: SPDXRef-247f2ab1d34b84c
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: tar
+
+PackageName: tar
+SPDXID: SPDXRef-256e025b9aeaac19
+PackageVersion: 1.30+dfsg-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bash
+
+PackageName: bash
+SPDXID: SPDXRef-25aea11d2e182c7f
+PackageVersion: 5.0-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libicu63
+
+PackageName: libicu63
+SPDXID: SPDXRef-25e42184e7080792
+PackageVersion: 63.1-6+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ip-regex
+
+PackageName: ip-regex
+SPDXID: SPDXRef-260c35ec8316183b
+PackageVersion: 4.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: autotools-dev
+
+PackageName: autotools-dev
+SPDXID: SPDXRef-26559fcd25b95212
+PackageVersion: 20180224.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaudit-common
+
+PackageName: libaudit-common
+SPDXID: SPDXRef-267c6f65f70ea580
+PackageVersion: 1:2.8.4-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ms
+
+PackageName: ms
+SPDXID: SPDXRef-26b2b0a7de7e78b5
+PackageVersion: 2.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: automake
+
+PackageName: automake
+SPDXID: SPDXRef-26cac6eaf8767e9b
+PackageVersion: 1:1.16.1-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpython3.7-stdlib
+
+PackageName: libpython3.7-stdlib
+SPDXID: SPDXRef-26e6bd596be67eb3
+PackageVersion: 3.7.3-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: x11proto-dev
+
+PackageName: x11proto-dev
+SPDXID: SPDXRef-26f4d5af575850b0
+PackageVersion: 2018.4-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxcb1-dev
+
+PackageName: libxcb1-dev
+SPDXID: SPDXRef-2748a44fe5fd0d17
+PackageVersion: 1.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: findutils
+
+PackageName: findutils
+SPDXID: SPDXRef-27adca0b7faa8029
+PackageVersion: 4.6.0+git+20190209-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: is-cidr
+
+PackageName: is-cidr
+SPDXID: SPDXRef-2a84a4de9ff327fc
+PackageVersion: 4.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+
+##### Package: libglib2.0-dev
+
+PackageName: libglib2.0-dev
+SPDXID: SPDXRef-2bf90dce15cd75e6
+PackageVersion: 2.58.3-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnpmdiff
+
+PackageName: libnpmdiff
+SPDXID: SPDXRef-2c59a303a05dc32b
+PackageVersion: 4.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libsigsegv2
+
+PackageName: libsigsegv2
+SPDXID: SPDXRef-2cd96d61a2088945
+PackageVersion: 2.12-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmariadb-dev
+
+PackageName: libmariadb-dev
+SPDXID: SPDXRef-2d1c6e86a84b8a2
+PackageVersion: 1:10.3.34-0+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: jsonparse
+
+PackageName: jsonparse
+SPDXID: SPDXRef-2d8e9e9a40a46073
+PackageVersion: 1.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: @npmcli/run-script
+
+PackageName: @npmcli/run-script
+SPDXID: SPDXRef-2e152d6375bdbb63
+PackageVersion: 3.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libxcb-shm0-dev
+
+PackageName: libxcb-shm0-dev
+SPDXID: SPDXRef-2e22785d4293ae3a
+PackageVersion: 1.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: path-is-absolute
+
+PackageName: path-is-absolute
+SPDXID: SPDXRef-2e4f7d10af034712
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: netbase
+
+PackageName: netbase
+SPDXID: SPDXRef-2e62007039234314
+PackageVersion: 5.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libk5crypto3
+
+PackageName: libk5crypto3
+SPDXID: SPDXRef-2e832534937965dc
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tzdata
+
+PackageName: tzdata
+SPDXID: SPDXRef-2ed0520a8bb72aeb
+PackageVersion: 2021a-0+deb10u5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxcb-render0-dev
+
+PackageName: libxcb-render0-dev
+SPDXID: SPDXRef-2fe38f1debf3faf8
+PackageVersion: 1.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxau-dev
+
+PackageName: libxau-dev
+SPDXID: SPDXRef-301d5382261388a9
+PackageVersion: 1:1.0.8-1+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickcore-dev
+
+PackageName: libmagickcore-dev
+SPDXID: SPDXRef-3088c836b1ed34df
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpq5
+
+PackageName: libpq5
+SPDXID: SPDXRef-30a5792c929c2994
+PackageVersion: 11.16-0+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libwebpdemux2
+
+PackageName: libwebpdemux2
+SPDXID: SPDXRef-30af78164673426f
+PackageVersion: 0.6.1-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libedit2
+
+PackageName: libedit2
+SPDXID: SPDXRef-311a4a071f656197
+PackageVersion: 3.1-20181209-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/arborist
+
+PackageName: @npmcli/arborist
+SPDXID: SPDXRef-312fc87a861cf334
+PackageVersion: 5.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libpython3-stdlib
+
+PackageName: libpython3-stdlib
+SPDXID: SPDXRef-3168f11624f7c20e
+PackageVersion: 3.7.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblcms2-dev
+
+PackageName: liblcms2-dev
+SPDXID: SPDXRef-31be09d161010ed4
+PackageVersion: 2.9-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: text-table
+
+PackageName: text-table
+SPDXID: SPDXRef-323ccd13b21e3c4
+PackageVersion: 0.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libwmf-dev
+
+PackageName: libwmf-dev
+SPDXID: SPDXRef-329a3317548b5f9
+PackageVersion: 0.2.8.4-14
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npm-registry-fetch
+
+PackageName: npm-registry-fetch
+SPDXID: SPDXRef-32a65ebded4a8354
+PackageVersion: 13.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: pkg-config
+
+PackageName: pkg-config
+SPDXID: SPDXRef-32f0230cf7ea56dc
+PackageVersion: 0.29-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ms
+
+PackageName: ms
+SPDXID: SPDXRef-33e797dfdf8007b3
+PackageVersion: 2.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: mercurial
+
+PackageName: mercurial
+SPDXID: SPDXRef-348bbdcb7cc29ea9
+PackageVersion: 4.8.2-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libreadline-dev
+
+PackageName: libreadline-dev
+SPDXID: SPDXRef-349944a06b78d6b3
+PackageVersion: 7.0-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libglib2.0-dev-bin
+
+PackageName: libglib2.0-dev-bin
+SPDXID: SPDXRef-34d1e6f93f504921
+PackageVersion: 2.58.3-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxdmcp-dev
+
+PackageName: libxdmcp-dev
+SPDXID: SPDXRef-3526170093ee4bfd
+PackageVersion: 1:1.1.2-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncurses5-dev
+
+PackageName: libncurses5-dev
+SPDXID: SPDXRef-3544d797e23c697a
+PackageVersion: 6.1+20181013-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage1
+
+PackageName: libsemanage1
+SPDXID: SPDXRef-356097715986f455
+PackageVersion: 2.8-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncurses6
+
+PackageName: libncurses6
+SPDXID: SPDXRef-36a79889d307c74f
+PackageVersion: 6.1+20181013-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/move-file
+
+PackageName: @npmcli/move-file
+SPDXID: SPDXRef-36a8abc624a77ff7
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: tar
+
+PackageName: tar
+SPDXID: SPDXRef-36ddbd652587b3d2
+PackageVersion: 6.1.11
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: debug
+
+PackageName: debug
+SPDXID: SPDXRef-36fa32bd5fdaeb02
+PackageVersion: 4.3.4
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: gir1.2-glib-2.0
+
+PackageName: gir1.2-glib-2.0
+SPDXID: SPDXRef-3727516dbd56df2a
+PackageVersion: 1.58.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: procps
+
+PackageName: procps
+SPDXID: SPDXRef-37499d3b064a6d93
+PackageVersion: 2:3.3.15-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnpmversion
+
+PackageName: libnpmversion
+SPDXID: SPDXRef-3752c43f50075ee
+PackageVersion: 3.0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: git
+
+PackageName: git
+SPDXID: SPDXRef-37e707f13e48f278
+PackageVersion: 1:2.20.1-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjpeg62-turbo
+
+PackageName: libjpeg62-turbo
+SPDXID: SPDXRef-37eef14692d8e8ef
+PackageVersion: 1:1.5.2-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dpkg-dev
+
+PackageName: dpkg-dev
+SPDXID: SPDXRef-38568921c12f902d
+PackageVersion: 1.19.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcairo-gobject2
+
+PackageName: libcairo-gobject2
+SPDXID: SPDXRef-387c746b656856ea
+PackageVersion: 1.16.0-4+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsepol1-dev
+
+PackageName: libsepol1-dev
+SPDXID: SPDXRef-39c3d437a8185028
+PackageVersion: 2.8-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpg-wks-server
+
+PackageName: gpg-wks-server
+SPDXID: SPDXRef-3b84c3641866e0c4
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: brace-expansion
+
+PackageName: brace-expansion
+SPDXID: SPDXRef-3b92ef1e9e87858b
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: gir1.2-gdkpixbuf-2.0
+
+PackageName: gir1.2-gdkpixbuf-2.0
+SPDXID: SPDXRef-3c433ef561c89d8f
+PackageVersion: 2.38.1+dfsg-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: glob
+
+PackageName: glob
+SPDXID: SPDXRef-3ca0588641a9a365
+PackageVersion: 7.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libdpkg-perl
+
+PackageName: libdpkg-perl
+SPDXID: SPDXRef-3d97dbca4eeb14d3
+PackageVersion: 1.19.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgnutls-openssl27
+
+PackageName: libgnutls-openssl27
+SPDXID: SPDXRef-3daf4f92e05a0fea
+PackageVersion: 3.6.7-4+deb10u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: unique-slug
+
+PackageName: unique-slug
+SPDXID: SPDXRef-3e06df7a269edd38
+PackageVersion: 2.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: humanize-ms
+
+PackageName: humanize-ms
+SPDXID: SPDXRef-3e390acf95c50127
+PackageVersion: 1.2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libtool
+
+PackageName: libtool
+SPDXID: SPDXRef-3e750959a22ab5c5
+PackageVersion: 2.4.6-9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: xtrans-dev
+
+PackageName: xtrans-dev
+SPDXID: SPDXRef-3e9677bb738290a9
+PackageVersion: 1.3.5-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: err-code
+
+PackageName: err-code
+SPDXID: SPDXRef-3f7e2f73af59b992
+PackageVersion: 2.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libxrender-dev
+
+PackageName: libxrender-dev
+SPDXID: SPDXRef-3f9aa6ffd81d174e
+PackageVersion: 1:0.9.10-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npm-pick-manifest
+
+PackageName: npm-pick-manifest
+SPDXID: SPDXRef-404df92046bee33d
+PackageVersion: 7.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: yallist
+
+PackageName: yallist
+SPDXID: SPDXRef-409241fc5e0678a1
+PackageVersion: 4.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: gnupg
+
+PackageName: gnupg
+SPDXID: SPDXRef-40ce256866e0656a
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickwand-dev
+
+PackageName: libmagickwand-dev
+SPDXID: SPDXRef-4192c28911e0662a
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/node-gyp
+
+PackageName: @npmcli/node-gyp
+SPDXID: SPDXRef-41cd9b7962abed68
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libc6
+
+PackageName: libc6
+SPDXID: SPDXRef-429bd0a391d2331e
+PackageVersion: 2.28-10+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkeyutils1
+
+PackageName: libkeyutils1
+SPDXID: SPDXRef-42b791ec46bef9d7
+PackageVersion: 1.6-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: read-cmd-shim
+
+PackageName: read-cmd-shim
+SPDXID: SPDXRef-4319e62f91d4c8d9
+PackageVersion: 3.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: cpp
+
+PackageName: cpp
+SPDXID: SPDXRef-436f05a56e253afa
+PackageVersion: 4:8.3.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsvn1
+
+PackageName: libsvn1
+SPDXID: SPDXRef-437c1a8e47175967
+PackageVersion: 1.10.4-1+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: wrappy
+
+PackageName: wrappy
+SPDXID: SPDXRef-45cb6d2c89af3eb4
+PackageVersion: 1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libgnutlsxx28
+
+PackageName: libgnutlsxx28
+SPDXID: SPDXRef-45f9899661995e58
+PackageVersion: 3.6.7-4+deb10u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkadm5clnt-mit11
+
+PackageName: libkadm5clnt-mit11
+SPDXID: SPDXRef-45fe2d3b1827281f
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: g++-8
+
+PackageName: g++-8
+SPDXID: SPDXRef-47102d1991cf461
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxt6
+
+PackageName: libxt6
+SPDXID: SPDXRef-4717f81c5e84815f
+PackageVersion: 1:1.1.5-1+b3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python2-minimal
+
+PackageName: python2-minimal
+SPDXID: SPDXRef-474c823c4f2a5403
+PackageVersion: 2.7.16-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: encoding
+
+PackageName: encoding
+SPDXID: SPDXRef-47e19d367b53f797
+PackageVersion: 0.1.13
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: default-libmysqlclient-dev
+
+PackageName: default-libmysqlclient-dev
+SPDXID: SPDXRef-47edff5999ab334a
+PackageVersion: 1.0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: is-core-module
+
+PackageName: is-core-module
+SPDXID: SPDXRef-486346c6c2037a64
+PackageVersion: 2.9.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libpcre32-3
+
+PackageName: libpcre32-3
+SPDXID: SPDXRef-48f06f1ccf8efff
+PackageVersion: 2:8.39-12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fdisk
+
+PackageName: fdisk
+SPDXID: SPDXRef-496538ce3634e04f
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: spdx-expression-parse
+
+PackageName: spdx-expression-parse
+SPDXID: SPDXRef-496bf0119a4a6ef0
+PackageVersion: 3.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: aproba
+
+PackageName: aproba
+SPDXID: SPDXRef-49758767a25b3774
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: smart-buffer
+
+PackageName: smart-buffer
+SPDXID: SPDXRef-49adb40cb629829
+PackageVersion: 4.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: minipass-flush
+
+PackageName: minipass-flush
+SPDXID: SPDXRef-49eaff305e02b79d
+PackageVersion: 1.0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libmagickcore-6.q16-dev
+
+PackageName: libmagickcore-6.q16-dev
+SPDXID: SPDXRef-4a2d21293f55221
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @colors/colors
+
+PackageName: @colors/colors
+SPDXID: SPDXRef-4a32e89ce1fd3bb9
+PackageVersion: 1.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libmaxminddb0
+
+PackageName: libmaxminddb0
+SPDXID: SPDXRef-4a4153264af02043
+PackageVersion: 1.3.2-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: iproute2
+
+PackageName: iproute2
+SPDXID: SPDXRef-4afa56241e77c01
+PackageVersion: 4.20.0-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libice-dev
+
+PackageName: libice-dev
+SPDXID: SPDXRef-4b1fe0d5e4ff12c9
+PackageVersion: 2:1.0.9-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: init-system-helpers
+
+PackageName: init-system-helpers
+SPDXID: SPDXRef-4b21b4108274f0e9
+PackageVersion: 1.56+nmu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-modules
+
+PackageName: libpam-modules
+SPDXID: SPDXRef-4b375d8006057430
+PackageVersion: 1.3.1-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: http-cache-semantics
+
+PackageName: http-cache-semantics
+SPDXID: SPDXRef-4b435106bb199268
+PackageVersion: 4.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+
+##### Package: libilmbase23
+
+PackageName: libilmbase23
+SPDXID: SPDXRef-4b6b314fa92e95f0
+PackageVersion: 2.2.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: brace-expansion
+
+PackageName: brace-expansion
+SPDXID: SPDXRef-4bafdf461940f162
+PackageVersion: 1.1.11
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libdjvulibre-dev
+
+PackageName: libdjvulibre-dev
+SPDXID: SPDXRef-4bf3199d6daa5e20
+PackageVersion: 3.5.27.1-10+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: indent-string
+
+PackageName: indent-string
+SPDXID: SPDXRef-4bfd7eeba68985c7
+PackageVersion: 4.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: patch
+
+PackageName: patch
+SPDXID: SPDXRef-4c1909330c7928b8
+PackageVersion: 2.7.6-3+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fonts-dejavu-core
+
+PackageName: fonts-dejavu-core
+SPDXID: SPDXRef-4c2529272998b82
+PackageVersion: 2.37-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: abbrev
+
+PackageName: abbrev
+SPDXID: SPDXRef-4c3e5939eb7a8244
+PackageVersion: 1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: linux-libc-dev
+
+PackageName: linux-libc-dev
+SPDXID: SPDXRef-4c894fa8e6edd56b
+PackageVersion: 4.19.235-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: http-proxy-agent
+
+PackageName: http-proxy-agent
+SPDXID: SPDXRef-4db67c518042010f
+PackageVersion: 5.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: walk-up-path
+
+PackageName: walk-up-path
+SPDXID: SPDXRef-4dc5a9ab94965ee5
+PackageVersion: 1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: validate-npm-package-name
+
+PackageName: validate-npm-package-name
+SPDXID: SPDXRef-4dfa296eca73cb1b
+PackageVersion: 4.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libpango-1.0-0
+
+PackageName: libpango-1.0-0
+SPDXID: SPDXRef-500f021c54614c20
+PackageVersion: 1.42.4-8~deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ncurses-base
+
+PackageName: ncurses-base
+SPDXID: SPDXRef-50173c83427b0450
+PackageVersion: 6.1+20181013-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsasl2-modules-db
+
+PackageName: libsasl2-modules-db
+SPDXID: SPDXRef-502ef3f64863cb60
+PackageVersion: 2.1.27+dfsg-1+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: color-support
+
+PackageName: color-support
+SPDXID: SPDXRef-508b2c215ad74c9
+PackageVersion: 1.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libtsan0
+
+PackageName: libtsan0
+SPDXID: SPDXRef-5176d4402e0e1560
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bin-links
+
+PackageName: bin-links
+SPDXID: SPDXRef-518766d79d84db73
+PackageVersion: 3.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libcroco3
+
+PackageName: libcroco3
+SPDXID: SPDXRef-518dcb7a99150360
+PackageVersion: 0.6.12-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: lsb-base
+
+PackageName: lsb-base
+SPDXID: SPDXRef-5225f412e8a89b64
+PackageVersion: 10.2019051400
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libwebpmux3
+
+PackageName: libwebpmux3
+SPDXID: SPDXRef-522cfb85b1a53647
+PackageVersion: 0.6.1-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mawk
+
+PackageName: mawk
+SPDXID: SPDXRef-52a5345bd6188115
+PackageVersion: 1.3.3-17+b3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npm-bundled
+
+PackageName: npm-bundled
+SPDXID: SPDXRef-541dc43f8ee0011f
+PackageVersion: 1.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libudev1
+
+PackageName: libudev1
+SPDXID: SPDXRef-546c126093403f35
+PackageVersion: 241-7~deb10u8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libstdc++-8-dev
+
+PackageName: libstdc++-8-dev
+SPDXID: SPDXRef-54768b9cd510c6b5
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgssrpc4
+
+PackageName: libgssrpc4
+SPDXID: SPDXRef-55288c4eed1600b0
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre3-dev
+
+PackageName: libpcre3-dev
+SPDXID: SPDXRef-55491b1c863cb44
+PackageVersion: 2:8.39-12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfftw3-double3
+
+PackageName: libfftw3-double3
+SPDXID: SPDXRef-55604fbf6b234a17
+PackageVersion: 3.3.8-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdjvulibre-text
+
+PackageName: libdjvulibre-text
+SPDXID: SPDXRef-5690406c02280b38
+PackageVersion: 3.5.27.1-10+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libevent-dev
+
+PackageName: libevent-dev
+SPDXID: SPDXRef-571fbf604b61b30e
+PackageVersion: 2.1.8-stable-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libuuid1
+
+PackageName: libuuid1
+SPDXID: SPDXRef-576921b22601f116
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: zlib1g-dev
+
+PackageName: zlib1g-dev
+SPDXID: SPDXRef-57ca39491bc95041
+PackageVersion: 1:1.2.11.dfsg-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mysql-common
+
+PackageName: mysql-common
+SPDXID: SPDXRef-57ff3c7611ec6483
+PackageVersion: 5.8+1.0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: wcwidth
+
+PackageName: wcwidth
+SPDXID: SPDXRef-583651791698be3f
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: glob
+
+PackageName: glob
+SPDXID: SPDXRef-58f413110dcc25f1
+PackageVersion: 7.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libxml2-dev
+
+PackageName: libxml2-dev
+SPDXID: SPDXRef-5960676e2788df23
+PackageVersion: 2.9.4+dfsg1-7+deb10u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgnutls30
+
+PackageName: libgnutls30
+SPDXID: SPDXRef-596a709387813360
+PackageVersion: 3.6.7-4+deb10u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python3.7-minimal
+
+PackageName: python3.7-minimal
+SPDXID: SPDXRef-599d3b8fec20f0ea
+PackageVersion: 3.7.3-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcom-err2
+
+PackageName: libcom-err2
+SPDXID: SPDXRef-59b06a3ac503ba83
+PackageVersion: 1.44.5-1+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dpkg
+
+PackageName: dpkg
+SPDXID: SPDXRef-59f12d19a37305c6
+PackageVersion: 1.19.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libffi6
+
+PackageName: libffi6
+SPDXID: SPDXRef-5a776d6f8c42af64
+PackageVersion: 3.2.1-9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: once
+
+PackageName: once
+SPDXID: SPDXRef-5a8029d34ed49e27
+PackageVersion: 1.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libreadline7
+
+PackageName: libreadline7
+SPDXID: SPDXRef-5a9c117a51f7e7ca
+PackageVersion: 7.0-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxt-dev
+
+PackageName: libxt-dev
+SPDXID: SPDXRef-5aeedc56f69247f6
+PackageVersion: 1:1.1.5-1+b3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblcms2-2
+
+PackageName: liblcms2-2
+SPDXID: SPDXRef-5b3d40bfbe9a955b
+PackageVersion: 2.9-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: archy
+
+PackageName: archy
+SPDXID: SPDXRef-5b66ed63f4b92bbd
+PackageVersion: 1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: apt
+
+PackageName: apt
+SPDXID: SPDXRef-5bc80417ee13aa65
+PackageVersion: 1.8.2.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxdmcp6
+
+PackageName: libxdmcp6
+SPDXID: SPDXRef-5c0e44dd34b5271f
+PackageVersion: 1:1.1.2-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: x11-common
+
+PackageName: x11-common
+SPDXID: SPDXRef-5ca0e3d70a1da25
+PackageVersion: 1:7.7+19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaprutil1
+
+PackageName: libaprutil1
+SPDXID: SPDXRef-5e1d566d3b1bdf90
+PackageVersion: 1.6.1-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libelf1
+
+PackageName: libelf1
+SPDXID: SPDXRef-602d885cc7a9cc52
+PackageVersion: 0.176-1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: unique-filename
+
+PackageName: unique-filename
+SPDXID: SPDXRef-6060d016a8887e35
+PackageVersion: 1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: strip-ansi
+
+PackageName: strip-ansi
+SPDXID: SPDXRef-60965a55a4f24a53
+PackageVersion: 6.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libzstd1
+
+PackageName: libzstd1
+SPDXID: SPDXRef-60bcc38fc19f30bc
+PackageVersion: 1.3.8+dfsg-3+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsm6
+
+PackageName: libsm6
+SPDXID: SPDXRef-615dcf3f111480d3
+PackageVersion: 2:1.2.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmpfr6
+
+PackageName: libmpfr6
+SPDXID: SPDXRef-615fd60f1c5d6ca
+PackageVersion: 4.0.2-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npm-init
+
+PackageName: npm-init
+SPDXID: SPDXRef-619e29a03d520b36
+PackageVersion: 0.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: autoconf
+
+PackageName: autoconf
+SPDXID: SPDXRef-62650eb40f14e5d7
+PackageVersion: 2.69-11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: inherits
+
+PackageName: inherits
+SPDXID: SPDXRef-62982c875c312b53
+PackageVersion: 2.0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libidn2-0
+
+PackageName: libidn2-0
+SPDXID: SPDXRef-62be9364ec7ae035
+PackageVersion: 2.0.5-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: openssh-client
+
+PackageName: openssh-client
+SPDXID: SPDXRef-631adb30eef9be0b
+PackageVersion: 1:7.9p1-10+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpq-dev
+
+PackageName: libpq-dev
+SPDXID: SPDXRef-639b48a4ba89f2bd
+PackageVersion: 11.16-0+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcc1-0
+
+PackageName: libcc1-0
+SPDXID: SPDXRef-63a7342c4abd6876
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnpmfund
+
+PackageName: libnpmfund
+SPDXID: SPDXRef-63c7516c4f211d7b
+PackageVersion: 3.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: coreutils
+
+PackageName: coreutils
+SPDXID: SPDXRef-64df4524d80231e9
+PackageVersion: 8.30-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libldap-common
+
+PackageName: libldap-common
+SPDXID: SPDXRef-65535f4d28f26525
+PackageVersion: 2.4.47+dfsg-3+deb10u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libevent-2.1-6
+
+PackageName: libevent-2.1-6
+SPDXID: SPDXRef-663115ebd2af31a7
+PackageVersion: 2.1.8-stable-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkadm5srv-mit11
+
+PackageName: libkadm5srv-mit11
+SPDXID: SPDXRef-66852a9155f5fc4c
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: common-ancestor-path
+
+PackageName: common-ancestor-path
+SPDXID: SPDXRef-66d95af93acde7ca
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libsasl2-2
+
+PackageName: libsasl2-2
+SPDXID: SPDXRef-66f7a2ddf877b1
+PackageVersion: 2.1.27+dfsg-1+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmpx2
+
+PackageName: libmpx2
+SPDXID: SPDXRef-6788dfa32cc151da
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcairo2-dev
+
+PackageName: libcairo2-dev
+SPDXID: SPDXRef-67c838f5c256fe54
+PackageVersion: 1.16.0-4+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: git-man
+
+PackageName: git-man
+SPDXID: SPDXRef-68741852aa75f642
+PackageVersion: 1:2.20.1-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: emoji-regex
+
+PackageName: emoji-regex
+SPDXID: SPDXRef-69204f424622be14
+PackageVersion: 8.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: rimraf
+
+PackageName: rimraf
+SPDXID: SPDXRef-692d82b7a34de842
+PackageVersion: 3.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libprocps7
+
+PackageName: libprocps7
+SPDXID: SPDXRef-6932efa1c2d8d1fc
+PackageVersion: 2:3.3.15-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickcore-6-headers
+
+PackageName: libmagickcore-6-headers
+SPDXID: SPDXRef-694371da98fa3ecb
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/installed-package-contents
+
+PackageName: @npmcli/installed-package-contents
+SPDXID: SPDXRef-6948b75b200c3db8
+PackageVersion: 1.0.7
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: ncurses-bin
+
+PackageName: ncurses-bin
+SPDXID: SPDXRef-69bd7429bf29e3ca
+PackageVersion: 6.1+20181013-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ssri
+
+PackageName: ssri
+SPDXID: SPDXRef-69ec2970da10ca0b
+PackageVersion: 9.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libnghttp2-14
+
+PackageName: libnghttp2-14
+SPDXID: SPDXRef-69ed50cd9958299d
+PackageVersion: 1.36.0-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libevent-pthreads-2.1-6
+
+PackageName: libevent-pthreads-2.1-6
+SPDXID: SPDXRef-6a19c07b0bab39d2
+PackageVersion: 2.1.8-stable-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: binutils-x86-64-linux-gnu
+
+PackageName: binutils-x86-64-linux-gnu
+SPDXID: SPDXRef-6a42cb7546799992
+PackageVersion: 2.31.1-16
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libilmbase-dev
+
+PackageName: libilmbase-dev
+SPDXID: SPDXRef-6aa7aa00d673caf8
+PackageVersion: 2.2.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpixman-1-dev
+
+PackageName: libpixman-1-dev
+SPDXID: SPDXRef-6aead656a155295c
+PackageVersion: 0.36.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnpmteam
+
+PackageName: libnpmteam
+SPDXID: SPDXRef-6b8ae8c775cd5fee
+PackageVersion: 4.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: function-bind
+
+PackageName: function-bind
+SPDXID: SPDXRef-6c17f9204a59058
+PackageVersion: 1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: e2fsprogs
+
+PackageName: e2fsprogs
+SPDXID: SPDXRef-6c3b826ec71d2292
+PackageVersion: 1.44.5-1+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickcore-6.q16-6-extra
+
+PackageName: libmagickcore-6.q16-6-extra
+SPDXID: SPDXRef-6c602715cd7133d8
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxcb-render0
+
+PackageName: libxcb-render0
+SPDXID: SPDXRef-6c7e9ec8dade11b6
+PackageVersion: 1.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: p-map
+
+PackageName: p-map
+SPDXID: SPDXRef-6ce105b9bc6c3e50
+PackageVersion: 4.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: read
+
+PackageName: read
+SPDXID: SPDXRef-6cf82ce73fac72e5
+PackageVersion: 1.0.7
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: concat-map
+
+PackageName: concat-map
+SPDXID: SPDXRef-6d3bbf45f236bddd
+PackageVersion: 0.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libpam-modules-bin
+
+PackageName: libpam-modules-bin
+SPDXID: SPDXRef-6e066dbd1dc4805f
+PackageVersion: 1.3.1-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdbm-dev
+
+PackageName: libgdbm-dev
+SPDXID: SPDXRef-6e34b90d29d34fcf
+PackageVersion: 1.18.1-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debuglog
+
+PackageName: debuglog
+SPDXID: SPDXRef-6f545fc3a58a2e96
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: util-deprecate
+
+PackageName: util-deprecate
+SPDXID: SPDXRef-6f690d7c9a367135
+PackageVersion: 1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libmagickwand-6-headers
+
+PackageName: libmagickwand-6-headers
+SPDXID: SPDXRef-6f883125dc6ffdf4
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npm-profile
+
+PackageName: npm-profile
+SPDXID: SPDXRef-6fb48b959c6b1e19
+PackageVersion: 6.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libdebconfclient0
+
+PackageName: libdebconfclient0
+SPDXID: SPDXRef-717e238057cc684b
+PackageVersion: 0.249
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libopenexr23
+
+PackageName: libopenexr23
+SPDXID: SPDXRef-71ddeaace0605893
+PackageVersion: 2.2.1-4.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libseccomp2
+
+PackageName: libseccomp2
+SPDXID: SPDXRef-723765a394c23d9c
+PackageVersion: 2.3.3-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjbig-dev
+
+PackageName: libjbig-dev
+SPDXID: SPDXRef-72db6b2384a8f304
+PackageVersion: 2.1-3.1+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ignore-walk
+
+PackageName: ignore-walk
+SPDXID: SPDXRef-741eb99f9f14daba
+PackageVersion: 5.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: sed
+
+PackageName: sed
+SPDXID: SPDXRef-75e3a6cd0be997d1
+PackageVersion: 4.7-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: hicolor-icon-theme
+
+PackageName: hicolor-icon-theme
+SPDXID: SPDXRef-765c8fbdc2ba7844
+PackageVersion: 0.17-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpython-stdlib
+
+PackageName: libpython-stdlib
+SPDXID: SPDXRef-76619f8322a98f0e
+PackageVersion: 2.7.16-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ini
+
+PackageName: ini
+SPDXID: SPDXRef-7685c9c73e88421
+PackageVersion: 3.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libapr1
+
+PackageName: libapr1
+SPDXID: SPDXRef-771e7d9b468e3ae0
+PackageVersion: 1.6.5-1+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: librsvg2-common
+
+PackageName: librsvg2-common
+SPDXID: SPDXRef-77786808fed9acb9
+PackageVersion: 2.44.10-2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: isexe
+
+PackageName: isexe
+SPDXID: SPDXRef-77a913af4deb48b4
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: perl-modules-5.28
+
+PackageName: perl-modules-5.28
+SPDXID: SPDXRef-78096f83cd3a1496
+PackageVersion: 5.28.1-6+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libevent-extra-2.1-6
+
+PackageName: libevent-extra-2.1-6
+SPDXID: SPDXRef-78c7e33c2ad5f263
+PackageVersion: 2.1.8-stable-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre3
+
+PackageName: libpcre3
+SPDXID: SPDXRef-78d9f706abf9e54
+PackageVersion: 2:8.39-12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fontconfig-config
+
+PackageName: fontconfig-config
+SPDXID: SPDXRef-78fc361e2b651b72
+PackageVersion: 2.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdb-dev
+
+PackageName: libdb-dev
+SPDXID: SPDXRef-7953151ff40d43e9
+PackageVersion: 5.3.1+nmu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mute-stream
+
+PackageName: mute-stream
+SPDXID: SPDXRef-79e629bc5636ac41
+PackageVersion: 0.0.8
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libopenjp2-7
+
+PackageName: libopenjp2-7
+SPDXID: SPDXRef-7a5dee503a85bdfa
+PackageVersion: 2.3.0-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: spdx-correct
+
+PackageName: spdx-correct
+SPDXID: SPDXRef-7b4bea89ce6b609
+PackageVersion: 3.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+
+##### Package: ca-certificates
+
+PackageName: ca-certificates
+SPDXID: SPDXRef-7bcab06979d96033
+PackageVersion: 20200601~deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgomp1
+
+PackageName: libgomp1
+SPDXID: SPDXRef-7bff0d6cf054cbd4
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: has
+
+PackageName: has
+SPDXID: SPDXRef-7cf5df0d6dea26b7
+PackageVersion: 1.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: spdx-exceptions
+
+PackageName: spdx-exceptions
+SPDXID: SPDXRef-7e041dd5571845c3
+PackageVersion: 2.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: CC-BY-3.0
+PackageLicenseDeclared: CC-BY-3.0
+
+##### Package: libblkid1
+
+PackageName: libblkid1
+SPDXID: SPDXRef-7ea052296cd84e5e
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgnutls-dane0
+
+PackageName: libgnutls-dane0
+SPDXID: SPDXRef-7f141631e18b551d
+PackageVersion: 3.6.7-4+deb10u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: safe-buffer
+
+PackageName: safe-buffer
+SPDXID: SPDXRef-7f9aafab8a370df5
+PackageVersion: 5.2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libperl5.28
+
+PackageName: libperl5.28
+SPDXID: SPDXRef-7fa0a8831ce5b90f
+PackageVersion: 5.28.1-6+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libhogweed4
+
+PackageName: libhogweed4
+SPDXID: SPDXRef-8007ff2f4a723590
+PackageVersion: 3.4.1-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: opener
+
+PackageName: opener
+SPDXID: SPDXRef-805781224b8d81b2
+PackageVersion: 1.5.2
+FilesAnalyzed: false
+PackageLicenseConcluded: (WTFPL OR MIT)
+PackageLicenseDeclared: (WTFPL OR MIT)
+
+##### Package: libharfbuzz0b
+
+PackageName: libharfbuzz0b
+SPDXID: SPDXRef-80cf7ca213de2216
+PackageVersion: 2.3.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdb5.3
+
+PackageName: libdb5.3
+SPDXID: SPDXRef-80d081c946ff03a
+PackageVersion: 5.3.28+dfsg1-0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: wget
+
+PackageName: wget
+SPDXID: SPDXRef-817272b3f7899d67
+PackageVersion: 1.20.1-1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpgv
+
+PackageName: gpgv
+SPDXID: SPDXRef-81e605859a7ee74
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcc1
+
+PackageName: libgcc1
+SPDXID: SPDXRef-8222367f159db2de
+PackageVersion: 1:8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tiny-relative-date
+
+PackageName: tiny-relative-date
+SPDXID: SPDXRef-83e2db43250fb096
+PackageVersion: 1.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libksba8
+
+PackageName: libksba8
+SPDXID: SPDXRef-840a0f34a02e6c43
+PackageVersion: 1.3.5-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libwebp-dev
+
+PackageName: libwebp-dev
+SPDXID: SPDXRef-841c4f4e46febbd7
+PackageVersion: 0.6.1-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: is-fullwidth-code-point
+
+PackageName: is-fullwidth-code-point
+SPDXID: SPDXRef-84793cca0b4a6bde
+PackageVersion: 3.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: liblzo2-2
+
+PackageName: liblzo2-2
+SPDXID: SPDXRef-84b24791d6ddcab7
+PackageVersion: 2.10-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libp11-kit0
+
+PackageName: libp11-kit0
+SPDXID: SPDXRef-851cebeafb3854af
+PackageVersion: 0.23.15-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libx265-165
+
+PackageName: libx265-165
+SPDXID: SPDXRef-852aaed64ca089d4
+PackageVersion: 2.9-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: has-unicode
+
+PackageName: has-unicode
+SPDXID: SPDXRef-8534541565f8d00a
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: @tootallnate/once
+
+PackageName: @tootallnate/once
+SPDXID: SPDXRef-85a82e04752d7056
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: promise-retry
+
+PackageName: promise-retry
+SPDXID: SPDXRef-85c97dbc3a6126ec
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: validate-npm-package-license
+
+PackageName: validate-npm-package-license
+SPDXID: SPDXRef-85dff8394f0ca15f
+PackageVersion: 3.0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+
+##### Package: libcairo-script-interpreter2
+
+PackageName: libcairo-script-interpreter2
+SPDXID: SPDXRef-86b9b3f49010d43f
+PackageVersion: 1.16.0-4+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgssapi-krb5-2
+
+PackageName: libgssapi-krb5-2
+SPDXID: SPDXRef-86bc6f6e7cf43db4
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: cmd-shim
+
+PackageName: cmd-shim
+SPDXID: SPDXRef-86d31288edf3b776
+PackageVersion: 5.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: mariadb-common
+
+PackageName: mariadb-common
+SPDXID: SPDXRef-86f6ae64ec57e7e8
+PackageVersion: 1:10.3.34-0+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libevent-core-2.1-6
+
+PackageName: libevent-core-2.1-6
+SPDXID: SPDXRef-873467c82ff2ec3
+PackageVersion: 2.1.8-stable-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcurl4
+
+PackageName: libcurl4
+SPDXID: SPDXRef-87b2c0331bb2c4c2
+PackageVersion: 7.64.0-4+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: cli-columns
+
+PackageName: cli-columns
+SPDXID: SPDXRef-87e6cd31da1a68d8
+PackageVersion: 4.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: just-diff
+
+PackageName: just-diff
+SPDXID: SPDXRef-8811ca1fa2e9fccb
+PackageVersion: 5.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libsqlite3-dev
+
+PackageName: libsqlite3-dev
+SPDXID: SPDXRef-881f23f6b0b733b9
+PackageVersion: 3.27.2-3+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: minipass
+
+PackageName: minipass
+SPDXID: SPDXRef-8821480d53051f51
+PackageVersion: 3.1.6
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: hostname
+
+PackageName: hostname
+SPDXID: SPDXRef-883c58bf9cb0291f
+PackageVersion: 3.21
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mercurial-common
+
+PackageName: mercurial-common
+SPDXID: SPDXRef-88bd09625b4a280
+PackageVersion: 4.8.2-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: color-name
+
+PackageName: color-name
+SPDXID: SPDXRef-8997cf8bfd8f7832
+PackageVersion: 1.1.4
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libxslt1-dev
+
+PackageName: libxslt1-dev
+SPDXID: SPDXRef-89d81ecceb77bfde
+PackageVersion: 1.1.32-2.2~deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgpg-error0
+
+PackageName: libgpg-error0
+SPDXID: SPDXRef-8a11e2fd96ac4463
+PackageVersion: 1.35-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: write-file-atomic
+
+PackageName: write-file-atomic
+SPDXID: SPDXRef-8a1d9e1a7dde8ec6
+PackageVersion: 4.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: columnify
+
+PackageName: columnify
+SPDXID: SPDXRef-8a46a2b07a116bd9
+PackageVersion: 1.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libc-bin
+
+PackageName: libc-bin
+SPDXID: SPDXRef-8a8f7d04b6eb735c
+PackageVersion: 2.28-10+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: imurmurhash
+
+PackageName: imurmurhash
+SPDXID: SPDXRef-8af02bf57ae4c056
+PackageVersion: 0.1.4
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: ansi-styles
+
+PackageName: ansi-styles
+SPDXID: SPDXRef-8bf031ea687a2bf
+PackageVersion: 4.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: clean-stack
+
+PackageName: clean-stack
+SPDXID: SPDXRef-8e1c27ff06fb0563
+PackageVersion: 2.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libice6
+
+PackageName: libice6
+SPDXID: SPDXRef-8e629fae4f931f22
+PackageVersion: 2:1.0.9-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsystemd0
+
+PackageName: libsystemd0
+SPDXID: SPDXRef-8e98f9a70a876d08
+PackageVersion: 241-7~deb10u8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5-3
+
+PackageName: libkrb5-3
+SPDXID: SPDXRef-8ea4f25f73be63cf
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: xz-utils
+
+PackageName: xz-utils
+SPDXID: SPDXRef-8ec800db20af8516
+PackageVersion: 5.2.4-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblqr-1-0-dev
+
+PackageName: liblqr-1-0-dev
+SPDXID: SPDXRef-8eebf97a01e167d8
+PackageVersion: 0.4.2-2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnpmsearch
+
+PackageName: libnpmsearch
+SPDXID: SPDXRef-901c87c307ec6917
+PackageVersion: 5.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: console-control-strings
+
+PackageName: console-control-strings
+SPDXID: SPDXRef-9074afe7d81b0518
+PackageVersion: 1.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: perl
+
+PackageName: perl
+SPDXID: SPDXRef-90c8cc9128aaa0c0
+PackageVersion: 5.28.1-6+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcairo2
+
+PackageName: libcairo2
+SPDXID: SPDXRef-91264379f2655b86
+PackageVersion: 1.16.0-4+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtiff-dev
+
+PackageName: libtiff-dev
+SPDXID: SPDXRef-91d76819d76a6c7a
+PackageVersion: 4.1.0+git191117-2~deb10u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: parse-conflict-json
+
+PackageName: parse-conflict-json
+SPDXID: SPDXRef-91fa6080dc8e951e
+PackageVersion: 2.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libffi-dev
+
+PackageName: libffi-dev
+SPDXID: SPDXRef-92dff3ffe2a2c3cd
+PackageVersion: 3.2.1-9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/metavuln-calculator
+
+PackageName: @npmcli/metavuln-calculator
+SPDXID: SPDXRef-92f53be1cbe7be3a
+PackageVersion: 3.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: yarn
+
+PackageName: yarn
+SPDXID: SPDXRef-9345ef9fcbbaa00f
+PackageVersion: 1.22.19
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+
+##### Package: libnpmaccess
+
+PackageName: libnpmaccess
+SPDXID: SPDXRef-93a3b1959d008673
+PackageVersion: 6.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libsqlite3-0
+
+PackageName: libsqlite3-0
+SPDXID: SPDXRef-94103ffc87e51d86
+PackageVersion: 3.27.2-3+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libde265-0
+
+PackageName: libde265-0
+SPDXID: SPDXRef-9426973cfb74004b
+PackageVersion: 1.0.3-1+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: make-fetch-happen
+
+PackageName: make-fetch-happen
+SPDXID: SPDXRef-945fa696a2d9244b
+PackageVersion: 10.1.5
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libtiff5
+
+PackageName: libtiff5
+SPDXID: SPDXRef-94a417a17997126
+PackageVersion: 4.1.0+git191117-2~deb10u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/name-from-folder
+
+PackageName: @npmcli/name-from-folder
+SPDXID: SPDXRef-94b4335b229554ae
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libtiffxx5
+
+PackageName: libtiffxx5
+SPDXID: SPDXRef-9535b174db6134c4
+PackageVersion: 4.1.0+git191117-2~deb10u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: cpp-8
+
+PackageName: cpp-8
+SPDXID: SPDXRef-958bdc2a36554f33
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ucf
+
+PackageName: ucf
+SPDXID: SPDXRef-95ec701722b01694
+PackageVersion: 3.0038+nmu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: asap
+
+PackageName: asap
+SPDXID: SPDXRef-960b144527180a3c
+PackageVersion: 2.0.6
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libcurl3-gnutls
+
+PackageName: libcurl3-gnutls
+SPDXID: SPDXRef-965e4992b4f281de
+PackageVersion: 7.64.0-4+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libx11-dev
+
+PackageName: libx11-dev
+SPDXID: SPDXRef-970fd25afb1c1ab0
+PackageVersion: 2:1.6.7-1+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: imagemagick-6.q16
+
+PackageName: imagemagick-6.q16
+SPDXID: SPDXRef-97437d16506e206c
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpython2.7-minimal
+
+PackageName: libpython2.7-minimal
+SPDXID: SPDXRef-9745d54fdb664300
+PackageVersion: 2.7.16-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickcore-6.q16-6
+
+PackageName: libmagickcore-6.q16-6
+SPDXID: SPDXRef-97a4493fc44f6a5f
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: minimatch
+
+PackageName: minimatch
+SPDXID: SPDXRef-97d7b5b3a41a5b4b
+PackageVersion: 5.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: minipass-sized
+
+PackageName: minipass-sized
+SPDXID: SPDXRef-98113b657b9c8294
+PackageVersion: 1.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: read-package-json
+
+PackageName: read-package-json
+SPDXID: SPDXRef-9860071513c412
+PackageVersion: 5.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: cidr-regex
+
+PackageName: cidr-regex
+SPDXID: SPDXRef-994fed767918077
+PackageVersion: 3.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+
+##### Package: npm-packlist
+
+PackageName: npm-packlist
+SPDXID: SPDXRef-99881d5ca9552453
+PackageVersion: 5.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: iconv-lite
+
+PackageName: iconv-lite
+SPDXID: SPDXRef-99d3ea615efc443f
+PackageVersion: 0.6.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libpam0g
+
+PackageName: libpam0g
+SPDXID: SPDXRef-99f2db209fede0af
+PackageVersion: 1.3.1-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: zlib1g
+
+PackageName: zlib1g
+SPDXID: SPDXRef-9aea2c04d2b7ea52
+PackageVersion: 1:1.2.11.dfsg-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcrypt20
+
+PackageName: libgcrypt20
+SPDXID: SPDXRef-9b99717ea996d9d2
+PackageVersion: 1.8.4-5+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python2
+
+PackageName: python2
+SPDXID: SPDXRef-9be8d5c70071447
+PackageVersion: 2.7.16-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdjvulibre21
+
+PackageName: libdjvulibre21
+SPDXID: SPDXRef-9c83d4a238566358
+PackageVersion: 3.5.27.1-10+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: set-blocking
+
+PackageName: set-blocking
+SPDXID: SPDXRef-9ce5663f93a177e4
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libc6-dev
+
+PackageName: libc6-dev
+SPDXID: SPDXRef-9cf56e0cc1efe86c
+PackageVersion: 2.28-10+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libext2fs2
+
+PackageName: libext2fs2
+SPDXID: SPDXRef-9d54f21e88678a03
+PackageVersion: 1.44.5-1+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: treeverse
+
+PackageName: treeverse
+SPDXID: SPDXRef-9e839ef586b63c38
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: are-we-there-yet
+
+PackageName: are-we-there-yet
+SPDXID: SPDXRef-9e9b2e5155eff7c2
+PackageVersion: 3.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libgmp-dev
+
+PackageName: libgmp-dev
+SPDXID: SPDXRef-9ea2d2acee2c65e4
+PackageVersion: 2:6.1.2+dfsg-4+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libselinux1
+
+PackageName: libselinux1
+SPDXID: SPDXRef-9eb26d3c588ffee1
+PackageVersion: 2.8-1+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: librsvg2-dev
+
+PackageName: librsvg2-dev
+SPDXID: SPDXRef-9eb8df475c1230f7
+PackageVersion: 2.44.10-2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npm-user-validate
+
+PackageName: npm-user-validate
+SPDXID: SPDXRef-9f64be261fa0b1f8
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+
+##### Package: binary-extensions
+
+PackageName: binary-extensions
+SPDXID: SPDXRef-9f9bcbeaf435368f
+PackageVersion: 2.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: signal-exit
+
+PackageName: signal-exit
+SPDXID: SPDXRef-9fc786f1629b1d1
+PackageVersion: 3.0.7
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: npm-package-arg
+
+PackageName: npm-package-arg
+SPDXID: SPDXRef-9ff9a7cfa766b8b2
+PackageVersion: 9.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libgmp10
+
+PackageName: libgmp10
+SPDXID: SPDXRef-a05cda222aeeb784
+PackageVersion: 2:6.1.2+dfsg-4+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: diff
+
+PackageName: diff
+SPDXID: SPDXRef-a0d46fc49d59ef58
+PackageVersion: 5.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseDeclared: BSD-3-Clause
+
+##### Package: https-proxy-agent
+
+PackageName: https-proxy-agent
+SPDXID: SPDXRef-a15ea44042f27b17
+PackageVersion: 5.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: aggregate-error
+
+PackageName: aggregate-error
+SPDXID: SPDXRef-a1863fa0c0d0cc4e
+PackageVersion: 3.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: gnupg-utils
+
+PackageName: gnupg-utils
+SPDXID: SPDXRef-a18b2bb6a762f39e
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libattr1
+
+PackageName: libattr1
+SPDXID: SPDXRef-a1adf105bc2b21bc
+PackageVersion: 1:2.4.48-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjpeg-dev
+
+PackageName: libjpeg-dev
+SPDXID: SPDXRef-a2399728655bda65
+PackageVersion: 1:1.5.2-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbz2-dev
+
+PackageName: libbz2-dev
+SPDXID: SPDXRef-a330fce98e7f11f2
+PackageVersion: 1.0.6-9.2~deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npm-normalize-package-bin
+
+PackageName: npm-normalize-package-bin
+SPDXID: SPDXRef-a38304453e50fbef
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: fastest-levenshtein
+
+PackageName: fastest-levenshtein
+SPDXID: SPDXRef-a3a84a6e19fcf2ea
+PackageVersion: 1.0.12
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libexif12
+
+PackageName: libexif12
+SPDXID: SPDXRef-a3e3afd4f65cf12f
+PackageVersion: 0.6.21-5.1+deb10u5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncursesw5-dev
+
+PackageName: libncursesw5-dev
+SPDXID: SPDXRef-a4bf1f3ce1d3316c
+PackageVersion: 6.1+20181013-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: openssl
+
+PackageName: openssl
+SPDXID: SPDXRef-a5929cd73b399a48
+PackageVersion: 1.1.1n-0+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libglib2.0-0
+
+PackageName: libglib2.0-0
+SPDXID: SPDXRef-a59b92c1a6372033
+PackageVersion: 2.58.3-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssh2-1
+
+PackageName: libssh2-1
+SPDXID: SPDXRef-a5bbff4b89003ad5
+PackageVersion: 1.8.0-2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtasn1-6
+
+PackageName: libtasn1-6
+SPDXID: SPDXRef-a6013742bead5118
+PackageVersion: 4.13-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libacl1
+
+PackageName: libacl1
+SPDXID: SPDXRef-a65df63c97cd7016
+PackageVersion: 2.2.53-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfreetype6
+
+PackageName: libfreetype6
+SPDXID: SPDXRef-a67df7c8871fa4ab
+PackageVersion: 2.9.1-3+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libapt-pkg5.0
+
+PackageName: libapt-pkg5.0
+SPDXID: SPDXRef-a75ea9558ce41d5c
+PackageVersion: 1.8.2.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxau6
+
+PackageName: libxau6
+SPDXID: SPDXRef-a7a06976da9e4f17
+PackageVersion: 1:1.0.8-1+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libitm1
+
+PackageName: libitm1
+SPDXID: SPDXRef-a8229d5bd9fc1f0d
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: lru-cache
+
+PackageName: lru-cache
+SPDXID: SPDXRef-a8d1dcfd57037287
+PackageVersion: 6.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: brace-expansion
+
+PackageName: brace-expansion
+SPDXID: SPDXRef-a955d8a3a0f22b0d
+PackageVersion: 1.1.11
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: gcc
+
+PackageName: gcc
+SPDXID: SPDXRef-a97d5721a51071ec
+PackageVersion: 4:8.3.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: read-package-json-fast
+
+PackageName: read-package-json-fast
+SPDXID: SPDXRef-aa8179ab4c0659f9
+PackageVersion: 2.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: safer-buffer
+
+PackageName: safer-buffer
+SPDXID: SPDXRef-ab4d3fa065e0f679
+PackageVersion: 2.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libmariadb3
+
+PackageName: libmariadb3
+SPDXID: SPDXRef-ab90138cd655fd0b
+PackageVersion: 1:10.3.34-0+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: curl
+
+PackageName: curl
+SPDXID: SPDXRef-ac05961696d4dcb3
+PackageVersion: 7.64.0-4+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libunbound8
+
+PackageName: libunbound8
+SPDXID: SPDXRef-acb3e7f3fc5b5d7d
+PackageVersion: 1.9.0-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: node-gyp
+
+PackageName: node-gyp
+SPDXID: SPDXRef-acf5be3876ce9d1
+PackageVersion: 9.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libmariadb-dev-compat
+
+PackageName: libmariadb-dev-compat
+SPDXID: SPDXRef-ad8a68f76201a3e6
+PackageVersion: 1:10.3.34-0+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: balanced-match
+
+PackageName: balanced-match
+SPDXID: SPDXRef-ae5c5e5d31d1b798
+PackageVersion: 1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: shared-mime-info
+
+PackageName: shared-mime-info
+SPDXID: SPDXRef-affc7615fdbfe122
+PackageVersion: 1.10-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python3-lib2to3
+
+PackageName: python3-lib2to3
+SPDXID: SPDXRef-b026fdd2894a259e
+PackageVersion: 3.7.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: retry
+
+PackageName: retry
+SPDXID: SPDXRef-b0917497c13db4c3
+PackageVersion: 0.12.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libnpth0
+
+PackageName: libnpth0
+SPDXID: SPDXRef-b2211a2e1dac6111
+PackageVersion: 1.6-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage-common
+
+PackageName: libsemanage-common
+SPDXID: SPDXRef-b2db6d5bc7db4515
+PackageVersion: 2.8-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfribidi0
+
+PackageName: libfribidi0
+SPDXID: SPDXRef-b3183cf8ac8945d1
+PackageVersion: 1.0.5-3.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: librsvg2-2
+
+PackageName: librsvg2-2
+SPDXID: SPDXRef-b4431ac344abb9cc
+PackageVersion: 2.44.10-2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: imagemagick-6-common
+
+PackageName: imagemagick-6-common
+SPDXID: SPDXRef-b48e79a4e47ae988
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: readdir-scoped-modules
+
+PackageName: readdir-scoped-modules
+SPDXID: SPDXRef-b4b184f64b876cb0
+PackageVersion: 1.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libstdc++6
+
+PackageName: libstdc++6
+SPDXID: SPDXRef-b549362c427cc3f1
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: hosted-git-info
+
+PackageName: hosted-git-info
+SPDXID: SPDXRef-b5ac6626b55a998f
+PackageVersion: 5.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libfontconfig1
+
+PackageName: libfontconfig1
+SPDXID: SPDXRef-b5b4db067e373419
+PackageVersion: 2.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libasan5
+
+PackageName: libasan5
+SPDXID: SPDXRef-b5ca09c6adf76e7a
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkdb5-9
+
+PackageName: libkdb5-9
+SPDXID: SPDXRef-b61a6de729e254a5
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libblkid-dev
+
+PackageName: libblkid-dev
+SPDXID: SPDXRef-b6f56621de0c6cd0
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmpc3
+
+PackageName: libmpc3
+SPDXID: SPDXRef-b72fde1bee0e65c2
+PackageVersion: 1.1.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnpmpack
+
+PackageName: libnpmpack
+SPDXID: SPDXRef-b75de9a87c538060
+PackageVersion: 4.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: mkdirp
+
+PackageName: mkdirp
+SPDXID: SPDXRef-b79885073294e23c
+PackageVersion: 1.0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: liblqr-1-0
+
+PackageName: liblqr-1-0
+SPDXID: SPDXRef-b86b48a077ce650f
+PackageVersion: 0.4.2-2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxcb1
+
+PackageName: libxcb1
+SPDXID: SPDXRef-b8df232075dcbe7
+PackageVersion: 1.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxrender1
+
+PackageName: libxrender1
+SPDXID: SPDXRef-b95723ad7643ce3
+PackageVersion: 1:0.9.10-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libyaml-0-2
+
+PackageName: libyaml-0-2
+SPDXID: SPDXRef-b982a3ce82c2a6b3
+PackageVersion: 0.2.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcap2
+
+PackageName: libcap2
+SPDXID: SPDXRef-b9c79d8fc761bc9e
+PackageVersion: 1:2.25-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre2-8-0
+
+PackageName: libpcre2-8-0
+SPDXID: SPDXRef-ba22b3de12ccfe46
+PackageVersion: 10.32-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libthai-data
+
+PackageName: libthai-data
+SPDXID: SPDXRef-baba21dfd161e44
+PackageVersion: 0.1.28-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: negotiator
+
+PackageName: negotiator
+SPDXID: SPDXRef-bbdd9606a04ce7c9
+PackageVersion: 0.6.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: proc-log
+
+PackageName: proc-log
+SPDXID: SPDXRef-bbfe9afdcab20f16
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libyaml-dev
+
+PackageName: libyaml-dev
+SPDXID: SPDXRef-bc207b978d23667b
+PackageVersion: 0.2.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssl1.1
+
+PackageName: libssl1.1
+SPDXID: SPDXRef-bc93b5348f41ac5b
+PackageVersion: 1.1.1n-0+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libthai0
+
+PackageName: libthai0
+SPDXID: SPDXRef-bd38290f93f9ef40
+PackageVersion: 0.1.28-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblsan0
+
+PackageName: liblsan0
+SPDXID: SPDXRef-bd7e4084050fe4d8
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpg-agent
+
+PackageName: gpg-agent
+SPDXID: SPDXRef-bdeb5084ea11d581
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblzma-dev
+
+PackageName: liblzma-dev
+SPDXID: SPDXRef-be084b274d81f106
+PackageVersion: 5.2.4-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: minipass-json-stream
+
+PackageName: minipass-json-stream
+SPDXID: SPDXRef-be43c4e3a3db7e3d
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libfreetype6-dev
+
+PackageName: libfreetype6-dev
+SPDXID: SPDXRef-be5ad20b507ce975
+PackageVersion: 2.9.1-3+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: infer-owner
+
+PackageName: infer-owner
+SPDXID: SPDXRef-be67e9693218e068
+PackageVersion: 1.0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: depd
+
+PackageName: depd
+SPDXID: SPDXRef-be6e905f8467c23e
+PackageVersion: 1.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libkrb5-dev
+
+PackageName: libkrb5-dev
+SPDXID: SPDXRef-be8b4c43c522451b
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: librtmp1
+
+PackageName: librtmp1
+SPDXID: SPDXRef-bec5f5585bc88ae9
+PackageVersion: 2.4+20151223.gitfa8646d.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @gar/promisify
+
+PackageName: @gar/promisify
+SPDXID: SPDXRef-bf5cf13cc3463e7d
+PackageVersion: 1.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: @npmcli/disparity-colors
+
+PackageName: @npmcli/disparity-colors
+SPDXID: SPDXRef-bf9c57831b6df959
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libexif-dev
+
+PackageName: libexif-dev
+SPDXID: SPDXRef-bfdcabc9f7abae80
+PackageVersion: 0.6.21-5.1+deb10u5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmpdec2
+
+PackageName: libmpdec2
+SPDXID: SPDXRef-c01c762f9f31c585
+PackageVersion: 2.4.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libltdl-dev
+
+PackageName: libltdl-dev
+SPDXID: SPDXRef-c07d07ed7724095e
+PackageVersion: 2.4.6-9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: promise-all-reject-late
+
+PackageName: promise-all-reject-late
+SPDXID: SPDXRef-c0acc4585f8b1194
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: grep
+
+PackageName: grep
+SPDXID: SPDXRef-c0b038f4c45b34b2
+PackageVersion: 3.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxslt1.1
+
+PackageName: libxslt1.1
+SPDXID: SPDXRef-c0bea4ab6dd1ff01
+PackageVersion: 1.1.32-2.2~deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpython2-stdlib
+
+PackageName: libpython2-stdlib
+SPDXID: SPDXRef-c12e277c687fd4e2
+PackageVersion: 2.7.16-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: qrcode-terminal
+
+PackageName: qrcode-terminal
+SPDXID: SPDXRef-c1a9608387a14cc0
+PackageVersion: 0.12.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcrecpp0v5
+
+PackageName: libpcrecpp0v5
+SPDXID: SPDXRef-c1cbef70119bee38
+PackageVersion: 2:8.39-12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libss2
+
+PackageName: libss2
+SPDXID: SPDXRef-c28f2daacf8b5e15
+PackageVersion: 1.44.5-1+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: m4
+
+PackageName: m4
+SPDXID: SPDXRef-c2d7d7f6dd2fce7e
+PackageVersion: 1.4.18-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: comerr-dev
+
+PackageName: comerr-dev
+SPDXID: SPDXRef-c353a31be30cee13
+PackageVersion: 2.1-1.44.5-1+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdk-pixbuf2.0-dev
+
+PackageName: libgdk-pixbuf2.0-dev
+SPDXID: SPDXRef-c39d4124f8d4b926
+PackageVersion: 2.38.1+dfsg-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libquadmath0
+
+PackageName: libquadmath0
+SPDXID: SPDXRef-c5cb5119c3279e5c
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: g++
+
+PackageName: g++
+SPDXID: SPDXRef-c5cbb3fe1e59685d
+PackageVersion: 4:8.3.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnpmhook
+
+PackageName: libnpmhook
+SPDXID: SPDXRef-c5de66d1a91ecf37
+PackageVersion: 8.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: spdx-license-ids
+
+PackageName: spdx-license-ids
+SPDXID: SPDXRef-c67082aa98a7a072
+PackageVersion: 3.0.11
+FilesAnalyzed: false
+PackageLicenseConcluded: CC0-1.0
+PackageLicenseDeclared: CC0-1.0
+
+##### Package: x11proto-xext-dev
+
+PackageName: x11proto-xext-dev
+SPDXID: SPDXRef-c6bbd8f0e27fc1a4
+PackageVersion: 2018.4-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libopenjp2-7-dev
+
+PackageName: libopenjp2-7-dev
+SPDXID: SPDXRef-c6c65dcd5a72cf8
+PackageVersion: 2.3.0-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxcb-shm0
+
+PackageName: libxcb-shm0
+SPDXID: SPDXRef-c6f2b0dc01a1086
+PackageVersion: 1.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libwmf0.2-7
+
+PackageName: libwmf0.2-7
+SPDXID: SPDXRef-c714f0bd4fc01851
+PackageVersion: 0.2.8.4-14
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: has-flag
+
+PackageName: has-flag
+SPDXID: SPDXRef-c7a0e1e755daf820
+PackageVersion: 4.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libnpmexec
+
+PackageName: libnpmexec
+SPDXID: SPDXRef-c8090f4fa61d2921
+PackageVersion: 4.0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libpixman-1-0
+
+PackageName: libpixman-1-0
+SPDXID: SPDXRef-c842fdfb3d3f493d
+PackageVersion: 0.36.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpthread-stubs0-dev
+
+PackageName: libpthread-stubs0-dev
+SPDXID: SPDXRef-c845d4cf4ef9492
+PackageVersion: 0.4-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: builtins
+
+PackageName: builtins
+SPDXID: SPDXRef-c8564280deaeec2e
+PackageVersion: 5.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: wide-align
+
+PackageName: wide-align
+SPDXID: SPDXRef-c862061c6be9d525
+PackageVersion: 1.1.5
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: perl-base
+
+PackageName: perl-base
+SPDXID: SPDXRef-c8805fcbaa6d3f67
+PackageVersion: 5.28.1-6+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: cli-table3
+
+PackageName: cli-table3
+SPDXID: SPDXRef-c99685109934319a
+PackageVersion: 0.6.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: minimatch
+
+PackageName: minimatch
+SPDXID: SPDXRef-c9ede477b421736a
+PackageVersion: 3.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libp11-kit-dev
+
+PackageName: libp11-kit-dev
+SPDXID: SPDXRef-ca005dff6bbd82c2
+PackageVersion: 0.23.15-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxext6
+
+PackageName: libxext6
+SPDXID: SPDXRef-ca4801f3b5cc42ea
+PackageVersion: 2:1.3.3-1+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpg-wks-client
+
+PackageName: gpg-wks-client
+SPDXID: SPDXRef-cccd94e26e6c45a0
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/fs
+
+PackageName: @npmcli/fs
+SPDXID: SPDXRef-cd153fd737737c93
+PackageVersion: 2.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: dirmngr
+
+PackageName: dirmngr
+SPDXID: SPDXRef-cdb91c955dc5ae2a
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdbm6
+
+PackageName: libgdbm6
+SPDXID: SPDXRef-cdc36e723b74d6da
+PackageVersion: 1.18.1-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnettle6
+
+PackageName: libnettle6
+SPDXID: SPDXRef-ce68922116124ea
+PackageVersion: 3.4.1-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: corepack
+
+PackageName: corepack
+SPDXID: SPDXRef-cf7b006e2d71329d
+PackageVersion: 0.10.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: npm
+
+PackageName: npm
+SPDXID: SPDXRef-cff8b644fb60982c
+PackageVersion: 8.11.0
+FilesAnalyzed: false
+PackageLicenseConcluded: Artistic-2.0
+PackageLicenseDeclared: Artistic-2.0
+
+##### Package: minipass-pipeline
+
+PackageName: minipass-pipeline
+SPDXID: SPDXRef-d015260c3be3a10f
+PackageVersion: 1.2.4
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: string-width
+
+PackageName: string-width
+SPDXID: SPDXRef-d037554d156c6fea
+PackageVersion: 4.2.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libgnutls28-dev
+
+PackageName: libgnutls28-dev
+SPDXID: SPDXRef-d0c92a64a3c4d3d9
+PackageVersion: 3.6.7-4+deb10u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: cacache
+
+PackageName: cacache
+SPDXID: SPDXRef-d14ece4054553c5a
+PackageVersion: 16.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: make
+
+PackageName: make
+SPDXID: SPDXRef-d2b12d7c492aa5a4
+PackageVersion: 4.2.1-1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: login
+
+PackageName: login
+SPDXID: SPDXRef-d3452ca70c8ec97a
+PackageVersion: 1:4.5-1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: semver
+
+PackageName: semver
+SPDXID: SPDXRef-d3495e7209e7916a
+PackageVersion: 7.3.7
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libheif1
+
+PackageName: libheif1
+SPDXID: SPDXRef-d37679d8639ec57d
+PackageVersion: 1.3.2-2~deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libopenexr-dev
+
+PackageName: libopenexr-dev
+SPDXID: SPDXRef-d381375831c08f35
+PackageVersion: 2.2.1-4.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python
+
+PackageName: python
+SPDXID: SPDXRef-d43cb9c988671669
+PackageVersion: 2.7.16-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liberror-perl
+
+PackageName: liberror-perl
+SPDXID: SPDXRef-d51fd9a14d5ae1bb
+PackageVersion: 0.17027-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre16-3
+
+PackageName: libpcre16-3
+SPDXID: SPDXRef-d538a64196afa660
+PackageVersion: 2:8.39-12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncurses-dev
+
+PackageName: libncurses-dev
+SPDXID: SPDXRef-d544604c3ed370e6
+PackageVersion: 6.1+20181013-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fontconfig
+
+PackageName: fontconfig
+SPDXID: SPDXRef-d5f3cb0dc020a15c
+PackageVersion: 2.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gcc-8-base
+
+PackageName: gcc-8-base
+SPDXID: SPDXRef-d64e59f95f6e2ac3
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdbm-compat4
+
+PackageName: libgdbm-compat4
+SPDXID: SPDXRef-d6c4e4886a3c22aa
+PackageVersion: 1.18.1-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: json-stringify-nice
+
+PackageName: json-stringify-nice
+SPDXID: SPDXRef-d703327693dc3e13
+PackageVersion: 1.1.4
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libdatrie1
+
+PackageName: libdatrie1
+SPDXID: SPDXRef-d7215d58c1682e5
+PackageVersion: 0.2.12-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: xorg-sgml-doctools
+
+PackageName: xorg-sgml-doctools
+SPDXID: SPDXRef-d784e6ec0887b622
+PackageVersion: 1:1.11-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libselinux1-dev
+
+PackageName: libselinux1-dev
+SPDXID: SPDXRef-d7b21cb10270bcc2
+PackageVersion: 2.8-1+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debian-archive-keyring
+
+PackageName: debian-archive-keyring
+SPDXID: SPDXRef-d7e349aef8d9fb94
+PackageVersion: 2019.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickcore-6-arch-config
+
+PackageName: libmagickcore-6-arch-config
+SPDXID: SPDXRef-d7f2f2110aed760c
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssl-dev
+
+PackageName: libssl-dev
+SPDXID: SPDXRef-d85023b97a4dcb4e
+PackageVersion: 1.1.1n-0+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfontconfig1-dev
+
+PackageName: libfontconfig1-dev
+SPDXID: SPDXRef-d860e5c3f8db1516
+PackageVersion: 2.13.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: socks
+
+PackageName: socks
+SPDXID: SPDXRef-d8a80063bea64692
+PackageVersion: 2.6.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libassuan0
+
+PackageName: libassuan0
+SPDXID: SPDXRef-d8b799b786d6c542
+PackageVersion: 2.5.2-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblzma5
+
+PackageName: liblzma5
+SPDXID: SPDXRef-d8be8801d12004b5
+PackageVersion: 5.2.4-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dezalgo
+
+PackageName: dezalgo
+SPDXID: SPDXRef-d8ec4865f8a3c1fe
+PackageVersion: 1.0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libexpat1-dev
+
+PackageName: libexpat1-dev
+SPDXID: SPDXRef-d9bdace81479c82a
+PackageVersion: 2.2.6-2+deb10u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsepol1
+
+PackageName: libsepol1
+SPDXID: SPDXRef-d9ce32c63fce742
+PackageVersion: 2.8-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: diffutils
+
+PackageName: diffutils
+SPDXID: SPDXRef-d9d40153e3b706a9
+PackageVersion: 1:3.7-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bsdutils
+
+PackageName: bsdutils
+SPDXID: SPDXRef-da8bc19af497abb2
+PackageVersion: 1:2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: imagemagick
+
+PackageName: imagemagick
+SPDXID: SPDXRef-daaae0bce83e8a80
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5support0
+
+PackageName: libkrb5support0
+SPDXID: SPDXRef-dadfb9b79e37c4dd
+PackageVersion: 1.17-3+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: minimatch
+
+PackageName: minimatch
+SPDXID: SPDXRef-dae2d897175563c5
+PackageVersion: 3.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: promzard
+
+PackageName: promzard
+SPDXID: SPDXRef-db73e815e4ab44d8
+PackageVersion: 0.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libnpmorg
+
+PackageName: libnpmorg
+SPDXID: SPDXRef-db9d45bb4fc2f863
+PackageVersion: 4.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libgcc-8-dev
+
+PackageName: libgcc-8-dev
+SPDXID: SPDXRef-dba656bc026c76e
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblz4-1
+
+PackageName: liblz4-1
+SPDXID: SPDXRef-dcb12e9eb5052560
+PackageVersion: 1.8.3-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python2.7-minimal
+
+PackageName: python2.7-minimal
+SPDXID: SPDXRef-dcf56997043c773
+PackageVersion: 2.7.16-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: util-linux
+
+PackageName: util-linux
+SPDXID: SPDXRef-dd10bfdf88cd683
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libutf8proc2
+
+PackageName: libutf8proc2
+SPDXID: SPDXRef-dd74fab00e1020a9
+PackageVersion: 2.3.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libwebp6
+
+PackageName: libwebp6
+SPDXID: SPDXRef-ddabecc31d45304a
+PackageVersion: 0.6.1-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfdisk1
+
+PackageName: libfdisk1
+SPDXID: SPDXRef-ddf5b6b846ac951e
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/config
+
+PackageName: @npmcli/config
+SPDXID: SPDXRef-de301513a150fd73
+PackageVersion: 4.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: iputils-ping
+
+PackageName: iputils-ping
+SPDXID: SPDXRef-de4af6aaceae8197
+PackageVersion: 3:20180629-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: chownr
+
+PackageName: chownr
+SPDXID: SPDXRef-dea9b73f0e2d5bd4
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libdb5.3-dev
+
+PackageName: libdb5.3-dev
+SPDXID: SPDXRef-df2d473fe2edf3e3
+PackageVersion: 5.3.28+dfsg1-0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: pacote
+
+PackageName: pacote
+SPDXID: SPDXRef-df60484b2451c61c
+PackageVersion: 13.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libpng16-16
+
+PackageName: libpng16-16
+SPDXID: SPDXRef-dfc7572cc498a9b0
+PackageVersion: 1.6.36-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: icu-devtools
+
+PackageName: icu-devtools
+SPDXID: SPDXRef-e02d9e9adeb8f2d8
+PackageVersion: 63.1-6+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: string_decoder
+
+PackageName: string_decoder
+SPDXID: SPDXRef-e0570e2c84504bc8
+PackageVersion: 1.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: supports-color
+
+PackageName: supports-color
+SPDXID: SPDXRef-e0d1a2289ecfe290
+PackageVersion: 7.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: python-minimal
+
+PackageName: python-minimal
+SPDXID: SPDXRef-e1b53f8a8244ddff
+PackageVersion: 2.7.16-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libexpat1
+
+PackageName: libexpat1
+SPDXID: SPDXRef-e1e9bce960b43e06
+PackageVersion: 2.2.6-2+deb10u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpg
+
+PackageName: gpg
+SPDXID: SPDXRef-e2d856e572389751
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbinutils
+
+PackageName: libbinutils
+SPDXID: SPDXRef-e2f84ca2a46d95ea
+PackageVersion: 2.31.1-16
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: color-convert
+
+PackageName: color-convert
+SPDXID: SPDXRef-e3636ca77fc8b6d4
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libicu-dev
+
+PackageName: libicu-dev
+SPDXID: SPDXRef-e3b9da6c4c1ef89a
+PackageVersion: 63.1-6+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libidn2-dev
+
+PackageName: libidn2-dev
+SPDXID: SPDXRef-e447a76f9a32ee9d
+PackageVersion: 2.0.5-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ip
+
+PackageName: ip
+SPDXID: SPDXRef-e4a92342d046d09e
+PackageVersion: 1.1.8
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: normalize-package-data
+
+PackageName: normalize-package-data
+SPDXID: SPDXRef-e4cba27f46705ed8
+PackageVersion: 4.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+
+##### Package: libmagickwand-6.q16-dev
+
+PackageName: libmagickwand-6.q16-dev
+SPDXID: SPDXRef-e5080e19af6c67db
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: readline-common
+
+PackageName: readline-common
+SPDXID: SPDXRef-e631e4905c196c2c
+PackageVersion: 7.0-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmagickwand-6.q16-6
+
+PackageName: libmagickwand-6.q16-6
+SPDXID: SPDXRef-e6c0cd147b52b4e0
+PackageVersion: 8:6.9.10.23+dfsg-2.1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libx11-data
+
+PackageName: libx11-data
+SPDXID: SPDXRef-e7d8d417e7cc8997
+PackageVersion: 2:1.6.7-1+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: chalk
+
+PackageName: chalk
+SPDXID: SPDXRef-e836490d75d5a233
+PackageVersion: 4.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libcap2-bin
+
+PackageName: libcap2-bin
+SPDXID: SPDXRef-e899cc3a1921acc8
+PackageVersion: 1:2.25-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgraphite2-3
+
+PackageName: libgraphite2-3
+SPDXID: SPDXRef-e8f837f29fbeae29
+PackageVersion: 1.3.13-7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mime-support
+
+PackageName: mime-support
+SPDXID: SPDXRef-e990b8dcb77f8167
+PackageVersion: 3.62
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpython3.7-minimal
+
+PackageName: libpython3.7-minimal
+SPDXID: SPDXRef-e9c99c2e51bfcf21
+PackageVersion: 3.7.3-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libjbig0
+
+PackageName: libjbig0
+SPDXID: SPDXRef-eae4774af4ba862b
+PackageVersion: 2.1-3.1+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libubsan1
+
+PackageName: libubsan1
+SPDXID: SPDXRef-ec0aaa3a1133a190
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libglib2.0-bin
+
+PackageName: libglib2.0-bin
+SPDXID: SPDXRef-ecaf2ca6248f6ba6
+PackageVersion: 2.58.3-2+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: nopt
+
+PackageName: nopt
+SPDXID: SPDXRef-ecf07a68ea2e1ab3
+PackageVersion: 5.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: which
+
+PackageName: which
+SPDXID: SPDXRef-ecffc251d2a3015
+PackageVersion: 2.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: minipass-collect
+
+PackageName: minipass-collect
+SPDXID: SPDXRef-ed2028f73b58964b
+PackageVersion: 1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: ansi-regex
+
+PackageName: ansi-regex
+SPDXID: SPDXRef-ed502a84c8c8e675
+PackageVersion: 5.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: @npmcli/package-json
+
+PackageName: @npmcli/package-json
+SPDXID: SPDXRef-ed735f43ed9b5ed6
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libatomic1
+
+PackageName: libatomic1
+SPDXID: SPDXRef-ed7f092214bd4444
+PackageVersion: 8.3.0-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: base-files
+
+PackageName: base-files
+SPDXID: SPDXRef-ed87c542b3823f61
+PackageVersion: 10.3+deb10u12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbz2-1.0
+
+PackageName: libbz2-1.0
+SPDXID: SPDXRef-ede409f93eec1c84
+PackageVersion: 1.0.6-9.2~deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fs-minipass
+
+PackageName: fs-minipass
+SPDXID: SPDXRef-ee181dc8e318d996
+PackageVersion: 2.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: debianutils
+
+PackageName: debianutils
+SPDXID: SPDXRef-ee5efbaaf8e2eda6
+PackageVersion: 4.8.6.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: file
+
+PackageName: file
+SPDXID: SPDXRef-ee806e1238799683
+PackageVersion: 1:5.35-4+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libisl19
+
+PackageName: libisl19
+SPDXID: SPDXRef-eef8916834c0c17b
+PackageVersion: 0.20-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: subversion
+
+PackageName: subversion
+SPDXID: SPDXRef-ef54668e269a430b
+PackageVersion: 1.10.4-1+deb10u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtasn1-6-dev
+
+PackageName: libtasn1-6-dev
+SPDXID: SPDXRef-ef7b6a473ed6d1db
+PackageVersion: 4.13-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcap-ng0
+
+PackageName: libcap-ng0
+SPDXID: SPDXRef-ef920a9084edbd0f
+PackageVersion: 0.7.9-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libldap-2.4-2
+
+PackageName: libldap-2.4-2
+SPDXID: SPDXRef-efff526d1e5763c1
+PackageVersion: 2.4.47+dfsg-3+deb10u7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: @npmcli/promise-spawn
+
+PackageName: @npmcli/promise-spawn
+SPDXID: SPDXRef-f0097bcbc67e2bd5
+PackageVersion: 3.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libbsd0
+
+PackageName: libbsd0
+SPDXID: SPDXRef-f050aed0126d19ec
+PackageVersion: 0.9.1-2+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncursesw6
+
+PackageName: libncursesw6
+SPDXID: SPDXRef-f052830fef93d62d
+PackageVersion: 6.1+20181013-2+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgirepository-1.0-1
+
+PackageName: libgirepository-1.0-1
+SPDXID: SPDXRef-f0b53cc42b845e3b
+PackageVersion: 1.58.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bzip2
+
+PackageName: bzip2
+SPDXID: SPDXRef-f1312a647df84bb5
+PackageVersion: 1.0.6-9.2~deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: unzip
+
+PackageName: unzip
+SPDXID: SPDXRef-f189b8f42da96ff5
+PackageVersion: 6.0-23+deb10u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsm-dev
+
+PackageName: libsm-dev
+SPDXID: SPDXRef-f18ae25915426d51
+PackageVersion: 2:1.2.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsmartcols1
+
+PackageName: libsmartcols1
+SPDXID: SPDXRef-f2d7199fa679945b
+PackageVersion: 2.33.1-0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gir1.2-rsvg-2.0
+
+PackageName: gir1.2-rsvg-2.0
+SPDXID: SPDXRef-f2dd86585b2bbfcf
+PackageVersion: 2.44.10-2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: pinentry-curses
+
+PackageName: pinentry-curses
+SPDXID: SPDXRef-f2fcbe3e5c57745
+PackageVersion: 1.1.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxext-dev
+
+PackageName: libxext-dev
+SPDXID: SPDXRef-f322de849ce29d5b
+PackageVersion: 2:1.3.3-1+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fs.realpath
+
+PackageName: fs.realpath
+SPDXID: SPDXRef-f35fba8b00bb19f4
+PackageVersion: 1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: base-passwd
+
+PackageName: base-passwd
+SPDXID: SPDXRef-f3efa8d4032df05c
+PackageVersion: 3.5.46
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: readable-stream
+
+PackageName: readable-stream
+SPDXID: SPDXRef-f4126ff5d9aad3d7
+PackageVersion: 3.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: init-package-json
+
+PackageName: init-package-json
+SPDXID: SPDXRef-f4f2b7566fe695a0
+PackageVersion: 3.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: gpgconf
+
+PackageName: gpgconf
+SPDXID: SPDXRef-f5882a654459271d
+PackageVersion: 2.2.12-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gauge
+
+PackageName: gauge
+SPDXID: SPDXRef-f662d6648a881989
+PackageVersion: 4.0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libgdk-pixbuf2.0-common
+
+PackageName: libgdk-pixbuf2.0-common
+SPDXID: SPDXRef-f668bf965693f699
+PackageVersion: 2.38.1+dfsg-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpng-dev
+
+PackageName: libpng-dev
+SPDXID: SPDXRef-f6b14f76c80b3060
+PackageVersion: 1.6.36-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sysvinit-utils
+
+PackageName: sysvinit-utils
+SPDXID: SPDXRef-f75e6ae16e8ec6eb
+PackageVersion: 2.93-8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: agent-base
+
+PackageName: agent-base
+SPDXID: SPDXRef-f76496f9060952b8
+PackageVersion: 6.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: socks-proxy-agent
+
+PackageName: socks-proxy-agent
+SPDXID: SPDXRef-f89cb0274b844110
+PackageVersion: 6.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: lru-cache
+
+PackageName: lru-cache
+SPDXID: SPDXRef-f9e2175d4ce23ba5
+PackageVersion: 7.9.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: libpangoft2-1.0-0
+
+PackageName: libpangoft2-1.0-0
+SPDXID: SPDXRef-f9f0d32b9767b3a1
+PackageVersion: 1.42.4-8~deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnuma1
+
+PackageName: libnuma1
+SPDXID: SPDXRef-fa13af20bfa3eb23
+PackageVersion: 2.0.12-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: binutils-common
+
+PackageName: binutils-common
+SPDXID: SPDXRef-fa5b6e19eaa52833
+PackageVersion: 2.31.1-16
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: npm-install-checks
+
+PackageName: npm-install-checks
+SPDXID: SPDXRef-fbc9aca532524362
+PackageVersion: 5.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+
+##### Package: python3-minimal
+
+PackageName: python3-minimal
+SPDXID: SPDXRef-fbcca99f38bfa99a
+PackageVersion: 3.7.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: just-diff-apply
+
+PackageName: just-diff-apply
+SPDXID: SPDXRef-fc671c508681b61c
+PackageVersion: 5.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libltdl7
+
+PackageName: libltdl7
+SPDXID: SPDXRef-fd41df963fb213ac
+PackageVersion: 2.4.6-9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: nettle-dev
+
+PackageName: nettle-dev
+SPDXID: SPDXRef-fd75d7b724e80879
+PackageVersion: 3.4.1-1+deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mkdirp-infer-owner
+
+PackageName: mkdirp-infer-owner
+SPDXID: SPDXRef-fd9058b274a38cdc
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: @isaacs/string-locale-compare
+
+PackageName: @isaacs/string-locale-compare
+SPDXID: SPDXRef-fe659ab21d5ba919
+PackageVersion: 1.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+
+##### Package: passwd
+
+PackageName: passwd
+SPDXID: SPDXRef-fe7f791a17a7b153
+PackageVersion: 1:4.5-1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmnl0
+
+PackageName: libmnl0
+SPDXID: SPDXRef-ff785dabaf9e34e0
+PackageVersion: 1.0.4-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpangocairo-1.0-0
+
+PackageName: libpangocairo-1.0-0
+SPDXID: SPDXRef-ffd842070c04f325
+PackageVersion: 1.42.4-8~deb10u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+

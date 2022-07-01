@@ -1,0 +1,1224 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: mysql:oracle
+DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/mysql:oracle-f0cc9f00-8734-4ae1-834d-0f4ae1045b8a
+Creator: Organization: aquasecurity
+Creator: Tool: trivy
+Created: 2022-07-01T19:40:45.3961418Z
+
+##### Package: python-dateutil
+
+PackageName: python-dateutil
+SPDXID: SPDXRef-10e9b91722d37e0d
+PackageVersion: 2.8.2
+FilesAnalyzed: false
+PackageLicenseConcluded: Dual License
+PackageLicenseDeclared: Dual License
+
+##### Package: libssh
+
+PackageName: libssh
+SPDXID: SPDXRef-1175361b110afa08
+PackageVersion: 0.9.6
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: mysql-community-server-minimal
+
+PackageName: mysql-community-server-minimal
+SPDXID: SPDXRef-125d4277bc2b844b
+PackageVersion: 8.0.29
+FilesAnalyzed: false
+PackageLicenseConcluded: Copyright (c) 2000, 2022, Oracle and/or its affiliates. Under GPLv2 license as shown in the Description field.
+PackageLicenseDeclared: Copyright (c) 2000, 2022, Oracle and/or its affiliates. Under GPLv2 license as shown in the Description field.
+
+##### Package: keyutils-libs
+
+PackageName: keyutils-libs
+SPDXID: SPDXRef-144ef4fa6bc22dd8
+PackageVersion: 1.5.10
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ and LGPLv2+
+PackageLicenseDeclared: GPLv2+ and LGPLv2+
+
+##### Package: pcre
+
+PackageName: pcre
+SPDXID: SPDXRef-1494f361157051bd
+PackageVersion: 8.42
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: json-c
+
+PackageName: json-c
+SPDXID: SPDXRef-1635edc2e6b38228
+PackageVersion: 0.13.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: expat
+
+PackageName: expat
+SPDXID: SPDXRef-167426835d2d5836
+PackageVersion: 2.2.5
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: findutils
+
+PackageName: findutils
+SPDXID: SPDXRef-16ef70cafd33c56b
+PackageVersion: 4.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: libsigsegv
+
+PackageName: libsigsegv
+SPDXID: SPDXRef-187c6b6577b982b1
+PackageVersion: 2.11
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: libarchive
+
+PackageName: libarchive
+SPDXID: SPDXRef-18b6c0b8b704b4fc
+PackageVersion: 3.3.3
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: libsepol
+
+PackageName: libsepol
+SPDXID: SPDXRef-192371d0ccd557c6
+PackageVersion: 2.9
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libdnf
+
+PackageName: libdnf
+SPDXID: SPDXRef-1bcddf4546ba79b8
+PackageVersion: 0.63.0
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libssh-config
+
+PackageName: libssh-config
+SPDXID: SPDXRef-1fe16035f3e40494
+PackageVersion: 0.9.6
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libcom_err
+
+PackageName: libcom_err
+SPDXID: SPDXRef-2037d5301d464c81
+PackageVersion: 1.45.6
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libcurl
+
+PackageName: libcurl
+SPDXID: SPDXRef-20e82f6613d1f1f0
+PackageVersion: 7.61.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libacl
+
+PackageName: libacl
+SPDXID: SPDXRef-22e75c1242aae505
+PackageVersion: 2.2.53
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: pycparser
+
+PackageName: pycparser
+SPDXID: SPDXRef-264d4194d12d02b7
+PackageVersion: 2.21
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: mpfr
+
+PackageName: mpfr
+SPDXID: SPDXRef-2a665c6955e6ee21
+PackageVersion: 3.1.6
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv3+ and GPLv3+ and GFDL
+PackageLicenseDeclared: LGPLv3+ and GPLv3+ and GFDL
+
+##### Package: libdb-utils
+
+PackageName: libdb-utils
+SPDXID: SPDXRef-2c949400cf35a437
+PackageVersion: 5.3.28
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD and LGPLv2 and Sleepycat
+PackageLicenseDeclared: BSD and LGPLv2 and Sleepycat
+
+##### Package: python39-libs
+
+PackageName: python39-libs
+SPDXID: SPDXRef-3315f544cc4dfa97
+PackageVersion: 3.9.7
+FilesAnalyzed: false
+PackageLicenseConcluded: Python
+PackageLicenseDeclared: Python
+
+##### Package: libpsl
+
+PackageName: libpsl
+SPDXID: SPDXRef-34e9e65f4715db77
+PackageVersion: 0.20.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: systemd-libs
+
+PackageName: systemd-libs
+SPDXID: SPDXRef-34fe5e4e70c8ba97
+PackageVersion: 239
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and MIT
+PackageLicenseDeclared: LGPLv2+ and MIT
+
+##### Package: PyYAML
+
+PackageName: PyYAML
+SPDXID: SPDXRef-37e600fa002b4e3b
+PackageVersion: 5.4.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libunistring
+
+PackageName: libunistring
+SPDXID: SPDXRef-382d6b9b16cb3bfb
+PackageVersion: 0.9.9
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ or LGPLv3+
+PackageLicenseDeclared: GPLv2+ or LGPLv3+
+
+##### Package: libgcc
+
+PackageName: libgcc
+SPDXID: SPDXRef-38fe00f33f673a7e
+PackageVersion: 8.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+PackageLicenseDeclared: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+
+##### Package: golang.org/x/sys
+
+PackageName: golang.org/x/sys
+SPDXID: SPDXRef-3cb73b88b67bbee1
+PackageVersion: v0.0.0-20210817142637-7d9622a276b7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libusbx
+
+PackageName: libusbx
+SPDXID: SPDXRef-3dbcd896be3aeee7
+PackageVersion: 1.0.23
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: librepo
+
+PackageName: librepo
+SPDXID: SPDXRef-3dc93003767274b2
+PackageVersion: 1.14.2
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: cyrus-sasl-lib
+
+PackageName: cyrus-sasl-lib
+SPDXID: SPDXRef-41a34c4a7ee18094
+PackageVersion: 2.1.27
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD with advertising
+PackageLicenseDeclared: BSD with advertising
+
+##### Package: libtasn1
+
+PackageName: libtasn1
+SPDXID: SPDXRef-438df6e989c78994
+PackageVersion: 4.13
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and LGPLv2+
+PackageLicenseDeclared: GPLv3+ and LGPLv2+
+
+##### Package: cryptography
+
+PackageName: cryptography
+SPDXID: SPDXRef-44caa240159263fd
+PackageVersion: 3.4.7
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD or Apache License, Version 2.0
+PackageLicenseDeclared: BSD or Apache License, Version 2.0
+
+##### Package: libpeas
+
+PackageName: libpeas
+SPDXID: SPDXRef-451aaf52a1310230
+PackageVersion: 1.22.0
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: pyOpenSSL
+
+PackageName: pyOpenSSL
+SPDXID: SPDXRef-454be199258217f0
+PackageVersion: 19.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache License, Version 2.0
+PackageLicenseDeclared: Apache License, Version 2.0
+
+##### Package: mysql-shell
+
+PackageName: mysql-shell
+SPDXID: SPDXRef-4aa0e3c165ecec94
+PackageVersion: 8.0.29
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2
+PackageLicenseDeclared: GPLv2
+
+##### Package: openldap
+
+PackageName: openldap
+SPDXID: SPDXRef-4b7e438a54cca3e4
+PackageVersion: 2.4.46
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenLDAP
+PackageLicenseDeclared: OpenLDAP
+
+##### Package: libmount
+
+PackageName: libmount
+SPDXID: SPDXRef-4bd16510b2bdbbb8
+PackageVersion: 2.32.1
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: ncurses-base
+
+PackageName: ncurses-base
+SPDXID: SPDXRef-4d5380fadaca6c0
+PackageVersion: 6.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: bash
+
+PackageName: bash
+SPDXID: SPDXRef-4e0fa2ddd199aeed
+PackageVersion: 4.4.20
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: basesystem
+
+PackageName: basesystem
+SPDXID: SPDXRef-508777ef42f9839d
+PackageVersion: 11
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: sqlite-libs
+
+PackageName: sqlite-libs
+SPDXID: SPDXRef-5165fedcc069f51b
+PackageVersion: 3.26.0
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: cffi
+
+PackageName: cffi
+SPDXID: SPDXRef-52067c503d50dae5
+PackageVersion: 1.15.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: lz4-libs
+
+PackageName: lz4-libs
+SPDXID: SPDXRef-55a5fa1f5b1b5c8c
+PackageVersion: 1.8.3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ and BSD
+PackageLicenseDeclared: GPLv2+ and BSD
+
+##### Package: nettle
+
+PackageName: nettle
+SPDXID: SPDXRef-55f822967395d950
+PackageVersion: 3.4.1
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv3+ or GPLv2+
+PackageLicenseDeclared: LGPLv3+ or GPLv2+
+
+##### Package: publicsuffix-list-dafsa
+
+PackageName: publicsuffix-list-dafsa
+SPDXID: SPDXRef-566e898fe5dc4c05
+PackageVersion: 20180723
+FilesAnalyzed: false
+PackageLicenseConcluded: MPLv2.0
+PackageLicenseDeclared: MPLv2.0
+
+##### Package: elfutils-libelf
+
+PackageName: elfutils-libelf
+SPDXID: SPDXRef-5838373781959f8c
+PackageVersion: 0.186
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ or LGPLv3+
+PackageLicenseDeclared: GPLv2+ or LGPLv3+
+
+##### Package: xz
+
+PackageName: xz
+SPDXID: SPDXRef-5ca307a56373515c
+PackageVersion: 5.2.4
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ and Public Domain
+PackageLicenseDeclared: GPLv2+ and Public Domain
+
+##### Package: libmodulemd
+
+PackageName: libmodulemd
+SPDXID: SPDXRef-5e4ec27591ac0d16
+PackageVersion: 2.13.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: brotli
+
+PackageName: brotli
+SPDXID: SPDXRef-5fb5825088783b0d
+PackageVersion: 1.0.6
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: npth
+
+PackageName: npth
+SPDXID: SPDXRef-60ab897c9f2d8429
+PackageVersion: 1.5
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: chkconfig
+
+PackageName: chkconfig
+SPDXID: SPDXRef-60be5e1c72281590
+PackageVersion: 1.19.1
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2
+PackageLicenseDeclared: GPLv2
+
+##### Package: libnsl2
+
+PackageName: libnsl2
+SPDXID: SPDXRef-6276d29ee5d714ff
+PackageVersion: 1.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD and LGPLv2+
+PackageLicenseDeclared: BSD and LGPLv2+
+
+##### Package: zlib
+
+PackageName: zlib
+SPDXID: SPDXRef-62f565d5089bcb58
+PackageVersion: 1.2.11
+FilesAnalyzed: false
+PackageLicenseConcluded: zlib and Boost
+PackageLicenseDeclared: zlib and Boost
+
+##### Package: libsemanage
+
+PackageName: libsemanage
+SPDXID: SPDXRef-698ea50ce90ab1a1
+PackageVersion: 2.9
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: setup
+
+PackageName: setup
+SPDXID: SPDXRef-6c064fa044b34b06
+PackageVersion: 2.12.2
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: libattr
+
+PackageName: libattr
+SPDXID: SPDXRef-6c7c43be0099ee28
+PackageVersion: 2.4.48
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libzstd
+
+PackageName: libzstd
+SPDXID: SPDXRef-6d05fb99b81a11dc
+PackageVersion: 1.4.4
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD and GPLv2
+PackageLicenseDeclared: BSD and GPLv2
+
+##### Package: openssl
+
+PackageName: openssl
+SPDXID: SPDXRef-7528c5ee24e7377b
+PackageVersion: 1.1.1k
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenSSL and ASL 2.0
+PackageLicenseDeclared: OpenSSL and ASL 2.0
+
+##### Package: glibc-minimal-langpack
+
+PackageName: glibc-minimal-langpack
+SPDXID: SPDXRef-760aabc8304a1184
+PackageVersion: 2.28
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+PackageLicenseDeclared: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+##### Package: glibc
+
+PackageName: glibc
+SPDXID: SPDXRef-77082e9563a523b
+PackageVersion: 2.28
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+PackageLicenseDeclared: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+##### Package: ca-certificates
+
+PackageName: ca-certificates
+SPDXID: SPDXRef-77914c860f374b46
+PackageVersion: 2021.2.50
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: github.com/opencontainers/runc
+
+PackageName: github.com/opencontainers/runc
+SPDXID: SPDXRef-7b0b3549e0f0cc9
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: oraclelinux-release
+
+PackageName: oraclelinux-release
+SPDXID: SPDXRef-7c666d33e5e9081f
+PackageVersion: 8.6
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL
+PackageLicenseDeclared: GPL
+
+##### Package: oci
+
+PackageName: oci
+SPDXID: SPDXRef-81180b0b75535018
+PackageVersion: 2.58.0
+FilesAnalyzed: false
+PackageLicenseConcluded: Universal Permissive License 1.0 or Apache License 2.0
+PackageLicenseDeclared: Universal Permissive License 1.0 or Apache License 2.0
+
+##### Package: libuuid
+
+PackageName: libuuid
+SPDXID: SPDXRef-81d149e7f0f17a3b
+PackageVersion: 2.32.1
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: xz-libs
+
+PackageName: xz-libs
+SPDXID: SPDXRef-8320496ccbb1d1c0
+PackageVersion: 5.2.4
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: shadow-utils
+
+PackageName: shadow-utils
+SPDXID: SPDXRef-87c38e15f5b46879
+PackageVersion: 4.6
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD and GPLv2+
+PackageLicenseDeclared: BSD and GPLv2+
+
+##### Package: ncurses-libs
+
+PackageName: ncurses-libs
+SPDXID: SPDXRef-88e94f9fffdbcde4
+PackageVersion: 6.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libsmartcols
+
+PackageName: libsmartcols
+SPDXID: SPDXRef-89f2d536cd36c323
+PackageVersion: 2.32.1
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: zstd
+
+PackageName: zstd
+SPDXID: SPDXRef-8c3e745620fe2855
+PackageVersion: 1.4.4
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD and GPLv2
+PackageLicenseDeclared: BSD and GPLv2
+
+##### Package: gmp
+
+PackageName: gmp
+SPDXID: SPDXRef-8c8427b954510b59
+PackageVersion: 6.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv3+ or GPLv2+
+PackageLicenseDeclared: LGPLv3+ or GPLv2+
+
+##### Package: six
+
+PackageName: six
+SPDXID: SPDXRef-8eb225934576bd4a
+PackageVersion: 1.16.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libverto
+
+PackageName: libverto
+SPDXID: SPDXRef-90407e6483d93d43
+PackageVersion: 0.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: gzip
+
+PackageName: gzip
+SPDXID: SPDXRef-925995c35c12890b
+PackageVersion: 1.9
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and GFDL
+PackageLicenseDeclared: GPLv3+ and GFDL
+
+##### Package: libcap-ng
+
+PackageName: libcap-ng
+SPDXID: SPDXRef-93750d611dc17348
+PackageVersion: 0.7.11
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: grep
+
+PackageName: grep
+SPDXID: SPDXRef-9b0ad4fc776360b6
+PackageVersion: 3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: oraclelinux-release-el8
+
+PackageName: oraclelinux-release-el8
+SPDXID: SPDXRef-9d189b32a41699bf
+PackageVersion: 1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2
+PackageLicenseDeclared: GPLv2
+
+##### Package: p11-kit
+
+PackageName: p11-kit
+SPDXID: SPDXRef-a0d0c0355e292b6f
+PackageVersion: 0.23.22
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: gdbm-libs
+
+PackageName: gdbm-libs
+SPDXID: SPDXRef-a17ce6000e251850
+PackageVersion: 1.18
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: libyaml
+
+PackageName: libyaml
+SPDXID: SPDXRef-a543263f4b46c19e
+PackageVersion: 0.1.7
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: coreutils-single
+
+PackageName: coreutils-single
+SPDXID: SPDXRef-a5d43cdfca7f9d33
+PackageVersion: 8.30
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: rpm
+
+PackageName: rpm
+SPDXID: SPDXRef-a63e3ff3ddce2b26
+PackageVersion: 4.14.3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: pcre2
+
+PackageName: pcre2
+SPDXID: SPDXRef-a9a69fabd1ea9180
+PackageVersion: 10.32
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: tzdata
+
+PackageName: tzdata
+SPDXID: SPDXRef-a9ba9e723314651
+PackageVersion: 2022a
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: pytz
+
+PackageName: pytz
+SPDXID: SPDXRef-a9d0a1ba8c548bc
+PackageVersion: 2021.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: info
+
+PackageName: info
+SPDXID: SPDXRef-aa42fcf67a604fcc
+PackageVersion: 6.5
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: libaio
+
+PackageName: libaio
+SPDXID: SPDXRef-aa63fe29b03a9ecd
+PackageVersion: 0.3.112
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libdb
+
+PackageName: libdb
+SPDXID: SPDXRef-ac0d2c0b4e7ff1ea
+PackageVersion: 5.3.28
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD and LGPLv2 and Sleepycat
+PackageLicenseDeclared: BSD and LGPLv2 and Sleepycat
+
+##### Package: libblkid
+
+PackageName: libblkid
+SPDXID: SPDXRef-ad198887c17d87d9
+PackageVersion: 2.32.1
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libsolv
+
+PackageName: libsolv
+SPDXID: SPDXRef-adea8710c71daa22
+PackageVersion: 0.7.20
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: python39-setuptools-wheel
+
+PackageName: python39-setuptools-wheel
+SPDXID: SPDXRef-afe4abaa84f97ef2
+PackageVersion: 50.3.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT and (BSD or ASL 2.0)
+PackageLicenseDeclared: MIT and (BSD or ASL 2.0)
+
+##### Package: curl
+
+PackageName: curl
+SPDXID: SPDXRef-b2ad85a0a37c4ae1
+PackageVersion: 7.61.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libidn2
+
+PackageName: libidn2
+SPDXID: SPDXRef-b3ff1d539fcd728b
+PackageVersion: 2.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: (GPLv2+ or LGPLv3+) and GPLv3+
+PackageLicenseDeclared: (GPLv2+ or LGPLv3+) and GPLv3+
+
+##### Package: readline
+
+PackageName: readline
+SPDXID: SPDXRef-b51165a322ea8332
+PackageVersion: 7.0
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: libgcrypt
+
+PackageName: libgcrypt
+SPDXID: SPDXRef-b52a7c68ebc88660
+PackageVersion: 1.8.5
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: bzip2
+
+PackageName: bzip2
+SPDXID: SPDXRef-b544bbb4e1d35738
+PackageVersion: 1.0.6
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: websocket-client
+
+PackageName: websocket-client
+SPDXID: SPDXRef-b6a9f04c12562e02
+PackageVersion: 1.2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+
+##### Package: p11-kit-trust
+
+PackageName: p11-kit-trust
+SPDXID: SPDXRef-b7c76ceb6272ed66
+PackageVersion: 0.23.22
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: gnutls
+
+PackageName: gnutls
+SPDXID: SPDXRef-b964707a84b67c08
+PackageVersion: 3.6.16
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and LGPLv2+
+PackageLicenseDeclared: GPLv3+ and LGPLv2+
+
+##### Package: audit-libs
+
+PackageName: audit-libs
+SPDXID: SPDXRef-b9f8ddb0ebfcd420
+PackageVersion: 3.0.7
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libtirpc
+
+PackageName: libtirpc
+SPDXID: SPDXRef-be8f79eb9e864f69
+PackageVersion: 1.1.4
+FilesAnalyzed: false
+PackageLicenseConcluded: SISSL and BSD
+PackageLicenseDeclared: SISSL and BSD
+
+##### Package: filesystem
+
+PackageName: filesystem
+SPDXID: SPDXRef-c358178237bdd411
+PackageVersion: 3.8
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: libselinux
+
+PackageName: libselinux
+SPDXID: SPDXRef-c46ac4883f09d100
+PackageVersion: 2.9
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: libnghttp2
+
+PackageName: libnghttp2
+SPDXID: SPDXRef-c52cd422d1e19258
+PackageVersion: 1.33.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: gawk
+
+PackageName: gawk
+SPDXID: SPDXRef-cd31418fc0facdee
+PackageVersion: 4.2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and GPLv2+ and LGPLv2+ and BSD
+PackageLicenseDeclared: GPLv3+ and GPLv2+ and LGPLv2+ and BSD
+
+##### Package: gobject-introspection
+
+PackageName: gobject-introspection
+SPDXID: SPDXRef-cd6521ec60def897
+PackageVersion: 1.56.1
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+, LGPLv2+, MIT
+PackageLicenseDeclared: GPLv2+, LGPLv2+, MIT
+
+##### Package: glibc-common
+
+PackageName: glibc-common
+SPDXID: SPDXRef-cded54a2c9c10ab0
+PackageVersion: 2.28
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+PackageLicenseDeclared: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+##### Package: microdnf
+
+PackageName: microdnf
+SPDXID: SPDXRef-cfab7ff445947bf6
+PackageVersion: 3.8.0
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: redhat-release
+
+PackageName: redhat-release
+SPDXID: SPDXRef-cfe265a7ee61ad19
+PackageVersion: 8.6
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2
+PackageLicenseDeclared: GPLv2
+
+##### Package: sed
+
+PackageName: sed
+SPDXID: SPDXRef-d253db28147b25e
+PackageVersion: 4.5
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: paramiko
+
+PackageName: paramiko
+SPDXID: SPDXRef-d376498716f42102
+PackageVersion: 2.9.2
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPL
+PackageLicenseDeclared: LGPL
+
+##### Package: libcap
+
+PackageName: libcap
+SPDXID: SPDXRef-d4af08ce5f8b0b95
+PackageVersion: 2.48
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD or GPLv2
+PackageLicenseDeclared: BSD or GPLv2
+
+##### Package: circuitbreaker
+
+PackageName: circuitbreaker
+SPDXID: SPDXRef-d54bc557c24920fd
+PackageVersion: 1.3.2
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseDeclared: BSD-3-Clause
+
+##### Package: libstdc++
+
+PackageName: libstdc++
+SPDXID: SPDXRef-d590e830e5755bbd
+PackageVersion: 8.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+PackageLicenseDeclared: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+
+##### Package: libassuan
+
+PackageName: libassuan
+SPDXID: SPDXRef-d882a205862337fd
+PackageVersion: 2.5.1
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and GPLv3+
+PackageLicenseDeclared: LGPLv2+ and GPLv3+
+
+##### Package: glib2
+
+PackageName: glib2
+SPDXID: SPDXRef-daf9053717fce57e
+PackageVersion: 2.56.4
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libxml2
+
+PackageName: libxml2
+SPDXID: SPDXRef-dda175ba1a2a87f8
+PackageVersion: 2.9.7
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: bcrypt
+
+PackageName: bcrypt
+SPDXID: SPDXRef-dec7755da3b58ab
+PackageVersion: 3.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache License, Version 2.0
+PackageLicenseDeclared: Apache License, Version 2.0
+
+##### Package: bzip2-libs
+
+PackageName: bzip2-libs
+SPDXID: SPDXRef-e0447e41169afa16
+PackageVersion: 1.0.6
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: PyNaCl
+
+PackageName: PyNaCl
+SPDXID: SPDXRef-e0a8eb610bbb2d5a
+PackageVersion: 1.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache License 2.0
+PackageLicenseDeclared: Apache License 2.0
+
+##### Package: libgpg-error
+
+PackageName: libgpg-error
+SPDXID: SPDXRef-e1e5f9f7d564348a
+PackageVersion: 1.31
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libffi
+
+PackageName: libffi
+SPDXID: SPDXRef-e34cdde7fed9bc7c
+PackageVersion: 3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: lua-libs
+
+PackageName: lua-libs
+SPDXID: SPDXRef-e3eb63e65b81ae90
+PackageVersion: 5.3.4
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: crypto-policies
+
+PackageName: crypto-policies
+SPDXID: SPDXRef-e5b7603941146836
+PackageVersion: 20211116
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: file-libs
+
+PackageName: file-libs
+SPDXID: SPDXRef-ebd4ab9bdc951779
+PackageVersion: 5.33
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: gpgme
+
+PackageName: gpgme
+SPDXID: SPDXRef-ed4f5f9fca9cec9e
+PackageVersion: 1.13.1
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and GPLv3+
+PackageLicenseDeclared: LGPLv2+ and GPLv3+
+
+##### Package: openssl-libs
+
+PackageName: openssl-libs
+SPDXID: SPDXRef-eda3f04cefb3049c
+PackageVersion: 1.1.1k
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenSSL and ASL 2.0
+PackageLicenseDeclared: OpenSSL and ASL 2.0
+
+##### Package: krb5-libs
+
+PackageName: krb5-libs
+SPDXID: SPDXRef-f0d3aff9315ce686
+PackageVersion: 1.18.2
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: certifi
+
+PackageName: certifi
+SPDXID: SPDXRef-f397290ea1db58cd
+PackageVersion: 2021.10.8
+FilesAnalyzed: false
+PackageLicenseConcluded: MPL-2.0
+PackageLicenseDeclared: MPL-2.0
+
+##### Package: rpm-libs
+
+PackageName: rpm-libs
+SPDXID: SPDXRef-f3db52a03f9e8f78
+PackageVersion: 4.14.3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ and LGPLv2+ with exceptions
+PackageLicenseDeclared: GPLv2+ and LGPLv2+ with exceptions
+
+##### Package: gnupg2
+
+PackageName: gnupg2
+SPDXID: SPDXRef-f553eca1bd5b820b
+PackageVersion: 2.2.20
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: libksba
+
+PackageName: libksba
+SPDXID: SPDXRef-f671890e133e0d89
+PackageVersion: 1.3.5
+FilesAnalyzed: false
+PackageLicenseConcluded: (LGPLv3+ or GPLv2+) and GPLv3+
+PackageLicenseDeclared: (LGPLv3+ or GPLv2+) and GPLv3+
+
+##### Package: gpg-pubkey
+
+PackageName: gpg-pubkey
+SPDXID: SPDXRef-f956b6c50fc0ac7
+PackageVersion: ad986da3
+FilesAnalyzed: false
+PackageLicenseConcluded: pubkey
+PackageLicenseDeclared: pubkey
+
+##### Package: libxcrypt
+
+PackageName: libxcrypt
+SPDXID: SPDXRef-f9c4eb13aac185f1
+PackageVersion: 4.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and BSD and Public Domain
+PackageLicenseDeclared: LGPLv2+ and BSD and Public Domain
+
+##### Package: popt
+
+PackageName: popt
+SPDXID: SPDXRef-fb28dd8a92957d15
+PackageVersion: 1.18
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: python39-pip-wheel
+
+PackageName: python39-pip-wheel
+SPDXID: SPDXRef-fe56d970c81ced34
+PackageVersion: 20.2.4
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
+PackageLicenseDeclared: MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
+

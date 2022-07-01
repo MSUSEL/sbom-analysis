@@ -1,0 +1,313 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Grype",
+          "version": "0.38.0",
+          "informationUri": "https://github.com/anchore/grype",
+          "rules": [
+            {
+              "id": "CVE-2022-24302-paramiko",
+              "name": "PythonMatcherCpeMatch",
+              "shortDescription": {
+                "text": "CVE-2022-24302 medium vulnerability for paramiko package"
+              },
+              "fullDescription": {
+                "text": "In Paramiko before 2.10.1, a race condition (between creation and chmod) in the write_private_key_file function could allow unauthorized information disclosure."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-24302\nSeverity: medium\nPackage: paramiko\nVersion: 2.9.2\nFix Version: \nType: python\nLocation: /usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA\nData Namespace: nvd\nLink: [CVE-2022-24302](https://nvd.nist.gov/vuln/detail/CVE-2022-24302)",
+                "markdown": "**Vulnerability CVE-2022-24302**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | paramiko  | 2.9.2  |   | python  | /usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA  | nvd  | [CVE-2022-24302](https://nvd.nist.gov/vuln/detail/CVE-2022-24302)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "ELSA-2022-9221-gnutls",
+              "name": "RpmdbMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "ELSA-2022-9221 medium vulnerability for gnutls package"
+              },
+              "fullDescription": {
+                "text": "Version 3.6.16-4.el8 is affected with an available fix in versions 10:3.6.16-4.0.1.el8_fips"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability ELSA-2022-9221\nSeverity: medium\nPackage: gnutls\nVersion: 3.6.16-4.el8\nFix Version: 10:3.6.16-4.0.1.el8_fips\nType: rpm\nLocation: /var/lib/rpm/Packages\nData Namespace: ol:8\nLink: [ELSA-2022-9221](https://linux.oracle.com/errata/ELSA-2022-9221.html)",
+                "markdown": "**Vulnerability ELSA-2022-9221**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gnutls  | 3.6.16-4.el8  | 10:3.6.16-4.0.1.el8_fips  | rpm  | /var/lib/rpm/Packages  | ol:8  | [ELSA-2022-9221](https://linux.oracle.com/errata/ELSA-2022-9221.html)  |\n"
+              },
+              "properties": {
+                "security-severity": "9.8"
+              }
+            },
+            {
+              "id": "ELSA-2022-9263-libgcrypt",
+              "name": "RpmdbMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "ELSA-2022-9263 medium vulnerability for libgcrypt package"
+              },
+              "fullDescription": {
+                "text": "Version 1.8.5-6.el8 is affected with an available fix in versions 10:1.8.5-6.el8_fips"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability ELSA-2022-9263\nSeverity: medium\nPackage: libgcrypt\nVersion: 1.8.5-6.el8\nFix Version: 10:1.8.5-6.el8_fips\nType: rpm\nLocation: /var/lib/rpm/Packages\nData Namespace: ol:8\nLink: [ELSA-2022-9263](https://linux.oracle.com/errata/ELSA-2022-9263.html)",
+                "markdown": "**Vulnerability ELSA-2022-9263**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgcrypt  | 1.8.5-6.el8  | 10:1.8.5-6.el8_fips  | rpm  | /var/lib/rpm/Packages  | ol:8  | [ELSA-2022-9263](https://linux.oracle.com/errata/ELSA-2022-9263.html)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-f3fp-gc8g-vw66-github.com/opencontainers/runc",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-f3fp-gc8g-vw66 medium vulnerability for github.com/opencontainers/runc package"
+              },
+              "fullDescription": {
+                "text": "Default inheritable capabilities for linux container should be empty"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-f3fp-gc8g-vw66\nSeverity: medium\nPackage: github.com/opencontainers/runc\nVersion: v1.0.1\nFix Version: 1.1.2\nType: go-module\nLocation: /usr/local/bin/gosu\nData Namespace: github:go\nLink: [GHSA-f3fp-gc8g-vw66](https://github.com/advisories/GHSA-f3fp-gc8g-vw66)",
+                "markdown": "**Vulnerability GHSA-f3fp-gc8g-vw66**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/opencontainers/runc  | v1.0.1  | 1.1.2  | go-module  | /usr/local/bin/gosu  | github:go  | [GHSA-f3fp-gc8g-vw66](https://github.com/advisories/GHSA-f3fp-gc8g-vw66)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "GHSA-f8q4-jwww-x3wv-paramiko",
+              "name": "PythonMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-f8q4-jwww-x3wv medium vulnerability for paramiko package"
+              },
+              "fullDescription": {
+                "text": "Race Condition in Paramiko"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-f8q4-jwww-x3wv\nSeverity: medium\nPackage: paramiko\nVersion: 2.9.2\nFix Version: 2.10.1\nType: python\nLocation: /usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA\nData Namespace: github:python\nLink: [GHSA-f8q4-jwww-x3wv](https://github.com/advisories/GHSA-f8q4-jwww-x3wv)",
+                "markdown": "**Vulnerability GHSA-f8q4-jwww-x3wv**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | paramiko  | 2.9.2  | 2.10.1  | python  | /usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA  | github:python  | [GHSA-f8q4-jwww-x3wv](https://github.com/advisories/GHSA-f8q4-jwww-x3wv)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "GHSA-v95c-p5hm-xq8f-github.com/opencontainers/runc",
+              "name": "StockMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-v95c-p5hm-xq8f medium vulnerability for github.com/opencontainers/runc package"
+              },
+              "fullDescription": {
+                "text": "Overflow in netlink bytemsg length field allows attacker to override netlink-based container configuration"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-v95c-p5hm-xq8f\nSeverity: medium\nPackage: github.com/opencontainers/runc\nVersion: v1.0.1\nFix Version: 1.0.3\nType: go-module\nLocation: /usr/local/bin/gosu\nData Namespace: github:go\nLink: [GHSA-v95c-p5hm-xq8f](https://github.com/advisories/GHSA-v95c-p5hm-xq8f)",
+                "markdown": "**Vulnerability GHSA-v95c-p5hm-xq8f**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | github.com/opencontainers/runc  | v1.0.1  | 1.0.3  | go-module  | /usr/local/bin/gosu  | github:go  | [GHSA-v95c-p5hm-xq8f](https://github.com/advisories/GHSA-v95c-p5hm-xq8f)  |\n"
+              },
+              "properties": {
+                "security-severity": "6.0"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2022-24302-paramiko",
+          "message": {
+            "text": "The path /usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA reports paramiko at version 2.9.2  which is a vulnerable (python) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA"
+                },
+                {
+                  "name": "/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/RECORD",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/RECORD"
+                },
+                {
+                  "name": "/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/direct_url.json",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/direct_url.json"
+                },
+                {
+                  "name": "/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/top_level.txt",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/top_level.txt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "ELSA-2022-9221-gnutls",
+          "message": {
+            "text": "The path /var/lib/rpm/Packages reports gnutls at version 3.6.16-4.el8  which is a vulnerable (rpm) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//var/lib/rpm/Packages"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/rpm/Packages",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/var/lib/rpm/Packages"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "ELSA-2022-9263-libgcrypt",
+          "message": {
+            "text": "The path /var/lib/rpm/Packages reports libgcrypt at version 1.8.5-6.el8  which is a vulnerable (rpm) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//var/lib/rpm/Packages"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/rpm/Packages",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/var/lib/rpm/Packages"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-f3fp-gc8g-vw66-github.com/opencontainers/runc",
+          "message": {
+            "text": "The path /usr/local/bin/gosu reports github.com/opencontainers/runc at version v1.0.1  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/gosu"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/gosu",
+                  "fullyQualifiedName": "mysql:oracle@sha256:19bf5be444f9295d3c29d95de2f6fd82681f73bf39b0704249e86f63e93e3a1a:/usr/local/bin/gosu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-f8q4-jwww-x3wv-paramiko",
+          "message": {
+            "text": "The path /usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA reports paramiko at version 2.9.2  which is a vulnerable (python) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/METADATA"
+                },
+                {
+                  "name": "/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/RECORD",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/RECORD"
+                },
+                {
+                  "name": "/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/direct_url.json",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/direct_url.json"
+                },
+                {
+                  "name": "/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/top_level.txt",
+                  "fullyQualifiedName": "mysql:oracle@sha256:dddc3d6e2d3520df69f55e7cc5449934813a9b59984459855f766af206f21746:/usr/lib/mysqlsh/lib/python3.9/site-packages/paramiko-2.9.2.dist-info/top_level.txt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-v95c-p5hm-xq8f-github.com/opencontainers/runc",
+          "message": {
+            "text": "The path /usr/local/bin/gosu reports github.com/opencontainers/runc at version v1.0.1  which is a vulnerable (go-module) package installed in the container"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "image//usr/local/bin/gosu"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/usr/local/bin/gosu",
+                  "fullyQualifiedName": "mysql:oracle@sha256:19bf5be444f9295d3c29d95de2f6fd82681f73bf39b0704249e86f63e93e3a1a:/usr/local/bin/gosu"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

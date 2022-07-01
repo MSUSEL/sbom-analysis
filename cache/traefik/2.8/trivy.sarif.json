@@ -1,0 +1,230 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Trivy Vulnerability Scanner",
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "name": "Trivy",
+          "rules": [
+            {
+              "id": "CVE-2022-23648",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-23648"
+              },
+              "fullDescription": {
+                "text": "containerd is a container runtime available as a daemon for Linux and Windows. A bug was found in containerd prior to versions 1.6.1, 1.5.10, and 1.14.12 where containers launched through containerd’s CRI implementation on Linux with a specially-crafted image configuration could gain access to read-only copies of arbitrary files and directories on the host. This may bypass any policy-based enforcement on container setup (including a Kubernetes Pod Security Policy) and expose potentially sensitive information. Kubernetes and crictl can both be configured to use containerd’s CRI implementation. This bug has been fixed in containerd 1.6.1, 1.5.10, and 1.4.12. Users should update to these versions to resolve the issue."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-23648",
+              "help": {
+                "text": "Vulnerability CVE-2022-23648\nSeverity: HIGH\nPackage: github.com/containerd/containerd\nFixed Version: 1.4.13, 1.5.10, 1.6.1\nLink: [CVE-2022-23648](https://avd.aquasec.com/nvd/cve-2022-23648)\ncontainerd is a container runtime available as a daemon for Linux and Windows. A bug was found in containerd prior to versions 1.6.1, 1.5.10, and 1.14.12 where containers launched through containerd’s CRI implementation on Linux with a specially-crafted image configuration could gain access to read-only copies of arbitrary files and directories on the host. This may bypass any policy-based enforcement on container setup (including a Kubernetes Pod Security Policy) and expose potentially sensitive information. Kubernetes and crictl can both be configured to use containerd’s CRI implementation. This bug has been fixed in containerd 1.6.1, 1.5.10, and 1.4.12. Users should update to these versions to resolve the issue.",
+                "markdown": "**Vulnerability CVE-2022-23648**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|github.com/containerd/containerd|1.4.13, 1.5.10, 1.6.1|[CVE-2022-23648](https://avd.aquasec.com/nvd/cve-2022-23648)|\n\ncontainerd is a container runtime available as a daemon for Linux and Windows. A bug was found in containerd prior to versions 1.6.1, 1.5.10, and 1.14.12 where containers launched through containerd’s CRI implementation on Linux with a specially-crafted image configuration could gain access to read-only copies of arbitrary files and directories on the host. This may bypass any policy-based enforcement on container setup (including a Kubernetes Pod Security Policy) and expose potentially sensitive information. Kubernetes and crictl can both be configured to use containerd’s CRI implementation. This bug has been fixed in containerd 1.6.1, 1.5.10, and 1.4.12. Users should update to these versions to resolve the issue."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-qq97-vm5h-rrhg",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-qq97-vm5h-rrhg"
+              },
+              "fullDescription": {
+                "text": "### Impact\n\nSystems that rely on digest equivalence for image attestations may be vulnerable to type confusion."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://github.com/advisories/GHSA-qq97-vm5h-rrhg",
+              "help": {
+                "text": "Vulnerability GHSA-qq97-vm5h-rrhg\nSeverity: UNKNOWN\nPackage: github.com/docker/distribution\nFixed Version: v2.8.0\nLink: [GHSA-qq97-vm5h-rrhg](https://github.com/advisories/GHSA-qq97-vm5h-rrhg)\n### Impact\n\nSystems that rely on digest equivalence for image attestations may be vulnerable to type confusion.",
+                "markdown": "**Vulnerability GHSA-qq97-vm5h-rrhg**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|github.com/docker/distribution|v2.8.0|[GHSA-qq97-vm5h-rrhg](https://github.com/advisories/GHSA-qq97-vm5h-rrhg)|\n\n### Impact\n\nSystems that rely on digest equivalence for image attestations may be vulnerable to type confusion."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "0.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "UNKNOWN"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-29153",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-29153"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul and Consul Enterprise through 2022-04-12 allow SSRF."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-29153",
+              "help": {
+                "text": "Vulnerability CVE-2022-29153\nSeverity: HIGH\nPackage: github.com/hashicorp/consul\nFixed Version: 1.9.17, 1.10.10, 1.11.5\nLink: [CVE-2022-29153](https://avd.aquasec.com/nvd/cve-2022-29153)\nHashiCorp Consul and Consul Enterprise through 2022-04-12 allow SSRF.",
+                "markdown": "**Vulnerability CVE-2022-29153**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|github.com/hashicorp/consul|1.9.17, 1.10.10, 1.11.5|[CVE-2022-29153](https://avd.aquasec.com/nvd/cve-2022-29153)|\n\nHashiCorp Consul and Consul Enterprise through 2022-04-12 allow SSRF."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-24687",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-24687"
+              },
+              "fullDescription": {
+                "text": "HashiCorp Consul and Consul Enterprise 1.8.0 through 1.9.14, 1.10.7, and 1.11.2 has Uncontrolled Resource Consumption."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-24687",
+              "help": {
+                "text": "Vulnerability CVE-2022-24687\nSeverity: MEDIUM\nPackage: github.com/hashicorp/consul\nFixed Version: 1.9.15, 1.10.8, 1.11.3\nLink: [CVE-2022-24687](https://avd.aquasec.com/nvd/cve-2022-24687)\nHashiCorp Consul and Consul Enterprise 1.8.0 through 1.9.14, 1.10.7, and 1.11.2 has Uncontrolled Resource Consumption.",
+                "markdown": "**Vulnerability CVE-2022-24687**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|github.com/hashicorp/consul|1.9.15, 1.10.8, 1.11.3|[CVE-2022-24687](https://avd.aquasec.com/nvd/cve-2022-24687)|\n\nHashiCorp Consul and Consul Enterprise 1.8.0 through 1.9.14, 1.10.7, and 1.11.2 has Uncontrolled Resource Consumption."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            }
+          ],
+          "version": "0.29.1"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2022-23648",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Package: github.com/containerd/containerd\nInstalled Version: v1.5.9\nVulnerability CVE-2022-23648\nSeverity: HIGH\nFixed Version: 1.4.13, 1.5.10, 1.6.1\nLink: [CVE-2022-23648](https://avd.aquasec.com/nvd/cve-2022-23648)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "usr/local/bin/traefik",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-qq97-vm5h-rrhg",
+          "ruleIndex": 1,
+          "level": "note",
+          "message": {
+            "text": "Package: github.com/docker/distribution\nInstalled Version: v2.7.1+incompatible\nVulnerability GHSA-qq97-vm5h-rrhg\nSeverity: UNKNOWN\nFixed Version: v2.8.0\nLink: [GHSA-qq97-vm5h-rrhg](https://github.com/advisories/GHSA-qq97-vm5h-rrhg)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "usr/local/bin/traefik",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29153",
+          "ruleIndex": 2,
+          "level": "error",
+          "message": {
+            "text": "Package: github.com/hashicorp/consul\nInstalled Version: v1.10.4\nVulnerability CVE-2022-29153\nSeverity: HIGH\nFixed Version: 1.9.17, 1.10.10, 1.11.5\nLink: [CVE-2022-29153](https://avd.aquasec.com/nvd/cve-2022-29153)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "usr/local/bin/traefik",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-24687",
+          "ruleIndex": 3,
+          "level": "warning",
+          "message": {
+            "text": "Package: github.com/hashicorp/consul\nInstalled Version: v1.10.4\nVulnerability CVE-2022-24687\nSeverity: MEDIUM\nFixed Version: 1.9.15, 1.10.8, 1.11.3\nLink: [CVE-2022-24687](https://avd.aquasec.com/nvd/cve-2022-24687)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "usr/local/bin/traefik",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///"
+        }
+      }
+    }
+  ]
+}

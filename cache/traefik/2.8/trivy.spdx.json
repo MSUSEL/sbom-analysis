@@ -1,0 +1,2457 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: traefik:2.8
+DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/traefik:2.8-05cc1c2b-54a0-4f87-a9c8-99a00521eaff
+Creator: Organization: aquasecurity
+Creator: Tool: trivy
+Created: 2022-07-01T19:42:00.1002829Z
+
+##### Package: github.com/go-resty/resty/v2
+
+PackageName: github.com/go-resty/resty/v2
+SPDXID: SPDXRef-10c88b0f006fd292
+PackageVersion: v2.1.1-0.20191201195748-d7b97669fe48
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/golang-lru
+
+PackageName: github.com/hashicorp/golang-lru
+SPDXID: SPDXRef-127017771ad23f
+PackageVersion: v0.5.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/containous/mux
+
+PackageName: github.com/containous/mux
+SPDXID: SPDXRef-12f50c19f7572170
+PackageVersion: v0.0.0-20220627093034-b2dd784e613f
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/nrdcg/porkbun
+
+PackageName: github.com/nrdcg/porkbun
+SPDXID: SPDXRef-12fd26fc24f70c21
+PackageVersion: v0.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/memberlist
+
+PackageName: github.com/hashicorp/memberlist
+SPDXID: SPDXRef-134a2bcd2cdf15ea
+PackageVersion: v0.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/jonboulle/clockwork
+
+PackageName: github.com/jonboulle/clockwork
+SPDXID: SPDXRef-1480b63fcbb6e2a0
+PackageVersion: v0.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/go-hclog
+
+PackageName: github.com/hashicorp/go-hclog
+SPDXID: SPDXRef-1486527f2d06f8a9
+PackageVersion: v0.16.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mitchellh/reflectwalk
+
+PackageName: github.com/mitchellh/reflectwalk
+SPDXID: SPDXRef-149306d779eeb95c
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/aliyun/alibaba-cloud-sdk-go
+
+PackageName: github.com/aliyun/alibaba-cloud-sdk-go
+SPDXID: SPDXRef-1561875e2d71acf1
+PackageVersion: v1.61.1183
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mitchellh/copystructure
+
+PackageName: github.com/mitchellh/copystructure
+SPDXID: SPDXRef-15e809c4ef329f8d
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.opencensus.io
+
+PackageName: go.opencensus.io
+SPDXID: SPDXRef-169abd2c193e0b97
+PackageVersion: v0.23.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.elastic.co/apm
+
+PackageName: go.elastic.co/apm
+SPDXID: SPDXRef-1750cd3b1c40f5b7
+PackageVersion: v1.13.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/inf.v0
+
+PackageName: gopkg.in/inf.v0
+SPDXID: SPDXRef-1782c61b764cbb75
+PackageVersion: v0.9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sigs.k8s.io/gateway-api
+
+PackageName: sigs.k8s.io/gateway-api
+SPDXID: SPDXRef-180b00d8204b8220
+PackageVersion: v0.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/consul/api
+
+PackageName: github.com/hashicorp/consul/api
+SPDXID: SPDXRef-1a01bdabfd85bcf6
+PackageVersion: v1.12.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/golang/glog
+
+PackageName: github.com/golang/glog
+SPDXID: SPDXRef-1a2699185cc62ee3
+PackageVersion: v0.0.0-20160126235308-23def4e6c14b
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/go-zookeeper/zk
+
+PackageName: github.com/go-zookeeper/zk
+SPDXID: SPDXRef-1ac15cd4a4a43ab5
+PackageVersion: v1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Masterminds/goutils
+
+PackageName: github.com/Masterminds/goutils
+SPDXID: SPDXRef-1b9a387b9bd2bfb
+PackageVersion: v1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: k8s.io/api
+
+PackageName: k8s.io/api
+SPDXID: SPDXRef-1bf5e4029353ee47
+PackageVersion: v0.22.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/liquidweb/go-lwApi
+
+PackageName: github.com/liquidweb/go-lwApi
+SPDXID: SPDXRef-1bf849dad13f6aa7
+PackageVersion: v0.0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/influxdata/line-protocol
+
+PackageName: github.com/influxdata/line-protocol
+SPDXID: SPDXRef-1c7e329d17800eee
+PackageVersion: v0.0.0-20200327222509-2487e7298839
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.etcd.io/etcd/client/v3
+
+PackageName: go.etcd.io/etcd/client/v3
+SPDXID: SPDXRef-1d6ce17d6d041c57
+PackageVersion: v3.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/term
+
+PackageName: golang.org/x/term
+SPDXID: SPDXRef-1e7885228ed7ff97
+PackageVersion: v0.0.0-20210927222741-03fcf44c2211
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/donovanhide/eventsource
+
+PackageName: github.com/donovanhide/eventsource
+SPDXID: SPDXRef-1f27f4f90b629965
+PackageVersion: v0.0.0-20170630084216-b8f31a59085e
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/deepmap/oapi-codegen
+
+PackageName: github.com/deepmap/oapi-codegen
+SPDXID: SPDXRef-2013c03ec2545bb4
+PackageVersion: v1.8.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: k8s.io/apimachinery
+
+PackageName: k8s.io/apimachinery
+SPDXID: SPDXRef-210a0e65f708de41
+PackageVersion: v0.22.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: howett.net/plist
+
+PackageName: howett.net/plist
+SPDXID: SPDXRef-2158145d67421495
+PackageVersion: v0.0.0-20181124034731-591f970eefbb
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.elastic.co/fastjson
+
+PackageName: go.elastic.co/fastjson
+SPDXID: SPDXRef-23966d7a7e0d329c
+PackageVersion: v1.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/infobloxopen/infoblox-go-client
+
+PackageName: github.com/infobloxopen/infoblox-go-client
+SPDXID: SPDXRef-23b0ea2d0acb0b1d
+PackageVersion: v1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/openzipkin/zipkin-go
+
+PackageName: github.com/openzipkin/zipkin-go
+SPDXID: SPDXRef-23fac987934640d1
+PackageVersion: v0.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/opencontainers/image-spec
+
+PackageName: github.com/opencontainers/image-spec
+SPDXID: SPDXRef-2425812bc034a9ed
+PackageVersion: v1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: scanelf
+
+PackageName: scanelf
+SPDXID: SPDXRef-24294a2864d327e4
+PackageVersion: 1.3.3-r0
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+
+##### Package: github.com/scaleway/scaleway-sdk-go
+
+PackageName: github.com/scaleway/scaleway-sdk-go
+SPDXID: SPDXRef-27b2f277cbf41614
+PackageVersion: v1.0.0-beta.7.0.20210127161313-bd30bebeac4f
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/crypto
+
+PackageName: golang.org/x/crypto
+SPDXID: SPDXRef-27c9fd62c5d5928f
+PackageVersion: v0.0.0-20220427172511-eb4f295cb31f
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/instana/go-sensor
+
+PackageName: github.com/instana/go-sensor
+SPDXID: SPDXRef-294259ac9c9a2e48
+PackageVersion: v1.38.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/circonus-labs/circonusllhist
+
+PackageName: github.com/circonus-labs/circonusllhist
+SPDXID: SPDXRef-2aeaded28c05b51b
+PackageVersion: v0.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/yamux
+
+PackageName: github.com/hashicorp/yamux
+SPDXID: SPDXRef-2af25de38d4bd211
+PackageVersion: v0.0.0-20210826001029-26ff87cf9493
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Masterminds/semver/v3
+
+PackageName: github.com/Masterminds/semver/v3
+SPDXID: SPDXRef-2b87f9bd3354c9ca
+PackageVersion: v3.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: cloud.google.com/go
+
+PackageName: cloud.google.com/go
+SPDXID: SPDXRef-2bd6763b4ff4109b
+PackageVersion: v0.81.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/go-immutable-radix
+
+PackageName: github.com/hashicorp/go-immutable-radix
+SPDXID: SPDXRef-2da2b7206bb6334
+PackageVersion: v1.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/go-autorest/autorest/adal
+
+PackageName: github.com/Azure/go-autorest/autorest/adal
+SPDXID: SPDXRef-2db1e7fb05363bcd
+PackageVersion: v0.9.13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/hcl
+
+PackageName: github.com/hashicorp/hcl
+SPDXID: SPDXRef-2f83e22aaba0cac7
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/google/go-github/v28
+
+PackageName: github.com/google/go-github/v28
+SPDXID: SPDXRef-2fe52efb8a1ffbbf
+PackageVersion: v28.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/gogo/protobuf
+
+PackageName: github.com/gogo/protobuf
+SPDXID: SPDXRef-301e5781b26d8d36
+PackageVersion: v1.3.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/miekg/dns
+
+PackageName: github.com/miekg/dns
+SPDXID: SPDXRef-30884743d3083034
+PackageVersion: v1.1.47
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/docker/cli
+
+PackageName: github.com/docker/cli
+SPDXID: SPDXRef-314c1695884c6255
+PackageVersion: v20.10.11+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tzdata
+
+PackageName: tzdata
+SPDXID: SPDXRef-31874d532704bab0
+PackageVersion: 2022a-r0
+FilesAnalyzed: false
+PackageLicenseConcluded: Public-Domain
+PackageLicenseDeclared: Public-Domain
+
+##### Package: github.com/labbsr0x/bindman-dns-webhook
+
+PackageName: github.com/labbsr0x/bindman-dns-webhook
+SPDXID: SPDXRef-3273bb098d515abd
+PackageVersion: v1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/josharian/intern
+
+PackageName: github.com/josharian/intern
+SPDXID: SPDXRef-333da2f254dbe3a6
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.elastic.co/apm/module/apmhttp
+
+PackageName: go.elastic.co/apm/module/apmhttp
+SPDXID: SPDXRef-33f5baac955485ba
+PackageVersion: v1.13.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/gambol99/go-marathon
+
+PackageName: github.com/gambol99/go-marathon
+SPDXID: SPDXRef-346f1e648ac69419
+PackageVersion: v0.0.0-20180614232016-99a156b96fb2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/go-logr/logr
+
+PackageName: github.com/go-logr/logr
+SPDXID: SPDXRef-3512bc3e03431926
+PackageVersion: v0.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/liquidweb/liquidweb-go
+
+PackageName: github.com/liquidweb/liquidweb-go
+SPDXID: SPDXRef-3771d74e1f573bae
+PackageVersion: v1.6.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/gorilla/websocket
+
+PackageName: github.com/gorilla/websocket
+SPDXID: SPDXRef-39b0bf27616785af
+PackageVersion: v1.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/softlayer/xmlrpc
+
+PackageName: github.com/softlayer/xmlrpc
+SPDXID: SPDXRef-3ab0dd61dee58364
+PackageVersion: v0.0.0-20200409220501-5f089df7cb7e
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/docker/go-units
+
+PackageName: github.com/docker/go-units
+SPDXID: SPDXRef-3d0e0f20800b90bb
+PackageVersion: v0.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/yaml.v2
+
+PackageName: gopkg.in/yaml.v2
+SPDXID: SPDXRef-3df7af7ebf00c74c
+PackageVersion: v2.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: busybox
+
+PackageName: busybox
+SPDXID: SPDXRef-3f0d1bf5a9adc7fa
+PackageVersion: 1.34.1-r5
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+
+##### Package: github.com/spf13/cast
+
+PackageName: github.com/spf13/cast
+SPDXID: SPDXRef-4228f1b5d9c6f319
+PackageVersion: v1.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/DataDog/datadog-go/v5
+
+PackageName: github.com/DataDog/datadog-go/v5
+SPDXID: SPDXRef-44102cc55f6cd6ac
+PackageVersion: v5.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/pquerna/otp
+
+PackageName: github.com/pquerna/otp
+SPDXID: SPDXRef-45f8bac7c8599054
+PackageVersion: v1.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/containous/alice
+
+PackageName: github.com/containous/alice
+SPDXID: SPDXRef-463204aabbe4aab6
+PackageVersion: v0.0.0-20181107144136-d83ebdd94cbd
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/akamai/AkamaiOPEN-edgegrid-golang
+
+PackageName: github.com/akamai/AkamaiOPEN-edgegrid-golang
+SPDXID: SPDXRef-46be96e6fe225a32
+PackageVersion: v1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/consul/sdk
+
+PackageName: github.com/hashicorp/consul/sdk
+SPDXID: SPDXRef-470795760c3496dd
+PackageVersion: v0.8.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/go-version
+
+PackageName: github.com/hashicorp/go-version
+SPDXID: SPDXRef-4a2aed74cb18d881
+PackageVersion: v1.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/pires/go-proxyproto
+
+PackageName: github.com/pires/go-proxyproto
+SPDXID: SPDXRef-4afb24da3625e55f
+PackageVersion: v0.6.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/atomic
+
+PackageName: go.uber.org/atomic
+SPDXID: SPDXRef-4d786b4d8da92d84
+PackageVersion: v1.7.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/davecgh/go-spew
+
+PackageName: github.com/davecgh/go-spew
+SPDXID: SPDXRef-4d93c9bd6d5886c0
+PackageVersion: v1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/DataDog/dd-trace-go.v1
+
+PackageName: gopkg.in/DataDog/dd-trace-go.v1
+SPDXID: SPDXRef-50f04055ddc74f1d
+PackageVersion: v1.38.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.etcd.io/etcd/api/v3
+
+PackageName: go.etcd.io/etcd/api/v3
+SPDXID: SPDXRef-52467ba42f1a01c7
+PackageVersion: v3.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/armon/go-metrics
+
+PackageName: github.com/armon/go-metrics
+SPDXID: SPDXRef-52e8aeceeb37f4c2
+PackageVersion: v0.3.10
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/BurntSushi/toml
+
+PackageName: github.com/BurntSushi/toml
+SPDXID: SPDXRef-545dd0423c213219
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/dimchansky/utfbom
+
+PackageName: github.com/dimchansky/utfbom
+SPDXID: SPDXRef-54d79ad8c5bf5f47
+PackageVersion: v1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libretls
+
+PackageName: libretls
+SPDXID: SPDXRef-5517be6bca97de06
+PackageVersion: 3.3.4-r3
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC AND (BSD-3-Clause OR MIT)
+PackageLicenseDeclared: ISC AND (BSD-3-Clause OR MIT)
+
+##### Package: github.com/hashicorp/go-cleanhttp
+
+PackageName: github.com/hashicorp/go-cleanhttp
+SPDXID: SPDXRef-5718efb3f601e67
+PackageVersion: v0.5.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/json-iterator/go
+
+PackageName: github.com/json-iterator/go
+SPDXID: SPDXRef-57d84a008dad80c4
+PackageVersion: v1.1.12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/go-errors/errors
+
+PackageName: github.com/go-errors/errors
+SPDXID: SPDXRef-59023a5e48160dc1
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc-utils
+
+PackageName: libc-utils
+SPDXID: SPDXRef-59c186a0e88a2a75
+PackageVersion: 0.7.2-r3
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause AND BSD-3-Clause
+PackageLicenseDeclared: BSD-2-Clause AND BSD-3-Clause
+
+##### Package: github.com/lucas-clemente/quic-go
+
+PackageName: github.com/lucas-clemente/quic-go
+SPDXID: SPDXRef-5a0e66fa8a70ed2f
+PackageVersion: v0.27.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/coreos/go-semver
+
+PackageName: github.com/coreos/go-semver
+SPDXID: SPDXRef-5d521f2b22574f8d
+PackageVersion: v0.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/raft
+
+PackageName: github.com/hashicorp/raft
+SPDXID: SPDXRef-5d8211bb2c997c30
+PackageVersion: v1.3.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/stretchr/objx
+
+PackageName: github.com/stretchr/objx
+SPDXID: SPDXRef-5d84115e480eb3b5
+PackageVersion: v0.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: zlib
+
+PackageName: zlib
+SPDXID: SPDXRef-5f0e21fd93d84c40
+PackageVersion: 1.2.12-r0
+FilesAnalyzed: false
+PackageLicenseConcluded: Zlib
+PackageLicenseDeclared: Zlib
+
+##### Package: github.com/mailgun/multibuf
+
+PackageName: github.com/mailgun/multibuf
+SPDXID: SPDXRef-5f86c95d6a9b3c4
+PackageVersion: v0.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/aws/aws-sdk-go
+
+PackageName: github.com/aws/aws-sdk-go
+SPDXID: SPDXRef-6099e3d3a18caf69
+PackageVersion: v1.39.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mitchellh/go-homedir
+
+PackageName: github.com/mitchellh/go-homedir
+SPDXID: SPDXRef-610d06b44a4a8159
+PackageVersion: v1.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/exoscale/egoscale
+
+PackageName: github.com/exoscale/egoscale
+SPDXID: SPDXRef-6188178b5aea6d3b
+PackageVersion: v0.67.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/go-autorest/logger
+
+PackageName: github.com/Azure/go-autorest/logger
+SPDXID: SPDXRef-6706ff5d9f469b71
+PackageVersion: v0.2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/googleapis/gax-go/v2
+
+PackageName: github.com/googleapis/gax-go/v2
+SPDXID: SPDXRef-6761d28a3b89a851
+PackageVersion: v2.0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/tv42/httpunix
+
+PackageName: github.com/tv42/httpunix
+SPDXID: SPDXRef-68190d7b99615709
+PackageVersion: v0.0.0-20150427012821-b75d8614f926
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/pkg/errors
+
+PackageName: github.com/pkg/errors
+SPDXID: SPDXRef-685389132451f652
+PackageVersion: v0.9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/go-autorest/autorest/validation
+
+PackageName: github.com/Azure/go-autorest/autorest/validation
+SPDXID: SPDXRef-68c553cc53c243ae
+PackageVersion: v0.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/docker/distribution
+
+PackageName: github.com/docker/distribution
+SPDXID: SPDXRef-695405043af5a904
+PackageVersion: v2.7.1+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/beorn7/perks
+
+PackageName: github.com/beorn7/perks
+SPDXID: SPDXRef-6b9b6c0861b0c35f
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/linode/linodego
+
+PackageName: github.com/linode/linodego
+SPDXID: SPDXRef-6c16efe76d9c6f3f
+PackageVersion: v0.31.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/raft-autopilot
+
+PackageName: github.com/hashicorp/raft-autopilot
+SPDXID: SPDXRef-6d1ca088dfdcc43e
+PackageVersion: v0.1.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/square/go-jose.v2
+
+PackageName: gopkg.in/square/go-jose.v2
+SPDXID: SPDXRef-6e27141c714c10cc
+PackageVersion: v2.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ssl_client
+
+PackageName: ssl_client
+SPDXID: SPDXRef-700846ae58ee6684
+PackageVersion: 1.34.1-r5
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+
+##### Package: github.com/nrdcg/dnspod-go
+
+PackageName: github.com/nrdcg/dnspod-go
+SPDXID: SPDXRef-70a2daf370f3e2b0
+PackageVersion: v0.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/time
+
+PackageName: golang.org/x/time
+SPDXID: SPDXRef-72eef22688125588
+PackageVersion: v0.0.0-20211116232009-f0f3c7e86c11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/go-autorest/autorest
+
+PackageName: github.com/Azure/go-autorest/autorest
+SPDXID: SPDXRef-7303ded2a2c11987
+PackageVersion: v0.11.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/google/gofuzz
+
+PackageName: github.com/google/gofuzz
+SPDXID: SPDXRef-7305e7be97686db1
+PackageVersion: v1.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/golang/protobuf
+
+PackageName: github.com/golang/protobuf
+SPDXID: SPDXRef-7458c198a0592ed5
+PackageVersion: v1.5.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/cloudflare/cloudflare-go
+
+PackageName: github.com/cloudflare/cloudflare-go
+SPDXID: SPDXRef-76c4f9e1ed1c7067
+PackageVersion: v0.20.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/opencontainers/go-digest
+
+PackageName: github.com/opencontainers/go-digest
+SPDXID: SPDXRef-773050dbc812f395
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/sys
+
+PackageName: golang.org/x/sys
+SPDXID: SPDXRef-77833acfba634005
+PackageVersion: v0.0.0-20220307203707-22a9840ba4d7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/pmezard/go-difflib
+
+PackageName: github.com/pmezard/go-difflib
+SPDXID: SPDXRef-791e43e76bbb4843
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/docker/go-connections
+
+PackageName: github.com/docker/go-connections
+SPDXID: SPDXRef-79b85ff92c333cec
+PackageVersion: v0.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/spf13/pflag
+
+PackageName: github.com/spf13/pflag
+SPDXID: SPDXRef-7a9dfc73927018f5
+PackageVersion: v1.0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: musl
+
+PackageName: musl
+SPDXID: SPDXRef-7ba593000576fba5
+PackageVersion: 1.2.2-r7
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: github.com/gofrs/uuid
+
+PackageName: github.com/gofrs/uuid
+SPDXID: SPDXRef-7c12d712a956614c
+PackageVersion: v4.0.0+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/consul
+
+PackageName: github.com/hashicorp/consul
+SPDXID: SPDXRef-7c9193a8590166af
+PackageVersion: v1.10.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/rancher/go-rancher-metadata
+
+PackageName: github.com/rancher/go-rancher-metadata
+SPDXID: SPDXRef-7d49fc859a6297be
+PackageVersion: v0.0.0-20200311180630-7f4c936a06ac
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/DataDog/sketches-go
+
+PackageName: github.com/DataDog/sketches-go
+SPDXID: SPDXRef-7d5c250d8e1d1e62
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/vinyldns/go-vinyldns
+
+PackageName: github.com/vinyldns/go-vinyldns
+SPDXID: SPDXRef-7d9acb729c35f83f
+PackageVersion: v0.9.16
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/shopspring/decimal
+
+PackageName: github.com/shopspring/decimal
+SPDXID: SPDXRef-7dbc2f87eb56f548
+PackageVersion: v1.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/circonus-labs/circonus-gometrics
+
+PackageName: github.com/circonus-labs/circonus-gometrics
+SPDXID: SPDXRef-7dca09cac3e3a0cb
+PackageVersion: v2.3.1+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/marten-seemann/qpack
+
+PackageName: github.com/marten-seemann/qpack
+SPDXID: SPDXRef-7dd399be77f2a0a4
+PackageVersion: v0.2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/modern-go/reflect2
+
+PackageName: github.com/modern-go/reflect2
+SPDXID: SPDXRef-7f10d0b70f045429
+PackageVersion: v1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/go-multierror
+
+PackageName: github.com/hashicorp/go-multierror
+SPDXID: SPDXRef-7f1b8a0d62ed7890
+PackageVersion: v1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ca-certificates
+
+PackageName: ca-certificates
+SPDXID: SPDXRef-7ffa79cab6eaad4e
+PackageVersion: 20211220-r0
+FilesAnalyzed: false
+PackageLicenseConcluded: MPL-2.0 AND MIT
+PackageLicenseDeclared: MPL-2.0 AND MIT
+
+##### Package: github.com/hashicorp/cronexpr
+
+PackageName: github.com/hashicorp/cronexpr
+SPDXID: SPDXRef-801234d6b3cdce37
+PackageVersion: v1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sigs.k8s.io/structured-merge-diff/v4
+
+PackageName: sigs.k8s.io/structured-merge-diff/v4
+SPDXID: SPDXRef-80a63c75bec8749
+PackageVersion: v4.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/ratelimit
+
+PackageName: go.uber.org/ratelimit
+SPDXID: SPDXRef-8169a865e1b48184
+PackageVersion: v0.0.0-20180316092928-c15da0234277
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/oauth2
+
+PackageName: golang.org/x/oauth2
+SPDXID: SPDXRef-818c8e38e10ec1e5
+PackageVersion: v0.0.0-20210402161424-2e8d93401602
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/ExpediaDotCom/haystack-client-go
+
+PackageName: github.com/ExpediaDotCom/haystack-client-go
+SPDXID: SPDXRef-822d6e90914e7063
+PackageVersion: v0.0.0-20190315171017-e7edbdf53a61
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/gophercloud/utils
+
+PackageName: github.com/gophercloud/utils
+SPDXID: SPDXRef-82e389eb8316d864
+PackageVersion: v0.0.0-20210216074907-f6de111f2eae
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/multierr
+
+PackageName: go.uber.org/multierr
+SPDXID: SPDXRef-843fa8656e1ce9e9
+PackageVersion: v1.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mitchellh/mapstructure
+
+PackageName: github.com/mitchellh/mapstructure
+SPDXID: SPDXRef-8466526127b9a17a
+PackageVersion: v1.4.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/sean-/seed
+
+PackageName: github.com/sean-/seed
+SPDXID: SPDXRef-85983447108e8581
+PackageVersion: v0.0.0-20170313163322-e2103e2c3529
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/google/btree
+
+PackageName: github.com/google/btree
+SPDXID: SPDXRef-867c97ac6e24aafd
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/fatih/color
+
+PackageName: github.com/fatih/color
+SPDXID: SPDXRef-87db6ab27b715285
+PackageVersion: v1.12.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/patrickmn/go-cache
+
+PackageName: github.com/patrickmn/go-cache
+SPDXID: SPDXRef-880843d13c00673f
+PackageVersion: v2.1.0+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/liquidweb/liquidweb-cli
+
+PackageName: github.com/liquidweb/liquidweb-cli
+SPDXID: SPDXRef-88a6cfce77dbadb6
+PackageVersion: v0.6.9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/labbsr0x/goh
+
+PackageName: github.com/labbsr0x/goh
+SPDXID: SPDXRef-891572eec22ff7e9
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/net
+
+PackageName: golang.org/x/net
+SPDXID: SPDXRef-8996344df0cfac13
+PackageVersion: v0.0.0-20220425223048-2871e0cb64e4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mailgun/timetools
+
+PackageName: github.com/mailgun/timetools
+SPDXID: SPDXRef-8affd14997244418
+PackageVersion: v0.0.0-20141028012446-7e6055773c51
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/DataDog/datadog-agent/pkg/obfuscate
+
+PackageName: github.com/DataDog/datadog-agent/pkg/obfuscate
+SPDXID: SPDXRef-8b33652b101893c0
+PackageVersion: v0.0.0-20211129110424-6491aa3bf583
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/googleapis/gnostic
+
+PackageName: github.com/googleapis/gnostic
+SPDXID: SPDXRef-8ca601791446ab88
+PackageVersion: v0.5.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/azure-sdk-for-go
+
+PackageName: github.com/Azure/azure-sdk-for-go
+SPDXID: SPDXRef-8d11dc153c552792
+PackageVersion: v40.3.0+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/kolo/xmlrpc
+
+PackageName: github.com/kolo/xmlrpc
+SPDXID: SPDXRef-8d79e05e9a407bec
+PackageVersion: v0.0.0-20200310150728-e0350524596b
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/serf
+
+PackageName: github.com/hashicorp/serf
+SPDXID: SPDXRef-8d85a8ebb051989d
+PackageVersion: v0.9.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/oracle/oci-go-sdk
+
+PackageName: github.com/oracle/oci-go-sdk
+SPDXID: SPDXRef-8e079c236e34c0d5
+PackageVersion: v24.3.0+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/joeshaw/multierror
+
+PackageName: github.com/joeshaw/multierror
+SPDXID: SPDXRef-8e082e2fc80ac9b9
+PackageVersion: v0.0.0-20140124173710-69b34d4ec901
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/influxdata/influxdb-client-go/v2
+
+PackageName: github.com/influxdata/influxdb-client-go/v2
+SPDXID: SPDXRef-8f9bda83dd2c1db6
+PackageVersion: v2.7.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/imdario/mergo
+
+PackageName: github.com/imdario/mergo
+SPDXID: SPDXRef-90a2a9933f0888a
+PackageVersion: v0.3.12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/armon/go-radix
+
+PackageName: github.com/armon/go-radix
+SPDXID: SPDXRef-93b6a67081fea8d2
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/philhofer/fwd
+
+PackageName: github.com/philhofer/fwd
+SPDXID: SPDXRef-9488d6d33a2926ee
+PackageVersion: v1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/xerrors
+
+PackageName: golang.org/x/xerrors
+SPDXID: SPDXRef-94b7e2b23f65e7bd
+PackageVersion: v0.0.0-20200804184101-5ec99f83aff1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/google/go-querystring
+
+PackageName: github.com/google/go-querystring
+SPDXID: SPDXRef-95d10eb727aea6a1
+PackageVersion: v1.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/vulcand/predicate
+
+PackageName: github.com/vulcand/predicate
+SPDXID: SPDXRef-989433c494545689
+PackageVersion: v1.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mitchellh/go-testing-interface
+
+PackageName: github.com/mitchellh/go-testing-interface
+SPDXID: SPDXRef-98b44985e917eb4c
+PackageVersion: v1.14.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/nrdcg/namesilo
+
+PackageName: github.com/nrdcg/namesilo
+SPDXID: SPDXRef-9af597ed05044518
+PackageVersion: v0.2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/elastic/go-sysinfo
+
+PackageName: github.com/elastic/go-sysinfo
+SPDXID: SPDXRef-9bd8a9f99df868d6
+PackageVersion: v1.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/modern-go/concurrent
+
+PackageName: github.com/modern-go/concurrent
+SPDXID: SPDXRef-9cfd23f6a689fed8
+PackageVersion: v0.0.0-20180306012644-bacd9c7ef1dd
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/go-autorest/autorest/date
+
+PackageName: github.com/Azure/go-autorest/autorest/date
+SPDXID: SPDXRef-9d341ff4ac07c9e
+PackageVersion: v0.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/cenkalti/backoff/v4
+
+PackageName: github.com/cenkalti/backoff/v4
+SPDXID: SPDXRef-9e91fc448445fc92
+PackageVersion: v4.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/go-autorest/autorest/azure/auth
+
+PackageName: github.com/Azure/go-autorest/autorest/azure/auth
+SPDXID: SPDXRef-9ecba461bee7912f
+PackageVersion: v0.5.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common
+
+PackageName: github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common
+SPDXID: SPDXRef-9f8c50ee8d995695
+PackageVersion: v1.0.287
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mvdan.cc/xurls/v2
+
+PackageName: mvdan.cc/xurls/v2
+SPDXID: SPDXRef-a01d4c5511060871
+PackageVersion: v2.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/gophercloud/gophercloud
+
+PackageName: github.com/gophercloud/gophercloud
+SPDXID: SPDXRef-a08938fe36e265d7
+PackageVersion: v0.16.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/sacloud/libsacloud
+
+PackageName: github.com/sacloud/libsacloud
+SPDXID: SPDXRef-a1c9f507b5df933
+PackageVersion: v1.36.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/go-logfmt/logfmt
+
+PackageName: github.com/go-logfmt/logfmt
+SPDXID: SPDXRef-a29a6b5258cbf678
+PackageVersion: v0.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/prometheus/procfs
+
+PackageName: github.com/prometheus/procfs
+SPDXID: SPDXRef-a444c11365183cd2
+PackageVersion: v0.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mailgun/ttlmap
+
+PackageName: github.com/mailgun/ttlmap
+SPDXID: SPDXRef-a4d7e17a183e4fb8
+PackageVersion: v0.0.0-20170619185759-c1c17f74874f
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/dnspod
+
+PackageName: github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/dnspod
+SPDXID: SPDXRef-a53eb8c65a741fbc
+PackageVersion: v1.0.287
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/jarcoal/httpmock
+
+PackageName: github.com/jarcoal/httpmock
+SPDXID: SPDXRef-a681d2c1a9ad41c6
+PackageVersion: v1.0.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/unrolled/render
+
+PackageName: github.com/unrolled/render
+SPDXID: SPDXRef-a754f130cd2a39ed
+PackageVersion: v1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/influxdata/influxdb1-client
+
+PackageName: github.com/influxdata/influxdb1-client
+SPDXID: SPDXRef-a8af2a75c3effb12
+PackageVersion: v0.0.0-20191209144304-8bf82d3c094d
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/OpenDNS/vegadns2client
+
+PackageName: github.com/OpenDNS/vegadns2client
+SPDXID: SPDXRef-a981b2eec9586fde
+PackageVersion: v0.0.0-20180418235048-a3fa4a771d87
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/softlayer/softlayer-go
+
+PackageName: github.com/softlayer/softlayer-go
+SPDXID: SPDXRef-a9afabc90dcb936a
+PackageVersion: v1.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/vulcand/oxy
+
+PackageName: github.com/vulcand/oxy
+SPDXID: SPDXRef-a9fea9cd0818b0e6
+PackageVersion: v1.4.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/prometheus/client_golang
+
+PackageName: github.com/prometheus/client_golang
+SPDXID: SPDXRef-aa7a646e74dd3fef
+PackageVersion: v1.11.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: golang.org/x/sync
+
+PackageName: golang.org/x/sync
+SPDXID: SPDXRef-aaa5e8d7f878ab8c
+PackageVersion: v0.0.0-20210220032951-036812b2e83c
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: k8s.io/utils
+
+PackageName: k8s.io/utils
+SPDXID: SPDXRef-abd80621adce72bc
+PackageVersion: v0.0.0-20210820185131-d34e5cb4466e
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/opentracing-contrib/go-observer
+
+PackageName: github.com/opentracing-contrib/go-observer
+SPDXID: SPDXRef-ad3f39006b9199c0
+PackageVersion: v0.0.0-20170622124052-a52f23424492
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/klauspost/compress
+
+PackageName: github.com/klauspost/compress
+SPDXID: SPDXRef-ae66cff9802d1d0a
+PackageVersion: v1.14.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/nrdcg/goinwx
+
+PackageName: github.com/nrdcg/goinwx
+SPDXID: SPDXRef-af3c859c131a5b0c
+PackageVersion: v0.8.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/uber/jaeger-lib
+
+PackageName: github.com/uber/jaeger-lib
+SPDXID: SPDXRef-af93df4fd45e0ee
+PackageVersion: v2.2.0+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssl1.1
+
+PackageName: libssl1.1
+SPDXID: SPDXRef-b120d2750efc0876
+PackageVersion: 1.1.1n-r0
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenSSL
+PackageLicenseDeclared: OpenSSL
+
+##### Package: github.com/coreos/go-systemd/v22
+
+PackageName: github.com/coreos/go-systemd/v22
+SPDXID: SPDXRef-b1bc36fd4fdeadf5
+PackageVersion: v22.3.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/nomad/api
+
+PackageName: github.com/hashicorp/nomad/api
+SPDXID: SPDXRef-b1c0568850a960ee
+PackageVersion: v0.0.0-20220506174431-b5665129cd1f
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/go-autorest/autorest/to
+
+PackageName: github.com/Azure/go-autorest/autorest/to
+SPDXID: SPDXRef-b213967aa89da10e
+PackageVersion: v0.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: alpine-keys
+
+PackageName: alpine-keys
+SPDXID: SPDXRef-b2985cb4bd26cfd8
+PackageVersion: 2.4-r1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: golang.org/x/text
+
+PackageName: golang.org/x/text
+SPDXID: SPDXRef-b4a255c34362c287
+PackageVersion: v0.3.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: alpine-baselayout
+
+PackageName: alpine-baselayout
+SPDXID: SPDXRef-b55d02716a14e81e
+PackageVersion: 3.2.0-r18
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+
+##### Package: github.com/dustin/go-humanize
+
+PackageName: github.com/dustin/go-humanize
+SPDXID: SPDXRef-b738d55b659b3e4b
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/looplab/fsm
+
+PackageName: github.com/looplab/fsm
+SPDXID: SPDXRef-b7caeb86538aac4a
+PackageVersion: v0.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/yaml.v3
+
+PackageName: gopkg.in/yaml.v3
+SPDXID: SPDXRef-b850c5fa093a5d0f
+PackageVersion: v3.0.0-20210107192922-496545a6307b
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mailru/easyjson
+
+PackageName: github.com/mailru/easyjson
+SPDXID: SPDXRef-b90186aa53ef087f
+PackageVersion: v0.7.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/stretchr/testify
+
+PackageName: github.com/stretchr/testify
+SPDXID: SPDXRef-b940f7760798a5ea
+PackageVersion: v1.7.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sigs.k8s.io/yaml
+
+PackageName: sigs.k8s.io/yaml
+SPDXID: SPDXRef-bac38037355b848d
+PackageVersion: v1.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/VividCortex/gohistogram
+
+PackageName: github.com/VividCortex/gohistogram
+SPDXID: SPDXRef-bb2c97b373ebd2bc
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: google.golang.org/genproto
+
+PackageName: google.golang.org/genproto
+SPDXID: SPDXRef-bcc4451c25564f8
+PackageVersion: v0.0.0-20210602131652-f16073e35f0c
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/traefik/paerser
+
+PackageName: github.com/traefik/paerser
+SPDXID: SPDXRef-be71fb145c822fa1
+PackageVersion: v0.1.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/openzipkin-contrib/zipkin-go-opentracing
+
+PackageName: github.com/openzipkin-contrib/zipkin-go-opentracing
+SPDXID: SPDXRef-be8cf8c15ab1450d
+PackageVersion: v0.4.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/go-retryablehttp
+
+PackageName: github.com/hashicorp/go-retryablehttp
+SPDXID: SPDXRef-be9a918b10364ccd
+PackageVersion: v0.7.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mimuret/golang-iij-dpf
+
+PackageName: github.com/mimuret/golang-iij-dpf
+SPDXID: SPDXRef-bf48f8a43fe2ee38
+PackageVersion: v0.7.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/cpu/goacmedns
+
+PackageName: github.com/cpu/goacmedns
+SPDXID: SPDXRef-c0482c6d41aebaab
+PackageVersion: v0.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/containous/minheap
+
+PackageName: github.com/containous/minheap
+SPDXID: SPDXRef-c04e60faff45c67c
+PackageVersion: v0.0.0-20190809180810-6e71eb837595
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/prometheus/client_model
+
+PackageName: github.com/prometheus/client_model
+SPDXID: SPDXRef-c07290e90335de01
+PackageVersion: v0.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.uber.org/zap
+
+PackageName: go.uber.org/zap
+SPDXID: SPDXRef-c073b3898250b7d2
+PackageVersion: v1.18.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/containerd/containerd
+
+PackageName: github.com/containerd/containerd
+SPDXID: SPDXRef-c0970b4c4baee1
+PackageVersion: v1.5.9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/cespare/xxhash/v2
+
+PackageName: github.com/cespare/xxhash/v2
+SPDXID: SPDXRef-c221c2dd3883282b
+PackageVersion: v2.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/DataDog/datadog-go
+
+PackageName: github.com/DataDog/datadog-go
+SPDXID: SPDXRef-c31af26b521e43d9
+PackageVersion: v4.8.2+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: google.golang.org/grpc
+
+PackageName: google.golang.org/grpc
+SPDXID: SPDXRef-c34feba73756929b
+PackageVersion: v1.38.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/containous/go-http-auth
+
+PackageName: github.com/containous/go-http-auth
+SPDXID: SPDXRef-c37eb0b8590b65e9
+PackageVersion: v0.4.1-0.20200324110947-a37a7636d23e
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/golang/groupcache
+
+PackageName: github.com/golang/groupcache
+SPDXID: SPDXRef-c3ca7fd8fd34e021
+PackageVersion: v0.0.0-20210331224755-41bb18bfe9da
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/boombuler/barcode
+
+PackageName: github.com/boombuler/barcode
+SPDXID: SPDXRef-c4de100948855192
+PackageVersion: v1.0.1-0.20190219062509-6c824513bacc
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/fatih/structs
+
+PackageName: github.com/fatih/structs
+SPDXID: SPDXRef-c57eaacf90829db
+PackageVersion: v1.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: musl-utils
+
+PackageName: musl-utils
+SPDXID: SPDXRef-c64f01c6e7a1d24f
+PackageVersion: 1.2.2-r7
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT BSD GPL2+
+PackageLicenseDeclared: MIT BSD GPL2+
+
+##### Package: github.com/vultr/govultr/v2
+
+PackageName: github.com/vultr/govultr/v2
+SPDXID: SPDXRef-c7d82466374d71d8
+PackageVersion: v2.16.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/jmespath/go-jmespath
+
+PackageName: github.com/jmespath/go-jmespath
+SPDXID: SPDXRef-c801fc3023909ff1
+PackageVersion: v0.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcrypto1.1
+
+PackageName: libcrypto1.1
+SPDXID: SPDXRef-cb14e1e574af0795
+PackageVersion: 1.1.1n-r0
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenSSL
+PackageLicenseDeclared: OpenSSL
+
+##### Package: github.com/mattn/go-isatty
+
+PackageName: github.com/mattn/go-isatty
+SPDXID: SPDXRef-cb6f63235f4c606b
+PackageVersion: v0.0.14
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/tinylib/msgp
+
+PackageName: github.com/tinylib/msgp
+SPDXID: SPDXRef-ccb4bfc8a148cc73
+PackageVersion: v1.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/form3tech-oss/jwt-go
+
+PackageName: github.com/form3tech-oss/jwt-go
+SPDXID: SPDXRef-ccc7e44b5d94bba5
+PackageVersion: v3.2.3+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/go-kit/kit
+
+PackageName: github.com/go-kit/kit
+SPDXID: SPDXRef-ccffdb88293bf7ad
+PackageVersion: v0.10.1-0.20200915143503-439c4d2ed3ea
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/google/go-cmp
+
+PackageName: github.com/google/go-cmp
+SPDXID: SPDXRef-cdb98769d60502c5
+PackageVersion: v0.5.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/go-autorest/autorest/azure/cli
+
+PackageName: github.com/Azure/go-autorest/autorest/azure/cli
+SPDXID: SPDXRef-ce73495f25b41635
+PackageVersion: v0.4.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/unrolled/secure
+
+PackageName: github.com/unrolled/secure
+SPDXID: SPDXRef-cf61491582c3cc85
+PackageVersion: v1.0.9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/go-sockaddr
+
+PackageName: github.com/hashicorp/go-sockaddr
+SPDXID: SPDXRef-cfd74591ceffc7ef
+PackageVersion: v1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/traefik/yaegi
+
+PackageName: github.com/traefik/yaegi
+SPDXID: SPDXRef-cfe545f9b03ec6a8
+PackageVersion: v0.13.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: google.golang.org/api
+
+PackageName: google.golang.org/api
+SPDXID: SPDXRef-d089b1ba34d3ca67
+PackageVersion: v0.44.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/ns1/ns1-go.v2
+
+PackageName: gopkg.in/ns1/ns1-go.v2
+SPDXID: SPDXRef-d09cd36f72a6cb36
+PackageVersion: v2.6.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mattn/go-colorable
+
+PackageName: github.com/mattn/go-colorable
+SPDXID: SPDXRef-d0e702335ddb5e1
+PackageVersion: v0.1.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/uber/jaeger-client-go
+
+PackageName: github.com/uber/jaeger-client-go
+SPDXID: SPDXRef-d14fa1766e507560
+PackageVersion: v2.30.0+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/fsnotify.v1
+
+PackageName: gopkg.in/fsnotify.v1
+SPDXID: SPDXRef-d3a238308810db6e
+PackageVersion: v1.4.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/opentracing/opentracing-go
+
+PackageName: github.com/opentracing/opentracing-go
+SPDXID: SPDXRef-d4ccd744f3a5659c
+PackageVersion: v1.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/prometheus/common
+
+PackageName: github.com/prometheus/common
+SPDXID: SPDXRef-d8c7532be3dcd18a
+PackageVersion: v0.26.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/docker/docker
+
+PackageName: github.com/docker/docker
+SPDXID: SPDXRef-da0c66dcbb622edc
+PackageVersion: v20.10.7+incompatible
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/dgraph-io/ristretto
+
+PackageName: github.com/dgraph-io/ristretto
+SPDXID: SPDXRef-da5921912e710258
+PackageVersion: v0.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/mitchellh/hashstructure
+
+PackageName: github.com/mitchellh/hashstructure
+SPDXID: SPDXRef-dabc5d9b2e4af37b
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/coreos/go-systemd
+
+PackageName: github.com/coreos/go-systemd
+SPDXID: SPDXRef-daf7ab4bfcdc380a
+PackageVersion: v0.0.0-20191104093116-d3cd4ed1dbcf
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/nrdcg/freemyip
+
+PackageName: github.com/nrdcg/freemyip
+SPDXID: SPDXRef-dbe3e37a2d79a832
+PackageVersion: v0.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/google/uuid
+
+PackageName: github.com/google/uuid
+SPDXID: SPDXRef-dd4de212af69e1cd
+PackageVersion: v1.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/go-uuid
+
+PackageName: github.com/hashicorp/go-uuid
+SPDXID: SPDXRef-dd4f460ae53dd2c3
+PackageVersion: v1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/marten-seemann/qtls-go1-17
+
+PackageName: github.com/marten-seemann/qtls-go1-17
+SPDXID: SPDXRef-de63f1361972686c
+PackageVersion: v0.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/nrdcg/auroradns
+
+PackageName: github.com/nrdcg/auroradns
+SPDXID: SPDXRef-e0ca4772b328886d
+PackageVersion: v1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ca-certificates-bundle
+
+PackageName: ca-certificates-bundle
+SPDXID: SPDXRef-e0e8542a6089d67f
+PackageVersion: 20211220-r0
+FilesAnalyzed: false
+PackageLicenseConcluded: MPL-2.0 AND MIT
+PackageLicenseDeclared: MPL-2.0 AND MIT
+
+##### Package: golang.org/x/mod
+
+PackageName: golang.org/x/mod
+SPDXID: SPDXRef-e12fc2d217c7bbe9
+PackageVersion: v0.4.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/go-rootcerts
+
+PackageName: github.com/hashicorp/go-rootcerts
+SPDXID: SPDXRef-e43269f405d11ed5
+PackageVersion: v1.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.elastic.co/apm/module/apmot
+
+PackageName: go.elastic.co/apm/module/apmot
+SPDXID: SPDXRef-e438a22764fce2a1
+PackageVersion: v1.13.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/matttproud/golang_protobuf_extensions
+
+PackageName: github.com/matttproud/golang_protobuf_extensions
+SPDXID: SPDXRef-e5cadfda431d52ea
+PackageVersion: v1.0.2-0.20181231171920-c182affec369
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/segmentio/fasthash
+
+PackageName: github.com/segmentio/fasthash
+SPDXID: SPDXRef-e6c9a37b04502d9c
+PackageVersion: v1.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/go-msgpack
+
+PackageName: github.com/hashicorp/go-msgpack
+SPDXID: SPDXRef-e723e7d8391e7628
+PackageVersion: v0.5.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/sirupsen/logrus
+
+PackageName: github.com/sirupsen/logrus
+SPDXID: SPDXRef-e79fce90076961ea
+PackageVersion: v1.8.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/nrdcg/desec
+
+PackageName: github.com/nrdcg/desec
+SPDXID: SPDXRef-e950291237857783
+PackageVersion: v0.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/redis.v5
+
+PackageName: gopkg.in/redis.v5
+SPDXID: SPDXRef-ea0f745b431571eb
+PackageVersion: v5.2.9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: k8s.io/klog/v2
+
+PackageName: k8s.io/klog/v2
+SPDXID: SPDXRef-eaddb401fd6d2394
+PackageVersion: v2.10.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/smartystreets/go-aws-auth
+
+PackageName: github.com/smartystreets/go-aws-auth
+SPDXID: SPDXRef-eae2afb6f7a30cad
+PackageVersion: v0.0.0-20180515143844-0c1422d1fdb9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Masterminds/sprig/v3
+
+PackageName: github.com/Masterminds/sprig/v3
+SPDXID: SPDXRef-eb68a8030259100f
+PackageVersion: v3.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/go-acme/lego/v4
+
+PackageName: github.com/go-acme/lego/v4
+SPDXID: SPDXRef-ee8f3e785fce58af
+PackageVersion: v4.7.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: go.etcd.io/etcd/client/pkg/v3
+
+PackageName: go.etcd.io/etcd/client/pkg/v3
+SPDXID: SPDXRef-ef31cf1ef07730d7
+PackageVersion: v3.5.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/gravitational/trace
+
+PackageName: github.com/gravitational/trace
+SPDXID: SPDXRef-f0b3f3d5c59b2c84
+PackageVersion: v1.1.16-0.20220114165159-14a9a7dd6aaf
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: k8s.io/apiextensions-apiserver
+
+PackageName: k8s.io/apiextensions-apiserver
+SPDXID: SPDXRef-f11c587496528bc0
+PackageVersion: v0.21.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/Azure/go-autorest/tracing
+
+PackageName: github.com/Azure/go-autorest/tracing
+SPDXID: SPDXRef-f1de0765f50de9e3
+PackageVersion: v0.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/HdrHistogram/hdrhistogram-go
+
+PackageName: github.com/HdrHistogram/hdrhistogram-go
+SPDXID: SPDXRef-f345a93b1d3f46e7
+PackageVersion: v1.1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/huandu/xstrings
+
+PackageName: github.com/huandu/xstrings
+SPDXID: SPDXRef-f73d4525416c060a
+PackageVersion: v1.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gopkg.in/ini.v1
+
+PackageName: gopkg.in/ini.v1
+SPDXID: SPDXRef-f76cb6690edb6a4a
+PackageVersion: v1.62.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/hashicorp/errwrap
+
+PackageName: github.com/hashicorp/errwrap
+SPDXID: SPDXRef-f7cced54c79a819a
+PackageVersion: v1.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/kvtools/valkeyrie
+
+PackageName: github.com/kvtools/valkeyrie
+SPDXID: SPDXRef-f81decaaf890753b
+PackageVersion: v0.4.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: k8s.io/client-go
+
+PackageName: k8s.io/client-go
+SPDXID: SPDXRef-f91eb426b684da4d
+PackageVersion: v0.22.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: apk-tools
+
+PackageName: apk-tools
+SPDXID: SPDXRef-f9a0d9fb7137e78d
+PackageVersion: 2.12.7-r3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+
+##### Package: github.com/cheekybits/genny
+
+PackageName: github.com/cheekybits/genny
+SPDXID: SPDXRef-fc35700c1429fea4
+PackageVersion: v1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/transip/gotransip/v6
+
+PackageName: github.com/transip/gotransip/v6
+SPDXID: SPDXRef-fc5210c9772fe68a
+PackageVersion: v6.6.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/ovh/go-ovh
+
+PackageName: github.com/ovh/go-ovh
+SPDXID: SPDXRef-fe98d91a3f42a400
+PackageVersion: v1.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/iij/doapi
+
+PackageName: github.com/iij/doapi
+SPDXID: SPDXRef-fe9cdbfc3239370d
+PackageVersion: v0.0.0-20190504054126-0bbf12d6d7df
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: google.golang.org/protobuf
+
+PackageName: google.golang.org/protobuf
+SPDXID: SPDXRef-fec2e8f745f01d65
+PackageVersion: v1.27.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/namedotcom/go
+
+PackageName: github.com/namedotcom/go
+SPDXID: SPDXRef-ff055f9e0126d125
+PackageVersion: v0.0.0-20180403034216-08470befbe04
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/dnsimple/dnsimple-go
+
+PackageName: github.com/dnsimple/dnsimple-go
+SPDXID: SPDXRef-ff3ba0b2f492e99e
+PackageVersion: v0.70.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: github.com/k0kubun/go-ansi
+
+PackageName: github.com/k0kubun/go-ansi
+SPDXID: SPDXRef-ffc70ca6b9ea531a
+PackageVersion: v0.0.0-20180517002512-3bf9e2903213
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
