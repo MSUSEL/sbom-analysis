@@ -175,7 +175,7 @@ pub struct Layer {
 pub struct Distro {
     pub name: String,
     pub version: String,
-    pub id_like: Vec<String>,
+    pub id_like: Option<Vec<String>>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

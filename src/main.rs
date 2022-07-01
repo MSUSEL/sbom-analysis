@@ -16,21 +16,42 @@ use std::sync::Arc;
 use dotenv::dotenv;
 use futures::lock::Mutex;
 use crate::api::vt::VtApi;
-use crate::format::grype::Grype;
-use crate::format::read_file;
 use crate::format::syft::Syft;
 
 #[tokio::main]
 async fn main() {
     dotenv().ok();
-    let _: Grype = read_file("cache/itzg/minecraft-server/java8/grype.json").unwrap();
-    let _: Grype = read_file("cache/itzg/minecraft-server/java11/grype.json").unwrap();
-    let _: Grype = read_file("cache/itzg/minecraft-server/java17/grype.json").unwrap();
-    let _: Grype = read_file("cache/molkars/pbd/1.0/grype.json").unwrap();
-    let _: Grype = read_file("cache/alpine/latest/grype.json").unwrap();
-    let _: Grype = read_file("cache/nginx/latest/grype.json").unwrap();
-    let _: Grype = read_file("cache/ubuntu/latest/grype.json").unwrap();
     // get_file_reports(&syft).await;
+}
+
+#[cfg(test)]
+mod tests {
+    use std::collections::LinkedList;
+    use std::path::PathBuf;
+    use crate::format::grype::Grype;
+    use std::fs;
+    use crate::format::read_file;
+
+    #[tokio::test]
+    async fn test_grype() {
+
+        let mut queue = LinkedList::new();
+        queue.push_back(PathBuf::from("cache"));
+        while let Some(next) = queue.pop_front() {
+            if !next.is_dir() {
+                if next.file_name().unwrap().to_string_lossy().to_string() == "grype.json" {
+                    println!("Reading Grype: {}", next.display());
+                    let _: Grype = read_file(next).unwrap();
+                }
+            } else {
+                for entry in fs::read_dir(next).unwrap() {
+                    let entry = entry.unwrap();
+                    let path = entry.path();
+                    queue.push_back(path);
+                }
+            }
+        }
+    }
 }
 
 #[allow(dead_code)]

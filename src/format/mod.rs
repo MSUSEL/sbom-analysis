@@ -16,7 +16,6 @@ pub enum Error {
 }
 
 pub fn read_file<T: DeserializeOwned>(path: impl AsRef<Path>) -> Result<T, Error> {
-    println!("Reading file: {:?}", path.as_ref());
     let file = std::fs::File::open(path).map_err(Error::Io)?;
     let reader = std::io::BufReader::new(file);
     serde_json::from_reader(reader).map_err(Error::Serde)
