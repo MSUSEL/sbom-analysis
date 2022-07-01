@@ -2,7 +2,7 @@
 
 use std::fmt::{Display, Formatter};
 use std::str::FromStr;
-use reqwest::{Client, Error};
+use reqwest::{Client};
 use reqwest::header::{HeaderMap, HeaderValue};
 
 pub struct NvdApi(Client);
@@ -13,14 +13,25 @@ pub struct CveId {
     id: u32,
 }
 
+pub enum CveIdError {
+    InvalidYear,
+    InvalidId,
+}
+
 impl TryFrom<String> for CveId {
-    type Error = ();
+    type Error = CveIdError;
 
     fn try_from(value: String) -> Result<Self, Self::Error> {
         let mut parts = value.split('-');
         let _ = parts.next();
-        let year = u16::from_str(parts.next().ok_or(())?).map_err(|_| ())?;
-        let id = u32::from_str(parts.next().ok_or(())?).map_err(|_| ())?;
+        let year = parts.next()
+            .ok_or(())
+            .and_then(|year| u16::from_str(year).map_err(|_| ()))
+            .map_err(|_| CveIdError::InvalidYear)?;
+        let id = parts.next()
+            .ok_or(())
+            .and_then(|id| u32::from_str(id).map_err(|_| ()))
+            .map_err(|_| CveIdError::InvalidId)?;
         Ok(Self { year, id })
     }
 }
@@ -31,8 +42,8 @@ impl Display for CveId {
     }
 }
 
-enum Issue {
-    Web(Error),
+pub enum Error {
+    Web(reqwest::Error),
     Json(serde_json::Error),
 }
 
@@ -46,16 +57,5 @@ impl NvdApi {
             .build()
             .ok()
             .map(|v| Self(v))
-    }
-
-    async fn get_cve(&self, _cve_id: CveId) -> Result<CveId, Issue> {
-        // serde_json::from_str(&self.0
-        //     .get(&format!("https://nvd.nist.gov/vuln/detail/{}", cve_id))
-        //     .send()
-        //     .await
-        //     .map_err(|e| Issue::Web(e))?
-        //     // .text().await.map_err(|e| Issue::Web(e))?)
-        //     .map_err(|e| Issue::Json(e))
-        todo!()
     }
 }

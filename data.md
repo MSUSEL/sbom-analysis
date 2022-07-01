@@ -36,6 +36,8 @@
 1) The tools do not detect the presence of all child projects, only the artifacts of a very select group of project types.
    - This means that deployment context cannot be accurately applied to subcomponents.
    - This is a limitation of the tools. SBOMs created by hand would be more accurate.
+   - This prevents a "tree-based" approach to the analysis. Instead, we must use "heap-based" where we take into
+     account the dependencies of every subcomponent as if it were all part of the main project
 2) CVSS judges a vulnerability globally, not based on deployment.
     - A service may have a high network vulnerability, but it may be deployed in a no-network environment.
     - A service may have a high vulnerability, but it may be deployed in a no-vulnerability environment.

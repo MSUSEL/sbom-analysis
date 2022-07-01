@@ -1,8 +1,4 @@
 use std::collections::BTreeMap;
-use std::fs::File;
-use std::io;
-use std::io::BufReader;
-use std::path::{Path};
 use chrono::{DateTime, Utc};
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -63,20 +59,6 @@ pub struct TrivyJson {
     pub artifact_type: String,
     pub metadata: TrivyMetadata,
     pub results: Vec<TrivyResult>,
-}
-
-#[derive(Debug)]
-pub enum Error {
-    Io(io::Error),
-    Serde(serde_json::Error),
-}
-
-impl TrivyJson {
-    pub fn from_file(path: impl AsRef<Path>) -> Result<TrivyJson, Error> {
-        let file = File::open(path).map_err(Error::Io)?;
-        let reader = BufReader::new(file);
-        serde_json::from_reader(reader).map_err(Error::Serde)
-    }
 }
 
 #[derive(Serialize, Deserialize, Debug)]

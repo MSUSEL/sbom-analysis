@@ -14,6 +14,19 @@ pub struct Syft {
     pub source: Source,
 }
 
+impl Syft {
+    pub fn get_file_digests<T: FromIterator<String>>(&self) -> T {
+        self.
+            artifacts.iter()
+            .filter_map(|v| v.metadata.as_ref()
+                .and_then(|v| v.digest.as_ref()))
+            .flat_map(|f| f.iter())
+            .map(|digest| &digest.value)
+            .cloned()
+            .collect()
+    }
+}
+
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Relationship {
     pub child: String,
