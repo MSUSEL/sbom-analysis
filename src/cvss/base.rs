@@ -135,7 +135,7 @@ impl AttackComplexity {
     pub fn value(&self) -> f32 {
         match self {
             AttackComplexity::Low => 0.77,
-            AttackComplexity::High => 1.22,
+            AttackComplexity::High => 0.44,
         }
     }
 }
@@ -146,7 +146,7 @@ impl PrivilegesRequired {
             PrivilegesRequired::None => 0.85,
             PrivilegesRequired::Low => match scope {
                 Scope::Unchanged => 0.62,
-                Scope::Changed => 0.5,
+                Scope::Changed => 0.68,
             },
             PrivilegesRequired::High => match scope {
                 Scope::Unchanged => 0.27,

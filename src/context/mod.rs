@@ -3,7 +3,7 @@
 // TODO: Network badness goes up as more network vulns are detected?
 // TODO: Implement score? Does it need a CVSS score? Vulnerabilies? Sbom?
 
-use crate::cvss::BaseMetric;
+use crate::cvss::{AttackVector, BaseMetric, PrivilegesRequired, Scope, UserInteraction};
 
 #[derive(Debug, Clone)]
 pub enum NetworkConfiguration {
@@ -21,6 +21,7 @@ pub enum RemoteAccess {
 
 #[derive(Debug, Clone)]
 pub enum InformationSensitivity {
+    Useless,
     Insensitive,
     Sensitive,
 }
@@ -60,6 +61,98 @@ pub struct DeploymentContext {
 4. Permissions
     Affects the integrity impact, availability impact, and privileges required.
  */
-fn score(_ctx: &DeploymentContext, _subcomponent: &BaseMetric) -> f32 {
-    todo!()
+fn score(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
+    let network_potential = match subcomponent.attack_vector {
+        AttackVector::Network => 1.0,
+        AttackVector::Adjacent => 0.8,
+        AttackVector::Local => 0.15,
+        AttackVector::Physical => 0.03,
+    };
+    let network_potential = network_potential * match ctx.network_connection {
+        NetworkConfiguration::Public => 1.0,
+        NetworkConfiguration::Internal => 0.6,
+        NetworkConfiguration::Isolated => 0.0,
+    };
+    let remote_access_potential = match subcomponent.user_interaction {
+        UserInteraction::None => 1.0,
+        UserInteraction::Required => 0.8,
+    };
+    let remote_access_potential = remote_access_potential * match ctx.remote_access {
+        RemoteAccess::Public => 1.0,
+        RemoteAccess::VPN => 0.5,
+        RemoteAccess::None => 0.0,
+    };
+    let information_breach_potential = match subcomponent.scope {
+        Scope::Unchanged => 0.8,
+        Scope::Changed => 1.0,
+    };
+    let information_breach_potential = information_breach_potential * match ctx.information_sensitivity {
+        InformationSensitivity::Useless => 0.0,
+        InformationSensitivity::Insensitive => 0.6,
+        InformationSensitivity::Sensitive => 1.0,
+    };
+    let permissions_potential = match subcomponent.privileges_required {
+        PrivilegesRequired::None => 1.0,
+        PrivilegesRequired::Low => 0.8,
+        PrivilegesRequired::High => 0.2,
+    };
+    let permissions_potential = (permissions_potential - match ctx.permissions {
+        Permissions::Full => 0f32,
+        Permissions::Restricted => 0.2,
+        Permissions::Required => 0.6,
+        Permissions::None => 1.0,
+    }).max(0f32);
+    let file_system_effect = match subcomponent.scope {
+        Scope::Unchanged => 0.8,
+        Scope::Changed => 1.0,
+    };
+    let file_system_access_potential = file_system_effect * match ctx.file_system_access {
+        FileSystemAccess::Full => 1.0,
+        FileSystemAccess::Restricted => 0.8,
+        FileSystemAccess::Required => 0.2,
+        FileSystemAccess::None => 0.0,
+    };
+    const WEIGHTS: [f32; 5] = [1.2, 1.1, 0.9, 1.0, 0.8];
+    assert!((WEIGHTS.iter().sum::<f32>() - 5.0).abs() < 0.0001);
+    let vals: [f32; 5] = [
+        network_potential,
+        remote_access_potential,
+        information_breach_potential,
+        permissions_potential,
+        file_system_access_potential
+    ];
+    WEIGHTS.iter().zip(vals.iter()).map(|(w, v)| {
+        let val = v * w;
+        println!("{:.2} | Weight {:.3} => {:.2}", v, w, v * w);
+        val
+    }).sum::<f32>()
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::cvss::*;
+
+    use super::*;
+
+    #[test]
+    fn check_score() {
+        let ctx = DeploymentContext {
+            network_connection: NetworkConfiguration::Public,
+            remote_access: RemoteAccess::Public,
+            information_sensitivity: InformationSensitivity::Sensitive,
+            permissions: Permissions::Full,
+            file_system_access: FileSystemAccess::Full,
+        };
+        let base = BaseMetric {
+            attack_vector: AttackVector::Network,
+            attack_complexity: AttackComplexity::Low,
+            privileges_required: PrivilegesRequired::None,
+            user_interaction: UserInteraction::None,
+            scope: Scope::Changed,
+            confidentiality_impact: ImpactValue::High,
+            integrity_impact: ImpactValue::High,
+            availability_impact: ImpactValue::High,
+        };
+        println!("Sum: {:.2}", score(&ctx, &base));
+    }
 }
