@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 
+use std::fmt::{Display, Formatter};
 use std::path::Path;
 use serde::de::DeserializeOwned;
 
@@ -13,6 +14,15 @@ pub mod grype;
 pub enum Error {
     Io(std::io::Error),
     Serde(serde_json::Error),
+}
+
+impl Display for Error {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        match self {
+            Error::Io(e) => write!(f, "IO error: {}", e),
+            Error::Serde(e) => write!(f, "Serde error: {}", e),
+        }
+    }
 }
 
 pub fn read_file<T: DeserializeOwned>(path: impl AsRef<Path>) -> Result<T, Error> {

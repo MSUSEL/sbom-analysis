@@ -1,4 +1,6 @@
+use std::collections::BTreeMap;
 use crate::cvss::roundup;
+use crate::format::grype::Cvss;
 
 #[derive(Debug, Clone)]
 pub struct BaseMetric {
@@ -10,6 +12,79 @@ pub struct BaseMetric {
     pub confidentiality_impact: ImpactValue,
     pub integrity_impact: ImpactValue,
     pub availability_impact: ImpactValue,
+}
+
+impl BaseMetric {
+    pub fn from_grype(cvss: &Cvss) -> Option<Self> {
+        let mut parts = cvss.vector.split('/').peekable();
+        if parts.peek().map(|v| *v != "CVSS:3.1").unwrap_or(true) {
+            return None;
+        }
+        parts.next();
+        let values = BTreeMap::from_iter(parts.filter_map(|v| {
+            println!("{}", v);
+            let mut v = v.split(':');
+            v.next()
+                .and_then(|k| v.next().map(|v| (k, v)))
+        }));
+        println!("{:?}", values);
+        let attack_vector = match *values.get("AV")? {
+            "N" => AttackVector::Network,
+            "A" => AttackVector::Adjacent,
+            "L" => AttackVector::Local,
+            "P" => AttackVector::Physical,
+            _ => return None,
+        };
+        let attack_complexity = match *values.get("AC")? {
+            "H" => AttackComplexity::High,
+            "L" => AttackComplexity::Low,
+            _ => return None,
+        };
+        let privileges_required = match *values.get("PR")? {
+            "N" => PrivilegesRequired::None,
+            "L" => PrivilegesRequired::Low,
+            "H" => PrivilegesRequired::High,
+            _ => return None,
+        };
+        let user_interaction = match *values.get("UI")? {
+            "R" => UserInteraction::Required,
+            "N" => UserInteraction::None,
+            _ => return None,
+        };
+        let scope = match *values.get("S")? {
+            "U" => Scope::Unchanged,
+            "C" => Scope::Changed,
+            _ => return None,
+        };
+        let confidentiality_impact = match *values.get("C")? {
+            "N" => ImpactValue::None,
+            "L" => ImpactValue::Low,
+            "H" => ImpactValue::High,
+            _ => return None,
+        };
+        let integrity_impact = match *values.get("I")? {
+            "N" => ImpactValue::None,
+            "L" => ImpactValue::Low,
+            "H" => ImpactValue::High,
+            _ => return None,
+        };
+        let availability_impact = match *values.get("A")? {
+            "N" => ImpactValue::None,
+            "L" => ImpactValue::Low,
+            "H" => ImpactValue::High,
+            _ => return None,
+        };
+        Some(BaseMetric {
+            attack_vector,
+            attack_complexity,
+            privileges_required,
+            user_interaction,
+            scope,
+            confidentiality_impact,
+            integrity_impact,
+            availability_impact,
+        })
+    }
 }
 
 #[derive(Debug, Clone)]

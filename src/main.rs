@@ -3,55 +3,41 @@ mod format;
 mod cvss;
 mod api;
 mod context;
+#[cfg(test)]
+mod test;
 
 #[macro_use]
 extern crate serde;
 extern crate tokio;
 extern crate futures;
 
+use std::collections::linked_list::LinkedList;
 use std::io::Write;
-use std::collections::LinkedList;
 use std::io::{stdout};
 use std::sync::Arc;
 use dotenv::dotenv;
 use futures::lock::Mutex;
 use crate::api::vt::VtApi;
+use crate::context::{ContextRunner, DeploymentContext, FileSystemAccess, InformationSensitivity, NetworkConfiguration, Permissions, RemoteAccess};
+use crate::format::grype::Grype;
+use crate::format::read_file;
 use crate::format::syft::Syft;
 
 #[tokio::main]
 async fn main() {
     dotenv().ok();
-    // get_file_reports(&syft).await;
-}
 
-#[cfg(test)]
-mod tests {
-    use std::collections::LinkedList;
-    use std::path::PathBuf;
-    use crate::format::grype::Grype;
-    use std::fs;
-    use crate::format::read_file;
-
-    #[tokio::test]
-    async fn test_grype() {
-
-        let mut queue = LinkedList::new();
-        queue.push_back(PathBuf::from("cache"));
-        while let Some(next) = queue.pop_front() {
-            if !next.is_dir() {
-                if next.file_name().unwrap().to_string_lossy().to_string() == "grype.json" {
-                    println!("Reading Grype: {}", next.display());
-                    let _: Grype = read_file(next).unwrap();
-                }
-            } else {
-                for entry in fs::read_dir(next).unwrap() {
-                    let entry = entry.unwrap();
-                    let path = entry.path();
-                    queue.push_back(path);
-                }
-            }
-        }
-    }
+    let grype: Grype = read_file("cache/molkars/pbd/1.0/grype.json").unwrap();
+    let analyzer = ContextRunner::new()
+        .grype(&grype);
+    let ctx = DeploymentContext {
+        file_system_access: FileSystemAccess::Required,
+        information_sensitivity: InformationSensitivity::Insensitive,
+        permissions: Permissions::Restricted,
+        remote_access: RemoteAccess::None,
+        network_connection: NetworkConfiguration::Public
+    };
+    analyzer.calculate(&ctx);
 }
 
 #[allow(dead_code)]

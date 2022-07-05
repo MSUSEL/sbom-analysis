@@ -3,6 +3,10 @@
 // TODO: Network badness goes up as more network vulns are detected?
 // TODO: Implement score? Does it need a CVSS score? Vulnerabilies? Sbom?
 
+mod runner;
+
+pub use runner::*;
+
 use crate::cvss::{AttackVector, BaseMetric, PrivilegesRequired, Scope, UserInteraction};
 
 #[derive(Debug, Clone)]
@@ -61,7 +65,7 @@ pub struct DeploymentContext {
 4. Permissions
     Affects the integrity impact, availability impact, and privileges required.
  */
-fn score(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
+fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
     let network_potential = match subcomponent.attack_vector {
         AttackVector::Network => 1.0,
         AttackVector::Adjacent => 0.8,
@@ -88,7 +92,7 @@ fn score(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
     };
     let information_breach_potential = information_breach_potential * match ctx.information_sensitivity {
         InformationSensitivity::Useless => 0.0,
-        InformationSensitivity::Insensitive => 0.6,
+        InformationSensitivity::Insensitive => 0.5,
         InformationSensitivity::Sensitive => 1.0,
     };
     let permissions_potential = match subcomponent.privileges_required {
@@ -137,7 +141,7 @@ mod tests {
     #[test]
     fn check_score() {
         let ctx = DeploymentContext {
-            network_connection: NetworkConfiguration::Public,
+            network_connection: NetworkConfiguration::Isolated,
             remote_access: RemoteAccess::Public,
             information_sensitivity: InformationSensitivity::Sensitive,
             permissions: Permissions::Full,
@@ -153,6 +157,6 @@ mod tests {
             integrity_impact: ImpactValue::High,
             availability_impact: ImpactValue::High,
         };
-        println!("Sum: {:.2}", score(&ctx, &base));
+        println!("Sum: {:.2}", score_cvss(&ctx, &base));
     }
 }
