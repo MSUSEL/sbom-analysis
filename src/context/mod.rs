@@ -1,7 +1,6 @@
 #![allow(dead_code)]
 
 // TODO: Network badness goes up as more network vulns are detected?
-// TODO: Implement score? Does it need a CVSS score? Vulnerabilies? Sbom?
 
 mod runner;
 
@@ -27,13 +26,15 @@ pub enum RemoteAccess {
 pub enum InformationSensitivity {
     Useless,
     Insensitive,
-    Sensitive,
+    Identifying,
+    Damaging,
 }
 
 #[derive(Debug, Clone)]
 pub enum Permissions {
     Full,
     Restricted,
+    Standard,
     Required,
     None,
 }
@@ -42,6 +43,7 @@ pub enum Permissions {
 pub enum FileSystemAccess {
     Full,
     Restricted,
+    Standard,
     Required,
     None,
 }
@@ -68,13 +70,13 @@ pub struct DeploymentContext {
 fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
     let network_potential = match subcomponent.attack_vector {
         AttackVector::Network => 1.0,
-        AttackVector::Adjacent => 0.8,
-        AttackVector::Local => 0.15,
-        AttackVector::Physical => 0.03,
+        AttackVector::Adjacent => 2.0 / 3.0,
+        AttackVector::Local => 1.0 / 3.0,
+        AttackVector::Physical => 0.00,
     };
     let network_potential = network_potential * match ctx.network_connection {
         NetworkConfiguration::Public => 1.0,
-        NetworkConfiguration::Internal => 0.6,
+        NetworkConfiguration::Internal => 0.5,
         NetworkConfiguration::Isolated => 0.0,
     };
     let remote_access_potential = match subcomponent.user_interaction {
@@ -125,11 +127,7 @@ fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
         permissions_potential,
         file_system_access_potential
     ];
-    WEIGHTS.iter().zip(vals.iter()).map(|(w, v)| {
-        let val = v * w;
-        println!("{:.2} | Weight {:.3} => {:.2}", v, w, v * w);
-        val
-    }).sum::<f32>()
+    WEIGHTS.iter().zip(vals.iter()).map(|(w, v)| v * w).sum::<f32>()
 }
 
 #[cfg(test)]
