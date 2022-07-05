@@ -3,6 +3,7 @@
 // TODO: Network badness goes up as more network vulns are detected?
 
 mod runner;
+mod vuln;
 
 pub use runner::*;
 
@@ -104,8 +105,9 @@ fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
     };
     let permissions_potential = (permissions_potential - match ctx.permissions {
         Permissions::Full => 0f32,
-        Permissions::Restricted => 0.2,
-        Permissions::Required => 0.6,
+        Permissions::Restricted => 0.25,
+        Permissions::Standard => 0.5,
+        Permissions::Required => 0.75,
         Permissions::None => 1.0,
     }).max(0f32);
     let file_system_effect = match subcomponent.scope {
@@ -114,8 +116,9 @@ fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
     };
     let file_system_access_potential = file_system_effect * match ctx.file_system_access {
         FileSystemAccess::Full => 1.0,
-        FileSystemAccess::Restricted => 0.8,
-        FileSystemAccess::Required => 0.2,
+        FileSystemAccess::Restricted => 0.75,
+        FileSystemAccess::Standard => 0.5,
+        FileSystemAccess::Required => 0.25,
         FileSystemAccess::None => 0.0,
     };
     const WEIGHTS: [f32; 5] = [1.2, 1.1, 0.9, 1.0, 0.8];
