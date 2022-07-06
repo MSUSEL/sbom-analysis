@@ -1,71 +1,68 @@
 #![allow(dead_code)]
 
-pub use base::*;
-pub use environmental::*;
-pub use temporal::*;
+use std::collections::BTreeMap;
 
-mod base;
-mod temporal;
-mod environmental;
+pub trait ComponentFromVector {
+    fn from_vector(symbol: &str) -> Option<Self> where Self: Sized;
+}
 
-pub fn roundup(v: f32) -> f32 {
-    let int_input = (v * 1e5).round();
-    if int_input % 1e4 == 0.0 {
-        int_input / 1e5
-    } else {
-        (1.0 + (int_input / 1e4).floor()) / 10.0
+pub trait FromVector {
+    fn from_vector(symbols: &BTreeMap<&str, &str>) -> Option<Self> where Self: Sized;
+}
+
+#[macro_export]
+macro_rules! cvss_component {
+    ($name:ident {
+        $($variant:ident => $value:ident),*$(,)?
+    }) => {
+        #[derive(Debug, Clone, PartialEq, PartialOrd, Ord, Eq, Hash)]
+        pub enum $name {
+            $($variant),*
+        }
+
+        impl crate::cvss::ComponentFromVector for $name {
+            fn from_vector(symbol: &str) -> std::option::Option<Self> {
+                match symbol {
+                    $(stringify!($value) => std::option::Option::Some(Self::$variant)),*,
+                    _ => std::option::Option::None,
+                }
+            }
+        }
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use crate::cvss::*;
+// cvss_score!(BaseMetric {
+//   attack_vector: AttackVector => AV,
+//   attack_complexity: AttackComplexity => AC,
+//   ...
+// });
+#[macro_export]
+macro_rules! cvss_score {
+    ($name:ident {
+        $($field:ident: $ty:ty => $sym:ident),*$(,)?
+    }) => {
+        pub struct $name {
+            $(pub $field: $ty),*
+        }
 
-    #[test]
-    fn base_score_1() {
-        let metric = BaseMetric {
-            attack_vector: AttackVector::Network,
-            attack_complexity: AttackComplexity::High,
-            privileges_required: PrivilegesRequired::None,
-            user_interaction: UserInteraction::Required,
-            scope: Scope::Unchanged,
-            confidentiality_impact: ImpactValue::Low,
-            integrity_impact: ImpactValue::None,
-            availability_impact: ImpactValue::Low,
+        const _: () = {
+            const fn assert_from_vec<T: crate::cvss::ComponentFromVector>() {}
+            const fn assert_sized<T: Sized>() {}
+
+            $(assert_from_vec::<$ty>();)*
+            $(assert_sized::<$ty>();)*
         };
 
-        assert_eq!(metric.score(), 4.2);
-    }
-
-    #[test]
-    fn base_score_2() {
-        let metric = BaseMetric {
-            attack_vector: AttackVector::Local,
-            attack_complexity: AttackComplexity::Low,
-            privileges_required: PrivilegesRequired::Low,
-            user_interaction: UserInteraction::None,
-            scope: Scope::Unchanged,
-            confidentiality_impact: ImpactValue::Low,
-            integrity_impact: ImpactValue::High,
-            availability_impact: ImpactValue::High,
-        };
-
-        assert_eq!(metric.score(), 7.3);
-    }
-
-    #[test]
-    fn base_score_3() {
-        let metric = BaseMetric {
-            attack_vector: AttackVector::Local,
-            attack_complexity: AttackComplexity::Low,
-            privileges_required: PrivilegesRequired::Low,
-            user_interaction: UserInteraction::None,
-            scope: Scope::Changed,
-            confidentiality_impact: ImpactValue::Low,
-            integrity_impact: ImpactValue::High,
-            availability_impact: ImpactValue::High,
-        };
-
-        assert_eq!(metric.score(), 8.7);
+        impl crate::cvss::FromVector for $name {
+            #[allow(unused_variables)]
+            fn from_vector(symbols: &std::collections::BTreeMap<&str, &str>) -> std::option::Option<Self> {
+                std::option::Option::Some($name {
+                    $($field: <$ty as crate::cvss::ComponentFromVector>::from_vector(symbols.get(&stringify!($sym))?)?),*
+                })
+            }
+        }
     }
 }
+
+pub mod v3_1;
+pub mod v2_0;

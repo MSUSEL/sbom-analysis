@@ -1,5 +1,5 @@
 use crate::context::{DeploymentContext, score_cvss};
-use crate::cvss::BaseMetric;
+use crate::cvss::v3_1::BaseMetric;
 use crate::format::grype::Grype;
 use crate::format::trivy::TrivyJson;
 use crate::Syft;
@@ -61,7 +61,7 @@ impl<'a> ContextRunner<'a> {
                 .map(|v| &v.cvss)
                 .flat_map(|v| v.iter())
                 .filter(|v| v.version == "3.1")
-                .filter_map(|v| BaseMetric::from_grype(v))
+                .filter_map(|v| BaseMetric::from_vector_string(&v.vector))
                 .map(|v| score_cvss(ctx, &v))
                 .collect()
         )

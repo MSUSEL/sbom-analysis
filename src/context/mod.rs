@@ -7,7 +7,7 @@ mod vuln;
 
 pub use runner::*;
 
-use crate::cvss::{AttackVector, BaseMetric, PrivilegesRequired, Scope, UserInteraction};
+use crate::cvss::v3_1::*;
 
 #[derive(Debug, Clone)]
 pub enum NetworkConfiguration {
@@ -94,9 +94,10 @@ fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
         Scope::Changed => 1.0,
     };
     let information_breach_potential = information_breach_potential * match ctx.information_sensitivity {
-        InformationSensitivity::Useless => 0.0,
-        InformationSensitivity::Insensitive => 0.5,
-        InformationSensitivity::Sensitive => 1.0,
+        InformationSensitivity::Useless => 0f32,
+        InformationSensitivity::Insensitive => 1f32/3.0,
+        InformationSensitivity::Identifying => 2f32/3.0,
+        InformationSensitivity::Damaging => 1f32,
     };
     let permissions_potential = match subcomponent.privileges_required {
         PrivilegesRequired::None => 1.0,
@@ -135,8 +136,6 @@ fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
 
 #[cfg(test)]
 mod tests {
-    use crate::cvss::*;
-
     use super::*;
 
     #[test]
@@ -144,7 +143,7 @@ mod tests {
         let ctx = DeploymentContext {
             network_connection: NetworkConfiguration::Isolated,
             remote_access: RemoteAccess::Public,
-            information_sensitivity: InformationSensitivity::Sensitive,
+            information_sensitivity: InformationSensitivity::Identifying,
             permissions: Permissions::Full,
             file_system_access: FileSystemAccess::Full,
         };
@@ -154,9 +153,9 @@ mod tests {
             privileges_required: PrivilegesRequired::None,
             user_interaction: UserInteraction::None,
             scope: Scope::Changed,
-            confidentiality_impact: ImpactValue::High,
-            integrity_impact: ImpactValue::High,
-            availability_impact: ImpactValue::High,
+            confidentiality_impact: ImpactMetric::High,
+            integrity_impact: ImpactMetric::High,
+            availability_impact: ImpactMetric::High,
         };
         println!("Sum: {:.2}", score_cvss(&ctx, &base));
     }
