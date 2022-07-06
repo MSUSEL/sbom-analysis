@@ -1,3 +1,24 @@
+extern crate futures;
+#[macro_use]
+extern crate serde;
+extern crate tokio;
+
+use std::collections::linked_list::LinkedList;
+use std::io::stdout;
+use std::io::Write;
+use std::sync::Arc;
+
+use dotenv::dotenv;
+use futures::lock::Mutex;
+
+use crate::api::vt::VtApi;
+use crate::cli::{Cli, Commands};
+use crate::context::ContextRunner;
+use crate::format::{Error, read_file};
+use crate::format::grype::Grype;
+use crate::format::syft::Syft;
+use crate::format::trivy::TrivyJson;
+
 mod longest_zip;
 mod format;
 mod cvss;
@@ -5,39 +26,33 @@ mod api;
 mod context;
 #[cfg(test)]
 mod test;
+mod cli;
 
-#[macro_use]
-extern crate serde;
-extern crate tokio;
-extern crate futures;
-
-use std::collections::linked_list::LinkedList;
-use std::io::Write;
-use std::io::{stdout};
-use std::sync::Arc;
-use dotenv::dotenv;
-use futures::lock::Mutex;
-use crate::api::vt::VtApi;
-use crate::context::{ContextRunner, DeploymentContext, FileSystemAccess, InformationSensitivity, NetworkConfiguration, Permissions, RemoteAccess};
-use crate::format::grype::Grype;
-use crate::format::read_file;
-use crate::format::syft::Syft;
+fn analyze(grype: &Option<String>, syft: &Option<String>, trivy: &Option<String>) -> Result<(), Error> {
+    println!("Grype: {grype:?}");
+    println!("Syft : {syft:?}");
+    println!("Trivy: {trivy:?}");
+    let grype: Option<Grype> =
+        grype.as_ref().map(|path| read_file(&path)).transpose()?;
+    let syft: Option<Syft> =
+        syft.as_ref().map(|path| read_file(&path)).transpose()?;
+    let trivy: Option<TrivyJson> =
+        trivy.as_ref().map(|path| read_file(&path)).transpose()?;
+    let _runner = ContextRunner::new()
+        .grype(&grype).syft(&syft).trivy(&trivy);
+    todo!("Read deployment context")
+}
 
 #[tokio::main]
 async fn main() {
     dotenv().ok();
 
-    let grype: Grype = read_file("cache/molkars/pbd/1.0/grype.json").unwrap();
-    let analyzer = ContextRunner::new()
-        .grype(&grype);
-    let ctx = DeploymentContext {
-        file_system_access: FileSystemAccess::Required,
-        information_sensitivity: InformationSensitivity::Insensitive,
-        permissions: Permissions::Restricted,
-        remote_access: RemoteAccess::None,
-        network_connection: NetworkConfiguration::Public
-    };
-    analyzer.calculate(&ctx);
+    let cli = <Cli as clap::Parser>::parse();
+
+    match &cli.subcommand {
+        Commands::Analyze { grype, syft, trivy } =>
+            analyze(grype, syft, trivy),
+    }.expect("Failed to analyze");
 }
 
 #[allow(dead_code)]

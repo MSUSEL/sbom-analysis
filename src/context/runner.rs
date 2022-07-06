@@ -29,18 +29,24 @@ impl<'a> ContextRunner<'a> {
         }
     }
 
-    pub fn syft(mut self, syft: &'a Syft) -> Self {
-        let _ = self.syft.insert(syft);
+    pub fn syft(mut self, syft: &'a Option<Syft>) -> Self {
+        if let Some(syft) = syft {
+            let _ = self.syft.insert(syft);
+        }
         self
     }
 
-    pub fn grype(mut self, grype: &'a Grype) -> Self {
-        let _ = self.grype.insert(grype);
+    pub fn grype(mut self, grype: &'a Option<Grype>) -> Self {
+        if let Some(grype) = grype {
+            let _ = self.grype.insert(grype);
+        }
         self
     }
 
-    pub fn trivy(mut self, trivy: &'a TrivyJson) -> Self {
-        let _ = self.trivy.insert(trivy);
+    pub fn trivy(mut self, trivy: &'a Option<TrivyJson>) -> Self {
+        if let Some(trivy) = trivy {
+            let _ = self.trivy.insert(trivy);
+        }
         self
     }
 
