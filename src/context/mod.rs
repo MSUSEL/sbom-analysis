@@ -2,12 +2,12 @@
 
 // TODO: Network badness goes up as more network vulns are detected?
 
-mod runner;
-mod vuln;
-
 pub use runner::*;
 
 use crate::cvss::v3_1::*;
+
+mod runner;
+mod vuln;
 
 #[derive(Debug, Clone)]
 pub enum NetworkConfiguration {
@@ -95,8 +95,8 @@ fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
     };
     let information_breach_potential = information_breach_potential * match ctx.information_sensitivity {
         InformationSensitivity::Useless => 0f32,
-        InformationSensitivity::Insensitive => 1f32/3.0,
-        InformationSensitivity::Identifying => 2f32/3.0,
+        InformationSensitivity::Insensitive => 1f32 / 3.0,
+        InformationSensitivity::Identifying => 2f32 / 3.0,
         InformationSensitivity::Damaging => 1f32,
     };
     let permissions_potential = match subcomponent.privileges_required {
@@ -122,6 +122,12 @@ fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
         FileSystemAccess::Required => 0.25,
         FileSystemAccess::None => 0.0,
     };
+    let file_system_access_potential = file_system_access_potential * match ctx.information_sensitivity {
+        InformationSensitivity::Useless => 0.0,
+        InformationSensitivity::Insensitive => 1.0 / 3.0,
+        InformationSensitivity::Identifying => 2.0 / 3.0,
+        InformationSensitivity::Damaging => 1.0,
+    };
     const WEIGHTS: [f32; 5] = [1.2, 1.1, 0.9, 1.0, 0.8];
     assert!((WEIGHTS.iter().sum::<f32>() - 5.0).abs() < 0.0001);
     let vals: [f32; 5] = [
@@ -131,7 +137,8 @@ fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
         permissions_potential,
         file_system_access_potential
     ];
-    WEIGHTS.iter().zip(vals.iter()).map(|(w, v)| v * w).sum::<f32>()
+    let score: f32 = WEIGHTS.into_iter().zip(vals.into_iter()).map(|(w, v)| v * w).sum();
+    (score * 10.0).round() / 10.0
 }
 
 #[cfg(test)]
