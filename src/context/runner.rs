@@ -58,10 +58,13 @@ impl<'a> ContextRunner<'a> {
         self.grype.map(|file|
             file.matches.iter()
                 .map(|v| &v.vulnerability)
-                .map(|v| &v.cvss)
-                .flat_map(|v| v.iter())
-                .filter(|v| v.version == "3.1")
-                .filter_map(|v| BaseMetric::from_vector_string(&v.vector))
+                .filter_map(|v| {
+                    v.cvss
+                        .iter()
+                        .filter(|v| v.version == "3.1")
+                        .filter_map(|v| BaseMetric::from_vector_string(&v.vector))
+                        .next()
+                })
                 .map(|v| score_cvss(ctx, &v))
                 .collect()
         )
