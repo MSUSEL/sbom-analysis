@@ -2,7 +2,9 @@ use std::collections::LinkedList;
 use std::fs::File;
 use std::io::BufReader;
 use std::sync::Arc;
+
 use futures::lock::Mutex;
+
 use crate::{ContextRunner, Grype, Syft, TrivyJson};
 use crate::context::{DeploymentContext, DeploymentWeight};
 use crate::format::Error;

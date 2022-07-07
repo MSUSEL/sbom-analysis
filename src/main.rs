@@ -4,11 +4,11 @@ extern crate serde;
 extern crate tokio;
 
 use std::collections::linked_list::LinkedList;
-use std::io::{stdout};
+use std::io::stdout;
 use std::io::Write;
 use std::sync::Arc;
-use clap::Parser;
 
+use clap::Parser;
 use dotenv::dotenv;
 use futures::lock::Mutex;
 

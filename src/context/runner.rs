@@ -1,3 +1,4 @@
+use std::collections::{BTreeMap, LinkedList};
 use crate::context::{DeploymentContext, DeploymentWeight, score_cvss};
 use crate::cvss::v3_1::BaseMetric;
 use crate::format::grype::Grype;
@@ -48,19 +49,59 @@ impl<'a> ContextRunner<'a> {
                      context: &DeploymentContext,
                      weights: &DeploymentWeight,
     ) -> Option<DeploymentScore> {
-        let scores = self.calculate_grype(context, weights);
-        println!("Scores: {:?}", scores);
-        // let syft = self.calculate_syft(ctx);
-        // let trivy = self.calculate_trivy(ctx);
+        let mut scores = self.calculate_grype::<Vec<_>>(context, weights);
+        scores.extend(self.calculate_trivy::<Vec<_>>(context, weights));
+
+        let mut cvss_scores = BTreeMap::new();
+
+        let trivy_vulns = self.trivy.iter()
+            .flat_map(|v| v.results.iter())
+            .filter_map(|v| v.vulnerabilities.as_ref())
+            .flatten()
+            .filter_map(|v| v.cve_id().zip(v.cvss.as_ref()));
+
+        for (id, cvss) in trivy_vulns {
+            cvss_scores.entry(id)
+                .or_insert_with(|| LinkedList::new())
+                .push_back(cvss);
+        }
+
+
+
         todo!()
     }
 
-    fn calculate_grype(&self,
-                       ctx: &DeploymentContext,
-                       weights: &DeploymentWeight,
-    ) -> Vec<f32> {
-        self.grype.iter()
+    fn calculate_trivy<T: FromIterator<f32>>(
+        &self,
+        ctx: &DeploymentContext,
+        weights: &DeploymentWeight,
+    ) -> T {
+        self.trivy.iter()
+            .map(|v| v.results.iter())
             .map(|v| {
+                v.filter_map(|v| v.vulnerabilities.as_ref())
+                    .filter_map(|v| {
+                        v.iter()
+                            .find_map(|v| {
+                                let v = v.cvss.as_ref()?;
+                                let v = v.nvd.as_ref().or(v.redhat.as_ref())?;
+                                let v = v.v3_vector.as_ref()?;
+                                BaseMetric::from_vector_string(&v)
+                            })
+                    })
+                    .map(|v| score_cvss(ctx, weights, &v))
+            })
+            .flatten()
+            .collect::<T>()
+    }
+
+    fn calculate_grype<T: FromIterator<f32>>(
+        &self,
+        ctx: &DeploymentContext,
+        weights: &DeploymentWeight,
+    ) -> T {
+        self.grype.iter()
+            .filter_map(|v| {
                 v.matches.iter()
                     .map(|v| &v.vulnerability)
                     .filter_map(|v| {
@@ -73,7 +114,6 @@ impl<'a> ContextRunner<'a> {
                     .map(|v| score_cvss(ctx, weights, &v))
                     .next()
             })
-            .filter_map(|v| v)
             .collect()
     }
 }
