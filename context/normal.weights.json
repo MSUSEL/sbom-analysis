@@ -1,7 +1,7 @@
 {
-  "network_connection": 1.0,
-  "remote_access": 1.0,
-  "information_sensitivity": 1.0,
+  "networkConnection": 1.0,
+  "remoteAccess": 1.0,
+  "informationSensitivity": 1.0,
   "permissions": 1.0,
-  "file_system_access": 1.0
+  "fileSystemAccess": 1.0
 }

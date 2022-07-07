@@ -61,6 +61,7 @@ impl<'a> ContextRunner<'a> {
     ) -> Vec<f32> {
         self.grype.iter()
             .map(|v| {
+                println!("Len: {}", v.matches.len());
                 v.matches.iter()
                     .map(|v| &v.vulnerability)
                     .filter_map(|v| {

@@ -36,11 +36,12 @@ async fn main() {
     let cli: Cli = Parser::parse();
 
     match &cli.subcommand {
-        Commands::Analyze { grype, syft, trivy, context, weights } =>
-            analyze(grype, syft, trivy, context, weights),
+        Commands::Analyze { grype, syft, trivy, context, weights } => {
+            analyze(grype, syft, trivy, context, weights)
+                .await
+                .expect("Failed to analyze");
+        }
     }
-        .await
-        .expect("Failed to analyze");
 }
 
 #[allow(dead_code)]

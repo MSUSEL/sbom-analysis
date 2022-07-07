@@ -22,5 +22,5 @@ pub enum Commands {
         context: String,
         #[clap(long)]
         weights: Option<String>,
-    }
+    },
 }
