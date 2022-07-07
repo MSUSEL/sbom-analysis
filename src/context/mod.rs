@@ -9,53 +9,92 @@ use crate::cvss::v3_1::*;
 mod runner;
 mod vuln;
 
-#[derive(Debug, Clone)]
-pub enum NetworkConfiguration {
+macro_rules! comp {
+    ($name:ident {
+        $($field:ident),*$(,)?
+    }) => {
+        #[derive(Debug, Clone, Serialize, Deserialize)]
+        #[serde(rename_all = "camelCase")]
+        pub enum $name {
+            $($field),*
+        }
+    }
+}
+
+comp!(NetworkConfiguration {
     Public,
     Internal,
     Isolated,
-}
+});
 
-#[derive(Debug, Clone)]
-pub enum RemoteAccess {
+comp!(RemoteAccess {
     Public,
     VPN,
     None,
-}
+});
 
-#[derive(Debug, Clone)]
-pub enum InformationSensitivity {
+comp!(InformationSensitivity {
     Useless,
     Insensitive,
     Identifying,
     Damaging,
-}
+});
 
-#[derive(Debug, Clone)]
-pub enum Permissions {
+comp!(Permissions {
     Full,
     Restricted,
     Standard,
     Required,
     None,
-}
+});
 
-#[derive(Debug, Clone)]
-pub enum FileSystemAccess {
+comp!(FileSystemAccess {
     Full,
     Restricted,
     Standard,
     Required,
     None,
-}
+});
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct DeploymentContext {
     pub network_connection: NetworkConfiguration,
     pub remote_access: RemoteAccess,
     pub information_sensitivity: InformationSensitivity,
     pub permissions: Permissions,
     pub file_system_access: FileSystemAccess,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct DeploymentWeight {
+    pub network_connection: f32,
+    pub remote_access: f32,
+    pub information_sensitivity: f32,
+    pub permissions: f32,
+    pub file_system_access: f32,
+}
+
+impl DeploymentWeight {
+    pub fn sum(&self) -> f32 {
+        self.network_connection
+            + self.remote_access
+            + self.information_sensitivity
+            + self.permissions
+            + self.file_system_access
+    }
+}
+
+impl std::default::Default for DeploymentWeight {
+    fn default() -> Self {
+        Self {
+            network_connection: 1.0,
+            remote_access: 1.0,
+            information_sensitivity: 1.0,
+            permissions: 1.0,
+            file_system_access: 1.0,
+        }
+    }
 }
 
 /* Score Considerations
@@ -68,7 +107,7 @@ pub struct DeploymentContext {
 4. Permissions
     Affects the integrity impact, availability impact, and privileges required.
  */
-fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
+fn score_cvss(ctx: &DeploymentContext, weights: &DeploymentWeight, subcomponent: &BaseMetric) -> f32 {
     let network_potential = match subcomponent.attack_vector {
         AttackVector::Network => 1.0,
         AttackVector::Adjacent => 2.0 / 3.0,
@@ -128,16 +167,24 @@ fn score_cvss(ctx: &DeploymentContext, subcomponent: &BaseMetric) -> f32 {
         InformationSensitivity::Identifying => 2.0 / 3.0,
         InformationSensitivity::Damaging => 1.0,
     };
-    const WEIGHTS: [f32; 5] = [1.2, 1.1, 0.9, 1.0, 0.8];
-    assert!((WEIGHTS.iter().sum::<f32>() - 5.0).abs() < 0.0001);
-    let vals: [f32; 5] = [
-        network_potential,
-        remote_access_potential,
-        information_breach_potential,
-        permissions_potential,
-        file_system_access_potential
-    ];
-    let score: f32 = WEIGHTS.into_iter().zip(vals.into_iter()).map(|(w, v)| v * w).sum();
+    // const WEIGHTS: [f32; 5] = [1.2, 1.1, 0.9, 1.0, 0.8];
+    // assert!((WEIGHTS.iter().sum::<f32>() - 5.0).abs() < 0.0001);
+    // let vals: [f32; 5] = [
+    //     network_potential,
+    //     remote_access_potential,
+    //     information_breach_potential,
+    //     permissions_potential,
+    //     file_system_access_potential
+    // ];
+    // let score: f32 = WEIGHTS.into_iter().zip(vals.into_iter()).map(|(w, v)| v * w).sum();
+    let mut score = 0.0;
+
+    score += network_potential * weights.network_connection;
+    score += remote_access_potential * weights.remote_access;
+    score += information_breach_potential * weights.information_sensitivity;
+    score += permissions_potential * weights.permissions;
+    score += file_system_access_potential * weights.file_system_access;
+
     (score * 10.0).round() / 10.0
 }
 
@@ -164,6 +211,6 @@ mod tests {
             integrity_impact: ImpactMetric::High,
             availability_impact: ImpactMetric::High,
         };
-        println!("Sum: {:.2}", score_cvss(&ctx, &base));
+        println!("Sum: {:.2}", score_cvss(&ctx, &Default::default(), &base));
     }
 }

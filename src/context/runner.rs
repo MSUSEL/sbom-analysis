@@ -1,13 +1,13 @@
-use crate::context::{DeploymentContext, score_cvss};
+use crate::context::{DeploymentContext, DeploymentWeight, score_cvss};
 use crate::cvss::v3_1::BaseMetric;
 use crate::format::grype::Grype;
 use crate::format::trivy::TrivyJson;
 use crate::Syft;
 
 pub struct ContextRunner<'a> {
-    grype: Option<&'a Grype>,
-    syft: Option<&'a Syft>,
-    trivy: Option<&'a TrivyJson>,
+    grype: Vec<&'a Grype>,
+    syft: Vec<&'a Syft>,
+    trivy: Vec<&'a TrivyJson>,
 }
 
 #[derive(Debug, Clone)]
@@ -23,56 +23,57 @@ pub struct DeploymentScore {
 impl<'a> ContextRunner<'a> {
     pub fn new() -> Self {
         ContextRunner {
-            grype: None,
-            syft: None,
-            trivy: None,
+            grype: Default::default(),
+            syft: Default::default(),
+            trivy: Default::default(),
         }
     }
 
-    pub fn syft(mut self, syft: &'a Option<Syft>) -> Self {
-        if let Some(syft) = syft {
-            let _ = self.syft.insert(syft);
-        }
+    pub fn syft(&mut self, syft: &'a Syft) -> &mut Self {
+        self.syft.push(syft);
         self
     }
 
-    pub fn grype(mut self, grype: &'a Option<Grype>) -> Self {
-        if let Some(grype) = grype {
-            let _ = self.grype.insert(grype);
-        }
+    pub fn grype(&mut self, grype: &'a Grype) -> &mut Self {
+        self.grype.push(grype);
         self
     }
 
-    pub fn trivy(mut self, trivy: &'a Option<TrivyJson>) -> Self {
-        if let Some(trivy) = trivy {
-            let _ = self.trivy.insert(trivy);
-        }
+    pub fn trivy(&mut self, trivy: &'a TrivyJson) -> &mut Self {
+        self.trivy.push(trivy);
         self
     }
 
-    pub fn calculate(&self, ctx: &DeploymentContext) -> Option<DeploymentScore> {
-        let grype = self.calculate_grype(ctx);
-        if let Some(scores) = grype {
-            println!("Scores: {:?}", scores);
-        }
+    pub fn calculate(&self,
+                     context: &DeploymentContext,
+                     weights: &DeploymentWeight,
+    ) -> Option<DeploymentScore> {
+        let scores = self.calculate_grype(context, weights);
+        println!("Scores: {:?}", scores);
         // let syft = self.calculate_syft(ctx);
         // let trivy = self.calculate_trivy(ctx);
         todo!()
     }
 
-    fn calculate_grype(&self, ctx: &DeploymentContext) -> Option<Vec<f32>> {
-        self.grype.map(|file|
-            file.matches.iter()
-                .map(|v| &v.vulnerability)
-                .filter_map(|v| {
-                    v.cvss
-                        .iter()
-                        .filter(|v| v.version == "3.1")
-                        .filter_map(|v| BaseMetric::from_vector_string(&v.vector))
-                        .next()
-                })
-                .map(|v| score_cvss(ctx, &v))
-                .collect()
-        )
+    fn calculate_grype(&self,
+                       ctx: &DeploymentContext,
+                       weights: &DeploymentWeight,
+    ) -> Vec<f32> {
+        self.grype.iter()
+            .map(|v| {
+                v.matches.iter()
+                    .map(|v| &v.vulnerability)
+                    .filter_map(|v| {
+                        v.cvss
+                            .iter()
+                            .filter(|v| v.version == "3.1")
+                            .filter_map(|v| BaseMetric::from_vector_string(&v.vector))
+                            .next()
+                    })
+                    .map(|v| score_cvss(ctx, weights, &v))
+                    .next()
+            })
+            .filter_map(|v| v)
+            .collect()
     }
 }

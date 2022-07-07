@@ -720,6 +720,7 @@ dependencies = [
  "clap",
  "dotenv",
  "futures",
+ "num_cpus",
  "reqwest",
  "serde",
  "serde_json",

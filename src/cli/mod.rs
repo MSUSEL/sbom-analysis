@@ -1,5 +1,7 @@
 use clap::{Parser, Subcommand};
 
+pub mod analyze;
+
 #[derive(Parser)]
 #[clap(version, about, long_about = None)]
 pub struct Cli {
@@ -11,10 +13,14 @@ pub struct Cli {
 pub enum Commands {
     Analyze {
         #[clap(long)]
-        grype: Option<String>,
+        grype: Vec<String>,
         #[clap(long)]
-        syft: Option<String>,
+        syft: Vec<String>,
         #[clap(long)]
-        trivy: Option<String>,
+        trivy: Vec<String>,
+        #[clap(long)]
+        context: String,
+        #[clap(long)]
+        weights: Option<String>,
     }
 }

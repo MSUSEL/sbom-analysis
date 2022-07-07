@@ -4,17 +4,18 @@ extern crate serde;
 extern crate tokio;
 
 use std::collections::linked_list::LinkedList;
-use std::io::stdout;
+use std::io::{stdout};
 use std::io::Write;
 use std::sync::Arc;
+use clap::Parser;
 
 use dotenv::dotenv;
 use futures::lock::Mutex;
 
 use crate::api::vt::VtApi;
 use crate::cli::{Cli, Commands};
+use crate::cli::analyze::analyze;
 use crate::context::ContextRunner;
-use crate::format::{Error, read_file};
 use crate::format::grype::Grype;
 use crate::format::syft::Syft;
 use crate::format::trivy::TrivyJson;
@@ -28,31 +29,18 @@ mod context;
 mod test;
 mod cli;
 
-fn analyze(grype: &Option<String>, syft: &Option<String>, trivy: &Option<String>) -> Result<(), Error> {
-    println!("Grype: {grype:?}");
-    println!("Syft : {syft:?}");
-    println!("Trivy: {trivy:?}");
-    let grype: Option<Grype> =
-        grype.as_ref().map(|path| read_file(&path)).transpose()?;
-    let syft: Option<Syft> =
-        syft.as_ref().map(|path| read_file(&path)).transpose()?;
-    let trivy: Option<TrivyJson> =
-        trivy.as_ref().map(|path| read_file(&path)).transpose()?;
-    let _runner = ContextRunner::new()
-        .grype(&grype).syft(&syft).trivy(&trivy);
-    todo!("Read deployment context")
-}
-
 #[tokio::main]
 async fn main() {
     dotenv().ok();
 
-    let cli = <Cli as clap::Parser>::parse();
+    let cli: Cli = Parser::parse();
 
     match &cli.subcommand {
-        Commands::Analyze { grype, syft, trivy } =>
-            analyze(grype, syft, trivy),
-    }.expect("Failed to analyze");
+        Commands::Analyze { grype, syft, trivy, context, weights } =>
+            analyze(grype, syft, trivy, context, weights),
+    }
+        .await
+        .expect("Failed to analyze");
 }
 
 #[allow(dead_code)]
