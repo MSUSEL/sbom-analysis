@@ -129,13 +129,13 @@ pub struct TrivyDataSource {
     pub url: String,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, PartialEq, PartialOrd)]
 pub struct TrivyCvss {
     pub nvd: Option<CvssScore>,
     pub redhat: Option<CvssScore>,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, PartialEq, PartialOrd)]
 #[serde(rename_all = "PascalCase")]
 pub struct CvssScore {
     pub v2_vector: Option<String>,

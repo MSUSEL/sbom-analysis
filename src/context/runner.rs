@@ -1,8 +1,10 @@
-use std::collections::{BTreeMap, LinkedList};
+use std::cmp::Ordering;
+use std::collections::{BTreeMap, BTreeSet, LinkedList};
+
 use crate::context::{DeploymentContext, DeploymentWeight, score_cvss};
 use crate::cvss::v3_1::BaseMetric;
 use crate::format::grype::Grype;
-use crate::format::trivy::TrivyJson;
+use crate::format::trivy::{TrivyCvss, TrivyJson};
 use crate::Syft;
 
 pub struct ContextRunner<'a> {
@@ -49,26 +51,42 @@ impl<'a> ContextRunner<'a> {
                      context: &DeploymentContext,
                      weights: &DeploymentWeight,
     ) -> Option<DeploymentScore> {
-        let mut scores = self.calculate_grype::<Vec<_>>(context, weights);
-        scores.extend(self.calculate_trivy::<Vec<_>>(context, weights));
+        // let mut scores = self.calculate_grype::<Vec<_>>(context, weights);
+        // scores.extend(self.calculate_trivy::<Vec<_>>(context, weights));
 
         let mut cvss_scores = BTreeMap::new();
 
-        let trivy_vulns = self.trivy.iter()
+        self.trivy.iter()
             .flat_map(|v| v.results.iter())
             .filter_map(|v| v.vulnerabilities.as_ref())
             .flatten()
-            .filter_map(|v| v.cve_id().zip(v.cvss.as_ref()));
+            .filter_map(|v| {
+                let id = v.cve_id();
+                let res = v.cvss.as_ref()
+                    .and_then(|v| v.nvd.as_ref().or(v.redhat.as_ref()))
+                    .and_then(|v| v.v3_vector.as_ref());
 
-        for (id, cvss) in trivy_vulns {
-            cvss_scores.entry(id)
-                .or_insert_with(|| LinkedList::new())
-                .push_back(cvss);
-        }
+                id.zip(res)
+            })
+            .for_each(|(id, cvss)| {
+                cvss_scores.entry(id).or_insert_with(|| LinkedList::new())
+                    .push_back(cvss);
+            });
 
+        self.grype.iter()
+            .flat_map(|v| v.matches.iter())
+            .map(|v| &v.vulnerability)
+            .map(|v| {
+                let list = v.cvss.iter()
+                    .filter(|v| v.version == "3.1");
+                (v.id.clone(), list)
+            })
+            .for_each(|(k, v)| {
+                cvss_scores.entry(k).or_insert_with(|| LinkedList::new())
+                    .push_back(v)
+            });
 
-
-        todo!()
+        None
     }
 
     fn calculate_trivy<T: FromIterator<f32>>(
