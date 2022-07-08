@@ -41,6 +41,7 @@ macro_rules! cvss_score {
     ($name:ident {
         $($field:ident: $ty:ty => $sym:ident),*$(,)?
     }) => {
+        #[derive(Debug, Clone, PartialEq, PartialOrd, Ord, Eq, Hash)]
         pub struct $name {
             $(pub $field: $ty),*
         }
