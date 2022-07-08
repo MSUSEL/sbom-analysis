@@ -72,9 +72,8 @@ impl<'a> ContextRunner<'a> {
                             .next()
                     })
                     .map(|v| score_cvss(ctx, weights, &v))
-                    .next()
             })
-            .filter_map(|v| v)
+            .flat_map(|v| v)
             .collect()
     }
 }
