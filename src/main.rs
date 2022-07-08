@@ -28,6 +28,7 @@ mod context;
 #[cfg(test)]
 mod test;
 mod cli;
+mod model;
 
 #[tokio::main]
 async fn main() {

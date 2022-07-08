@@ -1,5 +1,6 @@
 
 use serde_json::Value;
+use crate::model::CvssVersion;
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -168,6 +169,20 @@ pub struct CvssV3 {
     pub availability_impact: String,
     pub base_score: f64,
     pub base_severity: String,
+}
+
+impl crate::model::Cvss for CvssV3 {
+    fn version(&self) -> Option<CvssVersion> {
+        match self.version.as_str() {
+            "3.1" => Some(CvssVersion::V3_1),
+            "3.0" | "3" => Some(CvssVersion::V3_0),
+            _ => None,
+        }
+    }
+
+    fn vector(&self) -> Option<String> {
+        Some(self.vector_string.clone())
+    }
 }
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]

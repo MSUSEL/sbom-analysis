@@ -1,6 +1,7 @@
 use std::collections::BTreeMap;
 
 use chrono::{DateTime, Utc};
+use crate::model::CvssVersion;
 
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
@@ -103,7 +104,7 @@ impl TrivyVulnerability {
                 .split('-')
                 .take(3)
                 .collect::<Vec<_>>();
-        if iter.len() < 3 {
+        if iter.len() != 3 {
             return None;
         }
         if iter[0].to_lowercase() != "CVE" {
@@ -135,6 +136,18 @@ pub struct TrivyCvss {
     pub redhat: Option<CvssScore>,
 }
 
+impl crate::model::Cvss for TrivyCvss {
+    fn version(&self) -> Option<CvssVersion> {
+        self.nvd.as_ref().and_then(|v| v.version())
+            .or(self.redhat.as_ref().and_then(|v| v.version()))
+    }
+
+    fn vector(&self) -> Option<String> {
+        self.nvd.as_ref().and_then(|v| v.vector())
+            .or(self.redhat.as_ref().and_then(|v| v.vector()))
+    }
+}
+
 #[derive(Serialize, Deserialize, Debug, PartialEq, PartialOrd)]
 #[serde(rename_all = "PascalCase")]
 pub struct CvssScore {
@@ -144,6 +157,29 @@ pub struct CvssScore {
     pub v3_score: Option<f64>,
 }
 
+impl crate::model::Cvss for CvssScore {
+    fn version(&self) -> Option<CvssVersion> {
+        if let Some(vec) = &self.v3_vector {
+            let mut split = vec.split(':');
+            let first = split.next();
+            if let Some(first) = first {
+                return match first {
+                    "CVSS:3.1" => Some(CvssVersion::V3_1),
+                    "CVSS:3.0" => Some(CvssVersion::V3_0),
+                    _ => None,
+                };
+            }
+        }
+
+        self.v2_vector.as_ref().map(|_| CvssVersion::V2_0)
+    }
+
+    fn vector(&self) -> Option<String> {
+        self.v3_vector.as_ref()
+            .or(self.v2_vector.as_ref())
+            .cloned()
+    }
+}
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename_all = "PascalCase")]

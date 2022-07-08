@@ -1,4 +1,5 @@
 use serde_json::Value;
+use crate::model::CvssVersion;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Grype {
@@ -31,6 +32,18 @@ pub struct Vulnerability {
     pub advisories: Option<Vec<Advisory>>,
 }
 
+impl Vulnerability {
+    pub fn cve_id(&self) -> Option<String> {
+        let split = self.id.split('-')
+            .take(3)
+            .collect::<Vec<_>>();
+        if split.len() != 3 || split[0].to_lowercase() != "cve" {
+            return None;
+        }
+        return Some(split.join("-"));
+    }
+}
+
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Cvss {
@@ -38,6 +51,21 @@ pub struct Cvss {
     pub vector: String,
     pub metrics: Metrics,
     pub vendor_metadata: Value,
+}
+
+impl crate::model::Cvss for Cvss {
+    fn version(&self) -> Option<CvssVersion> {
+        match self.version.as_str() {
+            "3.1" => Some(CvssVersion::V3_1),
+            "2.0" | "2" => Some(CvssVersion::V2_0),
+            "3.0" | "3" => Some(CvssVersion::V3_0),
+            _ => None,
+        }
+    }
+
+    fn vector(&self) -> Option<String> {
+        Some(self.vector.clone())
+    }
 }
 
 #[derive(Debug, Serialize, Deserialize)]

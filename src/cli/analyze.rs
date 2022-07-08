@@ -80,9 +80,12 @@ pub async fn analyze(
         };
     }
 
-    runner.calculate(&context, &weights);
+    let (score, total) = runner.calculate(&context, &weights);
 
-    todo!("Read deployment context")
+    println!("Sum score is (of {total}) {:?}", score);
+    println!("Total score is {:.2?}", 10.0 * score.sum / total as f32);
+
+    Ok(())
 }
 
 fn read_file(InFile { uri, format }: InFile) -> Result<OutFile, Error> {
