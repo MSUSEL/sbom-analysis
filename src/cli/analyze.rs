@@ -7,7 +7,7 @@ use std::sync::Arc;
 use futures::lock::Mutex;
 
 use crate::{context, ContextRunner, Grype, Syft, Trivy};
-use crate::context::{DeploymentContext, DeploymentScore, DeploymentWeight};
+use crate::context::{DeploymentContext, DeploymentScore};
 use crate::format;
 
 enum Fmt {
@@ -53,13 +53,7 @@ pub async fn analyze(
     syft: &Vec<String>,
     trivy: &Vec<String>,
     context: &String,
-    weights: &Option<String>,
 ) -> Result<DeploymentScore, Error> {
-    let weights: DeploymentWeight = if let Some(weights) = weights {
-        format::read_file(weights).map_err(Error::Format)?
-    } else {
-        Default::default()
-    };
     let context: DeploymentContext = format::read_file(context).map_err(Error::Format)?;
 
     let mut files = LinkedList::new();
@@ -98,7 +92,7 @@ pub async fn analyze(
         };
     }
 
-    let res = runner.calculate(&context, &weights);
+    let res = runner.calculate(&context,);
 
     res.map_err(Error::Context)
 }

@@ -1,7 +1,7 @@
 use std::collections::{BTreeMap, LinkedList};
 use std::fmt::{Display, Formatter};
 
-use crate::context::{DeploymentContext, DeploymentWeight, DeploymentScore};
+use crate::context::{DeploymentContext, DeploymentScore};
 use crate::format::grype::Grype;
 use crate::format::trivy::Trivy;
 use crate::{Syft, VulnerabilityFormat};
@@ -56,8 +56,7 @@ impl<'a> ContextRunner<'a> {
     }
 
     pub fn calculate(&self,
-                     context: &DeploymentContext,
-                     _weights: &DeploymentWeight,
+                     context: &DeploymentContext
     ) -> Result<DeploymentScore, LinkedList<Error>> {
         // let mut scores = self.calculate_grype::<Vec<_>>(context, weights);
         // scores.extend(self.calculate_trivy::<Vec<_>>(context, weights));

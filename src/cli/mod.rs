@@ -21,8 +21,6 @@ pub enum Commands {
         trivy: Vec<String>,
         #[clap(long)]
         context: String,
-        #[clap(long)]
-        weights: Option<String>,
     },
     EnMass {
         #[clap(value_parser)]
