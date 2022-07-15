@@ -4,7 +4,6 @@ use std::collections::BTreeMap;
 use std::fmt::{Display, Formatter};
 use std::path::{Path, PathBuf};
 use serde::de::DeserializeOwned;
-use crate::v3_1;
 use crate::util::io::RecurseDir;
 use crate::v3_1::BaseMetric;
 
