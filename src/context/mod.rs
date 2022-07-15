@@ -190,7 +190,7 @@ pub struct VulnerabilityScore {
 
 #[derive(Debug, Clone)]
 pub struct DeploymentScore {
-    scores: BTreeMap<VulnId, VulnerabilityScore>,
+    pub scores: BTreeMap<VulnId, VulnerabilityScore>,
 }
 
 impl DeploymentScore {

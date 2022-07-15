@@ -1,4 +1,5 @@
 use std::collections::{BTreeMap, LinkedList};
+use std::collections::btree_map::Entry;
 use std::fmt::{Display, Formatter};
 
 use crate::context::{DeploymentContext, DeploymentScore};
@@ -7,6 +8,7 @@ use crate::format::trivy::Trivy;
 use crate::{Syft, VulnerabilityFormat};
 use crate::cvss::v3_1;
 use crate::format::VulnId;
+use crate::v3_1::BaseMetric;
 
 pub struct ContextRunner<'a> {
     grype: Vec<&'a Grype>,
@@ -56,7 +58,7 @@ impl<'a> ContextRunner<'a> {
     }
 
     pub fn calculate(&self,
-                     context: &DeploymentContext
+                     context: &DeploymentContext,
     ) -> Result<DeploymentScore, LinkedList<Error>> {
         // let mut scores = self.calculate_grype::<Vec<_>>(context, weights);
         // scores.extend(self.calculate_trivy::<Vec<_>>(context, weights));
@@ -76,13 +78,18 @@ impl<'a> ContextRunner<'a> {
             let mut errs = LinkedList::new();
             for set in iter {
                 for (id, metric) in set.into_iter() {
-                    if let Some(entry) = map.get(&id) {
-                        if *entry != metric {
-                            errs.push_back(Error::DifferingCvssScore {
-                                id,
-                                existing: entry.clone(),
-                                new: metric,
-                            });
+                    match map.entry(id) {
+                        Entry::Vacant(entry) => {
+                            entry.insert(metric);
+                        }
+                        Entry::Occupied(entry) => {
+                            if *entry.get() != metric {
+                                errs.push_back(Error::DifferingCvssScore {
+                                    id: entry.key().clone(),
+                                    existing: entry.get().clone(),
+                                    new: metric,
+                                });
+                            };
                         }
                     }
                 }

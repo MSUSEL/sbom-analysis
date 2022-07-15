@@ -42,8 +42,8 @@ async fn main() {
     let cli: Cli = Parser::parse();
 
     match &cli.subcommand {
-        Commands::Analyze { grype, syft, trivy, context } => {
-            analyze(grype, syft, trivy, context)
+        Commands::Analyze { grype, syft, trivy, context, file } => {
+            analyze(grype, syft, trivy, context, file)
                 .await
                 .expect("Failed to analyze");
         }
