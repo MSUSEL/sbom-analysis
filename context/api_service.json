@@ -1,0 +1,7 @@
+{
+  "network_connection": "public",
+  "remote_access": "public",
+  "information_sensitivity":  "identifying",
+  "permissions": "standard",
+  "file_system_access":  "standard"
+}
