@@ -18,6 +18,15 @@ pub trait Cvss {
     }
 }
 
+impl<T: Cvss> Cvss for &T {
+    fn version(&self) -> Option<CvssVersion> {
+        (*self).version()
+    }
+    fn vector(&self) -> Option<String> {
+        (*self).vector()
+    }
+}
+
 impl<T: Cvss + Sized> TryInto<CvssVector> for (T, ) {
     type Error = ();
 

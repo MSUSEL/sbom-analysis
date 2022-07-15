@@ -14,11 +14,14 @@ use futures::lock::Mutex;
 
 use crate::api::vt::VtApi;
 use crate::cli::{Cli, Commands};
-use crate::cli::analyze::analyze;
+use crate::cli::{analyze::analyze, en_mass::en_mass};
 use crate::context::ContextRunner;
+use crate::cvss::v3_1;
+use crate::format::VulnerabilityFormat;
 use crate::format::grype::Grype;
 use crate::format::syft::Syft;
-use crate::format::trivy::TrivyJson;
+use crate::format::trivy::Trivy;
+use crate::model::Cvss;
 
 mod longest_zip;
 mod format;
@@ -29,6 +32,8 @@ mod context;
 mod test;
 mod cli;
 mod model;
+
+mod util;
 
 #[tokio::main]
 async fn main() {
@@ -41,6 +46,9 @@ async fn main() {
             analyze(grype, syft, trivy, context, weights)
                 .await
                 .expect("Failed to analyze");
+        }
+        Commands::EnMass { path, context } => {
+            en_mass(path, context).await;
         }
     }
 }

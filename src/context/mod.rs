@@ -1,11 +1,11 @@
-#![allow(dead_code)]
-
-// TODO: Network badness goes up as more network vulns are detected?
-
+use std::collections::BTreeMap;
 use std::ops::{Add, AddAssign, Mul};
+
 pub use runner::*;
+pub use vuln::*;
 
 use crate::cvss::v3_1::*;
+use crate::format::VulnId;
 
 mod runner;
 mod vuln;
@@ -66,9 +66,118 @@ pub struct DeploymentContext {
     pub file_system_access: FileSystemAccess,
 }
 
+impl DeploymentContext {
+    pub fn score_v3(&self, metric: &BaseMetric) -> VulnerabilityScore {
+        let nw = self.network_v3(metric);
+        let rem = self.remote_access_v3(metric);
+        let inf = self.information_sensitivity_v3(metric);
+        let perm = self.permissions_v3(metric);
+        let fs = self.file_system_access_v3(metric);
+
+        VulnerabilityScore {
+            sum: nw + rem + inf + perm + fs,
+            network: nw,
+            files: fs,
+            remote: rem,
+            information: inf,
+            permissions: perm,
+        }
+    }
+
+    pub fn network_v3(&self, metric: &BaseMetric) -> f32 {
+        let score = match metric.attack_vector {
+            AttackVector::Network => 1f32,
+            AttackVector::Adjacent => 0.8,
+            AttackVector::Local => 0.4,
+            AttackVector::Physical => 0.01,
+        };
+        let score = score * match metric.privileges_required {
+            PrivilegesRequired::None => 1.0,
+            PrivilegesRequired::Low => 0.4,
+            PrivilegesRequired::High => 0.2,
+        };
+        let score = score * match metric.availability_impact {
+            ImpactMetric::None => 0.5,
+            ImpactMetric::Low => 0.75,
+            ImpactMetric::High => 1.0,
+        };
+        let score = score * match self.network_connection {
+            NetworkConfiguration::Public => 1.0,
+            NetworkConfiguration::Internal => 0.8,
+            NetworkConfiguration::Isolated => 0.1,
+        };
+        score
+    }
+
+    pub fn remote_access_v3(&self, metric: &BaseMetric) -> f32 {
+        let score = match metric.privileges_required {
+            PrivilegesRequired::None => 1.0,
+            PrivilegesRequired::Low => 0.9,
+            PrivilegesRequired::High => 0.8,
+        };
+        let score = score * match self.remote_access {
+            RemoteAccess::Public => 1.0,
+            RemoteAccess::VPN => 0.8,
+            RemoteAccess::None => 0.4,
+        };
+        score
+    }
+
+    pub fn information_sensitivity_v3(&self, metric: &BaseMetric) -> f32 {
+        let score = match metric.confidentiality_impact {
+            ImpactMetric::High => 1.0,
+            ImpactMetric::Low => 0.7,
+            ImpactMetric::None => 0.4,
+        };
+        let score = score * match self.information_sensitivity {
+            InformationSensitivity::Useless => 0.5,
+            InformationSensitivity::Insensitive => 0.75,
+            InformationSensitivity::Identifying => 1.0,
+            InformationSensitivity::Damaging => 1.5,
+        };
+        score
+    }
+
+    pub fn permissions_v3(&self, metric: &BaseMetric) -> f32 {
+        let score = match metric.integrity_impact {
+            ImpactMetric::None => 0.4,
+            ImpactMetric::Low => 0.7,
+            ImpactMetric::High => 1.0,
+        };
+        let score = score * match metric.availability_impact {
+            ImpactMetric::None => 0.4,
+            ImpactMetric::Low => 0.7,
+            ImpactMetric::High => 1.0,
+        };
+        let score = score * match self.permissions {
+            Permissions::Full => 1.0,
+            Permissions::Restricted => 0.8,
+            Permissions::Standard => 0.6,
+            Permissions::Required => 0.2,
+            Permissions::None => 0.01,
+        };
+        score
+    }
+
+    pub fn file_system_access_v3(&self, metric: &BaseMetric) -> f32 {
+        let score = match metric.integrity_impact {
+            ImpactMetric::None => 0.4,
+            ImpactMetric::Low => 0.7,
+            ImpactMetric::High => 1.0,
+        };
+        let score = score * match self.file_system_access {
+            FileSystemAccess::Full => 1.0,
+            FileSystemAccess::Restricted => 0.8,
+            FileSystemAccess::Standard => 0.4,
+            FileSystemAccess::Required => 0.2,
+            FileSystemAccess::None => 0.01,
+        };
+        score
+    }
+}
 
 #[derive(Debug, Clone, Default)]
-pub struct DeploymentScore {
+pub struct VulnerabilityScore {
     pub sum: f32,
     pub network: f32,
     pub files: f32,
@@ -77,11 +186,28 @@ pub struct DeploymentScore {
     pub permissions: f32,
 }
 
-impl Add<DeploymentScore> for DeploymentScore {
-    type Output = DeploymentScore;
+#[derive(Debug, Clone)]
+pub struct DeploymentScore {
+    scores: BTreeMap<VulnId, VulnerabilityScore>,
+}
 
-    fn add(self, rhs: DeploymentScore) -> Self::Output {
-        DeploymentScore {
+impl DeploymentScore {
+    pub fn sum(&self) -> (f32, f32) {
+        let mut sum = 0.0;
+
+        for (_, score) in &self.scores {
+            sum += score.sum;
+        }
+
+        (sum, self.scores.len() as f32 * 5.0)
+    }
+}
+
+impl Add<VulnerabilityScore> for VulnerabilityScore {
+    type Output = VulnerabilityScore;
+
+    fn add(self, rhs: VulnerabilityScore) -> Self::Output {
+        VulnerabilityScore {
             sum: self.sum + rhs.sum,
             network: self.network + rhs.network,
             files: self.files + rhs.files,
@@ -92,8 +218,8 @@ impl Add<DeploymentScore> for DeploymentScore {
     }
 }
 
-impl AddAssign<DeploymentScore> for DeploymentScore {
-    fn add_assign(&mut self, rhs: DeploymentScore) {
+impl AddAssign<VulnerabilityScore> for VulnerabilityScore {
+    fn add_assign(&mut self, rhs: VulnerabilityScore) {
         self.sum += rhs.sum;
         self.network += rhs.network;
         self.files += rhs.files;
@@ -103,12 +229,12 @@ impl AddAssign<DeploymentScore> for DeploymentScore {
     }
 }
 
-impl<T: Into<f32>> Mul<T> for DeploymentScore {
-    type Output = DeploymentScore;
+impl<T: Into<f32>> Mul<T> for VulnerabilityScore {
+    type Output = VulnerabilityScore;
 
     fn mul(self, rhs: T) -> Self::Output {
         let rhs = rhs.into();
-        DeploymentScore {
+        VulnerabilityScore {
             sum: self.sum * rhs,
             network: self.network * rhs,
             files: self.files * rhs,
@@ -161,7 +287,8 @@ impl Default for DeploymentWeight {
 4. Permissions
     Affects the integrity impact, availability impact, and privileges required.
  */
-fn score_cvss(ctx: &DeploymentContext, weights: &DeploymentWeight, subcomponent: &BaseMetric) -> DeploymentScore {
+#[deprecated]
+fn score_cvss(ctx: &DeploymentContext, weights: &DeploymentWeight, subcomponent: &BaseMetric) -> VulnerabilityScore {
     let network_vulnerability = match subcomponent.attack_vector {
         AttackVector::Network => 1.0,
         AttackVector::Adjacent => 0.8,
@@ -240,7 +367,7 @@ fn score_cvss(ctx: &DeploymentContext, weights: &DeploymentWeight, subcomponent:
     score += fsap;
 
     let score = (score * 10.0).round() / 10.0;
-    DeploymentScore {
+    VulnerabilityScore {
         sum: score,
         network: np,
         remote: rap,
@@ -273,6 +400,6 @@ mod tests {
             integrity_impact: ImpactMetric::High,
             availability_impact: ImpactMetric::High,
         };
-        println!("Sum: {:?}", score_cvss(&ctx, &Default::default(), &base));
+        println!("Sum: {:?}", ctx.score_v3(&base));
     }
 }

@@ -1,13 +1,14 @@
 use std::collections::LinkedList;
+use std::fmt::{Display, Formatter};
 use std::fs::File;
 use std::io::BufReader;
 use std::sync::Arc;
 
 use futures::lock::Mutex;
 
-use crate::{ContextRunner, Grype, Syft, TrivyJson};
-use crate::context::{DeploymentContext, DeploymentWeight};
-use crate::format::Error;
+use crate::{context, ContextRunner, Grype, Syft, Trivy};
+use crate::context::{DeploymentContext, DeploymentScore, DeploymentWeight};
+use crate::format;
 
 enum Fmt {
     Grype,
@@ -23,7 +24,28 @@ struct InFile {
 enum OutFile {
     Grype(Grype),
     Syft(Syft),
-    Trivy(TrivyJson),
+    Trivy(Trivy),
+}
+
+#[derive(Debug)]
+pub enum Error {
+    Format(format::Error),
+    Context(LinkedList<context::Error>),
+}
+
+impl Display for Error {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        match self {
+            Error::Format(err) => write!(f, "{}", err),
+            Error::Context(err) => {
+                writeln!(f, "Context errors:")?;
+                for err in err {
+                    writeln!(f, "  {}", err)?;
+                }
+                Ok(())
+            },
+        }
+    }
 }
 
 pub async fn analyze(
@@ -32,17 +54,13 @@ pub async fn analyze(
     trivy: &Vec<String>,
     context: &String,
     weights: &Option<String>,
-) -> Result<(), Error> {
-    println!("Grype: {grype:?}");
-    println!("Syft : {syft:?}");
-    println!("Trivy: {trivy:?}");
-
+) -> Result<DeploymentScore, Error> {
     let weights: DeploymentWeight = if let Some(weights) = weights {
-        crate::format::read_file(weights)?
+        format::read_file(weights).map_err(Error::Format)?
     } else {
         Default::default()
     };
-    let context: DeploymentContext = crate::format::read_file(context)?;
+    let context: DeploymentContext = format::read_file(context).map_err(Error::Format)?;
 
     let mut files = LinkedList::new();
 
@@ -68,7 +86,7 @@ pub async fn analyze(
     for handle in handles {
         let res = handle.await.expect("Failed to analyze");
         let res = res.into_iter()
-            .collect::<Result<LinkedList<OutFile>, _>>()?;
+            .collect::<Result<LinkedList<OutFile>, _>>().map_err(Error::Format)?;
         files.extend(res);
     }
 
@@ -80,33 +98,30 @@ pub async fn analyze(
         };
     }
 
-    let (score, total) = runner.calculate(&context, &weights);
+    let res = runner.calculate(&context, &weights);
 
-    println!("Sum score is (of {total}) {:?}", score);
-    println!("Total score is {:.2?}", 10.0 * score.sum / total as f32);
-
-    Ok(())
+    res.map_err(Error::Context)
 }
 
-fn read_file(InFile { uri, format }: InFile) -> Result<OutFile, Error> {
-    let file = File::open(&uri).map_err(Error::Io)?;
+fn read_file(InFile { uri, format }: InFile) -> Result<OutFile, format::Error> {
+    let file = File::open(&uri).map_err(format::Error::Io)?;
     let reader = BufReader::new(file);
 
     let out = match format {
         Fmt::Grype => {
             let res: Grype = serde_json::from_reader(reader)
-                .map_err(Error::Serde)?;
+                .map_err(format::Error::Serde)?;
             OutFile::Grype(res)
         }
         Fmt::Trivy => {
-            let res: TrivyJson =
+            let res: Trivy =
                 serde_json::from_reader(reader)
-                    .map_err(Error::Serde)?;
+                    .map_err(format::Error::Serde)?;
             OutFile::Trivy(res)
         }
         Fmt::Syft => {
             let res: Syft = serde_json::from_reader(reader)
-                .map_err(Error::Serde)?;
+                .map_err(format::Error::Serde)?;
             OutFile::Syft(res)
         }
     };

@@ -1,16 +1,34 @@
-use std::collections::BTreeMap;
+use std::collections::{BTreeMap, LinkedList};
+use std::fmt::{Display, Formatter};
 
-use crate::context::{DeploymentContext, DeploymentScore, DeploymentWeight, score_cvss};
+use crate::context::{DeploymentContext, DeploymentWeight, DeploymentScore};
 use crate::format::grype::Grype;
-use crate::format::trivy::TrivyJson;
-use crate::model::{Cvss, CvssVector, CvssVersion};
-use crate::Syft;
-use crate::cvss::{v2_0, v3_1};
+use crate::format::trivy::Trivy;
+use crate::{Syft, VulnerabilityFormat};
+use crate::cvss::v3_1;
+use crate::format::VulnId;
 
 pub struct ContextRunner<'a> {
     grype: Vec<&'a Grype>,
     syft: Vec<&'a Syft>,
-    trivy: Vec<&'a TrivyJson>,
+    trivy: Vec<&'a Trivy>,
+}
+
+#[derive(Debug)]
+pub enum Error {
+    DifferingCvssScore { id: VulnId, existing: v3_1::BaseMetric, new: v3_1::BaseMetric },
+}
+
+impl Display for Error {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        match self {
+            Error::DifferingCvssScore { id, existing, new } =>
+                write!(f, "Conflicting CVSS scores for {}: {} vs {}", id,
+                       existing.cvss_vector(),
+                       new.cvss_vector(),
+                )
+        }
+    }
 }
 
 impl<'a> ContextRunner<'a> {
@@ -32,85 +50,61 @@ impl<'a> ContextRunner<'a> {
         self
     }
 
-    pub fn trivy(&mut self, trivy: &'a TrivyJson) -> &mut Self {
+    pub fn trivy(&mut self, trivy: &'a Trivy) -> &mut Self {
         self.trivy.push(trivy);
         self
     }
 
     pub fn calculate(&self,
                      context: &DeploymentContext,
-                     weights: &DeploymentWeight,
-    ) -> (DeploymentScore, u32) {
+                     _weights: &DeploymentWeight,
+    ) -> Result<DeploymentScore, LinkedList<Error>> {
         // let mut scores = self.calculate_grype::<Vec<_>>(context, weights);
         // scores.extend(self.calculate_trivy::<Vec<_>>(context, weights));
 
         let trivy = self.trivy
             .iter()
-            .flat_map(|v| v.results.iter())
-            .filter_map(|v| v.vulnerabilities.as_ref())
-            .flatten()
-            .filter_map(|v| v.cve_id().zip(v.cvss.as_ref()))
-            .filter_map(|(id, vec)| vec.as_vector().map(|v| (id, v)));
+            .map(|v| v.cvss_v3_1_scores());
 
         let grype = self.grype
             .iter()
-            .flat_map(|v| v.matches.iter())
-            .map(|v| &v.vulnerability)
-            .filter(|v| !v.cvss.is_empty())
-            .filter_map(|v| v.cve_id().map(|id| {
-                let iter = v.cvss.iter()
-                    .filter(|v| v.version == "3.1");
-                (id, iter)
-            }))
-            .flat_map(|(id, iter)| {
-                iter.map(move |v| (id.clone(), v.clone()))
-            })
-            .filter_map(|(k, v)| {
-                v.as_vector().map(|v| (k, v))
-            });
+            .map(|v| v.cvss_v3_1_scores());
 
         fn group(
-            iter: impl Iterator<Item=(String, CvssVector)>,
-            map: &mut BTreeMap<String, BTreeMap<CvssVector, u32>>,
-        ) {
-            iter.for_each(|(key, cvss)| {
-                let entry = map.entry(key)
-                    .or_insert_with(|| BTreeMap::new());
-                let count = entry.entry(cvss).or_insert(0u32);
-                *count += 1;
-            })
-        }
-
-        let mut cvss_scores = BTreeMap::new();
-        group(trivy, &mut cvss_scores);
-        group(grype, &mut cvss_scores);
-
-        let mut sum = DeploymentScore::default();
-        let mut total = 0u32;
-        for (_, scores) in cvss_scores {
-            for (score, count) in &scores {
-                match score.version {
-                    CvssVersion::V2_0 => {
-                        let _metric = v2_0::BaseMetric::from_vector_string(&score.vector);
-                        todo!("Score metric")
+            iter: impl Iterator<Item=BTreeMap<VulnId, v3_1::BaseMetric>>,
+            map: &mut BTreeMap<VulnId, v3_1::BaseMetric>,
+        ) -> Result<(), LinkedList<Error>> {
+            let mut errs = LinkedList::new();
+            for set in iter {
+                for (id, metric) in set.into_iter() {
+                    if let Some(entry) = map.get(&id) {
+                        if *entry != metric {
+                            errs.push_back(Error::DifferingCvssScore {
+                                id,
+                                existing: entry.clone(),
+                                new: metric,
+                            });
+                        }
                     }
-                    CvssVersion::V3_0 => continue,
-                    CvssVersion::V3_1 => {
-                        let metric = v3_1::BaseMetric::from_vector_string(&score.vector);
-                        let metric = match metric {
-                            None => continue,
-                            Some(v) => v,
-                        };
-                        let score = score_cvss(context, weights, &metric);
-                        let val = *count as f32;
-                        let v = score * val;
-                        sum += v;
-                    }
-                };
-                total += 5 * *count;
+                }
+            }
+            if !errs.is_empty() {
+                Err(errs)
+            } else {
+                Ok(())
             }
         }
 
-        (sum, total)
+        let mut cvss_scores = BTreeMap::new();
+        group(trivy, &mut cvss_scores)?;
+        group(grype, &mut cvss_scores)?;
+
+        let scores = cvss_scores.into_iter().map(|(k, v)| {
+            let score = context.score_v3(&v);
+            (k, score)
+        }).collect::<BTreeMap<_, _>>();
+        Ok(DeploymentScore {
+            scores,
+        })
     }
 }

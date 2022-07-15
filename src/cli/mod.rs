@@ -1,6 +1,7 @@
 use clap::{Parser, Subcommand};
 
 pub mod analyze;
+pub mod en_mass;
 
 #[derive(Parser)]
 #[clap(version, about, long_about = None)]
@@ -22,5 +23,11 @@ pub enum Commands {
         context: String,
         #[clap(long)]
         weights: Option<String>,
+    },
+    EnMass {
+        #[clap(value_parser)]
+        path: String,
+        #[clap(long)]
+        context: String,
     },
 }

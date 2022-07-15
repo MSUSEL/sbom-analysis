@@ -1,4 +1,9 @@
+use std::collections::BTreeMap;
 use serde_json::Value;
+use crate::{Cvss, v3_1};
+use crate::context::CvssProvider;
+// use crate::GrypeCvss;
+use crate::format::{VulnerabilityFormat, VulnId};
 use crate::model::CvssVersion;
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -7,6 +12,16 @@ pub struct Grype {
     pub source: Source,
     pub distro: Distro,
     pub descriptor: Descriptor,
+}
+
+impl VulnerabilityFormat for Grype {
+    fn cvss_v3_1_scores(&self) -> BTreeMap<VulnId, v3_1::BaseMetric> {
+        self.matches.iter().filter_map(|v| {
+            let id = VulnId::try_from(v.vulnerability.id.clone()).ok()?;
+            let metric = v.vulnerability.cvss_v3_1()?;
+            Some((id, metric))
+        }).collect()
+    }
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -26,7 +41,7 @@ pub struct Vulnerability {
     pub namespace: String,
     pub severity: String,
     pub urls: Vec<String>,
-    pub cvss: Vec<Cvss>,
+    pub cvss: Vec<GrypeCvss>,
     pub fix: Option<Fix>,
     pub description: Option<String>,
     pub advisories: Option<Vec<Advisory>>,
@@ -44,31 +59,26 @@ impl Vulnerability {
     }
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 #[serde(rename_all = "camelCase")]
-pub struct Cvss {
+pub struct GrypeCvss {
     pub version: String,
     pub vector: String,
     pub metrics: Metrics,
     pub vendor_metadata: Value,
 }
 
-impl crate::model::Cvss for Cvss {
+impl Cvss for GrypeCvss {
     fn version(&self) -> Option<CvssVersion> {
-        match self.version.as_str() {
-            "3.1" => Some(CvssVersion::V3_1),
-            "2.0" | "2" => Some(CvssVersion::V2_0),
-            "3.0" | "3" => Some(CvssVersion::V3_0),
-            _ => None,
-        }
+        <&GrypeCvss as Cvss>::version(&self)
     }
 
     fn vector(&self) -> Option<String> {
-        Some(self.vector.clone())
+        <&GrypeCvss as Cvss>::vector(&self)
     }
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 #[serde(rename_all = "camelCase")]
 pub struct Metrics {
     pub base_score: f64,
@@ -82,7 +92,7 @@ pub enum FixState {
     NotFixed,
     Fixed,
     Unknown,
-    WontFix
+    WontFix,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

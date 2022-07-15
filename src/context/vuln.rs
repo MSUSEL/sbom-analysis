@@ -1,15 +1,21 @@
 use std::collections::BTreeMap;
 
-use crate::cvss;
+use crate::{cvss, v3_1};
 use crate::cvss::FromVector;
 use crate::format::grype;
 
-pub trait Vulnerability {
-    fn cvss_v3_1(&self) -> Option<cvss::v3_1::BaseMetric>;
+pub trait CvssProvider {
+    fn cvss_v3_1(&self) -> Option<v3_1::BaseMetric>;
 }
 
-impl Vulnerability for grype::Vulnerability {
-    fn cvss_v3_1(&self) -> Option<cvss::v3_1::BaseMetric> {
+impl<T: CvssProvider> CvssProvider for &T {
+    fn cvss_v3_1(&self) -> Option<v3_1::BaseMetric> {
+        (*self).cvss_v3_1()
+    }
+}
+
+impl CvssProvider for grype::Vulnerability {
+    fn cvss_v3_1(&self) -> Option<v3_1::BaseMetric> {
         self.cvss.iter()
             .filter(|cvss| cvss.version == "3.1")
             .map(|cvss| cvss.vector.split('/'))
