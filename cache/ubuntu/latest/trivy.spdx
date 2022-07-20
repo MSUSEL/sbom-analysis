@@ -1,0 +1,918 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: ubuntu: latest
+DocumentNamespace: http: //aquasecurity.github.io/trivy/container_image/ubuntu:latest-5e0c4c26-5dda-4fd4-bf4b-52bdc9e873d2
+Creator: Organization: aquasecurity
+Creator: Tool: trivy
+Created: 2022-07-01T17:11: 26.6806434Z
+
+##### Package: e2fsprogs
+
+PackageName: e2fsprogs
+SPDXID: SPDXRef-1420219aa7524f13
+PackageVersion: 1.46.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libprocps8
+
+PackageName: libprocps8
+SPDXID: SPDXRef-15f24b20819a430b
+PackageVersion: 2: 3.3.17-6ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam0g
+
+PackageName: libpam0g
+SPDXID: SPDXRef-19504ba4a56e4da3
+PackageVersion: 1.4.0-11ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaudit1
+
+PackageName: libaudit1
+SPDXID: SPDXRef-1a006a75798735ce
+PackageVersion: 1: 3.0.7-1build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage-common
+
+PackageName: libsemanage-common
+SPDXID: SPDXRef-1db5e62e490c2ee7
+PackageVersion: 3.3-1build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: base-files
+
+PackageName: base-files
+SPDXID: SPDXRef-1e2bc743a40b1346
+PackageVersion: 12ubuntu4.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcrypt1
+
+PackageName: libcrypt1
+SPDXID: SPDXRef-1ed96d564cbae95e
+PackageVersion: 1: 4.4.27-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debianutils
+
+PackageName: debianutils
+SPDXID: SPDXRef-1ede10de1174ec03
+PackageVersion: 5.5-1ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcc-s1
+
+PackageName: libgcc-s1
+SPDXID: SPDXRef-1ef3683b9a90e833
+PackageVersion: 12-20220319-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libidn2-0
+
+PackageName: libidn2-0
+SPDXID: SPDXRef-20994e9c1b785c3f
+PackageVersion: 2.3.2-2build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: init-system-helpers
+
+PackageName: init-system-helpers
+SPDXID: SPDXRef-20efef27596a4fb7
+PackageVersion: 1.62
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgpg-error0
+
+PackageName: libgpg-error0
+SPDXID: SPDXRef-2109be04372d6901
+PackageVersion: 1.43-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: usrmerge
+
+PackageName: usrmerge
+SPDXID: SPDXRef-240656a684cb76b8
+PackageVersion: 25ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: findutils
+
+PackageName: findutils
+SPDXID: SPDXRef-24a346288653e690
+PackageVersion: 4.8.0-1ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsepol2
+
+PackageName: libsepol2
+SPDXID: SPDXRef-252596aad880f482
+PackageVersion: 3.3-1build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: login
+
+PackageName: login
+SPDXID: SPDXRef-2a05ccc6c88d09d7
+PackageVersion: 1: 4.8.1-2ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkeyutils1
+
+PackageName: libkeyutils1
+SPDXID: SPDXRef-2a5a0e72aac2ba2
+PackageVersion: 1.6.1-2ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ncurses-bin
+
+PackageName: ncurses-bin
+SPDXID: SPDXRef-2caf561a2d37e22
+PackageVersion: 6.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxxhash0
+
+PackageName: libxxhash0
+SPDXID: SPDXRef-2e19b32653d5ff4c
+PackageVersion: 0.8.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libseccomp2
+
+PackageName: libseccomp2
+SPDXID: SPDXRef-2fd64dfaefad1c82
+PackageVersion: 2.5.3-2ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgmp10
+
+PackageName: libgmp10
+SPDXID: SPDXRef-3151c255c3e82363
+PackageVersion: 2: 6.2.1+dfsg-3ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libhogweed6
+
+PackageName: libhogweed6
+SPDXID: SPDXRef-373710ceb8aea131
+PackageVersion: 3.7.3-1build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gcc-12-base
+
+PackageName: gcc-12-base
+SPDXID: SPDXRef-3c06133ef31fb1
+PackageVersion: 12-20220319-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl-base
+
+PackageName: perl-base
+SPDXID: SPDXRef-3d0e1ba0d99f97c2
+PackageVersion: 5.34.0-3ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libudev1
+
+PackageName: libudev1
+SPDXID: SPDXRef-41009c612d2552f5
+PackageVersion: 249.11-0ubuntu3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre3
+
+PackageName: libpcre3
+SPDXID: SPDXRef-4524c156b2a8aba1
+PackageVersion: 2: 8.39-13ubuntu0.22.04.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcap-ng0
+
+PackageName: libcap-ng0
+SPDXID: SPDXRef-4619bcab9924b75d
+PackageVersion: 0.7.9-2.2build3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dash
+
+PackageName: dash
+SPDXID: SPDXRef-46be978c37b387bd
+PackageVersion: 0.5.11+git20210903+057cd650a4ed-3build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libstdc++6
+
+PackageName: libstdc++6
+SPDXID: SPDXRef-4afd3bf44fbcd91
+PackageVersion: 12-20220319-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbz2-1.0
+
+PackageName: libbz2-1.0
+SPDXID: SPDXRef-4e0ddc3205992ec8
+PackageVersion: 1.0.8-5build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: grep
+
+PackageName: grep
+SPDXID: SPDXRef-52b734e67d7592a
+PackageVersion: 3.7-1build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-modules-bin
+
+PackageName: libpam-modules-bin
+SPDXID: SPDXRef-53e898ff7017a3fb
+PackageVersion: 1.4.0-11ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: diffutils
+
+PackageName: diffutils
+SPDXID: SPDXRef-55d1df9820699b39
+PackageVersion: 1: 3.8-0ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libacl1
+
+PackageName: libacl1
+SPDXID: SPDXRef-570784f4d1cc3095
+PackageVersion: 2.3.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdb5.3
+
+PackageName: libdb5.3
+SPDXID: SPDXRef-5ce8a6dd153637b8
+PackageVersion: 5.3.28+dfsg1-0.8ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: procps
+
+PackageName: procps
+SPDXID: SPDXRef-644d05f86598923c
+PackageVersion: 2: 3.3.17-6ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libzstd1
+
+PackageName: libzstd1
+SPDXID: SPDXRef-6473bedb2590e0f0
+PackageVersion: 1.4.8+dfsg-3build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsystemd0
+
+PackageName: libsystemd0
+SPDXID: SPDXRef-6572175c236a802b
+PackageVersion: 249.11-0ubuntu3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5-3
+
+PackageName: libkrb5-3
+SPDXID: SPDXRef-6bb9bb1c0682d90d
+PackageVersion: 1.19.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcom-err2
+
+PackageName: libcom-err2
+SPDXID: SPDXRef-6e4045d4a1c44937
+PackageVersion: 1.46.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mawk
+
+PackageName: mawk
+SPDXID: SPDXRef-701ed1a8d61d1d7a
+PackageVersion: 1.3.4.20200120-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: adduser
+
+PackageName: adduser
+SPDXID: SPDXRef-729d983dc1368521
+PackageVersion: 3.118ubuntu5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnsl2
+
+PackageName: libnsl2
+SPDXID: SPDXRef-736cd00fe050fd23
+PackageVersion: 1.3.0-2build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sensible-utils
+
+PackageName: sensible-utils
+SPDXID: SPDXRef-7672995f2728392f
+PackageVersion: 0.0.17
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: apt
+
+PackageName: apt
+SPDXID: SPDXRef-79695755171a7336
+PackageVersion: 2.4.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdebconfclient0
+
+PackageName: libdebconfclient0
+SPDXID: SPDXRef-7aee257475d3acfe
+PackageVersion: 0.261ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gzip
+
+PackageName: gzip
+SPDXID: SPDXRef-7c44bac086eb020a
+PackageVersion: 1.10-4ubuntu4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnettle8
+
+PackageName: libnettle8
+SPDXID: SPDXRef-7cca141623986ad
+PackageVersion: 3.7.3-1build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libattr1
+
+PackageName: libattr1
+SPDXID: SPDXRef-8334d31563371f23
+PackageVersion: 1: 2.5.1-1build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-runtime
+
+PackageName: libpam-runtime
+SPDXID: SPDXRef-84470133aaee1cf8
+PackageVersion: 1.4.0-11ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mount
+
+PackageName: mount
+SPDXID: SPDXRef-858b64ef6e7f1bf7
+PackageVersion: 2.37.2-4ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sysvinit-utils
+
+PackageName: sysvinit-utils
+SPDXID: SPDXRef-879690c3a5cbb3b0
+PackageVersion: 3.01-1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssl3
+
+PackageName: libssl3
+SPDXID: SPDXRef-8c4920b042c1047f
+PackageVersion: 3.0.2-0ubuntu1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sed
+
+PackageName: sed
+SPDXID: SPDXRef-8f5db535d2eb7c22
+PackageVersion: 4.8-1ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libuuid1
+
+PackageName: libuuid1
+SPDXID: SPDXRef-91781d7a2eb2354a
+PackageVersion: 2.37.2-4ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tar
+
+PackageName: tar
+SPDXID: SPDXRef-92986720863d037f
+PackageVersion: 1.34+dfsg-1build3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libk5crypto3
+
+PackageName: libk5crypto3
+SPDXID: SPDXRef-97a47164c138bf8e
+PackageVersion: 1.19.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgssapi-krb5-2
+
+PackageName: libgssapi-krb5-2
+SPDXID: SPDXRef-98d7d4690e0f85fb
+PackageVersion: 1.19.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre2-8-0
+
+PackageName: libpcre2-8-0
+SPDXID: SPDXRef-a62bece8e8e0200f
+PackageVersion: 10.39-3build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-modules
+
+PackageName: libpam-modules
+SPDXID: SPDXRef-a695257de7a39b3b
+PackageVersion: 1.4.0-11ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libss2
+
+PackageName: libss2
+SPDXID: SPDXRef-a7c115cb2717fb74
+PackageVersion: 1.46.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc-bin
+
+PackageName: libc-bin
+SPDXID: SPDXRef-ac3f9967c97d0fc1
+PackageVersion: 2.35-0ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libunistring2
+
+PackageName: libunistring2
+SPDXID: SPDXRef-acc9ebcdf7bf1197
+PackageVersion: 1.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtirpc-common
+
+PackageName: libtirpc-common
+SPDXID: SPDXRef-ae8d159e7aa29fd6
+PackageVersion: 1.3.2-2build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: zlib1g
+
+PackageName: zlib1g
+SPDXID: SPDXRef-aeaa28592a4138bc
+PackageVersion: 1: 1.2.11.dfsg-2ubuntu9
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ncurses-base
+
+PackageName: ncurses-base
+SPDXID: SPDXRef-b064391f09163b72
+PackageVersion: 6.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libext2fs2
+
+PackageName: libext2fs2
+SPDXID: SPDXRef-b233274ebcfe69ed
+PackageVersion: 1.46.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblz4-1
+
+PackageName: liblz4-1
+SPDXID: SPDXRef-b3f756f6f04877c9
+PackageVersion: 1.9.3-2build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncursesw6
+
+PackageName: libncursesw6
+SPDXID: SPDXRef-b5d629edd4342073
+PackageVersion: 6.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libffi8
+
+PackageName: libffi8
+SPDXID: SPDXRef-b5f11a8aed965c96
+PackageVersion: 3.4.2-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncurses6
+
+PackageName: libncurses6
+SPDXID: SPDXRef-b6029638c6590f4b
+PackageVersion: 6.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtasn1-6
+
+PackageName: libtasn1-6
+SPDXID: SPDXRef-ba0d697537209565
+PackageVersion: 4.18.0-4build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: util-linux
+
+PackageName: util-linux
+SPDXID: SPDXRef-baa95a688b373116
+PackageVersion: 2.37.2-4ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc6
+
+PackageName: libc6
+SPDXID: SPDXRef-c44bf9f6e37c2f5f
+PackageVersion: 2.35-0ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage2
+
+PackageName: libsemanage2
+SPDXID: SPDXRef-c655729d85eb725b
+PackageVersion: 3.3-1build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libp11-kit0
+
+PackageName: libp11-kit0
+SPDXID: SPDXRef-ca0098f03b6fd7c5
+PackageVersion: 0.24.0-6build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: hostname
+
+PackageName: hostname
+SPDXID: SPDXRef-ca3a14bc54bc8771
+PackageVersion: 3.23ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsmartcols1
+
+PackageName: libsmartcols1
+SPDXID: SPDXRef-d01d19dee9d98b28
+PackageVersion: 2.37.2-4ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libblkid1
+
+PackageName: libblkid1
+SPDXID: SPDXRef-d03d07906fbe0357
+PackageVersion: 2.37.2-4ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dpkg
+
+PackageName: dpkg
+SPDXID: SPDXRef-d29684d6bc1e3978
+PackageVersion: 1.21.1ubuntu2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmount1
+
+PackageName: libmount1
+SPDXID: SPDXRef-d3c10cd4d2f027ac
+PackageVersion: 2.37.2-4ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtinfo6
+
+PackageName: libtinfo6
+SPDXID: SPDXRef-d6b267637e81ea57
+PackageVersion: 6.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: base-passwd
+
+PackageName: base-passwd
+SPDXID: SPDXRef-d74ac6a1b38139d7
+PackageVersion: 3.5.52build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgnutls30
+
+PackageName: libgnutls30
+SPDXID: SPDXRef-d8f63d53999f3e5b
+PackageVersion: 3.7.3-4ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bsdutils
+
+PackageName: bsdutils
+SPDXID: SPDXRef-dba65fe889a8d50c
+PackageVersion: 1: 2.37.2-4ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ubuntu-keyring
+
+PackageName: ubuntu-keyring
+SPDXID: SPDXRef-dfccede98dfb08a1
+PackageVersion: 2021.03.26
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: coreutils
+
+PackageName: coreutils
+SPDXID: SPDXRef-e1c065f85d3edcef
+PackageVersion: 8.32-4.1ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: passwd
+
+PackageName: passwd
+SPDXID: SPDXRef-e3d531827ae47645
+PackageVersion: 1: 4.8.1-2ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtirpc3
+
+PackageName: libtirpc3
+SPDXID: SPDXRef-e5db213201ef6127
+PackageVersion: 1.3.2-2build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaudit-common
+
+PackageName: libaudit-common
+SPDXID: SPDXRef-e8eed07fea7e1de0
+PackageVersion: 1: 3.0.7-1build1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpgv
+
+PackageName: gpgv
+SPDXID: SPDXRef-ec2473393954d3e4
+PackageVersion: 2.2.27-3ubuntu2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblzma5
+
+PackageName: liblzma5
+SPDXID: SPDXRef-ec4569fb6c70f69e
+PackageVersion: 5.2.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libapt-pkg6.0
+
+PackageName: libapt-pkg6.0
+SPDXID: SPDXRef-ee19b9c4aca5dc90
+PackageVersion: 2.4.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcap2
+
+PackageName: libcap2
+SPDXID: SPDXRef-ef4eec3ec4f496cc
+PackageVersion: 1: 2.44-1build3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bash
+
+PackageName: bash
+SPDXID: SPDXRef-ef7ccf3e39b5e50f
+PackageVersion: 5.1-6ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libselinux1
+
+PackageName: libselinux1
+SPDXID: SPDXRef-f356a304288fb804
+PackageVersion: 3.3-1build2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: lsb-base
+
+PackageName: lsb-base
+SPDXID: SPDXRef-f7538c2bc5c90f9b
+PackageVersion: 11.1.0ubuntu4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debconf
+
+PackageName: debconf
+SPDXID: SPDXRef-f83a7acf026b4d73
+PackageVersion: 1.5.79ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5support0
+
+PackageName: libkrb5support0
+SPDXID: SPDXRef-f949d5263bd0295d
+PackageVersion: 1.19.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcrypt20
+
+PackageName: libgcrypt20
+SPDXID: SPDXRef-fe426c5da4afd05e
+PackageVersion: 1.9.4-3ubuntu3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: logsave
+
+PackageName: logsave
+SPDXID: SPDXRef-feacaf5ba926f7a7
+PackageVersion: 1.46.5-2ubuntu1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
