@@ -1,3 +1,4 @@
+use std::cmp::Ordering;
 use std::collections::LinkedList;
 use std::fmt::{Display, Formatter};
 use std::fs::File;
@@ -97,6 +98,16 @@ pub async fn analyze(
     let res = runner.calculate(&context);
 
     let score = res.map_err(Error::Context)?;
+
+    let mut scores = score.scores.values().map(|v| {
+        v.sum
+    }).collect::<Vec<_>>();
+    scores.sort_by(|a, b| a.partial_cmp(b).unwrap_or(Ordering::Equal));
+    let mut iter = scores.iter();
+    let lower = iter.position(|v| *v > 5.0 * 0.33).unwrap_or(scores.len());
+    let upper = iter.position(|v| *v > 5.0 * 0.66).unwrap_or(scores.len());
+    println!("{:.2}% of scores are below a 1.65 (5 / 3)", lower as f64 / scores.len() as f64 * 100.0);
+    println!("{:.2}% of scores are below a 3.3 (5 * 2 / 3)", upper as f64 / scores.len() as f64 * 100.0);
 
     let header = [
         "".to_string(),

@@ -69,6 +69,7 @@ pub struct DeploymentContext {
 }
 
 impl DeploymentContext {
+    /// Calculate the overall Vulnerability Score based on some cvss3.1 metric and the current context.
     pub fn score_v3(&self, metric: &BaseMetric) -> VulnerabilityScore {
         let nw = self.network_v3(metric);
         let rem = self.remote_access_v3(metric);
@@ -117,6 +118,10 @@ impl DeploymentContext {
             PrivilegesRequired::Low => 0.9,
             PrivilegesRequired::High => 0.8,
         };
+        let score = score * match metric.user_interaction {
+            UserInteraction::None => 1.0,
+            UserInteraction::Required => 0.9,
+        };
         let score = score * match self.remote_access {
             RemoteAccess::Public => 1.0,
             RemoteAccess::VPN => 0.8,
@@ -132,10 +137,10 @@ impl DeploymentContext {
             ImpactMetric::None => 0.4,
         };
         let score = score * match self.information_sensitivity {
-            InformationSensitivity::Useless => 0.5,
-            InformationSensitivity::Insensitive => 0.75,
-            InformationSensitivity::Identifying => 1.0,
-            InformationSensitivity::Damaging => 1.5,
+            InformationSensitivity::Useless => 0.25,
+            InformationSensitivity::Insensitive => 0.5,
+            InformationSensitivity::Identifying => 0.75,
+            InformationSensitivity::Damaging => 1.0,
         };
         score
     }
