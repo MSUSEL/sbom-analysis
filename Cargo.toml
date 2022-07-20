@@ -2,6 +2,10 @@
 name = "scayl"
 version = "0.1.0"
 edition = "2021"
+authors = [
+    "Dillon Shaffer <dillon@molkars.dev>",
+    "Cynthia Rosas",
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
