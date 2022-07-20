@@ -6,6 +6,7 @@ use std::path::PathBuf;
 use serde::Serialize;
 use crate::format::Error;
 
+/// A simple function to write a serializable object to a json file.
 #[allow(unused)]
 pub async fn write_json<O: ?Sized + Serialize, P: AsRef<Path>>(path: P, val: &O) -> Result<(), Error> {
     let file = File::create(path.as_ref()).map_err(Error::Io)?;

@@ -2,14 +2,50 @@
 
 use std::collections::BTreeMap;
 
+/// An abstraction for CVSS Components.
 pub trait ComponentFromVector {
+    /// Parses a CVSS vector and returns a component.
     fn from_vector(symbol: &str) -> Option<Self> where Self: Sized;
 }
 
+/// An abstraction for CVSS Metrics
 pub trait FromVector {
+    /// Creates a CVSS metric from a map of symbols.
     fn from_vector(symbols: &BTreeMap<&str, &str>) -> Option<Self> where Self: Sized;
+
+    /// Creates a CVSS metric from a cvss standard string.
+    ///
+    /// # Example
+    /// ```
+    /// let metric = v3_1::BaseMetric
+    ///                    ::from_vector_string("CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H");
+    /// ```
+    fn from_vector_string(str: &str) -> Option<Self> where Self: Sized;
+
+    /// Creates a CVSS standard string
+    ///
+    /// # Example
+    /// ```
+    /// let metric: v3_1::BaseMetric = ...;
+    /// let str = metric.to_vector_string();
+    /// ```
+    fn cvss_vector(&self) -> String;
 }
 
+/// CVSS Component macro
+///
+/// This macro creates an enum for a CVSS Component and its values.
+/// It also creates a `from_vector` method that allows string parsing from a cvss string
+///
+/// # Examples
+/// ```
+/// cvss_component!(AttackVector {
+///     Network => N,
+///     Adjacent => A,
+///     Local => L,
+///     Physical => P,
+/// });
+/// ```
 #[macro_export]
 macro_rules! cvss_component {
     ($name:ident {
@@ -21,6 +57,7 @@ macro_rules! cvss_component {
         }
 
         impl crate::cvss::ComponentFromVector for $name {
+            /// Parses a string into this component
             fn from_vector(symbol: &str) -> std::option::Option<Self> {
                 match symbol {
                     $(stringify!($value) => std::option::Option::Some(Self::$variant)),*,
@@ -30,6 +67,7 @@ macro_rules! cvss_component {
         }
 
         impl $name {
+            /// Returns the cvss metric representation of the enum
             pub fn vector_value(&self) -> &str {
                 match self {
                     $(
@@ -41,11 +79,31 @@ macro_rules! cvss_component {
     }
 }
 
-// cvss_score!(BaseMetric {
-//   attack_vector: AttackVector => AV,
-//   attack_complexity: AttackComplexity => AC,
-//   ...
-// });
+/// A CVSS component supporting to/from string implementations
+///
+/// # Example
+/// ```
+/// cvss_component!(AttackVector {
+///     Network => N,
+///     Adjacent => A,
+///     Local => L,
+///     Physical => P,
+/// });
+///
+/// cvss_component!(AttackComplexity {
+///     Low => L,
+///     High => H,
+/// });
+///
+/// cvss_score!(BaseMetric {
+///     attack_vector: AttackVector => AV,
+///     attack_complexity: AttackComplexity => AC,
+/// });
+///
+/// let metric = BaseMetric::from_vector_string("AV:N/AC:H").unwrap();
+/// assert_eq!(metric.attack_vector, AttackVector::Network);
+/// assert_eq!(metric.attack_complexity, AttackComplexity::High);
+/// ```
 #[macro_export]
 macro_rules! cvss_score {
     ($name:ident $(=> $prefix:literal)? {
@@ -74,11 +132,9 @@ macro_rules! cvss_score {
                         $($field: <$ty as crate::cvss::ComponentFromVector>::from_vector(symbols.get(&stringify!($sym))?)?),*
                     })
                 }
-            }
 
 
-            impl $name {
-                pub fn from_vector_string(val: &str) -> ::std::option::Option<Self> {
+                fn from_vector_string(val: &str) -> ::std::option::Option<Self> {
                     let mut iter = val.split('/');
                     $(if iter.next()? != $prefix {
                         return ::std::option::Option::None;
@@ -94,7 +150,7 @@ macro_rules! cvss_score {
                     <Self as crate::cvss::FromVector>::from_vector(&map)
                 }
 
-                pub fn cvss_vector(&self) -> String {
+                fn cvss_vector(&self) -> String {
                     let mut out = String::new();
                     $(
                         out.push_str($prefix);
@@ -102,7 +158,7 @@ macro_rules! cvss_score {
                     )?
                     let mut iota = 0;
                     $(
-                    // AV:L/M/H
+                        // AV:L/M/H
                         if iota > 0 {
                             out.push('/');
                         }

@@ -42,19 +42,3 @@ cvss_score!(BaseMetric => "CVSS:3.1" {
     integrity_impact: ImpactMetric => I,
     availability_impact: ImpactMetric => A,
 });
-
-// impl BaseMetric {
-//     pub fn from_vector_string(val: &str) -> Option<Self> {
-//         let mut iter = val.split('/');
-//         if iter.next()? != "CVSS:3.1" {
-//             return None;
-//         }
-//         let map = BTreeMap::from_iter(iter
-//             .map(|v| {
-//                 let mut iter = v.split(':');
-//                 (iter.next(), iter.next())
-//             })
-//             .filter_map(|(a, b)| a.and_then(|a| b.map(|b| (a, b)))));
-//         Self::from_vector(&map)
-//     }
-// }

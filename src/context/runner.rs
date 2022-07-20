@@ -6,7 +6,7 @@ use crate::context::{DeploymentContext, DeploymentScore};
 use crate::format::grype::Grype;
 use crate::format::trivy::Trivy;
 use crate::{Syft, VulnerabilityFormat};
-use crate::cvss::v3_1;
+use crate::cvss::{FromVector, v3_1};
 use crate::format::VulnId;
 use crate::v3_1::BaseMetric;
 

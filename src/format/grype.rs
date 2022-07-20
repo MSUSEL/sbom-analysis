@@ -2,7 +2,6 @@ use std::collections::BTreeMap;
 use serde_json::Value;
 use crate::{Cvss, v3_1};
 use crate::context::CvssProvider;
-// use crate::GrypeCvss;
 use crate::format::{VulnerabilityFormat, VulnId};
 use crate::model::CvssVersion;
 

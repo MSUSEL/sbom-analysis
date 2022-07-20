@@ -4,6 +4,7 @@ use chrono::{DateTime, Utc};
 
 use crate::{Cvss, v3_1};
 use crate::context::CvssProvider;
+use crate::cvss::FromVector;
 use crate::format::{VulnerabilityFormat, VulnId};
 use crate::model::{CvssVector, CvssVersion};
 

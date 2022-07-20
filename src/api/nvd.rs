@@ -5,9 +5,16 @@ use std::str::FromStr;
 use reqwest::{Client};
 use reqwest::header::{HeaderMap, HeaderValue};
 
-pub struct NvdApi(Client);
-
-// CVE-2012-1093
+/// A representation of a CVE Identifier
+///
+/// # Example
+/// ```
+/// // CVE-2022-1234
+/// let id = CveId {
+///   year: 2020,
+///   id: 1234,
+/// };
+/// ```
 pub struct CveId {
     year: u16,
     id: u32,
@@ -47,6 +54,8 @@ pub enum Error {
     Json(serde_json::Error),
 }
 
+pub struct NvdApi(Client);
+
 impl NvdApi {
     pub fn new(api_key: String) -> Option<Self> {
         let mut headers = HeaderMap::new();
@@ -57,5 +66,19 @@ impl NvdApi {
             .build()
             .ok()
             .map(|v| Self(v))
+    }
+
+    #[deprecated]
+    pub async fn endpoint(&self) -> String {
+        let client = &self.0;
+        let req = client
+            .get("https://services.nvd.nist.gov/rest/json/cves/1.0/")
+            .build();
+        String::from_utf8_lossy(req
+            .unwrap()
+            .body()
+            .and_then(|body| body.as_bytes())
+            .unwrap())
+            .to_string()
     }
 }

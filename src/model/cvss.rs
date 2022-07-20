@@ -5,10 +5,15 @@ pub enum CvssVersion {
     V3_1,
 }
 
+/// A CVSS abstract
 pub trait Cvss {
+    /// The version of this cvss value
     fn version(&self) -> Option<CvssVersion>;
+
+    /// The cvss vector of this cvss value
     fn vector(&self) -> Option<String>;
 
+    /// The cvss vector of this cvss value
     fn as_vector(&self) -> Option<CvssVector> {
         self.version().zip(self.vector())
             .map(|(version, vector)| CvssVector {

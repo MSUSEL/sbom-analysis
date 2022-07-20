@@ -13,6 +13,10 @@ pub mod nvd_cve;
 pub mod trivy;
 pub mod grype;
 
+pub use grype::Grype;
+pub use syft::Syft;
+pub use trivy::Trivy;
+
 pub struct GrypeFileFilter;
 
 pub struct TrivyFileFilter;

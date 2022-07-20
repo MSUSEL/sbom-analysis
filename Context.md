@@ -5,6 +5,9 @@
 DBVSS is a context-based scoring system intended for use in analyzing the security of software deployed to an adaptive
 medium.
 
+## Scoring Graph ##
+![](scoring_graph.png)
+
 * ### Network Configuration
   The Network Deployment category describes the public internet's access to the deployed service. This category is used
   to evaluate the effect of a network-based vulnerability's impact on the deployed service.

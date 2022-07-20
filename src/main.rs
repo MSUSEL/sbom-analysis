@@ -18,12 +18,9 @@ use crate::cli::{analyze::analyze, en_mass::en_mass};
 use crate::context::ContextRunner;
 use crate::cvss::v3_1;
 use crate::format::VulnerabilityFormat;
-use crate::format::grype::Grype;
-use crate::format::syft::Syft;
-use crate::format::trivy::Trivy;
+use crate::format::{Grype, Syft, Trivy};
 use crate::model::Cvss;
 
-mod longest_zip;
 mod format;
 mod cvss;
 mod api;
@@ -54,13 +51,18 @@ async fn main() {
 }
 
 #[allow(dead_code)]
+/// Retrieves file reports from the VT API and prints them to stdout.
 async fn get_file_reports(syft: &Syft) {
     let digests = syft.get_file_digests::<LinkedList<_>>()
         .into_iter()
         .enumerate();
+
+    // Arc<Mutex<_>> allows us to share the same value across different threads
+    // Arc lets us move the value around without copying
+    // Mutex lets us modify the value safely across threads
     let futures = Arc::new(Mutex::new(digests));
 
-    let handles = (0..4).map(|_| {
+    let _handles = (0..4).map(|_| {
         let futures = futures.clone();
         tokio::spawn(async move {
             let vt_api = VtApi::new(reqwest::Client::new());
@@ -74,8 +76,5 @@ async fn get_file_reports(syft: &Syft) {
             }
         })
     }).collect::<Vec<_>>();
-    for handle in handles {
-        handle.await.expect("AY")
-    }
 }
 
