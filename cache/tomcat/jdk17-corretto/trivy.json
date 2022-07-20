@@ -1,0 +1,720 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "tomcat:jdk17-corretto",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "amazon",
+      "Name": "2 (Karoo)"
+    },
+    "ImageID": "sha256:0ee792155b7ed72b7d725194bd9c26d27504483f064a9a03d674639b0bc36342",
+    "DiffIDs": [
+      "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4",
+      "sha256:226377d808115981eed59d78c0306f32103ff4d463038e07491cb941a42692ec",
+      "sha256:b1ba156ac6d354336dab7bac43671768753b419b18c193a9e32ee1baea0bd3f7",
+      "sha256:513c479644826c71c9109d6bb7a02e0c49a99e4b50a9bd6c13e0738b7a3bbb04",
+      "sha256:d7cef095748153021e34863305f782591de2190e36a2e4527d51fb0fe7e9a888"
+    ],
+    "RepoTags": [
+      "tomcat:jdk17-corretto"
+    ],
+    "RepoDigests": [
+      "tomcat@sha256:6506c4b4d425f56e408d864eb0875f615e4ed1b210b02ee22f7c81b9c67bcefa"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "2abcc682c307f0ab94244c1911603be73dd7481e0410338daeed3c80abb0a7d6",
+      "created": "2022-07-20T03:54:03.045139199Z",
+      "docker_version": "20.10.12",
+      "history": [
+        {
+          "created": "2022-06-21T23:19:41Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:e6c6bb016423b24a28b273cc76e9fbbf81934b77a0ede797ccfd0eeac465c8a4 in / "
+        },
+        {
+          "created": "2022-06-21T23:19:42Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-19T22:38:35Z",
+          "created_by": "/bin/sh -c #(nop)  ARG version=17.0.4.8-1",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-19T22:38:58Z",
+          "created_by": "|1 version=17.0.4.8-1 /bin/sh -c set -eux     \u0026\u0026 export GNUPGHOME=\"$(mktemp -d)\"     \u0026\u0026 curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     \u0026\u0026 gpg --batch --import corretto.key     \u0026\u0026 gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' \u003e corretto.key     \u0026\u0026 rpm --import corretto.key     \u0026\u0026 rm -r \"$GNUPGHOME\" corretto.key     \u0026\u0026 curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     \u0026\u0026 grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     \u0026\u0026 echo \"priority=9\" \u003e\u003e /etc/yum.repos.d/corretto.repo     \u0026\u0026 yum install -y java-17-amazon-corretto-devel-$version     \u0026\u0026 (find /usr/lib/jvm/java-17-amazon-corretto -name src.zip -delete || true)     \u0026\u0026 yum install -y fontconfig     \u0026\u0026 yum clean all"
+        },
+        {
+          "created": "2022-07-19T22:38:58Z",
+          "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-19T22:38:58Z",
+          "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:51:05Z",
+          "created_by": "/bin/sh -c #(nop)  ENV CATALINA_HOME=/usr/local/tomcat",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:51:05Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:51:06Z",
+          "created_by": "/bin/sh -c mkdir -p \"$CATALINA_HOME\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:51:06Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /usr/local/tomcat",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:51:06Z",
+          "created_by": "/bin/sh -c #(nop)  ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:51:06Z",
+          "created_by": "/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:51:06Z",
+          "created_by": "/bin/sh -c #(nop)  ENV GPG_KEYS=A9C5DF4D22E99998D9875A5110C01C5A2F6059E7",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:51:06Z",
+          "created_by": "/bin/sh -c #(nop)  ENV TOMCAT_MAJOR=10",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:53:25Z",
+          "created_by": "/bin/sh -c #(nop)  ENV TOMCAT_VERSION=10.0.22",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:53:25Z",
+          "created_by": "/bin/sh -c #(nop)  ENV TOMCAT_SHA512=fe46db8794f066882b30e7a94bd8d3dbcf29e8e8ffaf67c1355846755745a7c9eafd124819283f218bcf410921a485b44b57b56fd6251fb99d67d95f3dd36826",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:54:01Z",
+          "created_by": "/bin/sh -c set -eux; \t\tif ! command -v yumdb \u003e /dev/null; then \t\tyum install -y --setopt=skip_missing_names_on_install=False yum-utils; \t\tyumdb set reason dep yum-utils; \tfi; \t_yum_install_temporary() { ( set -eu +x; \t\tlocal pkg todo=''; \t\tfor pkg; do \t\t\tif ! rpm --query \"$pkg\" \u003e /dev/null 2\u003e\u00261; then \t\t\t\ttodo=\"$todo $pkg\"; \t\t\tfi; \t\tdone; \t\tif [ -n \"$todo\" ]; then \t\t\tset -x; \t\t\tyum install -y --setopt=skip_missing_names_on_install=False $todo; \t\t\tyumdb set reason dep $todo; \t\tfi; \t) }; \t_yum_install_temporary gzip tar; \t\tddist() { \t\tlocal f=\"$1\"; shift; \t\tlocal distFile=\"$1\"; shift; \t\tlocal mvnFile=\"${1:-}\"; \t\tlocal success=; \t\tlocal distUrl=; \t\tfor distUrl in \t\t\t\"https://www.apache.org/dyn/closer.cgi?action=download\u0026filename=$distFile\" \t\t\t\"https://downloads.apache.org/$distFile\" \t\t\t\"https://www-us.apache.org/dist/$distFile\" \t\t\t\"https://www.apache.org/dist/$distFile\" \t\t\t\"https://archive.apache.org/dist/$distFile\" \t\t\t${mvnFile:+\"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile\"} \t\t; do \t\t\tif curl -fL -o \"$f\" \"$distUrl\" \u0026\u0026 [ -s \"$f\" ]; then \t\t\t\tsuccess=1; \t\t\t\tbreak; \t\t\tfi; \t\tdone; \t\t[ -n \"$success\" ]; \t}; \t\tddist 'tomcat.tar.gz' \"tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz\" \"$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz\"; \techo \"$TOMCAT_SHA512 *tomcat.tar.gz\" | sha512sum --strict --check -; \tddist 'tomcat.tar.gz.asc' \"tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc\" \"$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc\"; \texport GNUPGHOME=\"$(mktemp -d)\"; \tfor key in $GPG_KEYS; do \t\tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\"; \tdone; \tgpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; \ttar -xf tomcat.tar.gz --strip-components=1; \trm bin/*.bat; \trm tomcat.tar.gz*; \tcommand -v gpgconf \u0026\u0026 gpgconf --kill all || :; \trm -rf \"$GNUPGHOME\"; \t\tmv webapps webapps.dist; \tmkdir webapps; \t\tnativeBuildDir=\"$(mktemp -d)\"; \ttar -xf bin/tomcat-native.tar.gz -C \"$nativeBuildDir\" --strip-components=1; \t_yum_install_temporary \t\tapr-devel \t\tgcc \t\tmake \t\topenssl11-devel \t; \t( \t\texport CATALINA_HOME=\"$PWD\"; \t\tcd \"$nativeBuildDir/native\"; \t\taprConfig=\"$(command -v apr-1-config)\"; \t\t./configure \t\t\t--libdir=\"$TOMCAT_NATIVE_LIBDIR\" \t\t\t--prefix=\"$CATALINA_HOME\" \t\t\t--with-apr=\"$aprConfig\" \t\t\t--with-java-home=\"$JAVA_HOME\" \t\t\t--with-ssl=yes \t\t; \t\tnproc=\"$(nproc)\"; \t\tmake -j \"$nproc\"; \t\tmake install; \t); \trm -rf \"$nativeBuildDir\"; \trm bin/tomcat-native.tar.gz; \t\tfind \"$TOMCAT_NATIVE_LIBDIR\" -type f -executable -exec ldd '{}' ';' \t\t| awk '/=\u003e/ \u0026\u0026 $(NF-1) != \"=\u003e\" { print $(NF-1) }' \t\t| xargs -rt readlink -e \t\t| sort -u \t\t| xargs -rt rpm --query --whatprovides \t\t| sort -u \t\t| tee \"$TOMCAT_NATIVE_LIBDIR/.dependencies.txt\" \t\t| xargs -r yumdb set reason user \t; \t\tyum autoremove -y; \tyum clean all; \trm -rf /var/cache/yum; \t\tfind ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; \t\tchmod -R +rX .; \tchmod 777 logs temp work; \t\tcatalina.sh version"
+        },
+        {
+          "created": "2022-07-20T03:54:02Z",
+          "created_by": "/bin/sh -c set -eux; \tnativeLines=\"$(catalina.sh configtest 2\u003e\u00261)\"; \tnativeLines=\"$(echo \"$nativeLines\" | grep 'Apache Tomcat Native')\"; \tnativeLines=\"$(echo \"$nativeLines\" | sort -u)\"; \tif ! echo \"$nativeLines\" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' \u003e\u00262; then \t\techo \u003e\u00262 \"$nativeLines\"; \t\texit 1; \tfi",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:54:02Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 8080",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-07-20T03:54:03Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"catalina.sh\" \"run\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4",
+          "sha256:226377d808115981eed59d78c0306f32103ff4d463038e07491cb941a42692ec",
+          "sha256:b1ba156ac6d354336dab7bac43671768753b419b18c193a9e32ee1baea0bd3f7",
+          "sha256:513c479644826c71c9109d6bb7a02e0c49a99e4b50a9bd6c13e0738b7a3bbb04",
+          "sha256:d7cef095748153021e34863305f782591de2190e36a2e4527d51fb0fe7e9a888"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "catalina.sh",
+          "run"
+        ],
+        "Env": [
+          "PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "LANG=C.UTF-8",
+          "JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto",
+          "CATALINA_HOME=/usr/local/tomcat",
+          "TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib",
+          "LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib",
+          "GPG_KEYS=A9C5DF4D22E99998D9875A5110C01C5A2F6059E7",
+          "TOMCAT_MAJOR=10",
+          "TOMCAT_VERSION=10.0.22",
+          "TOMCAT_SHA512=fe46db8794f066882b30e7a94bd8d3dbcf29e8e8ffaf67c1355846755745a7c9eafd124819283f218bcf410921a485b44b57b56fd6251fb99d67d95f3dd36826"
+        ],
+        "Image": "sha256:5fc36875730a6d661ed0f7e17e22883f802f8ee500a4b8e8b81661a281009822",
+        "WorkingDir": "/usr/local/tomcat"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "tomcat:jdk17-corretto (amazon 2 (Karoo))",
+      "Class": "os-pkgs",
+      "Type": "amazon",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-27782",
+          "PkgName": "curl",
+          "InstalledVersion": "7.79.1-2.amzn2.0.1",
+          "FixedVersion": "7.79.1-4.amzn2.0.1",
+          "Layer": {
+            "DiffID": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4"
+          },
+          "SeveritySource": "amazon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27782",
+          "DataSource": {
+            "ID": "amazon",
+            "Name": "Amazon Linux Security Center",
+            "URL": "https://alas.aws.amazon.com/"
+          },
+          "Title": "curl: TLS and SSH connection too eager reuse",
+          "Description": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:L/A:L",
+              "V3Score": 6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22576.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27774.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27776.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27782.json",
+            "https://access.redhat.com/security/cve/CVE-2022-27782",
+            "https://curl.se/docs/CVE-2022-27782.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27782",
+            "https://hackerone.com/reports/1555796",
+            "https://linux.oracle.com/cve/CVE-2022-27782.html",
+            "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-27782",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://ubuntu.com/security/notices/USN-5412-1"
+          ],
+          "PublishedDate": "2022-06-02T14:15:00Z",
+          "LastModifiedDate": "2022-06-10T18:33:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-46143",
+          "PkgName": "expat",
+          "InstalledVersion": "2.1.0-12.amzn2.0.4",
+          "FixedVersion": "2.1.0-14.amzn2.0.1",
+          "Layer": {
+            "DiffID": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4"
+          },
+          "SeveritySource": "amazon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-46143",
+          "DataSource": {
+            "ID": "amazon",
+            "Name": "Amazon Linux Security Center",
+            "URL": "https://alas.aws.amazon.com/"
+          },
+          "Title": "expat: Integer overflow in doProlog in xmlparse.c",
+          "Description": "In doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+            "https://access.redhat.com/errata/RHSA-2022:0951",
+            "https://access.redhat.com/security/cve/CVE-2021-46143",
+            "https://bugzilla.redhat.com/2044451",
+            "https://bugzilla.redhat.com/2044455",
+            "https://bugzilla.redhat.com/2044457",
+            "https://bugzilla.redhat.com/2044464",
+            "https://bugzilla.redhat.com/2044467",
+            "https://bugzilla.redhat.com/2044479",
+            "https://bugzilla.redhat.com/2044484",
+            "https://bugzilla.redhat.com/2044488",
+            "https://bugzilla.redhat.com/2044613",
+            "https://bugzilla.redhat.com/2056363",
+            "https://bugzilla.redhat.com/2056366",
+            "https://bugzilla.redhat.com/2056370",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46143",
+            "https://errata.almalinux.org/8/ALSA-2022-0951.html",
+            "https://github.com/libexpat/libexpat/issues/532",
+            "https://github.com/libexpat/libexpat/pull/538",
+            "https://linux.oracle.com/cve/CVE-2021-46143.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9227.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-46143",
+            "https://security.netapp.com/advisory/ntap-20220121-0006/",
+            "https://ubuntu.com/security/notices/USN-5288-1",
+            "https://www.debian.org/security/2022/dsa-5073",
+            "https://www.tenable.com/security/tns-2022-05"
+          ],
+          "PublishedDate": "2022-01-06T04:15:00Z",
+          "LastModifiedDate": "2022-06-14T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-22822",
+          "PkgName": "expat",
+          "InstalledVersion": "2.1.0-12.amzn2.0.4",
+          "FixedVersion": "2.1.0-14.amzn2.0.1",
+          "Layer": {
+            "DiffID": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4"
+          },
+          "SeveritySource": "amazon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22822",
+          "DataSource": {
+            "ID": "amazon",
+            "Name": "Amazon Linux Security Center",
+            "URL": "https://alas.aws.amazon.com/"
+          },
+          "Title": "expat: Integer overflow in addBinding in xmlparse.c",
+          "Description": "addBinding in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+            "https://access.redhat.com/errata/RHSA-2022:0951",
+            "https://access.redhat.com/security/cve/CVE-2022-22822",
+            "https://bugzilla.redhat.com/2044451",
+            "https://bugzilla.redhat.com/2044455",
+            "https://bugzilla.redhat.com/2044457",
+            "https://bugzilla.redhat.com/2044464",
+            "https://bugzilla.redhat.com/2044467",
+            "https://bugzilla.redhat.com/2044479",
+            "https://bugzilla.redhat.com/2044484",
+            "https://bugzilla.redhat.com/2044488",
+            "https://bugzilla.redhat.com/2044613",
+            "https://bugzilla.redhat.com/2056363",
+            "https://bugzilla.redhat.com/2056366",
+            "https://bugzilla.redhat.com/2056370",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22822",
+            "https://errata.almalinux.org/8/ALSA-2022-0951.html",
+            "https://github.com/libexpat/libexpat/pull/539",
+            "https://linux.oracle.com/cve/CVE-2022-22822.html",
+            "https://linux.oracle.com/errata/ELSA-2022-1069.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-22822",
+            "https://ubuntu.com/security/notices/USN-5288-1",
+            "https://www.debian.org/security/2022/dsa-5073",
+            "https://www.tenable.com/security/tns-2022-05"
+          ],
+          "PublishedDate": "2022-01-10T14:12:00Z",
+          "LastModifiedDate": "2022-06-14T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-22823",
+          "PkgName": "expat",
+          "InstalledVersion": "2.1.0-12.amzn2.0.4",
+          "FixedVersion": "2.1.0-14.amzn2.0.1",
+          "Layer": {
+            "DiffID": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4"
+          },
+          "SeveritySource": "amazon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22823",
+          "DataSource": {
+            "ID": "amazon",
+            "Name": "Amazon Linux Security Center",
+            "URL": "https://alas.aws.amazon.com/"
+          },
+          "Title": "expat: Integer overflow in build_model in xmlparse.c",
+          "Description": "build_model in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+            "https://access.redhat.com/errata/RHSA-2022:0951",
+            "https://access.redhat.com/security/cve/CVE-2022-22823",
+            "https://bugzilla.redhat.com/2044451",
+            "https://bugzilla.redhat.com/2044455",
+            "https://bugzilla.redhat.com/2044457",
+            "https://bugzilla.redhat.com/2044464",
+            "https://bugzilla.redhat.com/2044467",
+            "https://bugzilla.redhat.com/2044479",
+            "https://bugzilla.redhat.com/2044484",
+            "https://bugzilla.redhat.com/2044488",
+            "https://bugzilla.redhat.com/2044613",
+            "https://bugzilla.redhat.com/2056363",
+            "https://bugzilla.redhat.com/2056366",
+            "https://bugzilla.redhat.com/2056370",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22823",
+            "https://errata.almalinux.org/8/ALSA-2022-0951.html",
+            "https://github.com/libexpat/libexpat/pull/539",
+            "https://linux.oracle.com/cve/CVE-2022-22823.html",
+            "https://linux.oracle.com/errata/ELSA-2022-1069.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-22823",
+            "https://ubuntu.com/security/notices/USN-5288-1",
+            "https://www.debian.org/security/2022/dsa-5073",
+            "https://www.tenable.com/security/tns-2022-05"
+          ],
+          "PublishedDate": "2022-01-10T14:12:00Z",
+          "LastModifiedDate": "2022-06-14T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-22824",
+          "PkgName": "expat",
+          "InstalledVersion": "2.1.0-12.amzn2.0.4",
+          "FixedVersion": "2.1.0-14.amzn2.0.1",
+          "Layer": {
+            "DiffID": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4"
+          },
+          "SeveritySource": "amazon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22824",
+          "DataSource": {
+            "ID": "amazon",
+            "Name": "Amazon Linux Security Center",
+            "URL": "https://alas.aws.amazon.com/"
+          },
+          "Title": "expat: Integer overflow in defineAttribute in xmlparse.c",
+          "Description": "defineAttribute in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+            "https://access.redhat.com/errata/RHSA-2022:0951",
+            "https://access.redhat.com/security/cve/CVE-2022-22824",
+            "https://bugzilla.redhat.com/2044451",
+            "https://bugzilla.redhat.com/2044455",
+            "https://bugzilla.redhat.com/2044457",
+            "https://bugzilla.redhat.com/2044464",
+            "https://bugzilla.redhat.com/2044467",
+            "https://bugzilla.redhat.com/2044479",
+            "https://bugzilla.redhat.com/2044484",
+            "https://bugzilla.redhat.com/2044488",
+            "https://bugzilla.redhat.com/2044613",
+            "https://bugzilla.redhat.com/2056363",
+            "https://bugzilla.redhat.com/2056366",
+            "https://bugzilla.redhat.com/2056370",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22824",
+            "https://errata.almalinux.org/8/ALSA-2022-0951.html",
+            "https://github.com/libexpat/libexpat/pull/539",
+            "https://linux.oracle.com/cve/CVE-2022-22824.html",
+            "https://linux.oracle.com/errata/ELSA-2022-1069.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-22824",
+            "https://ubuntu.com/security/notices/USN-5288-1",
+            "https://www.debian.org/security/2022/dsa-5073",
+            "https://www.tenable.com/security/tns-2022-05"
+          ],
+          "PublishedDate": "2022-01-10T14:12:00Z",
+          "LastModifiedDate": "2022-06-14T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-22825",
+          "PkgName": "expat",
+          "InstalledVersion": "2.1.0-12.amzn2.0.4",
+          "FixedVersion": "2.1.0-14.amzn2.0.1",
+          "Layer": {
+            "DiffID": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4"
+          },
+          "SeveritySource": "amazon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22825",
+          "DataSource": {
+            "ID": "amazon",
+            "Name": "Amazon Linux Security Center",
+            "URL": "https://alas.aws.amazon.com/"
+          },
+          "Title": "expat: Integer overflow in lookup in xmlparse.c",
+          "Description": "lookup in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+            "https://access.redhat.com/errata/RHSA-2022:0951",
+            "https://access.redhat.com/security/cve/CVE-2022-22825",
+            "https://bugzilla.redhat.com/2044451",
+            "https://bugzilla.redhat.com/2044455",
+            "https://bugzilla.redhat.com/2044457",
+            "https://bugzilla.redhat.com/2044464",
+            "https://bugzilla.redhat.com/2044467",
+            "https://bugzilla.redhat.com/2044479",
+            "https://bugzilla.redhat.com/2044484",
+            "https://bugzilla.redhat.com/2044488",
+            "https://bugzilla.redhat.com/2044613",
+            "https://bugzilla.redhat.com/2056363",
+            "https://bugzilla.redhat.com/2056366",
+            "https://bugzilla.redhat.com/2056370",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22825",
+            "https://errata.almalinux.org/8/ALSA-2022-0951.html",
+            "https://github.com/libexpat/libexpat/pull/539",
+            "https://linux.oracle.com/cve/CVE-2022-22825.html",
+            "https://linux.oracle.com/errata/ELSA-2022-1069.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-22825",
+            "https://ubuntu.com/security/notices/USN-5288-1",
+            "https://www.debian.org/security/2022/dsa-5073",
+            "https://www.tenable.com/security/tns-2022-05"
+          ],
+          "PublishedDate": "2022-01-10T14:12:00Z",
+          "LastModifiedDate": "2022-06-14T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-22826",
+          "PkgName": "expat",
+          "InstalledVersion": "2.1.0-12.amzn2.0.4",
+          "FixedVersion": "2.1.0-14.amzn2.0.1",
+          "Layer": {
+            "DiffID": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4"
+          },
+          "SeveritySource": "amazon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22826",
+          "DataSource": {
+            "ID": "amazon",
+            "Name": "Amazon Linux Security Center",
+            "URL": "https://alas.aws.amazon.com/"
+          },
+          "Title": "expat: Integer overflow in nextScaffoldPart in xmlparse.c",
+          "Description": "nextScaffoldPart in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+            "https://access.redhat.com/errata/RHSA-2022:0951",
+            "https://access.redhat.com/security/cve/CVE-2022-22826",
+            "https://bugzilla.redhat.com/2044451",
+            "https://bugzilla.redhat.com/2044455",
+            "https://bugzilla.redhat.com/2044457",
+            "https://bugzilla.redhat.com/2044464",
+            "https://bugzilla.redhat.com/2044467",
+            "https://bugzilla.redhat.com/2044479",
+            "https://bugzilla.redhat.com/2044484",
+            "https://bugzilla.redhat.com/2044488",
+            "https://bugzilla.redhat.com/2044613",
+            "https://bugzilla.redhat.com/2056363",
+            "https://bugzilla.redhat.com/2056366",
+            "https://bugzilla.redhat.com/2056370",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22826",
+            "https://errata.almalinux.org/8/ALSA-2022-0951.html",
+            "https://github.com/libexpat/libexpat/pull/539",
+            "https://linux.oracle.com/cve/CVE-2022-22826.html",
+            "https://linux.oracle.com/errata/ELSA-2022-1069.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-22826",
+            "https://ubuntu.com/security/notices/USN-5288-1",
+            "https://www.debian.org/security/2022/dsa-5073",
+            "https://www.tenable.com/security/tns-2022-05"
+          ],
+          "PublishedDate": "2022-01-10T14:12:00Z",
+          "LastModifiedDate": "2022-06-14T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-22827",
+          "PkgName": "expat",
+          "InstalledVersion": "2.1.0-12.amzn2.0.4",
+          "FixedVersion": "2.1.0-14.amzn2.0.1",
+          "Layer": {
+            "DiffID": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4"
+          },
+          "SeveritySource": "amazon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22827",
+          "DataSource": {
+            "ID": "amazon",
+            "Name": "Amazon Linux Security Center",
+            "URL": "https://alas.aws.amazon.com/"
+          },
+          "Title": "expat: Integer overflow in storeAtts in xmlparse.c",
+          "Description": "storeAtts in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+            "https://access.redhat.com/errata/RHSA-2022:0951",
+            "https://access.redhat.com/security/cve/CVE-2022-22827",
+            "https://bugzilla.redhat.com/2044451",
+            "https://bugzilla.redhat.com/2044455",
+            "https://bugzilla.redhat.com/2044457",
+            "https://bugzilla.redhat.com/2044464",
+            "https://bugzilla.redhat.com/2044467",
+            "https://bugzilla.redhat.com/2044479",
+            "https://bugzilla.redhat.com/2044484",
+            "https://bugzilla.redhat.com/2044488",
+            "https://bugzilla.redhat.com/2044613",
+            "https://bugzilla.redhat.com/2056363",
+            "https://bugzilla.redhat.com/2056366",
+            "https://bugzilla.redhat.com/2056370",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22827",
+            "https://errata.almalinux.org/8/ALSA-2022-0951.html",
+            "https://github.com/libexpat/libexpat/pull/539",
+            "https://linux.oracle.com/cve/CVE-2022-22827.html",
+            "https://linux.oracle.com/errata/ELSA-2022-1069.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-22827",
+            "https://ubuntu.com/security/notices/USN-5288-1",
+            "https://www.debian.org/security/2022/dsa-5073",
+            "https://www.tenable.com/security/tns-2022-05"
+          ],
+          "PublishedDate": "2022-01-10T14:12:00Z",
+          "LastModifiedDate": "2022-06-14T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-27782",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.79.1-2.amzn2.0.1",
+          "FixedVersion": "7.79.1-4.amzn2.0.1",
+          "Layer": {
+            "DiffID": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4"
+          },
+          "SeveritySource": "amazon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27782",
+          "DataSource": {
+            "ID": "amazon",
+            "Name": "Amazon Linux Security Center",
+            "URL": "https://alas.aws.amazon.com/"
+          },
+          "Title": "curl: TLS and SSH connection too eager reuse",
+          "Description": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:L/A:L",
+              "V3Score": 6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22576.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27774.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27776.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27782.json",
+            "https://access.redhat.com/security/cve/CVE-2022-27782",
+            "https://curl.se/docs/CVE-2022-27782.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27782",
+            "https://hackerone.com/reports/1555796",
+            "https://linux.oracle.com/cve/CVE-2022-27782.html",
+            "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-27782",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://ubuntu.com/security/notices/USN-5412-1"
+          ],
+          "PublishedDate": "2022-06-02T14:15:00Z",
+          "LastModifiedDate": "2022-06-10T18:33:00Z"
+        }
+      ]
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar"
+    }
+  ]
+}

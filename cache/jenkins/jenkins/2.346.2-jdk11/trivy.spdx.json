@@ -1,0 +1,2880 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: jenkins/jenkins:2.346.2-jdk11
+DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/jenkins/jenkins:2.346.2-jdk11-4c6dcb7b-e8fe-401a-9a99-20e92e4179b1
+Creator: Organization: aquasecurity
+Creator: Tool: trivy
+Created: 2022-07-19T17:28:57.1471519Z
+
+##### Package: commons-validator:commons-validator
+
+PackageName: commons-validator:commons-validator
+SPDXID: SPDXRef-1018ba2fc468df93
+PackageVersion: 1.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.springframework:spring-expression
+
+PackageName: org.springframework:spring-expression
+SPDXID: SPDXRef-11bebcace0c44127
+PackageVersion: 5.3.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsystemd0
+
+PackageName: libsystemd0
+SPDXID: SPDXRef-145399def7ff69b
+PackageVersion: 247.3-7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: login
+
+PackageName: login
+SPDXID: SPDXRef-1464d19ef7a6603d
+PackageVersion: 1:4.8.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.modules:instance-identity
+
+PackageName: org.jenkins-ci.modules:instance-identity
+SPDXID: SPDXRef-14a76cbcab655395
+PackageVersion: 2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-digester:commons-digester
+
+PackageName: commons-digester:commons-digester
+SPDXID: SPDXRef-16fb3fdaa8c06578
+PackageVersion: 2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+
+PackageName: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+SPDXID: SPDXRef-17441faba703a7fd
+PackageVersion: 2.13.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl-base
+
+PackageName: perl-base
+SPDXID: SPDXRef-1898fe119740e885
+PackageVersion: 5.32.1-4+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fontconfig-config
+
+PackageName: fontconfig-config
+SPDXID: SPDXRef-1982f22124529e05
+PackageVersion: 2.13.1-4.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gnupg-l10n
+
+PackageName: gnupg-l10n
+SPDXID: SPDXRef-1a6230447127ee72
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jvnet.localizer:localizer
+
+PackageName: org.jvnet.localizer:localizer
+SPDXID: SPDXRef-1a924919aaa57dd2
+PackageVersion: 1.31
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke.jinterop:j-interop
+
+PackageName: org.kohsuke.jinterop:j-interop
+SPDXID: SPDXRef-1b1e266d39b064f2
+PackageVersion: 2.0.8-kohsuke-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpsl5
+
+PackageName: libpsl5
+SPDXID: SPDXRef-1b5c060eee04d8b0
+PackageVersion: 0.21.0-1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpg-wks-client
+
+PackageName: gpg-wks-client
+SPDXID: SPDXRef-1bf32bc76c49e677
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.sun.activation:jakarta.activation
+
+PackageName: com.sun.activation:jakarta.activation
+SPDXID: SPDXRef-1d73c8cdd363fe27
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.ant:ant-launcher
+
+PackageName: org.apache.ant:ant-launcher
+SPDXID: SPDXRef-1deaaa5c874a3faf
+PackageVersion: 1.10.12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liberror-perl
+
+PackageName: liberror-perl
+SPDXID: SPDXRef-1e5fb0a550323dcf
+PackageVersion: 0.17029-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.yaml:snakeyaml
+
+PackageName: org.yaml:snakeyaml
+SPDXID: SPDXRef-21f27878c4693eeb
+PackageVersion: 1.30
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-httpclient:commons-httpclient
+
+PackageName: commons-httpclient:commons-httpclient
+SPDXID: SPDXRef-2311e6fccb7440fa
+PackageVersion: 3.1-jenkins-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.fusesource.jansi:jansi
+
+PackageName: org.fusesource.jansi:jansi
+SPDXID: SPDXRef-23936995ea4e5077
+PackageVersion: 1.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libedit2
+
+PackageName: libedit2
+SPDXID: SPDXRef-23bf3124b334efd7
+PackageVersion: 3.1-20191231-2+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfreetype6
+
+PackageName: libfreetype6
+SPDXID: SPDXRef-24bff8da1f954efe
+PackageVersion: 2.10.4+dfsg-1+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaudit-common
+
+PackageName: libaudit-common
+SPDXID: SPDXRef-254a3958436727fe
+PackageVersion: 1:3.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: net.sf.ezmorph:ezmorph
+
+PackageName: net.sf.ezmorph:ezmorph
+SPDXID: SPDXRef-256332638abe1478
+PackageVersion: 1.0.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ca-certificates
+
+PackageName: ca-certificates
+SPDXID: SPDXRef-260634d355ca160a
+PackageVersion: 20210119
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke.stapler:stapler-jelly
+
+PackageName: org.kohsuke.stapler:stapler-jelly
+SPDXID: SPDXRef-265e8ea3e7265564
+PackageVersion: 1669.v95a_4b_919a_b_a_2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-fileupload:commons-fileupload
+
+PackageName: commons-fileupload:commons-fileupload
+SPDXID: SPDXRef-27a0552120888a20
+PackageVersion: 1.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpg-agent
+
+PackageName: gpg-agent
+SPDXID: SPDXRef-2892726ec0fffe77
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre2-8-0
+
+PackageName: libpcre2-8-0
+SPDXID: SPDXRef-28d0eaa9d4cdc93f
+PackageVersion: 10.36-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnpth0
+
+PackageName: libnpth0
+SPDXID: SPDXRef-297b07471b6ae452
+PackageVersion: 1.6-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssl1.1
+
+PackageName: libssl1.1
+SPDXID: SPDXRef-2a6fdc58a97c3cc
+PackageVersion: 1.1.1n-0+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.sshd:sshd-common
+
+PackageName: org.apache.sshd:sshd-common
+SPDXID: SPDXRef-2ad9987de542f7b6
+PackageVersion: 2.8.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: git-man
+
+PackageName: git-man
+SPDXID: SPDXRef-2c42fa46335c44b0
+PackageVersion: 1:2.30.2-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: net.java.sezpoz:sezpoz
+
+PackageName: net.java.sezpoz:sezpoz
+SPDXID: SPDXRef-2c6cb2edf763be97
+PackageVersion: 1.13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libk5crypto3
+
+PackageName: libk5crypto3
+SPDXID: SPDXRef-2c71faa837a99c2a
+PackageVersion: 1.18.3-6+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: jaxen:jaxen
+
+PackageName: jaxen:jaxen
+SPDXID: SPDXRef-2d5c95a940eebaa4
+PackageVersion: 1.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-io
+
+PackageName: org.eclipse.jetty:jetty-io
+SPDXID: SPDXRef-2e438747b9aa0bf9
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jfree:jfreechart
+
+PackageName: org.jfree:jfreechart
+SPDXID: SPDXRef-3130b5e10c9ef827
+PackageVersion: 1.0.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcc-s1
+
+PackageName: libgcc-s1
+SPDXID: SPDXRef-32701e6b6154132f
+PackageVersion: 10.2.1-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: javax.servlet:javax.servlet-api
+
+PackageName: javax.servlet:javax.servlet-api
+SPDXID: SPDXRef-32a848236fab2ad7
+PackageVersion: 3.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcap-ng0
+
+PackageName: libcap-ng0
+SPDXID: SPDXRef-335777ad8d79915b
+PackageVersion: 0.7.9-2.2+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.httpcomponents:httpclient
+
+PackageName: org.apache.httpcomponents:httpclient
+SPDXID: SPDXRef-3379131dc5ad3394
+PackageVersion: 4.5.13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-security
+
+PackageName: org.eclipse.jetty:jetty-security
+SPDXID: SPDXRef-344c3746de919e3c
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.httpcomponents:httpcore
+
+PackageName: org.apache.httpcomponents:httpcore
+SPDXID: SPDXRef-35ad03dee99fc2ca
+PackageVersion: 4.4.13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: jakarta.xml.bind:jakarta.xml.bind-api
+
+PackageName: jakarta.xml.bind:jakarta.xml.bind-api
+SPDXID: SPDXRef-35b105d0f30bb4cd
+PackageVersion: 3.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcurl3-gnutls
+
+PackageName: libcurl3-gnutls
+SPDXID: SPDXRef-3713c157e5e93bb0
+PackageVersion: 7.74.0-1.3+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmount1
+
+PackageName: libmount1
+SPDXID: SPDXRef-391d4954f5b42bfd
+PackageVersion: 2.36.1-8+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblz4-1
+
+PackageName: liblz4-1
+SPDXID: SPDXRef-3aae1d631ae73e78
+PackageVersion: 1.9.3-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.json:json
+
+PackageName: org.json:json
+SPDXID: SPDXRef-3ab9d0f93f68272b
+PackageVersion: 20220320
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.github.spotbugs:spotbugs-annotations
+
+PackageName: com.github.spotbugs:spotbugs-annotations
+SPDXID: SPDXRef-3ad30490db877f2c
+PackageVersion: 4.6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gzip
+
+PackageName: gzip
+SPDXID: SPDXRef-3bd3edaedb277298
+PackageVersion: 1.10-4+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: javax.annotation:javax.annotation-api
+
+PackageName: javax.annotation:javax.annotation-api
+SPDXID: SPDXRef-3c799adc710d2074
+PackageVersion: 1.3.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-util
+
+PackageName: org.eclipse.jetty:jetty-util
+SPDXID: SPDXRef-3e0b787222f1a03b
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.sshd:sshd-core
+
+PackageName: org.apache.sshd:sshd-core
+SPDXID: SPDXRef-3ea915bd76f82984
+PackageVersion: 2.8.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty.http2:http2-server
+
+PackageName: org.eclipse.jetty.http2:http2-server
+SPDXID: SPDXRef-3f3ab61fb7084649
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libxxhash0
+
+PackageName: libxxhash0
+SPDXID: SPDXRef-3fa982cd075d8bd1
+PackageVersion: 0.8.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: javax.websocket:javax.websocket-api
+
+PackageName: javax.websocket:javax.websocket-api
+SPDXID: SPDXRef-40d8e7d4dc94d785
+PackageVersion: 1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.springframework.security:spring-security-core
+
+PackageName: org.springframework.security:spring-security-core
+SPDXID: SPDXRef-43db2d43800aaed8
+PackageVersion: 5.6.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.jenkins.plugin-management:plugin-management-cli
+
+PackageName: io.jenkins.plugin-management:plugin-management-cli
+SPDXID: SPDXRef-4436724abc572056
+PackageVersion: 2.12.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:version-number
+
+PackageName: org.jenkins-ci:version-number
+SPDXID: SPDXRef-44d7f0a8548e8967
+PackageVersion: 1.10
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libzstd1
+
+PackageName: libzstd1
+SPDXID: SPDXRef-4752ba788bc7e0f1
+PackageVersion: 1.4.8+dfsg-2.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: activesoap:relaxngDatatype
+
+PackageName: activesoap:relaxngDatatype
+SPDXID: SPDXRef-481e07fa33f24532
+PackageVersion: 20050407
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.thoughtworks.xstream:xstream
+
+PackageName: com.thoughtworks.xstream:xstream
+SPDXID: SPDXRef-4af705403992018f
+PackageVersion: 1.4.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke:access-modifier-annotation
+
+PackageName: org.kohsuke:access-modifier-annotation
+SPDXID: SPDXRef-4b0ee07b1eae06b
+PackageVersion: 1.27
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:annotation-indexer
+
+PackageName: org.jenkins-ci:annotation-indexer
+SPDXID: SPDXRef-4bf9546e77356e
+PackageVersion: 1.16
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnettle8
+
+PackageName: libnettle8
+SPDXID: SPDXRef-4c4c3c36b37e17d2
+PackageVersion: 3.7.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-webapp
+
+PackageName: org.eclipse.jetty:jetty-webapp
+SPDXID: SPDXRef-4d962eacc744a7cc
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: jakarta.annotation:jakarta.annotation-api
+
+PackageName: jakarta.annotation:jakarta.annotation-api
+SPDXID: SPDXRef-4e99378851600bd0
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libattr1
+
+PackageName: libattr1
+SPDXID: SPDXRef-5141c47cc5dfe65e
+PackageVersion: 1:2.4.48-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus:tyrus-core
+
+PackageName: org.glassfish.tyrus:tyrus-core
+SPDXID: SPDXRef-51648b443d31c67
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpgsm
+
+PackageName: gpgsm
+SPDXID: SPDXRef-51a80cdd458db396
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: net.java.dev.jna:jna
+
+PackageName: net.java.dev.jna:jna
+SPDXID: SPDXRef-5208d739cd24195d
+PackageVersion: 5.11.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debianutils
+
+PackageName: debianutils
+SPDXID: SPDXRef-538541702a341a80
+PackageVersion: 4.11.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libapt-pkg6.0
+
+PackageName: libapt-pkg6.0
+SPDXID: SPDXRef-540c1a90bc55f407
+PackageVersion: 2.2.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libext2fs2
+
+PackageName: libext2fs2
+SPDXID: SPDXRef-5538f9936ab302f8
+PackageVersion: 1.46.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jvnet.winp:winp
+
+PackageName: org.jvnet.winp:winp
+SPDXID: SPDXRef-570250569f40d6fe
+PackageVersion: 1.28
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libidn2-0
+
+PackageName: libidn2-0
+SPDXID: SPDXRef-573d701cc6ebc828
+PackageVersion: 2.3.0-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnsl2
+
+PackageName: libnsl2
+SPDXID: SPDXRef-57b74ad477c337c9
+PackageVersion: 1.3.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl
+
+PackageName: perl
+SPDXID: SPDXRef-58de5df30d8c70ae
+PackageVersion: 5.32.1-4+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus:tyrus-spi
+
+PackageName: org.glassfish.tyrus:tyrus-spi
+SPDXID: SPDXRef-59dd71a66507ccd6
+PackageVersion: 1.18
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage-common
+
+PackageName: libsemanage-common
+SPDXID: SPDXRef-5be4199b6f914866
+PackageVersion: 3.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ncurses-base
+
+PackageName: ncurses-base
+SPDXID: SPDXRef-5c8ac6b140ce47c6
+PackageVersion: 6.2+20201114-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:winstone
+
+PackageName: org.jenkins-ci:winstone
+SPDXID: SPDXRef-5cff127a741b110
+PackageVersion: 5.24
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.dom4j:dom4j
+
+PackageName: org.dom4j:dom4j
+SPDXID: SPDXRef-5da31655ee6c6e3f
+PackageVersion: 2.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus:tyrus-container-jdk-client
+
+PackageName: org.glassfish.tyrus:tyrus-container-jdk-client
+SPDXID: SPDXRef-5e4159577d5061f4
+PackageVersion: 1.18
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mount
+
+PackageName: mount
+SPDXID: SPDXRef-5ef1887ba6ded250
+PackageVersion: 2.36.1-8+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.main:jenkins-core
+
+PackageName: org.jenkins-ci.main:jenkins-core
+SPDXID: SPDXRef-5f0e6f702e566562
+PackageVersion: 2.346.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus:tyrus-core
+
+PackageName: org.glassfish.tyrus:tyrus-core
+SPDXID: SPDXRef-5fd46d3cdaa9393
+PackageVersion: 1.18
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: jline:jline
+
+PackageName: jline:jline
+SPDXID: SPDXRef-608b597e9ef1f08d
+PackageVersion: 2.14.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: util-linux
+
+PackageName: util-linux
+SPDXID: SPDXRef-620ce2f4d4b22fb8
+PackageVersion: 2.36.1-8+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsqlite3-0
+
+PackageName: libsqlite3-0
+SPDXID: SPDXRef-632e91157f312662
+PackageVersion: 3.34.1-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty.http2:http2-hpack
+
+PackageName: org.eclipse.jetty.http2:http2-hpack
+SPDXID: SPDXRef-63d65b39006d4d42
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-codec:commons-codec
+
+PackageName: commons-codec:commons-codec
+SPDXID: SPDXRef-641d18048bb5daf6
+PackageVersion: 1.15
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke.stapler:json-lib
+
+PackageName: org.kohsuke.stapler:json-lib
+SPDXID: SPDXRef-641d2eeff91054a2
+PackageVersion: 2.4-jenkins-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.springframework:spring-beans
+
+PackageName: org.springframework:spring-beans
+SPDXID: SPDXRef-646af8d95536e3ed
+PackageVersion: 5.3.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdbm6
+
+PackageName: libgdbm6
+SPDXID: SPDXRef-6479a8cac65c45b6
+PackageVersion: 1.19-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.fusesource.jansi:jansi-native
+
+PackageName: org.fusesource.jansi:jansi-native
+SPDXID: SPDXRef-650127616781185d
+PackageVersion: 1.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty.websocket:websocket-server
+
+PackageName: org.eclipse.jetty.websocket:websocket-server
+SPDXID: SPDXRef-659e6b53c87eac4e
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.springframework.security:spring-security-crypto
+
+PackageName: org.springframework.security:spring-security-crypto
+SPDXID: SPDXRef-65bd34ea349e1536
+PackageVersion: 5.6.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: unzip
+
+PackageName: unzip
+SPDXID: SPDXRef-66b4044334488290
+PackageVersion: 6.0-26
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: openssh-client
+
+PackageName: openssh-client
+SPDXID: SPDXRef-6700b5e31c890dc3
+PackageVersion: 1:8.4p1-5+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.modules:windows-slave-installer
+
+PackageName: org.jenkins-ci.modules:windows-slave-installer
+SPDXID: SPDXRef-67c2a98b414b06d
+PackageVersion: 2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.commons:commons-compress
+
+PackageName: org.apache.commons:commons-compress
+SPDXID: SPDXRef-68a330e0a94e593a
+PackageVersion: 1.21
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfontconfig1
+
+PackageName: libfontconfig1
+SPDXID: SPDXRef-68f6ec8d794a8b24
+PackageVersion: 2.13.1-4.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libhogweed6
+
+PackageName: libhogweed6
+SPDXID: SPDXRef-69469573062f7c4
+PackageVersion: 3.7.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.google.guava:listenablefuture
+
+PackageName: com.google.guava:listenablefuture
+SPDXID: SPDXRef-6a99637cdb09555b
+PackageVersion: 9999.0-empty-to-avoid-conflict-with-guava
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpg
+
+PackageName: gpg
+SPDXID: SPDXRef-6adc5751b681e820
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gnupg
+
+PackageName: gnupg
+SPDXID: SPDXRef-6be5070721850273
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgnutls30
+
+PackageName: libgnutls30
+SPDXID: SPDXRef-6c20e8625a980401
+PackageVersion: 3.7.1-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus.bundles:tyrus-standalone-client-jdk
+
+PackageName: org.glassfish.tyrus.bundles:tyrus-standalone-client-jdk
+SPDXID: SPDXRef-6d57c686e239e4a2
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: jakarta.websocket:jakarta.websocket-client-api
+
+PackageName: jakarta.websocket:jakarta.websocket-client-api
+SPDXID: SPDXRef-6e48a10c3b3bd0b7
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libncursesw6
+
+PackageName: libncursesw6
+SPDXID: SPDXRef-6e78f6f3c6dc5042
+PackageVersion: 6.2+20201114-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jvnet:tiger-types
+
+PackageName: org.jvnet:tiger-types
+SPDXID: SPDXRef-6e8f85329cbacbf8
+PackageVersion: 2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.springframework:spring-web
+
+PackageName: org.springframework:spring-web
+SPDXID: SPDXRef-6eebb1f7eafe91ea
+PackageVersion: 5.3.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.jenkins.stapler:jenkins-stapler-support
+
+PackageName: io.jenkins.stapler:jenkins-stapler-support
+SPDXID: SPDXRef-70819804e8173d34
+PackageVersion: 1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.modules:upstart-slave-installer
+
+PackageName: org.jenkins-ci.modules:upstart-slave-installer
+SPDXID: SPDXRef-70c8641662d6e71b
+PackageVersion: 1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: lsb-base
+
+PackageName: lsb-base
+SPDXID: SPDXRef-70e88ebc81275e2c
+PackageVersion: 11.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbz2-1.0
+
+PackageName: libbz2-1.0
+SPDXID: SPDXRef-717ad9a40ce4b18c
+PackageVersion: 1.0.8-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-util-ajax
+
+PackageName: org.eclipse.jetty:jetty-util-ajax
+SPDXID: SPDXRef-7219063cdea69079
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.ow2.asm:asm-commons
+
+PackageName: org.ow2.asm:asm-commons
+SPDXID: SPDXRef-72b959eaaf63fd1
+PackageVersion: 9.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gcc-9-base
+
+PackageName: gcc-9-base
+SPDXID: SPDXRef-72d197ab58708d5e
+PackageVersion: 9.3.0-22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-modules
+
+PackageName: libpam-modules
+SPDXID: SPDXRef-72f2a3658c746ee9
+PackageVersion: 1.4.0-9+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: findutils
+
+PackageName: findutils
+SPDXID: SPDXRef-731ae789b8169d47
+PackageVersion: 4.8.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.samba.jcifs:jcifs
+
+PackageName: org.samba.jcifs:jcifs
+SPDXID: SPDXRef-7381b25f3d8ae7af
+PackageVersion: 1.3.18-kohsuke-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libssh2-1
+
+PackageName: libssh2-1
+SPDXID: SPDXRef-73fdbdeb649a40e2
+PackageVersion: 1.9.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: adduser
+
+PackageName: adduser
+SPDXID: SPDXRef-740f1fcee4032601
+PackageVersion: 3.118
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-jmx
+
+PackageName: org.eclipse.jetty:jetty-jmx
+SPDXID: SPDXRef-7424f7424c166f44
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgpg-error0
+
+PackageName: libgpg-error0
+SPDXID: SPDXRef-74c48bc45d34484
+PackageVersion: 1.38-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtirpc-common
+
+PackageName: libtirpc-common
+SPDXID: SPDXRef-74da744613fc6e33
+PackageVersion: 1.3.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libss2
+
+PackageName: libss2
+SPDXID: SPDXRef-74f019b9e33c5780
+PackageVersion: 1.46.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: git
+
+PackageName: git
+SPDXID: SPDXRef-75cbf8b980eff2c8
+PackageVersion: 1:2.30.2-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.ow2.asm:asm-util
+
+PackageName: org.ow2.asm:asm-util
+SPDXID: SPDXRef-763e4015bcbcee19
+PackageVersion: 9.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.fasterxml.jackson.core:jackson-annotations
+
+PackageName: com.fasterxml.jackson.core:jackson-annotations
+SPDXID: SPDXRef-76ca5de5d70d9471
+PackageVersion: 2.13.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libassuan0
+
+PackageName: libassuan0
+SPDXID: SPDXRef-76d5318b8e813683
+PackageVersion: 2.5.3-7.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcrypt20
+
+PackageName: libgcrypt20
+SPDXID: SPDXRef-775db5718c08e9f7
+PackageVersion: 1.8.7-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbrotli1
+
+PackageName: libbrotli1
+SPDXID: SPDXRef-7794bda686e15500
+PackageVersion: 1.0.9-2+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: net.jcip:jcip-annotations
+
+PackageName: net.jcip:jcip-annotations
+SPDXID: SPDXRef-78cfe0ca74eeef73
+PackageVersion: 1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcbor0
+
+PackageName: libcbor0
+SPDXID: SPDXRef-7a160ef3ae63dfbf
+PackageVersion: 0.5.0+dfsg-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libselinux1
+
+PackageName: libselinux1
+SPDXID: SPDXRef-7bb85d9979c0433c
+PackageVersion: 3.1-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: logsave
+
+PackageName: logsave
+SPDXID: SPDXRef-7c2fcd61a6833ac6
+PackageVersion: 1.46.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: xpp3:xpp3
+
+PackageName: xpp3:xpp3
+SPDXID: SPDXRef-7c63c78c44b0210e
+PackageVersion: 1.1.4c
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdb5.3
+
+PackageName: libdb5.3
+SPDXID: SPDXRef-7df04bb7d0883e77
+PackageVersion: 5.3.28+dfsg1-0.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-xml
+
+PackageName: org.eclipse.jetty:jetty-xml
+SPDXID: SPDXRef-7df408100b66142e
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.google.guava:failureaccess
+
+PackageName: com.google.guava:failureaccess
+SPDXID: SPDXRef-7e1605414aad9b31
+PackageVersion: 1.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.ant:ant
+
+PackageName: org.apache.ant:ant
+SPDXID: SPDXRef-7e1ccf355d65f1b5
+PackageVersion: 1.10.12
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tar
+
+PackageName: tar
+SPDXID: SPDXRef-7ef4724aa23ef8e
+PackageVersion: 1.34+dfsg-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: git-lfs
+
+PackageName: git-lfs
+SPDXID: SPDXRef-80d4ab922cdd484c
+PackageVersion: 3.2.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-discovery:commons-discovery
+
+PackageName: commons-discovery:commons-discovery
+SPDXID: SPDXRef-80fbf311b7f31e4f
+PackageVersion: 0.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus.bundles:tyrus-standalone-client-jdk
+
+PackageName: org.glassfish.tyrus.bundles:tyrus-standalone-client-jdk
+SPDXID: SPDXRef-8126c58d7ddf9f72
+PackageVersion: 1.18
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.springframework.security:spring-security-web
+
+PackageName: org.springframework.security:spring-security-web
+SPDXID: SPDXRef-818262b0b5b368e0
+PackageVersion: 5.6.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgssapi-krb5-2
+
+PackageName: libgssapi-krb5-2
+SPDXID: SPDXRef-825e0ac8990caac5
+PackageVersion: 1.18.3-6+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdebconfclient0
+
+PackageName: libdebconfclient0
+SPDXID: SPDXRef-82ba32689402175a
+PackageVersion: 0.260
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sysvinit-utils
+
+PackageName: sysvinit-utils
+SPDXID: SPDXRef-82ec31d4223e38e2
+PackageVersion: 2.96-7+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus:tyrus-client
+
+PackageName: org.glassfish.tyrus:tyrus-client
+SPDXID: SPDXRef-8332b4e3d77e7621
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-server
+
+PackageName: org.eclipse.jetty:jetty-server
+SPDXID: SPDXRef-834ac7a6d1b29523
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcrypt1
+
+PackageName: libcrypt1
+SPDXID: SPDXRef-8485c64a9bcb820b
+PackageVersion: 1:4.4.18-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.modules:systemd-slave-installer
+
+PackageName: org.jenkins-ci.modules:systemd-slave-installer
+SPDXID: SPDXRef-84e6c393af6ba31e
+PackageVersion: 1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: base-passwd
+
+PackageName: base-passwd
+SPDXID: SPDXRef-84f52fa26e76c5dd
+PackageVersion: 3.5.51
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpcre3
+
+PackageName: libpcre3
+SPDXID: SPDXRef-851f535ba8366007
+PackageVersion: 2:8.39-13
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.ow2.asm:asm-analysis
+
+PackageName: org.ow2.asm:asm-analysis
+SPDXID: SPDXRef-877d298d512256c3
+PackageVersion: 9.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libnghttp2-14
+
+PackageName: libnghttp2-14
+SPDXID: SPDXRef-895e0e074f6ce7d6
+PackageVersion: 1.43.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sensible-utils
+
+PackageName: sensible-utils
+SPDXID: SPDXRef-8979be6f9a57cd64
+PackageVersion: 0.0.14
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: net.i2p.crypto:eddsa
+
+PackageName: net.i2p.crypto:eddsa
+SPDXID: SPDXRef-8a1ae7d5f7050bc2
+PackageVersion: 0.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.codehaus.groovy:groovy-all
+
+PackageName: org.codehaus.groovy:groovy-all
+SPDXID: SPDXRef-8bb42bdeaf658e30
+PackageVersion: 2.4.21
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-client
+
+PackageName: org.eclipse.jetty:jetty-client
+SPDXID: SPDXRef-8bba45d8c9988272
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: hostname
+
+PackageName: hostname
+SPDXID: SPDXRef-8e64efc5231c7243
+PackageVersion: 3.23
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: javax.websocket:javax.websocket-client-api
+
+PackageName: javax.websocket:javax.websocket-client-api
+SPDXID: SPDXRef-8e67b49899892d93
+PackageVersion: 1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-servlet
+
+PackageName: org.eclipse.jetty:jetty-servlet
+SPDXID: SPDXRef-8ea65d2bea2ced41
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-modules-bin
+
+PackageName: libpam-modules-bin
+SPDXID: SPDXRef-8efcbb111f20a2f1
+PackageVersion: 1.4.0-9+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: pinentry-curses
+
+PackageName: pinentry-curses
+SPDXID: SPDXRef-8ffe2d458671d936
+PackageVersion: 1.1.0-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam0g
+
+PackageName: libpam0g
+SPDXID: SPDXRef-904c95b154a22416
+PackageVersion: 1.4.0-9+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libblkid1
+
+PackageName: libblkid1
+SPDXID: SPDXRef-90bf2fe64a2cabd7
+PackageVersion: 2.36.1-8+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcurl4
+
+PackageName: libcurl4
+SPDXID: SPDXRef-91041ee0a80106bc
+PackageVersion: 7.74.0-1.3+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcom-err2
+
+PackageName: libcom-err2
+SPDXID: SPDXRef-9115129ce73a187d
+PackageVersion: 1.46.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: librtmp1
+
+PackageName: librtmp1
+SPDXID: SPDXRef-923a460a1b15d8e1
+PackageVersion: 2.4+20151223.gitfa8646d.1-2+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-lang:commons-lang
+
+PackageName: commons-lang:commons-lang
+SPDXID: SPDXRef-92cf1573b445d283
+PackageVersion: 2.6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dirmngr
+
+PackageName: dirmngr
+SPDXID: SPDXRef-937542b7f19ffd2f
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libexpat1
+
+PackageName: libexpat1
+SPDXID: SPDXRef-947d1a816f5a4846
+PackageVersion: 2.2.10-2+deb11u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: perl-modules-5.32
+
+PackageName: perl-modules-5.32
+SPDXID: SPDXRef-94a8e55600225f0d
+PackageVersion: 5.32.1-4+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.google.inject:guice
+
+PackageName: com.google.inject:guice
+SPDXID: SPDXRef-94ff06de7db5c75d
+PackageVersion: 5.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty.websocket:websocket-api
+
+PackageName: org.eclipse.jetty.websocket:websocket-api
+SPDXID: SPDXRef-95d4e5c3933db868
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.modules:launchd-slave-installer
+
+PackageName: org.jenkins-ci.modules:launchd-slave-installer
+SPDXID: SPDXRef-95e2b88c37d6b18c
+PackageVersion: 1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: fonts-dejavu-core
+
+PackageName: fonts-dejavu-core
+SPDXID: SPDXRef-961362eb8f9656a0
+PackageVersion: 2.37-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty.alpn:alpn-api
+
+PackageName: org.eclipse.jetty.alpn:alpn-api
+SPDXID: SPDXRef-971efc3d959c1bf4
+PackageVersion: 1.1.3.v20160715
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: zlib1g
+
+PackageName: zlib1g
+SPDXID: SPDXRef-97d4dd493d4f11a6
+PackageVersion: 1:1.2.11.dfsg-2+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.github.x-stream:mxparser
+
+PackageName: io.github.x-stream:mxparser
+SPDXID: SPDXRef-97dc62d184201714
+PackageVersion: 1.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.fasterxml.jackson.core:jackson-core
+
+PackageName: com.fasterxml.jackson.core:jackson-core
+SPDXID: SPDXRef-97ecf3629aef4d8e
+PackageVersion: 2.13.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus:tyrus-container-jdk-client
+
+PackageName: org.glassfish.tyrus:tyrus-container-jdk-client
+SPDXID: SPDXRef-9833d072f1ddd3a
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus:tyrus-spi
+
+PackageName: org.glassfish.tyrus:tyrus-spi
+SPDXID: SPDXRef-98d87190f531ffc
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-logging:commons-logging
+
+PackageName: commons-logging:commons-logging
+SPDXID: SPDXRef-99b946096761d275
+PackageVersion: 1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bsdutils
+
+PackageName: bsdutils
+SPDXID: SPDXRef-99d03afdb7f2a5e0
+PackageVersion: 1:2.36.1-8+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jvnet.robust-http-client:robust-http-client
+
+PackageName: org.jvnet.robust-http-client:robust-http-client
+SPDXID: SPDXRef-9b6793642b82e69c
+PackageVersion: 1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: antlr:antlr
+
+PackageName: antlr:antlr
+SPDXID: SPDXRef-9c1a0a5336386779
+PackageVersion: 2.7.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: args4j:args4j
+
+PackageName: args4j:args4j
+SPDXID: SPDXRef-9d1631568e0f0c4f
+PackageVersion: 2.33
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:crypto-util
+
+PackageName: org.jenkins-ci:crypto-util
+SPDXID: SPDXRef-9e669d7e5ced12c8
+PackageVersion: 1.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: jakarta.websocket:jakarta.websocket-api
+
+PackageName: jakarta.websocket:jakarta.websocket-api
+SPDXID: SPDXRef-9f251d35bf4eddfa
+PackageVersion: 2.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpgconf
+
+PackageName: gpgconf
+SPDXID: SPDXRef-a085d1d76a538c2f
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.fusesource.hawtjni:hawtjni-runtime
+
+PackageName: org.fusesource.hawtjni:hawtjni-runtime
+SPDXID: SPDXRef-a144057a23ba2370
+PackageVersion: 1.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtasn1-6
+
+PackageName: libtasn1-6
+SPDXID: SPDXRef-a18db4aea9517558
+PackageVersion: 4.16.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtirpc3
+
+PackageName: libtirpc3
+SPDXID: SPDXRef-a27a5bd8edf05731
+PackageVersion: 1.3.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc6
+
+PackageName: libc6
+SPDXID: SPDXRef-a4d8cb3ac1daf4d8
+PackageVersion: 2.31-13+deb11u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsasl2-2
+
+PackageName: libsasl2-2
+SPDXID: SPDXRef-a672aa2530810a47
+PackageVersion: 2.1.27+dfsg-2.1+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tini
+
+PackageName: tini
+SPDXID: SPDXRef-a6a6916a0584bcaf
+PackageVersion: 0.19.0-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libreadline8
+
+PackageName: libreadline8
+SPDXID: SPDXRef-a7143abdd03a2688
+PackageVersion: 8.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsasl2-modules-db
+
+PackageName: libsasl2-modules-db
+SPDXID: SPDXRef-a7b887cedf0e43d8
+PackageVersion: 2.1.27+dfsg-2.1+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libfido2-1
+
+PackageName: libfido2-1
+SPDXID: SPDXRef-a84770253b7f1214
+PackageVersion: 1.6.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libuuid1
+
+PackageName: libuuid1
+SPDXID: SPDXRef-a96b36a6d8be3579
+PackageVersion: 2.36.1-8+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.infradna.tool:bridge-method-annotation
+
+PackageName: com.infradna.tool:bridge-method-annotation
+SPDXID: SPDXRef-aa490d64695a6e3b
+PackageVersion: 1.23
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:symbol-annotation
+
+PackageName: org.jenkins-ci:symbol-annotation
+SPDXID: SPDXRef-aa6b1115c9eaf3d6
+PackageVersion: 1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libksba8
+
+PackageName: libksba8
+SPDXID: SPDXRef-ab4708707a938fec
+PackageVersion: 1.5.0-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5-3
+
+PackageName: libkrb5-3
+SPDXID: SPDXRef-abf77c2f1ba4a26c
+PackageVersion: 1.18.3-6+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-beanutils:commons-beanutils
+
+PackageName: commons-beanutils:commons-beanutils
+SPDXID: SPDXRef-acf6aa6cf40ddc96
+PackageVersion: 1.9.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpam-runtime
+
+PackageName: libpam-runtime
+SPDXID: SPDXRef-ae7f1d8ab61b028b
+PackageVersion: 1.4.0-9+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsepol1
+
+PackageName: libsepol1
+SPDXID: SPDXRef-af25213848e8b035
+PackageVersion: 3.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: base-files
+
+PackageName: base-files
+SPDXID: SPDXRef-b12fcfb4710486e3
+PackageVersion: 11.1+deb11u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-collections:commons-collections
+
+PackageName: commons-collections:commons-collections
+SPDXID: SPDXRef-b1d16000f0e476b9
+PackageVersion: 3.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libmd0
+
+PackageName: libmd0
+SPDXID: SPDXRef-b283811db1dab9ac
+PackageVersion: 1.0.3-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.github.stephenc.crypto:self-signed-cert-generator
+
+PackageName: io.github.stephenc.crypto:self-signed-cert-generator
+SPDXID: SPDXRef-b2a21023cf0918b7
+PackageVersion: 1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.ow2.asm:asm-tree
+
+PackageName: org.ow2.asm:asm-tree
+SPDXID: SPDXRef-b3b336498017f264
+PackageVersion: 9.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dpkg
+
+PackageName: dpkg
+SPDXID: SPDXRef-b3bc9aa6396467e1
+PackageVersion: 1.20.10
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gnupg-utils
+
+PackageName: gnupg-utils
+SPDXID: SPDXRef-b4443220d51b573f
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.slf4j:log4j-over-slf4j
+
+PackageName: org.slf4j:log4j-over-slf4j
+SPDXID: SPDXRef-b59a4c100d60d96
+PackageVersion: 1.7.36
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.sun.xml.txw2:txw2
+
+PackageName: com.sun.xml.txw2:txw2
+SPDXID: SPDXRef-b62a7a5ce9216b1b
+PackageVersion: 20110809
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jfree:jcommon
+
+PackageName: org.jfree:jcommon
+SPDXID: SPDXRef-b7cc9d5c55e7fe50
+PackageVersion: 1.0.23
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libc-bin
+
+PackageName: libc-bin
+SPDXID: SPDXRef-b7e5013dfc51ae20
+PackageVersion: 2.31-13+deb11u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: mawk
+
+PackageName: mawk
+SPDXID: SPDXRef-b89183fcb07f469d
+PackageVersion: 1.3.4.20200120-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: apt
+
+PackageName: apt
+SPDXID: SPDXRef-b90ee8b791383455
+PackageVersion: 2.2.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.modules:slave-installer
+
+PackageName: org.jenkins-ci.modules:slave-installer
+SPDXID: SPDXRef-b93918ca903c22b4
+PackageVersion: 1.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:commons-jelly
+
+PackageName: org.jenkins-ci:commons-jelly
+SPDXID: SPDXRef-baea960c634459c6
+PackageVersion: 1.1-jenkins-20220125
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:memory-monitor
+
+PackageName: org.jenkins-ci:memory-monitor
+SPDXID: SPDXRef-bba1186afc3a1daf
+PackageVersion: 1.11
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: args4j:args4j
+
+PackageName: args4j:args4j
+SPDXID: SPDXRef-beaa83c4028e70a3
+PackageVersion: 2.33
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtinfo6
+
+PackageName: libtinfo6
+SPDXID: SPDXRef-beadc8e2f2be6326
+PackageVersion: 6.2+20201114-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.springframework:spring-aop
+
+PackageName: org.springframework:spring-aop
+SPDXID: SPDXRef-bf1f36f392af807c
+PackageVersion: 5.3.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.glassfish.tyrus:tyrus-client
+
+PackageName: org.glassfish.tyrus:tyrus-client
+SPDXID: SPDXRef-c08d94819d4e387f
+PackageVersion: 1.18
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jvnet.hudson:commons-jelly-tags-define
+
+PackageName: org.jvnet.hudson:commons-jelly-tags-define
+SPDXID: SPDXRef-c0d4f3bf9b033fad
+PackageVersion: 1.0.1-hudson-20071021
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.google.code.findbugs:jsr305
+
+PackageName: com.google.code.findbugs:jsr305
+SPDXID: SPDXRef-c13dfa458084d9d7
+PackageVersion: 3.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: curl
+
+PackageName: curl
+SPDXID: SPDXRef-c2b8465ec4bf0f4c
+PackageVersion: 7.74.0-1.3+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libseccomp2
+
+PackageName: libseccomp2
+SPDXID: SPDXRef-c2e11bf4b3a5cedb
+PackageVersion: 2.5.1-1+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty.websocket:websocket-servlet
+
+PackageName: org.eclipse.jetty.websocket:websocket-servlet
+SPDXID: SPDXRef-c3e29db71a791c0d
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpg-wks-server
+
+PackageName: gpg-wks-server
+SPDXID: SPDXRef-c3ff12f63ebf5f8a
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:constant-pool-scanner
+
+PackageName: org.jenkins-ci:constant-pool-scanner
+SPDXID: SPDXRef-c5e7bbaa8f0b151
+PackageVersion: 1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.connectbot:jbcrypt
+
+PackageName: org.connectbot:jbcrypt
+SPDXID: SPDXRef-c63adc5d5ae5be4c
+PackageVersion: 1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.slf4j:slf4j-api
+
+PackageName: org.slf4j:slf4j-api
+SPDXID: SPDXRef-c65346a2db70d30c
+PackageVersion: 1.7.36
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.commons:commons-lang3
+
+PackageName: org.apache.commons:commons-lang3
+SPDXID: SPDXRef-c7d53264f341d7d9
+PackageVersion: 3.12.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: apt-transport-https
+
+PackageName: apt-transport-https
+SPDXID: SPDXRef-c801ffdc4358c015
+PackageVersion: 2.2.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:version-number
+
+PackageName: org.jenkins-ci:version-number
+SPDXID: SPDXRef-c8dd6e6414fae29a
+PackageVersion: 1.10
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.jenkins.lib:support-log-formatter
+
+PackageName: io.jenkins.lib:support-log-formatter
+SPDXID: SPDXRef-c92a84c920c080f9
+PackageVersion: 1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty.http2:http2-common
+
+PackageName: org.eclipse.jetty.http2:http2-common
+SPDXID: SPDXRef-c9f6f027507c574c
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:task-reactor
+
+PackageName: org.jenkins-ci:task-reactor
+SPDXID: SPDXRef-cad4555d6eac555b
+PackageVersion: 1.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-jelly:commons-jelly-tags-xml
+
+PackageName: commons-jelly:commons-jelly-tags-xml
+SPDXID: SPDXRef-cbc0473586b02d3e
+PackageVersion: 1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debconf
+
+PackageName: debconf
+SPDXID: SPDXRef-cd2cf9abb7859a4b
+PackageVersion: 1.5.77
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke.stapler:stapler-groovy
+
+PackageName: org.kohsuke.stapler:stapler-groovy
+SPDXID: SPDXRef-cd33fc844e7e5cd1
+PackageVersion: 1669.v95a_4b_919a_b_a_2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libunistring2
+
+PackageName: libunistring2
+SPDXID: SPDXRef-cd59dc7e5ce7fe96
+PackageVersion: 0.9.10-4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api
+
+PackageName: jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api
+SPDXID: SPDXRef-cdd38f48ea524d70
+PackageVersion: 1.2.7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: io.jenkins.plugin-management:plugin-management-library
+
+PackageName: io.jenkins.plugin-management:plugin-management-library
+SPDXID: SPDXRef-cfd7928c67e9569
+PackageVersion: 2.12.8
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libldap-2.4-2
+
+PackageName: libldap-2.4-2
+SPDXID: SPDXRef-cff9c6a22c86dd25
+PackageVersion: 2.4.57+dfsg-3+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libffi7
+
+PackageName: libffi7
+SPDXID: SPDXRef-d0c399601004d170
+PackageVersion: 3.3-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: debian-archive-keyring
+
+PackageName: debian-archive-keyring
+SPDXID: SPDXRef-d1a96312d1c8dc67
+PackageVersion: 2021.1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.springframework:spring-core
+
+PackageName: org.springframework:spring-core
+SPDXID: SPDXRef-d21467ff8373be44
+PackageVersion: 5.3.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libbsd0
+
+PackageName: libbsd0
+SPDXID: SPDXRef-d249e9348d8ae2f9
+PackageVersion: 0.11.3-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.slf4j:slf4j-jdk14
+
+PackageName: org.slf4j:slf4j-jdk14
+SPDXID: SPDXRef-d2e82176c4c0cdfe
+PackageVersion: 1.7.36
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.fasterxml.jackson.core:jackson-databind
+
+PackageName: com.fasterxml.jackson.core:jackson-databind
+SPDXID: SPDXRef-d308c2285e53acbf
+PackageVersion: 2.13.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-io:commons-io
+
+PackageName: commons-io:commons-io
+SPDXID: SPDXRef-d3474e47fb87d38a
+PackageVersion: 2.11.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-http
+
+PackageName: org.eclipse.jetty:jetty-http
+SPDXID: SPDXRef-d3522936026a2151
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.google.guava:guava
+
+PackageName: com.google.guava:guava
+SPDXID: SPDXRef-d388beba1b353a30
+PackageVersion: 31.1-jre
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: grep
+
+PackageName: grep
+SPDXID: SPDXRef-d3abd93f80a46756
+PackageVersion: 3.6-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke:windows-package-checker
+
+PackageName: org.kohsuke:windows-package-checker
+SPDXID: SPDXRef-d61be690f929a0ff
+PackageVersion: 1.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-jelly:commons-jelly-tags-fmt
+
+PackageName: commons-jelly:commons-jelly-tags-fmt
+SPDXID: SPDXRef-d62ef62ffdf2b01b
+PackageVersion: 1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: sed
+
+PackageName: sed
+SPDXID: SPDXRef-d7564e0bb798a0ba
+PackageVersion: 4.7-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libaudit1
+
+PackageName: libaudit1
+SPDXID: SPDXRef-d8daad48d4b6aa0f
+PackageVersion: 1:3.0-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: init-system-helpers
+
+PackageName: init-system-helpers
+SPDXID: SPDXRef-d8e2fdee4b55262f
+PackageVersion: 1.60
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: openssl
+
+PackageName: openssl
+SPDXID: SPDXRef-d8ff1217939fd836
+PackageVersion: 1.1.1n-0+deb11u3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: readline-common
+
+PackageName: readline-common
+SPDXID: SPDXRef-d978ac19fb424bb1
+PackageVersion: 8.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.robolectric:android-kxml2
+
+PackageName: org.robolectric:android-kxml2
+SPDXID: SPDXRef-d9f6d3db48b28e3f
+PackageVersion: 4.1.2_r1_rc
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkrb5support0
+
+PackageName: libkrb5support0
+SPDXID: SPDXRef-da73fa68b0c2e025
+PackageVersion: 1.18.3-6+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gcc-10-base
+
+PackageName: gcc-10-base
+SPDXID: SPDXRef-da8d844df76344a0
+PackageVersion: 10.2.1-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty.websocket:websocket-client
+
+PackageName: org.eclipse.jetty.websocket:websocket-client
+SPDXID: SPDXRef-dab5d7430b40535d
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke.stapler:stapler-adjunct-timeline
+
+PackageName: org.kohsuke.stapler:stapler-adjunct-timeline
+SPDXID: SPDXRef-dd1646548cf2267c
+PackageVersion: 1.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke.stapler:stapler
+
+PackageName: org.kohsuke.stapler:stapler
+SPDXID: SPDXRef-dd7f0d5bfa26ee14
+PackageVersion: 1669.v95a_4b_919a_b_a_2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsmartcols1
+
+PackageName: libsmartcols1
+SPDXID: SPDXRef-ddca588ced94ff6c
+PackageVersion: 2.36.1-8+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.ow2.asm:asm
+
+PackageName: org.ow2.asm:asm
+SPDXID: SPDXRef-de29251459b59e20
+PackageVersion: 9.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libpng16-16
+
+PackageName: libpng16-16
+SPDXID: SPDXRef-de6b807b92de9b26
+PackageVersion: 1.6.37-3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libkeyutils1
+
+PackageName: libkeyutils1
+SPDXID: SPDXRef-debe093c6ad8ae2e
+PackageVersion: 1.6.1-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.main:jenkins-war
+
+PackageName: org.jenkins-ci.main:jenkins-war
+SPDXID: SPDXRef-dec3576872af866b
+PackageVersion: 2.346.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke.jinterop:j-interopdeps
+
+PackageName: org.kohsuke.jinterop:j-interopdeps
+SPDXID: SPDXRef-e07f7a93202aabd0
+PackageVersion: 2.0.8-kohsuke-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: liblzma5
+
+PackageName: liblzma5
+SPDXID: SPDXRef-e296d934f437f737
+PackageVersion: 5.2.5-2.1~deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.sun.solaris:embedded_su4j
+
+PackageName: com.sun.solaris:embedded_su4j
+SPDXID: SPDXRef-e297582e5526521a
+PackageVersion: 1.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ucf
+
+PackageName: ucf
+SPDXID: SPDXRef-e2c0cac9e58b21a6
+PackageVersion: 3.0043
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libperl5.32
+
+PackageName: libperl5.32
+SPDXID: SPDXRef-e2f8c65771725864
+PackageVersion: 5.32.1-4+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: e2fsprogs
+
+PackageName: e2fsprogs
+SPDXID: SPDXRef-e440b90825adacd5
+PackageVersion: 1.46.2-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: com.jcraft:jzlib
+
+PackageName: com.jcraft:jzlib
+SPDXID: SPDXRef-e4b23ee3d453b932
+PackageVersion: 1.1.3-kohsuke-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsemanage1
+
+PackageName: libsemanage1
+SPDXID: SPDXRef-e669d382ca48a8a8
+PackageVersion: 3.1-1+b2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: javax.inject:javax.inject
+
+PackageName: javax.inject:javax.inject
+SPDXID: SPDXRef-e7a8aef9272a0640
+PackageVersion: 1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.springframework:spring-context
+
+PackageName: org.springframework:spring-context
+SPDXID: SPDXRef-e7eff562af0fbdc8
+PackageVersion: 5.3.19
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libp11-kit0
+
+PackageName: libp11-kit0
+SPDXID: SPDXRef-e9b08c5705c0cc75
+PackageVersion: 0.23.22-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-collections:commons-collections
+
+PackageName: commons-collections:commons-collections
+SPDXID: SPDXRef-ea7616fee7060bc3
+PackageVersion: 3.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-codec:commons-codec
+
+PackageName: commons-codec:commons-codec
+SPDXID: SPDXRef-eb3ae0b513087
+PackageVersion: 1.15
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ncurses-bin
+
+PackageName: ncurses-bin
+SPDXID: SPDXRef-ebbdaf73079045de
+PackageVersion: 6.2+20201114-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bash
+
+PackageName: bash
+SPDXID: SPDXRef-ef54ba26c204af52
+PackageVersion: 5.1-2+b3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-beanutils:commons-beanutils
+
+PackageName: commons-beanutils:commons-beanutils
+SPDXID: SPDXRef-ef632a92ceffbd4f
+PackageVersion: 1.9.4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgdbm-compat4
+
+PackageName: libgdbm-compat4
+SPDXID: SPDXRef-f052ee1115abc5f7
+PackageVersion: 1.19-2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgmp10
+
+PackageName: libgmp10
+SPDXID: SPDXRef-f105e21b4feb138a
+PackageVersion: 2:6.2.1+dfsg-1+deb11u1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.slf4j:jcl-over-slf4j
+
+PackageName: org.slf4j:jcl-over-slf4j
+SPDXID: SPDXRef-f1c9ba9a6defc1d6
+PackageVersion: 1.7.36
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libudev1
+
+PackageName: libudev1
+SPDXID: SPDXRef-f20287248f809121
+PackageVersion: 247.3-7
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dash
+
+PackageName: dash
+SPDXID: SPDXRef-f259772cbf288a28
+PackageVersion: 0.5.11+git20200708+dd9ef66-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpgv
+
+PackageName: gpgv
+SPDXID: SPDXRef-f490279044a9d7ad
+PackageVersion: 2.2.27-2+deb11u2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci:commons-jexl
+
+PackageName: org.jenkins-ci:commons-jexl
+SPDXID: SPDXRef-f603e57e302022b2
+PackageVersion: 1.1-jenkins-20111212
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty:jetty-alpn-server
+
+PackageName: org.eclipse.jetty:jetty-alpn-server
+SPDXID: SPDXRef-f64da5ae67b0f6bd
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.main:cli
+
+PackageName: org.jenkins-ci.main:cli
+SPDXID: SPDXRef-f659d8bf0900053
+PackageVersion: 2.346.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tzdata
+
+PackageName: tzdata
+SPDXID: SPDXRef-f68bfbb9cc891f13
+PackageVersion: 2021a-1+deb11u4
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libstdc++6
+
+PackageName: libstdc++6
+SPDXID: SPDXRef-f9f7295156a3c1e4
+PackageVersion: 10.2.1-6
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: coreutils
+
+PackageName: coreutils
+SPDXID: SPDXRef-faaaa2acd1534f24
+PackageVersion: 8.32-4+b1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.jenkins-ci.main:remoting
+
+PackageName: org.jenkins-ci.main:remoting
+SPDXID: SPDXRef-fbf00916547dbc14
+PackageVersion: 4.13.2
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.kohsuke.stapler:stapler-adjunct-codemirror
+
+PackageName: org.kohsuke.stapler:stapler-adjunct-codemirror
+SPDXID: SPDXRef-fc01ff8e2196384f
+PackageVersion: 1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libacl1
+
+PackageName: libacl1
+SPDXID: SPDXRef-fceb740977674f34
+PackageVersion: 2.2.53-10
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jetty.websocket:websocket-common
+
+PackageName: org.eclipse.jetty.websocket:websocket-common
+SPDXID: SPDXRef-fd682c4dd6de9442
+PackageVersion: 9.4.45.v20220203
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: diffutils
+
+PackageName: diffutils
+SPDXID: SPDXRef-fd80631b0898d53b
+PackageVersion: 1:3.7-5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-io:commons-io
+
+PackageName: commons-io:commons-io
+SPDXID: SPDXRef-fe5a31dc9587acbd
+PackageVersion: 2.11.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: passwd
+
+PackageName: passwd
+SPDXID: SPDXRef-ff89a1958e14d897
+PackageVersion: 1:4.8.1-1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+

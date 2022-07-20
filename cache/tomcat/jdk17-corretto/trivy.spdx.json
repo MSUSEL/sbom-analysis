@@ -1,0 +1,1386 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: tomcat:jdk17-corretto
+DocumentNamespace: http://aquasecurity.github.io/trivy/container_image/tomcat:jdk17-corretto-4209b4ba-1af8-44a0-93d7-10684400e4c0
+Creator: Organization: aquasecurity
+Creator: Tool: trivy
+Created: 2022-07-20T15:18:57.0248618Z
+
+##### Package: ncurses-libs
+
+PackageName: ncurses-libs
+SPDXID: SPDXRef-120cbe6d14d0ada6
+PackageVersion: 6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: keyutils-libs
+
+PackageName: keyutils-libs
+SPDXID: SPDXRef-158d3c3a1fc8466
+PackageVersion: 1.5.8
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ and LGPLv2+
+PackageLicenseDeclared: GPLv2+ and LGPLv2+
+
+##### Package: nss-softokn
+
+PackageName: nss-softokn
+SPDXID: SPDXRef-193fe832170f684a
+PackageVersion: 3.67.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MPLv2.0
+PackageLicenseDeclared: MPLv2.0
+
+##### Package: cpio
+
+PackageName: cpio
+SPDXID: SPDXRef-1b5ac6d8051bca73
+PackageVersion: 2.11
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: grep
+
+PackageName: grep
+SPDXID: SPDXRef-1c6a8d610f36ab45
+PackageVersion: 2.20
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: org.apache.tomcat:tomcat-juli
+
+PackageName: org.apache.tomcat:tomcat-juli
+SPDXID: SPDXRef-21e35c6b97ead9cb
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libgcc
+
+PackageName: libgcc
+SPDXID: SPDXRef-2286d269922ae33d
+PackageVersion: 7.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+PackageLicenseDeclared: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+
+##### Package: org.apache.tomcat:tomcat-annotations-api
+
+PackageName: org.apache.tomcat:tomcat-annotations-api
+SPDXID: SPDXRef-256e56a9442fc15
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: openssl11-pkcs11
+
+PackageName: openssl11-pkcs11
+SPDXID: SPDXRef-2689e87a316ab3c3
+PackageVersion: 0.4.10
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and BSD
+PackageLicenseDeclared: LGPLv2+ and BSD
+
+##### Package: pinentry
+
+PackageName: pinentry
+SPDXID: SPDXRef-275d4a6913a56826
+PackageVersion: 0.8.1
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: libassuan
+
+PackageName: libassuan
+SPDXID: SPDXRef-2b3a7d1ae252346f
+PackageVersion: 2.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and GPLv3+
+PackageLicenseDeclared: LGPLv2+ and GPLv3+
+
+##### Package: libunistring
+
+PackageName: libunistring
+SPDXID: SPDXRef-2d70331e5289d532
+PackageVersion: 0.9.3
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv3+
+PackageLicenseDeclared: LGPLv3+
+
+##### Package: python-urlgrabber
+
+PackageName: python-urlgrabber
+SPDXID: SPDXRef-2f317a137cdf17e8
+PackageVersion: 3.10
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libuuid
+
+PackageName: libuuid
+SPDXID: SPDXRef-2f3c1c4a4b75a746
+PackageVersion: 2.30.2
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: org.apache.tomcat:tomcat-catalina-ant
+
+PackageName: org.apache.tomcat:tomcat-catalina-ant
+SPDXID: SPDXRef-30371f03dbd68cf8
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.eclipse.jdt:ecj
+
+PackageName: org.eclipse.jdt:ecj
+SPDXID: SPDXRef-3171f4b37e829f7f
+PackageVersion: 3.26.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libtasn1
+
+PackageName: libtasn1
+SPDXID: SPDXRef-319c911d356a28bf
+PackageVersion: 4.10
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and LGPLv2+
+PackageLicenseDeclared: GPLv3+ and LGPLv2+
+
+##### Package: pyliblzma
+
+PackageName: pyliblzma
+SPDXID: SPDXRef-33141f80503a36e5
+PackageVersion: 0.5.3
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv3+
+PackageLicenseDeclared: LGPLv3+
+
+##### Package: libselinux
+
+PackageName: libselinux
+SPDXID: SPDXRef-346714ac05500be6
+PackageVersion: 2.5
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: p11-kit
+
+PackageName: p11-kit
+SPDXID: SPDXRef-34671cab0f71f09e
+PackageVersion: 0.23.22
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: popt
+
+PackageName: popt
+SPDXID: SPDXRef-34693478acf79f7b
+PackageVersion: 1.13
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: pyxattr
+
+PackageName: pyxattr
+SPDXID: SPDXRef-352ca3702aae1285
+PackageVersion: 0.5.1
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: openssl-libs
+
+PackageName: openssl-libs
+SPDXID: SPDXRef-3595f46d88a4e4bf
+PackageVersion: 1.0.2k
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenSSL
+PackageLicenseDeclared: OpenSSL
+
+##### Package: glibc-langpack-en
+
+PackageName: glibc-langpack-en
+SPDXID: SPDXRef-36245c0cb27a419c
+PackageVersion: 2.26
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+PackageLicenseDeclared: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+
+##### Package: org.apache.tomcat:tomcat-i18n-pt-BR
+
+PackageName: org.apache.tomcat:tomcat-i18n-pt-BR
+SPDXID: SPDXRef-3663ac5ba092c5c6
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libsepol
+
+PackageName: libsepol
+SPDXID: SPDXRef-378615a132468a18
+PackageVersion: 2.5
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libgcrypt
+
+PackageName: libgcrypt
+SPDXID: SPDXRef-38496eca1572a49b
+PackageVersion: 1.5.3
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: org.apache.tomcat:tomcat-i18n-cs
+
+PackageName: org.apache.tomcat:tomcat-i18n-cs
+SPDXID: SPDXRef-3849f2f86172a143
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpg-pubkey
+
+PackageName: gpg-pubkey
+SPDXID: SPDXRef-387ec9e09725b198
+PackageVersion: c87f5b1a
+FilesAnalyzed: false
+PackageLicenseConcluded: pubkey
+PackageLicenseDeclared: pubkey
+
+##### Package: python-libs
+
+PackageName: python-libs
+SPDXID: SPDXRef-3b1fa5a9895883d0
+PackageVersion: 2.7.18
+FilesAnalyzed: false
+PackageLicenseConcluded: Python
+PackageLicenseDeclared: Python
+
+##### Package: org.apache.tomcat:tomcat-catalina
+
+PackageName: org.apache.tomcat:tomcat-catalina
+SPDXID: SPDXRef-3eb7c122a18957e1
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.tomcat:tomcat-jasper-el
+
+PackageName: org.apache.tomcat:tomcat-jasper-el
+SPDXID: SPDXRef-4294ec2d21e582a5
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libffi
+
+PackageName: libffi
+SPDXID: SPDXRef-43e8c5eff00c49f8
+PackageVersion: 3.0.13
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT and Public Domain
+PackageLicenseDeclared: MIT and Public Domain
+
+##### Package: elfutils-libelf
+
+PackageName: elfutils-libelf
+SPDXID: SPDXRef-47b60e486f6118fa
+PackageVersion: 0.176
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ or LGPLv3+
+PackageLicenseDeclared: GPLv2+ or LGPLv3+
+
+##### Package: nss-softokn-freebl
+
+PackageName: nss-softokn-freebl
+SPDXID: SPDXRef-49256b1477b2eda0
+PackageVersion: 3.67.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MPLv2.0
+PackageLicenseDeclared: MPLv2.0
+
+##### Package: org.apache.tomcat:tomcat-jsp-api
+
+PackageName: org.apache.tomcat:tomcat-jsp-api
+SPDXID: SPDXRef-49676af802b0502f
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.taglibs:taglibs-standard-impl
+
+PackageName: org.apache.taglibs:taglibs-standard-impl
+SPDXID: SPDXRef-4b85e41dc06557ab
+PackageVersion: 1.2.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.tomcat:tomcat-tribes
+
+PackageName: org.apache.tomcat:tomcat-tribes
+SPDXID: SPDXRef-4c49e9c2a3a484da
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: dejavu-sans-fonts
+
+PackageName: dejavu-sans-fonts
+SPDXID: SPDXRef-4e434b2485e96536
+PackageVersion: 2.33
+FilesAnalyzed: false
+PackageLicenseConcluded: Bitstream Vera and Public Domain
+PackageLicenseDeclared: Bitstream Vera and Public Domain
+
+##### Package: java-17-amazon-corretto-devel
+
+PackageName: java-17-amazon-corretto-devel
+SPDXID: SPDXRef-4fc4ef3205bea733
+PackageVersion: 17.0.4.8
+FilesAnalyzed: false
+PackageLicenseConcluded: ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
+PackageLicenseDeclared: ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
+
+##### Package: libblkid
+
+PackageName: libblkid
+SPDXID: SPDXRef-500ebb0b0ffeb9ce
+PackageVersion: 2.30.2
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: org.apache.tomcat:tomcat-el-api
+
+PackageName: org.apache.tomcat:tomcat-el-api
+SPDXID: SPDXRef-505d34fcc3cdbf34
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: commons-daemon:commons-daemon
+
+PackageName: commons-daemon:commons-daemon
+SPDXID: SPDXRef-51343d01d9c9a2fe
+PackageVersion: 1.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: nss-util
+
+PackageName: nss-util
+SPDXID: SPDXRef-52026ddf2bddac47
+PackageVersion: 3.67.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MPLv2.0
+PackageLicenseDeclared: MPLv2.0
+
+##### Package: glib2
+
+PackageName: glib2
+SPDXID: SPDXRef-5282032d8acbd08e
+PackageVersion: 2.56.1
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libssh2
+
+PackageName: libssh2
+SPDXID: SPDXRef-538ccca225c4e8f8
+PackageVersion: 1.4.3
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: org.apache.tomcat:tomcat-util-scan
+
+PackageName: org.apache.tomcat:tomcat-util-scan
+SPDXID: SPDXRef-55c4c16412f9ea1b
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libcrypt
+
+PackageName: libcrypt
+SPDXID: SPDXRef-568813e26525b788
+PackageVersion: 2.26
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+PackageLicenseDeclared: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+
+##### Package: diffutils
+
+PackageName: diffutils
+SPDXID: SPDXRef-56919fb35d7c938d
+PackageVersion: 3.3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: basesystem
+
+PackageName: basesystem
+SPDXID: SPDXRef-57cccdec8267e80e
+PackageVersion: 10.0
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: libcurl
+
+PackageName: libcurl
+SPDXID: SPDXRef-5940c933e9a2bc24
+PackageVersion: 7.79.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: org.apache.tomcat:tomcat-i18n-zh-CN
+
+PackageName: org.apache.tomcat:tomcat-i18n-zh-CN
+SPDXID: SPDXRef-59ce838f58a90f78
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.tomcat:tomcat-servlet-api
+
+PackageName: org.apache.tomcat:tomcat-servlet-api
+SPDXID: SPDXRef-5a160edde791fd1d
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: chkconfig
+
+PackageName: chkconfig
+SPDXID: SPDXRef-5b2191dda4225809
+PackageVersion: 1.7.4
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2
+PackageLicenseDeclared: GPLv2
+
+##### Package: gawk
+
+PackageName: gawk
+SPDXID: SPDXRef-5ca117992ab25f21
+PackageVersion: 4.0.2
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and GPL and LGPLv3+ and LGPL and BSD
+PackageLicenseDeclared: GPLv3+ and GPL and LGPLv3+ and LGPL and BSD
+
+##### Package: libcap
+
+PackageName: libcap
+SPDXID: SPDXRef-5cdbc0f016bc4053
+PackageVersion: 2.54
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD or GPLv2
+PackageLicenseDeclared: BSD or GPLv2
+
+##### Package: pth
+
+PackageName: pth
+SPDXID: SPDXRef-5d511a78939a475f
+PackageVersion: 2.0.7
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: krb5-libs
+
+PackageName: krb5-libs
+SPDXID: SPDXRef-6199a614fff49896
+PackageVersion: 1.15.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libverto
+
+PackageName: libverto
+SPDXID: SPDXRef-640599523b832745
+PackageVersion: 0.2.5
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libnghttp2
+
+PackageName: libnghttp2
+SPDXID: SPDXRef-64983a7664df7ffc
+PackageVersion: 1.41.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: org.apache.tomcat:tomcat-i18n-fr
+
+PackageName: org.apache.tomcat:tomcat-i18n-fr
+SPDXID: SPDXRef-67429939607b3638
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: gpgme
+
+PackageName: gpgme
+SPDXID: SPDXRef-67956873b2228e3d
+PackageVersion: 1.3.2
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: bash
+
+PackageName: bash
+SPDXID: SPDXRef-67a8293ebd24ebac
+PackageVersion: 4.2.46
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: nss-sysinit
+
+PackageName: nss-sysinit
+SPDXID: SPDXRef-68b60ca1b3062d55
+PackageVersion: 3.67.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MPLv2.0
+PackageLicenseDeclared: MPLv2.0
+
+##### Package: libcom_err
+
+PackageName: libcom_err
+SPDXID: SPDXRef-69f7ea6d211fad7a
+PackageVersion: 1.42.9
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: org.apache.tomcat:jakartaee-migration
+
+PackageName: org.apache.tomcat:jakartaee-migration
+SPDXID: SPDXRef-6aa60c317afa9d85
+PackageVersion: 1.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.tomcat:tomcat-i18n-de
+
+PackageName: org.apache.tomcat:tomcat-i18n-de
+SPDXID: SPDXRef-6c35526a6edc6d51
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libattr
+
+PackageName: libattr
+SPDXID: SPDXRef-6db6a7904a014df0
+PackageVersion: 2.4.46
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: libstdc++
+
+PackageName: libstdc++
+SPDXID: SPDXRef-6fd6c4f7b5cb5c3c
+PackageVersion: 7.3.1
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+PackageLicenseDeclared: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+
+##### Package: openldap
+
+PackageName: openldap
+SPDXID: SPDXRef-702b5ff03856ca24
+PackageVersion: 2.4.44
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenLDAP
+PackageLicenseDeclared: OpenLDAP
+
+##### Package: file-libs
+
+PackageName: file-libs
+SPDXID: SPDXRef-7356771a9dc85bfb
+PackageVersion: 5.11
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: org.apache.tomcat:tomcat-websocket
+
+PackageName: org.apache.tomcat:tomcat-websocket
+SPDXID: SPDXRef-737325f010aa76cb
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.tomcat:tomcat-dbcp
+
+PackageName: org.apache.tomcat:tomcat-dbcp
+SPDXID: SPDXRef-73f6c3dbb8c629d7
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: ca-certificates
+
+PackageName: ca-certificates
+SPDXID: SPDXRef-78474add6152e754
+PackageVersion: 2021.2.50
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: filesystem
+
+PackageName: filesystem
+SPDXID: SPDXRef-7aa104f36c2e050e
+PackageVersion: 3.2
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: expat
+
+PackageName: expat
+SPDXID: SPDXRef-7bc4940263d5a28b
+PackageVersion: 2.1.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: fontconfig
+
+PackageName: fontconfig
+SPDXID: SPDXRef-7c928963166c39b1
+PackageVersion: 2.13.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT and Public Domain and UCD
+PackageLicenseDeclared: MIT and Public Domain and UCD
+
+##### Package: pygpgme
+
+PackageName: pygpgme
+SPDXID: SPDXRef-7c9f63bcacc1c9a2
+PackageVersion: 0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: dejavu-fonts-common
+
+PackageName: dejavu-fonts-common
+SPDXID: SPDXRef-7e49f6879e1d6cb7
+PackageVersion: 2.33
+FilesAnalyzed: false
+PackageLicenseConcluded: Bitstream Vera and Public Domain
+PackageLicenseDeclared: Bitstream Vera and Public Domain
+
+##### Package: org.apache.tomcat:tomcat-coyote
+
+PackageName: org.apache.tomcat:tomcat-coyote
+SPDXID: SPDXRef-7e50b3d5342d1638
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: tzdata
+
+PackageName: tzdata
+SPDXID: SPDXRef-7edcc5cc1585de4
+PackageVersion: 2022a
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: pcre
+
+PackageName: pcre
+SPDXID: SPDXRef-7f2f5db96c384969
+PackageVersion: 8.32
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: cyrus-sasl-lib
+
+PackageName: cyrus-sasl-lib
+SPDXID: SPDXRef-7f8acf6a79e09d
+PackageVersion: 2.1.26
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD with advertising
+PackageLicenseDeclared: BSD with advertising
+
+##### Package: rpm-libs
+
+PackageName: rpm-libs
+SPDXID: SPDXRef-7fb7fa2f89bf511
+PackageVersion: 4.11.3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ and LGPLv2+ with exceptions
+PackageLicenseDeclared: GPLv2+ and LGPLv2+ with exceptions
+
+##### Package: libidn2
+
+PackageName: libidn2
+SPDXID: SPDXRef-818880a7ace65c5f
+PackageVersion: 2.3.0
+FilesAnalyzed: false
+PackageLicenseConcluded: (GPLv2+ or LGPLv3+) and GPLv3+
+PackageLicenseDeclared: (GPLv2+ or LGPLv3+) and GPLv3+
+
+##### Package: org.apache.tomcat:tomcat-storeconfig
+
+PackageName: org.apache.tomcat:tomcat-storeconfig
+SPDXID: SPDXRef-81e4172d473ba21e
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: nspr
+
+PackageName: nspr
+SPDXID: SPDXRef-82fa1535eb4f48d8
+PackageVersion: 4.32.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MPLv2.0
+PackageLicenseDeclared: MPLv2.0
+
+##### Package: apr
+
+PackageName: apr
+SPDXID: SPDXRef-8505b4c41eb6f088
+PackageVersion: 1.7.0
+FilesAnalyzed: false
+PackageLicenseConcluded: ASL 2.0 and BSD with advertising and ISC and BSD
+PackageLicenseDeclared: ASL 2.0 and BSD with advertising and ISC and BSD
+
+##### Package: setup
+
+PackageName: setup
+SPDXID: SPDXRef-85aee043f7a2552a
+PackageVersion: 2.8.71
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: rpm
+
+PackageName: rpm
+SPDXID: SPDXRef-85c38e2cf024ea87
+PackageVersion: 4.11.3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: zlib
+
+PackageName: zlib
+SPDXID: SPDXRef-89062d4d56b88b70
+PackageVersion: 1.2.7
+FilesAnalyzed: false
+PackageLicenseConcluded: zlib and Boost
+PackageLicenseDeclared: zlib and Boost
+
+##### Package: org.apache.tomcat:tomcat-ssi
+
+PackageName: org.apache.tomcat:tomcat-ssi
+SPDXID: SPDXRef-8ab4c2b6645bce72
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: bzip2-libs
+
+PackageName: bzip2-libs
+SPDXID: SPDXRef-8bf8bee784cd3bce
+PackageVersion: 1.0.6
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: python2-rpm
+
+PackageName: python2-rpm
+SPDXID: SPDXRef-8d6f554e27235e6b
+PackageVersion: 4.11.3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: coreutils
+
+PackageName: coreutils
+SPDXID: SPDXRef-8d8dbe28451b5b21
+PackageVersion: 8.22
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: vim-data
+
+PackageName: vim-data
+SPDXID: SPDXRef-918da3918af938fd
+PackageVersion: 8.2.4857
+FilesAnalyzed: false
+PackageLicenseConcluded: Vim and MIT
+PackageLicenseDeclared: Vim and MIT
+
+##### Package: org.apache.tomcat:tomcat-websocket-api
+
+PackageName: org.apache.tomcat:tomcat-websocket-api
+SPDXID: SPDXRef-9258e0a3103c3123
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.tomcat:tomcat-i18n-es
+
+PackageName: org.apache.tomcat:tomcat-i18n-es
+SPDXID: SPDXRef-9348d4cfdd941fb
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python
+
+PackageName: python
+SPDXID: SPDXRef-943c1985e9a555ec
+PackageVersion: 2.7.18
+FilesAnalyzed: false
+PackageLicenseConcluded: Python
+PackageLicenseDeclared: Python
+
+##### Package: p11-kit-trust
+
+PackageName: p11-kit-trust
+SPDXID: SPDXRef-95ef6a7e0ae6f9fe
+PackageVersion: 0.23.22
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+
+##### Package: gpg-pubkey
+
+PackageName: gpg-pubkey
+SPDXID: SPDXRef-9b10edfdb6936ee7
+PackageVersion: b04f24e3
+FilesAnalyzed: false
+PackageLicenseConcluded: pubkey
+PackageLicenseDeclared: pubkey
+
+##### Package: curl
+
+PackageName: curl
+SPDXID: SPDXRef-9ef4645ad7d1cf60
+PackageVersion: 7.79.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libxml2
+
+PackageName: libxml2
+SPDXID: SPDXRef-a13b35923d48dba
+PackageVersion: 2.9.1
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: sed
+
+PackageName: sed
+SPDXID: SPDXRef-a2d6c18ff8e15058
+PackageVersion: 4.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: nss-pem
+
+PackageName: nss-pem
+SPDXID: SPDXRef-a42c09ecf5836dc8
+PackageVersion: 1.0.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MPLv1.1
+PackageLicenseDeclared: MPLv1.1
+
+##### Package: openssl11-libs
+
+PackageName: openssl11-libs
+SPDXID: SPDXRef-a73c14cc0989838e
+PackageVersion: 1.1.1g
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenSSL and ASL 2.0
+PackageLicenseDeclared: OpenSSL and ASL 2.0
+
+##### Package: findutils
+
+PackageName: findutils
+SPDXID: SPDXRef-a76aac2b3b58e067
+PackageVersion: 4.5.11
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: org.apache.tomcat:tomcat-util
+
+PackageName: org.apache.tomcat:tomcat-util
+SPDXID: SPDXRef-a992ffbfbf817aa4
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: python-pycurl
+
+PackageName: python-pycurl
+SPDXID: SPDXRef-a99bb9de6d71c0e8
+PackageVersion: 7.19.0
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ or MIT
+PackageLicenseDeclared: LGPLv2+ or MIT
+
+##### Package: org.apache.taglibs:taglibs-standard-spec
+
+PackageName: org.apache.taglibs:taglibs-standard-spec
+SPDXID: SPDXRef-ab114071ed1c5be7
+PackageVersion: 1.2.5
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: shared-mime-info
+
+PackageName: shared-mime-info
+SPDXID: SPDXRef-ae3283295c4c6981
+PackageVersion: 1.8
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: yum-plugin-priorities
+
+PackageName: yum-plugin-priorities
+SPDXID: SPDXRef-ae67ec30e1c50b9f
+PackageVersion: 1.1.31
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: org.apache.tomcat:tomcat-jni
+
+PackageName: org.apache.tomcat:tomcat-jni
+SPDXID: SPDXRef-af234db10eb62e23
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.tomcat:tomcat-i18n-ja
+
+PackageName: org.apache.tomcat:tomcat-i18n-ja
+SPDXID: SPDXRef-afb7fb02788f5b84
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: nss
+
+PackageName: nss
+SPDXID: SPDXRef-b1f9ef477162fb34
+PackageVersion: 3.67.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MPLv2.0
+PackageLicenseDeclared: MPLv2.0
+
+##### Package: gmp
+
+PackageName: gmp
+SPDXID: SPDXRef-b35f213b0f1ef7f
+PackageVersion: 6.0.0
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv3+ or GPLv2+
+PackageLicenseDeclared: LGPLv3+ or GPLv2+
+
+##### Package: org.apache.tomcat:tomcat-jdbc
+
+PackageName: org.apache.tomcat:tomcat-jdbc
+SPDXID: SPDXRef-b63d458aecb34c7f
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: libdb-utils
+
+PackageName: libdb-utils
+SPDXID: SPDXRef-b6db660aaddeb73f
+PackageVersion: 5.3.21
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD and LGPLv2 and Sleepycat
+PackageLicenseDeclared: BSD and LGPLv2 and Sleepycat
+
+##### Package: lua
+
+PackageName: lua
+SPDXID: SPDXRef-c39a51570fcc464e
+PackageVersion: 5.1.4
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: rpm-build-libs
+
+PackageName: rpm-build-libs
+SPDXID: SPDXRef-c435e494d59d8b71
+PackageVersion: 4.11.3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+ and LGPLv2+ with exceptions
+PackageLicenseDeclared: GPLv2+ and LGPLv2+ with exceptions
+
+##### Package: libdb
+
+PackageName: libdb
+SPDXID: SPDXRef-c997e41f0b3aab9d
+PackageVersion: 5.3.21
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD and LGPLv2 and Sleepycat
+PackageLicenseDeclared: BSD and LGPLv2 and Sleepycat
+
+##### Package: libpng
+
+PackageName: libpng
+SPDXID: SPDXRef-cd710cb4d9a6d730
+PackageVersion: 1.5.13
+FilesAnalyzed: false
+PackageLicenseConcluded: zlib
+PackageLicenseDeclared: zlib
+
+##### Package: org.apache.tomcat:tomcat-jasper
+
+PackageName: org.apache.tomcat:tomcat-jasper
+SPDXID: SPDXRef-cdcece10ab0398e2
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: info
+
+PackageName: info
+SPDXID: SPDXRef-ce55be3c552c689c
+PackageVersion: 5.1
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: org.apache.tomcat:tomcat-api
+
+PackageName: org.apache.tomcat:tomcat-api
+SPDXID: SPDXRef-d18cca5015a115a9
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: glibc
+
+PackageName: glibc
+SPDXID: SPDXRef-d342da632eddd397
+PackageVersion: 2.26
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+PackageLicenseDeclared: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+
+##### Package: system-release
+
+PackageName: system-release
+SPDXID: SPDXRef-d69aeac3c02ef1a4
+PackageVersion: 2
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2
+PackageLicenseDeclared: GPLv2
+
+##### Package: yum-plugin-ovl
+
+PackageName: yum-plugin-ovl
+SPDXID: SPDXRef-d79511f710db036d
+PackageVersion: 1.1.31
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: glibc-minimal-langpack
+
+PackageName: glibc-minimal-langpack
+SPDXID: SPDXRef-d997869f73aa521e
+PackageVersion: 2.26
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+PackageLicenseDeclared: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+
+##### Package: glibc-common
+
+PackageName: glibc-common
+SPDXID: SPDXRef-dae83894f825c7e2
+PackageVersion: 2.26
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+PackageLicenseDeclared: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+
+##### Package: org.apache.tomcat:tomcat-catalina-ha
+
+PackageName: org.apache.tomcat:tomcat-catalina-ha
+SPDXID: SPDXRef-dd0864ac7ed9634a
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: org.apache.tomcat:tomcat-jaspic-api
+
+PackageName: org.apache.tomcat:tomcat-jaspic-api
+SPDXID: SPDXRef-de7b409b3fb20a26
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: amazon-linux-extras
+
+PackageName: amazon-linux-extras
+SPDXID: SPDXRef-de9389c9c26537d5
+PackageVersion: 2.0.1
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2
+PackageLicenseDeclared: GPLv2
+
+##### Package: org.apache.tomcat:tomcat-i18n-ru
+
+PackageName: org.apache.tomcat:tomcat-i18n-ru
+SPDXID: SPDXRef-deae2b3d51662877
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: freetype
+
+PackageName: freetype
+SPDXID: SPDXRef-e0a6448bcb9715cb
+PackageVersion: 2.8
+FilesAnalyzed: false
+PackageLicenseConcluded: (FTL or GPLv2+) and BSD and MIT and Public Domain and zlib with acknowledgement
+PackageLicenseDeclared: (FTL or GPLv2+) and BSD and MIT and Public Domain and zlib with acknowledgement
+
+##### Package: libmetalink
+
+PackageName: libmetalink
+SPDXID: SPDXRef-e11a86353ca728a5
+PackageVersion: 0.1.3
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libacl
+
+PackageName: libacl
+SPDXID: SPDXRef-e4447760e90f94e3
+PackageVersion: 2.2.51
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: xz-libs
+
+PackageName: xz-libs
+SPDXID: SPDXRef-e594f032afb359e2
+PackageVersion: 5.2.2
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: python-iniparse
+
+PackageName: python-iniparse
+SPDXID: SPDXRef-e5a2c9eb710d030c
+PackageVersion: 0.4
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: libmount
+
+PackageName: libmount
+SPDXID: SPDXRef-e6ea99bc8c17925b
+PackageVersion: 2.30.2
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: readline
+
+PackageName: readline
+SPDXID: SPDXRef-e7fc477047a53b68
+PackageVersion: 6.2
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: libgpg-error
+
+PackageName: libgpg-error
+SPDXID: SPDXRef-eb65df961f36518d
+PackageVersion: 1.12
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+
+##### Package: nss-tools
+
+PackageName: nss-tools
+SPDXID: SPDXRef-ee51f814de81c093
+PackageVersion: 3.67.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MPLv2.0
+PackageLicenseDeclared: MPLv2.0
+
+##### Package: vim-minimal
+
+PackageName: vim-minimal
+SPDXID: SPDXRef-ef3d1b34a6a21423
+PackageVersion: 8.2.4857
+FilesAnalyzed: false
+PackageLicenseConcluded: Vim and MIT
+PackageLicenseDeclared: Vim and MIT
+
+##### Package: ncurses
+
+PackageName: ncurses
+SPDXID: SPDXRef-ef5008b29f3ca601
+PackageVersion: 6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: ncurses-base
+
+PackageName: ncurses-base
+SPDXID: SPDXRef-efa65bc73cad5670
+PackageVersion: 6.0
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+
+##### Package: org.apache.tomcat:tomcat-i18n-ko
+
+PackageName: org.apache.tomcat:tomcat-i18n-ko
+SPDXID: SPDXRef-efd65919e411d2d3
+PackageVersion: 10.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: NONE
+PackageLicenseDeclared: NONE
+
+##### Package: yum-metadata-parser
+
+PackageName: yum-metadata-parser
+SPDXID: SPDXRef-f0257cbad494d1ae
+PackageVersion: 1.1.4
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2
+PackageLicenseDeclared: GPLv2
+
+##### Package: gnupg2
+
+PackageName: gnupg2
+SPDXID: SPDXRef-f0c557035bdac9e9
+PackageVersion: 2.0.22
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: fontpackages-filesystem
+
+PackageName: fontpackages-filesystem
+SPDXID: SPDXRef-f184c26d5bf6a9ae
+PackageVersion: 1.44
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+
+##### Package: gdbm
+
+PackageName: gdbm
+SPDXID: SPDXRef-f49e2e0b278f21c6
+PackageVersion: 1.13
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+
+##### Package: yum
+
+PackageName: yum
+SPDXID: SPDXRef-f5d1cb5f0bb60cd
+PackageVersion: 3.4.3
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv2+
+PackageLicenseDeclared: GPLv2+
+
+##### Package: sqlite
+
+PackageName: sqlite
+SPDXID: SPDXRef-fc91185003b7506
+PackageVersion: 3.7.17
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+

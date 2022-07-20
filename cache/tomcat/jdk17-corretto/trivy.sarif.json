@@ -1,0 +1,458 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Trivy Vulnerability Scanner",
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "name": "Trivy",
+          "rules": [
+            {
+              "id": "CVE-2022-27782",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-27782"
+              },
+              "fullDescription": {
+                "text": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-27782",
+              "help": {
+                "text": "Vulnerability CVE-2022-27782\nSeverity: MEDIUM\nPackage: libcurl\nFixed Version: 7.79.1-4.amzn2.0.1\nLink: [CVE-2022-27782](https://avd.aquasec.com/nvd/cve-2022-27782)\nlibcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily.",
+                "markdown": "**Vulnerability CVE-2022-27782**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libcurl|7.79.1-4.amzn2.0.1|[CVE-2022-27782](https://avd.aquasec.com/nvd/cve-2022-27782)|\n\nlibcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-46143",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-46143"
+              },
+              "fullDescription": {
+                "text": "In doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-46143",
+              "help": {
+                "text": "Vulnerability CVE-2021-46143\nSeverity: MEDIUM\nPackage: expat\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2021-46143](https://avd.aquasec.com/nvd/cve-2021-46143)\nIn doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.",
+                "markdown": "**Vulnerability CVE-2021-46143**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|expat|2.1.0-14.amzn2.0.1|[CVE-2021-46143](https://avd.aquasec.com/nvd/cve-2021-46143)|\n\nIn doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-22822",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-22822"
+              },
+              "fullDescription": {
+                "text": "addBinding in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-22822",
+              "help": {
+                "text": "Vulnerability CVE-2022-22822\nSeverity: MEDIUM\nPackage: expat\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22822](https://avd.aquasec.com/nvd/cve-2022-22822)\naddBinding in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+                "markdown": "**Vulnerability CVE-2022-22822**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|expat|2.1.0-14.amzn2.0.1|[CVE-2022-22822](https://avd.aquasec.com/nvd/cve-2022-22822)|\n\naddBinding in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-22823",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-22823"
+              },
+              "fullDescription": {
+                "text": "build_model in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-22823",
+              "help": {
+                "text": "Vulnerability CVE-2022-22823\nSeverity: MEDIUM\nPackage: expat\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22823](https://avd.aquasec.com/nvd/cve-2022-22823)\nbuild_model in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+                "markdown": "**Vulnerability CVE-2022-22823**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|expat|2.1.0-14.amzn2.0.1|[CVE-2022-22823](https://avd.aquasec.com/nvd/cve-2022-22823)|\n\nbuild_model in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-22824",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-22824"
+              },
+              "fullDescription": {
+                "text": "defineAttribute in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-22824",
+              "help": {
+                "text": "Vulnerability CVE-2022-22824\nSeverity: MEDIUM\nPackage: expat\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22824](https://avd.aquasec.com/nvd/cve-2022-22824)\ndefineAttribute in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+                "markdown": "**Vulnerability CVE-2022-22824**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|expat|2.1.0-14.amzn2.0.1|[CVE-2022-22824](https://avd.aquasec.com/nvd/cve-2022-22824)|\n\ndefineAttribute in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-22825",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-22825"
+              },
+              "fullDescription": {
+                "text": "lookup in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-22825",
+              "help": {
+                "text": "Vulnerability CVE-2022-22825\nSeverity: MEDIUM\nPackage: expat\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22825](https://avd.aquasec.com/nvd/cve-2022-22825)\nlookup in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+                "markdown": "**Vulnerability CVE-2022-22825**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|expat|2.1.0-14.amzn2.0.1|[CVE-2022-22825](https://avd.aquasec.com/nvd/cve-2022-22825)|\n\nlookup in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-22826",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-22826"
+              },
+              "fullDescription": {
+                "text": "nextScaffoldPart in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-22826",
+              "help": {
+                "text": "Vulnerability CVE-2022-22826\nSeverity: MEDIUM\nPackage: expat\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22826](https://avd.aquasec.com/nvd/cve-2022-22826)\nnextScaffoldPart in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+                "markdown": "**Vulnerability CVE-2022-22826**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|expat|2.1.0-14.amzn2.0.1|[CVE-2022-22826](https://avd.aquasec.com/nvd/cve-2022-22826)|\n\nnextScaffoldPart in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-22827",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-22827"
+              },
+              "fullDescription": {
+                "text": "storeAtts in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-22827",
+              "help": {
+                "text": "Vulnerability CVE-2022-22827\nSeverity: MEDIUM\nPackage: expat\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22827](https://avd.aquasec.com/nvd/cve-2022-22827)\nstoreAtts in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+                "markdown": "**Vulnerability CVE-2022-22827**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|expat|2.1.0-14.amzn2.0.1|[CVE-2022-22827](https://avd.aquasec.com/nvd/cve-2022-22827)|\n\nstoreAtts in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            }
+          ],
+          "version": "0.29.1"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2022-27782",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "Package: curl\nInstalled Version: 7.79.1-2.amzn2.0.1\nVulnerability CVE-2022-27782\nSeverity: MEDIUM\nFixed Version: 7.79.1-4.amzn2.0.1\nLink: [CVE-2022-27782](https://avd.aquasec.com/nvd/cve-2022-27782)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/tomcat",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-46143",
+          "ruleIndex": 1,
+          "level": "warning",
+          "message": {
+            "text": "Package: expat\nInstalled Version: 2.1.0-12.amzn2.0.4\nVulnerability CVE-2021-46143\nSeverity: MEDIUM\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2021-46143](https://avd.aquasec.com/nvd/cve-2021-46143)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/tomcat",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-22822",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "Package: expat\nInstalled Version: 2.1.0-12.amzn2.0.4\nVulnerability CVE-2022-22822\nSeverity: MEDIUM\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22822](https://avd.aquasec.com/nvd/cve-2022-22822)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/tomcat",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-22823",
+          "ruleIndex": 3,
+          "level": "warning",
+          "message": {
+            "text": "Package: expat\nInstalled Version: 2.1.0-12.amzn2.0.4\nVulnerability CVE-2022-22823\nSeverity: MEDIUM\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22823](https://avd.aquasec.com/nvd/cve-2022-22823)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/tomcat",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-22824",
+          "ruleIndex": 4,
+          "level": "warning",
+          "message": {
+            "text": "Package: expat\nInstalled Version: 2.1.0-12.amzn2.0.4\nVulnerability CVE-2022-22824\nSeverity: MEDIUM\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22824](https://avd.aquasec.com/nvd/cve-2022-22824)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/tomcat",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-22825",
+          "ruleIndex": 5,
+          "level": "warning",
+          "message": {
+            "text": "Package: expat\nInstalled Version: 2.1.0-12.amzn2.0.4\nVulnerability CVE-2022-22825\nSeverity: MEDIUM\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22825](https://avd.aquasec.com/nvd/cve-2022-22825)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/tomcat",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-22826",
+          "ruleIndex": 6,
+          "level": "warning",
+          "message": {
+            "text": "Package: expat\nInstalled Version: 2.1.0-12.amzn2.0.4\nVulnerability CVE-2022-22826\nSeverity: MEDIUM\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22826](https://avd.aquasec.com/nvd/cve-2022-22826)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/tomcat",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-22827",
+          "ruleIndex": 7,
+          "level": "warning",
+          "message": {
+            "text": "Package: expat\nInstalled Version: 2.1.0-12.amzn2.0.4\nVulnerability CVE-2022-22827\nSeverity: MEDIUM\nFixed Version: 2.1.0-14.amzn2.0.1\nLink: [CVE-2022-22827](https://avd.aquasec.com/nvd/cve-2022-22827)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/tomcat",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-27782",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "Package: libcurl\nInstalled Version: 7.79.1-2.amzn2.0.1\nVulnerability CVE-2022-27782\nSeverity: MEDIUM\nFixed Version: 7.79.1-4.amzn2.0.1\nLink: [CVE-2022-27782](https://avd.aquasec.com/nvd/cve-2022-27782)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/tomcat",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///"
+        }
+      }
+    }
+  ]
+}

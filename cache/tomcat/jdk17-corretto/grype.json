@@ -1,0 +1,969 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "ALAS-2022-1808",
+    "dataSource": "https://alas.aws.amazon.com/AL2/ALAS-2022-1808.html",
+    "namespace": "amzn:2",
+    "severity": "Medium",
+    "urls": [
+     "https://alas.aws.amazon.com/AL2/ALAS-2022-1808.html"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "7.79.1-4.amzn2.0.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27782",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27782",
+     "namespace": "nvd",
+     "severity": "High",
+     "urls": [
+      "https://hackerone.com/reports/1555796",
+      "https://security.netapp.com/advisory/ntap-20220609-0009/"
+     ],
+     "description": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpmdb-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "amazonlinux",
+       "version": "2"
+      },
+      "namespace": "amzn:2",
+      "package": {
+       "name": "curl",
+       "version": "0:7.79.1-2.amzn2.0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 7.79.1-4.amzn2.0.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "curl",
+    "version": "7.79.1-2.amzn2.0.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/var/lib/rpm/Packages",
+      "layerID": "sha256:513c479644826c71c9109d6bb7a02e0c49a99e4b50a9bd6c13e0738b7a3bbb04"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:amazonlinux:curl:7.79.1-2.amzn2.0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:curl:curl:7.79.1-2.amzn2.0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/amzn/curl@7.79.1-2.amzn2.0.1?arch=x86_64&upstream=curl-7.79.1-2.amzn2.0.1.src.rpm&distro=amzn-2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "ALAS-2022-1808",
+    "dataSource": "https://alas.aws.amazon.com/AL2/ALAS-2022-1808.html",
+    "namespace": "amzn:2",
+    "severity": "Medium",
+    "urls": [
+     "https://alas.aws.amazon.com/AL2/ALAS-2022-1808.html"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "7.79.1-4.amzn2.0.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27782",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27782",
+     "namespace": "nvd",
+     "severity": "High",
+     "urls": [
+      "https://hackerone.com/reports/1555796",
+      "https://security.netapp.com/advisory/ntap-20220609-0009/"
+     ],
+     "description": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpmdb-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "amazonlinux",
+       "version": "2"
+      },
+      "namespace": "amzn:2",
+      "package": {
+       "name": "curl",
+       "version": "7.79.1-2.amzn2.0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 7.79.1-4.amzn2.0.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libcurl",
+    "version": "7.79.1-2.amzn2.0.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/var/lib/rpm/Packages",
+      "layerID": "sha256:513c479644826c71c9109d6bb7a02e0c49a99e4b50a9bd6c13e0738b7a3bbb04"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:amazonlinux:libcurl:7.79.1-2.amzn2.0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl:libcurl:7.79.1-2.amzn2.0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/amzn/libcurl@7.79.1-2.amzn2.0.1?arch=x86_64&upstream=curl-7.79.1-2.amzn2.0.1.src.rpm&distro=amzn-2",
+    "upstreams": [
+     {
+      "name": "curl",
+      "version": "7.79.1-2.amzn2.0.1"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "ALAS-2022-1809",
+    "dataSource": "https://alas.aws.amazon.com/AL2/ALAS-2022-1809.html",
+    "namespace": "amzn:2",
+    "severity": "Medium",
+    "urls": [
+     "https://alas.aws.amazon.com/AL2/ALAS-2022-1809.html"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.1.0-14.amzn2.0.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-46143",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-46143",
+     "namespace": "nvd",
+     "severity": "High",
+     "urls": [
+      "https://github.com/libexpat/libexpat/issues/532",
+      "https://github.com/libexpat/libexpat/pull/538",
+      "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+      "https://security.netapp.com/advisory/ntap-20220121-0006/",
+      "https://www.tenable.com/security/tns-2022-05",
+      "https://www.debian.org/security/2022/dsa-5073",
+      "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf"
+     ],
+     "description": "In doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    },
+    {
+     "id": "CVE-2022-22822",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-22822",
+     "namespace": "nvd",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/libexpat/libexpat/pull/539",
+      "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+      "https://www.tenable.com/security/tns-2022-05",
+      "https://www.debian.org/security/2022/dsa-5073",
+      "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf"
+     ],
+     "description": "addBinding in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    },
+    {
+     "id": "CVE-2022-22823",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-22823",
+     "namespace": "nvd",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/libexpat/libexpat/pull/539",
+      "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+      "https://www.tenable.com/security/tns-2022-05",
+      "https://www.debian.org/security/2022/dsa-5073",
+      "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf"
+     ],
+     "description": "build_model in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    },
+    {
+     "id": "CVE-2022-22824",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-22824",
+     "namespace": "nvd",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/libexpat/libexpat/pull/539",
+      "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+      "https://www.tenable.com/security/tns-2022-05",
+      "https://www.debian.org/security/2022/dsa-5073",
+      "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf"
+     ],
+     "description": "defineAttribute in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    },
+    {
+     "id": "CVE-2022-22825",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-22825",
+     "namespace": "nvd",
+     "severity": "High",
+     "urls": [
+      "https://github.com/libexpat/libexpat/pull/539",
+      "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+      "https://www.tenable.com/security/tns-2022-05",
+      "https://www.debian.org/security/2022/dsa-5073",
+      "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf"
+     ],
+     "description": "lookup in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    },
+    {
+     "id": "CVE-2022-22826",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-22826",
+     "namespace": "nvd",
+     "severity": "High",
+     "urls": [
+      "https://github.com/libexpat/libexpat/pull/539",
+      "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+      "https://www.tenable.com/security/tns-2022-05",
+      "https://www.debian.org/security/2022/dsa-5073",
+      "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf"
+     ],
+     "description": "nextScaffoldPart in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    },
+    {
+     "id": "CVE-2022-22827",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-22827",
+     "namespace": "nvd",
+     "severity": "High",
+     "urls": [
+      "https://github.com/libexpat/libexpat/pull/539",
+      "http://www.openwall.com/lists/oss-security/2022/01/17/3",
+      "https://www.tenable.com/security/tns-2022-05",
+      "https://www.debian.org/security/2022/dsa-5073",
+      "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf"
+     ],
+     "description": "storeAtts in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpmdb-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "amazonlinux",
+       "version": "2"
+      },
+      "namespace": "amzn:2",
+      "package": {
+       "name": "expat",
+       "version": "0:2.1.0-12.amzn2.0.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.1.0-14.amzn2.0.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "expat",
+    "version": "2.1.0-12.amzn2.0.4",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/var/lib/rpm/Packages",
+      "layerID": "sha256:513c479644826c71c9109d6bb7a02e0c49a99e4b50a9bd6c13e0738b7a3bbb04"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:amazonlinux:expat:2.1.0-12.amzn2.0.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:expat:expat:2.1.0-12.amzn2.0.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/amzn/expat@2.1.0-12.amzn2.0.4?arch=x86_64&upstream=expat-2.1.0-12.amzn2.0.4.src.rpm&distro=amzn-2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-5425",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-5425",
+    "namespace": "nvd",
+    "severity": "High",
+    "urls": [
+     "http://www.securityfocus.com/bid/93472",
+     "http://rhn.redhat.com/errata/RHSA-2016-2046.html",
+     "http://www.openwall.com/lists/oss-security/2016/10/10/2",
+     "http://packetstormsecurity.com/files/139041/Apache-Tomcat-8-7-6-Privilege-Escalation.html",
+     "http://legalhackers.com/advisories/Tomcat-RedHat-Pkgs-Root-PrivEsc-Exploit-CVE-2016-5425.html",
+     "http://www.oracle.com/technetwork/topics/security/linuxbulletinoct2016-3090545.html",
+     "http://www.securitytracker.com/id/1036979",
+     "https://www.exploit-db.com/exploits/40488/",
+     "https://lists.apache.org/thread.html/6b414817c2b0bf351138911c8c922ec5dd577ebc0b9a7f42d705752d@%3Cissues.activemq.apache.org%3E",
+     "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html"
+    ],
+    "description": "The Tomcat package on Red Hat Enterprise Linux (RHEL) 7, Fedora, CentOS, Oracle Linux, and possibly other Linux distributions uses weak permissions for /usr/lib/tmpfiles.d/tomcat.conf, which allows local users to gain root privileges by leveraging membership in the tomcat group.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 3.9,
+       "impactScore": 10
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.8,
+       "exploitabilityScore": 1.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd",
+      "cpes": [
+       "cpe:2.3:a:apache:tomcat:10.0.22:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:apache:tomcat:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "tomcat-jdbc",
+    "version": "10.0.22",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/local/tomcat/lib/tomcat-jdbc.jar",
+      "layerID": "sha256:513c479644826c71c9109d6bb7a02e0c49a99e4b50a9bd6c13e0738b7a3bbb04"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:tomcat-jdbc:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat-jdbc:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat-jdbc:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat-jdbc:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:jdbc:10.0.22:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.tomcat.jdbc/tomcat-jdbc@10.0.22",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/local/tomcat/lib/tomcat-jdbc.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "d3670d4d7ca885fe58018cab49bd6a4734c86ca7"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-6325",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-6325",
+    "namespace": "nvd",
+    "severity": "High",
+    "urls": [
+     "http://rhn.redhat.com/errata/RHSA-2016-2045.html",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1367447",
+     "http://rhn.redhat.com/errata/RHSA-2016-2046.html",
+     "http://www.oracle.com/technetwork/topics/security/linuxbulletinoct2016-3090545.html",
+     "http://www.securityfocus.com/bid/93478",
+     "https://access.redhat.com/errata/RHSA-2017:0456",
+     "https://access.redhat.com/errata/RHSA-2017:0455",
+     "http://rhn.redhat.com/errata/RHSA-2017-0457.html"
+    ],
+    "description": "The Tomcat package on Red Hat Enterprise Linux (RHEL) 5 through 7, JBoss Web Server 3.0, and JBoss EWS 2 uses weak permissions for (1) /etc/sysconfig/tomcat and (2) /etc/tomcat/tomcat.conf, which allows local users to gain privileges by leveraging membership in the tomcat group.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 3.9,
+       "impactScore": 10
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.8,
+       "exploitabilityScore": 1.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd",
+      "cpes": [
+       "cpe:2.3:a:apache:tomcat:10.0.22:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:apache:tomcat:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "tomcat-jdbc",
+    "version": "10.0.22",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/local/tomcat/lib/tomcat-jdbc.jar",
+      "layerID": "sha256:513c479644826c71c9109d6bb7a02e0c49a99e4b50a9bd6c13e0738b7a3bbb04"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:tomcat-jdbc:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat-jdbc:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat-jdbc:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat-jdbc:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:jdbc:10.0.22:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.tomcat.jdbc/tomcat-jdbc@10.0.22",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/local/tomcat/lib/tomcat-jdbc.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "d3670d4d7ca885fe58018cab49bd6a4734c86ca7"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-34305",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-34305",
+    "namespace": "nvd",
+    "severity": "Medium",
+    "urls": [
+     "https://lists.apache.org/thread/k04zk0nq6w57m72w5gb0r6z9ryhmvr4k",
+     "http://www.openwall.com/lists/oss-security/2022/06/23/1"
+    ],
+    "description": "In Apache Tomcat 10.1.0-M1 to 10.1.0-M16, 10.0.0-M1 to 10.0.22, 9.0.30 to 9.0.64 and 8.5.50 to 8.5.81 the Form authentication example in the examples web application displayed user provided data without filtering, exposing a XSS vulnerability.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 8.6,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd",
+      "cpes": [
+       "cpe:2.3:a:apache:tomcat:10.0.22:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "= 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 || >= 9.0.30, <= 9.0.64 || >= 8.5.50, <= 8.5.81 || >= 10.0.0, <= 10.0.22 || = 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 || = 10.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:apache:tomcat:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "tomcat-jdbc",
+    "version": "10.0.22",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/local/tomcat/lib/tomcat-jdbc.jar",
+      "layerID": "sha256:513c479644826c71c9109d6bb7a02e0c49a99e4b50a9bd6c13e0738b7a3bbb04"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:tomcat-jdbc:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat-jdbc:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat-jdbc:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:tomcat-jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:tomcat_jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat-jdbc:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat_jdbc:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:tomcat:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tomcat:jdbc:10.0.22:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:jdbc:10.0.22:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.tomcat.jdbc/tomcat-jdbc@10.0.22",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/local/tomcat/lib/tomcat-jdbc.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "d3670d4d7ca885fe58018cab49bd6a4734c86ca7"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "tomcat:jdk17-corretto",
+   "imageID": "sha256:0ee792155b7ed72b7d725194bd9c26d27504483f064a9a03d674639b0bc36342",
+   "manifestDigest": "sha256:24575ff9f19c48aeaf51a5fecb44def418054052ebf5db60a4d7d504d6a0f6e0",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "tomcat:jdk17-corretto"
+   ],
+   "imageSize": 515376919,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:209cb42bdfb7e8f32e3cc2972d4c447085b655722c5a5f693d12dfad596370e4",
+     "size": 164360871
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:226377d808115981eed59d78c0306f32103ff4d463038e07491cb941a42692ec",
+     "size": 298309759
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b1ba156ac6d354336dab7bac43671768753b419b18c193a9e32ee1baea0bd3f7",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:513c479644826c71c9109d6bb7a02e0c49a99e4b50a9bd6c13e0738b7a3bbb04",
+     "size": 52706289
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:d7cef095748153021e34863305f782591de2190e36a2e4527d51fb0fe7e9a888",
+     "size": 0
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo5NzQzLCJkaWdlc3QiOiJzaGEyNTY6MGVlNzkyMTU1YjdlZDcyYjdkNzI1MTk0YmQ5YzI2ZDI3NTA0NDgzZjA2NGE5YTAzZDY3NDYzOWIwYmMzNjM0MiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxNzExMzYwMDAsImRpZ2VzdCI6InNoYTI1NjoyMDljYjQyYmRmYjdlOGYzMmUzY2MyOTcyZDRjNDQ3MDg1YjY1NTcyMmM1YTVmNjkzZDEyZGZhZDU5NjM3MGU0In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6Mjk5MDU3NjY0LCJkaWdlc3QiOiJzaGEyNTY6MjI2Mzc3ZDgwODExNTk4MWVlZDU5ZDc4YzAzMDZmMzIxMDNmZjRkNDYzMDM4ZTA3NDkxY2I5NDFhNDI2OTJlYyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjMwNzIsImRpZ2VzdCI6InNoYTI1NjpiMWJhMTU2YWM2ZDM1NDMzNmRhYjdiYWM0MzY3MTc2ODc1M2I0MTliMThjMTkzYTllMzJlZTFiYWVhMGJkM2Y3In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NTQwNjc3MTIsImRpZ2VzdCI6InNoYTI1Njo1MTNjNDc5NjQ0ODI2YzcxYzkxMDlkNmJiN2EwMmUwYzQ5YTk5ZTRiNTBhOWJkNmMxM2UwNzM4YjdhM2JiYjA0In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MjA0OCwiZGlnZXN0Ijoic2hhMjU2OmQ3Y2VmMDk1NzQ4MTUzMDIxZTM0ODYzMzA1Zjc4MjU5MWRlMjE5MGUzNmEyZTQ1MjdkNTFmYjBmZTdlOWE4ODgifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODA4MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC90b21jYXQvYmluOi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkxBTkc9Qy5VVEYtOCIsIkpBVkFfSE9NRT0vdXNyL2xpYi9qdm0vamF2YS0xNy1hbWF6b24tY29ycmV0dG8iLCJDQVRBTElOQV9IT01FPS91c3IvbG9jYWwvdG9tY2F0IiwiVE9NQ0FUX05BVElWRV9MSUJESVI9L3Vzci9sb2NhbC90b21jYXQvbmF0aXZlLWpuaS1saWIiLCJMRF9MSUJSQVJZX1BBVEg9L3Vzci9sb2NhbC90b21jYXQvbmF0aXZlLWpuaS1saWIiLCJHUEdfS0VZUz1BOUM1REY0RDIyRTk5OTk4RDk4NzVBNTExMEMwMUM1QTJGNjA1OUU3IiwiVE9NQ0FUX01BSk9SPTEwIiwiVE9NQ0FUX1ZFUlNJT049MTAuMC4yMiIsIlRPTUNBVF9TSEE1MTI9ZmU0NmRiODc5NGYwNjY4ODJiMzBlN2E5NGJkOGQzZGJjZjI5ZThlOGZmYWY2N2MxMzU1ODQ2NzU1NzQ1YTdjOWVhZmQxMjQ4MTkyODNmMjE4YmNmNDEwOTIxYTQ4NWI0NGI1N2I1NmZkNjI1MWZiOTlkNjdkOTVmM2RkMzY4MjYiXSwiQ21kIjpbImNhdGFsaW5hLnNoIiwicnVuIl0sIkltYWdlIjoic2hhMjU2OjVmYzM2ODc1NzMwYTZkNjYxZWQwZjdlMTdlMjI4ODNmODAyZjhlZTUwMGE0YjhlOGI4MTY2MWEyODEwMDk4MjIiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiL3Vzci9sb2NhbC90b21jYXQiLCJFbnRyeXBvaW50IjpudWxsLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOm51bGx9LCJjb250YWluZXIiOiIyYWJjYzY4MmMzMDdmMGFiOTQyNDRjMTkxMTYwM2JlNzNkZDc0ODFlMDQxMDMzOGRhZWVkM2M4MGFiYjBhN2Q2IiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjJhYmNjNjgyYzMwNyIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODA4MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC90b21jYXQvYmluOi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkxBTkc9Qy5VVEYtOCIsIkpBVkFfSE9NRT0vdXNyL2xpYi9qdm0vamF2YS0xNy1hbWF6b24tY29ycmV0dG8iLCJDQVRBTElOQV9IT01FPS91c3IvbG9jYWwvdG9tY2F0IiwiVE9NQ0FUX05BVElWRV9MSUJESVI9L3Vzci9sb2NhbC90b21jYXQvbmF0aXZlLWpuaS1saWIiLCJMRF9MSUJSQVJZX1BBVEg9L3Vzci9sb2NhbC90b21jYXQvbmF0aXZlLWpuaS1saWIiLCJHUEdfS0VZUz1BOUM1REY0RDIyRTk5OTk4RDk4NzVBNTExMEMwMUM1QTJGNjA1OUU3IiwiVE9NQ0FUX01BSk9SPTEwIiwiVE9NQ0FUX1ZFUlNJT049MTAuMC4yMiIsIlRPTUNBVF9TSEE1MTI9ZmU0NmRiODc5NGYwNjY4ODJiMzBlN2E5NGJkOGQzZGJjZjI5ZThlOGZmYWY2N2MxMzU1ODQ2NzU1NzQ1YTdjOWVhZmQxMjQ4MTkyODNmMjE4YmNmNDEwOTIxYTQ4NWI0NGI1N2I1NmZkNjI1MWZiOTlkNjdkOTVmM2RkMzY4MjYiXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJDTUQgW1wiY2F0YWxpbmEuc2hcIiBcInJ1blwiXSJdLCJJbWFnZSI6InNoYTI1Njo1ZmMzNjg3NTczMGE2ZDY2MWVkMGY3ZTE3ZTIyODgzZjgwMmY4ZWU1MDBhNGI4ZThiODE2NjFhMjgxMDA5ODIyIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6Ii91c3IvbG9jYWwvdG9tY2F0IiwiRW50cnlwb2ludCI6bnVsbCwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7fX0sImNyZWF0ZWQiOiIyMDIyLTA3LTIwVDAzOjU0OjAzLjA0NTEzOTE5OVoiLCJkb2NrZXJfdmVyc2lvbiI6IjIwLjEwLjEyIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjItMDYtMjFUMjM6MTk6NDEuNTQ5MjI4MTY1WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTplNmM2YmIwMTY0MjNiMjRhMjhiMjczY2M3NmU5ZmJiZjgxOTM0Yjc3YTBlZGU3OTdjY2ZkMGVlYWM0NjVjOGE0IGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMi0wNi0yMVQyMzoxOTo0Mi4yODY5NTYyNTFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiL2Jpbi9iYXNoXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjItMDctMTlUMjI6Mzg6MzUuNDA1NDYzMzk5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQVJHIHZlcnNpb249MTcuMC40LjgtMSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTE5VDIyOjM4OjU4LjA2MTE2MTc1WiIsImNyZWF0ZWRfYnkiOiJ8MSB2ZXJzaW9uPTE3LjAuNC44LTEgL2Jpbi9zaCAtYyBzZXQgLWV1eCAgICAgXHUwMDI2XHUwMDI2IGV4cG9ydCBHTlVQR0hPTUU9XCIkKG1rdGVtcCAtZClcIiAgICAgXHUwMDI2XHUwMDI2IGN1cmwgLWZMIC1vIGNvcnJldHRvLmtleSBodHRwczovL3l1bS5jb3JyZXR0by5hd3MvY29ycmV0dG8ua2V5ICAgICBcdTAwMjZcdTAwMjYgZ3BnIC0tYmF0Y2ggLS1pbXBvcnQgY29ycmV0dG8ua2V5ICAgICBcdTAwMjZcdTAwMjYgZ3BnIC0tYmF0Y2ggLS1leHBvcnQgLS1hcm1vciAnNkRDMzYzNkRBRTUzNDA0OUM4Qjk0NjIzQTEyMjU0MkFCMDRGMjRFMycgXHUwMDNlIGNvcnJldHRvLmtleSAgICAgXHUwMDI2XHUwMDI2IHJwbSAtLWltcG9ydCBjb3JyZXR0by5rZXkgICAgIFx1MDAyNlx1MDAyNiBybSAtciBcIiRHTlVQR0hPTUVcIiBjb3JyZXR0by5rZXkgICAgIFx1MDAyNlx1MDAyNiBjdXJsIC1mTCAtbyAvZXRjL3l1bS5yZXBvcy5kL2NvcnJldHRvLnJlcG8gaHR0cHM6Ly95dW0uY29ycmV0dG8uYXdzL2NvcnJldHRvLnJlcG8gICAgIFx1MDAyNlx1MDAyNiBncmVwIC1xICdeZ3BnY2hlY2s9MScgL2V0Yy95dW0ucmVwb3MuZC9jb3JyZXR0by5yZXBvICAgICBcdTAwMjZcdTAwMjYgZWNobyBcInByaW9yaXR5PTlcIiBcdTAwM2VcdTAwM2UgL2V0Yy95dW0ucmVwb3MuZC9jb3JyZXR0by5yZXBvICAgICBcdTAwMjZcdTAwMjYgeXVtIGluc3RhbGwgLXkgamF2YS0xNy1hbWF6b24tY29ycmV0dG8tZGV2ZWwtJHZlcnNpb24gICAgIFx1MDAyNlx1MDAyNiAoZmluZCAvdXNyL2xpYi9qdm0vamF2YS0xNy1hbWF6b24tY29ycmV0dG8gLW5hbWUgc3JjLnppcCAtZGVsZXRlIHx8IHRydWUpICAgICBcdTAwMjZcdTAwMjYgeXVtIGluc3RhbGwgLXkgZm9udGNvbmZpZyAgICAgXHUwMDI2XHUwMDI2IHl1bSBjbGVhbiBhbGwifSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTE5VDIyOjM4OjU4LjY1MjcwODI1MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBMQU5HPUMuVVRGLTgiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0wNy0xOVQyMjozODo1OC43NDg5MzQ1NTFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgSkFWQV9IT01FPS91c3IvbGliL2p2bS9qYXZhLTE3LWFtYXpvbi1jb3JyZXR0byIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTIwVDAzOjUxOjA1LjU3Njk0MTA4OFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBDQVRBTElOQV9IT01FPS91c3IvbG9jYWwvdG9tY2F0IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjItMDctMjBUMDM6NTE6MDUuNjczNDYzODE3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIFBBVEg9L3Vzci9sb2NhbC90b21jYXQvYmluOi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTIwVDAzOjUxOjA2LjI4MTEwOTg2MVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyBta2RpciAtcCBcIiRDQVRBTElOQV9IT01FXCIifSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTIwVDAzOjUxOjA2LjM3OTM5NTE5NVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgV09SS0RJUiAvdXNyL2xvY2FsL3RvbWNhdCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTIwVDAzOjUxOjA2LjQ3NzI1NzUxM1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBUT01DQVRfTkFUSVZFX0xJQkRJUj0vdXNyL2xvY2FsL3RvbWNhdC9uYXRpdmUtam5pLWxpYiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTIwVDAzOjUxOjA2LjU3NTU5NTUwNloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBMRF9MSUJSQVJZX1BBVEg9L3Vzci9sb2NhbC90b21jYXQvbmF0aXZlLWpuaS1saWIiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0wNy0yMFQwMzo1MTowNi42NzI5OTg2MzZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgR1BHX0tFWVM9QTlDNURGNEQyMkU5OTk5OEQ5ODc1QTUxMTBDMDFDNUEyRjYwNTlFNyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTIwVDAzOjUxOjA2Ljc2OTQzNzY1NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBUT01DQVRfTUFKT1I9MTAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0wNy0yMFQwMzo1MzoyNS4zNjg4MDQyNDZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgVE9NQ0FUX1ZFUlNJT049MTAuMC4yMiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTIwVDAzOjUzOjI1LjQ2NDkwNjQ5NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBUT01DQVRfU0hBNTEyPWZlNDZkYjg3OTRmMDY2ODgyYjMwZTdhOTRiZDhkM2RiY2YyOWU4ZThmZmFmNjdjMTM1NTg0Njc1NTc0NWE3YzllYWZkMTI0ODE5MjgzZjIxOGJjZjQxMDkyMWE0ODViNDRiNTdiNTZmZDYyNTFmYjk5ZDY3ZDk1ZjNkZDM2ODI2IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjItMDctMjBUMDM6NTQ6MDEuNTExNDE5MjgyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIHNldCAtZXV4OyBcdFx0aWYgISBjb21tYW5kIC12IHl1bWRiIFx1MDAzZSAvZGV2L251bGw7IHRoZW4gXHRcdHl1bSBpbnN0YWxsIC15IC0tc2V0b3B0PXNraXBfbWlzc2luZ19uYW1lc19vbl9pbnN0YWxsPUZhbHNlIHl1bS11dGlsczsgXHRcdHl1bWRiIHNldCByZWFzb24gZGVwIHl1bS11dGlsczsgXHRmaTsgXHRfeXVtX2luc3RhbGxfdGVtcG9yYXJ5KCkgeyAoIHNldCAtZXUgK3g7IFx0XHRsb2NhbCBwa2cgdG9kbz0nJzsgXHRcdGZvciBwa2c7IGRvIFx0XHRcdGlmICEgcnBtIC0tcXVlcnkgXCIkcGtnXCIgXHUwMDNlIC9kZXYvbnVsbCAyXHUwMDNlXHUwMDI2MTsgdGhlbiBcdFx0XHRcdHRvZG89XCIkdG9kbyAkcGtnXCI7IFx0XHRcdGZpOyBcdFx0ZG9uZTsgXHRcdGlmIFsgLW4gXCIkdG9kb1wiIF07IHRoZW4gXHRcdFx0c2V0IC14OyBcdFx0XHR5dW0gaW5zdGFsbCAteSAtLXNldG9wdD1za2lwX21pc3NpbmdfbmFtZXNfb25faW5zdGFsbD1GYWxzZSAkdG9kbzsgXHRcdFx0eXVtZGIgc2V0IHJlYXNvbiBkZXAgJHRvZG87IFx0XHRmaTsgXHQpIH07IFx0X3l1bV9pbnN0YWxsX3RlbXBvcmFyeSBnemlwIHRhcjsgXHRcdGRkaXN0KCkgeyBcdFx0bG9jYWwgZj1cIiQxXCI7IHNoaWZ0OyBcdFx0bG9jYWwgZGlzdEZpbGU9XCIkMVwiOyBzaGlmdDsgXHRcdGxvY2FsIG12bkZpbGU9XCIkezE6LX1cIjsgXHRcdGxvY2FsIHN1Y2Nlc3M9OyBcdFx0bG9jYWwgZGlzdFVybD07IFx0XHRmb3IgZGlzdFVybCBpbiBcdFx0XHRcImh0dHBzOi8vd3d3LmFwYWNoZS5vcmcvZHluL2Nsb3Nlci5jZ2k/YWN0aW9uPWRvd25sb2FkXHUwMDI2ZmlsZW5hbWU9JGRpc3RGaWxlXCIgXHRcdFx0XCJodHRwczovL2Rvd25sb2Fkcy5hcGFjaGUub3JnLyRkaXN0RmlsZVwiIFx0XHRcdFwiaHR0cHM6Ly93d3ctdXMuYXBhY2hlLm9yZy9kaXN0LyRkaXN0RmlsZVwiIFx0XHRcdFwiaHR0cHM6Ly93d3cuYXBhY2hlLm9yZy9kaXN0LyRkaXN0RmlsZVwiIFx0XHRcdFwiaHR0cHM6Ly9hcmNoaXZlLmFwYWNoZS5vcmcvZGlzdC8kZGlzdEZpbGVcIiBcdFx0XHQke212bkZpbGU6K1wiaHR0cHM6Ly9yZXBvMS5tYXZlbi5vcmcvbWF2ZW4yL29yZy9hcGFjaGUvdG9tY2F0L3RvbWNhdC8kbXZuRmlsZVwifSBcdFx0OyBkbyBcdFx0XHRpZiBjdXJsIC1mTCAtbyBcIiRmXCIgXCIkZGlzdFVybFwiIFx1MDAyNlx1MDAyNiBbIC1zIFwiJGZcIiBdOyB0aGVuIFx0XHRcdFx0c3VjY2Vzcz0xOyBcdFx0XHRcdGJyZWFrOyBcdFx0XHRmaTsgXHRcdGRvbmU7IFx0XHRbIC1uIFwiJHN1Y2Nlc3NcIiBdOyBcdH07IFx0XHRkZGlzdCAndG9tY2F0LnRhci5neicgXCJ0b21jYXQvdG9tY2F0LSRUT01DQVRfTUFKT1IvdiRUT01DQVRfVkVSU0lPTi9iaW4vYXBhY2hlLXRvbWNhdC0kVE9NQ0FUX1ZFUlNJT04udGFyLmd6XCIgXCIkVE9NQ0FUX1ZFUlNJT04vdG9tY2F0LSRUT01DQVRfVkVSU0lPTi50YXIuZ3pcIjsgXHRlY2hvIFwiJFRPTUNBVF9TSEE1MTIgKnRvbWNhdC50YXIuZ3pcIiB8IHNoYTUxMnN1bSAtLXN0cmljdCAtLWNoZWNrIC07IFx0ZGRpc3QgJ3RvbWNhdC50YXIuZ3ouYXNjJyBcInRvbWNhdC90b21jYXQtJFRPTUNBVF9NQUpPUi92JFRPTUNBVF9WRVJTSU9OL2Jpbi9hcGFjaGUtdG9tY2F0LSRUT01DQVRfVkVSU0lPTi50YXIuZ3ouYXNjXCIgXCIkVE9NQ0FUX1ZFUlNJT04vdG9tY2F0LSRUT01DQVRfVkVSU0lPTi50YXIuZ3ouYXNjXCI7IFx0ZXhwb3J0IEdOVVBHSE9NRT1cIiQobWt0ZW1wIC1kKVwiOyBcdGZvciBrZXkgaW4gJEdQR19LRVlTOyBkbyBcdFx0Z3BnIC0tYmF0Y2ggLS1rZXlzZXJ2ZXIga2V5c2VydmVyLnVidW50dS5jb20gLS1yZWN2LWtleXMgXCIka2V5XCI7IFx0ZG9uZTsgXHRncGcgLS1iYXRjaCAtLXZlcmlmeSB0b21jYXQudGFyLmd6LmFzYyB0b21jYXQudGFyLmd6OyBcdHRhciAteGYgdG9tY2F0LnRhci5neiAtLXN0cmlwLWNvbXBvbmVudHM9MTsgXHRybSBiaW4vKi5iYXQ7IFx0cm0gdG9tY2F0LnRhci5neio7IFx0Y29tbWFuZCAtdiBncGdjb25mIFx1MDAyNlx1MDAyNiBncGdjb25mIC0ta2lsbCBhbGwgfHwgOjsgXHRybSAtcmYgXCIkR05VUEdIT01FXCI7IFx0XHRtdiB3ZWJhcHBzIHdlYmFwcHMuZGlzdDsgXHRta2RpciB3ZWJhcHBzOyBcdFx0bmF0aXZlQnVpbGREaXI9XCIkKG1rdGVtcCAtZClcIjsgXHR0YXIgLXhmIGJpbi90b21jYXQtbmF0aXZlLnRhci5neiAtQyBcIiRuYXRpdmVCdWlsZERpclwiIC0tc3RyaXAtY29tcG9uZW50cz0xOyBcdF95dW1faW5zdGFsbF90ZW1wb3JhcnkgXHRcdGFwci1kZXZlbCBcdFx0Z2NjIFx0XHRtYWtlIFx0XHRvcGVuc3NsMTEtZGV2ZWwgXHQ7IFx0KCBcdFx0ZXhwb3J0IENBVEFMSU5BX0hPTUU9XCIkUFdEXCI7IFx0XHRjZCBcIiRuYXRpdmVCdWlsZERpci9uYXRpdmVcIjsgXHRcdGFwckNvbmZpZz1cIiQoY29tbWFuZCAtdiBhcHItMS1jb25maWcpXCI7IFx0XHQuL2NvbmZpZ3VyZSBcdFx0XHQtLWxpYmRpcj1cIiRUT01DQVRfTkFUSVZFX0xJQkRJUlwiIFx0XHRcdC0tcHJlZml4PVwiJENBVEFMSU5BX0hPTUVcIiBcdFx0XHQtLXdpdGgtYXByPVwiJGFwckNvbmZpZ1wiIFx0XHRcdC0td2l0aC1qYXZhLWhvbWU9XCIkSkFWQV9IT01FXCIgXHRcdFx0LS13aXRoLXNzbD15ZXMgXHRcdDsgXHRcdG5wcm9jPVwiJChucHJvYylcIjsgXHRcdG1ha2UgLWogXCIkbnByb2NcIjsgXHRcdG1ha2UgaW5zdGFsbDsgXHQpOyBcdHJtIC1yZiBcIiRuYXRpdmVCdWlsZERpclwiOyBcdHJtIGJpbi90b21jYXQtbmF0aXZlLnRhci5nejsgXHRcdGZpbmQgXCIkVE9NQ0FUX05BVElWRV9MSUJESVJcIiAtdHlwZSBmIC1leGVjdXRhYmxlIC1leGVjIGxkZCAne30nICc7JyBcdFx0fCBhd2sgJy89XHUwMDNlLyBcdTAwMjZcdTAwMjYgJChORi0xKSAhPSBcIj1cdTAwM2VcIiB7IHByaW50ICQoTkYtMSkgfScgXHRcdHwgeGFyZ3MgLXJ0IHJlYWRsaW5rIC1lIFx0XHR8IHNvcnQgLXUgXHRcdHwgeGFyZ3MgLXJ0IHJwbSAtLXF1ZXJ5IC0td2hhdHByb3ZpZGVzIFx0XHR8IHNvcnQgLXUgXHRcdHwgdGVlIFwiJFRPTUNBVF9OQVRJVkVfTElCRElSLy5kZXBlbmRlbmNpZXMudHh0XCIgXHRcdHwgeGFyZ3MgLXIgeXVtZGIgc2V0IHJlYXNvbiB1c2VyIFx0OyBcdFx0eXVtIGF1dG9yZW1vdmUgLXk7IFx0eXVtIGNsZWFuIGFsbDsgXHRybSAtcmYgL3Zhci9jYWNoZS95dW07IFx0XHRmaW5kIC4vYmluLyAtbmFtZSAnKi5zaCcgLWV4ZWMgc2VkIC1yaSAnc3xeIyEvYmluL3NoJHwjIS91c3IvYmluL2VudiBiYXNofCcgJ3t9JyArOyBcdFx0Y2htb2QgLVIgK3JYIC47IFx0Y2htb2QgNzc3IGxvZ3MgdGVtcCB3b3JrOyBcdFx0Y2F0YWxpbmEuc2ggdmVyc2lvbiJ9LHsiY3JlYXRlZCI6IjIwMjItMDctMjBUMDM6NTQ6MDIuODUxMjM5OTY0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIHNldCAtZXV4OyBcdG5hdGl2ZUxpbmVzPVwiJChjYXRhbGluYS5zaCBjb25maWd0ZXN0IDJcdTAwM2VcdTAwMjYxKVwiOyBcdG5hdGl2ZUxpbmVzPVwiJChlY2hvIFwiJG5hdGl2ZUxpbmVzXCIgfCBncmVwICdBcGFjaGUgVG9tY2F0IE5hdGl2ZScpXCI7IFx0bmF0aXZlTGluZXM9XCIkKGVjaG8gXCIkbmF0aXZlTGluZXNcIiB8IHNvcnQgLXUpXCI7IFx0aWYgISBlY2hvIFwiJG5hdGl2ZUxpbmVzXCIgfCBncmVwIC1FICdJTkZPOiBMb2FkZWQoIEFQUiBiYXNlZCk/IEFwYWNoZSBUb21jYXQgTmF0aXZlIGxpYnJhcnknIFx1MDAzZVx1MDAyNjI7IHRoZW4gXHRcdGVjaG8gXHUwMDNlXHUwMDI2MiBcIiRuYXRpdmVMaW5lc1wiOyBcdFx0ZXhpdCAxOyBcdGZpIn0seyJjcmVhdGVkIjoiMjAyMi0wNy0yMFQwMzo1NDowMi45NDczNjA4MTRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFWFBPU0UgODA4MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA3LTIwVDAzOjU0OjAzLjA0NTEzOTE5OVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCJjYXRhbGluYS5zaFwiIFwicnVuXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OjIwOWNiNDJiZGZiN2U4ZjMyZTNjYzI5NzJkNGM0NDcwODViNjU1NzIyYzVhNWY2OTNkMTJkZmFkNTk2MzcwZTQiLCJzaGEyNTY6MjI2Mzc3ZDgwODExNTk4MWVlZDU5ZDc4YzAzMDZmMzIxMDNmZjRkNDYzMDM4ZTA3NDkxY2I5NDFhNDI2OTJlYyIsInNoYTI1NjpiMWJhMTU2YWM2ZDM1NDMzNmRhYjdiYWM0MzY3MTc2ODc1M2I0MTliMThjMTkzYTllMzJlZTFiYWVhMGJkM2Y3Iiwic2hhMjU2OjUxM2M0Nzk2NDQ4MjZjNzFjOTEwOWQ2YmI3YTAyZTBjNDlhOTllNGI1MGE5YmQ2YzEzZTA3MzhiN2EzYmJiMDQiLCJzaGEyNTY6ZDdjZWYwOTU3NDgxNTMwMjFlMzQ4NjMzMDVmNzgyNTkxZGUyMTkwZTM2YTJlNDUyN2Q1MWZiMGZlN2U5YTg4OCJdfX0=",
+   "repoDigests": [
+    "tomcat@sha256:6506c4b4d425f56e408d864eb0875f615e4ed1b210b02ee22f7c81b9c67bcefa"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "amazonlinux",
+  "version": "2",
+  "idLike": [
+   "centos",
+   "rhel",
+   "fedora"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.38.0",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/molkars/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   }
+  },
+  "db": {
+   "built": "2022-07-20T08:17:06Z",
+   "schemaVersion": 3,
+   "location": "/home/molkars/.cache/grype/db/3",
+   "checksum": "sha256:6f0db2d9bf8604a9fda9b4ed01671dca263ea58ffade895f82c5cd380340950a",
+   "error": null
+  }
+ }
+}
