@@ -20,6 +20,5 @@ num_cpus = "1.13.1"
 
 [workspace]
 members = [
-    "scayl",
-    "util",
+    "scayl"
 ]
