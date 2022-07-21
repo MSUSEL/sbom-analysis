@@ -215,7 +215,7 @@ impl ScaylInfo {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct DeploymentScore {
     pub context: DeploymentContext,
-    pub image: String,
+    pub source: String,
     pub scayl: ScaylInfo,
     pub cumulative: VulnerabilityScore,
     pub scores: BTreeMap<VulnId, VulnerabilityScore>,

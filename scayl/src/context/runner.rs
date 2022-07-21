@@ -136,7 +136,7 @@ impl<'a> ContextRunner<'a> {
         Ok(DeploymentScore {
             context: context.clone(),
             scayl: ScaylInfo::current(),
-            image: name,
+            source: name,
             cumulative: scores.iter()
                 .fold(VulnerabilityScore::default(), |acc, (_, v)| acc + v),
             scores,
