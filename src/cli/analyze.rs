@@ -7,9 +7,9 @@ use std::sync::Arc;
 
 use futures::lock::Mutex;
 
-use crate::{context, ContextRunner, Grype, Syft, Trivy};
-use crate::context::{DeploymentContext, DeploymentScore, VulnerabilityScore};
-use crate::format;
+use scayl::{context, ContextRunner, Grype, Syft, Trivy};
+use scayl::context::{DeploymentContext, DeploymentScore, VulnerabilityScore};
+use scayl::format;
 
 enum Fmt {
     Grype,

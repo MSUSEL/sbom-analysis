@@ -3,6 +3,9 @@ use clap::{Parser, Subcommand};
 pub mod analyze;
 pub mod en_mass;
 
+pub use analyze::*;
+pub use en_mass::*;
+
 #[derive(Parser)]
 #[clap(version, about, long_about = None)]
 pub struct Cli {

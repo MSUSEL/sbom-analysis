@@ -9,10 +9,7 @@ use std::time::SystemTime;
 
 use futures::lock::Mutex;
 
-use crate::{Grype, Trivy, VulnerabilityFormat};
-use crate::context::{DeploymentContext, VulnerabilityScore};
-use crate::format::{read_file, VulnFilter, VulnFormat};
-use crate::util::io::RecurseDir;
+use scayl::{DeploymentContext, Grype, read_file, RecurseDir, Trivy, VulnerabilityFormat, VulnerabilityScore, VulnFilter, VulnFormat};
 
 pub async fn en_mass<P, CP>(path: P, context: CP)
     where P: AsRef<Path>,
@@ -22,6 +19,7 @@ pub async fn en_mass<P, CP>(path: P, context: CP)
         |path, fmt| (path, fmt),
     );
 
+    // TODO: Throw an actual error if the context file doesn't exist.
     let context: DeploymentContext = read_file(context.as_ref()).unwrap();
 
     let num_threads = num_cpus::get().min(files.len());
