@@ -119,17 +119,28 @@ impl DeploymentContext {
     pub fn remote_access_v3(&self, metric: &BaseMetric) -> f32 {
         let score = match metric.privileges_required {
             PrivilegesRequired::None => 1.0,
-            PrivilegesRequired::Low => 0.9,
-            PrivilegesRequired::High => 0.8,
+            PrivilegesRequired::Low => 0.7,
+            PrivilegesRequired::High => 0.3,
         };
         let score = score * match metric.user_interaction {
             UserInteraction::None => 1.0,
-            UserInteraction::Required => 0.9,
+            UserInteraction::Required => 0.5,
         };
         let score = score * match self.remote_access {
             RemoteAccess::Public => 1.0,
-            RemoteAccess::VPN => 0.8,
-            RemoteAccess::None => 0.4,
+            RemoteAccess::VPN => 0.6,
+            RemoteAccess::None => 0.2,
+        };
+        let score = score * match self.network_connection {
+            NetworkConfiguration::Public => 1.0,
+            NetworkConfiguration::Internal => 0.8,
+            NetworkConfiguration::Isolated => 0.1,
+        };
+        let score = score * match metric.attack_vector {
+            AttackVector::Network => 1.0,
+            AttackVector::Adjacent => 0.6,
+            AttackVector::Local => 0.25,
+            AttackVector::Physical => 0.1
         };
         score
     }
