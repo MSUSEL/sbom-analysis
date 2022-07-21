@@ -106,18 +106,25 @@ impl<'a> ContextRunner<'a> {
             }
         }
 
+        let mut name = "Unknown".to_string();
         let mut cvss_scores = BTreeMap::new();
         #[cfg(feature = "trivy")] {
             let trivy = self.trivy
                 .iter()
-                .map(|v| v.cvss_v3_1_scores());
+                .map(|v| {
+                    name = v.artifact_name.clone();
+                    v.cvss_v3_1_scores()
+                });
 
             group(trivy, &mut cvss_scores)?;
         }
         #[cfg(feature = "grype")] {
             let grype = self.grype
                 .iter()
-                .map(|v| v.cvss_v3_1_scores());
+                .map(|v| {
+                    name = v.source.target.user_input.clone();
+                    v.cvss_v3_1_scores()
+                });
             group(grype, &mut cvss_scores)?;
         }
 
@@ -129,7 +136,7 @@ impl<'a> ContextRunner<'a> {
         Ok(DeploymentScore {
             context: context.clone(),
             scayl: ScaylInfo::current(),
-            image: "TODO".to_string(),
+            image: name,
             cumulative: scores.iter()
                 .fold(VulnerabilityScore::default(), |acc, (_, v)| acc + v),
             scores,
