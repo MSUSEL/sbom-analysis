@@ -1,13 +1,15 @@
 use std::cmp::Ordering;
 use std::collections::LinkedList;
+use std::ffi::OsStr;
 use std::fmt::{Display, Formatter};
 use std::fs::File;
-use std::io::{BufReader, BufWriter};
+use std::io::{BufReader, BufWriter, stdout};
+use std::path::Path;
 use std::sync::Arc;
 
 use futures::lock::Mutex;
 
-use scayl::{context, ContextRunner, Grype, Syft, Trivy};
+use scayl::{context, ContextRunner, Grype, Syft, Trivy, write_json, write_table};
 use scayl::context::{DeploymentContext, DeploymentScore, VulnerabilityScore};
 use scayl::format;
 
@@ -32,6 +34,9 @@ enum OutFile {
 pub enum Error {
     Format(format::Error),
     Context(LinkedList<context::Error>),
+    Io(std::io::Error),
+    BadFileExtension(String),
+    Serde(serde_json::Error),
 }
 
 impl Display for Error {
@@ -45,6 +50,9 @@ impl Display for Error {
                 }
                 Ok(())
             }
+            Error::Io(err) => write!(f, "{}", err),
+            Error::BadFileExtension(ext) => write!(f, "Bad file extension: {}", ext),
+            Error::Serde(err) => write!(f, "Serialization error: {}", err),
         }
     }
 }
@@ -56,8 +64,7 @@ pub async fn analyze(
     context: &String,
     out: &Option<String>,
 ) -> Result<DeploymentScore, Error> {
-    let out = out.as_ref().map(|v| File::create(v).unwrap());
-    let context: DeploymentContext = format::read_file(context).map_err(Error::Format)?;
+    let context: DeploymentContext = format::read_json(context).map_err(Error::Format)?;
 
     let mut files = LinkedList::new();
 
@@ -109,6 +116,41 @@ pub async fn analyze(
     println!("{:.2}% of scores are below a 1.65 (5 / 3)", lower as f64 / scores.len() as f64 * 100.0);
     println!("{:.2}% of scores are below a 3.3 (5 * 2 / 3)", upper as f64 / scores.len() as f64 * 100.0);
 
+
+    if score.scores.is_empty() {
+        println!("No vulnerabilities found (0.0/5.0)");
+        return Ok(score);
+    }
+
+    if let Some(file) = out {
+        use std::io::Write;
+        let (use_csv, file) = match Path::new(file).extension().and_then(OsStr::to_str) {
+            None => (true, format!("{}.csv", file)),
+            Some("json") => (false, file.clone()),
+            Some("csv") => (true, file.clone()),
+            Some(v) => return Err(Error::BadFileExtension(v.to_string())),
+        };
+
+
+        if use_csv {
+            let file = File::create(file).map_err(Error::Io)?;
+            let mut writer = BufWriter::new(file);
+            write!(writer, "id,sum,network,files,remote,information,permissions").unwrap();
+            for (id, VulnerabilityScore {
+                sum, network, files, remote, information, permissions
+            }) in &score.scores {
+                write!(writer, "\n{},{:.4},{:.4},{:.4},{:.4},{:.4},{:.4}",
+                       id, sum, network, files, remote, information, permissions).unwrap();
+            }
+        } else {
+            write_json(&file, &score)
+                .map_err(|e| match e {
+                    format::Error::Io(e) => Error::Io(e),
+                    format::Error::Serde(e) => Error::Serde(e),
+                })?;
+        }
+        return Ok(score);
+    }
     let header = [
         "".to_string(),
         "id".to_string(),
@@ -119,86 +161,24 @@ pub async fn analyze(
         "information".to_string(),
         "permissions".to_string(),
     ];
-    let mut lengths = header.iter().map(|v| v.len() + 2).collect::<Vec<_>>();
-    let mut columns = LinkedList::from([
-        header
-    ]);
 
-    for (idx, (id, VulnerabilityScore {
-        sum, network, files, remote, information, permissions
-    })) in score.scores.iter().enumerate() {
-        let column = [
+
+    let mut values = LinkedList::new();
+    for (idx, (id, score)) in score.scores.iter().enumerate() {
+        values.push_back([
             format!("{}", idx),
             format!("{}", id),
-            format!("{:.2}", sum),
-            format!("{:.2}", network),
-            format!("{:.2}", files),
-            format!("{:.2}", remote),
-            format!("{:.2}", information),
-            format!("{:.2}", permissions),
-        ];
-        for (i, v) in column.iter().enumerate() {
-            lengths[i] = v.len().max(lengths[i]);
-        }
-        columns.push_back(column);
+            format!("{:.4}", score.sum),
+            format!("{:.4}", score.network),
+            format!("{:.4}", score.files),
+            format!("{:.4}", score.remote),
+            format!("{:.4}", score.information),
+            format!("{:.4}", score.permissions),
+        ]);
     }
 
-    if score.scores.is_empty() {
-        println!("No vulnerabilities found (0.0/5.0)");
-        return Ok(score);
-    }
-
-    if let Some(out) = out {
-        use std::io::Write;
-        let mut writer = BufWriter::new(out);
-        write!(writer, "id,sum,network,files,remote,information,permissions").unwrap();
-        for (id, VulnerabilityScore {
-            sum, network, files, remote, information, permissions
-        }) in &score.scores {
-            write!(writer, "\n{},{:.2},{:.2},{:.2},{:.2},{:.2},{:.2}",
-                   id, sum, network, files, remote, information, permissions).unwrap();
-        }
-    } else {
-        print!("┌");
-        for (i, len) in lengths.iter().enumerate() {
-            if i > 0 {
-                print!("┬");
-            }
-            print!("{:─<1$}", "─", len + 2);
-        }
-        println!("┐");
-
-        for (i, column) in columns.iter().enumerate() {
-            if i > 0 {
-                print!("├");
-                for (i, len) in lengths.iter().enumerate() {
-                    if i > 0 {
-                        print!("┼");
-                    }
-                    print!("{:─<1$}", "─", len + 2);
-                }
-                println!("┤");
-            }
-
-            print!("│");
-            for (i, row) in column.iter().enumerate() {
-                if i > 0 {
-                    print!("│");
-                }
-                print!(" {:<1$}", row, lengths[i] + 1);
-            }
-            println!("│");
-        }
-        print!("└");
-        for (i, len) in lengths.iter().enumerate() {
-            if i > 0 {
-                print!("┴");
-            }
-            print!("{:─<1$}", "─", len + 2);
-        }
-        println!("┘");
-        println!();
-    }
+    write_table(&mut stdout(), header, values)
+        .map_err(Error::Io)?;
 
     Ok(score)
 }

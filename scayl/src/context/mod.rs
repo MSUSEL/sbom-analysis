@@ -2,6 +2,7 @@
 
 use std::collections::BTreeMap;
 use std::ops::{Add, AddAssign, Mul};
+use chrono::{DateTime, Utc};
 
 
 use crate::cvss::v3_1::*;
@@ -186,7 +187,7 @@ impl DeploymentContext {
     }
 }
 
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct VulnerabilityScore {
     pub sum: f32,
     pub network: f32,
@@ -196,8 +197,27 @@ pub struct VulnerabilityScore {
     pub permissions: f32,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ScaylInfo {
+    version: String,
+    generated_at: DateTime<Utc>,
+}
+
+impl ScaylInfo {
+    pub fn current() -> Self {
+        Self {
+            version: env!("CARGO_PKG_VERSION").to_string(),
+            generated_at: Utc::now(),
+        }
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct DeploymentScore {
+    pub context: DeploymentContext,
+    pub image: String,
+    pub scayl: ScaylInfo,
+    pub cumulative: VulnerabilityScore,
     pub scores: BTreeMap<VulnId, VulnerabilityScore>,
 }
 
@@ -217,6 +237,14 @@ impl Add<VulnerabilityScore> for VulnerabilityScore {
     type Output = VulnerabilityScore;
 
     fn add(self, rhs: VulnerabilityScore) -> Self::Output {
+        self + &rhs
+    }
+}
+
+impl<'a> Add<&'a VulnerabilityScore> for VulnerabilityScore {
+    type Output = VulnerabilityScore;
+
+    fn add(self, rhs: &'a VulnerabilityScore) -> Self::Output {
         VulnerabilityScore {
             sum: self.sum + rhs.sum,
             network: self.network + rhs.network,
@@ -230,6 +258,12 @@ impl Add<VulnerabilityScore> for VulnerabilityScore {
 
 impl AddAssign<VulnerabilityScore> for VulnerabilityScore {
     fn add_assign(&mut self, rhs: VulnerabilityScore) {
+        AddAssign::add_assign(self, &rhs)
+    }
+}
+
+impl<'a> AddAssign<&'a VulnerabilityScore> for VulnerabilityScore {
+    fn add_assign(&mut self, rhs: &'a VulnerabilityScore) {
         self.sum += rhs.sum;
         self.network += rhs.network;
         self.files += rhs.files;

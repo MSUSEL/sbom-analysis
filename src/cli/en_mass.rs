@@ -9,7 +9,7 @@ use std::time::SystemTime;
 
 use futures::lock::Mutex;
 
-use scayl::{DeploymentContext, Grype, read_file, RecurseDir, Trivy, VulnerabilityFormat, VulnerabilityScore, VulnFilter, VulnFormat};
+use scayl::{DeploymentContext, Grype, read_json, RecurseDir, Trivy, VulnerabilityFormat, VulnerabilityScore, VulnFilter, VulnFormat};
 
 pub async fn en_mass<P, CP>(path: P, context: CP)
     where P: AsRef<Path>,
@@ -20,7 +20,7 @@ pub async fn en_mass<P, CP>(path: P, context: CP)
     );
 
     // TODO: Throw an actual error if the context file doesn't exist.
-    let context: DeploymentContext = read_file(context.as_ref()).unwrap();
+    let context: DeploymentContext = read_json(context.as_ref()).unwrap();
 
     let num_threads = num_cpus::get().min(files.len());
     let files = Arc::new(Mutex::new(files));
@@ -44,7 +44,7 @@ pub async fn en_mass<P, CP>(path: P, context: CP)
                             let mut lock = stdout().lock();
                             writeln!(lock, "Reading file: {}", begin).unwrap();
                         });
-                        let grype: Grype = read_file(&path)
+                        let grype: Grype = read_json(&path)
                             .expect(format!("Failed to read file: {}", path.display()).as_str());
                         tokio::spawn(async move {
                             let mut lock = stdout().lock();
@@ -57,7 +57,7 @@ pub async fn en_mass<P, CP>(path: P, context: CP)
                             let mut lock = stdout().lock();
                             writeln!(lock, "Reading file: {}", begin).unwrap();
                         });
-                        let trivy: Trivy = read_file(&path)
+                        let trivy: Trivy = read_json(&path)
                             .expect(format!("Failed to read file: {}", path.display()).as_str());
                         tokio::spawn(async move {
                             let mut lock = stdout().lock();

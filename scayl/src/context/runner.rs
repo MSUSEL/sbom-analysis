@@ -12,7 +12,7 @@ use crate::format::syft::Syft;
 use crate::format::trivy::Trivy;
 use crate::format::VulnId;
 use crate::v3_1::BaseMetric;
-use crate::VulnerabilityFormat;
+use crate::{ScaylInfo, VulnerabilityFormat, VulnerabilityScore};
 
 pub struct ContextRunner<'a> {
     #[cfg(feature = "grype")]
@@ -125,7 +125,13 @@ impl<'a> ContextRunner<'a> {
             let score = context.score_v3(&v);
             (k, score)
         }).collect::<BTreeMap<_, _>>();
+
         Ok(DeploymentScore {
+            context: context.clone(),
+            scayl: ScaylInfo::current(),
+            image: "TODO".to_string(),
+            cumulative: scores.iter()
+                .fold(VulnerabilityScore::default(), |acc, (_, v)| acc + v),
             scores,
         })
     }
