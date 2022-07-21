@@ -12,7 +12,7 @@ use plotters::style::full_palette::{GREY_800, LIGHTBLUE};
 use plotters::style::text_anchor::{HPos, Pos, VPos};
 use plotters::style::{RGBColor, TextStyle};
 
-use scayl_lib::DeploymentScore;
+use scayl::DeploymentScore;
 
 fn vertices(radius: f64, n: usize) -> Vec<(f64, f64)> {
     (0..n)

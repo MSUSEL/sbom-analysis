@@ -17,7 +17,7 @@ pub trait FromVector {
     ///
     /// # Example
     /// ```
-    /// use scayl_lib::{FromVector, v3_1};
+    /// use scayl::{FromVector, v3_1};
     ///
     /// let metric = v3_1::BaseMetric
     ///                    ::from_vector_string("CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H");
@@ -28,7 +28,7 @@ pub trait FromVector {
     ///
     /// # Example
     /// ```
-    ///  use scayl_lib::{FromVector, v3_1};
+    ///  use scayl::{FromVector, v3_1};
     ///
     ///  let metric = v3_1::BaseMetric {
     ///      attack_vector: v3_1::AttackVector::Network,
@@ -52,7 +52,7 @@ pub trait FromVector {
 ///
 /// # Examples
 /// ```
-/// use scayl_lib::cvss_component;
+/// use scayl::cvss_component;
 ///
 /// cvss_component!(AttackVector {
 ///     Network => N,

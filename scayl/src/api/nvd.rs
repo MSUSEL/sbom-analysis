@@ -10,7 +10,7 @@ use reqwest::header::{HeaderMap, HeaderValue};
 /// # Example
 /// ```
 /// // CVE-2022-1234
-/// use scayl_lib::api::nvd::CveId;
+/// use scayl::api::nvd::CveId;
 /// let id = CveId {
 ///   year: 2020,
 ///   id: 1234,
