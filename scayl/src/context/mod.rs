@@ -1,3 +1,6 @@
+//! Context for the deployment of a piece of software
+//! This describes
+
 #![allow(unused)]
 
 use std::collections::BTreeMap;
@@ -8,7 +11,7 @@ use chrono::{DateTime, Utc};
 use crate::cvss::v3_1::*;
 use crate::format::VulnId;
 
-#[cfg(any(feature = "grype", feature = "syft", feature = "trivy"))]
+#[cfg(any(feature = "grype", feature = "syft", feature = "trivy", feature="cyclonedx"))]
 mod runner;
 mod vuln;
 

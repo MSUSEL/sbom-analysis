@@ -1,3 +1,10 @@
+//! Various SBOM & Vulnerability formats
+//! the grype feature enables the Grype format
+//! the syft feature enables the SYFT format
+//! the cyclonedx feature enables the CycloneDX format
+//! the sarif feature enables the SARIF format
+//! the trivy feature enables the Trivy format
+
 #![allow(dead_code)]
 
 use std::collections::BTreeMap;
