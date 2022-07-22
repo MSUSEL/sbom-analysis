@@ -9,7 +9,7 @@ use std::sync::Arc;
 
 use futures::lock::Mutex;
 
-use scayl::{context, ContextRunner, Grype, Syft, Trivy, write_json, write_table};
+use scayl::{context, ContextRunner, CycloneDx, Grype, Syft, Trivy, write_json, write_table};
 use scayl::context::{DeploymentContext, DeploymentScore, VulnerabilityScore};
 use scayl::format;
 
@@ -17,6 +17,7 @@ enum Fmt {
     Grype,
     Trivy,
     Syft,
+    CycloneDx,
 }
 
 struct InFile {
@@ -27,6 +28,7 @@ struct InFile {
 enum OutFile {
     Grype(Grype),
     Syft(Syft),
+    CycloneDx(CycloneDx),
     Trivy(Trivy),
 }
 
@@ -61,6 +63,7 @@ pub async fn analyze(
     grype: &Vec<String>,
     syft: &Vec<String>,
     trivy: &Vec<String>,
+    cyclone_dx: &Vec<String>,
     context: &String,
     out: &Option<String>,
 ) -> Result<DeploymentScore, Error> {
@@ -71,6 +74,7 @@ pub async fn analyze(
     files.extend(grype.iter().map(|v| InFile { uri: v.clone(), format: Fmt::Grype }));
     files.extend(syft.iter().map(|v| InFile { uri: v.clone(), format: Fmt::Syft }));
     files.extend(trivy.iter().map(|v| InFile { uri: v.clone(), format: Fmt::Trivy }));
+    files.extend(cyclone_dx.iter().map(|v| InFile { uri: v.clone(), format: Fmt::CycloneDx }));
 
     let num_cpus = (2 * num_cpus::get()).min(files.len());
     let files = Arc::new(Mutex::new(files));
@@ -99,11 +103,11 @@ pub async fn analyze(
             OutFile::Grype(v) => runner.grype(v),
             OutFile::Syft(v) => runner.syft(v),
             OutFile::Trivy(v) => runner.trivy(v),
+            OutFile::CycloneDx(v) => runner.cyclone_dx(v),
         };
     }
 
     let res = runner.calculate(&context);
-
     let score = res.map_err(Error::Context)?;
 
     let mut scores = score.scores.values().map(|v| {
@@ -113,9 +117,9 @@ pub async fn analyze(
     let mut iter = scores.iter();
     let lower = iter.position(|v| *v > 5.0 * 0.33).unwrap_or(scores.len());
     let upper = iter.position(|v| *v > 5.0 * 0.66).unwrap_or(scores.len());
+
     println!("{:.2}% of scores are below a 1.65 (5 / 3)", lower as f64 / scores.len() as f64 * 100.0);
     println!("{:.2}% of scores are below a 3.3 (5 * 2 / 3)", upper as f64 / scores.len() as f64 * 100.0);
-
 
     if score.scores.is_empty() {
         println!("No vulnerabilities found (0.0/5.0)");
@@ -203,6 +207,11 @@ fn read_file(InFile { uri, format }: InFile) -> Result<OutFile, format::Error> {
             let res: Syft = serde_json::from_reader(reader)
                 .map_err(format::Error::Serde)?;
             OutFile::Syft(res)
+        }
+        Fmt::CycloneDx => {
+            let res: CycloneDx = serde_json::from_reader(reader)
+                .map_err(format::Error::Serde)?;
+            OutFile::CycloneDx(res)
         }
     };
 

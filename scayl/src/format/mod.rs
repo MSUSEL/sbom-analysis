@@ -17,6 +17,8 @@ pub use sarif::*;
 pub use syft::*;
 #[cfg(feature = "trivy")]
 pub use trivy::*;
+#[cfg(feature = "cyclonedx")]
+pub use cyclonedx::*;
 
 use crate::v3_1::BaseMetric;
 
@@ -30,6 +32,8 @@ pub mod nvd;
 pub mod trivy;
 #[cfg(feature = "grype")]
 pub mod grype;
+#[cfg(feature = "cyclonedx")]
+pub mod cyclonedx;
 
 #[derive(Debug, Clone)]
 pub enum VulnFormat {

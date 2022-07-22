@@ -2,8 +2,11 @@ use std::collections::{BTreeMap, LinkedList};
 use std::collections::btree_map::Entry;
 use std::fmt::{Display, Formatter};
 
+use crate::{ScaylInfo, VulnerabilityFormat, VulnerabilityScore};
 use crate::context::{DeploymentContext, DeploymentScore};
 use crate::cvss::{FromVector, v3_1};
+#[cfg(feature = "cyclonedx")]
+use crate::format::cyclonedx::CycloneDx;
 #[cfg(feature = "grype")]
 use crate::format::grype::Grype;
 #[cfg(feature = "syft")]
@@ -12,7 +15,6 @@ use crate::format::syft::Syft;
 use crate::format::trivy::Trivy;
 use crate::format::VulnId;
 use crate::v3_1::BaseMetric;
-use crate::{ScaylInfo, VulnerabilityFormat, VulnerabilityScore};
 
 pub struct ContextRunner<'a> {
     #[cfg(feature = "grype")]
@@ -21,6 +23,8 @@ pub struct ContextRunner<'a> {
     syft: Vec<&'a Syft>,
     #[cfg(feature = "trivy")]
     trivy: Vec<&'a Trivy>,
+    #[cfg(feature = "cyclonedx")]
+    cyclone_dx: Vec<&'a CycloneDx>,
 }
 
 #[derive(Debug)]
@@ -49,6 +53,8 @@ impl<'a> ContextRunner<'a> {
             trivy: Default::default(),
             #[cfg(feature = "syft")]
             syft: Default::default(),
+            #[cfg(feature = "cyclonedx")]
+            cyclone_dx: Default::default(),
         }
     }
 
@@ -67,6 +73,12 @@ impl<'a> ContextRunner<'a> {
     #[cfg(feature = "syft")]
     pub fn syft(&mut self, syft: &'a Syft) -> &mut Self {
         self.syft.push(syft);
+        self
+    }
+
+    #[cfg(feature = "cyclonedx")]
+    pub fn cyclone_dx(&mut self, cyclonedx: &'a CycloneDx) -> &mut Self {
+        self.cyclone_dx.push(cyclonedx);
         self
     }
 
@@ -106,13 +118,28 @@ impl<'a> ContextRunner<'a> {
             }
         }
 
-        let mut name = "Unknown".to_string();
+
+        fn merge_name(name: &mut Option<String>, val: String) -> Option<()> {
+            if let Some(n) = name {
+                if *n != val {
+                    None
+                } else {
+                    Some(())
+                }
+            } else {
+                *name = Some(val);
+                Some(())
+            }
+        }
+
+        let mut name = None;
         let mut cvss_scores = BTreeMap::new();
         #[cfg(feature = "trivy")] {
             let trivy = self.trivy
                 .iter()
                 .map(|v| {
-                    name = v.artifact_name.clone();
+                    merge_name(&mut name, v.artifact_name.clone())
+                        .expect("Component name should be the same for all artifacts");
                     v.cvss_v3_1_scores()
                 });
 
@@ -122,10 +149,21 @@ impl<'a> ContextRunner<'a> {
             let grype = self.grype
                 .iter()
                 .map(|v| {
-                    name = v.source.target.user_input.clone();
+                    merge_name(&mut name, v.source.target.user_input.clone())
+                        .expect("Component name should be the same for all artifacts");
                     v.cvss_v3_1_scores()
                 });
             group(grype, &mut cvss_scores)?;
+        }
+        #[cfg(feature = "cyclonedx")] {
+            let cyclonedx = self.cyclone_dx
+                .iter()
+                .map(|v| {
+                    merge_name(&mut name, v.metadata.component.name.clone())
+                        .expect("Component name should be the same for all artifacts");
+                    v.cvss_v3_1_scores()
+                });
+            group(cyclonedx, &mut cvss_scores)?;
         }
 
         let scores = cvss_scores.into_iter().map(|(k, v)| {
@@ -136,7 +174,7 @@ impl<'a> ContextRunner<'a> {
         Ok(DeploymentScore {
             context: context.clone(),
             scayl: ScaylInfo::current(),
-            source: name,
+            source: name.unwrap_or(String::from("Unknown")),
             cumulative: scores.iter()
                 .fold(VulnerabilityScore::default(), |acc, (_, v)| acc + v),
             scores,

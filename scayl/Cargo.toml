@@ -20,9 +20,10 @@ num_cpus = "1.13.1"
 
 [features]
 default=["full"]
-full = ["grype", "syft", "trivy", "sarif", "nvd"]
+full = ["grype", "syft", "trivy", "sarif", "nvd", "cyclonedx"]
 grype = []
 syft = []
 trivy = []
 sarif = []
 nvd = []
+cyclonedx = []

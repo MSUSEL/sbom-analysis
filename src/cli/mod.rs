@@ -27,6 +27,8 @@ pub enum Commands {
         #[clap(long)]
         trivy: Vec<String>,
         #[clap(long)]
+        cyclone: Vec<String>,
+        #[clap(long)]
         context: String,
         #[clap(long)]
         file: Option<String>,
