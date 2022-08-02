@@ -11,11 +11,11 @@ not possible during the ten weeks in which this version of the tool was develope
 </div>
 
 ### Overview
-#### [CLI](#cli)
-#### [Building](#building)
-#### [Usage](#usage)
-#### [Context](#context)
-#### [Results](#results)
+ - [CLI](#cli)  
+ - [Building](#building)  
+ - [Usage](#usage)  
+ - [Context](#context)  
+ - [Results](#results)  
 
 **Documentation for the scayl library can be found [here](https://msusel.github.io/sbom-analysis/scayl/index.html)**
 
