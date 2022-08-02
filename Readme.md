@@ -73,22 +73,20 @@ Analyzing multiple reports at once
 
 ## Context
 
-This project utilizes deployment context, the context where the analyzed software is intended to be deployed.<br>
+This project utilizes deployment context, the environment where the analyzed software is intended to be deployed.<br>
 For more detail on the context model, see [Context.md](Context.md).<br>
 The current context model consists of five elements:
 
 * #### Network Configuration
-  How the software is deployed on a network.
+  How much access the public internet has to the software.
 * #### Remote Access
-  How accessible controls of the software are to remote users like admins.
+  How much access do privileged users have to the software.
 * #### Information Sensitivity
-  How sensitive the information utilized by a piece of software is.
+  How sensitive the information the software deals with is.
 * #### Command Line Permissions
-  How the software is able to execute commands on the command line.
+  How much access the software has to the command-line.
 * #### File Permissions
-  How the software is able to access the file system.
-
-For more detail on the context model, see [Context.md](Context.md).
+  How much access the software has to the file-system.
 
 ## Results
 
