@@ -1,11 +1,21 @@
+//! The CVSS v3.1 scoring specification
+//!
+//! <https://www.first.org/cvss/v3.1/specification-document>
+
 pub use base::*;
 pub use environmental::*;
 pub use temporal::*;
 
+/// The base component of the CVSS v3.1 scoring specification.
 mod base;
+
+/// The temporal component of the CVSS v3.1 scoring specification.
 mod temporal;
+
+/// The environmental component of the CVSS v3.1 scoring specification.
 mod environmental;
 
+/// The roundup function specified in the CVSS v3.1 specification.
 pub fn roundup(v: f32) -> f32 {
     let int_input = (v * 1e5).round();
     if int_input % 1e4 == 0.0 {
@@ -16,6 +26,7 @@ pub fn roundup(v: f32) -> f32 {
 }
 
 impl BaseMetric {
+    /// Calculates the CVSS v3.1 Base Metric Score.
     pub fn base_score(&self) -> f32 {
         let impact = self.impact();
         if impact <= 0.0 {
@@ -29,6 +40,7 @@ impl BaseMetric {
         }
     }
 
+    /// Calculates the CVSS v3.1 impact score.
     fn impact(&self) -> f32 {
         let iss = self.impact_sub_score();
         match self.scope {
@@ -37,6 +49,7 @@ impl BaseMetric {
         }
     }
 
+    /// Calculates the CVSS v3.1 impact sub-score.
     fn impact_sub_score(&self) -> f32 {
         let a = 1.0 - Self::impact_value(&self.confidentiality_impact);
         let b = 1.0 - Self::impact_value(&self.integrity_impact);
@@ -44,6 +57,7 @@ impl BaseMetric {
         1.0 - a * b * c
     }
 
+    /// Calculates the CVSS v3.1 exploitability score.
     fn exploitability(&self) -> f32 {
         8.22
             * self.attack_vector()
@@ -52,6 +66,7 @@ impl BaseMetric {
             * self.user_interaction()
     }
 
+    /// Calculates the CVSS v3.1 attack vector score.
     fn attack_vector(&self) -> f32 {
         match self.attack_vector {
             AttackVector::Network => 0.85,
@@ -61,6 +76,7 @@ impl BaseMetric {
         }
     }
 
+    /// Calculates the CVSS v3.1 attack complexity score.
     fn attack_complexity(&self) -> f32 {
         match self.attack_complexity {
             AttackComplexity::Low => 0.77,
@@ -68,6 +84,7 @@ impl BaseMetric {
         }
     }
 
+    /// Calculates the CVSS v3.1 privileges required score.
     fn privileges_required(&self) -> f32 {
         match self.privileges_required {
             PrivilegesRequired::None => 0.85,
@@ -82,6 +99,7 @@ impl BaseMetric {
         }
     }
 
+    /// Calculates the CVSS v3.1 user interaction score.
     fn user_interaction(&self) -> f32 {
         match self.user_interaction {
             UserInteraction::None => 0.85,
@@ -89,6 +107,7 @@ impl BaseMetric {
         }
     }
 
+    /// Calculates the CVSS v3.1 impact value.
     fn impact_value(value: &ImpactMetric) -> f32 {
         match value {
             ImpactMetric::None => 0.0,

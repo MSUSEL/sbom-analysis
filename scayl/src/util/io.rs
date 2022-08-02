@@ -82,9 +82,12 @@ pub fn write_table<O, Header, Rows, RowItem>(out: &mut O, header: Header, rows: 
     }
 }
 
+/// An abstraction for recursing through a directory
 pub trait RecurseDir<T> {
+    /// Check if the current path is a match
     fn matches(&self, path: &PathBuf) -> Option<T>;
 
+    /// Recurse through a directory and return a list of files
     fn recurse_dir<O, I: FromIterator<O>, F: Fn(PathBuf, T) -> O>(&self, path: PathBuf, visitor: F) -> I {
         let mut queue = LinkedList::new();
         queue.push_back(path);

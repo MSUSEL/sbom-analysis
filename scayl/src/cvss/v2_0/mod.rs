@@ -1,3 +1,7 @@
+//! The CVSS v2.0 specification.
+//!
+//! <https://www.first.org/cvss/v2.0/specification-document>
+
 pub use base::*;
 pub use environmental::*;
 pub use temporal::*;
@@ -144,6 +148,7 @@ impl EnvironmentMetric {
         round1(val * self.target_distribution())
     }
 
+    // TODO: Could not figure this out
     pub fn adjusted_temporal(&self, _metric: &BaseMetric) -> f32 {
         // TemporalScore recomputed with the BaseScore's Impact sub-
         //   equation replaced with the AdjustedImpact equation

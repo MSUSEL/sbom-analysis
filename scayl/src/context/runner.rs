@@ -16,19 +16,26 @@ use crate::format::trivy::Trivy;
 use crate::format::VulnId;
 use crate::v3_1::BaseMetric;
 
+/// The staging area for analyzing a piece of software
 pub struct ContextRunner<'a> {
     #[cfg(feature = "grype")]
+    /// A collection of grype files related to the software
     grype: Vec<&'a Grype>,
     #[cfg(feature = "syft")]
+    /// A collection of syft files related to th software
     syft: Vec<&'a Syft>,
     #[cfg(feature = "trivy")]
+    /// A collection of trivy files related to the software
     trivy: Vec<&'a Trivy>,
     #[cfg(feature = "cyclonedx")]
+    /// A collection of cyclonedx files related to the software
     cyclone_dx: Vec<&'a CycloneDx>,
 }
 
 #[derive(Debug)]
+/// An error that occurred while analyzing a piece of software
 pub enum Error {
+    /// Two different cvss metrics were found for the same vulnerability
     DifferingCvssScore { id: VulnId, existing: v3_1::BaseMetric, new: v3_1::BaseMetric },
 }
 
@@ -45,6 +52,7 @@ impl Display for Error {
 }
 
 impl<'a> ContextRunner<'a> {
+    /// Creates an empty context runner
     pub fn new() -> Self {
         ContextRunner {
             #[cfg(feature = "grype")]
@@ -59,29 +67,43 @@ impl<'a> ContextRunner<'a> {
     }
 
     #[cfg(feature = "grype")]
+    /// Appends a grype file to the context runner
     pub fn grype(&mut self, grype: &'a Grype) -> &mut Self {
         self.grype.push(grype);
         self
     }
 
     #[cfg(feature = "trivy")]
+    /// Appends a trivy file to the context runner
     pub fn trivy(&mut self, trivy: &'a Trivy) -> &mut Self {
         self.trivy.push(trivy);
         self
     }
 
     #[cfg(feature = "syft")]
+    /// Appends a syft file to the context runner
     pub fn syft(&mut self, syft: &'a Syft) -> &mut Self {
         self.syft.push(syft);
         self
     }
 
     #[cfg(feature = "cyclonedx")]
+    /// Appends a cyclonedx file to the context runner
     pub fn cyclone_dx(&mut self, cyclonedx: &'a CycloneDx) -> &mut Self {
         self.cyclone_dx.push(cyclonedx);
         self
     }
 
+    /// Runs the context runner on the given software
+    ///
+    /// # Arguments
+    /// * `context` - The context to run the context runner on
+    ///
+    /// # Returns
+    /// A collection of vulnerabilities found in the software
+    ///
+    /// # Errors
+    /// An error if the context runner failed to run
     pub fn calculate(&self,
                      context: &DeploymentContext,
     ) -> Result<DeploymentScore, LinkedList<Error>> {
@@ -117,7 +139,6 @@ impl<'a> ContextRunner<'a> {
                 Ok(())
             }
         }
-
 
         fn merge_name(name: &mut Option<String>, val: String) -> Option<()> {
             if let Some(n) = name {

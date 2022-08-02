@@ -63,12 +63,13 @@ pub trait FromVector {
 /// ```
 #[macro_export]
 macro_rules! cvss_component {
-    ($name:ident {
-        $($variant:ident => $value:ident),*$(,)?
+    ($(#[$m:meta])* $name:ident {
+        $($(#[$meta:meta])* $variant:ident => $value:ident),*$(,)?
     }) => {
         #[derive(Debug, Clone, PartialEq, PartialOrd, Ord, Eq, Hash)]
+        $(#[$m])*
         pub enum $name {
-            $($variant),*
+            $($(#[$meta])* $variant),*
         }
 
         impl $crate::cvss::ComponentFromVector for $name {
@@ -94,6 +95,7 @@ macro_rules! cvss_component {
     }
 }
 
+/// A single CVSS metric
 #[macro_export]
 macro_rules! cvss_score {
     ($name:ident $(=> $prefix:literal)? {
