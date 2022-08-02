@@ -34,7 +34,7 @@ jobs:
       - name: Document code
         run: cargo doc
       - name: Move documentation to the output directory
-        run: echo "<meta http-equiv=refresh content=0;url=empty/index.html>" > target/doc/index.html
+        run: echo "<meta http-equiv=refresh content=0;url=scayl/index.html>" > target/doc/index.html
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
