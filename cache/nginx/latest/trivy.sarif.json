@@ -145,6 +145,33 @@
               }
             },
             {
+              "id": "CVE-2022-32207",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-32207"
+              },
+              "fullDescription": {
+                "text": "When curl \u0026lt; 7.84.0 saves cookies, alt-svc and hsts data to local files, it makes the operation atomic by finalizing the operation with a rename from a temporary name to the final target file name.In that rename operation, it might accidentally *widen* the permissions for the target file, leaving the updated file accessible to more users than intended."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-32207",
+              "help": {
+                "text": "Vulnerability CVE-2022-32207\nSeverity: CRITICAL\nPackage: libcurl4\nFixed Version: \nLink: [CVE-2022-32207](https://avd.aquasec.com/nvd/cve-2022-32207)\nWhen curl \u003c 7.84.0 saves cookies, alt-svc and hsts data to local files, it makes the operation atomic by finalizing the operation with a rename from a temporary name to the final target file name.In that rename operation, it might accidentally *widen* the permissions for the target file, leaving the updated file accessible to more users than intended.",
+                "markdown": "**Vulnerability CVE-2022-32207**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|libcurl4||[CVE-2022-32207](https://avd.aquasec.com/nvd/cve-2022-32207)|\n\nWhen curl \u003c 7.84.0 saves cookies, alt-svc and hsts data to local files, it makes the operation atomic by finalizing the operation with a rename from a temporary name to the final target file name.In that rename operation, it might accidentally *widen* the permissions for the target file, leaving the updated file accessible to more users than intended."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
               "id": "CVE-2021-22946",
               "name": "OsPackageVulnerability",
               "shortDescription": {
@@ -367,19 +394,19 @@
                 "text": "CVE-2022-32205"
               },
               "fullDescription": {
-                "text": "A vulnerability was found in curl. This issue occurs because a malicious server can serve excessive amounts of `Set-Cookie:` headers in an HTTP response to curl, which stores all of them. This flaw leads to a denial of service, either by mistake or by a malicious actor."
+                "text": "A malicious server can serve excessive amounts of `Set-Cookie:` headers in a HTTP response to curl and curl \u0026lt; 7.84.0 stores all of them. A sufficiently large amount of (big) cookies make subsequent HTTP requests to this, or other servers to which the cookies match, create requests that become larger than the threshold that curl uses internally to avoid sending crazy large requests (1048576 bytes) and instead returns an error.This denial state might remain for as long as the same cookies are kept, match and haven\u0026#39;t expired. Due to cookie matching rules, a server on `foo.example.com` can set cookies that also would match for `bar.example.com`, making it it possible for a \u0026#34;sister server\u0026#34; to effectively cause a denial of service for a sibling site on the same second level domain using this method."
               },
               "defaultConfiguration": {
                 "level": "warning"
               },
               "helpUri": "https://avd.aquasec.com/nvd/cve-2022-32205",
               "help": {
-                "text": "Vulnerability CVE-2022-32205\nSeverity: MEDIUM\nPackage: libcurl4\nFixed Version: \nLink: [CVE-2022-32205](https://avd.aquasec.com/nvd/cve-2022-32205)\nA vulnerability was found in curl. This issue occurs because a malicious server can serve excessive amounts of `Set-Cookie:` headers in an HTTP response to curl, which stores all of them. This flaw leads to a denial of service, either by mistake or by a malicious actor.",
-                "markdown": "**Vulnerability CVE-2022-32205**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libcurl4||[CVE-2022-32205](https://avd.aquasec.com/nvd/cve-2022-32205)|\n\nA vulnerability was found in curl. This issue occurs because a malicious server can serve excessive amounts of `Set-Cookie:` headers in an HTTP response to curl, which stores all of them. This flaw leads to a denial of service, either by mistake or by a malicious actor."
+                "text": "Vulnerability CVE-2022-32205\nSeverity: MEDIUM\nPackage: libcurl4\nFixed Version: \nLink: [CVE-2022-32205](https://avd.aquasec.com/nvd/cve-2022-32205)\nA malicious server can serve excessive amounts of `Set-Cookie:` headers in a HTTP response to curl and curl \u003c 7.84.0 stores all of them. A sufficiently large amount of (big) cookies make subsequent HTTP requests to this, or other servers to which the cookies match, create requests that become larger than the threshold that curl uses internally to avoid sending crazy large requests (1048576 bytes) and instead returns an error.This denial state might remain for as long as the same cookies are kept, match and haven't expired. Due to cookie matching rules, a server on `foo.example.com` can set cookies that also would match for `bar.example.com`, making it it possible for a \"sister server\" to effectively cause a denial of service for a sibling site on the same second level domain using this method.",
+                "markdown": "**Vulnerability CVE-2022-32205**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libcurl4||[CVE-2022-32205](https://avd.aquasec.com/nvd/cve-2022-32205)|\n\nA malicious server can serve excessive amounts of `Set-Cookie:` headers in a HTTP response to curl and curl \u003c 7.84.0 stores all of them. A sufficiently large amount of (big) cookies make subsequent HTTP requests to this, or other servers to which the cookies match, create requests that become larger than the threshold that curl uses internally to avoid sending crazy large requests (1048576 bytes) and instead returns an error.This denial state might remain for as long as the same cookies are kept, match and haven't expired. Due to cookie matching rules, a server on `foo.example.com` can set cookies that also would match for `bar.example.com`, making it it possible for a \"sister server\" to effectively cause a denial of service for a sibling site on the same second level domain using this method."
               },
               "properties": {
                 "precision": "very-high",
-                "security-severity": "5.5",
+                "security-severity": "4.3",
                 "tags": [
                   "vulnerability",
                   "security",
@@ -394,46 +421,19 @@
                 "text": "CVE-2022-32206"
               },
               "fullDescription": {
-                "text": "A vulnerability was found in curl. This issue occurs because the number of acceptable \u0026#34;links\u0026#34; in the \u0026#34;decompression chain\u0026#34; was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps. This flaw leads to a denial of service, either by mistake or by a malicious actor."
+                "text": "curl \u0026lt; 7.84.0 supports \u0026#34;chained\u0026#34; HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \u0026#34;links\u0026#34; in this \u0026#34;decompression chain\u0026#34; was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \u0026#34;malloc bomb\u0026#34;, makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors."
               },
               "defaultConfiguration": {
                 "level": "warning"
               },
               "helpUri": "https://avd.aquasec.com/nvd/cve-2022-32206",
               "help": {
-                "text": "Vulnerability CVE-2022-32206\nSeverity: MEDIUM\nPackage: libcurl4\nFixed Version: \nLink: [CVE-2022-32206](https://avd.aquasec.com/nvd/cve-2022-32206)\nA vulnerability was found in curl. This issue occurs because the number of acceptable \"links\" in the \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps. This flaw leads to a denial of service, either by mistake or by a malicious actor.",
-                "markdown": "**Vulnerability CVE-2022-32206**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libcurl4||[CVE-2022-32206](https://avd.aquasec.com/nvd/cve-2022-32206)|\n\nA vulnerability was found in curl. This issue occurs because the number of acceptable \"links\" in the \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps. This flaw leads to a denial of service, either by mistake or by a malicious actor."
+                "text": "Vulnerability CVE-2022-32206\nSeverity: MEDIUM\nPackage: libcurl4\nFixed Version: \nLink: [CVE-2022-32206](https://avd.aquasec.com/nvd/cve-2022-32206)\ncurl \u003c 7.84.0 supports \"chained\" HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \"links\" in this \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \"malloc bomb\", makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors.",
+                "markdown": "**Vulnerability CVE-2022-32206**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libcurl4||[CVE-2022-32206](https://avd.aquasec.com/nvd/cve-2022-32206)|\n\ncurl \u003c 7.84.0 supports \"chained\" HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \"links\" in this \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \"malloc bomb\", makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors."
               },
               "properties": {
                 "precision": "very-high",
-                "security-severity": "5.5",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "MEDIUM"
-                ]
-              }
-            },
-            {
-              "id": "CVE-2022-32207",
-              "name": "OsPackageVulnerability",
-              "shortDescription": {
-                "text": "CVE-2022-32207"
-              },
-              "fullDescription": {
-                "text": "A vulnerability was found in curl. This issue occurs because when curl saves cookies, alt-svc, and HSTS data to local files, it makes the operation atomic by finalizing the process with a rename from a temporary name to the final target file name. This flaw leads to unpreserved file permissions, either by mistake or by a malicious actor."
-              },
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-32207",
-              "help": {
-                "text": "Vulnerability CVE-2022-32207\nSeverity: MEDIUM\nPackage: libcurl4\nFixed Version: \nLink: [CVE-2022-32207](https://avd.aquasec.com/nvd/cve-2022-32207)\nA vulnerability was found in curl. This issue occurs because when curl saves cookies, alt-svc, and HSTS data to local files, it makes the operation atomic by finalizing the process with a rename from a temporary name to the final target file name. This flaw leads to unpreserved file permissions, either by mistake or by a malicious actor.",
-                "markdown": "**Vulnerability CVE-2022-32207**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libcurl4||[CVE-2022-32207](https://avd.aquasec.com/nvd/cve-2022-32207)|\n\nA vulnerability was found in curl. This issue occurs because when curl saves cookies, alt-svc, and HSTS data to local files, it makes the operation atomic by finalizing the process with a rename from a temporary name to the final target file name. This flaw leads to unpreserved file permissions, either by mistake or by a malicious actor."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "5.5",
+                "security-severity": "6.5",
                 "tags": [
                   "vulnerability",
                   "security",
@@ -448,19 +448,19 @@
                 "text": "CVE-2022-32208"
               },
               "fullDescription": {
-                "text": "A vulnerability was found in curl. This issue occurs because it mishandles message verification failures when curl does FTP transfers secured by krb5. This flaw makes it possible for a Man-in-the-middle attack to go unnoticed and allows data injection into the client."
+                "text": "When curl \u0026lt; 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client."
               },
               "defaultConfiguration": {
                 "level": "warning"
               },
               "helpUri": "https://avd.aquasec.com/nvd/cve-2022-32208",
               "help": {
-                "text": "Vulnerability CVE-2022-32208\nSeverity: MEDIUM\nPackage: libcurl4\nFixed Version: \nLink: [CVE-2022-32208](https://avd.aquasec.com/nvd/cve-2022-32208)\nA vulnerability was found in curl. This issue occurs because it mishandles message verification failures when curl does FTP transfers secured by krb5. This flaw makes it possible for a Man-in-the-middle attack to go unnoticed and allows data injection into the client.",
-                "markdown": "**Vulnerability CVE-2022-32208**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libcurl4||[CVE-2022-32208](https://avd.aquasec.com/nvd/cve-2022-32208)|\n\nA vulnerability was found in curl. This issue occurs because it mishandles message verification failures when curl does FTP transfers secured by krb5. This flaw makes it possible for a Man-in-the-middle attack to go unnoticed and allows data injection into the client."
+                "text": "Vulnerability CVE-2022-32208\nSeverity: MEDIUM\nPackage: libcurl4\nFixed Version: \nLink: [CVE-2022-32208](https://avd.aquasec.com/nvd/cve-2022-32208)\nWhen curl \u003c 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client.",
+                "markdown": "**Vulnerability CVE-2022-32208**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libcurl4||[CVE-2022-32208](https://avd.aquasec.com/nvd/cve-2022-32208)|\n\nWhen curl \u003c 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client."
               },
               "properties": {
                 "precision": "very-high",
-                "security-severity": "5.5",
+                "security-severity": "5.9",
                 "tags": [
                   "vulnerability",
                   "security",
@@ -874,87 +874,6 @@
               }
             },
             {
-              "id": "CVE-2022-27404",
-              "name": "OsPackageVulnerability",
-              "shortDescription": {
-                "text": "CVE-2022-27404"
-              },
-              "fullDescription": {
-                "text": "FreeType commit 1e2eb65048f75c64b68708efed6ce904c31f3b2f was discovered to contain a heap buffer overflow via the function sfnt_init_face."
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-27404",
-              "help": {
-                "text": "Vulnerability CVE-2022-27404\nSeverity: CRITICAL\nPackage: libfreetype6\nFixed Version: \nLink: [CVE-2022-27404](https://avd.aquasec.com/nvd/cve-2022-27404)\nFreeType commit 1e2eb65048f75c64b68708efed6ce904c31f3b2f was discovered to contain a heap buffer overflow via the function sfnt_init_face.",
-                "markdown": "**Vulnerability CVE-2022-27404**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|libfreetype6||[CVE-2022-27404](https://avd.aquasec.com/nvd/cve-2022-27404)|\n\nFreeType commit 1e2eb65048f75c64b68708efed6ce904c31f3b2f was discovered to contain a heap buffer overflow via the function sfnt_init_face."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "9.8",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "CRITICAL"
-                ]
-              }
-            },
-            {
-              "id": "CVE-2022-27405",
-              "name": "OsPackageVulnerability",
-              "shortDescription": {
-                "text": "CVE-2022-27405"
-              },
-              "fullDescription": {
-                "text": "FreeType commit 53dfdcd8198d2b3201a23c4bad9190519ba918db was discovered to contain a segmentation violation via the function FNT_Size_Request."
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-27405",
-              "help": {
-                "text": "Vulnerability CVE-2022-27405\nSeverity: HIGH\nPackage: libfreetype6\nFixed Version: \nLink: [CVE-2022-27405](https://avd.aquasec.com/nvd/cve-2022-27405)\nFreeType commit 53dfdcd8198d2b3201a23c4bad9190519ba918db was discovered to contain a segmentation violation via the function FNT_Size_Request.",
-                "markdown": "**Vulnerability CVE-2022-27405**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|libfreetype6||[CVE-2022-27405](https://avd.aquasec.com/nvd/cve-2022-27405)|\n\nFreeType commit 53dfdcd8198d2b3201a23c4bad9190519ba918db was discovered to contain a segmentation violation via the function FNT_Size_Request."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "7.5",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "CVE-2022-27406",
-              "name": "OsPackageVulnerability",
-              "shortDescription": {
-                "text": "CVE-2022-27406"
-              },
-              "fullDescription": {
-                "text": "FreeType commit 22a0cccb4d9d002f33c1ba7a4b36812c7d4f46b5 was discovered to contain a segmentation violation via the function FT_Request_Size."
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-27406",
-              "help": {
-                "text": "Vulnerability CVE-2022-27406\nSeverity: HIGH\nPackage: libfreetype6\nFixed Version: \nLink: [CVE-2022-27406](https://avd.aquasec.com/nvd/cve-2022-27406)\nFreeType commit 22a0cccb4d9d002f33c1ba7a4b36812c7d4f46b5 was discovered to contain a segmentation violation via the function FT_Request_Size.",
-                "markdown": "**Vulnerability CVE-2022-27406**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|libfreetype6||[CVE-2022-27406](https://avd.aquasec.com/nvd/cve-2022-27406)|\n\nFreeType commit 22a0cccb4d9d002f33c1ba7a4b36812c7d4f46b5 was discovered to contain a segmentation violation via the function FT_Request_Size."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "7.5",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
               "id": "CVE-2022-31782",
               "name": "OsPackageVulnerability",
               "shortDescription": {
@@ -1036,33 +955,6 @@
               }
             },
             {
-              "id": "CVE-2021-40145",
-              "name": "OsPackageVulnerability",
-              "shortDescription": {
-                "text": "CVE-2021-40145"
-              },
-              "fullDescription": {
-                "text": "** DISPUTED ** gdImageGd2Ptr in gd_gd2.c in the GD Graphics Library (aka LibGD) through 2.3.2 has a double free. NOTE: the vendor\u0026#39;s position is \u0026#34;The GD2 image format is a proprietary image format of libgd. It has to be regarded as being obsolete, and should only be used for development and testing purposes.\u0026#34;"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-40145",
-              "help": {
-                "text": "Vulnerability CVE-2021-40145\nSeverity: HIGH\nPackage: libgd3\nFixed Version: \nLink: [CVE-2021-40145](https://avd.aquasec.com/nvd/cve-2021-40145)\n** DISPUTED ** gdImageGd2Ptr in gd_gd2.c in the GD Graphics Library (aka LibGD) through 2.3.2 has a double free. NOTE: the vendor's position is \"The GD2 image format is a proprietary image format of libgd. It has to be regarded as being obsolete, and should only be used for development and testing purposes.\"",
-                "markdown": "**Vulnerability CVE-2021-40145**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|libgd3||[CVE-2021-40145](https://avd.aquasec.com/nvd/cve-2021-40145)|\n\n** DISPUTED ** gdImageGd2Ptr in gd_gd2.c in the GD Graphics Library (aka LibGD) through 2.3.2 has a double free. NOTE: the vendor's position is \"The GD2 image format is a proprietary image format of libgd. It has to be regarded as being obsolete, and should only be used for development and testing purposes.\""
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "7.5",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
               "id": "CVE-2021-38115",
               "name": "OsPackageVulnerability",
               "shortDescription": {
@@ -1117,29 +1009,29 @@
               }
             },
             {
-              "id": "CVE-2021-4209",
+              "id": "CVE-2021-40145",
               "name": "OsPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2021-4209"
+                "text": "CVE-2021-40145"
               },
               "fullDescription": {
-                "text": "A NULL pointer dereference flaw was found in GnuTLS. As Nettle\u0026#39;s hash update functions internally call memcpy, providing zero-length input may cause undefined behavior. This flaw leads to a denial of service after authentication in rare circumstances."
+                "text": "** DISPUTED ** gdImageGd2Ptr in gd_gd2.c in the GD Graphics Library (aka LibGD) through 2.3.2 has a double free. NOTE: the vendor\u0026#39;s position is \u0026#34;The GD2 image format is a proprietary image format of libgd. It has to be regarded as being obsolete, and should only be used for development and testing purposes.\u0026#34;"
               },
               "defaultConfiguration": {
-                "level": "warning"
+                "level": "note"
               },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-4209",
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-40145",
               "help": {
-                "text": "Vulnerability CVE-2021-4209\nSeverity: MEDIUM\nPackage: libgnutls30\nFixed Version: \nLink: [CVE-2021-4209](https://avd.aquasec.com/nvd/cve-2021-4209)\nA NULL pointer dereference flaw was found in GnuTLS. As Nettle's hash update functions internally call memcpy, providing zero-length input may cause undefined behavior. This flaw leads to a denial of service after authentication in rare circumstances.",
-                "markdown": "**Vulnerability CVE-2021-4209**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libgnutls30||[CVE-2021-4209](https://avd.aquasec.com/nvd/cve-2021-4209)|\n\nA NULL pointer dereference flaw was found in GnuTLS. As Nettle's hash update functions internally call memcpy, providing zero-length input may cause undefined behavior. This flaw leads to a denial of service after authentication in rare circumstances."
+                "text": "Vulnerability CVE-2021-40145\nSeverity: LOW\nPackage: libgd3\nFixed Version: \nLink: [CVE-2021-40145](https://avd.aquasec.com/nvd/cve-2021-40145)\n** DISPUTED ** gdImageGd2Ptr in gd_gd2.c in the GD Graphics Library (aka LibGD) through 2.3.2 has a double free. NOTE: the vendor's position is \"The GD2 image format is a proprietary image format of libgd. It has to be regarded as being obsolete, and should only be used for development and testing purposes.\"",
+                "markdown": "**Vulnerability CVE-2021-40145**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|libgd3||[CVE-2021-40145](https://avd.aquasec.com/nvd/cve-2021-40145)|\n\n** DISPUTED ** gdImageGd2Ptr in gd_gd2.c in the GD Graphics Library (aka LibGD) through 2.3.2 has a double free. NOTE: the vendor's position is \"The GD2 image format is a proprietary image format of libgd. It has to be regarded as being obsolete, and should only be used for development and testing purposes.\""
               },
               "properties": {
                 "precision": "very-high",
-                "security-severity": "5.5",
+                "security-severity": "2.0",
                 "tags": [
                   "vulnerability",
                   "security",
-                  "MEDIUM"
+                  "LOW"
                 ]
               }
             },
@@ -1738,29 +1630,29 @@
               }
             },
             {
-              "id": "CVE-2022-2068",
+              "id": "CVE-2022-2097",
               "name": "OsPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2022-2068"
+                "text": "CVE-2022-2097"
               },
               "fullDescription": {
-                "text": "In addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze)."
+                "text": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn\u0026#39;t written. In the special case of \u0026#34;in place\u0026#34; encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p)."
               },
               "defaultConfiguration": {
                 "level": "error"
               },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-2068",
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-2097",
               "help": {
-                "text": "Vulnerability CVE-2022-2068\nSeverity: CRITICAL\nPackage: openssl\nFixed Version: 1.1.1n-0+deb11u3\nLink: [CVE-2022-2068](https://avd.aquasec.com/nvd/cve-2022-2068)\nIn addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze).",
-                "markdown": "**Vulnerability CVE-2022-2068**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|openssl|1.1.1n-0+deb11u3|[CVE-2022-2068](https://avd.aquasec.com/nvd/cve-2022-2068)|\n\nIn addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze)."
+                "text": "Vulnerability CVE-2022-2097\nSeverity: HIGH\nPackage: openssl\nFixed Version: \nLink: [CVE-2022-2097](https://avd.aquasec.com/nvd/cve-2022-2097)\nAES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p).",
+                "markdown": "**Vulnerability CVE-2022-2097**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|openssl||[CVE-2022-2097](https://avd.aquasec.com/nvd/cve-2022-2097)|\n\nAES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p)."
               },
               "properties": {
                 "precision": "very-high",
-                "security-severity": "9.8",
+                "security-severity": "7.5",
                 "tags": [
                   "vulnerability",
                   "security",
-                  "CRITICAL"
+                  "HIGH"
                 ]
               }
             },
@@ -1873,33 +1765,6 @@
               }
             },
             {
-              "id": "CVE-2022-1210",
-              "name": "OsPackageVulnerability",
-              "shortDescription": {
-                "text": "CVE-2022-1210"
-              },
-              "fullDescription": {
-                "text": "A vulnerability classified as problematic was found in LibTIFF 4.3.0. Affected by this vulnerability is the TIFF File Handler of tiff2ps. Opening a malicious file leads to a denial of service. The attack can be launched remotely but requires user interaction. The exploit has been disclosed to the public and may be used."
-              },
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-1210",
-              "help": {
-                "text": "Vulnerability CVE-2022-1210\nSeverity: MEDIUM\nPackage: libtiff5\nFixed Version: \nLink: [CVE-2022-1210](https://avd.aquasec.com/nvd/cve-2022-1210)\nA vulnerability classified as problematic was found in LibTIFF 4.3.0. Affected by this vulnerability is the TIFF File Handler of tiff2ps. Opening a malicious file leads to a denial of service. The attack can be launched remotely but requires user interaction. The exploit has been disclosed to the public and may be used.",
-                "markdown": "**Vulnerability CVE-2022-1210**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libtiff5||[CVE-2022-1210](https://avd.aquasec.com/nvd/cve-2022-1210)|\n\nA vulnerability classified as problematic was found in LibTIFF 4.3.0. Affected by this vulnerability is the TIFF File Handler of tiff2ps. Opening a malicious file leads to a denial of service. The attack can be launched remotely but requires user interaction. The exploit has been disclosed to the public and may be used."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "6.5",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "MEDIUM"
-                ]
-              }
-            },
-            {
               "id": "CVE-2022-1354",
               "name": "OsPackageVulnerability",
               "shortDescription": {
@@ -2000,6 +1865,87 @@
               "properties": {
                 "precision": "very-high",
                 "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-2056",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-2056"
+              },
+              "fullDescription": {
+                "text": "Divide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-2056",
+              "help": {
+                "text": "Vulnerability CVE-2022-2056\nSeverity: MEDIUM\nPackage: libtiff5\nFixed Version: \nLink: [CVE-2022-2056](https://avd.aquasec.com/nvd/cve-2022-2056)\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010.",
+                "markdown": "**Vulnerability CVE-2022-2056**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libtiff5||[CVE-2022-2056](https://avd.aquasec.com/nvd/cve-2022-2056)|\n\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-2057",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-2057"
+              },
+              "fullDescription": {
+                "text": "Divide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-2057",
+              "help": {
+                "text": "Vulnerability CVE-2022-2057\nSeverity: MEDIUM\nPackage: libtiff5\nFixed Version: \nLink: [CVE-2022-2057](https://avd.aquasec.com/nvd/cve-2022-2057)\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010.",
+                "markdown": "**Vulnerability CVE-2022-2057**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libtiff5||[CVE-2022-2057](https://avd.aquasec.com/nvd/cve-2022-2057)|\n\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-2058",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-2058"
+              },
+              "fullDescription": {
+                "text": "Divide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-2058",
+              "help": {
+                "text": "Vulnerability CVE-2022-2058\nSeverity: MEDIUM\nPackage: libtiff5\nFixed Version: \nLink: [CVE-2022-2058](https://avd.aquasec.com/nvd/cve-2022-2058)\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010.",
+                "markdown": "**Vulnerability CVE-2022-2058**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libtiff5||[CVE-2022-2058](https://avd.aquasec.com/nvd/cve-2022-2058)|\n\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.5",
                 "tags": [
                   "vulnerability",
                   "security",
@@ -2197,83 +2143,29 @@
               }
             },
             {
-              "id": "CVE-2022-2056",
+              "id": "CVE-2022-1210",
               "name": "OsPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2022-2056"
+                "text": "CVE-2022-1210"
               },
               "fullDescription": {
-                "text": "Divide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
+                "text": "A vulnerability classified as problematic was found in LibTIFF 4.3.0. Affected by this vulnerability is the TIFF File Handler of tiff2ps. Opening a malicious file leads to a denial of service. The attack can be launched remotely but requires user interaction. The exploit has been disclosed to the public and may be used."
               },
               "defaultConfiguration": {
                 "level": "note"
               },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-2056",
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-1210",
               "help": {
-                "text": "Vulnerability CVE-2022-2056\nSeverity: UNKNOWN\nPackage: libtiff5\nFixed Version: \nLink: [CVE-2022-2056](https://avd.aquasec.com/nvd/cve-2022-2056)\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010.",
-                "markdown": "**Vulnerability CVE-2022-2056**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|libtiff5||[CVE-2022-2056](https://avd.aquasec.com/nvd/cve-2022-2056)|\n\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
+                "text": "Vulnerability CVE-2022-1210\nSeverity: LOW\nPackage: libtiff5\nFixed Version: \nLink: [CVE-2022-1210](https://avd.aquasec.com/nvd/cve-2022-1210)\nA vulnerability classified as problematic was found in LibTIFF 4.3.0. Affected by this vulnerability is the TIFF File Handler of tiff2ps. Opening a malicious file leads to a denial of service. The attack can be launched remotely but requires user interaction. The exploit has been disclosed to the public and may be used.",
+                "markdown": "**Vulnerability CVE-2022-1210**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|libtiff5||[CVE-2022-1210](https://avd.aquasec.com/nvd/cve-2022-1210)|\n\nA vulnerability classified as problematic was found in LibTIFF 4.3.0. Affected by this vulnerability is the TIFF File Handler of tiff2ps. Opening a malicious file leads to a denial of service. The attack can be launched remotely but requires user interaction. The exploit has been disclosed to the public and may be used."
               },
               "properties": {
                 "precision": "very-high",
-                "security-severity": "0.0",
+                "security-severity": "2.0",
                 "tags": [
                   "vulnerability",
                   "security",
-                  "UNKNOWN"
-                ]
-              }
-            },
-            {
-              "id": "CVE-2022-2057",
-              "name": "OsPackageVulnerability",
-              "shortDescription": {
-                "text": "CVE-2022-2057"
-              },
-              "fullDescription": {
-                "text": "Divide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
-              },
-              "defaultConfiguration": {
-                "level": "note"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-2057",
-              "help": {
-                "text": "Vulnerability CVE-2022-2057\nSeverity: UNKNOWN\nPackage: libtiff5\nFixed Version: \nLink: [CVE-2022-2057](https://avd.aquasec.com/nvd/cve-2022-2057)\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010.",
-                "markdown": "**Vulnerability CVE-2022-2057**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|libtiff5||[CVE-2022-2057](https://avd.aquasec.com/nvd/cve-2022-2057)|\n\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "0.0",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "UNKNOWN"
-                ]
-              }
-            },
-            {
-              "id": "CVE-2022-2058",
-              "name": "OsPackageVulnerability",
-              "shortDescription": {
-                "text": "CVE-2022-2058"
-              },
-              "fullDescription": {
-                "text": "Divide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
-              },
-              "defaultConfiguration": {
-                "level": "note"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-2058",
-              "help": {
-                "text": "Vulnerability CVE-2022-2058\nSeverity: UNKNOWN\nPackage: libtiff5\nFixed Version: \nLink: [CVE-2022-2058](https://avd.aquasec.com/nvd/cve-2022-2058)\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010.",
-                "markdown": "**Vulnerability CVE-2022-2058**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|libtiff5||[CVE-2022-2058](https://avd.aquasec.com/nvd/cve-2022-2058)|\n\nDivide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "0.0",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "UNKNOWN"
+                  "LOW"
                 ]
               }
             },
@@ -2467,33 +2359,6 @@
               }
             },
             {
-              "id": "CVE-2021-3618",
-              "name": "OsPackageVulnerability",
-              "shortDescription": {
-                "text": "CVE-2021-3618"
-              },
-              "fullDescription": {
-                "text": "ALPACA is an application layer protocol content confusion attack, exploiting TLS servers implementing different protocols but using compatible certificates, such as multi-domain or wildcard certificates. A MiTM attacker having access to victim\u0026#39;s traffic at the TCP/IP layer can redirect traffic from one subdomain to another, resulting in a valid TLS session. This breaks the authentication of TLS and cross-protocol attacks may be possible where the behavior of one protocol service may compromise the other at the application layer."
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-3618",
-              "help": {
-                "text": "Vulnerability CVE-2021-3618\nSeverity: HIGH\nPackage: nginx\nFixed Version: \nLink: [CVE-2021-3618](https://avd.aquasec.com/nvd/cve-2021-3618)\nALPACA is an application layer protocol content confusion attack, exploiting TLS servers implementing different protocols but using compatible certificates, such as multi-domain or wildcard certificates. A MiTM attacker having access to victim's traffic at the TCP/IP layer can redirect traffic from one subdomain to another, resulting in a valid TLS session. This breaks the authentication of TLS and cross-protocol attacks may be possible where the behavior of one protocol service may compromise the other at the application layer.",
-                "markdown": "**Vulnerability CVE-2021-3618**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|nginx||[CVE-2021-3618](https://avd.aquasec.com/nvd/cve-2021-3618)|\n\nALPACA is an application layer protocol content confusion attack, exploiting TLS servers implementing different protocols but using compatible certificates, such as multi-domain or wildcard certificates. A MiTM attacker having access to victim's traffic at the TCP/IP layer can redirect traffic from one subdomain to another, resulting in a valid TLS session. This breaks the authentication of TLS and cross-protocol attacks may be possible where the behavior of one protocol service may compromise the other at the application layer."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "7.4",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
               "id": "CVE-2020-36309",
               "name": "OsPackageVulnerability",
               "shortDescription": {
@@ -2656,7 +2521,7 @@
               }
             }
           ],
-          "version": "0.29.1"
+          "version": "0.29.2"
         }
       },
       "results": [
@@ -2781,8 +2646,32 @@
           ]
         },
         {
-          "ruleId": "CVE-2021-22946",
+          "ruleId": "CVE-2022-32207",
           "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32207\nSeverity: CRITICAL\nFixed Version: \nLink: [CVE-2022-32207](https://avd.aquasec.com/nvd/cve-2022-32207)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/nginx",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-22946",
+          "ruleIndex": 6,
           "level": "error",
           "message": {
             "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2021-22946\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2021-22946](https://avd.aquasec.com/nvd/cve-2021-22946)"
@@ -2806,7 +2695,7 @@
         },
         {
           "ruleId": "CVE-2022-22576",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "level": "error",
           "message": {
             "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-22576\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-22576](https://avd.aquasec.com/nvd/cve-2022-22576)"
@@ -2830,7 +2719,7 @@
         },
         {
           "ruleId": "CVE-2022-27775",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "level": "error",
           "message": {
             "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27775\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-27775](https://avd.aquasec.com/nvd/cve-2022-27775)"
@@ -2854,7 +2743,7 @@
         },
         {
           "ruleId": "CVE-2022-27781",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "level": "error",
           "message": {
             "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27781\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-27781](https://avd.aquasec.com/nvd/cve-2022-27781)"
@@ -2878,7 +2767,7 @@
         },
         {
           "ruleId": "CVE-2022-27782",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "level": "error",
           "message": {
             "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27782\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-27782](https://avd.aquasec.com/nvd/cve-2022-27782)"
@@ -2902,7 +2791,7 @@
         },
         {
           "ruleId": "CVE-2021-22947",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "level": "warning",
           "message": {
             "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2021-22947\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2021-22947](https://avd.aquasec.com/nvd/cve-2021-22947)"
@@ -2926,7 +2815,7 @@
         },
         {
           "ruleId": "CVE-2022-27774",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "level": "warning",
           "message": {
             "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27774\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-27774](https://avd.aquasec.com/nvd/cve-2022-27774)"
@@ -2950,7 +2839,7 @@
         },
         {
           "ruleId": "CVE-2022-27776",
-          "ruleIndex": 12,
+          "ruleIndex": 13,
           "level": "warning",
           "message": {
             "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27776\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-27776](https://avd.aquasec.com/nvd/cve-2022-27776)"
@@ -2974,7 +2863,7 @@
         },
         {
           "ruleId": "CVE-2022-32205",
-          "ruleIndex": 13,
+          "ruleIndex": 14,
           "level": "warning",
           "message": {
             "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32205\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-32205](https://avd.aquasec.com/nvd/cve-2022-32205)"
@@ -2998,34 +2887,10 @@
         },
         {
           "ruleId": "CVE-2022-32206",
-          "ruleIndex": 14,
-          "level": "warning",
-          "message": {
-            "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32206\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-32206](https://avd.aquasec.com/nvd/cve-2022-32206)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2022-32207",
           "ruleIndex": 15,
           "level": "warning",
           "message": {
-            "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32207\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-32207](https://avd.aquasec.com/nvd/cve-2022-32207)"
+            "text": "Package: curl\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32206\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-32206](https://avd.aquasec.com/nvd/cve-2022-32206)"
           },
           "locations": [
             {
@@ -3669,8 +3534,32 @@
           ]
         },
         {
-          "ruleId": "CVE-2021-22946",
+          "ruleId": "CVE-2022-32207",
           "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32207\nSeverity: CRITICAL\nFixed Version: \nLink: [CVE-2022-32207](https://avd.aquasec.com/nvd/cve-2022-32207)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/nginx",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-22946",
+          "ruleIndex": 6,
           "level": "error",
           "message": {
             "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2021-22946\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2021-22946](https://avd.aquasec.com/nvd/cve-2021-22946)"
@@ -3694,7 +3583,7 @@
         },
         {
           "ruleId": "CVE-2022-22576",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "level": "error",
           "message": {
             "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-22576\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-22576](https://avd.aquasec.com/nvd/cve-2022-22576)"
@@ -3718,7 +3607,7 @@
         },
         {
           "ruleId": "CVE-2022-27775",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "level": "error",
           "message": {
             "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27775\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-27775](https://avd.aquasec.com/nvd/cve-2022-27775)"
@@ -3742,7 +3631,7 @@
         },
         {
           "ruleId": "CVE-2022-27781",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "level": "error",
           "message": {
             "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27781\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-27781](https://avd.aquasec.com/nvd/cve-2022-27781)"
@@ -3766,7 +3655,7 @@
         },
         {
           "ruleId": "CVE-2022-27782",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "level": "error",
           "message": {
             "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27782\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-27782](https://avd.aquasec.com/nvd/cve-2022-27782)"
@@ -3790,7 +3679,7 @@
         },
         {
           "ruleId": "CVE-2021-22947",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "level": "warning",
           "message": {
             "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2021-22947\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2021-22947](https://avd.aquasec.com/nvd/cve-2021-22947)"
@@ -3814,7 +3703,7 @@
         },
         {
           "ruleId": "CVE-2022-27774",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "level": "warning",
           "message": {
             "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27774\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-27774](https://avd.aquasec.com/nvd/cve-2022-27774)"
@@ -3838,7 +3727,7 @@
         },
         {
           "ruleId": "CVE-2022-27776",
-          "ruleIndex": 12,
+          "ruleIndex": 13,
           "level": "warning",
           "message": {
             "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-27776\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-27776](https://avd.aquasec.com/nvd/cve-2022-27776)"
@@ -3862,7 +3751,7 @@
         },
         {
           "ruleId": "CVE-2022-32205",
-          "ruleIndex": 13,
+          "ruleIndex": 14,
           "level": "warning",
           "message": {
             "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32205\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-32205](https://avd.aquasec.com/nvd/cve-2022-32205)"
@@ -3886,34 +3775,10 @@
         },
         {
           "ruleId": "CVE-2022-32206",
-          "ruleIndex": 14,
-          "level": "warning",
-          "message": {
-            "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32206\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-32206](https://avd.aquasec.com/nvd/cve-2022-32206)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2022-32207",
           "ruleIndex": 15,
           "level": "warning",
           "message": {
-            "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32207\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-32207](https://avd.aquasec.com/nvd/cve-2022-32207)"
+            "text": "Package: libcurl4\nInstalled Version: 7.74.0-1.3+deb11u1\nVulnerability CVE-2022-32206\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-32206](https://avd.aquasec.com/nvd/cve-2022-32206)"
           },
           "locations": [
             {
@@ -4125,83 +3990,11 @@
           ]
         },
         {
-          "ruleId": "CVE-2022-27404",
-          "ruleIndex": 32,
-          "level": "error",
-          "message": {
-            "text": "Package: libfreetype6\nInstalled Version: 2.10.4+dfsg-1\nVulnerability CVE-2022-27404\nSeverity: CRITICAL\nFixed Version: \nLink: [CVE-2022-27404](https://avd.aquasec.com/nvd/cve-2022-27404)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2022-27405",
-          "ruleIndex": 33,
-          "level": "error",
-          "message": {
-            "text": "Package: libfreetype6\nInstalled Version: 2.10.4+dfsg-1\nVulnerability CVE-2022-27405\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-27405](https://avd.aquasec.com/nvd/cve-2022-27405)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2022-27406",
-          "ruleIndex": 34,
-          "level": "error",
-          "message": {
-            "text": "Package: libfreetype6\nInstalled Version: 2.10.4+dfsg-1\nVulnerability CVE-2022-27406\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-27406](https://avd.aquasec.com/nvd/cve-2022-27406)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
           "ruleId": "CVE-2022-31782",
-          "ruleIndex": 35,
+          "ruleIndex": 32,
           "level": "note",
           "message": {
-            "text": "Package: libfreetype6\nInstalled Version: 2.10.4+dfsg-1\nVulnerability CVE-2022-31782\nSeverity: LOW\nFixed Version: \nLink: [CVE-2022-31782](https://avd.aquasec.com/nvd/cve-2022-31782)"
+            "text": "Package: libfreetype6\nInstalled Version: 2.10.4+dfsg-1+deb11u1\nVulnerability CVE-2022-31782\nSeverity: LOW\nFixed Version: \nLink: [CVE-2022-31782](https://avd.aquasec.com/nvd/cve-2022-31782)"
           },
           "locations": [
             {
@@ -4222,7 +4015,7 @@
         },
         {
           "ruleId": "CVE-2021-33560",
-          "ruleIndex": 36,
+          "ruleIndex": 33,
           "level": "error",
           "message": {
             "text": "Package: libgcrypt20\nInstalled Version: 1.8.7-6\nVulnerability CVE-2021-33560\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2021-33560](https://avd.aquasec.com/nvd/cve-2021-33560)"
@@ -4246,7 +4039,7 @@
         },
         {
           "ruleId": "CVE-2018-6829",
-          "ruleIndex": 37,
+          "ruleIndex": 34,
           "level": "note",
           "message": {
             "text": "Package: libgcrypt20\nInstalled Version: 1.8.7-6\nVulnerability CVE-2018-6829\nSeverity: LOW\nFixed Version: \nLink: [CVE-2018-6829](https://avd.aquasec.com/nvd/cve-2018-6829)"
@@ -4269,32 +4062,8 @@
           ]
         },
         {
-          "ruleId": "CVE-2021-40145",
-          "ruleIndex": 38,
-          "level": "error",
-          "message": {
-            "text": "Package: libgd3\nInstalled Version: 2.3.0-2\nVulnerability CVE-2021-40145\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2021-40145](https://avd.aquasec.com/nvd/cve-2021-40145)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
           "ruleId": "CVE-2021-38115",
-          "ruleIndex": 39,
+          "ruleIndex": 35,
           "level": "warning",
           "message": {
             "text": "Package: libgd3\nInstalled Version: 2.3.0-2\nVulnerability CVE-2021-38115\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2021-38115](https://avd.aquasec.com/nvd/cve-2021-38115)"
@@ -4318,7 +4087,7 @@
         },
         {
           "ruleId": "CVE-2021-40812",
-          "ruleIndex": 40,
+          "ruleIndex": 36,
           "level": "warning",
           "message": {
             "text": "Package: libgd3\nInstalled Version: 2.3.0-2\nVulnerability CVE-2021-40812\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2021-40812](https://avd.aquasec.com/nvd/cve-2021-40812)"
@@ -4341,11 +4110,11 @@
           ]
         },
         {
-          "ruleId": "CVE-2021-4209",
-          "ruleIndex": 41,
-          "level": "warning",
+          "ruleId": "CVE-2021-40145",
+          "ruleIndex": 37,
+          "level": "note",
           "message": {
-            "text": "Package: libgnutls30\nInstalled Version: 3.7.1-5\nVulnerability CVE-2021-4209\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2021-4209](https://avd.aquasec.com/nvd/cve-2021-4209)"
+            "text": "Package: libgd3\nInstalled Version: 2.3.0-2\nVulnerability CVE-2021-40145\nSeverity: LOW\nFixed Version: \nLink: [CVE-2021-40145](https://avd.aquasec.com/nvd/cve-2021-40145)"
           },
           "locations": [
             {
@@ -4366,10 +4135,10 @@
         },
         {
           "ruleId": "CVE-2011-3389",
-          "ruleIndex": 42,
+          "ruleIndex": 38,
           "level": "note",
           "message": {
-            "text": "Package: libgnutls30\nInstalled Version: 3.7.1-5\nVulnerability CVE-2011-3389\nSeverity: LOW\nFixed Version: \nLink: [CVE-2011-3389](https://avd.aquasec.com/nvd/cve-2011-3389)"
+            "text": "Package: libgnutls30\nInstalled Version: 3.7.1-5+deb11u1\nVulnerability CVE-2011-3389\nSeverity: LOW\nFixed Version: \nLink: [CVE-2011-3389](https://avd.aquasec.com/nvd/cve-2011-3389)"
           },
           "locations": [
             {
@@ -4390,7 +4159,7 @@
         },
         {
           "ruleId": "CVE-2004-0971",
-          "ruleIndex": 43,
+          "ruleIndex": 39,
           "level": "note",
           "message": {
             "text": "Package: libgssapi-krb5-2\nInstalled Version: 1.18.3-6+deb11u1\nVulnerability CVE-2004-0971\nSeverity: LOW\nFixed Version: \nLink: [CVE-2004-0971](https://avd.aquasec.com/nvd/cve-2004-0971)"
@@ -4414,7 +4183,7 @@
         },
         {
           "ruleId": "CVE-2018-5709",
-          "ruleIndex": 44,
+          "ruleIndex": 40,
           "level": "note",
           "message": {
             "text": "Package: libgssapi-krb5-2\nInstalled Version: 1.18.3-6+deb11u1\nVulnerability CVE-2018-5709\nSeverity: LOW\nFixed Version: \nLink: [CVE-2018-5709](https://avd.aquasec.com/nvd/cve-2018-5709)"
@@ -4438,7 +4207,7 @@
         },
         {
           "ruleId": "CVE-2017-9937",
-          "ruleIndex": 45,
+          "ruleIndex": 41,
           "level": "note",
           "message": {
             "text": "Package: libjbig0\nInstalled Version: 2.1-3.1\nVulnerability CVE-2017-9937\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-9937](https://avd.aquasec.com/nvd/cve-2017-9937)"
@@ -4462,7 +4231,7 @@
         },
         {
           "ruleId": "CVE-2021-46822",
-          "ruleIndex": 46,
+          "ruleIndex": 42,
           "level": "warning",
           "message": {
             "text": "Package: libjpeg62-turbo\nInstalled Version: 1:2.0.6-4\nVulnerability CVE-2021-46822\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2021-46822](https://avd.aquasec.com/nvd/cve-2021-46822)"
@@ -4486,7 +4255,7 @@
         },
         {
           "ruleId": "CVE-2004-0971",
-          "ruleIndex": 43,
+          "ruleIndex": 39,
           "level": "note",
           "message": {
             "text": "Package: libk5crypto3\nInstalled Version: 1.18.3-6+deb11u1\nVulnerability CVE-2004-0971\nSeverity: LOW\nFixed Version: \nLink: [CVE-2004-0971](https://avd.aquasec.com/nvd/cve-2004-0971)"
@@ -4510,7 +4279,7 @@
         },
         {
           "ruleId": "CVE-2018-5709",
-          "ruleIndex": 44,
+          "ruleIndex": 40,
           "level": "note",
           "message": {
             "text": "Package: libk5crypto3\nInstalled Version: 1.18.3-6+deb11u1\nVulnerability CVE-2018-5709\nSeverity: LOW\nFixed Version: \nLink: [CVE-2018-5709](https://avd.aquasec.com/nvd/cve-2018-5709)"
@@ -4534,7 +4303,7 @@
         },
         {
           "ruleId": "CVE-2004-0971",
-          "ruleIndex": 43,
+          "ruleIndex": 39,
           "level": "note",
           "message": {
             "text": "Package: libkrb5-3\nInstalled Version: 1.18.3-6+deb11u1\nVulnerability CVE-2004-0971\nSeverity: LOW\nFixed Version: \nLink: [CVE-2004-0971](https://avd.aquasec.com/nvd/cve-2004-0971)"
@@ -4558,7 +4327,7 @@
         },
         {
           "ruleId": "CVE-2018-5709",
-          "ruleIndex": 44,
+          "ruleIndex": 40,
           "level": "note",
           "message": {
             "text": "Package: libkrb5-3\nInstalled Version: 1.18.3-6+deb11u1\nVulnerability CVE-2018-5709\nSeverity: LOW\nFixed Version: \nLink: [CVE-2018-5709](https://avd.aquasec.com/nvd/cve-2018-5709)"
@@ -4582,7 +4351,7 @@
         },
         {
           "ruleId": "CVE-2004-0971",
-          "ruleIndex": 43,
+          "ruleIndex": 39,
           "level": "note",
           "message": {
             "text": "Package: libkrb5support0\nInstalled Version: 1.18.3-6+deb11u1\nVulnerability CVE-2004-0971\nSeverity: LOW\nFixed Version: \nLink: [CVE-2004-0971](https://avd.aquasec.com/nvd/cve-2004-0971)"
@@ -4606,7 +4375,7 @@
         },
         {
           "ruleId": "CVE-2018-5709",
-          "ruleIndex": 44,
+          "ruleIndex": 40,
           "level": "note",
           "message": {
             "text": "Package: libkrb5support0\nInstalled Version: 1.18.3-6+deb11u1\nVulnerability CVE-2018-5709\nSeverity: LOW\nFixed Version: \nLink: [CVE-2018-5709](https://avd.aquasec.com/nvd/cve-2018-5709)"
@@ -4630,7 +4399,7 @@
         },
         {
           "ruleId": "CVE-2015-3276",
-          "ruleIndex": 47,
+          "ruleIndex": 43,
           "level": "note",
           "message": {
             "text": "Package: libldap-2.4-2\nInstalled Version: 2.4.57+dfsg-3+deb11u1\nVulnerability CVE-2015-3276\nSeverity: LOW\nFixed Version: \nLink: [CVE-2015-3276](https://avd.aquasec.com/nvd/cve-2015-3276)"
@@ -4654,7 +4423,7 @@
         },
         {
           "ruleId": "CVE-2017-14159",
-          "ruleIndex": 48,
+          "ruleIndex": 44,
           "level": "note",
           "message": {
             "text": "Package: libldap-2.4-2\nInstalled Version: 2.4.57+dfsg-3+deb11u1\nVulnerability CVE-2017-14159\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-14159](https://avd.aquasec.com/nvd/cve-2017-14159)"
@@ -4678,7 +4447,7 @@
         },
         {
           "ruleId": "CVE-2017-17740",
-          "ruleIndex": 49,
+          "ruleIndex": 45,
           "level": "note",
           "message": {
             "text": "Package: libldap-2.4-2\nInstalled Version: 2.4.57+dfsg-3+deb11u1\nVulnerability CVE-2017-17740\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-17740](https://avd.aquasec.com/nvd/cve-2017-17740)"
@@ -4702,7 +4471,7 @@
         },
         {
           "ruleId": "CVE-2020-15719",
-          "ruleIndex": 50,
+          "ruleIndex": 46,
           "level": "note",
           "message": {
             "text": "Package: libldap-2.4-2\nInstalled Version: 2.4.57+dfsg-3+deb11u1\nVulnerability CVE-2020-15719\nSeverity: LOW\nFixed Version: \nLink: [CVE-2020-15719](https://avd.aquasec.com/nvd/cve-2020-15719)"
@@ -4750,7 +4519,7 @@
         },
         {
           "ruleId": "CVE-2022-1586",
-          "ruleIndex": 51,
+          "ruleIndex": 47,
           "level": "error",
           "message": {
             "text": "Package: libpcre2-8-0\nInstalled Version: 10.36-2\nVulnerability CVE-2022-1586\nSeverity: CRITICAL\nFixed Version: \nLink: [CVE-2022-1586](https://avd.aquasec.com/nvd/cve-2022-1586)"
@@ -4774,7 +4543,7 @@
         },
         {
           "ruleId": "CVE-2022-1587",
-          "ruleIndex": 52,
+          "ruleIndex": 48,
           "level": "error",
           "message": {
             "text": "Package: libpcre2-8-0\nInstalled Version: 10.36-2\nVulnerability CVE-2022-1587\nSeverity: CRITICAL\nFixed Version: \nLink: [CVE-2022-1587](https://avd.aquasec.com/nvd/cve-2022-1587)"
@@ -4798,7 +4567,7 @@
         },
         {
           "ruleId": "CVE-2017-11164",
-          "ruleIndex": 53,
+          "ruleIndex": 49,
           "level": "note",
           "message": {
             "text": "Package: libpcre3\nInstalled Version: 2:8.39-13\nVulnerability CVE-2017-11164\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)"
@@ -4822,7 +4591,7 @@
         },
         {
           "ruleId": "CVE-2017-16231",
-          "ruleIndex": 54,
+          "ruleIndex": 50,
           "level": "note",
           "message": {
             "text": "Package: libpcre3\nInstalled Version: 2:8.39-13\nVulnerability CVE-2017-16231\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-16231](https://avd.aquasec.com/nvd/cve-2017-16231)"
@@ -4846,7 +4615,7 @@
         },
         {
           "ruleId": "CVE-2017-7245",
-          "ruleIndex": 55,
+          "ruleIndex": 51,
           "level": "note",
           "message": {
             "text": "Package: libpcre3\nInstalled Version: 2:8.39-13\nVulnerability CVE-2017-7245\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-7245](https://avd.aquasec.com/nvd/cve-2017-7245)"
@@ -4870,7 +4639,7 @@
         },
         {
           "ruleId": "CVE-2017-7246",
-          "ruleIndex": 56,
+          "ruleIndex": 52,
           "level": "note",
           "message": {
             "text": "Package: libpcre3\nInstalled Version: 2:8.39-13\nVulnerability CVE-2017-7246\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-7246](https://avd.aquasec.com/nvd/cve-2017-7246)"
@@ -4894,7 +4663,7 @@
         },
         {
           "ruleId": "CVE-2019-20838",
-          "ruleIndex": 57,
+          "ruleIndex": 53,
           "level": "note",
           "message": {
             "text": "Package: libpcre3\nInstalled Version: 2:8.39-13\nVulnerability CVE-2019-20838\nSeverity: LOW\nFixed Version: \nLink: [CVE-2019-20838](https://avd.aquasec.com/nvd/cve-2019-20838)"
@@ -4918,7 +4687,7 @@
         },
         {
           "ruleId": "CVE-2019-6129",
-          "ruleIndex": 58,
+          "ruleIndex": 54,
           "level": "note",
           "message": {
             "text": "Package: libpng16-16\nInstalled Version: 1.6.37-3\nVulnerability CVE-2019-6129\nSeverity: LOW\nFixed Version: \nLink: [CVE-2019-6129](https://avd.aquasec.com/nvd/cve-2019-6129)"
@@ -4942,7 +4711,7 @@
         },
         {
           "ruleId": "CVE-2021-4214",
-          "ruleIndex": 59,
+          "ruleIndex": 55,
           "level": "note",
           "message": {
             "text": "Package: libpng16-16\nInstalled Version: 1.6.37-3\nVulnerability CVE-2021-4214\nSeverity: LOW\nFixed Version: \nLink: [CVE-2021-4214](https://avd.aquasec.com/nvd/cve-2021-4214)"
@@ -4966,7 +4735,7 @@
         },
         {
           "ruleId": "CVE-2021-36084",
-          "ruleIndex": 60,
+          "ruleIndex": 56,
           "level": "note",
           "message": {
             "text": "Package: libsepol1\nInstalled Version: 3.1-1\nVulnerability CVE-2021-36084\nSeverity: LOW\nFixed Version: \nLink: [CVE-2021-36084](https://avd.aquasec.com/nvd/cve-2021-36084)"
@@ -4990,7 +4759,7 @@
         },
         {
           "ruleId": "CVE-2021-36085",
-          "ruleIndex": 61,
+          "ruleIndex": 57,
           "level": "note",
           "message": {
             "text": "Package: libsepol1\nInstalled Version: 3.1-1\nVulnerability CVE-2021-36085\nSeverity: LOW\nFixed Version: \nLink: [CVE-2021-36085](https://avd.aquasec.com/nvd/cve-2021-36085)"
@@ -5014,7 +4783,7 @@
         },
         {
           "ruleId": "CVE-2021-36086",
-          "ruleIndex": 62,
+          "ruleIndex": 58,
           "level": "note",
           "message": {
             "text": "Package: libsepol1\nInstalled Version: 3.1-1\nVulnerability CVE-2021-36086\nSeverity: LOW\nFixed Version: \nLink: [CVE-2021-36086](https://avd.aquasec.com/nvd/cve-2021-36086)"
@@ -5038,7 +4807,7 @@
         },
         {
           "ruleId": "CVE-2021-36087",
-          "ruleIndex": 63,
+          "ruleIndex": 59,
           "level": "note",
           "message": {
             "text": "Package: libsepol1\nInstalled Version: 3.1-1\nVulnerability CVE-2021-36087\nSeverity: LOW\nFixed Version: \nLink: [CVE-2021-36087](https://avd.aquasec.com/nvd/cve-2021-36087)"
@@ -5109,11 +4878,11 @@
           ]
         },
         {
-          "ruleId": "CVE-2022-2068",
-          "ruleIndex": 64,
+          "ruleId": "CVE-2022-2097",
+          "ruleIndex": 60,
           "level": "error",
           "message": {
-            "text": "Package: libssl1.1\nInstalled Version: 1.1.1n-0+deb11u2\nVulnerability CVE-2022-2068\nSeverity: CRITICAL\nFixed Version: 1.1.1n-0+deb11u3\nLink: [CVE-2022-2068](https://avd.aquasec.com/nvd/cve-2022-2068)"
+            "text": "Package: libssl1.1\nInstalled Version: 1.1.1n-0+deb11u3\nVulnerability CVE-2022-2097\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-2097](https://avd.aquasec.com/nvd/cve-2022-2097)"
           },
           "locations": [
             {
@@ -5134,10 +4903,10 @@
         },
         {
           "ruleId": "CVE-2007-6755",
-          "ruleIndex": 65,
+          "ruleIndex": 61,
           "level": "note",
           "message": {
-            "text": "Package: libssl1.1\nInstalled Version: 1.1.1n-0+deb11u2\nVulnerability CVE-2007-6755\nSeverity: LOW\nFixed Version: \nLink: [CVE-2007-6755](https://avd.aquasec.com/nvd/cve-2007-6755)"
+            "text": "Package: libssl1.1\nInstalled Version: 1.1.1n-0+deb11u3\nVulnerability CVE-2007-6755\nSeverity: LOW\nFixed Version: \nLink: [CVE-2007-6755](https://avd.aquasec.com/nvd/cve-2007-6755)"
           },
           "locations": [
             {
@@ -5158,10 +4927,10 @@
         },
         {
           "ruleId": "CVE-2010-0928",
-          "ruleIndex": 66,
+          "ruleIndex": 62,
           "level": "note",
           "message": {
-            "text": "Package: libssl1.1\nInstalled Version: 1.1.1n-0+deb11u2\nVulnerability CVE-2010-0928\nSeverity: LOW\nFixed Version: \nLink: [CVE-2010-0928](https://avd.aquasec.com/nvd/cve-2010-0928)"
+            "text": "Package: libssl1.1\nInstalled Version: 1.1.1n-0+deb11u3\nVulnerability CVE-2010-0928\nSeverity: LOW\nFixed Version: \nLink: [CVE-2010-0928](https://avd.aquasec.com/nvd/cve-2010-0928)"
           },
           "locations": [
             {
@@ -5182,7 +4951,7 @@
         },
         {
           "ruleId": "CVE-2013-4392",
-          "ruleIndex": 67,
+          "ruleIndex": 63,
           "level": "note",
           "message": {
             "text": "Package: libsystemd0\nInstalled Version: 247.3-7\nVulnerability CVE-2013-4392\nSeverity: LOW\nFixed Version: \nLink: [CVE-2013-4392](https://avd.aquasec.com/nvd/cve-2013-4392)"
@@ -5206,7 +4975,7 @@
         },
         {
           "ruleId": "CVE-2020-13529",
-          "ruleIndex": 68,
+          "ruleIndex": 64,
           "level": "note",
           "message": {
             "text": "Package: libsystemd0\nInstalled Version: 247.3-7\nVulnerability CVE-2020-13529\nSeverity: LOW\nFixed Version: \nLink: [CVE-2020-13529](https://avd.aquasec.com/nvd/cve-2020-13529)"
@@ -5229,32 +4998,8 @@
           ]
         },
         {
-          "ruleId": "CVE-2022-1210",
-          "ruleIndex": 69,
-          "level": "warning",
-          "message": {
-            "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-1210\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-1210](https://avd.aquasec.com/nvd/cve-2022-1210)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
           "ruleId": "CVE-2022-1354",
-          "ruleIndex": 70,
+          "ruleIndex": 65,
           "level": "warning",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-1354\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-1354](https://avd.aquasec.com/nvd/cve-2022-1354)"
@@ -5278,7 +5023,7 @@
         },
         {
           "ruleId": "CVE-2022-1355",
-          "ruleIndex": 71,
+          "ruleIndex": 66,
           "level": "warning",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-1355\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-1355](https://avd.aquasec.com/nvd/cve-2022-1355)"
@@ -5302,7 +5047,7 @@
         },
         {
           "ruleId": "CVE-2022-1622",
-          "ruleIndex": 72,
+          "ruleIndex": 67,
           "level": "warning",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-1622\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-1622](https://avd.aquasec.com/nvd/cve-2022-1622)"
@@ -5326,7 +5071,7 @@
         },
         {
           "ruleId": "CVE-2022-1623",
-          "ruleIndex": 73,
+          "ruleIndex": 68,
           "level": "warning",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-1623\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-1623](https://avd.aquasec.com/nvd/cve-2022-1623)"
@@ -5349,8 +5094,80 @@
           ]
         },
         {
+          "ruleId": "CVE-2022-2056",
+          "ruleIndex": 69,
+          "level": "warning",
+          "message": {
+            "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-2056\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-2056](https://avd.aquasec.com/nvd/cve-2022-2056)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/nginx",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-2057",
+          "ruleIndex": 70,
+          "level": "warning",
+          "message": {
+            "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-2057\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-2057](https://avd.aquasec.com/nvd/cve-2022-2057)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/nginx",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-2058",
+          "ruleIndex": 71,
+          "level": "warning",
+          "message": {
+            "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-2058\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2022-2058](https://avd.aquasec.com/nvd/cve-2022-2058)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "library/nginx",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
           "ruleId": "CVE-2014-8130",
-          "ruleIndex": 74,
+          "ruleIndex": 72,
           "level": "note",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2014-8130\nSeverity: LOW\nFixed Version: \nLink: [CVE-2014-8130](https://avd.aquasec.com/nvd/cve-2014-8130)"
@@ -5374,7 +5191,7 @@
         },
         {
           "ruleId": "CVE-2017-16232",
-          "ruleIndex": 75,
+          "ruleIndex": 73,
           "level": "note",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2017-16232\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-16232](https://avd.aquasec.com/nvd/cve-2017-16232)"
@@ -5398,7 +5215,7 @@
         },
         {
           "ruleId": "CVE-2017-17973",
-          "ruleIndex": 76,
+          "ruleIndex": 74,
           "level": "note",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2017-17973\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-17973](https://avd.aquasec.com/nvd/cve-2017-17973)"
@@ -5422,7 +5239,7 @@
         },
         {
           "ruleId": "CVE-2017-5563",
-          "ruleIndex": 77,
+          "ruleIndex": 75,
           "level": "note",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2017-5563\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-5563](https://avd.aquasec.com/nvd/cve-2017-5563)"
@@ -5446,7 +5263,7 @@
         },
         {
           "ruleId": "CVE-2017-9117",
-          "ruleIndex": 78,
+          "ruleIndex": 76,
           "level": "note",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2017-9117\nSeverity: LOW\nFixed Version: \nLink: [CVE-2017-9117](https://avd.aquasec.com/nvd/cve-2017-9117)"
@@ -5470,7 +5287,7 @@
         },
         {
           "ruleId": "CVE-2018-10126",
-          "ruleIndex": 79,
+          "ruleIndex": 77,
           "level": "note",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2018-10126\nSeverity: LOW\nFixed Version: \nLink: [CVE-2018-10126](https://avd.aquasec.com/nvd/cve-2018-10126)"
@@ -5494,7 +5311,7 @@
         },
         {
           "ruleId": "CVE-2022-1056",
-          "ruleIndex": 80,
+          "ruleIndex": 78,
           "level": "note",
           "message": {
             "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-1056\nSeverity: LOW\nFixed Version: \nLink: [CVE-2022-1056](https://avd.aquasec.com/nvd/cve-2022-1056)"
@@ -5517,59 +5334,11 @@
           ]
         },
         {
-          "ruleId": "CVE-2022-2056",
-          "ruleIndex": 81,
+          "ruleId": "CVE-2022-1210",
+          "ruleIndex": 79,
           "level": "note",
           "message": {
-            "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-2056\nSeverity: UNKNOWN\nFixed Version: \nLink: [CVE-2022-2056](https://avd.aquasec.com/nvd/cve-2022-2056)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2022-2057",
-          "ruleIndex": 82,
-          "level": "note",
-          "message": {
-            "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-2057\nSeverity: UNKNOWN\nFixed Version: \nLink: [CVE-2022-2057](https://avd.aquasec.com/nvd/cve-2022-2057)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2022-2058",
-          "ruleIndex": 83,
-          "level": "note",
-          "message": {
-            "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-2058\nSeverity: UNKNOWN\nFixed Version: \nLink: [CVE-2022-2058](https://avd.aquasec.com/nvd/cve-2022-2058)"
+            "text": "Package: libtiff5\nInstalled Version: 4.2.0-1+deb11u1\nVulnerability CVE-2022-1210\nSeverity: LOW\nFixed Version: \nLink: [CVE-2022-1210](https://avd.aquasec.com/nvd/cve-2022-1210)"
           },
           "locations": [
             {
@@ -5590,7 +5359,7 @@
         },
         {
           "ruleId": "CVE-2022-29458",
-          "ruleIndex": 84,
+          "ruleIndex": 80,
           "level": "error",
           "message": {
             "text": "Package: libtinfo6\nInstalled Version: 6.2+20201114-2\nVulnerability CVE-2022-29458\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)"
@@ -5614,7 +5383,7 @@
         },
         {
           "ruleId": "CVE-2021-39537",
-          "ruleIndex": 85,
+          "ruleIndex": 81,
           "level": "note",
           "message": {
             "text": "Package: libtinfo6\nInstalled Version: 6.2+20201114-2\nVulnerability CVE-2021-39537\nSeverity: LOW\nFixed Version: \nLink: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)"
@@ -5638,7 +5407,7 @@
         },
         {
           "ruleId": "CVE-2013-4392",
-          "ruleIndex": 67,
+          "ruleIndex": 63,
           "level": "note",
           "message": {
             "text": "Package: libudev1\nInstalled Version: 247.3-7\nVulnerability CVE-2013-4392\nSeverity: LOW\nFixed Version: \nLink: [CVE-2013-4392](https://avd.aquasec.com/nvd/cve-2013-4392)"
@@ -5662,7 +5431,7 @@
         },
         {
           "ruleId": "CVE-2020-13529",
-          "ruleIndex": 68,
+          "ruleIndex": 64,
           "level": "note",
           "message": {
             "text": "Package: libudev1\nInstalled Version: 247.3-7\nVulnerability CVE-2020-13529\nSeverity: LOW\nFixed Version: \nLink: [CVE-2020-13529](https://avd.aquasec.com/nvd/cve-2020-13529)"
@@ -5710,7 +5479,7 @@
         },
         {
           "ruleId": "CVE-2016-9085",
-          "ruleIndex": 86,
+          "ruleIndex": 82,
           "level": "note",
           "message": {
             "text": "Package: libwebp6\nInstalled Version: 0.6.1-2.1\nVulnerability CVE-2016-9085\nSeverity: LOW\nFixed Version: \nLink: [CVE-2016-9085](https://avd.aquasec.com/nvd/cve-2016-9085)"
@@ -5734,7 +5503,7 @@
         },
         {
           "ruleId": "CVE-2015-9019",
-          "ruleIndex": 87,
+          "ruleIndex": 83,
           "level": "note",
           "message": {
             "text": "Package: libxslt1.1\nInstalled Version: 1.1.34-4\nVulnerability CVE-2015-9019\nSeverity: LOW\nFixed Version: \nLink: [CVE-2015-9019](https://avd.aquasec.com/nvd/cve-2015-9019)"
@@ -5758,7 +5527,7 @@
         },
         {
           "ruleId": "CVE-2007-5686",
-          "ruleIndex": 88,
+          "ruleIndex": 84,
           "level": "note",
           "message": {
             "text": "Package: login\nInstalled Version: 1:4.8.1-1\nVulnerability CVE-2007-5686\nSeverity: LOW\nFixed Version: \nLink: [CVE-2007-5686](https://avd.aquasec.com/nvd/cve-2007-5686)"
@@ -5782,7 +5551,7 @@
         },
         {
           "ruleId": "CVE-2013-4235",
-          "ruleIndex": 89,
+          "ruleIndex": 85,
           "level": "note",
           "message": {
             "text": "Package: login\nInstalled Version: 1:4.8.1-1\nVulnerability CVE-2013-4235\nSeverity: LOW\nFixed Version: \nLink: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)"
@@ -5806,7 +5575,7 @@
         },
         {
           "ruleId": "CVE-2019-19882",
-          "ruleIndex": 90,
+          "ruleIndex": 86,
           "level": "note",
           "message": {
             "text": "Package: login\nInstalled Version: 1:4.8.1-1\nVulnerability CVE-2019-19882\nSeverity: LOW\nFixed Version: \nLink: [CVE-2019-19882](https://avd.aquasec.com/nvd/cve-2019-19882)"
@@ -5878,7 +5647,7 @@
         },
         {
           "ruleId": "CVE-2022-29458",
-          "ruleIndex": 84,
+          "ruleIndex": 80,
           "level": "error",
           "message": {
             "text": "Package: ncurses-base\nInstalled Version: 6.2+20201114-2\nVulnerability CVE-2022-29458\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)"
@@ -5902,7 +5671,7 @@
         },
         {
           "ruleId": "CVE-2021-39537",
-          "ruleIndex": 85,
+          "ruleIndex": 81,
           "level": "note",
           "message": {
             "text": "Package: ncurses-base\nInstalled Version: 6.2+20201114-2\nVulnerability CVE-2021-39537\nSeverity: LOW\nFixed Version: \nLink: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)"
@@ -5926,7 +5695,7 @@
         },
         {
           "ruleId": "CVE-2022-29458",
-          "ruleIndex": 84,
+          "ruleIndex": 80,
           "level": "error",
           "message": {
             "text": "Package: ncurses-bin\nInstalled Version: 6.2+20201114-2\nVulnerability CVE-2022-29458\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)"
@@ -5950,7 +5719,7 @@
         },
         {
           "ruleId": "CVE-2021-39537",
-          "ruleIndex": 85,
+          "ruleIndex": 81,
           "level": "note",
           "message": {
             "text": "Package: ncurses-bin\nInstalled Version: 6.2+20201114-2\nVulnerability CVE-2021-39537\nSeverity: LOW\nFixed Version: \nLink: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)"
@@ -5973,35 +5742,11 @@
           ]
         },
         {
-          "ruleId": "CVE-2021-3618",
-          "ruleIndex": 91,
-          "level": "error",
-          "message": {
-            "text": "Package: nginx\nInstalled Version: 1.23.0-1~bullseye\nVulnerability CVE-2021-3618\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2021-3618](https://avd.aquasec.com/nvd/cve-2021-3618)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "library/nginx",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              }
-            }
-          ]
-        },
-        {
           "ruleId": "CVE-2020-36309",
-          "ruleIndex": 92,
+          "ruleIndex": 87,
           "level": "warning",
           "message": {
-            "text": "Package: nginx\nInstalled Version: 1.23.0-1~bullseye\nVulnerability CVE-2020-36309\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2020-36309](https://avd.aquasec.com/nvd/cve-2020-36309)"
+            "text": "Package: nginx\nInstalled Version: 1.23.1-1~bullseye\nVulnerability CVE-2020-36309\nSeverity: MEDIUM\nFixed Version: \nLink: [CVE-2020-36309](https://avd.aquasec.com/nvd/cve-2020-36309)"
           },
           "locations": [
             {
@@ -6022,10 +5767,10 @@
         },
         {
           "ruleId": "CVE-2009-4487",
-          "ruleIndex": 93,
+          "ruleIndex": 88,
           "level": "note",
           "message": {
-            "text": "Package: nginx\nInstalled Version: 1.23.0-1~bullseye\nVulnerability CVE-2009-4487\nSeverity: LOW\nFixed Version: \nLink: [CVE-2009-4487](https://avd.aquasec.com/nvd/cve-2009-4487)"
+            "text": "Package: nginx\nInstalled Version: 1.23.1-1~bullseye\nVulnerability CVE-2009-4487\nSeverity: LOW\nFixed Version: \nLink: [CVE-2009-4487](https://avd.aquasec.com/nvd/cve-2009-4487)"
           },
           "locations": [
             {
@@ -6046,10 +5791,10 @@
         },
         {
           "ruleId": "CVE-2013-0337",
-          "ruleIndex": 94,
+          "ruleIndex": 89,
           "level": "note",
           "message": {
-            "text": "Package: nginx\nInstalled Version: 1.23.0-1~bullseye\nVulnerability CVE-2013-0337\nSeverity: LOW\nFixed Version: \nLink: [CVE-2013-0337](https://avd.aquasec.com/nvd/cve-2013-0337)"
+            "text": "Package: nginx\nInstalled Version: 1.23.1-1~bullseye\nVulnerability CVE-2013-0337\nSeverity: LOW\nFixed Version: \nLink: [CVE-2013-0337](https://avd.aquasec.com/nvd/cve-2013-0337)"
           },
           "locations": [
             {
@@ -6069,11 +5814,11 @@
           ]
         },
         {
-          "ruleId": "CVE-2022-2068",
-          "ruleIndex": 64,
+          "ruleId": "CVE-2022-2097",
+          "ruleIndex": 60,
           "level": "error",
           "message": {
-            "text": "Package: openssl\nInstalled Version: 1.1.1n-0+deb11u2\nVulnerability CVE-2022-2068\nSeverity: CRITICAL\nFixed Version: 1.1.1n-0+deb11u3\nLink: [CVE-2022-2068](https://avd.aquasec.com/nvd/cve-2022-2068)"
+            "text": "Package: openssl\nInstalled Version: 1.1.1n-0+deb11u3\nVulnerability CVE-2022-2097\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-2097](https://avd.aquasec.com/nvd/cve-2022-2097)"
           },
           "locations": [
             {
@@ -6094,10 +5839,10 @@
         },
         {
           "ruleId": "CVE-2007-6755",
-          "ruleIndex": 65,
+          "ruleIndex": 61,
           "level": "note",
           "message": {
-            "text": "Package: openssl\nInstalled Version: 1.1.1n-0+deb11u2\nVulnerability CVE-2007-6755\nSeverity: LOW\nFixed Version: \nLink: [CVE-2007-6755](https://avd.aquasec.com/nvd/cve-2007-6755)"
+            "text": "Package: openssl\nInstalled Version: 1.1.1n-0+deb11u3\nVulnerability CVE-2007-6755\nSeverity: LOW\nFixed Version: \nLink: [CVE-2007-6755](https://avd.aquasec.com/nvd/cve-2007-6755)"
           },
           "locations": [
             {
@@ -6118,10 +5863,10 @@
         },
         {
           "ruleId": "CVE-2010-0928",
-          "ruleIndex": 66,
+          "ruleIndex": 62,
           "level": "note",
           "message": {
-            "text": "Package: openssl\nInstalled Version: 1.1.1n-0+deb11u2\nVulnerability CVE-2010-0928\nSeverity: LOW\nFixed Version: \nLink: [CVE-2010-0928](https://avd.aquasec.com/nvd/cve-2010-0928)"
+            "text": "Package: openssl\nInstalled Version: 1.1.1n-0+deb11u3\nVulnerability CVE-2010-0928\nSeverity: LOW\nFixed Version: \nLink: [CVE-2010-0928](https://avd.aquasec.com/nvd/cve-2010-0928)"
           },
           "locations": [
             {
@@ -6142,7 +5887,7 @@
         },
         {
           "ruleId": "CVE-2007-5686",
-          "ruleIndex": 88,
+          "ruleIndex": 84,
           "level": "note",
           "message": {
             "text": "Package: passwd\nInstalled Version: 1:4.8.1-1\nVulnerability CVE-2007-5686\nSeverity: LOW\nFixed Version: \nLink: [CVE-2007-5686](https://avd.aquasec.com/nvd/cve-2007-5686)"
@@ -6166,7 +5911,7 @@
         },
         {
           "ruleId": "CVE-2013-4235",
-          "ruleIndex": 89,
+          "ruleIndex": 85,
           "level": "note",
           "message": {
             "text": "Package: passwd\nInstalled Version: 1:4.8.1-1\nVulnerability CVE-2013-4235\nSeverity: LOW\nFixed Version: \nLink: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)"
@@ -6190,7 +5935,7 @@
         },
         {
           "ruleId": "CVE-2019-19882",
-          "ruleIndex": 90,
+          "ruleIndex": 86,
           "level": "note",
           "message": {
             "text": "Package: passwd\nInstalled Version: 1:4.8.1-1\nVulnerability CVE-2019-19882\nSeverity: LOW\nFixed Version: \nLink: [CVE-2019-19882](https://avd.aquasec.com/nvd/cve-2019-19882)"
@@ -6214,7 +5959,7 @@
         },
         {
           "ruleId": "CVE-2020-16156",
-          "ruleIndex": 95,
+          "ruleIndex": 90,
           "level": "error",
           "message": {
             "text": "Package: perl-base\nInstalled Version: 5.32.1-4+deb11u2\nVulnerability CVE-2020-16156\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2020-16156](https://avd.aquasec.com/nvd/cve-2020-16156)"
@@ -6238,7 +5983,7 @@
         },
         {
           "ruleId": "CVE-2011-4116",
-          "ruleIndex": 96,
+          "ruleIndex": 91,
           "level": "note",
           "message": {
             "text": "Package: perl-base\nInstalled Version: 5.32.1-4+deb11u2\nVulnerability CVE-2011-4116\nSeverity: LOW\nFixed Version: \nLink: [CVE-2011-4116](https://avd.aquasec.com/nvd/cve-2011-4116)"
@@ -6262,7 +6007,7 @@
         },
         {
           "ruleId": "CVE-2005-2541",
-          "ruleIndex": 97,
+          "ruleIndex": 92,
           "level": "note",
           "message": {
             "text": "Package: tar\nInstalled Version: 1.34+dfsg-1\nVulnerability CVE-2005-2541\nSeverity: LOW\nFixed Version: \nLink: [CVE-2005-2541](https://avd.aquasec.com/nvd/cve-2005-2541)"

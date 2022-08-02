@@ -5,9 +5,6 @@
 DBVSS is a context-based scoring system intended for use in analyzing the security of software deployed to an adaptive
 medium.
 
-## Scoring Graph ##
-![](scoring_graph.png)
-
 * ### Network Configuration
   The Network Deployment category describes the public internet's access to the deployed service. This category is used
   to evaluate the effect of a network-based vulnerability's impact on the deployed service.
@@ -44,15 +41,15 @@ medium.
 * ### Command Line Permissions
   Describes the level of commandline access this service has access to. This category is used to analyze the effect of
   code-execution vulnerabilities.
-    * #### Full
+    * ### Full
       The service has superuser privileges.
-    * #### Restricted
+    * ### Restricted
       The service has more privileges than the average user.
-    * #### Standard
+    * ### Standard
       The service has the privileges of a default user.
-    * #### Required
+    * ### Required
       The service only has access to tools absolutely necessary for its operation.
-    * #### None
+    * ### None
       The service has no access to any commandline tools.
 
 * ### File Permissions
@@ -60,13 +57,13 @@ medium.
   information sensitivity to determine the effect of file-system exploits.
   Selection of these categories should fall on the highest value based on read + write. If a service cannot write to
   every file but can read every file, it should be given the "Full" identifier.
-    * #### Full
+    * ### Full
       The service has read or write access to all files on the host machine.
-    * #### Restricted
+    * ### Restricted
       The service has access to some otherwise restricted files but more than a standard user.
-    * #### Standard
+    * ### Standard
       The service has read-only access to otherwise protected file-system files.
-    * #### Required
+    * ### Required
       The service only has access to files required for its operation
-    * #### None
+    * ### None
       The service does not require or is not given any access to the file system.

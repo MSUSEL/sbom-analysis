@@ -5,30 +5,30 @@
   "Metadata": {
     "OS": {
       "Family": "alpine",
-      "Name": "3.15.4"
+      "Name": "3.16.1"
     },
-    "ImageID": "sha256:0ac33e5f5afa79e084075e8698a22d574816eea8d7b7d480586835657c3e1c8b",
+    "ImageID": "sha256:d7d3d98c851ff3a95dbcb70ce09d186c9aaf7e25d48d55c0f99aae360aecfd53",
     "DiffIDs": [
-      "sha256:4fc242d58285699eca05db3cc7c7122a2b8e014d9481f323bd9277baacfa0628"
+      "sha256:ec34fcc1d526fba48f7f88e4ec765fccc17d4692570db85cf32d9d6b020330f2"
     ],
     "RepoTags": [
       "alpine:latest"
     ],
     "RepoDigests": [
-      "alpine@sha256:4edbd2beb5f78b1014028f4fbb99f3237d9561100b6881aabbf5acce2c4f9454"
+      "alpine@sha256:7580ece7963bfa863801466c0a488f11c86f85d9988051a9f9c68cb27f6b7872"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "container": "b714116bd3f3418e7b61a6d70dd7244382f0844e47a8d1d66dbf61cb1cb02b2b",
-      "created": "2022-04-05T00:19:59.912662499Z",
+      "container": "91655ecaaf00a9d3d4b63509dfbbcd79b0e9aafc941e6f1e582c5694fd35173a",
+      "created": "2022-07-18T21:00:15.928720935Z",
       "docker_version": "20.10.12",
       "history": [
         {
-          "created": "2022-04-05T00:19:59Z",
-          "created_by": "/bin/sh -c #(nop) ADD file:5d673d25da3a14ce1f6cf66e4c7fd4f4b85a3759a9d93efb3fd9ff852b5b56e4 in / "
+          "created": "2022-07-18T21:00:15.800417218Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:a2648378045615c3785c752423b1afc8dc1c2b213393344f4d0ca17e7255c1cb in / "
         },
         {
-          "created": "2022-04-05T00:19:59Z",
+          "created": "2022-07-18T21:00:15.928720935Z",
           "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
           "empty_layer": true
         }
@@ -37,7 +37,7 @@
       "rootfs": {
         "type": "layers",
         "diff_ids": [
-          "sha256:4fc242d58285699eca05db3cc7c7122a2b8e014d9481f323bd9277baacfa0628"
+          "sha256:ec34fcc1d526fba48f7f88e4ec765fccc17d4692570db85cf32d9d6b020330f2"
         ]
       },
       "config": {
@@ -47,13 +47,13 @@
         "Env": [
           "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
         ],
-        "Image": "sha256:d49869997c508135352366cebd3509ee756bba1ceb8eef708a4c3ff0d481084a"
+        "Image": "sha256:a50137877e0085f46fd267fa196ea38f6855d679e57a7bf7254e9b169e706034"
       }
     }
   },
   "Results": [
     {
-      "Target": "alpine:latest (alpine 3.15.4)",
+      "Target": "alpine:latest (alpine 3.16.1)",
       "Class": "os-pkgs",
       "Type": "alpine"
     }

@@ -9,11 +9,16 @@ use std::time::SystemTime;
 
 use futures::lock::Mutex;
 
-use crate::{Grype, Trivy, VulnerabilityFormat};
-use crate::context::{DeploymentContext, VulnerabilityScore};
-use crate::format::{read_file, VulnFilter, VulnFormat};
-use crate::util::io::RecurseDir;
+use scayl::{DeploymentContext, Grype, read_json, RecurseDir, Trivy, VulnerabilityFormat, VulnerabilityScore, VulnFilter, VulnFormat};
 
+/// A task for analyzing many pieces of software in parallel.
+///
+/// # Arguments
+/// * `paths` - A directory of paths to analyze.
+/// * `context` - The path to the deployment context.
+///
+/// # Returns
+/// A future that resolves to a unit, results are written to a new folder.
 pub async fn en_mass<P, CP>(path: P, context: CP)
     where P: AsRef<Path>,
           CP: AsRef<Path> {
@@ -22,7 +27,8 @@ pub async fn en_mass<P, CP>(path: P, context: CP)
         |path, fmt| (path, fmt),
     );
 
-    let context: DeploymentContext = read_file(context.as_ref()).unwrap();
+    // TODO: Throw an actual error if the context file doesn't exist.
+    let context: DeploymentContext = read_json(context.as_ref()).unwrap();
 
     let num_threads = num_cpus::get().min(files.len());
     let files = Arc::new(Mutex::new(files));
@@ -46,7 +52,7 @@ pub async fn en_mass<P, CP>(path: P, context: CP)
                             let mut lock = stdout().lock();
                             writeln!(lock, "Reading file: {}", begin).unwrap();
                         });
-                        let grype: Grype = read_file(&path)
+                        let grype: Grype = read_json(&path)
                             .expect(format!("Failed to read file: {}", path.display()).as_str());
                         tokio::spawn(async move {
                             let mut lock = stdout().lock();
@@ -59,7 +65,7 @@ pub async fn en_mass<P, CP>(path: P, context: CP)
                             let mut lock = stdout().lock();
                             writeln!(lock, "Reading file: {}", begin).unwrap();
                         });
-                        let trivy: Trivy = read_file(&path)
+                        let trivy: Trivy = read_json(&path)
                             .expect(format!("Failed to read file: {}", path.display()).as_str());
                         tokio::spawn(async move {
                             let mut lock = stdout().lock();
