@@ -296,7 +296,7 @@ impl DeploymentContext {
     }
 }
 
-/// The broken-down score of a single piece of software.
+/// The broken-down score of a single vulnerability.
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct VulnerabilityScore {
     /// The average network score of the vulnerability.
