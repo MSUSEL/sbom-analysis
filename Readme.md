@@ -46,8 +46,8 @@ The tool can be run using `cargo run -- ...arguments` or a native executable can
 * [Syft (we used 0.46)](https://github.com/anchore/syft)
 * [Trivy (we used 0.29.1)](https://github.com/aquasecurity/trivy)
 
-Windows:
-* WSL2 for the analyze.sh script to and analyze images
+Windows:  
+*Optional: WSL2 to be able to use the analyze.sh script for automatically generating reports on an image*
 ```shell
 cargo build --release
 cp target/release/scayl_bin.exe scayl.exe
