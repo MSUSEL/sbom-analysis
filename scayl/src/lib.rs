@@ -1,7 +1,4 @@
 //! A vulnerability analysis tool designed to score vulnerabilities inside of a vulnerability report.
-//!
-//! # Examples
-//!
 
 extern crate futures;
 #[macro_use]
