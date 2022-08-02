@@ -8,7 +8,7 @@ Materials) & Vulnerability reports to measure the security of a piece of softwar
 This project consists of three different components:
 1) **[Scayl Bin](./Cargo.toml)** is a command line tool that can be ran to analyze the quality of a piece of software.
 2) **[Scayl Lib](./scayl)** is a rust library that can be used by other projects to analyze the quality of a piece of software.
-   - **Documentation for the scayl library can be found [here](https://msusel.github.io/sbom-analysis/scayl/index.html)**
+   - Documentation for the scayl library can be found [here](https://msusel.github.io/sbom-analysis/scayl/index.html)
 3) **[Scayl Results](./results)**
 
 ## Disclaimer
