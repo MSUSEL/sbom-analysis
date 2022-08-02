@@ -41,7 +41,7 @@ The tool can be run using `cargo run -- ...arguments` or a native executable can
 
 #### Requirements
 * Rust >=1.61.0
-* Cargo >=0.36.0 (can be installed alongside rust at [rustup.rs](https://rustup.rs)
+* Cargo >=0.36.0 (can be installed alongside Rust at [rustup.rs](https://rustup.rs))
 * [Grype (we used 0.38)](https://github.com/anchore/grype)
 * [Syft (we used 0.46)](https://github.com/anchore/syft)
 * [Trivy (we used 0.29.1)](https://github.com/aquasecurity/trivy)
