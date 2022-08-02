@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["BaseMetricV2",""],["BaseMetricV3",""],["Configurations",""],["CpeMatch",""],["Cve",""],["CveDataMeta",""],["CveItem",""],["CvssV2",""],["CvssV3",""],["Description",""],["Description2",""],["DescriptionDaum",""],["Impact",""],["Node",""],["NvdCve",""],["NvdResult",""],["Problemtype",""],["ProblemtypeDaum",""],["ReferenceDaum",""],["References",""]]});

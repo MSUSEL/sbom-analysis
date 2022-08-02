@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Config",""],["CvssScore",""],["History",""],["ImageConfig",""],["RootFS",""],["Trivy",""],["TrivyCvss",""],["TrivyDataSource",""],["TrivyFileFilter",""],["TrivyLayer",""],["TrivyMetadata",""],["TrivyOs",""],["TrivyResult",""],["TrivyVulnerability",""]]});

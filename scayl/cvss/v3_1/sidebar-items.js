@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["AttackComplexity",""],["AttackVector",""],["ImpactMetric",""],["PrivilegesRequired",""],["Scope",""],["UserInteraction",""]],"fn":[["roundup","The roundup function specified in the CVSS v3.1 specification."]],"struct":[["BaseMetric",""]]});

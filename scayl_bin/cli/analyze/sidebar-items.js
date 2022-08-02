@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Error","An error representing possible issues during the analysis process"],["Fmt","The vulnerability format of a file"],["OutFile","An internal output file"]],"fn":[["analyze","The main entry point for the analysis process"],["read_file","Read a file and return the contents as an `OutFile`"]],"struct":[["InFile","An internal input file"]]});

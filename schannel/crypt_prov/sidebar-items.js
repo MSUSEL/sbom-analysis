@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["AcquireOptions","A builder for `CryptProv`s."],["CryptProv","A CryptoAPI handle to a provider of a key."],["ImportOptions","A builder for key imports."],["ProviderType","An identifier of the type of cryptography provider to be used with a container."]]});

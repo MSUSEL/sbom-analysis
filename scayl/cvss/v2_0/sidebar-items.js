@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["AccessComplexity",""],["AccessVector",""],["Authentication",""],["CollateralDamagePotential",""],["Exploitability",""],["Impact",""],["RemediationLevel",""],["ReportConfidence",""],["SecurityRequirement",""],["TargetDistribution",""]],"struct":[["BaseMetric",""],["EnvironmentMetric",""],["TemporalMetric",""]]});

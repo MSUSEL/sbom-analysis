@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["NcryptKey","A CNG handle to a key."]]});

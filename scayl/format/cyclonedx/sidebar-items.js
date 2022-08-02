@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Severity",""],["Status",""]],"struct":[["Advisory",""],["Affected",""],["Component",""],["CycloneDx",""],["Dependency",""],["Metadata",""],["Property",""],["Rating",""],["RatingSource",""],["Source",""],["Tool",""],["Version",""],["Vulnerability",""]]});

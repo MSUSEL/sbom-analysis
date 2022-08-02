@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["scayl_bin"] = [{"text":"impl <a class=\"trait\" href=\"clap/derive/trait.Parser.html\" title=\"trait clap::derive::Parser\">Parser</a> for <a class=\"struct\" href=\"scayl_bin/cli/struct.Cli.html\" title=\"struct scayl_bin::cli::Cli\">Cli</a>","synthetic":false,"types":["scayl_bin::cli::Cli"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

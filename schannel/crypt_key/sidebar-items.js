@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CryptKey","A handle to a key."]]});

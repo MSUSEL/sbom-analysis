@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["scayl_bin"] = [{"text":"impl <a class=\"trait\" href=\"clap/derive/trait.Subcommand.html\" title=\"trait clap::derive::Subcommand\">Subcommand</a> for <a class=\"enum\" href=\"scayl_bin/cli/enum.Commands.html\" title=\"enum scayl_bin::cli::Commands\">Commands</a>","synthetic":false,"types":["scayl_bin::cli::Commands"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

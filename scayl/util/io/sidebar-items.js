@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["write_json","A simple function to write a serializable object to a json file."],["write_table","Write a list of objects into a csv file."]],"trait":[["RecurseDir","An abstraction for recursing through a directory"]]});

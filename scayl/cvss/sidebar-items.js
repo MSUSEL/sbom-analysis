@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["v2_0","The CVSS v2.0 specification."],["v3_1","The CVSS v3.1 scoring specification"]],"trait":[["ComponentFromVector","An abstraction for CVSS Components."],["FromVector","An abstraction for CVSS Metrics"]]});
