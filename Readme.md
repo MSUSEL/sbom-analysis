@@ -5,9 +5,10 @@
 Scayl is a tool for measuring the quality of software. This project uses CVSS scores, generated SBOM (Software Bill of
 Materials) & Vulnerability reports to measure the security of a piece of software.
 
-It consists of three different components:
+This project consists of three different components:
 1) **[Scayl Bin](./Cargo.toml)** is a command line tool that can be ran to analyze the quality of a piece of software.
 2) **[Scayl Lib](./scayl)** is a rust library that can be used by other projects to analyze the quality of a piece of software.
+   - **Documentation for the scayl library can be found [here](https://msusel.github.io/sbom-analysis/scayl/index.html)**
 3) **[Scayl Results](./results)**
 
 ## Disclaimer
@@ -23,7 +24,6 @@ not possible during the ten weeks in which this version of the tool was develope
  - [Context](#context)  
  - [Results](#results)  
 
-**Documentation for the scayl library can be found [here](https://msusel.github.io/sbom-analysis/scayl/index.html)**
 
 ## CLI
 ```shell
@@ -42,10 +42,10 @@ SUBCOMMANDS:
     help       Print this message or the help of the given subcommand(s)
 ```
 
-### Building
+## Building
 The tool can be run using `cargo run -- ...arguments` or a native executable can be built using `cargo build`.<br>
 
-#### Requirements
+### Requirements
 * Rust >=1.61.0
 * Cargo >=0.36.0 (can be installed alongside Rust at [rustup.rs](https://rustup.rs))
 * [Grype (we used 0.38)](https://github.com/anchore/grype)
@@ -65,11 +65,11 @@ cargo build --release
 cp target/release/scayl_bin ./scayl
 ```
 
-### Usage
+## Usage
 `scayl analyze --cyclonedx image/cyclonedx.json --context ./context/network.json --out image.json`
 
 Analyzing multiple reports at once
-`scayl en-mass --context ./context/web_api.json ./reports/`
+`scayl en-mass --context ./context/web_api.json /path/to/reports/`
 
 ## Context
 
