@@ -36,8 +36,26 @@ SUBCOMMANDS:
 
 ### Building
 The tool can be run using `cargo run -- ...arguments` or a native executable can be built using `cargo build`.<br>
-Windows: `cargo build --release && cp target/release/scayl_bin.exe ./scayl.exe`<br>
-Linux/Mac: `cargo build --release && cp target/release/scayl_bin ./scayl`
+
+#### Requirements
+* Rust >=1.61.0
+* Cargo >=0.36.0 (can be installed alongside rust at [rustup.rs](https://rustup.rs)
+* [Grype (we used 0.38)](https://github.com/anchore/grype)
+* [Syft (we used 0.46)](https://github.com/anchore/syft)
+* [Trivy (we used 0.29.1)](https://github.com/aquasecurity/trivy)
+
+Windows:
+* WSL2 for the analyze.sh script to and analyze images
+```shell
+cargo build --release
+cp target/release/scayl_bin.exe scayl.exe
+```
+
+Mac/Linux:
+```shell
+cargo build --release
+cp target/release/scayl_bin ./scayl
+```
 
 ### Usage
 `scayl analyze --cyclonedx image/cyclonedx.json --context ./context/network.json --out image.json`
@@ -61,6 +79,8 @@ The current context model consists of five elements:
   How the software is able to execute commands on the command line.
 * #### File Permissions
   How the software is able to access the file system.
+
+For more detail on the context model, see [Context.md](Context.md).
 
 ## Results
 

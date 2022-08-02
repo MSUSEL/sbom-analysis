@@ -13,7 +13,7 @@ use crate::cvss::v3_1::*;
 use crate::cvss::v3_1;
 use crate::format::VulnId;
 
-#[cfg(any(feature = "grype", feature = "syft", feature = "trivy"))]
+#[cfg(any(feature = "grype", feature = "syft", feature = "trivy", feature="cyclonedx"))]
 /// The scoring mechanism which processes the results of the various tools
 mod runner;
 
