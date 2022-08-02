@@ -1,98 +1,98 @@
 {
-  "matches": [],
-  "source": {
-    "type": "image",
-    "target": {
-      "userInput": "alpine:latest",
-      "imageID": "sha256:0ac33e5f5afa79e084075e8698a22d574816eea8d7b7d480586835657c3e1c8b",
-      "manifestDigest": "sha256:e2c6ba115559d2f581ffa44e9e0720c531ca2c6231a57ac9693151f0018ee4b2",
-      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-      "tags": [
-        "alpine:latest"
-      ],
-      "imageSize": 5570141,
-      "layers": [
-        {
-          "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-          "digest": "sha256:4fc242d58285699eca05db3cc7c7122a2b8e014d9481f323bd9277baacfa0628",
-          "size": 5570141
-        }
-      ],
-      "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxNDcyLCJkaWdlc3QiOiJzaGEyNTY6MGFjMzNlNWY1YWZhNzllMDg0MDc1ZTg2OThhMjJkNTc0ODE2ZWVhOGQ3YjdkNDgwNTg2ODM1NjU3YzNlMWM4YiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo1ODU1MjMyLCJkaWdlc3QiOiJzaGEyNTY6NGZjMjQyZDU4Mjg1Njk5ZWNhMDVkYjNjYzdjNzEyMmEyYjhlMDE0ZDk0ODFmMzIzYmQ5Mjc3YmFhY2ZhMDYyOCJ9XX0=",
-      "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbIi9iaW4vc2giXSwiSW1hZ2UiOiJzaGEyNTY6ZDQ5ODY5OTk3YzUwODEzNTM1MjM2NmNlYmQzNTA5ZWU3NTZiYmExY2ViOGVlZjcwOGE0YzNmZjBkNDgxMDg0YSIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpudWxsLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOm51bGx9LCJjb250YWluZXIiOiJiNzE0MTE2YmQzZjM0MThlN2I2MWE2ZDcwZGQ3MjQ0MzgyZjA4NDRlNDdhOGQxZDY2ZGJmNjFjYjFjYjAyYjJiIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6ImI3MTQxMTZiZDNmMyIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJDTUQgW1wiL2Jpbi9zaFwiXSJdLCJJbWFnZSI6InNoYTI1NjpkNDk4Njk5OTdjNTA4MTM1MzUyMzY2Y2ViZDM1MDllZTc1NmJiYTFjZWI4ZWVmNzA4YTRjM2ZmMGQ0ODEwODRhIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOm51bGwsIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6e319LCJjcmVhdGVkIjoiMjAyMi0wNC0wNVQwMDoxOTo1OS45MTI2NjI0OTlaIiwiZG9ja2VyX3ZlcnNpb24iOiIyMC4xMC4xMiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIyLTA0LTA1VDAwOjE5OjU5Ljc5MDYzNjg2N1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6NWQ2NzNkMjVkYTNhMTRjZTFmNmNmNjZlNGM3ZmQ0ZjRiODVhMzc1OWE5ZDkzZWZiM2ZkOWZmODUyYjViNTZlNCBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjItMDQtMDVUMDA6MTk6NTkuOTEyNjYyNDk5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi9iaW4vc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NGZjMjQyZDU4Mjg1Njk5ZWNhMDVkYjNjYzdjNzEyMmEyYjhlMDE0ZDk0ODFmMzIzYmQ5Mjc3YmFhY2ZhMDYyOCJdfX0=",
-      "repoDigests": [
-        "alpine@sha256:4edbd2beb5f78b1014028f4fbb99f3237d9561100b6881aabbf5acce2c4f9454"
-      ],
-      "architecture": "amd64",
-      "os": "linux"
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "alpine:latest",
+   "imageID": "sha256:d7d3d98c851ff3a95dbcb70ce09d186c9aaf7e25d48d55c0f99aae360aecfd53",
+   "manifestDigest": "sha256:9b2a28eb47540823042a2ba401386845089bb7b62a9637d55816132c4c3c36eb",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [],
+   "imageSize": 5524246,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:ec34fcc1d526fba48f7f88e4ec765fccc17d4692570db85cf32d9d6b020330f2",
+     "size": 5524246
     }
-  },
-  "distro": {
-    "name": "alpine",
-    "version": "3.15.4",
-    "idLike": []
-  },
-  "descriptor": {
-    "name": "grype",
-    "version": "0.38.0",
-    "configuration": {
-      "configPath": "",
-      "output": "json",
-      "file": "",
-      "distro": "",
-      "add-cpes-if-none": false,
-      "output-template-file": "",
-      "quiet": false,
-      "check-for-app-update": true,
-      "only-fixed": false,
-      "platform": "",
-      "search": {
-        "scope": "Squashed",
-        "unindexed-archives": false,
-        "indexed-archives": true
-      },
-      "ignore": null,
-      "exclude": [],
-      "db": {
-        "cache-dir": "/home/molkars/.cache/grype/db",
-        "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
-        "ca-cert": "",
-        "auto-update": true,
-        "validate-by-hash-on-start": false
-      },
-      "externalSources": {
-        "enable": false,
-        "maven": {
-          "searchUpstreamBySha1": true,
-          "baseUrl": "https://search.maven.org/solrsearch/select"
-        }
-      },
-      "dev": {
-        "profile-cpu": false,
-        "profile-mem": false
-      },
-      "fail-on-severity": "",
-      "registry": {
-        "insecure-skip-tls-verify": false,
-        "insecure-use-http": false,
-        "auth": []
-      },
-      "log": {
-        "structured": false,
-        "level": "",
-        "file": ""
-      },
-      "attestation": {
-        "public-key": "",
-        "skip-verification": false
-      }
-    },
-    "db": {
-      "built": "2022-07-01T08:16:25Z",
-      "schemaVersion": 3,
-      "location": "/home/molkars/.cache/grype/db/3",
-      "checksum": "sha256:aee7832de2711eafdaca2af1e215fac7f5a507daa0319e5a0f5483f60de78d08",
-      "error": null
-    }
+   ],
+   "manifest": "ewogICAic2NoZW1hVmVyc2lvbiI6IDIsCiAgICJtZWRpYVR5cGUiOiAiYXBwbGljYXRpb24vdm5kLmRvY2tlci5kaXN0cmlidXRpb24ubWFuaWZlc3QudjIranNvbiIsCiAgICJjb25maWciOiB7CiAgICAgICJtZWRpYVR5cGUiOiAiYXBwbGljYXRpb24vdm5kLmRvY2tlci5jb250YWluZXIuaW1hZ2UudjEranNvbiIsCiAgICAgICJzaXplIjogMTQ3MiwKICAgICAgImRpZ2VzdCI6ICJzaGEyNTY6ZDdkM2Q5OGM4NTFmZjNhOTVkYmNiNzBjZTA5ZDE4NmM5YWFmN2UyNWQ0OGQ1NWMwZjk5YWFlMzYwYWVjZmQ1MyIKICAgfSwKICAgImxheWVycyI6IFsKICAgICAgewogICAgICAgICAibWVkaWFUeXBlIjogImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLAogICAgICAgICAic2l6ZSI6IDI3OTg4MDYsCiAgICAgICAgICJkaWdlc3QiOiAic2hhMjU2OjUzMGFmY2E2NWUyZWEwNDIyNzYzMGFlNzQ2ZTBjODViMmJkMWExNzkzNzljYmYyYjY1MDFiNDljNGNhYjJjY2MiCiAgICAgIH0KICAgXQp9",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbIi9iaW4vc2giXSwiSW1hZ2UiOiJzaGEyNTY6YTUwMTM3ODc3ZTAwODVmNDZmZDI2N2ZhMTk2ZWEzOGY2ODU1ZDY3OWU1N2E3YmY3MjU0ZTliMTY5ZTcwNjAzNCIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpudWxsLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOm51bGx9LCJjb250YWluZXIiOiI5MTY1NWVjYWFmMDBhOWQzZDRiNjM1MDlkZmJiY2Q3OWIwZTlhYWZjOTQxZTZmMWU1ODJjNTY5NGZkMzUxNzNhIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjkxNjU1ZWNhYWYwMCIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJDTUQgW1wiL2Jpbi9zaFwiXSJdLCJJbWFnZSI6InNoYTI1NjphNTAxMzc4NzdlMDA4NWY0NmZkMjY3ZmExOTZlYTM4ZjY4NTVkNjc5ZTU3YTdiZjcyNTRlOWIxNjllNzA2MDM0IiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOm51bGwsIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6e319LCJjcmVhdGVkIjoiMjAyMi0wNy0xOFQyMTowMDoxNS45Mjg3MjA5MzVaIiwiZG9ja2VyX3ZlcnNpb24iOiIyMC4xMC4xMiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIyLTA3LTE4VDIxOjAwOjE1LjgwMDQxNzIxOFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6YTI2NDgzNzgwNDU2MTVjMzc4NWM3NTI0MjNiMWFmYzhkYzFjMmIyMTMzOTMzNDRmNGQwY2ExN2U3MjU1YzFjYiBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjItMDctMThUMjE6MDA6MTUuOTI4NzIwOTM1WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi9iaW4vc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6ZWMzNGZjYzFkNTI2ZmJhNDhmN2Y4OGU0ZWM3NjVmY2NjMTdkNDY5MjU3MGRiODVjZjMyZDlkNmIwMjAzMzBmMiJdfX0=",
+   "repoDigests": [
+    "index.docker.io/library/alpine@sha256:7580ece7963bfa863801466c0a488f11c86f85d9988051a9f9c68cb27f6b7872"
+   ],
+   "architecture": "",
+   "os": ""
   }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.16.1",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.40.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/molkars/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   }
+  },
+  "db": {
+   "built": "2022-07-21T08:16:00Z",
+   "schemaVersion": 3,
+   "location": "/home/molkars/.cache/grype/db/3",
+   "checksum": "sha256:76ccd25010d18b365aae8b1e81b4f1b1193f35c0f98d31c8e0704ae79e3db140",
+   "error": null
+  }
+ }
 }
