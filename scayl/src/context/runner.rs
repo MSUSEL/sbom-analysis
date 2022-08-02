@@ -192,12 +192,37 @@ impl<'a> ContextRunner<'a> {
             (k, score)
         }).collect::<BTreeMap<_, _>>();
 
+        let mut averages = [1.0; 5];
+        for (i, (_, score)) in scores.iter().enumerate() {
+            averages[i] *= (1.0 + score.network);
+            averages[i] *= (1.0 + score.remote);
+            averages[i] *= (1.0 + score.information);
+            averages[i] *= (1.0 + score.files);
+            averages[i] *= (1.0 + score.permissions);
+        }
+        let averages = [
+          averages[0].powf(1.0 / scores.len() as f32) - 1.0,
+          averages[1].powf(1.0 / scores.len() as f32) - 1.0,
+          averages[2].powf(1.0 / scores.len() as f32) - 1.0,
+          averages[3].powf(1.0 / scores.len() as f32) - 1.0,
+          averages[4].powf(1.0 / scores.len() as f32) - 1.0,
+        ];
+        let sum: f32 = averages.iter().sum();
+
         Ok(DeploymentScore {
             context: context.clone(),
             scayl: ScaylInfo::current(),
             source: name.unwrap_or(String::from("Unknown")),
-            cumulative: scores.iter()
+            summed_score: scores.iter()
                 .fold(VulnerabilityScore::default(), |acc, (_, v)| acc + v),
+            score: VulnerabilityScore {
+                network: averages[0],
+                remote: averages[1],
+                information: averages[2],
+                files: averages[3],
+                permissions: averages[4],
+                sum
+            },
             scores,
         })
     }

@@ -31,13 +31,21 @@ impl<T: CvssProvider> CvssProvider for &T {
 
 macro_rules! comp {
     ($(#[$atr:meta])* $name:ident {
-        $($(#[$attr:meta])* $field:ident),*$(,)?
+        $($(#[$attr:meta])* $field:ident => $v:literal),*$(,)?
     }) => {
         #[derive(Debug, Clone, Serialize, Deserialize)]
         #[serde(rename_all = "camelCase")]
         $(#[$atr])*
         pub enum $name {
             $($(#[$attr])* $field),*
+        }
+
+        impl $name {
+            pub fn weight(&self) -> f32 {
+                match self {
+                    $(Self::$field => $v),*
+                }
+            }
         }
     }
 }
@@ -47,11 +55,11 @@ comp!(
 /// This category is used to evaluate the effect of a network-based vulnerability's impact on the deployed service.
 NetworkConfiguration {
     /// The internet has public access to the deployed service through a web server, a database, or a network device.
-    Public,
+    Public => 1.0,
     /// The internet has public access to an adjacent service but not this service.
-    Internal,
+    Internal => 0.8,
     /// The internet has no access to the deployed service.
-    Isolated,
+    Isolated => 0.1,
 });
 
 comp!(
@@ -59,11 +67,11 @@ comp!(
 /// This category is used to evaluate the effect of a remote-access vulnerability's impact on the deployed service.
 RemoteAccess {
     /// The deployed service is available to specific users on the wider internet.
-    Public,
+    Public => 1.0,
     /// The deployed service is available to specific users through a VPN.
-    VPN,
+    VPN => 0.6,
     /// The deployed service is available to specific users on-site.
-    None,
+    None => 0.2,
 });
 
 comp!(
@@ -71,13 +79,13 @@ comp!(
 /// This category is used to analyze the effect of information-targeting vulnerabilities.
 InformationSensitivity {
     /// The information that the service has access to is in no way sensitive or identifying.
-    Useless,
+    Useless => 0.25,
     /// The information that the service has access to is not particularly identifying or damaging but may be useful to attackers.
-    Insensitive,
+    Insensitive => 0.5,
     /// Leaked information identifies users or groups of users. This information is more than likely useful to attackers.
-    Identifying,
+    Identifying => 0.75,
     /// Leaked information is likely to cause harm without being intentionally weaponized by the attacker.
-    Damaging,
+    Damaging => 1.0,
 });
 
 comp!(
@@ -85,15 +93,15 @@ comp!(
 /// This category is used to analyze the effect of code-execution vulnerabilities.
 Permissions {
     /// The service has superuser privileges.
-    Full,
+    Full => 1.0,
     /// The service has more privileges than the average user.
-    Restricted,
+    Restricted => 0.8,
     /// The service has the privileges of a default user.
-    Standard,
+    Standard => 0.6,
     /// The service only has access to tools absolutely necessary for its operation.
-    Required,
+    Required => 0.2,
     /// The service has no access to any commandline tools.
-    None,
+    None => 0.01,
 });
 
 comp!(
@@ -103,15 +111,15 @@ comp!(
 /// If a service cannot write to every file but can read every file, it should be given the "Full" identifier.
 FileSystemAccess {
     /// The service has read or write access to all files on the host machine.
-    Full,
+    Full => 1.0,
     /// The service has access to some otherwise restricted files but more than a standard user.
-    Restricted,
+    Restricted => 0.8,
     /// The service has read-only access to otherwise protected file-system files.
-    Standard,
+    Standard => 0.4,
     /// The service only has access to files required for its operation
-    Required,
+    Required => 0.2,
     /// The service does not require or is not given any access to the file system.
-    None,
+    None => 0.01,
 });
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -178,11 +186,7 @@ impl DeploymentContext {
             ImpactMetric::Low => 0.75,
             ImpactMetric::High => 1.0,
         };
-        let score = score * match self.network_connection {
-            NetworkConfiguration::Public => 1.0,
-            NetworkConfiguration::Internal => 0.8,
-            NetworkConfiguration::Isolated => 0.1,
-        };
+        let score = score * self.network_connection.weight();
         score
     }
 
@@ -203,22 +207,14 @@ impl DeploymentContext {
             UserInteraction::None => 1.0,
             UserInteraction::Required => 0.5,
         };
-        let score = score * match self.remote_access {
-            RemoteAccess::Public => 1.0,
-            RemoteAccess::VPN => 0.6,
-            RemoteAccess::None => 0.2,
-        };
-        let score = score * match self.network_connection {
-            NetworkConfiguration::Public => 1.0,
-            NetworkConfiguration::Internal => 0.8,
-            NetworkConfiguration::Isolated => 0.1,
-        };
         let score = score * match metric.attack_vector {
             AttackVector::Network => 1.0,
             AttackVector::Adjacent => 0.6,
             AttackVector::Local => 0.25,
             AttackVector::Physical => 0.1
         };
+        let score = score * self.remote_access.weight();
+        let score = score * self.network_connection.weight();
         score
     }
 
@@ -235,12 +231,7 @@ impl DeploymentContext {
             ImpactMetric::Low => 0.7,
             ImpactMetric::None => 0.4,
         };
-        let score = score * match self.information_sensitivity {
-            InformationSensitivity::Useless => 0.25,
-            InformationSensitivity::Insensitive => 0.5,
-            InformationSensitivity::Identifying => 0.75,
-            InformationSensitivity::Damaging => 1.0,
-        };
+        let score = score * self.information_sensitivity.weight();
         score
     }
 
@@ -262,13 +253,7 @@ impl DeploymentContext {
             ImpactMetric::Low => 0.7,
             ImpactMetric::High => 1.0,
         };
-        let score = score * match self.permissions {
-            Permissions::Full => 1.0,
-            Permissions::Restricted => 0.8,
-            Permissions::Standard => 0.6,
-            Permissions::Required => 0.2,
-            Permissions::None => 0.01,
-        };
+        let score = score * self.permissions.weight();
         score
     }
 
@@ -285,13 +270,7 @@ impl DeploymentContext {
             ImpactMetric::Low => 0.7,
             ImpactMetric::High => 1.0,
         };
-        let score = score * match self.file_system_access {
-            FileSystemAccess::Full => 1.0,
-            FileSystemAccess::Restricted => 0.8,
-            FileSystemAccess::Standard => 0.4,
-            FileSystemAccess::Required => 0.2,
-            FileSystemAccess::None => 0.01,
-        };
+        let score = score * self.file_system_access.weight();
         score
     }
 }
@@ -341,8 +320,10 @@ pub struct DeploymentScore {
     pub source: String,
     /// The current version & date of the generated score.
     pub scayl: ScaylInfo,
-    /// The score of the software.
-    pub cumulative: VulnerabilityScore,
+    /// The sum of all of the scores.
+    pub summed_score: VulnerabilityScore,
+    /// The score of the software
+    pub score: VulnerabilityScore,
     /// The score of the software broken down by component.
     pub scores: BTreeMap<VulnId, VulnerabilityScore>,
 }
