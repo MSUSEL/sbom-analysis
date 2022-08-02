@@ -77,15 +77,15 @@ This project utilizes deployment context, the environment where the analyzed sof
 For more detail on the context model, see [Context.md](Context.md).<br>
 The current context model consists of five elements:
 
-* #### Network Configuration
+* **Network Configuration**  
   How much access the public internet has to the software.
-* #### Remote Access
+* **Remote Access**  
   How much access do privileged users have to the software.
-* #### Information Sensitivity
+* **Information Sensitivity**  
   How sensitive the information the software deals with is.
-* #### Command Line Permissions
+* **Command Line Permissions**  
   How much access the software has to the command-line.
-* #### File Permissions
+* **File Permissions**  
   How much access the software has to the file-system.
 
 ## Results
