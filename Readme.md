@@ -2,9 +2,15 @@
 
 ### Deployment Based Software Quality Assessment ###
 
-_A tool for measuring the quality of software. This project uses CVSS scores, generated SBOM (Software Bill of
-Materials) & Vulnerability reports to measure the security of a piece of software._
+Scayl is a tool for measuring the quality of software. This project uses CVSS scores, generated SBOM (Software Bill of
+Materials) & Vulnerability reports to measure the security of a piece of software.
 
+It consists of three different components:
+1) **[Scayl Bin](./Cargo.toml)** is a command line tool that can be ran to analyze the quality of a piece of software.
+2) **[Scayl Lib](./scayl)** is a rust library that can be used by other projects to analyze the quality of a piece of software.
+3) **[Scayl Results](./results)**
+
+## Disclaimer
 <div style="color: red;">Scayl only supports vulnerabilities with CVSS v3.1 scores. Because of the large number of 
 vulnerability file formats that come along with modern programming languages, addressing every type of vulnerability was
 not possible during the ten weeks in which this version of the tool was developed.
