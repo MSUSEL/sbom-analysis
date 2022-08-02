@@ -17,6 +17,7 @@ pub fn write_json<O: ?Sized + Serialize, P: AsRef<Path>>(path: P, val: &O) -> Re
         .map_err(Error::Serde)
 }
 
+/// Write a list of objects into a csv file.
 #[allow(unused)]
 pub fn write_table<O, Header, Rows, RowItem>(out: &mut O, header: Header, rows: Rows) -> Result<(), std::io::Error>
     where O: std::io::Write,
