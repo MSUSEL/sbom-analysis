@@ -11,6 +11,14 @@ use futures::lock::Mutex;
 
 use scayl::{DeploymentContext, Grype, read_json, RecurseDir, Trivy, VulnerabilityFormat, VulnerabilityScore, VulnFilter, VulnFormat};
 
+/// A task for analyzing many pieces of software in parallel.
+///
+/// # Arguments
+/// * `paths` - A directory of paths to analyze.
+/// * `context` - The path to the deployment context.
+///
+/// # Returns
+/// A future that resolves to a unit, results are written to a new folder.
 pub async fn en_mass<P, CP>(path: P, context: CP)
     where P: AsRef<Path>,
           CP: AsRef<Path> {

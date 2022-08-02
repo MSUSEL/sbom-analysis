@@ -1,3 +1,8 @@
+//! A vulnerability analysis tool designed to score vulnerabilities inside of a vulnerability report.
+//!
+//! # Examples
+//!
+
 extern crate futures;
 #[macro_use]
 extern crate serde;
@@ -6,11 +11,22 @@ extern crate tokio;
 #[cfg(test)]
 mod test;
 
+/// This module contains the different SBOM and Vulnerability Report formats.
 pub mod format;
+
+/// This module contains CVSS v2.0 & CVSS v3.0 scoring systems and data models
 pub mod cvss;
+
+/// This model contains some apis for vulnerability related services (incomplete)
 pub mod api;
+
+/// The main module containing the scoring mechanism & deployment contexts
 pub mod context;
+
+/// Contains some traits for generic vulnerability & cvss functionality
 pub mod model;
+
+/// This module contains some useful tools for reading/writing files
 pub mod util;
 
 pub use format::*;
