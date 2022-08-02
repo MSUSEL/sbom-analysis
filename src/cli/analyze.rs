@@ -13,6 +13,7 @@ use scayl::{context, ContextRunner, CycloneDx, Grype, Syft, Trivy, write_json, w
 use scayl::context::{DeploymentContext, DeploymentScore, VulnerabilityScore};
 use scayl::format;
 
+/// The vulnerability format of a file
 enum Fmt {
     Grype,
     Trivy,
@@ -20,11 +21,13 @@ enum Fmt {
     CycloneDx,
 }
 
+/// An internal input file
 struct InFile {
     uri: String,
     format: Fmt,
 }
 
+/// An internal output file
 enum OutFile {
     Grype(Grype),
     Syft(Syft),
@@ -32,12 +35,18 @@ enum OutFile {
     Trivy(Trivy),
 }
 
+/// An error representing possible issues during the analysis process
 #[derive(Debug)]
 pub enum Error {
+    /// An error that occurred while reading data from a vulnerability
     Format(format::Error),
+    /// An error that occurred while organizing and scoring vulnerabilities
     Context(LinkedList<context::Error>),
+    /// An error that occurred when reading a vulnerability/sbom file
     Io(std::io::Error),
+    /// The file format of an input file is unsupported
     BadFileExtension(String),
+    /// An error occurred while parsing a json file, usually a schema issue
     Serde(serde_json::Error),
 }
 
@@ -46,19 +55,44 @@ impl Display for Error {
         match self {
             Error::Format(err) => write!(f, "{}", err),
             Error::Context(err) => {
-                writeln!(f, "Context errors:")?;
+                writeln!(f, "Context Errors:")?;
                 for err in err {
                     writeln!(f, "  {}", err)?;
                 }
                 Ok(())
             }
-            Error::Io(err) => write!(f, "{}", err),
+            Error::Io(err) => write!(f, "IO Error: {}", err),
             Error::BadFileExtension(ext) => write!(f, "Bad file extension: {}", ext),
             Error::Serde(err) => write!(f, "Serialization error: {}", err),
         }
     }
 }
 
+/// The main entry point for the analysis process
+///
+/// # Arguments
+/// * `grype` - The grype files that describe a _single_ piece of software
+/// * `trivy` - The trivy files that describe a _single_ piece of software
+/// * `syft` - The syft files that describe a _single_ piece of software
+/// * `cyclonedx` - The cyclonedx files that describe a _single_ piece of software. Often conflicts with `trivy`
+/// * `context` - The context file that describes the deployment
+/// * `out` - An optional output file to write the results to. If not specified, the results will be printed to stdout.
+///
+/// # Returns
+/// A `Result` containing the `DeploymentScore` or an `Error` if an error occurred.
+///
+/// # Examples
+/// ```
+/// use scayl::analyze;
+/// let score = analyze(
+///     &vec!["/path/to/grype.json".to_string()],
+///     &vec!["/path/to/trivy.json".to_string()],
+///     &vec!["/path/to/syft.json".to_string()],
+///     &vec![],
+///     &Some("/path/to/context/file".to_string()),
+///     &None
+/// ).unwrap();
+/// ```
 pub async fn analyze(
     grype: &Vec<String>,
     syft: &Vec<String>,
@@ -71,11 +105,13 @@ pub async fn analyze(
 
     let mut files = LinkedList::new();
 
+    // Add different files to the list of files to analyze
     files.extend(grype.iter().map(|v| InFile { uri: v.clone(), format: Fmt::Grype }));
     files.extend(syft.iter().map(|v| InFile { uri: v.clone(), format: Fmt::Syft }));
     files.extend(trivy.iter().map(|v| InFile { uri: v.clone(), format: Fmt::Trivy }));
     files.extend(cyclone_dx.iter().map(|v| InFile { uri: v.clone(), format: Fmt::CycloneDx }));
 
+    // read each file on a different thread
     let num_cpus = (2 * num_cpus::get()).min(files.len());
     let files = Arc::new(Mutex::new(files));
     let handles = (0..num_cpus).map(|_| {
@@ -89,8 +125,8 @@ pub async fn analyze(
         })
     }).collect::<Vec<_>>();
 
+    // Collect the read files and take out any errors
     let mut files = LinkedList::new();
-    let mut runner = ContextRunner::new();
     for handle in handles {
         let res = handle.await.expect("Failed to analyze");
         let res = res.into_iter()
@@ -98,6 +134,8 @@ pub async fn analyze(
         files.extend(res);
     }
 
+    // Add the files to the runner
+    let mut runner = ContextRunner::new();
     for file in &files {
         match file {
             OutFile::Grype(v) => runner.grype(v),
@@ -187,6 +225,7 @@ pub async fn analyze(
     Ok(score)
 }
 
+/// Read a file and return the contents as an `OutFile`
 fn read_file(InFile { uri, format }: InFile) -> Result<OutFile, format::Error> {
     let file = File::open(&uri).map_err(format::Error::Io)?;
     let reader = BufReader::new(file);
