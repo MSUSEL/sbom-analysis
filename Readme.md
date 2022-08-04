@@ -2,7 +2,7 @@
 
 ### Deployment Based Software Quality Assessment ###
 
-Scayl is a tool for measuring the quality of software. This project uses CVSS scores, generated SBOM (Software Bill of
+Scayl is a tool for measuring the quality of software. This project uses CVSS (Common Vulnerabilites Scoring System) scores, generated SBOM (Software Bill of
 Materials) & Vulnerability reports to measure the security of a piece of software.
 
 This project consists of three different components:
