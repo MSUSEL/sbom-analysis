@@ -18,11 +18,11 @@ not possible during the ten weeks in which this version of the tool was develope
 </div>
 
 ### Overview
- - [CLI](#cli)  
- - [Building](#building)  
+ - [Command-line Tool](#cli)  
+ - [Building the Project](#building)  
  - [Usage](#usage)  
- - [Context](#context)  
- - [Results](#results)  
+ - [Context Definition](#context)  
+ - [Results Overview](#results)  
 
 
 ## CLI
@@ -66,6 +66,7 @@ cp target/release/scayl_bin ./scayl
 ```
 
 ## Usage
+To analyze a single image use the `analyze` command. And provide different formats using the `grype`, `trivy` and `cyclonedx` flags
 `scayl analyze --cyclonedx image/cyclonedx.json --context ./context/network.json --out image.json`
 
 Analyzing multiple reports at once
